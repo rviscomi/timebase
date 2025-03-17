@@ -285,7 +285,13 @@ class TimelineApp {
         // Create availability info text based on display type
         let availabilityText = '';
         if (feature.displayType === 'newly-available') {
-            availabilityText = `Newly available since ${formattedDate}.`;
+            // Check if this is actually a limited availability feature
+            if (feature.status?.baseline === false) {
+                // For limited availability features, use a different text format
+                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+            } else {
+                availabilityText = `Newly available since ${formattedDate}.`;
+            }
         } else if (feature.displayType === 'widely-available') {
             const now = new Date();
             now.setHours(0, 0, 0, 0);
