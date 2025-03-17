@@ -715,6 +715,26 @@ body {
     background-color: rgba(224, 224, 224, 0.2);
 }
 
+/* Style for the widely available link in the newly available text */
+.widely-available-link {
+    color: #5c6bc0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border-bottom: 1px dotted #5c6bc0;
+    padding-bottom: 1px;
+}
+
+.widely-available-link:hover {
+    color: #3949ab;
+    border-bottom: 1px solid #3949ab;
+}
+
+.widely-available-link:focus {
+    outline: 2px solid #5c6bc0;
+    outline-offset: 2px;
+}
+
 /* Add padding to the feature cards container */
 .date-group > .feature-card:first-of-type {
     margin-top: 1.5rem;
@@ -727,4 +747,91 @@ body {
 
 .date-group > .feature-card:last-of-type {
     margin-bottom: 20px;
+}
+
+/* Scroll to current month FAB */
+.scroll-to-current-month-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    min-width: 56px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    padding: 0 16px;
+    gap: 8px;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+}
+
+.scroll-to-current-month-fab.hidden {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+    pointer-events: none;
+}
+
+.scroll-to-current-month-fab:hover {
+    background-color: #3949ab;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) translateY(-2px);
+}
+
+.scroll-to-current-month-fab:active {
+    transform: scale(0.95) translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-current-month-fab .fab-icon {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-current-month-fab .fab-text {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* For smaller screens, make the FAB smaller and only show the icon */
+@media (max-width: 768px) {
+    .scroll-to-current-month-fab {
+        width: 48px;
+        height: 48px;
+        min-width: unset;
+        bottom: 16px;
+        right: 16px;
+        border-radius: 50%;
+        padding: 0;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .scroll-to-current-month-fab .fab-icon {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        position: relative;
+        top: -1px; /* Slight adjustment to visually center the emoji */
+    }
+    
+    .scroll-to-current-month-fab .fab-text {
+        display: none;
+    }
 } 

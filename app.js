@@ -187,7 +187,7 @@ class TimelineApp {
         return tag;
     }
 
-    createFeatureHeader(feature) {
+    createFeatureHeader(feature, uniqueCardId) {
         const header = document.createElement('div');
         header.className = 'feature-card-header';
         
@@ -211,16 +211,22 @@ class TimelineApp {
             let iconName;
             let titleText;
             
-            // For widely-available, always show the widely icon
-            if (feature.displayType === 'widely-available') {
-                iconName = 'baseline-widely-icon.svg';
-                titleText = 'Baseline Widely available';
-            } else if (baseline === false) {
+            // First check if this is a limited availability feature
+            if (baseline === false) {
                 // For limited availability
                 iconName = 'baseline-limited-icon.svg';
                 titleText = 'Limited availability across browsers';
+            }
+            // Then prioritize the display type for non-limited features
+            else if (feature.displayType === 'widely-available') {
+                // For widely-available, always show the widely icon
+                iconName = 'baseline-widely-icon.svg';
+                titleText = 'Baseline Widely available';
+            } else if (feature.displayType === 'newly-available') {
+                // For newly-available, always show the newly icon regardless of baseline value
+                iconName = 'baseline-newly-icon.svg';
+                titleText = 'Baseline Newly available';
             } else if (baseline === 'low') {
-                // For newly-available
                 iconName = 'baseline-newly-icon.svg';
                 titleText = 'Baseline Newly available';
             } else if (baseline === 'high') {
@@ -243,10 +249,10 @@ class TimelineApp {
         
         // Add a link icon for deep linking to this feature
         const linkIcon = document.createElement('a');
-        linkIcon.href = `#feature-${featureId}`;
+        linkIcon.href = `#${uniqueCardId}`;
         linkIcon.className = 'feature-link-icon';
         linkIcon.innerHTML = '🔗';
-        linkIcon.title = `Link to ${feature.name}`;
+        linkIcon.title = `Link to ${feature.name} (${feature.displayType})`;
         linkIcon.style.fontSize = '0.8em';
         linkIcon.style.marginLeft = '0.5em';
         linkIcon.style.opacity = '0';
@@ -290,14 +296,38 @@ class TimelineApp {
                 // For limited availability features, use a different text format
                 availabilityText = `Limited availability across browsers since ${formattedDate}.`;
             } else {
-                availabilityText = `Newly available since ${formattedDate}.`;
+                // Calculate the widely available date (30 months after newly available)
+                const widelyAvailableDate = new Date(feature.date);
+                widelyAvailableDate.setMonth(widelyAvailableDate.getMonth() + 30);
+                
+                // Format the widely available date
+                const widelyFormattedDate = widelyAvailableDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                
+                // Create the widely available feature ID
+                const widelyAvailableId = `feature-${featureId}-widely-available`;
+                
+                // Check if the widely available date is in the past
+                const now = new Date();
+                now.setHours(0, 0, 0, 0);
+                
+                // Create the newly available text with a link to the widely available entry
+                // Use past tense if the widely available date is in the past
+                if (widelyAvailableDate <= now) {
+                    availabilityText = `Newly available since ${formattedDate}. Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+                } else {
+                    availabilityText = `Newly available since ${formattedDate}. Will become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+                }
             }
         } else if (feature.displayType === 'widely-available') {
             const now = new Date();
             now.setHours(0, 0, 0, 0);
             
             if (feature.date > now) {
-                availabilityText = `Will be widely available on ${formattedDate}.`;
+                availabilityText = `Will become widely available on ${formattedDate}.`;
             } else {
                 availabilityText = `Widely available since ${formattedDate}.`;
             }
@@ -316,7 +346,7 @@ class TimelineApp {
             if (availabilityText) {
                 const availabilityInfo = document.createElement('div');
                 availabilityInfo.className = 'availability-info-text';
-                availabilityInfo.textContent = availabilityText;
+                availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
                 details.appendChild(availabilityInfo);
             }
         } else if (feature.description) {
@@ -330,14 +360,14 @@ class TimelineApp {
             if (availabilityText) {
                 const availabilityInfo = document.createElement('div');
                 availabilityInfo.className = 'availability-info-text';
-                availabilityInfo.textContent = availabilityText;
+                availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
                 details.appendChild(availabilityInfo);
             }
         } else if (availabilityText) {
             // If there's no description but we have availability info, add it as the description
             const availabilityInfo = document.createElement('div');
             availabilityInfo.className = 'availability-info-text';
-            availabilityInfo.textContent = availabilityText;
+            availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
             details.appendChild(availabilityInfo);
         }
         
@@ -497,8 +527,8 @@ class TimelineApp {
         // Make the top row clickable to toggle details
         topRow.style.cursor = 'pointer';
         topRow.setAttribute('aria-expanded', 'false');
-        topRow.setAttribute('aria-controls', `details-${featureId}`);
-        details.id = `details-${featureId}`;
+        topRow.setAttribute('aria-controls', `details-${uniqueCardId}`);
+        details.id = `details-${uniqueCardId}`;
         
         // Set up expand/collapse functionality on the top row
         topRow.addEventListener('click', (event) => {
@@ -566,11 +596,15 @@ class TimelineApp {
             card.className = `feature-card ${feature.displayType}`;
         }
         
+        // Create a unique ID that includes both the feature name and its display type
+        // This ensures each instance (newly vs widely available) has a unique ID
+        const uniqueCardId = `feature-${featureId}-${feature.displayType}`;
+        
         // Add a unique ID to the feature card for deep linking
-        card.id = `feature-${featureId}`;
+        card.id = uniqueCardId;
         
         // Create header with title
-        const header = this.createFeatureHeader(feature);
+        const header = this.createFeatureHeader(feature, uniqueCardId);
         
         // Process browser support info
         const browserReleases = this.processBrowserSupport(feature);
@@ -711,11 +745,33 @@ class TimelineApp {
                     if (card) {
                         dateGroup.appendChild(card);
                         
-                        // Store the card reference for hash navigation
-                        featureCards[`feature-${this.getFeatureId(feature.name)}`] = {
+                        // Store the card reference for hash navigation using its actual ID
+                        // This ensures we can find the card even with the new unique ID format
+                        featureCards[card.id] = {
                             card,
                             dateGroup
                         };
+                        
+                        // Also store with the old ID format for backward compatibility with existing links
+                        // But make sure we're not overwriting a more specific ID that already exists
+                        const oldFormatId = `feature-${this.getFeatureId(feature.name)}`;
+                        
+                        // For backward compatibility, store specific display type versions too
+                        const specificTypeId = `${oldFormatId}-${feature.displayType}`;
+                        featureCards[specificTypeId] = {
+                            card,
+                            dateGroup
+                        };
+                        
+                        // Only store in the generic ID if it doesn't exist or if this is newly-available
+                        if (!featureCards[oldFormatId] || 
+                            (feature.displayType === 'newly-available' && 
+                             featureCards[oldFormatId].card.id.includes('widely-available'))) {
+                            featureCards[oldFormatId] = {
+                                card,
+                                dateGroup
+                            };
+                        }
                     }
                 });
             
@@ -725,58 +781,65 @@ class TimelineApp {
             }
         });
         
+        // Create the "Scroll to current month" FAB
+        this.createScrollToCurrentMonthFAB(currentMonthElement);
+        
         // Handle navigation based on URL hash or default to current month
         if (window.location.hash) {
             // If there's a hash in the URL, prioritize scrolling to that element
             const targetId = window.location.hash.substring(1); // Remove the # character
-            const targetElement = document.getElementById(targetId);
             
-            if (targetElement) {
-                setTimeout(() => {
-                    // Use a more precise calculation for the scroll position
-                    if (targetId.startsWith('feature-')) {
-                        // For feature cards, first expand the card, then scroll to it
-                        const card = targetElement;
-                        const topRow = card.querySelector('.feature-top-row');
-                        const details = card.querySelector('.feature-details');
-                        
-                        // First expand the card if it's not already expanded
-                        if (topRow && details && details.style.display === 'none') {
-                            // Expand the card
-                            details.style.display = 'block';
-                            topRow.setAttribute('aria-expanded', 'true');
-                            card.classList.add('expanded');
-                            
-                            // Wait for the expansion to complete before scrolling
-                            setTimeout(() => {
-                                // Now calculate the position with the expanded content
-                                const headerHeight = 80; // Approximate height of sticky header
-                                const extraPadding = 20; // Additional padding for visual comfort
-                                
-                                // Scroll to the card with proper offset
-                                window.scrollTo({
-                                    top: card.offsetTop - headerHeight - extraPadding,
-                                    behavior: 'smooth'
-                                });
-                            }, 300);
-                        } else {
-                            // If already expanded, just scroll to it
-                            const headerHeight = 80;
-                            const extraPadding = 20;
-                            
-                            window.scrollTo({
-                                top: card.offsetTop - headerHeight - extraPadding,
-                                behavior: 'smooth'
-                            });
-                        }
+            // Check if the hash explicitly contains a display type
+            const hasNewlyAvailable = targetId.includes('-newly-available');
+            const hasWidelyAvailable = targetId.includes('-widely-available');
+            
+            // If the hash explicitly includes "newly-available", make sure we navigate to that one
+            if (hasNewlyAvailable) {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    this.scrollToAndExpandCard(element);
+                }
+            } 
+            // If the hash explicitly includes "widely-available", navigate to that one
+            else if (hasWidelyAvailable) {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    this.scrollToAndExpandCard(element);
+                }
+            }
+            // For generic feature IDs without a specific display type
+            else if (targetId.startsWith('feature-')) {
+                // Extract the base feature ID without any display type
+                const baseFeatureId = targetId.split('-newly-available')[0].split('-widely-available')[0];
+                
+                // First try to find the newly-available version
+                const newlyAvailableId = `${baseFeatureId}-newly-available`;
+                const newlyAvailableElement = document.getElementById(newlyAvailableId);
+                
+                if (newlyAvailableElement) {
+                    // Navigate to the newly-available version
+                    this.scrollToAndExpandCard(newlyAvailableElement);
+                } else {
+                    // If newly-available doesn't exist, try the widely-available version
+                    const widelyAvailableId = `${baseFeatureId}-widely-available`;
+                    const widelyAvailableElement = document.getElementById(widelyAvailableId);
+                    
+                    if (widelyAvailableElement) {
+                        this.scrollToAndExpandCard(widelyAvailableElement);
                     } else {
-                        // For month headers, use the default scrollIntoView
-                        targetElement.scrollIntoView({ 
-                            behavior: 'smooth', 
-                            block: 'start'
-                        });
+                        // If neither specific version exists, try the exact ID
+                        const exactElement = document.getElementById(targetId);
+                        if (exactElement) {
+                            this.scrollToAndExpandCard(exactElement);
+                        }
                     }
-                }, 200);
+                }
+            } else {
+                // For non-feature hashes (like month headers)
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         } else if (currentMonthElement) {
             // Only scroll to current month if there's no hash in the URL
@@ -784,6 +847,145 @@ class TimelineApp {
                 currentMonthElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
         }
+        
+        // Add a global click handler for widely-available links
+        document.addEventListener('click', (event) => {
+            // Check if the clicked element is a widely-available link
+            if (event.target.classList.contains('widely-available-link') || 
+                event.target.closest('.widely-available-link')) {
+                
+                const link = event.target.classList.contains('widely-available-link') ? 
+                    event.target : event.target.closest('.widely-available-link');
+                
+                // Get the target ID from the data attribute
+                const targetId = link.dataset.targetId;
+                
+                if (targetId) {
+                    // Find the target card
+                    const targetCard = document.getElementById(targetId);
+                    
+                    if (targetCard) {
+                        // Use the same method for consistency
+                        this.scrollToAndExpandCard(targetCard);
+                    }
+                }
+            }
+        });
+    }
+    
+    // Helper method to scroll to and expand a feature card
+    scrollToAndExpandCard(card) {
+        // Use a single timeout to ensure DOM is ready
+        setTimeout(() => {
+            if (!card) return;
+            
+            // Expand the card
+            const topRow = card.querySelector('.feature-top-row');
+            const details = card.querySelector('.feature-details');
+            
+            if (topRow && details) {
+                // First mark the card as our target for scrolling
+                // This helps in case there are multiple cards being expanded
+                card.setAttribute('data-scroll-target', 'true');
+                
+                // Expand the card if it's not already expanded
+                if (details.style.display === 'none') {
+                    // First make the details visible but with opacity 0
+                    details.style.display = 'block';
+                    details.style.opacity = '0';
+                    topRow.setAttribute('aria-expanded', 'true');
+                    card.classList.add('expanded');
+                    
+                    // Force a reflow to ensure the browser calculates the expanded height
+                    void card.offsetHeight;
+                    
+                    // Calculate the position with the expanded content
+                    const headerHeight = 80; // Approximate height of sticky header
+                    const extraPadding = 20; // Additional padding for visual comfort
+                    const targetPosition = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraPadding;
+                    
+                    // Scroll to the card with proper offset
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // After scrolling, make the details visible with a fade-in effect
+                    setTimeout(() => {
+                        details.style.transition = 'opacity 0.3s ease';
+                        details.style.opacity = '1';
+                    }, 100);
+                } else {
+                    // If already expanded, just scroll to it
+                    const headerHeight = 80;
+                    const extraPadding = 20;
+                    const targetPosition = card.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraPadding;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // Remove the scroll target attribute after scrolling is complete
+                setTimeout(() => {
+                    card.removeAttribute('data-scroll-target');
+                }, 1000);
+            }
+        }, 100);
+    }
+    
+    createScrollToCurrentMonthFAB(currentMonthElement) {
+        if (!currentMonthElement) return;
+        
+        // Create the FAB element
+        const fab = document.createElement('button');
+        fab.className = 'scroll-to-current-month-fab';
+        
+        // Get current month and year for the button text
+        const now = new Date();
+        const currentMonthName = now.toLocaleDateString('en-US', { month: 'short' });
+        const currentYear = now.getFullYear();
+        
+        // Add icon and text to the FAB using a simple text symbol instead of Material Icons
+        fab.innerHTML = `
+            <span class="fab-icon">📅</span>
+            <span class="fab-text">Scroll to current month</span>
+        `;
+        
+        fab.title = `Go to ${currentMonthName} ${currentYear}`;
+        fab.setAttribute('aria-label', `Go to ${currentMonthName} ${currentYear}`);
+        
+        // Add click event to scroll to current month
+        fab.addEventListener('click', () => {
+            currentMonthElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        // Initially hide the FAB (using opacity and transform for smooth transitions)
+        fab.classList.add('hidden');
+        
+        // Add the FAB to the document
+        document.body.appendChild(fab);
+        
+        // Set up scroll event listener to show/hide the FAB
+        const viewportHeight = window.innerHeight;
+        const threshold = viewportHeight * 0.01; // 1vh
+        
+        window.addEventListener('scroll', () => {
+            if (!currentMonthElement) return;
+            
+            const rect = currentMonthElement.getBoundingClientRect();
+            const isVisible = 
+                (rect.top >= -threshold && rect.top <= viewportHeight) ||
+                (rect.bottom >= 0 && rect.bottom <= viewportHeight + threshold);
+            
+            // Show/hide FAB based on current month visibility
+            if (!isVisible) {
+                fab.classList.remove('hidden');
+            } else {
+                fab.classList.add('hidden');
+            }
+        });
     }
 }
 
