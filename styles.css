@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Skip to content link for accessibility */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px 16px;
+    background: #2c5282;
+    color: white;
+    z-index: 1001;
+    transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+.timeline-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+
+.date-group {
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 0 20px 20px 20px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    margin-bottom: 3rem;
+    position: relative;
+    margin-left: 0;
+    overflow: visible;
+}
+
+.date-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 1.25rem 1.5rem;
+    margin: 0 -20px 1.5rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.date-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.date-link:hover {
+    text-decoration: none;
+    color: #4a5568;
+    border-bottom: 2px solid #4a5568;
+    padding-bottom: 0;
+}
+
+.date-link:hover .link-icon {
+    opacity: 0.6;
+}
+
+.date-link:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+.date-link:active {
+    color: #2c5282;
+}
+
+.link-icon {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.feature-card {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: all 0.2s ease;
+    scroll-margin-top: 100px;
+}
+
+/* Styles for newly-available and widely-available cards */
+.feature-card.newly-available {
+    border-left: 5px solid #5c6bc0; /* Slightly thicker blue border */
+    background-color: #ffffff;
+}
+
+.feature-card.widely-available {
+    border-left: 5px solid #66bb6a; /* Slightly thicker green border */
+    background-color: #ffffff;
+}
+
+/* Style for limited availability features - no colored stripe */
+.feature-card.limited-availability {
+    border-left: 5px solid #e0e0e0; /* Slightly thicker gray border */
+    background-color: #ffffff;
+}
+
+/* Style for future widely available features - ensure consistent border thickness */
+.feature-card.widely-available.future {
+    border-left: 5px solid #66bb6a; /* Match the thickness of other widely available features */
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+/* Remove the "Widely Available" text */
+.feature-card.widely-available::before {
+    content: none;
+}
+
+/* Remove the "Widely Available (Future)" text */
+.feature-card.widely-available.future::before {
+    content: none;
+}
+
+/* Hide the availability info */
+.availability-info {
+    display: none;
+}
+
+/* Enhance hover effects for different card types */
+.feature-card.newly-available:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(92, 107, 192, 0.2); /* Blue shadow */
+    border-left-color: #3949ab; /* Darker blue */
+}
+
+.feature-card.widely-available:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(102, 187, 106, 0.2); /* Green shadow */
+    border-left-color: #43a047; /* Darker green */
+}
+
+.feature-card.limited-availability:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(224, 224, 224, 0.3); /* Light gray shadow */
+    border-left-color: #bdbdbd; /* Darker gray */
+}
+
+.feature-card:hover {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card.expanded {
+    background: #f5f7fa;
+    border-color: #e2e8f0;
+}
+
+.feature-card-header {
+    width: 100%;
+}
+
+.feature-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.feature-top-row:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.feature-top-row:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+.feature-title-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.feature-type {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.feature-type.newly-available {
+    background: #ebf8ff;
+    color: #2b6cb0;
+}
+
+.feature-type.widely-available {
+    background: #f0fff4;
+    color: #2f855a;
+}
+
+.browser-support {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.browser-tag {
+    display: flex;
+    align-items: center;
+    background: #f7fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.browser-logo {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.version-text {
+    font-weight: 500;
+}
+
+.expand-icon {
+    font-size: 1.2rem;
+    color: #718096;
+    transition: transform 0.2s ease;
+}
+
+.expanded .expand-icon {
+    transform: rotate(45deg);
+}
+
+.feature-details {
+    padding: 1rem 0.5rem 0.5rem;
+    border-top: 1px solid #edf2f7;
+    margin-top: 0.5rem;
+}
+
+.feature-description {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.spec-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #3182ce;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: #ebf8ff;
+    transition: background 0.2s ease;
+}
+
+.spec-link:hover {
+    background: #bee3f8;
+    text-decoration: underline;
+}
+
+.spec-link:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e2e8f0;
+    border-top: 5px solid #3182ce;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error message */
+.error-message {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+    border-radius: 8px;
+    color: #c53030;
+    text-align: center;
+}
+
+.error-message button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.error-message button:hover {
+    background: #2c5282;
+}
+
+/* NoScript message */
+.noscript-message {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.noscript-message h2 {
+    color: #c53030;
+    margin-bottom: 1rem;
+}
+
+/* Virtual scrolling */
+.virtual-items-container {
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .date-header {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+    
+    .feature-top-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .browser-support {
+        margin-top: 0.5rem;
+        margin-right: 0;
+    }
+    
+    .expand-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .date-header {
+        font-size: 1.5rem;
+    }
+    
+    .feature-title {
+        font-size: 1rem;
+    }
+    
+    .browser-tag {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    .feature-card {
+        border: 1px solid CanvasText;
+    }
+    
+    .date-header {
+        border-bottom: 1px solid CanvasText;
+    }
+    
+    .feature-type {
+        border: 1px solid CanvasText;
+    }
+    
+    .browser-tag {
+        border: 1px solid CanvasText;
+    }
+}
+
+/* Focus visible polyfill */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+.feature-date {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-bottom: 0.5rem;
+}
+
+.chrome { background: #1a73e8; color: white; }
+.firefox { background: #ff5340; color: white; }
+.safari { background: #006CFF; color: white; }
+.edge { background: #0078d7; color: white; }
+
+.baseline-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+/* Remove old baseline tag styles */
+.baseline-tag,
+.baseline-limited,
+.baseline-new,
+.baseline-wide {
+    display: none;
+}
+
+/* Browser Support Table Styles */
+.browser-support-table-container {
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.browser-support-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.browser-support-table thead {
+    background-color: #f5f7fa;
+}
+
+.browser-support-table th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.browser-support-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.browser-support-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.browser-support-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.browser-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.browser-cell .browser-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.version-cell {
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.date-cell {
+    color: #718096;
+}
+
+/* Additional styling for HTML elements in feature descriptions */
+.feature-description a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.feature-description a:hover {
+    text-decoration: underline;
+    color: #2c5282;
+}
+
+.feature-description strong, 
+.feature-description b {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.feature-description em, 
+.feature-description i {
+    font-style: italic;
+}
+
+.feature-description ul, 
+.feature-description ol {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+}
+
+.feature-description li {
+    margin-bottom: 0.25rem;
+}
+
+.feature-description p {
+    margin-bottom: 0.75rem;
+}
+
+.feature-description p:last-child {
+    margin-bottom: 0;
+}
+
+.feature-description blockquote {
+    border-left: 4px solid #e2e8f0;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #4a5568;
+    font-style: italic;
+}
+
+/* Add specific scroll margin for expanded cards */
+.feature-card.expanded {
+    scroll-margin-top: 120px; /* Even more space for expanded cards */
+} 
