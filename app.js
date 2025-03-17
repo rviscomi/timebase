@@ -174,7 +174,7 @@ class TimelineApp {
         const baseBrowser = browser.replace('_android', '').replace('_ios', '');
         
         const logo = document.createElement('img');
-        logo.src = `/images/${baseBrowser}.svg`;
+        logo.src = `images/${baseBrowser}.svg`;
         logo.alt = `${browser} logo`;
         logo.className = 'browser-logo';
         
@@ -229,7 +229,7 @@ class TimelineApp {
             }
             
             if (iconName) {
-                baselineIcon.src = `/images/${iconName}`;
+                baselineIcon.src = `images/${iconName}`;
                 baselineIcon.alt = iconName.replace('baseline-', '').replace('-icon.svg', '') + ' support';
                 baselineIcon.className = 'baseline-icon';
                 baselineIcon.title = titleText;
@@ -408,7 +408,7 @@ class TimelineApp {
                 
                 // Create browser logo
                 const logo = document.createElement('img');
-                logo.src = `/images/${baseBrowser}.svg`;
+                logo.src = `images/${baseBrowser}.svg`;
                 logo.alt = `${baseBrowser} logo`;
                 logo.className = 'browser-logo';
                 browserCell.appendChild(logo);
