@@ -177,13 +177,29 @@ class TimelineApp {
         logo.src = `images/${baseBrowser}.svg`;
         logo.alt = `${browser} logo`;
         logo.className = 'browser-logo';
-        
-        const versionText = document.createElement('span');
-        versionText.textContent = version;
-        versionText.className = 'version-text';
-        
         tag.appendChild(logo);
-        tag.appendChild(versionText);
+        
+        // Create a single text span for version and platform
+        const textSpan = document.createElement('span');
+        
+        // Start with just the version number
+        let displayText = version;
+        
+        // Add platform information if applicable
+        if (browser.includes('_')) {
+            const platform = browser.split('_')[1];
+            
+            // Special case for iOS to ensure proper capitalization
+            if (platform.toLowerCase() === 'ios') {
+                displayText += ' (iOS)';
+            } else {
+                displayText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
+            }
+        }
+        
+        textSpan.textContent = displayText;
+        
+        tag.appendChild(textSpan);
         return tag;
     }
 
@@ -384,12 +400,8 @@ class TimelineApp {
             const headerRow = document.createElement('tr');
             
             const browserHeader = document.createElement('th');
-            browserHeader.textContent = 'Browser';
+            browserHeader.textContent = 'Browser Version';
             headerRow.appendChild(browserHeader);
-            
-            const versionHeader = document.createElement('th');
-            versionHeader.textContent = 'Version';
-            headerRow.appendChild(versionHeader);
             
             const dateHeader = document.createElement('th');
             dateHeader.textContent = 'Release Date';
@@ -437,7 +449,13 @@ class TimelineApp {
                 
                 // Browser cell with icon and name
                 const browserCell = document.createElement('td');
-                browserCell.className = 'browser-cell';
+                
+                // Create a wrapper for browser cell content to fix border alignment
+                const browserCellWrapper = document.createElement('div');
+                browserCellWrapper.className = 'browser-cell-wrapper';
+                
+                const browserCellContent = document.createElement('div');
+                browserCellContent.className = 'browser-cell';
                 
                 // Get base browser name for logo
                 const baseBrowser = shipDate.browser.replace('_android', '').replace('_ios', '');
@@ -447,31 +465,33 @@ class TimelineApp {
                 logo.src = `images/${baseBrowser}.svg`;
                 logo.alt = `${baseBrowser} logo`;
                 logo.className = 'browser-logo';
-                browserCell.appendChild(logo);
+                browserCellContent.appendChild(logo);
                 
-                // Format browser name
+                // Format browser name and version with platform all in one span
                 let displayName = baseBrowser.charAt(0).toUpperCase() + baseBrowser.slice(1);
+                let fullText = displayName + ' ' + shipDate.version;
+                
+                // Add platform information if applicable
                 if (shipDate.browser.includes('_')) {
                     const platform = shipDate.browser.split('_')[1];
+                    
                     // Special case for iOS to ensure proper capitalization
                     if (platform.toLowerCase() === 'ios') {
-                        displayName += ' (iOS)';
+                        fullText += ' (iOS)';
                     } else {
-                        displayName += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
+                        fullText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
                     }
                 }
                 
-                const nameSpan = document.createElement('span');
-                nameSpan.textContent = displayName;
-                browserCell.appendChild(nameSpan);
+                // Create a single span for all the text
+                const textSpan = document.createElement('span');
+                textSpan.textContent = fullText;
+                browserCellContent.appendChild(textSpan);
                 
+                // Add the browser cell content to the wrapper, then to the cell
+                browserCellWrapper.appendChild(browserCellContent);
+                browserCell.appendChild(browserCellWrapper);
                 row.appendChild(browserCell);
-                
-                // Version cell
-                const versionCell = document.createElement('td');
-                versionCell.className = 'version-cell';
-                versionCell.textContent = shipDate.version;
-                row.appendChild(versionCell);
                 
                 // Date cell
                 const dateCell = document.createElement('td');

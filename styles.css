@@ -518,7 +518,9 @@ body {
 }
 
 .browser-support-table {
+    margin: 0 auto;
     width: 100%;
+    max-width: 600px; /* Limit width on desktop */
     border-collapse: collapse;
     font-size: 0.9rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -536,6 +538,15 @@ body {
     font-weight: 600;
     color: #4a5568;
     border-bottom: 2px solid #e2e8f0;
+}
+
+/* Ensure proper column widths for the two-column layout */
+.browser-support-table th:first-child {
+    width: 60%;
+}
+
+.browser-support-table th:last-child {
+    width: 40%;
 }
 
 .browser-support-table td {
@@ -562,11 +573,6 @@ body {
 .browser-cell .browser-logo {
     width: 20px;
     height: 20px;
-}
-
-.version-cell {
-    font-family: monospace;
-    font-weight: 500;
 }
 
 .date-cell {
@@ -833,5 +839,13 @@ body {
     
     .scroll-to-current-month-fab .fab-text {
         display: none;
+    }
+}
+
+/* Responsive styles for the table */
+@media (max-width: 768px) {
+    .browser-support-table {
+        width: 100%;
+        max-width: none; /* Allow full width on mobile */
     }
 } 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <title>Generic Browser</title>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle fill="#CCCCCC" cx="128" cy="128" r="128"></circle>
-        <path d="M128,64 C154.510,64 176,85.49 176,112 C176,138.51 154.510,160 128,160 C101.49,160 80,138.51 80,112 C80,85.49 101.49,64 128,64 Z M128,80 C110.327,80 96,94.327 96,112 C96,129.673 110.327,144 128,144 C145.673,144 160,129.673 160,112 C160,94.327 145.673,80 128,80 Z" fill="#666666" fill-rule="nonzero"></path>
-        <path d="M128,176 C175.438,176 213.438,190 213.438,208 L42.562,208 C42.562,190 80.562,176 128,176 Z" fill="#666666"></path>
-    </g>
-</svg> 
