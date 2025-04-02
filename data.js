@@ -3021,7 +3021,9 @@ export const features = {
       "support": {
         "chrome": "125",
         "chrome_android": "125",
-        "edge": "125"
+        "edge": "125",
+        "safari": "18.2",
+        "safari_ios": "18.2"
       }
     }
   },
@@ -3544,7 +3546,7 @@ export const features = {
   "app-file-handlers": {
     "compat_features": [
       "api.LaunchParams.files",
-      "html.manifest.file_handlers"
+      "manifests.webapp.file_handlers"
     ],
     "description": "The file_handlers web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
     "description_html": "The <code>file_handlers</code> web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
@@ -3566,8 +3568,8 @@ export const features = {
       "api.LaunchQueue",
       "api.LaunchQueue.setConsumer",
       "api.Window.launchQueue",
-      "html.manifest.launch_handler",
-      "html.manifest.launch_handler.client_mode"
+      "manifests.webapp.launch_handler",
+      "manifests.webapp.launch_handler.client_mode"
     ],
     "description": "The launch_handler web app manifest member, with the client_mode property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
     "description_html": "The <code>launch_handler</code> web app manifest member, with the <code>client_mode</code> property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
@@ -3584,9 +3586,9 @@ export const features = {
   },
   "app-protocol-handlers": {
     "compat_features": [
-      "html.manifest.protocol_handlers",
-      "html.manifest.protocol_handlers.protocol",
-      "html.manifest.protocol_handlers.url"
+      "manifests.webapp.protocol_handlers",
+      "manifests.webapp.protocol_handlers.protocol",
+      "manifests.webapp.protocol_handlers.url"
     ],
     "description": "The protocol_handlers web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
     "description_html": "The <code>protocol_handlers</code> web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
@@ -3603,7 +3605,7 @@ export const features = {
   },
   "app-share-targets": {
     "compat_features": [
-      "html.manifest.share_target"
+      "manifests.webapp.share_target"
     ],
     "description": "The share_target web app manifest member registers an installed web app as a handler for shared content. When a user shares content by using the device share dialog, the installed app can be listed as an option for handling the shared content.",
     "description_html": "The <code>share_target</code> web app manifest member registers an installed web app as a handler for shared content. When a user shares content by using the device share dialog, the installed app can be listed as an option for handling the shared content.",
@@ -3621,7 +3623,7 @@ export const features = {
   },
   "app-shortcuts": {
     "compat_features": [
-      "html.manifest.shortcuts"
+      "manifests.webapp.shortcuts"
     ],
     "description": "The shortcuts web app manifest member registers common actions of an installed web app with the device. The device can present these actions to the user in contextually appropriate locations, such as jump lists on Windows or the app launcher on Android.",
     "description_html": "The <code>shortcuts</code> web app manifest member registers common actions of an installed web app with the device. The device can present these actions to the user in contextually appropriate locations, such as jump lists on Windows or the app launcher on Android.",
@@ -8118,7 +8120,8 @@ export const features = {
     "name": "Inline-size containment",
     "spec": "https://drafts.csswg.org/css-contain-3/#containment-inline-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "105",
@@ -8537,8 +8540,8 @@ export const features = {
     "compat_features": [
       "api.Navigator.cookieEnabled"
     ],
-    "description": "The navigator.cookieEnabled property returns a Boolean value for whether the browser accepts or ignores attempts to write cookie data.",
-    "description_html": "The <code>navigator.cookieEnabled</code> property returns a Boolean value for whether the browser accepts or ignores attempts to write cookie data.",
+    "description": "The navigator.cookieEnabled property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
+    "description_html": "The <code>navigator.cookieEnabled</code> property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
     "name": "cookieEnabled",
     "spec": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
     "status": {
@@ -8561,21 +8564,7 @@ export const features = {
       "api.CookieChangeEvent",
       "api.CookieChangeEvent.CookieChangeEvent",
       "api.CookieChangeEvent.changed",
-      "api.CookieChangeEvent.changed.domain_property",
-      "api.CookieChangeEvent.changed.expires_property",
-      "api.CookieChangeEvent.changed.name_property",
-      "api.CookieChangeEvent.changed.path_property",
-      "api.CookieChangeEvent.changed.sameSite_property",
-      "api.CookieChangeEvent.changed.secure_property",
-      "api.CookieChangeEvent.changed.value_property",
       "api.CookieChangeEvent.deleted",
-      "api.CookieChangeEvent.deleted.domain_property",
-      "api.CookieChangeEvent.deleted.expires_property",
-      "api.CookieChangeEvent.deleted.name_property",
-      "api.CookieChangeEvent.deleted.path_property",
-      "api.CookieChangeEvent.deleted.sameSite_property",
-      "api.CookieChangeEvent.deleted.secure_property",
-      "api.CookieChangeEvent.deleted.value_property",
       "api.CookieStore",
       "api.CookieStore.change_event",
       "api.CookieStore.delete",
@@ -8588,13 +8577,6 @@ export const features = {
       "api.CookieStore.get.secure_return_property",
       "api.CookieStore.get.value_return_property",
       "api.CookieStore.getAll",
-      "api.CookieStore.getAll.domain_return_property",
-      "api.CookieStore.getAll.expires_return_property",
-      "api.CookieStore.getAll.name_return_property",
-      "api.CookieStore.getAll.path_return_property",
-      "api.CookieStore.getAll.sameSite_return_property",
-      "api.CookieStore.getAll.secure_return_property",
-      "api.CookieStore.getAll.value_return_property",
       "api.CookieStore.set",
       "api.CookieStoreManager",
       "api.CookieStoreManager.getSubscriptions",
@@ -9557,7 +9539,7 @@ export const features = {
   },
   "customizable-select": {
     "compat_features": [
-      "css.properties.appearance.base",
+      "css.properties.appearance.base-select",
       "css.selectors.checkmark",
       "css.selectors.picker",
       "css.selectors.picker-icon",
@@ -9573,7 +9555,11 @@ export const features = {
     "spec": "https://open-ui.org/components/customizableselect/",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134"
+      }
     }
   },
   "customized-built-in-elements": {
@@ -10113,8 +10099,8 @@ export const features = {
       "api.WorkerNavigator.deviceMemory",
       "http.headers.Device-Memory"
     ],
-    "description": "The navigator.deviceMemory property returns the approximate amount of device memory, in gigabytes.",
-    "description_html": "The <code>navigator.deviceMemory</code> property returns the approximate amount of device memory, in gigabytes.",
+    "description": "The navigator.deviceMemory property is the approximate amount of device memory, in gigabytes.",
+    "description_html": "The <code>navigator.deviceMemory</code> property is the approximate amount of device memory, in gigabytes.",
     "name": "Device memory",
     "spec": "https://www.w3.org/TR/device-memory/",
     "status": {
@@ -10232,8 +10218,8 @@ export const features = {
     "compat_features": [
       "api.Window.devicePixelRatio"
     ],
-    "description": "The window.devicePixelRatio read-only property returns the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
-    "description_html": "The <code>window.devicePixelRatio</code> read-only property returns the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
+    "description": "The window.devicePixelRatio property is the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
+    "description_html": "The <code>window.devicePixelRatio</code> property is the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
     "name": "devicePixelRatio",
     "spec": "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio",
     "status": {
@@ -14229,7 +14215,8 @@ export const features = {
       "https://drafts.csswg.org/css-color-adjust-1/#forced-color-adjust-prop"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "89",
@@ -14411,6 +14398,17 @@ export const features = {
         "firefox_android": "64",
         "safari": "16.4"
       }
+    }
+  },
+  "function": {
+    "description": "The @function CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the @media at-rule.",
+    "description_html": "The <code>@function</code> CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the <code>@media</code> at-rule.",
+    "group": "css",
+    "name": "@function",
+    "spec": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "functions": {
@@ -15087,8 +15085,8 @@ export const features = {
       "api.Navigator.hardwareConcurrency",
       "api.WorkerNavigator.hardwareConcurrency"
     ],
-    "description": "The navigator.hardwareConcurrency read-only property returns the number of logical processors available to run threads on the user's computer.",
-    "description_html": "The <code>navigator.hardwareConcurrency</code> read-only property returns the number of logical processors available to run threads on the user's computer.",
+    "description": "The navigator.hardwareConcurrency property is the number of logical processors available to run threads on the user's computer.",
+    "description_html": "The <code>navigator.hardwareConcurrency</code> property is the number of logical processors available to run threads on the user's computer.",
     "name": "hardwareConcurrency",
     "spec": "https://html.spec.whatwg.org/multipage/workers.html#navigator.hardwareconcurrency",
     "status": {
@@ -16004,6 +16002,17 @@ export const features = {
         "chrome_android": "94",
         "edge": "114"
       }
+    }
+  },
+  "if": {
+    "description": "The if() CSS function is an inline conditional value that returns a value based on a set of conditions.",
+    "description_html": "The <code>if()</code> CSS function is an inline conditional value that returns a value based on a set of conditions.",
+    "group": "css",
+    "name": "if()",
+    "spec": "https://drafts.csswg.org/css-values-5/#if-notation",
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "iframe": {
@@ -18644,8 +18653,8 @@ export const features = {
       "api.WorkerNavigator.language",
       "api.WorkerNavigator.languages"
     ],
-    "description": "The navigator.language read-only property returns a string representing the preferred language of the user, usually the language of the browser UI. The navigator.languages read-only property returns an array of strings representing the user's preferred languages.",
-    "description_html": "The <code>navigator.language</code> read-only property returns a string representing the preferred language of the user, usually the language of the browser UI. The <code>navigator.languages</code> read-only property returns an array of strings representing the user's preferred languages.",
+    "description": "The navigator.language property is a string representing the preferred language of the user, usually the language of the browser UI. The navigator.languages property is an array of strings representing the user's preferred languages.",
+    "description_html": "The <code>navigator.language</code> property is a string representing the preferred language of the user, usually the language of the browser UI. The <code>navigator.languages</code> property is an array of strings representing the user's preferred languages.",
     "name": "Language",
     "spec": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
     "status": {
@@ -19671,21 +19680,21 @@ export const features = {
   "manifest": {
     "compat_features": [
       "html.elements.link.rel.manifest",
-      "html.manifest.background_color",
-      "html.manifest.description",
-      "html.manifest.display",
-      "html.manifest.icons",
-      "html.manifest.id",
-      "html.manifest.name",
-      "html.manifest.orientation",
-      "html.manifest.scope",
-      "html.manifest.serviceworker",
-      "html.manifest.serviceworker.scope",
-      "html.manifest.serviceworker.src",
-      "html.manifest.serviceworker.use_cache",
-      "html.manifest.short_name",
-      "html.manifest.start_url",
-      "html.manifest.theme_color"
+      "manifests.webapp.background_color",
+      "manifests.webapp.description",
+      "manifests.webapp.display",
+      "manifests.webapp.icons",
+      "manifests.webapp.id",
+      "manifests.webapp.name",
+      "manifests.webapp.orientation",
+      "manifests.webapp.scope",
+      "manifests.webapp.serviceworker",
+      "manifests.webapp.serviceworker.scope",
+      "manifests.webapp.serviceworker.src",
+      "manifests.webapp.serviceworker.use_cache",
+      "manifests.webapp.short_name",
+      "manifests.webapp.start_url",
+      "manifests.webapp.theme_color"
     ],
     "description": "A web app manifest file provides metadata about the site. The browser can use the metadata to install the site as a standalone application on the user's device. The metadata usually includes the app's name, icon, description, and ways in which the app wishes to integrate with the device.",
     "description_html": "A web app manifest file provides metadata about the site. The browser can use the metadata to install the site as a standalone application on the user's device. The metadata usually includes the app's name, icon, description, and ways in which the app wishes to integrate with the device.",
@@ -20540,6 +20549,43 @@ export const features = {
       }
     }
   },
+  "mediacontroller": {
+    "compat_features": [
+      "api.HTMLMediaElement.controller",
+      "api.MediaController",
+      "api.MediaController.MediaController",
+      "api.MediaController.buffered",
+      "api.MediaController.currentTime",
+      "api.MediaController.defaultPlaybackRate",
+      "api.MediaController.duration",
+      "api.MediaController.muted",
+      "api.MediaController.pause",
+      "api.MediaController.paused",
+      "api.MediaController.play",
+      "api.MediaController.playbackRate",
+      "api.MediaController.playbackState",
+      "api.MediaController.played",
+      "api.MediaController.seekable",
+      "api.MediaController.unpause",
+      "api.MediaController.volume"
+    ],
+    "description": "The playback of multiple <video> or <audio> elements can be coordinated by a MediaController instance, for example to synchronize a sign-language interpreter track with the main video track.",
+    "description_html": "The playback of multiple <code>&#x3C;video></code> or <code>&#x3C;audio></code> elements can be coordinated by a <code>MediaController</code> instance, for example to synchronize a sign-language interpreter track with the main video track.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/w3c/html/issues/246"
+      ]
+    },
+    "name": "MediaController",
+    "spec": "https://www.w3.org/TR/2018/SPSD-html5-20180327/embedded-content-0.html#synchronising-multiple-media-elements",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "7",
+        "safari_ios": "7"
+      }
+    }
+  },
   "mediastream-recording": {
     "compat_features": [
       "api.BlobEvent",
@@ -20998,7 +21044,8 @@ export const features = {
     "name": "Motion path",
     "spec": "https://drafts.fxtf.org/motion-1/",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "55",
@@ -21911,11 +21958,11 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "118",
-        "chrome_android": "118",
-        "edge": "118",
-        "safari": "17.2",
-        "safari_ios": "17.2"
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     }
   },
@@ -22482,8 +22529,8 @@ export const features = {
       "api.WorkerGlobalScope.online_event",
       "api.WorkerNavigator.onLine"
     ],
-    "description": "The navigator.onLine property returns a Boolean for whether the browser is connected to some network (though not necessarily the internet). The online and offline events fire when the connection state changes.",
-    "description_html": "The <code>navigator.onLine</code> property returns a Boolean for whether the browser is connected to some network (though not necessarily the internet). The <code>online</code> and <code>offline</code> events fire when the connection state changes.",
+    "description": "The navigator.onLine property is a boolean for whether the browser is connected to some network (though not necessarily the internet). The online and offline events fire when the connection state changes.",
+    "description_html": "The <code>navigator.onLine</code> property is a boolean for whether the browser is connected to some network (though not necessarily the internet). The <code>online</code> and <code>offline</code> events fire when the connection state changes.",
     "name": "Online status",
     "spec": [
       "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
@@ -22848,7 +22895,8 @@ export const features = {
     "name": "overflow: clip",
     "spec": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "90",
@@ -23028,7 +23076,8 @@ export const features = {
     "name": "overscroll-behavior",
     "spec": "https://drafts.csswg.org/css-overscroll-1/",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "63",
@@ -23533,11 +23582,8 @@ export const features = {
   },
   "partitioned-cookies": {
     "compat_features": [
-      "api.CookieChangeEvent.changed.partitioned_property",
-      "api.CookieChangeEvent.deleted.partitioned_property",
       "api.CookieStore.delete.partitioned_option",
       "api.CookieStore.get.partitioned_return_property",
-      "api.CookieStore.getAll.partitioned_return_property",
       "api.CookieStore.set.partitioned_option",
       "api.ExtendableCookieChangeEvent.changed.partitioned_property",
       "api.ExtendableCookieChangeEvent.deleted.partitioned_property",
@@ -23692,8 +23738,8 @@ export const features = {
     "compat_features": [
       "api.Navigator.pdfViewerEnabled"
     ],
-    "description": "The navigator.pdfViewerEnabled read-only property returns a Boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
-    "description_html": "The <code>navigator.pdfViewerEnabled</code> read-only property returns a Boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
+    "description": "The navigator.pdfViewerEnabled property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
+    "description_html": "The <code>navigator.pdfViewerEnabled</code> property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
     "name": "pdfViewerEnabled",
     "spec": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
     "status": {
@@ -23868,7 +23914,8 @@ export const features = {
       "https://wicg.github.io/permissions-request/#dom-permissions-request"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "44",
@@ -25805,6 +25852,24 @@ export const features = {
       }
     }
   },
+  "requestclose": {
+    "compat_features": [
+      "api.HTMLDialogElement.requestClose"
+    ],
+    "description": "The requestClose() method of a <dialog> HTML element closes the dialog, firing a cancel event first, which listeners can use to prevent the dialog from closing. This differs from the close() method, which only fires the non-cancelable close event.",
+    "description_html": "The <code>requestClose()</code> method of a <code>&#x3C;dialog></code> HTML element closes the dialog, firing a <code>cancel</code> event first, which listeners can use to prevent the dialog from closing. This differs from the <code>close()</code> method, which only fires the non-cancelable <code>close</code> event.",
+    "group": "html-elements",
+    "name": "dialog.requestClose()",
+    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-requestclose",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134"
+      }
+    }
+  },
   "requestidlecallback": {
     "caniuse": "requestidlecallback",
     "compat_features": [
@@ -25940,7 +26005,8 @@ export const features = {
     "name": "resolution media query",
     "spec": "https://drafts.csswg.org/mediaqueries-5/#resolution",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "68",
@@ -26910,6 +26976,25 @@ export const features = {
         "safari": "14",
         "safari_ios": "14"
       }
+    }
+  },
+  "scroll-markers": {
+    "compat_features": [
+      "css.properties.scroll-marker-group",
+      "css.properties.scroll-marker-group.after",
+      "css.properties.scroll-marker-group.before",
+      "css.properties.scroll-marker-group.none",
+      "css.selectors.scroll-marker",
+      "css.selectors.scroll-marker-group"
+    ],
+    "description": "A scroll container can be navigated by activating ::scroll-marker pseudo-elements which appear in a generated ::scroll-marker-group pseudo-element, either before or after the scroll container.",
+    "description_html": "A scroll container can be navigated by activating <code>::scroll-marker</code> pseudo-elements which appear in a generated <code>::scroll-marker-group</code> pseudo-element, either before or after the scroll container.",
+    "group": "scrolling",
+    "name": "Scroll markers",
+    "spec": "https://drafts.csswg.org/css-overflow-5/#scroll-markers",
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "scroll-snap": {
@@ -28165,6 +28250,25 @@ export const features = {
         "edge": "121",
         "firefox": "122",
         "firefox_android": "122"
+      }
+    }
+  },
+  "single-color-gradients": {
+    "compat_features": [
+      "css.types.gradient.conic-gradient.single_color_stop",
+      "css.types.gradient.linear-gradient.single_color_stop",
+      "css.types.gradient.radial-gradient.single_color_stop"
+    ],
+    "description": "A single color stop can be provided to the linear-gradient(), radial-gradient(), and conic-gradient() CSS functions, and their repeating counterparts, to create a solid color background.",
+    "description_html": "A single color stop can be provided to the <code>linear-gradient()</code>, <code>radial-gradient()</code>, and <code>conic-gradient()</code> CSS functions, and their repeating counterparts, to create a solid color background.",
+    "group": "gradients",
+    "name": "Single color stop gradients",
+    "spec": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "136",
+        "firefox_android": "136"
       }
     }
   },
@@ -31490,7 +31594,8 @@ export const features = {
     "name": "text-align-last",
     "spec": "https://drafts.csswg.org/css-text-4/#text-align-last-property",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
       "baseline_low_date": "2022-09-12",
       "support": {
         "chrome": "47",
@@ -33551,8 +33656,8 @@ export const features = {
       "api.Navigator.userAgent",
       "api.WorkerNavigator.userAgent"
     ],
-    "description": "The navigator.userAgent read-only property returns the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
-    "description_html": "The <code>navigator.userAgent</code> read-only property returns the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
+    "description": "The navigator.userAgent property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
+    "description_html": "The <code>navigator.userAgent</code> property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
     "name": "User agent sniffing",
     "spec": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
     "status": {
@@ -38822,7 +38927,7 @@ export const features = {
       "css.types.env.titlebar-area-width",
       "css.types.env.titlebar-area-x",
       "css.types.env.titlebar-area-y",
-      "html.manifest.display_override.window-controls-overlay"
+      "manifests.webapp.display_override.window-controls-overlay"
     ],
     "description": "The display_override:\\ [\"window-controls-overlay\"] web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
     "description_html": "The <code>display_override:\\ [\"window-controls-overlay\"]</code> web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
