@@ -534,6 +534,10 @@ export const browsers = {
       {
         "date": "2025-03-04",
         "version": "134"
+      },
+      {
+        "date": "2025-04-01",
+        "version": "135"
       }
     ]
   },
@@ -979,6 +983,10 @@ export const browsers = {
       {
         "date": "2025-03-04",
         "version": "134"
+      },
+      {
+        "date": "2025-04-01",
+        "version": "135"
       }
     ]
   },
@@ -2483,6 +2491,10 @@ export const browsers = {
       {
         "date": "2025-01-27",
         "version": "18.3"
+      },
+      {
+        "date": "2025-03-31",
+        "version": "18.4"
       }
     ]
   },
@@ -2676,6 +2688,10 @@ export const browsers = {
       {
         "date": "2025-01-27",
         "version": "18.3"
+      },
+      {
+        "date": "2025-03-31",
+        "version": "18.4"
       }
     ]
   }
@@ -2853,6 +2869,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "135",
+        "chrome_android": "135",
         "firefox": "118",
         "firefox_android": "118",
         "safari": "15.4",
@@ -3117,11 +3135,11 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "≤80",
-        "chrome_android": "≤80",
-        "edge": "≤80",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "79",
+        "safari": "5.1",
+        "safari_ios": "5"
       }
     }
   },
@@ -4637,7 +4655,9 @@ export const features = {
       "support": {
         "chrome": "133",
         "chrome_android": "133",
-        "edge": "133"
+        "edge": "133",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -5644,11 +5664,11 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "≤80",
-        "chrome_android": "≤80",
-        "edge": "≤80",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "79",
+        "safari": "4",
+        "safari_ios": "3.2"
       }
     }
   },
@@ -6613,7 +6633,7 @@ export const features = {
       "support": {
         "chrome": "32",
         "chrome_android": "32",
-        "edge": "≤79",
+        "edge": "79",
         "firefox": "30",
         "firefox_android": "30"
       }
@@ -7198,13 +7218,13 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "≤80",
-        "chrome_android": "≤80",
-        "edge": "≤80",
-        "firefox": "≤72",
-        "firefox_android": "≤79",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "79",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "1.3",
+        "safari_ios": "1"
       }
     }
   },
@@ -7345,13 +7365,16 @@ export const features = {
     "name": "ClipboardItem.supports()",
     "spec": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-03-31",
       "support": {
         "chrome": "121",
         "chrome_android": "121",
         "edge": "121",
         "firefox": "127",
-        "firefox_android": "127"
+        "firefox_android": "127",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -7800,6 +7823,30 @@ export const features = {
         "firefox_android": "53",
         "safari": "7",
         "safari_ios": "7"
+      }
+    }
+  },
+  "compression-dictionary-transport": {
+    "compat_features": [
+      "html.elements.link.rel.compression-dictionary",
+      "http.headers.Accept-Encoding.dcb",
+      "http.headers.Accept-Encoding.dcz",
+      "http.headers.Available-Dictionary",
+      "http.headers.Content-Encoding.dcb",
+      "http.headers.Content-Encoding.dcz",
+      "http.headers.Dictionary-ID",
+      "http.headers.Use-As-Dictionary"
+    ],
+    "description": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
+    "description_html": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
+    "name": "Compression Dictionary Transport",
+    "spec": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130"
       }
     }
   },
@@ -8468,7 +8515,7 @@ export const features = {
       "support": {
         "chrome": "51",
         "chrome_android": "51",
-        "edge": "≤79",
+        "edge": "12",
         "firefox": "136",
         "firefox_android": "136",
         "safari": "≤13.1",
@@ -10065,7 +10112,9 @@ export const features = {
       "support": {
         "chrome": "131",
         "chrome_android": "131",
-        "edge": "131"
+        "edge": "131",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -10546,16 +10595,16 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-display-3/#layout-specific-display",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2022-09-24",
-      "baseline_low_date": "≤2020-03-24",
+      "baseline_high_date": "≤2019-10-05",
+      "baseline_low_date": "≤2017-04-05",
       "support": {
-        "chrome": "≤80",
-        "chrome_android": "≤80",
-        "edge": "≤80",
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "≤15",
         "firefox": "3",
         "firefox_android": "4",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "≤4",
+        "safari_ios": "≤3.2"
       }
     }
   },
@@ -11190,16 +11239,16 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-inline-3/#dominant-baseline-property",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2022-09-24",
-      "baseline_low_date": "≤2020-03-24",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
       "support": {
-        "chrome": "≤80",
-        "chrome_android": "≤80",
-        "edge": "≤80",
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "79",
         "firefox": "1",
         "firefox_android": "4",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "4",
+        "safari_ios": "3.2"
       }
     }
   },
@@ -12550,6 +12599,24 @@ export const features = {
       }
     }
   },
+  "fetchlater": {
+    "compat_features": [
+      "api.FetchLaterResult",
+      "api.FetchLaterResult.activated",
+      "api.Window.fetchLater"
+    ],
+    "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
+    "description_html": "The <code>fetchLater()</code> method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
+    "name": "fetchLater",
+    "spec": "https://github.com/whatwg/fetch/pull/1647",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135"
+      }
+    }
+  },
   "field-sizing": {
     "compat_features": [
       "css.properties.field-sizing",
@@ -13090,6 +13157,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "135",
+        "chrome_android": "135",
         "firefox": "129",
         "firefox_android": "129",
         "safari": "18.2",
@@ -14195,7 +14264,9 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-fonts-4/#font-width-prop",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "18.4"
+      }
     }
   },
   "forced-colors": {
@@ -17908,7 +17979,10 @@ export const features = {
     "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135"
+      }
     }
   },
   "is": {
@@ -22600,7 +22674,7 @@ export const features = {
         "chrome": "≤80",
         "chrome_android": "≤80",
         "edge": "≤80",
-        "firefox": "1",
+        "firefox": "1.5",
         "firefox_android": "4",
         "safari": "≤13.1",
         "safari_ios": "≤13.4"
@@ -23598,7 +23672,9 @@ export const features = {
       "support": {
         "chrome": "114",
         "chrome_android": "114",
-        "edge": "114"
+        "edge": "114",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -25866,7 +25942,9 @@ export const features = {
       "support": {
         "chrome": "134",
         "chrome_android": "134",
-        "edge": "134"
+        "edge": "134",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -26706,14 +26784,16 @@ export const features = {
     "name": "Screen wake lock",
     "spec": "https://w3c.github.io/screen-wake-lock/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-03-31",
       "support": {
         "chrome": "84",
         "chrome_android": "84",
         "edge": "84",
         "firefox": "126",
         "firefox_android": "126",
-        "safari": "16.4"
+        "safari": "16.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -26994,7 +27074,9 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-overflow-5/#scroll-markers",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "135"
+      }
     }
   },
   "scroll-snap": {
@@ -31181,6 +31263,119 @@ export const features = {
       }
     }
   },
+  "table-discouraged": {
+    "compat_features": [
+      "api.HTMLTableCaptionElement.align",
+      "api.HTMLTableCellElement.align",
+      "api.HTMLTableCellElement.axis",
+      "api.HTMLTableCellElement.bgColor",
+      "api.HTMLTableCellElement.ch",
+      "api.HTMLTableCellElement.chOff",
+      "api.HTMLTableCellElement.height",
+      "api.HTMLTableCellElement.noWrap",
+      "api.HTMLTableCellElement.vAlign",
+      "api.HTMLTableCellElement.width",
+      "api.HTMLTableColElement.align",
+      "api.HTMLTableColElement.ch",
+      "api.HTMLTableColElement.chOff",
+      "api.HTMLTableColElement.vAlign",
+      "api.HTMLTableColElement.width",
+      "api.HTMLTableElement.align",
+      "api.HTMLTableElement.bgColor",
+      "api.HTMLTableElement.border",
+      "api.HTMLTableElement.cellPadding",
+      "api.HTMLTableElement.cellSpacing",
+      "api.HTMLTableElement.frame",
+      "api.HTMLTableElement.rules",
+      "api.HTMLTableElement.summary",
+      "api.HTMLTableElement.width",
+      "api.HTMLTableRowElement.align",
+      "api.HTMLTableRowElement.bgColor",
+      "api.HTMLTableRowElement.ch",
+      "api.HTMLTableRowElement.chOff",
+      "api.HTMLTableRowElement.vAlign",
+      "api.HTMLTableSectionElement.align",
+      "api.HTMLTableSectionElement.ch",
+      "api.HTMLTableSectionElement.chOff",
+      "api.HTMLTableSectionElement.vAlign",
+      "html.elements.caption.align",
+      "html.elements.col.align",
+      "html.elements.col.char",
+      "html.elements.col.charoff",
+      "html.elements.col.valign",
+      "html.elements.col.width",
+      "html.elements.colgroup.align",
+      "html.elements.colgroup.char",
+      "html.elements.colgroup.charoff",
+      "html.elements.colgroup.valign",
+      "html.elements.colgroup.width",
+      "html.elements.table.align",
+      "html.elements.table.bgcolor",
+      "html.elements.table.border",
+      "html.elements.table.cellpadding",
+      "html.elements.table.cellspacing",
+      "html.elements.table.frame",
+      "html.elements.table.rules",
+      "html.elements.table.summary",
+      "html.elements.table.width",
+      "html.elements.tbody.align",
+      "html.elements.tbody.bgcolor",
+      "html.elements.tbody.char",
+      "html.elements.tbody.charoff",
+      "html.elements.tbody.valign",
+      "html.elements.td.abbr",
+      "html.elements.td.align",
+      "html.elements.td.axis",
+      "html.elements.td.bgcolor",
+      "html.elements.td.char",
+      "html.elements.td.charoff",
+      "html.elements.td.scope",
+      "html.elements.td.valign",
+      "html.elements.td.width",
+      "html.elements.tfoot.align",
+      "html.elements.tfoot.bgcolor",
+      "html.elements.tfoot.char",
+      "html.elements.tfoot.charoff",
+      "html.elements.tfoot.valign",
+      "html.elements.th.align",
+      "html.elements.th.axis",
+      "html.elements.th.bgcolor",
+      "html.elements.th.char",
+      "html.elements.th.charoff",
+      "html.elements.th.valign",
+      "html.elements.th.width",
+      "html.elements.thead.align",
+      "html.elements.thead.bgcolor",
+      "html.elements.thead.char",
+      "html.elements.thead.charoff",
+      "html.elements.thead.valign",
+      "html.elements.tr.align",
+      "html.elements.tr.bgcolor",
+      "html.elements.tr.char",
+      "html.elements.tr.charoff",
+      "html.elements.tr.valign"
+    ],
+    "description": "Attributes and properties of table elements, such as align, vAlign, noWrap, bgcolor, or char set various visual presentation properties of the table and its sections and cells. These are obsolete, and some of them have no effect. Use CSS instead.",
+    "description_html": "Attributes and properties of table elements, such as <code>align</code>, <code>vAlign</code>, <code>noWrap</code>, <code>bgcolor</code>, or <code>char</code> set various visual presentation properties of the table and its sections and cells. These are obsolete, and some of them have no effect. Use CSS instead.",
+    "discouraged": {
+      "according_to": [
+        "https://html.spec.whatwg.org/multipage/obsolete.html"
+      ]
+    },
+    "group": "html-elements",
+    "name": "Table styling",
+    "spec": "https://html.spec.whatwg.org/multipage/obsolete.html",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "safari": "≤4",
+        "safari_ios": "≤3.2"
+      }
+    }
+  },
   "target": {
     "compat_features": [
       "css.selectors.target"
@@ -31623,7 +31818,9 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-text-4/#text-autospace-property",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "18.4"
+      }
     }
   },
   "text-box": {
@@ -34342,7 +34539,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "131",
-        "firefox_android": "131"
+        "firefox_android": "131",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
