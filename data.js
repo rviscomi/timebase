@@ -1240,6 +1240,10 @@ export const browsers = {
       {
         "date": "2025-03-06",
         "version": "134"
+      },
+      {
+        "date": "2025-04-04",
+        "version": "135"
       }
     ]
   },
@@ -1801,6 +1805,10 @@ export const browsers = {
       {
         "date": "2025-03-04",
         "version": "136"
+      },
+      {
+        "date": "2025-04-01",
+        "version": "137"
       }
     ]
   },
@@ -2286,6 +2294,10 @@ export const browsers = {
       {
         "date": "2025-03-04",
         "version": "136"
+      },
+      {
+        "date": "2025-04-01",
+        "version": "137"
       }
     ]
   },
@@ -2869,8 +2881,6 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "135",
-        "chrome_android": "135",
         "firefox": "118",
         "firefox_android": "118",
         "safari": "15.4",
@@ -4651,11 +4661,14 @@ export const features = {
     "name": "Atomics.pause()",
     "spec": "https://tc39.es/proposal-atomics-microwait/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-04-01",
       "support": {
         "chrome": "133",
         "chrome_android": "133",
         "edge": "133",
+        "firefox": "137",
+        "firefox_android": "137",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -7301,8 +7314,8 @@ export const features = {
         "chrome": "119",
         "chrome_android": "119",
         "edge": "119",
-        "firefox": "≤72",
-        "firefox_android": "≤79",
+        "firefox": "54",
+        "firefox_android": "54",
         "safari": "13.1",
         "safari_ios": "13.4"
       }
@@ -7506,8 +7519,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "≤72",
-        "firefox_android": "≤79",
+        "firefox": "48",
+        "firefox_android": "48",
         "safari": "15.4",
         "safari_ios": "15.4"
       }
@@ -12263,7 +12276,7 @@ export const features = {
     "description": "The EXT_texture_norm16 extension to WebGL 2.0 contexts adds 16 bit signed normalized and unsigned normalized fixed-point texture, renderbuffer, and texture buffer formats.",
     "description_html": "The <code>EXT_texture_norm16</code> extension to WebGL 2.0 contexts adds 16 bit signed normalized and unsigned normalized fixed-point texture, renderbuffer, and texture buffer formats.",
     "group": "webgl-extensions",
-    "name": "EXT_texture_norm16c WebGL extension",
+    "name": "EXT_texture_norm16 WebGL extension",
     "spec": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
     "status": {
       "baseline": false,
@@ -12613,7 +12626,8 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "135",
-        "chrome_android": "135"
+        "chrome_android": "135",
+        "edge": "135"
       }
     }
   },
@@ -13155,10 +13169,12 @@ export const features = {
     "name": "Float16Array",
     "spec": "https://tc39.es/proposal-float16array/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-04-04",
       "support": {
         "chrome": "135",
         "chrome_android": "135",
+        "edge": "135",
         "firefox": "129",
         "firefox_android": "129",
         "safari": "18.2",
@@ -14180,10 +14196,10 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "≤72",
-        "firefox_android": "≤79",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "firefox": "34",
+        "firefox_android": "34",
+        "safari": "9.1",
+        "safari_ios": "9.3"
       }
     }
   },
@@ -15911,7 +15927,9 @@ export const features = {
       "support": {
         "chrome": "109",
         "chrome_android": "109",
-        "edge": "109"
+        "edge": "109",
+        "firefox": "137",
+        "firefox_android": "137"
       }
     }
   },
@@ -16037,7 +16055,8 @@ export const features = {
     "name": "ic unit",
     "spec": "https://drafts.csswg.org/css-values-4/#ic",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-04-03",
       "baseline_low_date": "2022-10-03",
       "support": {
         "chrome": "106",
@@ -17981,7 +18000,8 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "135",
-        "chrome_android": "135"
+        "chrome_android": "135",
+        "edge": "135"
       }
     }
   },
@@ -24704,7 +24724,7 @@ export const features = {
     "description": "The print-color-adjust CSS property sets whether styles of printed pages should be adjusted to use less ink, in cases such as light text on a dark background.",
     "description_html": "The <code>print-color-adjust</code> CSS property sets whether styles of printed pages should be adjusted to use less ink, in cases such as light text on a dark background.",
     "group": "print",
-    "name": "Print color adjust",
+    "name": "print-color-adjust",
     "spec": "https://drafts.csswg.org/css-color-adjust-1/#propdef-print-color-adjust",
     "status": {
       "baseline": false,
@@ -27075,7 +27095,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "135"
+        "chrome": "135",
+        "edge": "135"
       }
     }
   },
@@ -28142,6 +28163,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "129",
         "chrome_android": "61",
         "edge": "93",
         "firefox_android": "79",
@@ -29025,11 +29047,14 @@ export const features = {
     "name": "@starting-style",
     "spec": "https://drafts.csswg.org/css-transitions-2/#defining-before-change-style",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-08-06",
       "support": {
         "chrome": "117",
         "chrome_android": "117",
         "edge": "117",
+        "firefox": "129",
+        "firefox_android": "129",
         "safari": "17.5",
         "safari_ios": "17.5"
       }
@@ -30513,23 +30538,6 @@ export const features = {
     "compat_features": [
       "api.SVGAElement.text",
       "api.SVGElement.className",
-      "api.SVGFontElement",
-      "api.SVGFontFaceElement",
-      "api.SVGFontFaceFormatElement",
-      "api.SVGFontFaceNameElement",
-      "api.SVGFontFaceSrcElement",
-      "api.SVGFontFaceUriElement",
-      "api.SVGGlyphElement",
-      "api.SVGGlyphRefElement",
-      "api.SVGGlyphRefElement.dx",
-      "api.SVGGlyphRefElement.dy",
-      "api.SVGGlyphRefElement.format",
-      "api.SVGGlyphRefElement.glyphRef",
-      "api.SVGGlyphRefElement.href",
-      "api.SVGGlyphRefElement.x",
-      "api.SVGGlyphRefElement.y",
-      "api.SVGHKernElement",
-      "api.SVGMissingGlyphElement",
       "api.SVGPathElement.createSVGPathSegArcAbs",
       "api.SVGPathElement.createSVGPathSegArcRel",
       "api.SVGPathElement.createSVGPathSegClosePath",
@@ -30563,101 +30571,15 @@ export const features = {
       "api.SVGSVGElement.useCurrentView",
       "api.SVGStyleElement.type",
       "api.SVGTextContentElement.selectSubString",
-      "api.SVGVKernElement",
       "css.at-rules.font-face.SVG_fonts",
       "svg.elements.a.xlink_actuate",
       "svg.elements.a.xlink_href",
       "svg.elements.a.xlink_show",
       "svg.elements.a.xlink_title",
-      "svg.elements.cursor",
-      "svg.elements.cursor.href",
-      "svg.elements.cursor.systemLanguage",
-      "svg.elements.cursor.x",
-      "svg.elements.cursor.xlink_href",
-      "svg.elements.cursor.y",
       "svg.elements.feImage.xlink_href",
       "svg.elements.filter.xlink_href",
-      "svg.elements.font",
-      "svg.elements.font-face",
-      "svg.elements.font-face-format",
-      "svg.elements.font-face-format.string",
-      "svg.elements.font-face-name",
-      "svg.elements.font-face-name.name",
-      "svg.elements.font-face-src",
-      "svg.elements.font-face-uri",
-      "svg.elements.font-face-uri.xlink_href",
-      "svg.elements.font-face.accent-height",
-      "svg.elements.font-face.alphabetic",
-      "svg.elements.font-face.ascent",
-      "svg.elements.font-face.bbox",
-      "svg.elements.font-face.cap-height",
-      "svg.elements.font-face.descent",
-      "svg.elements.font-face.font-family",
-      "svg.elements.font-face.font-size",
-      "svg.elements.font-face.font-stretch",
-      "svg.elements.font-face.font-style",
-      "svg.elements.font-face.font-variant",
-      "svg.elements.font-face.font-weight",
-      "svg.elements.font-face.hanging",
-      "svg.elements.font-face.ideographic",
-      "svg.elements.font-face.mathematical",
-      "svg.elements.font-face.overline-position",
-      "svg.elements.font-face.overline-thickness",
-      "svg.elements.font-face.panose-1",
-      "svg.elements.font-face.slope",
-      "svg.elements.font-face.stemh",
-      "svg.elements.font-face.stemv",
-      "svg.elements.font-face.strikethrough-position",
-      "svg.elements.font-face.strikethrough-thickness",
-      "svg.elements.font-face.underline-position",
-      "svg.elements.font-face.underline-thickness",
-      "svg.elements.font-face.unicode-range",
-      "svg.elements.font-face.units-per-em",
-      "svg.elements.font-face.v-alphabetic",
-      "svg.elements.font-face.v-hanging",
-      "svg.elements.font-face.v-ideographic",
-      "svg.elements.font-face.v-mathematical",
-      "svg.elements.font-face.widths",
-      "svg.elements.font-face.x-height",
-      "svg.elements.font.horiz-adv-x",
-      "svg.elements.font.horiz-origin-x",
-      "svg.elements.font.horiz-origin-y",
-      "svg.elements.font.vert-adv-y",
-      "svg.elements.font.vert-origin-x",
-      "svg.elements.font.vert-origin-y",
-      "svg.elements.glyph",
-      "svg.elements.glyph.arabic-form",
-      "svg.elements.glyph.d",
-      "svg.elements.glyph.glyph-name",
-      "svg.elements.glyph.horiz-adv-x",
-      "svg.elements.glyph.lang",
-      "svg.elements.glyph.orientation",
-      "svg.elements.glyph.unicode",
-      "svg.elements.glyph.vert-adv-y",
-      "svg.elements.glyph.vert-origin-x",
-      "svg.elements.glyph.vert-origin-y",
-      "svg.elements.glyphRef",
-      "svg.elements.glyphRef.dx",
-      "svg.elements.glyphRef.dy",
-      "svg.elements.glyphRef.format",
-      "svg.elements.glyphRef.glyphRef",
-      "svg.elements.glyphRef.x",
-      "svg.elements.glyphRef.xlink_href",
-      "svg.elements.glyphRef.y",
-      "svg.elements.hkern",
-      "svg.elements.hkern.g1",
-      "svg.elements.hkern.g2",
-      "svg.elements.hkern.k",
-      "svg.elements.hkern.u1",
-      "svg.elements.hkern.u2",
       "svg.elements.image.xlink_href",
       "svg.elements.linearGradient.xlink_href",
-      "svg.elements.missing-glyph",
-      "svg.elements.missing-glyph.d",
-      "svg.elements.missing-glyph.horiz-adv-x",
-      "svg.elements.missing-glyph.vert-adv-y",
-      "svg.elements.missing-glyph.vert-origin-x",
-      "svg.elements.missing-glyph.vert-origin-y",
       "svg.elements.mpath.xlink_href",
       "svg.elements.pattern.xlink_href",
       "svg.elements.radialGradient.xlink_href",
@@ -30666,19 +30588,8 @@ export const features = {
       "svg.elements.svg.version",
       "svg.elements.svg.zoomAndPan",
       "svg.elements.textPath.xlink_href",
-      "svg.elements.tref",
-      "svg.elements.tref.fill",
-      "svg.elements.tref.fill.context-fill",
-      "svg.elements.tref.systemLanguage",
-      "svg.elements.tref.xlink_href",
       "svg.elements.use.xlink_href",
       "svg.elements.view.zoomAndPan",
-      "svg.elements.vkern",
-      "svg.elements.vkern.g1",
-      "svg.elements.vkern.g2",
-      "svg.elements.vkern.k",
-      "svg.elements.vkern.u1",
-      "svg.elements.vkern.u2",
       "svg.global_attributes.clip",
       "svg.global_attributes.glyph-orientation-horizontal",
       "svg.global_attributes.glyph-orientation-vertical",
@@ -33796,7 +33707,9 @@ export const features = {
       "css.selectors.active",
       "css.selectors.active.non_a_elements",
       "css.selectors.focus",
-      "css.selectors.hover"
+      "css.selectors.hover",
+      "css.selectors.hover.a_elements",
+      "css.selectors.hover.all_elements"
     ],
     "description": "The :active, :focus, and :hover CSS pseudo-classes match elements based on how users are interacting with them.",
     "description_html": "The <code>:active</code>, <code>:focus</code>, and <code>:hover</code> CSS pseudo-classes match elements based on how users are interacting with them.",
