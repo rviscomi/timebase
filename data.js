@@ -2947,7 +2947,8 @@ export const features = {
   "accent-color": {
     "compat_features": [
       "css.properties.accent-color",
-      "css.properties.accent-color.auto"
+      "css.properties.accent-color.auto",
+      "css.properties.accent-color.maintains_contrast"
     ],
     "description": "The accent-color CSS property sets a color for checkboxes, radio buttons, and other form controls.",
     "description_html": "The <code>accent-color</code> CSS property sets a color for checkboxes, radio buttons, and other form controls.",
@@ -2958,7 +2959,6 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "93",
-        "chrome_android": "93",
         "edge": "93",
         "firefox": "92",
         "firefox_android": "92"
@@ -2971,8 +2971,8 @@ export const features = {
       "api.HTMLElement.accessKeyLabel",
       "html.global_attributes.accesskey"
     ],
-    "description": "The accessKey global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
-    "description_html": "The <code>accessKey</code> global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
+    "description": "The accesskey global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
+    "description_html": "The <code>accesskey</code> global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
     "name": "accesskey",
     "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
     "status": {
@@ -5868,7 +5868,7 @@ export const features = {
     ],
     "description": "The beforeunload event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
     "description_html": "The <code>beforeunload</code> event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
-    "name": "Beforeunload",
+    "name": "beforeunload",
     "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface",
     "status": {
       "baseline": false,
@@ -12156,6 +12156,7 @@ export const features = {
       "support": {
         "chrome": "38",
         "chrome_android": "38",
+        "edge": "93",
         "firefox": "47",
         "safari": "9",
         "safari_ios": "15"
@@ -12176,6 +12177,7 @@ export const features = {
       "support": {
         "chrome": "38",
         "chrome_android": "38",
+        "edge": "93",
         "firefox": "47",
         "safari": "8",
         "safari_ios": "8"
@@ -14918,8 +14920,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "4",
+        "safari_ios": "3.2"
       }
     }
   },
@@ -16735,13 +16737,16 @@ export const features = {
     "name": "inert",
     "spec": "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2023-04-11",
       "support": {
-        "chrome": "124",
-        "chrome_android": "124",
-        "edge": "124",
-        "firefox": "120",
-        "firefox_android": "120"
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "112",
+        "firefox_android": "112",
+        "safari": "15.5",
+        "safari_ios": "15.5"
       }
     }
   },
@@ -18118,13 +18123,16 @@ export const features = {
     "name": "Iterator methods",
     "spec": "https://tc39.es/proposal-iterator-helpers/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-03-31",
       "support": {
         "chrome": "122",
         "chrome_android": "122",
         "edge": "122",
         "firefox": "131",
-        "firefox_android": "131"
+        "firefox_android": "131",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -23413,8 +23421,8 @@ export const features = {
         "chrome": "85",
         "chrome_android": "85",
         "edge": "85",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "6",
+        "safari_ios": "6"
       }
     }
   },
@@ -28361,7 +28369,10 @@ export const features = {
     "compat_features": [
       "css.types.gradient.conic-gradient.single_color_stop",
       "css.types.gradient.linear-gradient.single_color_stop",
-      "css.types.gradient.radial-gradient.single_color_stop"
+      "css.types.gradient.radial-gradient.single_color_stop",
+      "css.types.gradient.repeating-conic-gradient.single_color_stop",
+      "css.types.gradient.repeating-linear-gradient.single_color_stop",
+      "css.types.gradient.repeating-radial-gradient.single_color_stop"
     ],
     "description": "A single color stop can be provided to the linear-gradient(), radial-gradient(), and conic-gradient() CSS functions, and their repeating counterparts, to create a solid color background.",
     "description_html": "A single color stop can be provided to the <code>linear-gradient()</code>, <code>radial-gradient()</code>, and <code>conic-gradient()</code> CSS functions, and their repeating counterparts, to create a solid color background.",
@@ -28369,10 +28380,16 @@ export const features = {
     "name": "Single color stop gradients",
     "spec": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-04-04",
       "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
         "firefox": "136",
-        "firefox_android": "136"
+        "firefox_android": "136",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -34839,12 +34856,12 @@ export const features = {
       "javascript.builtins.FinalizationRegistry",
       "javascript.builtins.FinalizationRegistry.FinalizationRegistry",
       "javascript.builtins.FinalizationRegistry.register",
-      "javascript.builtins.FinalizationRegistry.symbol_as_target",
+      "javascript.builtins.FinalizationRegistry.register.symbol_as_target",
       "javascript.builtins.FinalizationRegistry.unregister",
       "javascript.builtins.WeakRef",
       "javascript.builtins.WeakRef.WeakRef",
-      "javascript.builtins.WeakRef.deref",
-      "javascript.builtins.WeakRef.symbol_as_target"
+      "javascript.builtins.WeakRef.WeakRef.symbol_as_target",
+      "javascript.builtins.WeakRef.deref"
     ],
     "description": "The WeakRef and FinalizationRegistry objects hold references to garbage-collectable objects without creating strong references that prevent their garbage collection.",
     "description_html": "The <code>WeakRef</code> and <code>FinalizationRegistry</code> objects hold references to garbage-collectable objects without creating strong references that prevent their garbage collection.",
