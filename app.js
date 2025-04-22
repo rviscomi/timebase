@@ -12,7 +12,7 @@ class TimelineApp {
         const processedFeatures = [];
         
         Object.entries(features)
-            .forEach(([name, data]) => {
+            .forEach(([id, data]) => {
                 // Get all ship dates from browsers
                 const shipDates = Object.entries(data.status?.support || {})
                     .map(([browser, version]) => {
@@ -52,7 +52,8 @@ class TimelineApp {
                 
                 // Create the base feature object
                 const baseFeature = {
-                    name: data.name || name,
+                    id,
+                    name: data.name || id,
                     description: data.description,
                     description_html: data.description_html || data.description,
                     spec: data.spec,
@@ -207,9 +208,6 @@ class TimelineApp {
         const header = document.createElement('div');
         header.className = 'feature-card-header';
         
-        // Get the feature ID once for use throughout this method
-        const featureId = this.getFeatureId(feature.name);
-        
         // Top row: baseline logo, feature name, browser support
         const topRow = document.createElement('div');
         topRow.className = 'feature-top-row';
@@ -324,7 +322,7 @@ class TimelineApp {
                 });
                 
                 // Create the widely available feature ID
-                const widelyAvailableId = `feature-${featureId}-widely-available`;
+                const widelyAvailableId = `feature-${feature.id}-widely-available`;
                 
                 // Check if the widely available date is in the past
                 const now = new Date();
@@ -527,7 +525,7 @@ class TimelineApp {
         
         // Add webstatus.dev link
         const webstatusLink = document.createElement('a');
-        webstatusLink.href = `https://webstatus.dev/features/${featureId}`;
+        webstatusLink.href = `https://webstatus.dev/features/${feature.id}`;
         webstatusLink.className = 'webstatus-link';
         webstatusLink.textContent = 'Web Status';
         webstatusLink.target = '_blank';
@@ -535,7 +533,7 @@ class TimelineApp {
         
         // Add web-platform-dx.github.io link
         const webPlatformDxLink = document.createElement('a');
-        webPlatformDxLink.href = `https://web-platform-dx.github.io/web-features-explorer/features/${featureId}/`;
+        webPlatformDxLink.href = `https://web-platform-dx.github.io/web-features-explorer/features/${feature.id}/`;
         webPlatformDxLink.className = 'web-platform-dx-link';
         webPlatformDxLink.textContent = 'Web Features Explorer';
         webPlatformDxLink.target = '_blank';
@@ -578,22 +576,9 @@ class TimelineApp {
         
         return header;
     }
-    
-    getFeatureId(featureName) {
-        // Convert feature name to kebab-case for URL
-        return featureName
-            .toLowerCase()
-            .replace(/\./g, '-')       // Convert dots to hyphens (e.g., readablestream.from → readablestream-from)
-            .replace(/[^\w\s-]/g, '')  // Remove special characters except hyphens
-            .replace(/[\s_]+/g, '-')   // Replace spaces and underscores with hyphens
-            .replace(/^-+|-+$/g, '');  // Remove leading/trailing hyphens
-    }
 
     createFeatureCard(feature) {
         const card = document.createElement('div');
-        
-        // Get the feature ID once for use throughout this method
-        const featureId = this.getFeatureId(feature.name);
         
         // First check if this is a widely-available feature - these should always have the green border
         if (feature.displayType === 'widely-available') {
@@ -618,7 +603,7 @@ class TimelineApp {
         
         // Create a unique ID that includes both the feature name and its display type
         // This ensures each instance (newly vs widely available) has a unique ID
-        const uniqueCardId = `feature-${featureId}-${feature.displayType}`;
+        const uniqueCardId = `feature-${feature.id}-${feature.displayType}`;
         
         // Add a unique ID to the feature card for deep linking
         card.id = uniqueCardId;
@@ -774,7 +759,7 @@ class TimelineApp {
                         
                         // Also store with the old ID format for backward compatibility with existing links
                         // But make sure we're not overwriting a more specific ID that already exists
-                        const oldFormatId = `feature-${this.getFeatureId(feature.name)}`;
+                        const oldFormatId = `feature-${feature.id}`;
                         
                         // For backward compatibility, store specific display type versions too
                         const specificTypeId = `${oldFormatId}-${feature.displayType}`;
