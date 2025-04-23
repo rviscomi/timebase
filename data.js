@@ -12432,9 +12432,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120"
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128"
       }
     }
   },
