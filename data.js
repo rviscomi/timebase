@@ -10652,7 +10652,8 @@ export const features = {
       "api.CaretPosition.getClientRect",
       "api.CaretPosition.offset",
       "api.CaretPosition.offsetNode",
-      "api.Document.caretPositionFromPoint"
+      "api.Document.caretPositionFromPoint",
+      "api.Document.caretPositionFromPoint.options_parameter"
     ],
     "description": "The document.caretPositionFromPoint() method finds an insertion point, represented by a DOM node and an offset within that node, for given coordinates in the viewport.",
     "description_html": "The <code>document.caretPositionFromPoint()</code> method finds an insertion point, represented by a DOM node and an offset within that node, for given coordinates in the viewport.",
@@ -10664,8 +10665,8 @@ export const features = {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "23",
-        "firefox_android": "23"
+        "firefox": "20",
+        "firefox_android": "20"
       }
     }
   },
@@ -20755,6 +20756,7 @@ export const features = {
       "api.DedicatedWorkerGlobalScope.messageerror_event",
       "api.MessagePort.messageerror_event",
       "api.ServiceWorkerContainer.messageerror_event",
+      "api.ServiceWorkerGlobalScope.messageerror_event",
       "api.Window.messageerror_event",
       "api.Worker.messageerror_event"
     ],
@@ -20770,11 +20772,11 @@ export const features = {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
       "support": {
-        "chrome": "80",
-        "chrome_android": "80",
-        "edge": "80",
-        "firefox": "65",
-        "firefox_android": "65",
+        "chrome": "60",
+        "chrome_android": "60",
+        "edge": "18",
+        "firefox": "57",
+        "firefox_android": "57",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -27848,7 +27850,6 @@ export const features = {
       "api.ServiceWorkerGlobalScope.fetch_event",
       "api.ServiceWorkerGlobalScope.install_event",
       "api.ServiceWorkerGlobalScope.message_event",
-      "api.ServiceWorkerGlobalScope.messageerror_event",
       "api.ServiceWorkerGlobalScope.registration",
       "api.ServiceWorkerGlobalScope.serviceWorker",
       "api.ServiceWorkerGlobalScope.skipWaiting",
@@ -32234,6 +32235,7 @@ export const features = {
   "text-tracks": {
     "compat_features": [
       "api.HTMLMediaElement.addTextTrack",
+      "api.HTMLMediaElement.textTracks",
       "api.HTMLTrackElement",
       "api.HTMLTrackElement.cuechange_event",
       "api.HTMLTrackElement.default",
@@ -34009,6 +34011,13 @@ export const features = {
       "api.HTMLVideoElement.videoHeight",
       "api.HTMLVideoElement.videoWidth",
       "api.HTMLVideoElement.width",
+      "api.MediaError",
+      "api.MediaError.code",
+      "api.MediaError.message",
+      "api.TimeRanges",
+      "api.TimeRanges.end",
+      "api.TimeRanges.length",
+      "api.TimeRanges.start",
       "html.elements.video",
       "html.elements.video.autoplay",
       "html.elements.video.controls",
