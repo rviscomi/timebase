@@ -538,6 +538,10 @@ export const browsers = {
       {
         "date": "2025-04-01",
         "version": "135"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "136"
       }
     ]
   },
@@ -987,6 +991,10 @@ export const browsers = {
       {
         "date": "2025-04-01",
         "version": "135"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "136"
       }
     ]
   },
@@ -1244,6 +1252,10 @@ export const browsers = {
       {
         "date": "2025-04-04",
         "version": "135"
+      },
+      {
+        "date": "2025-05-01",
+        "version": "136"
       }
     ]
   },
@@ -1809,6 +1821,10 @@ export const browsers = {
       {
         "date": "2025-04-01",
         "version": "137"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "138"
       }
     ]
   },
@@ -2298,6 +2314,10 @@ export const browsers = {
       {
         "date": "2025-04-01",
         "version": "137"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "138"
       }
     ]
   },
@@ -11969,8 +11989,13 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
         "firefox": "69",
-        "firefox_android": "79"
+        "firefox_android": "79",
+        "safari": "1.3",
+        "safari_ios": "1"
       }
     }
   },
@@ -12575,8 +12600,8 @@ export const features = {
       "html.elements.script.fetchpriority",
       "http.headers.Link.fetchpriority"
     ],
-    "description": "The fetch() priority option and the fetchPriority HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
-    "description_html": "The <code>fetch()</code> <code>priority</code> option and the <code>fetchPriority</code> HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
+    "description": "The fetch() priority option and the fetchpriority HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
+    "description_html": "The <code>fetch()</code> <code>priority</code> option and the <code>fetchpriority</code> HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
     "name": "Fetch priority",
     "spec": [
       "https://fetch.spec.whatwg.org/#request-priority",
@@ -12600,9 +12625,9 @@ export const features = {
     "compat_features": [
       "api.Request.body"
     ],
-    "description": "A fetch() request streams data to the server when a request's body property is a ReadableStream object.",
-    "description_html": "A <code>fetch()</code> request streams data to the server when a request's <code>body</code> property is a <code>ReadableStream</code> object.",
-    "name": "Fetch request streams",
+    "description": "A fetch() request uploads a stream of data to the server when a request's body property is a ReadableStream object.",
+    "description_html": "A <code>fetch()</code> request uploads a stream of data to the server when a request's <code>body</code> property is a <code>ReadableStream</code> object.",
+    "name": "Fetch upload streams",
     "spec": "https://fetch.spec.whatwg.org/#concept-body-stream",
     "status": {
       "baseline": false,
@@ -15113,7 +15138,8 @@ export const features = {
     "name": "Grid animation",
     "spec": "https://drafts.csswg.org/css-grid-2/#track-sizing",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-04-27",
       "baseline_low_date": "2022-10-27",
       "support": {
         "chrome": "107",
@@ -18050,7 +18076,9 @@ export const features = {
       "support": {
         "chrome": "134",
         "chrome_android": "134",
-        "edge": "134"
+        "edge": "134",
+        "firefox": "138",
+        "firefox_android": "138"
       }
     }
   },
@@ -20119,6 +20147,23 @@ export const features = {
         "firefox_android": "6",
         "safari": "5.1",
         "safari_ios": "5"
+      }
+    }
+  },
+  "math-sum-precise": {
+    "compat_features": [
+      "javascript.builtins.Math.sumPrecise"
+    ],
+    "description": "The Math.sumPrecise() static method returns the sum of an iterable of numbers. It avoids the precision loss of intermediate partial sums, as found using reduce() or a loop to add together an array of values.",
+    "description_html": "The <code>Math.sumPrecise()</code> static method returns the sum of an iterable of numbers. It avoids the precision loss of intermediate partial sums, as found using <code>reduce()</code> or a loop to add together an array of values.",
+    "group": "javascript",
+    "name": "Math.sumPrecise()",
+    "spec": "https://tc39.es/proposal-math-sum/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "137",
+        "firefox_android": "137"
       }
     }
   },
@@ -22265,6 +22310,52 @@ export const features = {
       }
     }
   },
+  "observable": {
+    "compat_features": [
+      "api.EventTarget.when",
+      "api.Observable",
+      "api.Observable.Observable",
+      "api.Observable.catch",
+      "api.Observable.drop",
+      "api.Observable.every",
+      "api.Observable.filter",
+      "api.Observable.finally",
+      "api.Observable.find",
+      "api.Observable.first",
+      "api.Observable.flatMap",
+      "api.Observable.forEach",
+      "api.Observable.from_static",
+      "api.Observable.inspect",
+      "api.Observable.last",
+      "api.Observable.map",
+      "api.Observable.reduce",
+      "api.Observable.some",
+      "api.Observable.subscribe",
+      "api.Observable.switchMap",
+      "api.Observable.take",
+      "api.Observable.takeUntil",
+      "api.Observable.toArray",
+      "api.Subscriber",
+      "api.Subscriber.active",
+      "api.Subscriber.addTeardown",
+      "api.Subscriber.complete",
+      "api.Subscriber.error",
+      "api.Subscriber.next",
+      "api.Subscriber.signal"
+    ],
+    "description": "The when() method on a event target returns an Observable object, which provides a declarative API for subscribing to and operating on events. It's an alternative to addEventListener() callbacks.",
+    "description_html": "The <code>when()</code> method on a event target returns an <code>Observable</code> object, which provides a declarative API for subscribing to and operating on events. It's an alternative to <code>addEventListener()</code> callbacks.",
+    "name": "Observable",
+    "spec": "https://wicg.github.io/observable/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135"
+      }
+    }
+  },
   "oes-element-index-uint": {
     "compat_features": [
       "api.OES_element_index_uint"
@@ -23702,9 +23793,7 @@ export const features = {
       "support": {
         "chrome": "114",
         "chrome_android": "114",
-        "edge": "114",
-        "safari": "18.4",
-        "safari_ios": "18.4"
+        "edge": "114"
       }
     }
   },
@@ -24309,7 +24398,6 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "37",
-        "chrome_android": "37",
         "edge": "13",
         "firefox": "50",
         "firefox_android": "50",
@@ -24739,6 +24827,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "136",
+        "chrome_android": "136",
         "firefox": "97",
         "firefox_android": "97",
         "safari": "15.4",
@@ -25576,8 +25666,12 @@ export const features = {
     "name": "RegExp.escape()",
     "spec": "https://tc39.es/proposal-regex-escaping/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-05-01",
       "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
         "firefox": "134",
         "firefox_android": "134",
         "safari": "18.2",
@@ -26304,9 +26398,6 @@ export const features = {
     }
   },
   "rhythmic-sizing": {
-    "compat_features": [
-      "css.properties.line-height-step"
-    ],
     "description": "The line-height-step CSS property creates consistent vertical rhythm by setting the spacing between body text baselines. It rounds taller lines like headings up to the next multiple of the body text spacing.",
     "description_html": "The <code>line-height-step</code> CSS property creates consistent vertical rhythm by setting the spacing between body text baselines. It rounds taller lines like headings up to the next multiple of the body text spacing.",
     "group": "text",
@@ -32653,11 +32744,11 @@ export const features = {
       "css.selectors.future",
       "css.selectors.past"
     ],
-    "description": "The :future and :past CSS pseudo-classes match upcoming or prior elements during media playback.",
-    "description_html": "The <code>:future</code> and <code>:past</code> CSS pseudo-classes match upcoming or prior elements during media playback.",
+    "description": "The :past and :future CSS pseudo-classes match prior or upcoming text track cues during media playback.",
+    "description_html": "The <code>:past</code> and <code>:future</code> CSS pseudo-classes match prior or upcoming text track cues during media playback.",
     "group": "selectors",
     "name": "Time-relative pseudo-selectors",
-    "spec": "https://drafts.csswg.org/selectors-4/#time-pseudos",
+    "spec": "https://w3c.github.io/webvtt/#the-past-and-future-pseudo-classes",
     "status": {
       "baseline": false,
       "support": {
@@ -35023,23 +35114,23 @@ export const features = {
       "api.KeyframeEffect.target",
       "api.ShadowRoot.getAnimations"
     ],
-    "description": "The animate() method of Element objects programmatically animates elements over time and can synchronize the animations of multiple elements.",
-    "description_html": "The <code>animate()</code> method of <code>Element</code> objects programmatically animates elements over time and can synchronize the animations of multiple elements.",
+    "description": "The web animation API programmatically creates, inspects, and controls element animations, to change and synchronize appearance over time.",
+    "description_html": "The web animation API programmatically creates, inspects, and controls element animations, to change and synchronize appearance over time.",
     "group": "animation",
     "name": "Web animations",
     "spec": "https://drafts.csswg.org/web-animations-1/",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2022-09-24",
-      "baseline_low_date": "2020-03-24",
+      "baseline_high_date": "2023-03-16",
+      "baseline_low_date": "2020-09-16",
       "support": {
-        "chrome": "36",
-        "chrome_android": "36",
-        "edge": "79",
-        "firefox": "48",
-        "firefox_android": "48",
-        "safari": "13.1",
-        "safari_ios": "13.4"
+        "chrome": "84",
+        "chrome_android": "84",
+        "edge": "84",
+        "firefox": "75",
+        "firefox_android": "79",
+        "safari": "14",
+        "safari_ios": "14"
       }
     }
   },
@@ -38257,7 +38348,9 @@ export const features = {
       "api.VTTCue.VTTCue",
       "api.VTTCue.getCueAsHTML",
       "api.VTTCue.text",
-      "api.VTTCue.text.all_html_character_references"
+      "api.VTTCue.text.all_html_character_references",
+      "css.selectors.cue",
+      "css.selectors.cue.selector_argument"
     ],
     "description": "WebVTT is a captions and subtitles format. WebVTT files are loaded using the <track> element, and the VTTCue API can be used to create or update cues dynamically.",
     "description_html": "WebVTT is a captions and subtitles format. WebVTT files are loaded using the <code>&#x3C;track></code> element, and the <code>VTTCue</code> API can be used to create or update cues dynamically.",
@@ -38307,9 +38400,7 @@ export const features = {
       "api.VTTCue.position",
       "api.VTTCue.size",
       "api.VTTCue.snapToLines",
-      "api.VTTCue.vertical",
-      "css.selectors.cue",
-      "css.selectors.cue.selector_argument"
+      "api.VTTCue.vertical"
     ],
     "description": "The VTTCue API updates various aspects of cues dynamically, such as alignment, size and position.",
     "description_html": "The <code>VTTCue</code> API updates various aspects of cues dynamically, such as alignment, size and position.",
