@@ -2967,8 +2967,7 @@ export const features = {
   "accent-color": {
     "compat_features": [
       "css.properties.accent-color",
-      "css.properties.accent-color.auto",
-      "css.properties.accent-color.maintains_contrast"
+      "css.properties.accent-color.auto"
     ],
     "description": "The accent-color CSS property sets a color for checkboxes, radio buttons, and other form controls.",
     "description_html": "The <code>accent-color</code> CSS property sets a color for checkboxes, radio buttons, and other form controls.",
@@ -28263,7 +28262,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "129",
+        "chrome": "128",
         "chrome_android": "61",
         "edge": "93",
         "firefox_android": "79",
@@ -31839,7 +31838,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "18.4"
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
