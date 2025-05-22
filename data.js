@@ -4904,6 +4904,7 @@ export const features = {
       "api.AudioWorkletGlobalScope",
       "api.AudioWorkletGlobalScope.currentFrame",
       "api.AudioWorkletGlobalScope.currentTime",
+      "api.AudioWorkletGlobalScope.port",
       "api.AudioWorkletGlobalScope.registerProcessor",
       "api.AudioWorkletGlobalScope.sampleRate",
       "api.AudioWorkletNode",
@@ -6335,6 +6336,7 @@ export const features = {
   "brotli": {
     "caniuse": "brotli",
     "compat_features": [
+      "http.headers.Accept-Encoding.br",
       "http.headers.Content-Encoding.br"
     ],
     "description": "Brotli is a lossless data compression algorithm. When used as a content encoding, it often provides better compression than gzip.",
@@ -6562,6 +6564,7 @@ export const features = {
       "api.CanvasRenderingContext2D.isPointInPath.path_parameter",
       "api.CanvasRenderingContext2D.isPointInStroke",
       "api.CanvasRenderingContext2D.isPointInStroke.path_parameter",
+      "api.CanvasRenderingContext2D.lang",
       "api.CanvasRenderingContext2D.letterSpacing",
       "api.CanvasRenderingContext2D.lineCap",
       "api.CanvasRenderingContext2D.lineDashOffset",
@@ -10588,7 +10591,8 @@ export const features = {
       "css.properties.display.ruby-base",
       "css.properties.display.ruby-base-container",
       "css.properties.display.ruby-text",
-      "css.properties.display.ruby-text-container"
+      "css.properties.display.ruby-text-container",
+      "css.properties.ruby-position.alternate"
     ],
     "description": "The display: ruby CSS declaration renders an element with the box layout of a <ruby> HTML element. Child elements may use equivalents to <ruby> internal elements such as display: ruby-base for <rb>.",
     "description_html": "The <code>display: ruby</code> CSS declaration renders an element with the box layout of a <code>&#x3C;ruby></code> HTML element. Child elements may use equivalents to <code>&#x3C;ruby></code> internal elements such as <code>display: ruby-base</code> for <code>&#x3C;rb></code>.",
@@ -10601,8 +10605,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "38",
-        "firefox_android": "38"
+        "firefox": "88",
+        "firefox_android": "88"
       }
     }
   },
@@ -10992,6 +10996,7 @@ export const features = {
       "api.HTMLElement.dir",
       "api.HTMLElement.hidden",
       "api.HTMLElement.innerText",
+      "api.HTMLElement.load_event",
       "api.HTMLElement.offsetHeight",
       "api.HTMLElement.offsetLeft",
       "api.HTMLElement.offsetParent",
@@ -12643,7 +12648,9 @@ export const features = {
     "compat_features": [
       "api.FetchLaterResult",
       "api.FetchLaterResult.activated",
-      "api.Window.fetchLater"
+      "api.Window.fetchLater",
+      "http.headers.Permissions-Policy.deferred-fetch",
+      "http.headers.Permissions-Policy.deferred-fetch-minimal"
     ],
     "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
     "description_html": "The <code>fetchLater()</code> method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
@@ -13045,6 +13052,7 @@ export const features = {
       "css.properties.align-content.flex_context.space-evenly",
       "css.properties.align-content.flex_context.start_end",
       "css.properties.align-content.flex_context.stretch",
+      "css.properties.align-content.normal",
       "css.properties.align-items",
       "css.properties.align-items.flex_context",
       "css.properties.align-items.flex_context.baseline",
@@ -13476,7 +13484,10 @@ export const features = {
   "font-kerning": {
     "caniuse": "font-kerning",
     "compat_features": [
-      "css.properties.font-kerning"
+      "css.properties.font-kerning",
+      "css.properties.font-kerning.auto",
+      "css.properties.font-kerning.none",
+      "css.properties.font-kerning.normal"
     ],
     "description": "The font-kerning CSS property sets whether kerning data from a font is used to adjust the space between letters.",
     "description_html": "The <code>font-kerning</code> CSS property sets whether kerning data from a font is used to adjust the space between letters.",
@@ -13655,7 +13666,8 @@ export const features = {
       "https://drafts.csswg.org/css-fonts-4/#font-palette-values"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-05-15",
       "baseline_low_date": "2022-11-15",
       "support": {
         "chrome": "101",
@@ -13779,6 +13791,7 @@ export const features = {
       "css.at-rules.font-face.font-stretch",
       "css.properties.font-stretch",
       "css.properties.font-stretch.percentage",
+      "css.properties.font.font-width_keyword_values",
       "svg.global_attributes.font-stretch"
     ],
     "description": "The font-stretch CSS property selects a font face from a font family based on width, either by a keyword such as condensed or a percentage.",
@@ -15061,6 +15074,7 @@ export const features = {
       "css.properties.gap.grid_context",
       "css.properties.gap.grid_context.calc_values",
       "css.properties.gap.grid_context.percentage_values",
+      "css.properties.gap.normal",
       "css.properties.grid",
       "css.properties.grid-area",
       "css.properties.grid-auto-columns",
@@ -15104,6 +15118,7 @@ export const features = {
       "css.properties.place-self.grid_context",
       "css.properties.row-gap",
       "css.properties.row-gap.grid_context",
+      "css.properties.row-gap.normal",
       "css.types.flex"
     ],
     "description": "CSS grid is a two-dimensional layout system, which lays content out in rows and columns.",
@@ -17012,6 +17027,10 @@ export const features = {
   "input-color": {
     "caniuse": "input-color",
     "compat_features": [
+      "api.HTMLInputElement.alpha",
+      "api.HTMLInputElement.colorSpace",
+      "html.elements.input.alpha",
+      "html.elements.input.colorspace",
       "html.elements.input.type_color"
     ],
     "description": "The <input type=\"color\"> HTML element shows a color picker from which users can choose a color value.",
@@ -18494,11 +18513,14 @@ export const features = {
     "name": "JSON import attributes",
     "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#json-module-script",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-04-29",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
+        "firefox": "138",
+        "firefox_android": "138",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -21291,6 +21313,7 @@ export const features = {
       "css.properties.column-gap.multicol_context",
       "css.properties.column-gap.multicol_context.calc_values",
       "css.properties.column-gap.multicol_context.percentage_values",
+      "css.properties.column-gap.normal",
       "css.properties.column-rule",
       "css.properties.column-rule-color",
       "css.properties.column-rule-style",
@@ -25465,7 +25488,14 @@ export const features = {
   },
   "reading-flow": {
     "compat_features": [
-      "css.properties.reading-flow"
+      "css.properties.reading-flow",
+      "css.properties.reading-flow.flex-flow",
+      "css.properties.reading-flow.flex-visual",
+      "css.properties.reading-flow.grid-columns",
+      "css.properties.reading-flow.grid-order",
+      "css.properties.reading-flow.grid-rows",
+      "css.properties.reading-flow.normal",
+      "css.properties.reading-flow.source-order"
     ],
     "description": "The reading-flow CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation.",
     "description_html": "The <code>reading-flow</code> CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation.",
@@ -26582,7 +26612,6 @@ export const features = {
   "ruby-position": {
     "compat_features": [
       "css.properties.ruby-position",
-      "css.properties.ruby-position.alternate",
       "css.properties.ruby-position.inter-character",
       "css.properties.ruby-position.over",
       "css.properties.ruby-position.under"
@@ -27737,13 +27766,18 @@ export const features = {
       "api.Serial",
       "api.Serial.getPorts",
       "api.Serial.requestPort",
+      "api.Serial.requestPort.allowedBluetoothServiceClassIds_option",
+      "api.Serial.requestPort.filters_bluetoothServiceClassId",
       "api.SerialPort",
       "api.SerialPort.close",
       "api.SerialPort.connect_event",
+      "api.SerialPort.connect_event.bluetooth_rfcomm",
       "api.SerialPort.connected",
       "api.SerialPort.disconnect_event",
+      "api.SerialPort.disconnect_event.bluetooth_rfcomm",
       "api.SerialPort.forget",
       "api.SerialPort.getInfo",
+      "api.SerialPort.getInfo.bluetoothServiceClassId",
       "api.SerialPort.getSignals",
       "api.SerialPort.open",
       "api.SerialPort.readable",
@@ -28841,10 +28875,12 @@ export const features = {
       "html.elements.script.type.speculationrules.requires",
       "html.elements.script.type.speculationrules.requires.anonymous-client-ip-when-cross-origin",
       "html.elements.script.type.speculationrules.source_optional",
+      "html.elements.script.type.speculationrules.tag",
       "html.elements.script.type.speculationrules.urls",
       "html.elements.script.type.speculationrules.where",
       "http.headers.Content-Security-Policy.script-src.inline-speculation-rules",
       "http.headers.Sec-Purpose.speculationrules",
+      "http.headers.Sec-Speculation-Tags",
       "http.headers.Speculation-Rules",
       "http.headers.Supports-Loading-Mode",
       "http.headers.Supports-Loading-Mode.credentialed-prerender",
@@ -28860,8 +28896,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "127",
-        "chrome_android": "127"
+        "chrome": "136",
+        "chrome_android": "136"
       }
     }
   },
@@ -29031,7 +29067,7 @@ export const features = {
         "firefox": "2",
         "firefox_android": "57",
         "safari": "5.1",
-        "safari_ios": "9.3"
+        "safari_ios": "5"
       }
     }
   },
@@ -31238,7 +31274,11 @@ export const features = {
       "css.properties.caption-side.top-outside",
       "css.properties.caption-side.writing-mode_relative_values",
       "css.properties.empty-cells",
+      "css.properties.empty-cells.hide",
+      "css.properties.empty-cells.show",
       "css.properties.table-layout",
+      "css.properties.table-layout.auto",
+      "css.properties.table-layout.fixed",
       "html.elements.caption",
       "html.elements.col",
       "html.elements.col.span",
@@ -31879,7 +31919,9 @@ export const features = {
   },
   "text-combine-upright": {
     "compat_features": [
-      "css.properties.text-combine-upright"
+      "css.properties.text-combine-upright",
+      "css.properties.text-combine-upright.all",
+      "css.properties.text-combine-upright.none"
     ],
     "description": "The text-combine-upright CSS property displays multiple characters in the space of a single character in vertical text. This is used in East Asian documents to display Latin-based strings such as components of a date or letters of an initialism.",
     "description_html": "The <code>text-combine-upright</code> CSS property displays multiple characters in the space of a single character in vertical text. This is used in East Asian documents to display Latin-based strings such as components of a date or letters of an initialism.",
@@ -32459,6 +32501,7 @@ export const features = {
   "text-underline-position": {
     "compat_features": [
       "css.properties.text-underline-position",
+      "css.properties.text-underline-position.auto",
       "css.properties.text-underline-position.from-font",
       "css.properties.text-underline-position.left",
       "css.properties.text-underline-position.right",
@@ -32685,7 +32728,6 @@ export const features = {
       "html.elements.textarea.readonly",
       "html.elements.textarea.required",
       "html.elements.textarea.rows",
-      "html.elements.textarea.spellcheck",
       "html.elements.textarea.wrap",
       "html.elements.textarea.wrap.hard"
     ],
@@ -34186,6 +34228,8 @@ export const features = {
     "caniuse": "view-transitions",
     "compat_features": [
       "api.Document.startViewTransition",
+      "api.Document.startViewTransition.callbackOptions_parameter",
+      "api.Document.startViewTransition.updateCallback_parameter",
       "api.PageRevealEvent",
       "api.PageRevealEvent.PageRevealEvent",
       "api.PageRevealEvent.viewTransition",
@@ -34958,6 +35002,7 @@ export const features = {
       "javascript.builtins.FinalizationRegistry.register",
       "javascript.builtins.FinalizationRegistry.register.symbol_as_target",
       "javascript.builtins.FinalizationRegistry.unregister",
+      "javascript.builtins.FinalizationRegistry.unregister.symbol_as_target",
       "javascript.builtins.WeakRef",
       "javascript.builtins.WeakRef.WeakRef",
       "javascript.builtins.WeakRef.WeakRef.symbol_as_target",
@@ -37905,6 +37950,7 @@ export const features = {
       "api.RTCStatsReport.type_outbound-rtp.remoteId",
       "api.RTCStatsReport.type_outbound-rtp.retransmittedBytesSent",
       "api.RTCStatsReport.type_outbound-rtp.retransmittedPacketsSent",
+      "api.RTCStatsReport.type_outbound-rtp.rid",
       "api.RTCStatsReport.type_outbound-rtp.scalabilityMode",
       "api.RTCStatsReport.type_outbound-rtp.ssrc",
       "api.RTCStatsReport.type_outbound-rtp.targetBitrate",
@@ -39684,6 +39730,7 @@ export const features = {
   "zstd": {
     "caniuse": "zstd",
     "compat_features": [
+      "http.headers.Accept-Encoding.zstd",
       "http.headers.Content-Encoding.zstd"
     ],
     "description": "Zstandard or zstd is fast lossless compression algorithm. When used as a content encoding, it is often faster and offers better compression than brotli.",

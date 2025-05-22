@@ -20,7 +20,7 @@
     "@browser-logos/edge": "^2.0.0",
     "@browser-logos/firefox": "^3.0.0",
     "@browser-logos/safari": "^2.0.0",
-    "web-features": "^2.35.1"
+    "web-features": "^2.35.2"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
