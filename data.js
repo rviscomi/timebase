@@ -23766,11 +23766,7 @@ export const features = {
     "spec": "https://w3c.github.io/paint-timing/",
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "60",
-        "chrome_android": "60",
-        "edge": "79"
-      }
+      "support": {}
     }
   },
   "parse-html-unsafe": {
@@ -28515,6 +28511,24 @@ export const features = {
         "firefox_android": "136",
         "safari": "18.4",
         "safari_ios": "18.4"
+      }
+    }
+  },
+  "sizes-auto": {
+    "compat_features": [
+      "html.elements.img.sizes.auto"
+    ],
+    "description": "The sizes=\"auto\" attribute for the <img> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the loading=\"lazy\" attribute.",
+    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
+    "group": "images",
+    "name": "<img sizes=\"auto\" loading=\"lazy\">",
+    "spec": "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126"
       }
     }
   },
