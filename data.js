@@ -542,6 +542,10 @@ export const browsers = {
       {
         "date": "2025-04-29",
         "version": "136"
+      },
+      {
+        "date": "2025-05-27",
+        "version": "137"
       }
     ]
   },
@@ -995,6 +999,10 @@ export const browsers = {
       {
         "date": "2025-04-29",
         "version": "136"
+      },
+      {
+        "date": "2025-05-27",
+        "version": "137"
       }
     ]
   },
@@ -1256,6 +1264,10 @@ export const browsers = {
       {
         "date": "2025-05-01",
         "version": "136"
+      },
+      {
+        "date": "2025-05-29",
+        "version": "137"
       }
     ]
   },
@@ -1825,6 +1837,10 @@ export const browsers = {
       {
         "date": "2025-04-29",
         "version": "138"
+      },
+      {
+        "date": "2025-05-27",
+        "version": "139"
       }
     ]
   },
@@ -2318,6 +2334,10 @@ export const browsers = {
       {
         "date": "2025-04-29",
         "version": "138"
+      },
+      {
+        "date": "2025-05-27",
+        "version": "139"
       }
     ]
   },
@@ -7828,6 +7848,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "137",
+        "chrome_android": "137",
+        "edge": "137",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -15456,7 +15479,9 @@ export const features = {
       "support": {
         "chrome": "102",
         "chrome_android": "102",
-        "edge": "102"
+        "edge": "102",
+        "firefox": "139",
+        "firefox_android": "139"
       }
     }
   },
@@ -25500,7 +25525,11 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-display-4/#reading-flow",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "137",
+        "chrome_android": "137",
+        "edge": "137"
+      }
     }
   },
   "referrer-policy": {
@@ -26087,11 +26116,14 @@ export const features = {
     "name": "dialog.requestClose()",
     "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-requestclose",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-05-27",
       "support": {
         "chrome": "134",
         "chrome_android": "134",
         "edge": "134",
+        "firefox": "139",
+        "firefox_android": "139",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -28890,6 +28922,7 @@ export const features = {
       "html.elements.script.type.speculationrules.requires.anonymous-client-ip-when-cross-origin",
       "html.elements.script.type.speculationrules.source_optional",
       "html.elements.script.type.speculationrules.tag",
+      "html.elements.script.type.speculationrules.target_hint",
       "html.elements.script.type.speculationrules.urls",
       "html.elements.script.type.speculationrules.where",
       "http.headers.Content-Security-Policy.script-src.inline-speculation-rules",
@@ -28910,8 +28943,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "136",
-        "chrome_android": "136"
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109"
       }
     }
   },
