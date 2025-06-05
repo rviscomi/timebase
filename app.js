@@ -20,7 +20,6 @@ class TimelineApp {
                         if (typeof version !== 'string') {
                             return null;
                         }
-                        
                         // Clean up the version number
                         const cleanVersion = version.replace('≤', '');
                         // Find the release date from browsers data
@@ -28,13 +27,12 @@ class TimelineApp {
                         if (!browserData?.releases) {
                             return null;
                         }
-                        
                         // Find the matching release
                         const release = browserData.releases.find(r => r.version === cleanVersion);
                         if (!release) {
                             return null;
                         }
-                        return release.date ? { date: new Date(release.date), browser, version: cleanVersion } : null;
+                        return release.date ? { date: parseLocalDate(release.date), browser, version: cleanVersion } : null;
                     })
                     .filter(item => item !== null);
 
@@ -994,5 +992,11 @@ class TimelineApp {
     }
 }
 
+// Helper to parse YYYY-MM-DD as a local date (not UTC)
+function parseLocalDate(dateString) {
+    const [year, month, day] = dateString.split('-').map(Number);
+    return new Date(year, month - 1, day);
+}
+
 // Initialize the app
-new TimelineApp(); 
+new TimelineApp();
