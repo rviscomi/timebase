@@ -2547,6 +2547,10 @@ export const browsers = {
       {
         "date": "2025-03-31",
         "version": "18.4"
+      },
+      {
+        "date": "2025-05-12",
+        "version": "18.5"
       }
     ]
   },
@@ -2744,6 +2748,10 @@ export const browsers = {
       {
         "date": "2025-03-31",
         "version": "18.4"
+      },
+      {
+        "date": "2025-05-12",
+        "version": "18.5"
       }
     ]
   }
@@ -24868,10 +24876,12 @@ export const features = {
     "name": "print-color-adjust",
     "spec": "https://drafts.csswg.org/css-color-adjust-1/#propdef-print-color-adjust",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-05-01",
       "support": {
         "chrome": "136",
         "chrome_android": "136",
+        "edge": "136",
         "firefox": "97",
         "firefox_android": "97",
         "safari": "15.4",
@@ -31850,7 +31860,10 @@ export const features = {
     "spec": "https://tc39.es/proposal-temporal/",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "139",
+        "firefox_android": "139"
+      }
     }
   },
   "text-align": {
@@ -34293,6 +34306,7 @@ export const features = {
       "api.Window.pagereveal_event",
       "api.Window.pageswap_event",
       "css.properties.view-transition-name",
+      "css.properties.view-transition-name.match-element",
       "css.properties.view-transition-name.none",
       "css.selectors.view-transition",
       "css.selectors.view-transition-group",
