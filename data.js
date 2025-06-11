@@ -6628,6 +6628,7 @@ export const features = {
       "api.CanvasRenderingContext2D.transform",
       "api.CanvasRenderingContext2D.translate",
       "api.CanvasRenderingContext2D.wordSpacing",
+      "api.HTMLCanvasElement.getContext.2d_context",
       "api.ImageData",
       "api.ImageData.ImageData",
       "api.ImageData.colorSpace",
@@ -7336,13 +7337,17 @@ export const features = {
     "name": "Animatable clipping paths",
     "spec": "https://drafts.fxtf.org/css-masking-1/#the-clip-path",
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
       "support": {
         "chrome": "55",
         "chrome_android": "55",
         "edge": "79",
         "firefox": "49",
-        "firefox_android": "49"
+        "firefox_android": "49",
+        "safari": "12.1",
+        "safari_ios": "12.2"
       }
     }
   },
@@ -8619,6 +8624,9 @@ export const features = {
     }
   },
   "contrast-color": {
+    "compat_features": [
+      "css.types.color.contrast-color"
+    ],
     "description": "The contrast-color() CSS function picks a color that has guaranteed contrast against a specified foreground or background color.",
     "description_html": "The <code>contrast-color()</code> CSS function picks a color that has guaranteed contrast against a specified foreground or background color.",
     "group": "color-types",
@@ -10408,6 +10416,25 @@ export const features = {
       }
     }
   },
+  "dialog-closedby": {
+    "compat_features": [
+      "api.HTMLDialogElement.closedBy",
+      "html.elements.dialog.closedby"
+    ],
+    "description": "The closedby HTML attribute for <dialog> sets which user actions close a dialog. For example, closedby=\"any\" allows the dialog to be closed by clicking outside of it.",
+    "description_html": "The <code>closedby</code> HTML attribute for <code>&#x3C;dialog></code> sets which user actions close a dialog. For example, <code>closedby=\"any\"</code> allows the dialog to be closed by clicking outside of it.",
+    "group": "html-elements",
+    "name": "<dialog closedby>",
+    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134"
+      }
+    }
+  },
   "digital-goods": {
     "compat_features": [
       "api.Window.getDigitalGoodsService"
@@ -10419,7 +10446,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome_android": "101"
+        "chrome_android": "101",
+        "edge": "134"
       }
     }
   },
@@ -20217,7 +20245,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "137",
-        "firefox_android": "137"
+        "firefox_android": "137",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -28160,7 +28190,7 @@ export const features = {
     ],
     "description": "The setTimeout() global function executes provided code after a given duration of time, and the accompanying clearTimeout() cancels the timer.",
     "description_html": "The <code>setTimeout()</code> global function executes provided code after a given duration of time, and the accompanying <code>clearTimeout()</code> cancels the timer.",
-    "name": "setTimeout",
+    "name": "setTimeout()",
     "spec": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
     "status": {
       "baseline": "high",
@@ -34347,7 +34377,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#viewport-relative-lengths"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-06-05",
       "baseline_low_date": "2022-12-05",
       "support": {
         "chrome": "108",
@@ -35984,7 +36015,9 @@ export const features = {
       "api.VideoFrame.displayHeight",
       "api.VideoFrame.displayWidth",
       "api.VideoFrame.duration",
+      "api.VideoFrame.flip",
       "api.VideoFrame.format",
+      "api.VideoFrame.rotation",
       "api.VideoFrame.timestamp",
       "api.VideoFrame.visibleRect"
     ],
