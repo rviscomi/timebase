@@ -14813,6 +14813,21 @@ export const features = {
       }
     }
   },
+  "gap-decorations": {
+    "description": "The column-rule and row-rule CSS properties display decorative lines between columns and rows of a flex, grid, or multi-column layout. The rule-break, rule-outset, and rule-paint-order properties control the appearance of these lines.",
+    "description_html": "The <code>column-rule</code> and <code>row-rule</code> CSS properties display decorative lines between columns and rows of a flex, grid, or multi-column layout. The <code>rule-break</code>, <code>rule-outset</code>, and <code>rule-paint-order</code> properties control the appearance of these lines.",
+    "group": [
+      "grid",
+      "flexbox",
+      "multi-column"
+    ],
+    "name": "Gap decorations",
+    "spec": "https://drafts.csswg.org/css-gaps-1/",
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "generators": {
     "caniuse": "es6-generators",
     "compat_features": [
@@ -30092,6 +30107,34 @@ export const features = {
       }
     }
   },
+  "summarizer": {
+    "compat_features": [
+      "api.Summarizer",
+      "api.Summarizer.availability_static",
+      "api.Summarizer.create_static",
+      "api.Summarizer.destroy",
+      "api.Summarizer.expectedContextLanguages",
+      "api.Summarizer.expectedInputLanguages",
+      "api.Summarizer.format",
+      "api.Summarizer.inputQuota",
+      "api.Summarizer.length",
+      "api.Summarizer.measureInputUsage",
+      "api.Summarizer.outputLanguage",
+      "api.Summarizer.sharedContext",
+      "api.Summarizer.summarize",
+      "api.Summarizer.summarizeStreaming",
+      "api.Summarizer.type",
+      "http.headers.Permissions-Policy.summarizer"
+    ],
+    "description": "The Summarizer API uses an on-device language model to summarize text.",
+    "description_html": "The <code>Summarizer</code> API uses an on-device language model to summarize text.",
+    "name": "Summarizer",
+    "spec": "https://webmachinelearning.github.io/writing-assistance-apis/",
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "supports": {
     "caniuse": "css-featurequeries",
     "compat_features": [
@@ -36126,6 +36169,7 @@ export const features = {
   "webgl": {
     "caniuse": "webgl",
     "compat_features": [
+      "api.HTMLCanvasElement.getContext.webgl_context",
       "api.HTMLCanvasElement.getContext.webgl_context.options_alpha_parameter",
       "api.HTMLCanvasElement.getContext.webgl_context.options_failIfMajorPerformanceCaveat_parameter",
       "api.HTMLCanvasElement.getContext.webgl_context.options_powerPreference_parameter",
@@ -36682,7 +36726,8 @@ export const features = {
     "name": "OES_draw_buffers_indexed WebGL extension",
     "spec": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-06-13",
       "baseline_low_date": "2022-12-13",
       "support": {
         "chrome": "100",
@@ -36752,6 +36797,7 @@ export const features = {
   "webgl2": {
     "caniuse": "webgl2",
     "compat_features": [
+      "api.HTMLCanvasElement.getContext.webgl2_context",
       "api.HTMLCanvasElement.getContext.webgl2_context.options_alpha_parameter",
       "api.HTMLCanvasElement.getContext.webgl2_context.options_failIfMajorPerformanceCaveat_parameter",
       "api.HTMLCanvasElement.getContext.webgl2_context.options_powerPreference_parameter",
