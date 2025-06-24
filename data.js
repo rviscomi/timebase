@@ -7202,8 +7202,8 @@ export const features = {
       "javascript.classes.private_class_methods",
       "javascript.classes.public_class_fields",
       "javascript.classes.static",
-      "javascript.classes.static_class_fields",
-      "javascript.classes.static_initialization_blocks",
+      "javascript.classes.static.class_fields",
+      "javascript.classes.static.initialization_blocks",
       "javascript.operators.class",
       "javascript.operators.new_target",
       "javascript.operators.super",
@@ -12661,7 +12661,10 @@ export const features = {
       "html.elements.img.fetchpriority",
       "html.elements.link.fetchpriority",
       "html.elements.script.fetchpriority",
-      "http.headers.Link.fetchpriority"
+      "http.headers.Link.fetchpriority",
+      "svg.elements.feImage.fetchpriority",
+      "svg.elements.image.fetchpriority",
+      "svg.elements.script.fetchpriority"
     ],
     "description": "The fetch() priority option and the fetchpriority HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
     "description_html": "The <code>fetch()</code> <code>priority</code> option and the <code>fetchpriority</code> HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
@@ -19246,16 +19249,14 @@ export const features = {
     "name": "<link rel=\"dns-prefetch\">",
     "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-dns-prefetch",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2024-06-11",
+      "baseline": false,
       "support": {
         "chrome": "46",
         "chrome_android": "46",
         "edge": "≤79",
         "firefox": "127",
         "firefox_android": "127",
-        "safari": "5",
-        "safari_ios": "4.2"
+        "safari": "5"
       }
     }
   },
@@ -20260,9 +20261,7 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "137",
-        "firefox_android": "137",
-        "safari": "18.4",
-        "safari_ios": "18.4"
+        "firefox_android": "137"
       }
     }
   },
@@ -26890,6 +26889,28 @@ export const features = {
         "safari": "7",
         "safari_ios": "7"
       }
+    }
+  },
+  "scoped-custom-element-registries": {
+    "compat_features": [
+      "api.CustomElementRegistry.CustomElementRegistry",
+      "api.CustomElementRegistry.initialize",
+      "api.Document.customElementRegistry",
+      "api.Element.customElementRegistry",
+      "api.HTMLTemplateElement.shadowRootCustomElementRegistry",
+      "api.ShadowRoot.customElementRegistry"
+    ],
+    "description": "The CustomElementRegistry() constructor creates a new custom element registry that's separate from the global window.customElements registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
+    "description_html": "The <code>CustomElementRegistry()</code> constructor creates a new custom element registry that's separate from the global <code>window.customElements</code> registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
+    "group": "custom-elements",
+    "name": "Scoped custom element registries",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "screen": {
