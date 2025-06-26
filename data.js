@@ -546,6 +546,10 @@ export const browsers = {
       {
         "date": "2025-05-27",
         "version": "137"
+      },
+      {
+        "date": "2025-06-24",
+        "version": "138"
       }
     ]
   },
@@ -1003,6 +1007,10 @@ export const browsers = {
       {
         "date": "2025-05-27",
         "version": "137"
+      },
+      {
+        "date": "2025-06-24",
+        "version": "138"
       }
     ]
   },
@@ -1841,6 +1849,10 @@ export const browsers = {
       {
         "date": "2025-05-27",
         "version": "139"
+      },
+      {
+        "date": "2025-06-24",
+        "version": "140"
       }
     ]
   },
@@ -2338,6 +2350,10 @@ export const browsers = {
       {
         "date": "2025-05-27",
         "version": "139"
+      },
+      {
+        "date": "2025-06-24",
+        "version": "140"
       }
     ]
   },
@@ -9677,9 +9693,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "134",
-        "chrome_android": "134",
-        "edge": "134"
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135"
       }
     }
   },
@@ -21446,8 +21462,6 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "1",
-        "firefox_android": "4",
         "safari": "1",
         "safari_ios": "1"
       }
@@ -27421,11 +27435,7 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging",
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "129",
-        "chrome_android": "129",
-        "edge": "129"
-      }
+      "support": {}
     }
   },
   "scroll-to-text-fragment": {
@@ -29630,7 +29640,10 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138"
+      }
     }
   },
   "string-at": {
@@ -30153,7 +30166,9 @@ export const features = {
     "spec": "https://webmachinelearning.github.io/writing-assistance-apis/",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "138"
+      }
     }
   },
   "supports": {
