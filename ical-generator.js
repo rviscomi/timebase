@@ -75,7 +75,7 @@ export function generateICal() {
             }
         });
 
-    // Sort features by date (newest first, then reverse for chronological order in calendar)
+    // Sort features by date in ascending order (earliest first) for chronological order in the calendar
     const sortedFeatures = processedFeatures
         .filter(feature => feature && feature.date && !isNaN(feature.date))
         .sort((a, b) => a.date - b.date);
