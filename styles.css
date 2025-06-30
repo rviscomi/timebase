@@ -847,12 +847,7 @@ body {
     .browser-support-table {
         width: 100%;
         max-width: none; /* Allow full width on mobile */
-    }
-}
-
-@media (max-width: 768px) {
-    .browser-support-table {
-        font-size: 0.875rem;
+        font-size: 0.9rem; /* Use the final font-size value */
     }
 }
 
@@ -939,11 +934,6 @@ body {
 
 /* Mobile responsive styles for download sections */
 @media (max-width: 768px) {
-    .browser-support-table {
-        width: 100%;
-        font-size: 0.9rem;
-    }
-    
     .download-header h1 {
         font-size: 2rem;
     }
