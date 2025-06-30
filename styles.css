@@ -848,4 +848,122 @@ body {
         width: 100%;
         max-width: none; /* Allow full width on mobile */
     }
+}
+
+@media (max-width: 768px) {
+    .browser-support-table {
+        font-size: 0.875rem;
+    }
+}
+
+/* Download header and footer styles */
+.download-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.download-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.download-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.download-footer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #218838 0%, #1ea085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(40, 167, 69, 0.3);
+}
+
+.download-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3), 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Adjust timeline container margin for header */
+.timeline-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+}
+
+/* Mobile responsive styles for download sections */
+@media (max-width: 768px) {
+    .download-header h1 {
+        font-size: 2rem;
+    }
+    
+    .download-header p {
+        font-size: 1rem;
+    }
+    
+    .download-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .download-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .download-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
 } 

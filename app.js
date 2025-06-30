@@ -1,5 +1,6 @@
 import { browsers, features } from './data.js';
 import { browserIcons } from './browser-icons.js';
+import { downloadICal } from './ical-generator.js';
 
 class TimelineApp {
     constructor() {
@@ -710,6 +711,18 @@ class TimelineApp {
     }
 
     init() {
+        // Add event listeners for iCal download buttons
+        const downloadTopBtn = document.getElementById('download-ical-top');
+        const downloadBottomBtn = document.getElementById('download-ical-bottom');
+        
+        if (downloadTopBtn) {
+            downloadTopBtn.addEventListener('click', downloadICal);
+        }
+        
+        if (downloadBottomBtn) {
+            downloadBottomBtn.addEventListener('click', downloadICal);
+        }
+
         const groups = this.groupFeaturesByDate();
         
         // Find the current month for scrolling
