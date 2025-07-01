@@ -6,6 +6,7 @@ class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
         this.features = this.processFeatures();
+        this.selectedFeatures = new Set(); // Track selected features
         this.init();
     }
 
@@ -512,6 +513,17 @@ class TimelineApp {
         const linksContainer = document.createElement('div');
         linksContainer.className = 'feature-links';
         
+        // Add "Add to calendar" button
+        const addToCalendarBtn = document.createElement('button');
+        addToCalendarBtn.className = 'add-to-calendar-btn';
+        addToCalendarBtn.textContent = '📅 Add to Calendar';
+        addToCalendarBtn.type = 'button';
+        addToCalendarBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card expansion toggle
+            this.toggleFeatureSelection(feature);
+        });
+        linksContainer.appendChild(addToCalendarBtn);
+        
         // Add spec link if available
         if (feature.spec) {
             const specLink = document.createElement('a');
@@ -578,6 +590,9 @@ class TimelineApp {
 
     createFeatureCard(feature) {
         const card = document.createElement('div');
+        
+        // Store feature data on the card for selection functionality
+        card.featureData = feature;
         
         // First check if this is a widely-available feature - these should always have the green border
         if (feature.displayType === 'widely-available') {
@@ -716,11 +731,15 @@ class TimelineApp {
         const downloadBottomBtn = document.getElementById('download-ical-bottom');
         
         if (downloadTopBtn) {
-            downloadTopBtn.addEventListener('click', downloadICal);
+            downloadTopBtn.addEventListener('click', () => {
+                downloadICal(this.getSelectedFeatures());
+            });
         }
         
         if (downloadBottomBtn) {
-            downloadBottomBtn.addEventListener('click', downloadICal);
+            downloadBottomBtn.addEventListener('click', () => {
+                downloadICal(this.getSelectedFeatures());
+            });
         }
 
         const groups = this.groupFeaturesByDate();
@@ -1001,6 +1020,71 @@ class TimelineApp {
             } else {
                 fab.classList.add('hidden');
             }
+        });
+    }
+
+    // Add selection methods
+    toggleFeatureSelection(feature) {
+        const featureId = `${feature.id}-${feature.displayType}`;
+        if (this.selectedFeatures.has(featureId)) {
+            this.selectedFeatures.delete(featureId);
+        } else {
+            this.selectedFeatures.add(featureId);
+        }
+        this.updateSelectionUI();
+    }
+
+    isFeatureSelected(feature) {
+        const featureId = `${feature.id}-${feature.displayType}`;
+        return this.selectedFeatures.has(featureId);
+    }
+
+    updateSelectionUI() {
+        // Update all feature cards to show selection state
+        document.querySelectorAll('.feature-card').forEach(card => {
+            const feature = card.featureData;
+            if (feature) {
+                if (this.isFeatureSelected(feature)) {
+                    card.classList.add('selected');
+                } else {
+                    card.classList.remove('selected');
+                }
+            }
+        });
+
+        // Update download button text to show selection count
+        const selectedCount = this.selectedFeatures.size;
+        const downloadButtons = document.querySelectorAll('.download-btn');
+        downloadButtons.forEach(btn => {
+            if (selectedCount === 0) {
+                btn.innerHTML = '📅 Download iCal Calendar';
+            } else {
+                btn.innerHTML = `📅 Download iCal Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
+            }
+        });
+
+        // Update "Add to Calendar" button text based on selection state
+        document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
+            const card = btn.closest('.feature-card');
+            if (card && card.featureData) {
+                const feature = card.featureData;
+                if (this.isFeatureSelected(feature)) {
+                    btn.innerHTML = '✅ Remove from Calendar';
+                } else {
+                    btn.innerHTML = '📅 Add to Calendar';
+                }
+            }
+        });
+    }
+
+    getSelectedFeatures() {
+        if (this.selectedFeatures.size === 0) {
+            return this.features; // Return all features if none selected
+        }
+        
+        return this.features.filter(feature => {
+            const featureId = `${feature.id}-${feature.displayType}`;
+            return this.selectedFeatures.has(featureId);
         });
     }
 }

@@ -1276,6 +1276,10 @@ export const browsers = {
       {
         "date": "2025-05-29",
         "version": "137"
+      },
+      {
+        "date": "2025-06-26",
+        "version": "138"
       }
     ]
   },
@@ -6055,11 +6059,7 @@ export const features = {
     "spec": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes",
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "105",
-        "chrome_android": "105",
-        "edge": "105"
-      }
+      "support": {}
     }
   },
   "blockquote": {
@@ -19155,10 +19155,7 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-overflow-4/#line-clamp",
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "18.2",
-        "safari_ios": "18.2"
-      }
+      "support": {}
     }
   },
   "line-height": {
@@ -29642,7 +29639,8 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "138",
-        "chrome_android": "138"
+        "chrome_android": "138",
+        "edge": "138"
       }
     }
   },

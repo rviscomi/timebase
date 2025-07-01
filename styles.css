@@ -303,9 +303,11 @@ body {
 .feature-links {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #edf2f7;
+    border-top: 1px solid #e2e8f0;
 }
 
 /* Feature links styling */
@@ -961,4 +963,96 @@ body {
         padding: 0.5rem 1rem;
         font-size: 0.85rem;
     }
+}
+
+/* Selection functionality styles */
+.feature-card.selected {
+    border: 2px solid #4299e1;
+    box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.2);
+    position: relative;
+}
+
+.feature-card.selected::before {
+    content: '✓';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #4299e1;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.feature-card.selected:hover {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.3);
+}
+
+/* Add to calendar button styles */
+.add-to-calendar-btn {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(66, 153, 225, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.add-to-calendar-btn:hover {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
+}
+
+.add-to-calendar-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(66, 153, 225, 0.3);
+}
+
+.add-to-calendar-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3), 0 2px 8px rgba(66, 153, 225, 0.3);
+}
+
+/* Mobile responsive styles for selection */
+@media (max-width: 768px) {
+    .feature-card.selected::before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        top: -6px;
+        right: -6px;
+    }
+    
+    .add-to-calendar-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        margin-right: 0.5rem;
+    }
+    
+    .feature-links {
+        gap: 0.5rem;
+    }
+}
+
+/* Selection count styling */
+.selection-count {
+    font-size: 0.9em;
+    opacity: 0.9;
+    font-weight: 500;
 }
