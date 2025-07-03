@@ -3383,8 +3383,8 @@ export const features = {
       "api.CSSPositionTryRule.name",
       "api.CSSPositionTryRule.style",
       "api.HTMLButtonElement.popoverTargetElement.implicit_anchor_reference",
-      "api.HTMLElement.showPopover.source.implicit_anchor_reference",
-      "api.HTMLElement.togglePopover.source.implicit_anchor_reference",
+      "api.HTMLElement.showPopover.options_source_parameter.implicit_anchor_reference",
+      "api.HTMLElement.togglePopover.options_source_parameter.implicit_anchor_reference",
       "api.HTMLInputElement.popoverTargetElement.implicit_anchor_reference",
       "css.at-rules.position-try",
       "css.properties.align-items.anchor-center",
@@ -6049,8 +6049,7 @@ export const features = {
       "api.HTMLStyleElement.blocking",
       "html.elements.link.blocking",
       "html.elements.script.blocking",
-      "html.elements.style.blocking",
-      "http.headers.Link.blocking"
+      "html.elements.style.blocking"
     ],
     "description": "The blocking=\"render\" attribute for <link>, <script>, and <style> elements blocks rendering until the external script or stylesheet has been loaded. For <link rel=\"expect\">, rendering is blocked until a specific element is in the DOM.",
     "description_html": "The <code>blocking=\"render\"</code> attribute for <code>&#x3C;link></code>, <code>&#x3C;script></code>, and <code>&#x3C;style></code> elements blocks rendering until the external script or stylesheet has been loaded. For <code>&#x3C;link rel=\"expect\"></code>, rendering is blocked until a specific element is in the DOM.",
@@ -6059,7 +6058,13 @@ export const features = {
     "spec": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
     }
   },
   "blockquote": {
@@ -24520,10 +24525,10 @@ export const features = {
       "api.HTMLElement.hidePopover",
       "api.HTMLElement.popover",
       "api.HTMLElement.showPopover",
-      "api.HTMLElement.showPopover.source",
+      "api.HTMLElement.showPopover.options_source_parameter",
       "api.HTMLElement.togglePopover",
+      "api.HTMLElement.togglePopover.options_source_parameter",
       "api.HTMLElement.togglePopover.returns_boolean",
-      "api.HTMLElement.togglePopover.source",
       "api.HTMLElement.toggle_event.popover_elements",
       "api.HTMLInputElement.popoverTargetAction",
       "api.HTMLInputElement.popoverTargetElement",
@@ -26037,19 +26042,6 @@ export const features = {
   },
   "reporting": {
     "compat_features": [
-      "api.CSPViolationReportBody",
-      "api.CSPViolationReportBody.blockedURL",
-      "api.CSPViolationReportBody.columnNumber",
-      "api.CSPViolationReportBody.disposition",
-      "api.CSPViolationReportBody.documentURL",
-      "api.CSPViolationReportBody.effectiveDirective",
-      "api.CSPViolationReportBody.lineNumber",
-      "api.CSPViolationReportBody.originalPolicy",
-      "api.CSPViolationReportBody.referrer",
-      "api.CSPViolationReportBody.sample",
-      "api.CSPViolationReportBody.sourceFile",
-      "api.CSPViolationReportBody.statusCode",
-      "api.CSPViolationReportBody.toJSON",
       "api.DeprecationReportBody",
       "api.DeprecationReportBody.anticipatedRemoval",
       "api.DeprecationReportBody.columnNumber",
@@ -26065,13 +26057,6 @@ export const features = {
       "api.InterventionReportBody.message",
       "api.InterventionReportBody.sourceFile",
       "api.InterventionReportBody.toJSON",
-      "api.Report",
-      "api.Report.body",
-      "api.Report.toJSON",
-      "api.Report.type",
-      "api.Report.url",
-      "api.ReportBody",
-      "api.ReportBody.toJSON",
       "api.ReportingObserver",
       "api.ReportingObserver.ReportingObserver",
       "api.ReportingObserver.disconnect",
@@ -28598,6 +28583,25 @@ export const features = {
         "edge": "121",
         "firefox": "122",
         "firefox_android": "122"
+      }
+    }
+  },
+  "sibling-count": {
+    "compat_features": [
+      "css.types.sibling-count",
+      "css.types.sibling-index"
+    ],
+    "description": "The sibling-count() and sibling-index() CSS functions return integers that are useful to style elements based on their positions among siblings or on the number of siblings, for example as part of a calc() expression.",
+    "description_html": "The <code>sibling-count()</code> and <code>sibling-index()</code> CSS functions return integers that are useful to style elements based on their positions among siblings or on the number of siblings, for example as part of a <code>calc()</code> expression.",
+    "group": "css",
+    "name": "sibling-count() and sibling-index()",
+    "spec": "https://drafts.csswg.org/css-values-5/#tree-counting",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138"
       }
     }
   },
@@ -37141,7 +37145,6 @@ export const features = {
       "api.GPUAdapter",
       "api.GPUAdapter.features",
       "api.GPUAdapter.info",
-      "api.GPUAdapter.isFallbackAdapter",
       "api.GPUAdapter.limits",
       "api.GPUAdapter.requestDevice",
       "api.GPUAdapter.requestDevice.lost_device_on_duplicate",
@@ -38317,7 +38320,6 @@ export const features = {
       "api.WebTransportDatagramDuplexStream.outgoingHighWaterMark",
       "api.WebTransportDatagramDuplexStream.outgoingMaxAge",
       "api.WebTransportDatagramDuplexStream.readable",
-      "api.WebTransportDatagramDuplexStream.writable",
       "api.WebTransportError",
       "api.WebTransportError.WebTransportError",
       "api.WebTransportError.source",
