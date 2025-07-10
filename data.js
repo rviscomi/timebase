@@ -10839,9 +10839,9 @@ export const features = {
       "api.Document.close",
       "api.Document.open",
       "api.Document.write",
-      "api.Document.write.accepts_TrustedHTML",
+      "api.Document.write.enforces_trusted_types",
       "api.Document.writeln",
-      "api.Document.writeln.accepts_TrustedHTML"
+      "api.Document.writeln.enforces_trusted_types"
     ],
     "description": "The document.open(), document.write(), document.writeln(), and document.close() methods write content to a document, possibly while that document is still loading.",
     "description_html": "The <code>document.open()</code>, <code>document.write()</code>, <code>document.writeln()</code>, and <code>document.close()</code> methods write content to a document, possibly while that document is still loading.",
@@ -13285,7 +13285,7 @@ export const features = {
     "description_html": "Float16Array is a typed array of 16-bit floating point numbers.",
     "group": "typed-arrays",
     "name": "Float16Array",
-    "spec": "https://tc39.es/proposal-float16array/",
+    "spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-04-04",
@@ -18188,7 +18188,7 @@ export const features = {
     "description": "The Error.isError() static method checks whether a value is an Error object.",
     "description_html": "The <code>Error.isError()</code> static method checks whether a value is an <code>Error</code> object.",
     "name": "Error.isError()",
-    "spec": "https://tc39.es/proposal-is-error/",
+    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.iserror",
     "status": {
       "baseline": false,
       "support": {
@@ -18268,7 +18268,7 @@ export const features = {
     "description_html": "The <code>Iterator</code> object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as <code>filter()</code>, <code>find()</code>, <code>map()</code>, and <code>reduce()</code>. You can also use the static method <code>Iterator.from()</code> to convert an existing iterable into an <code>Iterator</code>.",
     "group": "iterators",
     "name": "Iterator methods",
-    "spec": "https://tc39.es/proposal-iterator-helpers/",
+    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-31",
@@ -25202,7 +25202,7 @@ export const features = {
     "description_html": "The <code>Promise.try()</code> static method returns a promise that takes a callback of any kind (returns or throws, synchronously or asynchronously) and wraps its result in a <code>Promise</code>.",
     "group": "promises",
     "name": "Promise.try()",
-    "spec": "https://tc39.es/proposal-promise-try/",
+    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.try",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-01-07",
@@ -25788,7 +25788,7 @@ export const features = {
     "description": "The RegExp.escape() static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, RegExp.escape(\"[abc]\") returns \"\\\\[abc\\\\]\".",
     "description_html": "The <code>RegExp.escape()</code> static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, <code>RegExp.escape(\"[abc]\")</code> returns <code>\"\\\\[abc\\\\]\"</code>.",
     "name": "RegExp.escape()",
-    "spec": "https://tc39.es/proposal-regex-escaping/",
+    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-05-01",
@@ -28168,7 +28168,7 @@ export const features = {
     "description_html": "The <code>difference()</code>, <code>intersection()</code>, <code>isDisjointFrom()</code>, <code>isSubsetOf()</code>, <code>isSupersetOf()</code>, <code>symmetricDifference()</code>, and <code>union()</code> methods of the JavaScript <code>Set</code> object performs operations between two sets.",
     "group": "sets",
     "name": "Set methods",
-    "spec": "https://tc39.es/proposal-set-methods/",
+    "spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-06-11",
@@ -33448,12 +33448,12 @@ export const features = {
   "trusted-types": {
     "caniuse": "trusted-types",
     "compat_features": [
-      "api.Element.innerHTML.accepts_TrustedHTML",
+      "api.Element.innerHTML.enforces_trusted_types",
       "api.HTMLElement.innerText.scripts_accept_TrustedScript",
       "api.HTMLScriptElement.src.accepts_TrustedScriptURL",
       "api.HTMLScriptElement.text.accepts_TrustedScript",
       "api.Node.textContent.scripts_accept_TrustedScript",
-      "api.ShadowRoot.innerHTML.accepts_TrustedHTML",
+      "api.ShadowRoot.innerHTML.enforces_trusted_types",
       "api.TrustedHTML",
       "api.TrustedHTML.toJSON",
       "api.TrustedHTML.toString",
@@ -34786,6 +34786,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "137",
+        "chrome_android": "137",
         "firefox": "131",
         "firefox_android": "131",
         "safari": "18.4",
@@ -34899,8 +34901,8 @@ export const features = {
         "edge": "86",
         "firefox": "78",
         "firefox_android": "79",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "13.1",
+        "safari_ios": "13.4"
       }
     }
   },
@@ -34916,16 +34918,16 @@ export const features = {
     "spec": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-mutable",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2022-09-24",
-      "baseline_low_date": "≤2020-03-24",
+      "baseline_high_date": "2022-09-24",
+      "baseline_low_date": "2020-03-24",
       "support": {
         "chrome": "69",
         "chrome_android": "69",
         "edge": "79",
         "firefox": "62",
         "firefox_android": "62",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "13.1",
+        "safari_ios": "13.4"
       }
     }
   },
@@ -36065,11 +36067,15 @@ export const features = {
       "api.VideoDecoder.VideoDecoder",
       "api.VideoDecoder.close",
       "api.VideoDecoder.configure",
+      "api.VideoDecoder.configure.flip_option",
+      "api.VideoDecoder.configure.rotation_option",
       "api.VideoDecoder.decode",
       "api.VideoDecoder.decodeQueueSize",
       "api.VideoDecoder.dequeue_event",
       "api.VideoDecoder.flush",
       "api.VideoDecoder.isConfigSupported_static",
+      "api.VideoDecoder.isConfigSupported_static.flip_option",
+      "api.VideoDecoder.isConfigSupported_static.rotation_option",
       "api.VideoDecoder.reset",
       "api.VideoDecoder.state",
       "api.VideoEncoder",
@@ -36085,6 +36091,8 @@ export const features = {
       "api.VideoEncoder.state",
       "api.VideoFrame",
       "api.VideoFrame.VideoFrame",
+      "api.VideoFrame.VideoFrame.flip_option",
+      "api.VideoFrame.VideoFrame.rotation_option",
       "api.VideoFrame.allocationSize",
       "api.VideoFrame.clone",
       "api.VideoFrame.close",
