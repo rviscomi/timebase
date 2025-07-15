@@ -8610,8 +8610,8 @@ export const features = {
         "edge": "12",
         "firefox": "136",
         "firefox_android": "136",
-        "safari": "≤13.1",
-        "safari_ios": "≤13.4"
+        "safari": "5.1",
+        "safari_ios": "5"
       }
     }
   },
@@ -39685,6 +39685,7 @@ export const features = {
       "api.FormData.worker_support",
       "api.ProgressEvent",
       "api.ProgressEvent.ProgressEvent",
+      "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double",
       "api.ProgressEvent.lengthComputable",
       "api.ProgressEvent.loaded",
       "api.ProgressEvent.total",
