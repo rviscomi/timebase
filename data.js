@@ -8939,15 +8939,11 @@ export const features = {
     }
   },
   "createimagebitmap": {
-    "caniuse": "createimagebitmap",
     "compat_features": [
       "api.ImageBitmap",
       "api.ImageBitmap.close",
       "api.ImageBitmap.height",
       "api.ImageBitmap.width",
-      "api.ImageBitmapRenderingContext",
-      "api.ImageBitmapRenderingContext.canvas",
-      "api.ImageBitmapRenderingContext.transferFromImageBitmap",
       "api.createImageBitmap",
       "api.createImageBitmap.options_colorSpaceConversion_parameter",
       "api.createImageBitmap.options_imageOrientation_parameter",
@@ -8963,13 +8959,17 @@ export const features = {
     "name": "createImageBitmap",
     "spec": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap",
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2024-03-20",
+      "baseline_low_date": "2021-09-20",
       "support": {
-        "chrome": "59",
-        "chrome_android": "59",
+        "chrome": "50",
+        "chrome_android": "50",
         "edge": "79",
-        "safari": "17.2",
-        "safari_ios": "17.2"
+        "firefox": "42",
+        "firefox_android": "42",
+        "safari": "15",
+        "safari_ios": "15"
       }
     }
   },
@@ -12469,7 +12469,7 @@ export const features = {
     "compat_features": [
       "api.CredentialsContainer.get.identity_option",
       "api.CredentialsContainer.get.identity_option.context_option",
-      "api.CredentialsContainer.get.identity_option.loginHint",
+      "api.CredentialsContainer.get.identity_option.providers_option_loginHint",
       "api.IdentityCredential",
       "api.IdentityCredential.token"
     ],
@@ -15585,6 +15585,7 @@ export const features = {
       "api.HighlightRegistry.forEach",
       "api.HighlightRegistry.get",
       "api.HighlightRegistry.has",
+      "api.HighlightRegistry.highlightsFromPoint",
       "api.HighlightRegistry.keys",
       "api.HighlightRegistry.set",
       "api.HighlightRegistry.size",
@@ -16238,6 +16239,9 @@ export const features = {
     }
   },
   "if": {
+    "compat_features": [
+      "css.types.if"
+    ],
     "description": "The if() CSS function is an inline conditional value that returns a value based on a set of conditions.",
     "description_html": "The <code>if()</code> CSS function is an inline conditional value that returns a value based on a set of conditions.",
     "group": "css",
@@ -16245,7 +16249,11 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-values-5/#if-notation",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "137",
+        "chrome_android": "137",
+        "edge": "137"
+      }
     }
   },
   "iframe": {
@@ -16518,6 +16526,33 @@ export const features = {
         "firefox_android": "89",
         "safari": "17",
         "safari_ios": "17"
+      }
+    }
+  },
+  "imagebitmaprenderingcontext": {
+    "compat_features": [
+      "api.HTMLCanvasElement.getContext.bitmaprenderer_context",
+      "api.HTMLCanvasElement.getContext.bitmaprenderer_context.options_alpha_parameter",
+      "api.ImageBitmapRenderingContext",
+      "api.ImageBitmapRenderingContext.canvas",
+      "api.ImageBitmapRenderingContext.transferFromImageBitmap"
+    ],
+    "description": "The ImageBitmapRenderingContext API is the \"bitmaprenderer\" rendering context for the <canvas> element. It is commonly used to transfer frames from an OffscreenCanvas to a user-visible <canvas> element.",
+    "description_html": "The <code>ImageBitmapRenderingContext</code> API is the <code>\"bitmaprenderer\"</code> rendering context for the <code>&#x3C;canvas></code> element. It is commonly used to transfer frames from an <code>OffscreenCanvas</code> to a user-visible <code>&#x3C;canvas></code> element.",
+    "name": "ImageBitmapRenderingContext",
+    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#the-imagebitmaprenderingcontext-interface",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "50",
+        "firefox_android": "50",
+        "safari": "11.1",
+        "safari_ios": "11.3"
       }
     }
   },
@@ -19271,7 +19306,7 @@ export const features = {
       "support": {
         "chrome": "46",
         "chrome_android": "46",
-        "edge": "≤79",
+        "edge": "79",
         "firefox": "127",
         "firefox_android": "127",
         "safari": "5"
@@ -19332,7 +19367,13 @@ export const features = {
     "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-prefetch",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "8",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "2",
+        "firefox_android": "4"
+      }
     }
   },
   "link-rel-preload": {
@@ -19357,7 +19398,7 @@ export const features = {
       "support": {
         "chrome": "50",
         "chrome_android": "50",
-        "edge": "≤79",
+        "edge": "79",
         "firefox": "85",
         "firefox_android": "85",
         "safari": "11.1",
@@ -20400,7 +20441,8 @@ export const features = {
     "name": "MathML",
     "spec": "https://w3c.github.io/mathml-core/",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-07-12",
       "baseline_low_date": "2023-01-12",
       "support": {
         "chrome": "109",
@@ -21255,7 +21297,7 @@ export const features = {
       "support": {
         "chrome": "66",
         "chrome_android": "66",
-        "edge": "≤79",
+        "edge": "79",
         "firefox": "115",
         "firefox_android": "115",
         "safari": "17",
@@ -26255,7 +26297,6 @@ export const features = {
         "chrome_android": "18",
         "edge": "79",
         "firefox": "5",
-        "firefox_android": "5",
         "safari": "4"
       }
     }
@@ -27417,7 +27458,11 @@ export const features = {
     "spec": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "129",
+        "chrome_android": "129",
+        "edge": "129"
+      }
     }
   },
   "scroll-to-text-fragment": {
@@ -28913,12 +28958,12 @@ export const features = {
     "spec": "https://tc39.es/ecma426/",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2022-07-15",
-      "baseline_low_date": "≤2020-01-15",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
       "support": {
         "chrome": "18",
         "chrome_android": "18",
-        "edge": "≤79",
+        "edge": "79",
         "firefox": "55",
         "firefox_android": "55",
         "safari": "7",
@@ -33449,10 +33494,10 @@ export const features = {
     "caniuse": "trusted-types",
     "compat_features": [
       "api.Element.innerHTML.enforces_trusted_types",
-      "api.HTMLElement.innerText.scripts_accept_TrustedScript",
-      "api.HTMLScriptElement.src.accepts_TrustedScriptURL",
-      "api.HTMLScriptElement.text.accepts_TrustedScript",
-      "api.Node.textContent.scripts_accept_TrustedScript",
+      "api.HTMLElement.innerText.enforces_trusted_types",
+      "api.HTMLScriptElement.src.enforces_trusted_types",
+      "api.HTMLScriptElement.text.enforces_trusted_types",
+      "api.Node.textContent.enforces_trusted_types",
       "api.ShadowRoot.innerHTML.enforces_trusted_types",
       "api.TrustedHTML",
       "api.TrustedHTML.toJSON",
@@ -33478,8 +33523,8 @@ export const features = {
       "api.TrustedTypePolicyFactory.isHTML",
       "api.TrustedTypePolicyFactory.isScript",
       "api.TrustedTypePolicyFactory.isScriptURL",
-      "api.setInterval.code_param_accepts_trustedScript",
-      "api.setTimeout.code_param_accepts_trustedScript",
+      "api.setInterval.code_param_enforces_trusted_types",
+      "api.setTimeout.code_param_enforces_trusted_types",
       "api.trustedTypes",
       "http.headers.Content-Security-Policy.require-trusted-types-for",
       "http.headers.Content-Security-Policy.trusted-types"
