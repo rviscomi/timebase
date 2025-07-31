@@ -1857,6 +1857,10 @@ export const browsers = {
       {
         "date": "2025-06-24",
         "version": "140"
+      },
+      {
+        "date": "2025-07-22",
+        "version": "141"
       }
     ]
   },
@@ -2358,6 +2362,10 @@ export const browsers = {
       {
         "date": "2025-06-24",
         "version": "140"
+      },
+      {
+        "date": "2025-07-22",
+        "version": "141"
       }
     ]
   },
@@ -2949,8 +2957,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "118",
-        "firefox_android": "118",
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
         "safari": "15.4",
         "safari_ios": "15.4"
       }
@@ -8736,7 +8745,7 @@ export const features = {
     "description": "The CookieStore interface is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
     "description_html": "The <code>CookieStore</code> interface is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
     "name": "Cookie store",
-    "spec": "https://wicg.github.io/cookie-store/",
+    "spec": "https://cookiestore.spec.whatwg.org/",
     "status": {
       "baseline": false,
       "support": {
@@ -10452,7 +10461,9 @@ export const features = {
       "support": {
         "chrome": "134",
         "chrome_android": "134",
-        "edge": "134"
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141"
       }
     }
   },
@@ -14232,7 +14243,9 @@ export const features = {
       "support": {
         "chrome": "131",
         "chrome_android": "131",
-        "edge": "131"
+        "edge": "131",
+        "firefox": "141",
+        "firefox_android": "141"
       }
     }
   },
@@ -23940,7 +23953,7 @@ export const features = {
     "description": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
     "description_html": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
     "name": "Partitioned cookies",
-    "spec": "https://wicg.github.io/cookie-store/",
+    "spec": "https://cookiestore.spec.whatwg.org/",
     "status": {
       "baseline": false,
       "support": {
@@ -26829,6 +26842,32 @@ export const features = {
         "safari": "≤4",
         "safari_ios": "≤3.2"
       }
+    }
+  },
+  "sanitizer": {
+    "compat_features": [
+      "api.Document.parseHTML_static",
+      "api.Element.setHTML",
+      "api.Sanitizer",
+      "api.Sanitizer.Sanitizer",
+      "api.Sanitizer.allowAttribute",
+      "api.Sanitizer.allowElement",
+      "api.Sanitizer.get",
+      "api.Sanitizer.removeAttribute",
+      "api.Sanitizer.removeElement",
+      "api.Sanitizer.removeUnsafe",
+      "api.Sanitizer.replaceElementWithChildren",
+      "api.Sanitizer.setComments",
+      "api.Sanitizer.setDataAttributes",
+      "api.ShadowRoot.setHTML"
+    ],
+    "description": "The parseHTML() method for the Document interface and the setHTML() methods for the Element and ShadowRoot interfaces parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The Sanitizer API can customize the sanitization process.",
+    "description_html": "The <code>parseHTML()</code> method for the <code>Document</code> interface and the <code>setHTML()</code> methods for the <code>Element</code> and <code>ShadowRoot</code> interfaces parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The <code>Sanitizer</code> API can customize the sanitization process.",
+    "name": "Sanitizer API",
+    "spec": "https://wicg.github.io/sanitizer-api/",
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "savedata": {
@@ -38083,13 +38122,16 @@ export const features = {
       "api.RTCStatsReport.type_inbound-rtp.codecId",
       "api.RTCStatsReport.type_inbound-rtp.concealedSamples",
       "api.RTCStatsReport.type_inbound-rtp.concealmentEvents",
+      "api.RTCStatsReport.type_inbound-rtp.estimatedPlayoutTimestamp",
       "api.RTCStatsReport.type_inbound-rtp.fecPacketsDiscarded",
       "api.RTCStatsReport.type_inbound-rtp.fecPacketsReceived",
       "api.RTCStatsReport.type_inbound-rtp.frameHeight",
       "api.RTCStatsReport.type_inbound-rtp.frameWidth",
+      "api.RTCStatsReport.type_inbound-rtp.framesAssembledFromMultiplePackets",
       "api.RTCStatsReport.type_inbound-rtp.framesDecoded",
       "api.RTCStatsReport.type_inbound-rtp.framesPerSecond",
       "api.RTCStatsReport.type_inbound-rtp.framesReceived",
+      "api.RTCStatsReport.type_inbound-rtp.freezeCount",
       "api.RTCStatsReport.type_inbound-rtp.headerBytesReceived",
       "api.RTCStatsReport.type_inbound-rtp.id",
       "api.RTCStatsReport.type_inbound-rtp.insertedSamplesForDeceleration",
@@ -38106,6 +38148,7 @@ export const features = {
       "api.RTCStatsReport.type_inbound-rtp.packetsDiscarded",
       "api.RTCStatsReport.type_inbound-rtp.packetsLost",
       "api.RTCStatsReport.type_inbound-rtp.packetsReceived",
+      "api.RTCStatsReport.type_inbound-rtp.pauseCount",
       "api.RTCStatsReport.type_inbound-rtp.playoutId",
       "api.RTCStatsReport.type_inbound-rtp.qpSum",
       "api.RTCStatsReport.type_inbound-rtp.remoteId",
@@ -38113,9 +38156,12 @@ export const features = {
       "api.RTCStatsReport.type_inbound-rtp.silentConcealedSamples",
       "api.RTCStatsReport.type_inbound-rtp.ssrc",
       "api.RTCStatsReport.type_inbound-rtp.timestamp",
+      "api.RTCStatsReport.type_inbound-rtp.totalAssemblyTime",
       "api.RTCStatsReport.type_inbound-rtp.totalAudioEnergy",
       "api.RTCStatsReport.type_inbound-rtp.totalDecodeTime",
+      "api.RTCStatsReport.type_inbound-rtp.totalFreezesDuration",
       "api.RTCStatsReport.type_inbound-rtp.totalInterFrameDelay",
+      "api.RTCStatsReport.type_inbound-rtp.totalPausesDuration",
       "api.RTCStatsReport.type_inbound-rtp.totalProcessingDelay",
       "api.RTCStatsReport.type_inbound-rtp.totalSamplesDuration",
       "api.RTCStatsReport.type_inbound-rtp.totalSamplesReceived",
