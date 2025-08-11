@@ -550,6 +550,10 @@ export const browsers = {
       {
         "date": "2025-06-24",
         "version": "138"
+      },
+      {
+        "date": "2025-08-05",
+        "version": "139"
       }
     ]
   },
@@ -1011,6 +1015,10 @@ export const browsers = {
       {
         "date": "2025-06-24",
         "version": "138"
+      },
+      {
+        "date": "2025-08-05",
+        "version": "139"
       }
     ]
   },
@@ -2955,11 +2963,14 @@ export const features = {
     "name": "abs() and sign()",
     "spec": "https://drafts.csswg.org/css-values-4/#sign-funcs",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-06-26",
       "support": {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
+        "firefox": "118",
+        "firefox_android": "118",
         "safari": "15.4",
         "safari_ios": "15.4"
       }
@@ -7708,8 +7719,7 @@ export const features = {
       "css.properties.color-scheme.dark",
       "css.properties.color-scheme.light",
       "css.properties.color-scheme.normal",
-      "css.properties.color-scheme.only_dark",
-      "css.properties.color-scheme.only_light",
+      "css.properties.color-scheme.only",
       "html.elements.meta.name.color-scheme"
     ],
     "description": "The color-scheme CSS property sets which color schemes (light or dark) an element uses and may prevent automatic dark mode adjustments by the browser.",
@@ -13155,6 +13165,7 @@ export const features = {
       "css.properties.align-items.flex_context.safe_unsafe",
       "css.properties.align-items.flex_context.start_end",
       "css.properties.align-self",
+      "css.properties.align-self.auto",
       "css.properties.align-self.flex_context",
       "css.properties.align-self.flex_context.baseline",
       "css.properties.align-self.flex_context.first_baseline",
@@ -13162,6 +13173,8 @@ export const features = {
       "css.properties.align-self.flex_context.safe_unsafe",
       "css.properties.align-self.flex_context.start_end",
       "css.properties.align-self.flex_context.stretch",
+      "css.properties.align-self.normal",
+      "css.properties.align-self.stretch",
       "css.properties.display.flex",
       "css.properties.display.inline-flex",
       "css.properties.flex",
@@ -13192,8 +13205,14 @@ export const features = {
       "css.properties.justify-content.flex_context.space-evenly",
       "css.properties.justify-content.flex_context.start_end",
       "css.properties.justify-content.flex_context.stretch",
+      "css.properties.justify-content.left",
+      "css.properties.justify-content.normal",
+      "css.properties.justify-content.right",
       "css.properties.justify-items",
       "css.properties.justify-items.flex_context",
+      "css.properties.justify-items.left",
+      "css.properties.justify-items.legacy",
+      "css.properties.justify-items.right",
       "css.properties.order",
       "css.properties.place-content",
       "css.properties.place-content.flex_context",
@@ -15223,7 +15242,12 @@ export const features = {
       "css.properties.justify-content.grid_context",
       "css.properties.justify-items.grid_context",
       "css.properties.justify-self",
+      "css.properties.justify-self.auto",
       "css.properties.justify-self.grid_context",
+      "css.properties.justify-self.left",
+      "css.properties.justify-self.normal",
+      "css.properties.justify-self.right",
+      "css.properties.justify-self.stretch",
       "css.properties.place-content.grid_context",
       "css.properties.place-items.grid_context",
       "css.properties.place-self.grid_context",
@@ -23928,16 +23952,13 @@ export const features = {
     "name": "Unsanitized HTML parsing methods",
     "spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2024-07-09",
+      "baseline": false,
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
         "firefox": "128",
-        "firefox_android": "128",
-        "safari": "17.4",
-        "safari_ios": "17.4"
+        "firefox_android": "128"
       }
     }
   },
@@ -29169,7 +29190,9 @@ export const features = {
     "spec": "https://webaudio.github.io/web-speech-api/#speechreco-section",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "139"
+      }
     }
   },
   "speech-recognition-grammar": {
