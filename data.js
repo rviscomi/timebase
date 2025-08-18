@@ -1288,6 +1288,10 @@ export const browsers = {
       {
         "date": "2025-06-26",
         "version": "138"
+      },
+      {
+        "date": "2025-08-07",
+        "version": "139"
       }
     ]
   },
@@ -8446,7 +8450,8 @@ export const features = {
     "name": "Container queries",
     "spec": "https://drafts.csswg.org/css-conditional-5/#container-queries",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-08-14",
       "baseline_low_date": "2023-02-14",
       "support": {
         "chrome": "105",
@@ -8958,6 +8963,7 @@ export const features = {
     }
   },
   "createimagebitmap": {
+    "caniuse": "createimagebitmap",
     "compat_features": [
       "api.ImageBitmap",
       "api.ImageBitmap.close",
@@ -8978,17 +8984,16 @@ export const features = {
     "name": "createImageBitmap",
     "spec": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap",
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2024-03-20",
-      "baseline_low_date": "2021-09-20",
+      "baseline": "low",
+      "baseline_low_date": "2023-12-11",
       "support": {
-        "chrome": "50",
-        "chrome_android": "50",
+        "chrome": "59",
+        "chrome_android": "59",
         "edge": "79",
-        "firefox": "42",
-        "firefox_android": "42",
-        "safari": "15",
-        "safari_ios": "15"
+        "firefox": "98",
+        "firefox_android": "98",
+        "safari": "17.2",
+        "safari_ios": "17.2"
       }
     }
   },
@@ -25082,11 +25087,7 @@ export const features = {
     "spec": "https://wicg.github.io/private-network-access/",
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "124",
-        "chrome_android": "124",
-        "edge": "124"
-      }
+      "support": {}
     }
   },
   "profiler": {
@@ -26155,7 +26156,9 @@ export const features = {
       "support": {
         "chrome": "96",
         "chrome_android": "96",
-        "edge": "96"
+        "edge": "96",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     }
   },
@@ -27386,6 +27389,7 @@ export const features = {
     "caniuse": "scrollintoview",
     "compat_features": [
       "api.Element.scrollIntoView",
+      "api.Element.scrollIntoView.options_container_parameter",
       "api.Element.scrollIntoView.options_parameter"
     ],
     "description": "The scrollIntoView() method scrolls an element's ancestor containers such that the element is visible to the user.",
@@ -27395,16 +27399,16 @@ export const features = {
     "spec": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2023-03-16",
-      "baseline_low_date": "2020-09-16",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
       "support": {
-        "chrome": "61",
-        "chrome_android": "61",
+        "chrome": "1",
+        "chrome_android": "18",
         "edge": "79",
-        "firefox": "36",
-        "firefox_android": "36",
-        "safari": "14",
-        "safari_ios": "14"
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "3",
+        "safari_ios": "1"
       }
     }
   },
@@ -29191,7 +29195,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "139"
+        "chrome": "139",
+        "edge": "139"
       }
     }
   },
