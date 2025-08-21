@@ -1873,6 +1873,10 @@ export const browsers = {
       {
         "date": "2025-07-22",
         "version": "141"
+      },
+      {
+        "date": "2025-08-19",
+        "version": "142"
       }
     ]
   },
@@ -2378,6 +2382,10 @@ export const browsers = {
       {
         "date": "2025-07-22",
         "version": "141"
+      },
+      {
+        "date": "2025-08-19",
+        "version": "142"
       }
     ]
   },
@@ -2591,6 +2599,10 @@ export const browsers = {
       {
         "date": "2025-05-12",
         "version": "18.5"
+      },
+      {
+        "date": "2025-07-29",
+        "version": "18.6"
       }
     ]
   },
@@ -2792,6 +2804,10 @@ export const browsers = {
       {
         "date": "2025-05-12",
         "version": "18.5"
+      },
+      {
+        "date": "2025-07-29",
+        "version": "18.6"
       }
     ]
   }
@@ -7903,11 +7919,14 @@ export const features = {
     "name": "Selection composed ranges",
     "spec": "https://w3c.github.io/selection-api/#dom-selection-getcomposedranges",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
       "support": {
         "chrome": "137",
         "chrome_android": "137",
         "edge": "137",
+        "firefox": "142",
+        "firefox_android": "142",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -10336,8 +10355,8 @@ export const features = {
       "api.Navigator.devicePosture",
       "css.at-rules.media.device-posture"
     ],
-    "description": "The device posture API provides information about the physical posture of a device, such as whether a foldable device is folded or unfolded.",
-    "description_html": "The device posture API provides information about the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+    "description": "The device posture API and the device-posture CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+    "description_html": "The device posture API and the <code>device-posture</code> CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
     "name": "Device posture",
     "spec": "https://w3c.github.io/device-posture/",
     "status": {
@@ -19663,6 +19682,19 @@ export const features = {
       }
     }
   },
+  "local-network-access": {
+    "compat_features": [
+      "api.Request.targetAddressSpace"
+    ],
+    "description": "The \"local-network-access\" user permission (and certain actions that imply this permission, such as a fetch() request with { targetAddressSpace: \"local\" }) allows a site to send requests to servers on a user's local network.",
+    "description_html": "The <code>\"local-network-access\"</code> user permission (and certain actions that imply this permission, such as a <code>fetch()</code> request with <code>{ targetAddressSpace: \"local\" }</code>) allows a site to send requests to servers on a user's local network.",
+    "name": "Local network access",
+    "spec": "https://wicg.github.io/local-network-access/",
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "localstorage": {
     "caniuse": "namevalue-storage",
     "compat_features": [
@@ -23003,17 +23035,22 @@ export const features = {
   },
   "open-closed": {
     "compat_features": [
-      "css.selectors.closed",
       "css.selectors.open"
     ],
-    "description": "The :open and :closed CSS pseudo-classes match elements that have open and closed states, like <details, <dialog>, or <select>, based on their state.",
-    "description_html": "The <code>:open</code> and <code>:closed</code> CSS pseudo-classes match elements that have open and closed states, like <code>&#x3C;details</code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
+    "description": "The :open CSS pseudo-class matches elements that have open states, like <details, <dialog>, or <select>, based on their state.",
+    "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details</code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
     "group": "selectors",
-    "name": "Open and closed selectors",
+    "name": ":open",
     "spec": "https://drafts.csswg.org/selectors-4/#open-state",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "136",
+        "firefox_android": "136"
+      }
     }
   },
   "optional-catch-binding": {
@@ -25078,11 +25115,19 @@ export const features = {
   },
   "private-network-access": {
     "compat_features": [
-      "api.Request.targetAddressSpace",
       "http.mixed-content.private_network_access"
     ],
     "description": "The Access-Control-Request-Private-Network: true and Access-Control-Allow-Private-Network: true HTTP request and response headers establish permission for websites to make requests to internal networks, such as to routers.",
     "description_html": "The <code>Access-Control-Request-Private-Network: true</code> and <code>Access-Control-Allow-Private-Network: true</code> HTTP request and response headers establish permission for websites to make requests to internal networks, such as to routers.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WICG/local-network-access?tab=readme-ov-file#local-network-access",
+        "https://developer.chrome.com/blog/pna-on-hold"
+      ],
+      "alternatives": [
+        "local-network-access"
+      ]
+    },
     "name": "Private network access",
     "spec": "https://wicg.github.io/private-network-access/",
     "status": {
@@ -26938,7 +26983,9 @@ export const features = {
       "support": {
         "chrome": "129",
         "chrome_android": "129",
-        "edge": "129"
+        "edge": "129",
+        "firefox": "142",
+        "firefox_android": "142"
       }
     }
   },
@@ -34134,7 +34181,9 @@ export const features = {
       "support": {
         "chrome": "95",
         "chrome_android": "95",
-        "edge": "95"
+        "edge": "95",
+        "firefox": "142",
+        "firefox_android": "142"
       }
     }
   },
