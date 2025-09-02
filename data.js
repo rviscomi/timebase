@@ -12155,6 +12155,52 @@ export const features = {
       }
     }
   },
+  "explicit-resource-management": {
+    "compat_features": [
+      "javascript.builtins.AsyncDisposableStack",
+      "javascript.builtins.AsyncDisposableStack.@@asyncDispose",
+      "javascript.builtins.AsyncDisposableStack.AsyncDisposableStack",
+      "javascript.builtins.AsyncDisposableStack.adopt",
+      "javascript.builtins.AsyncDisposableStack.defer",
+      "javascript.builtins.AsyncDisposableStack.disposeAsync",
+      "javascript.builtins.AsyncDisposableStack.disposed",
+      "javascript.builtins.AsyncDisposableStack.move",
+      "javascript.builtins.AsyncDisposableStack.use",
+      "javascript.builtins.AsyncIterator.@@asyncDispose",
+      "javascript.builtins.DisposableStack",
+      "javascript.builtins.DisposableStack.@@dispose",
+      "javascript.builtins.DisposableStack.DisposableStack",
+      "javascript.builtins.DisposableStack.adopt",
+      "javascript.builtins.DisposableStack.defer",
+      "javascript.builtins.DisposableStack.dispose",
+      "javascript.builtins.DisposableStack.disposed",
+      "javascript.builtins.DisposableStack.move",
+      "javascript.builtins.DisposableStack.use",
+      "javascript.builtins.Iterator.@@dispose",
+      "javascript.builtins.SuppressedError",
+      "javascript.builtins.SuppressedError.SuppressedError",
+      "javascript.builtins.SuppressedError.error",
+      "javascript.builtins.SuppressedError.suppressed",
+      "javascript.builtins.Symbol.asyncDispose",
+      "javascript.builtins.Symbol.dispose",
+      "javascript.statements.await_using",
+      "javascript.statements.using"
+    ],
+    "description": "The using and await using declarations and the dispose and asyncDispose symbols manage the lifecycle of resources such as file handles and streams. The DisposableStack and AsyncDisposableStack objects can group, dispose, and coordinate dependencies between multiple disposable resources.",
+    "description_html": "The <code>using</code> and <code>await using</code> declarations and the <code>dispose</code> and <code>asyncDispose</code> symbols manage the lifecycle of resources such as file handles and streams. The <code>DisposableStack</code> and <code>AsyncDisposableStack</code> objects can group, dispose, and coordinate dependencies between multiple disposable resources.",
+    "name": "Explicit resource management",
+    "spec": "https://tc39.es/proposal-async-explicit-resource-management/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141"
+      }
+    }
+  },
   "exponentiation": {
     "compat_features": [
       "javascript.operators.exponentiation",
@@ -12587,9 +12633,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "128",
-        "chrome_android": "128",
-        "edge": "128"
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126"
       }
     }
   },
@@ -13488,7 +13534,7 @@ export const features = {
     "description_html": "The <code>@font-face</code> CSS at-rule creates a custom <code>font-family</code> value. The at-rule's descriptors set the font's name, source, and various display settings.",
     "group": "fonts",
     "name": "@font-face",
-    "spec": "https://drafts.csswg.org/css-fonts-5/",
+    "spec": "https://drafts.csswg.org/css-fonts-5/#font-face-rule",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -17743,13 +17789,21 @@ export const features = {
     }
   },
   "interactivity": {
+    "compat_features": [
+      "css.properties.interactivity",
+      "css.properties.interactivity.auto",
+      "css.properties.interactivity.inert"
+    ],
     "description": "The interactivity: inert CSS declaration makes an element and its descendants inert, like when using the inert HTML attribute. Inert elements can't be focused or clicked, their text can't be selected or found using the browser's find-in-page feature.",
     "description_html": "The <code>interactivity: inert</code> CSS declaration makes an element and its descendants inert, like when using the <code>inert</code> HTML attribute. Inert elements can't be focused or clicked, their text can't be selected or found using the browser's find-in-page feature.",
     "name": "interactivity",
     "spec": "https://drafts.csswg.org/css-ui-4/#inertness",
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "135",
+        "edge": "135"
+      }
     }
   },
   "interpolate-size": {
@@ -18293,6 +18347,33 @@ export const features = {
         "edge": "134",
         "firefox": "138",
         "firefox_android": "138"
+      }
+    }
+  },
+  "is-input-pending": {
+    "compat_features": [
+      "api.Navigator.scheduling",
+      "api.Scheduling",
+      "api.Scheduling.isInputPending"
+    ],
+    "description": "The navigator.scheduling.isInputPending() method checks if there are pending input events, such as touch or mouse events. This allows you to yield from long-running scripts that might be blocking user interaction.",
+    "description_html": "The <code>navigator.scheduling.isInputPending()</code> method checks if there are pending input events, such as touch or mouse events. This allows you to yield from long-running scripts that might be blocking user interaction.",
+    "discouraged": {
+      "according_to": [
+        "https://web.dev/articles/optimize-long-tasks#isinputpending"
+      ],
+      "alternatives": [
+        "scheduler"
+      ]
+    },
+    "name": "isInputPending()",
+    "spec": "https://wicg.github.io/is-input-pending/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87"
       }
     }
   },
@@ -20549,11 +20630,9 @@ export const features = {
   },
   "media-capabilities": {
     "compat_features": [
-      "api.InputDeviceInfo.getCapabilities",
       "api.MediaCapabilities",
       "api.MediaCapabilities.decodingInfo",
       "api.MediaCapabilities.encodingInfo",
-      "api.MediaStreamTrack.getCapabilities",
       "api.Navigator.mediaCapabilities",
       "api.WorkerNavigator.mediaCapabilities"
     ],
@@ -20563,16 +20642,16 @@ export const features = {
     "spec": "https://w3c.github.io/media-capabilities/",
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2022-07-15",
-      "baseline_low_date": "2020-01-15",
+      "baseline_high_date": "2024-10-28",
+      "baseline_low_date": "2022-04-28",
       "support": {
-        "chrome": "66",
-        "chrome_android": "66",
-        "edge": "79",
+        "chrome": "101",
+        "chrome_android": "101",
+        "edge": "101",
         "firefox": "63",
         "firefox_android": "63",
-        "safari": "13",
-        "safari_ios": "13"
+        "safari": "15.4",
+        "safari_ios": "15.4"
       }
     }
   },
@@ -20580,6 +20659,7 @@ export const features = {
     "caniuse": "stream",
     "compat_features": [
       "api.InputDeviceInfo",
+      "api.InputDeviceInfo.getCapabilities",
       "api.MediaDeviceInfo",
       "api.MediaDeviceInfo.deviceId",
       "api.MediaDeviceInfo.groupId",
@@ -20625,6 +20705,7 @@ export const features = {
       "api.MediaStreamTrack.clone",
       "api.MediaStreamTrack.enabled",
       "api.MediaStreamTrack.ended_event",
+      "api.MediaStreamTrack.getCapabilities",
       "api.MediaStreamTrack.getConstraints",
       "api.MediaStreamTrack.getSettings",
       "api.MediaStreamTrack.id",
@@ -20994,13 +21075,23 @@ export const features = {
       "api.MediaRecorder.stream",
       "api.MediaRecorder.videoBitsPerSecond"
     ],
-    "description": "The MediaRecorder API captures data generated by MediaStream or HTMLMediaElement objects for analysis, processing, or saving to disk. Also known as the Media Recording API or the MediaRecorder API.",
-    "description_html": "The <code>MediaRecorder</code> API captures data generated by <code>MediaStream</code> or <code>HTMLMediaElement</code> objects for analysis, processing, or saving to disk. Also known as the Media Recording API or the MediaRecorder API.",
+    "description": "The MediaRecorder API captures data generated by MediaStream or HTMLMediaElement objects for analysis, processing, or saving to disk. Also known as the Media Recording API.",
+    "description_html": "The <code>MediaRecorder</code> API captures data generated by <code>MediaStream</code> or <code>HTMLMediaElement</code> objects for analysis, processing, or saving to disk. Also known as the Media Recording API.",
     "name": "MediaStream recording",
     "spec": "https://w3c.github.io/mediacapture-record/",
     "status": {
-      "baseline": false,
-      "support": {}
+      "baseline": "high",
+      "baseline_high_date": "2023-10-26",
+      "baseline_low_date": "2021-04-26",
+      "support": {
+        "chrome": "49",
+        "chrome_android": "49",
+        "edge": "79",
+        "firefox": "25",
+        "firefox_android": "25",
+        "safari": "14.1",
+        "safari_ios": "14"
+      }
     }
   },
   "menu": {
@@ -22034,7 +22125,7 @@ export const features = {
     "description": "Notifications via service worker registration's showNotification() method, sent from installed web applications (for example, saved to the Home Screen on Safari for iOS), show a message to the user, typically using the notification system of the host operating system.",
     "description_html": "Notifications via service worker registration's <code>showNotification()</code> method, sent from installed web applications (for example, saved to the Home Screen on Safari for iOS), show a message to the user, typically using the notification system of the host operating system.",
     "name": "Notifications from service workers and installed apps",
-    "spec": "https://notifications.spec.whatwg.org/",
+    "spec": "https://notifications.spec.whatwg.org/#service-worker-api",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -22439,6 +22530,29 @@ export const features = {
       }
     }
   },
+  "object-hasown": {
+    "compat_features": [
+      "javascript.builtins.Object.hasOwn"
+    ],
+    "description": "The Object.hasOwn() static method checks whether an object has a given property. It's a more robust alternative to the Object.prototype.hasOwnProperty() method.",
+    "description_html": "The <code>Object.hasOwn()</code> static method checks whether an object has a given property. It's a more robust alternative to the <code>Object.prototype.hasOwnProperty()</code> method.",
+    "name": "Object.hasOwn()",
+    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2024-09-14",
+      "baseline_low_date": "2022-03-14",
+      "support": {
+        "chrome": "93",
+        "chrome_android": "93",
+        "edge": "93",
+        "firefox": "92",
+        "firefox_android": "92",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    }
+  },
   "object-object": {
     "compat_features": [
       "javascript.builtins.Object",
@@ -22456,7 +22570,6 @@ export const features = {
       "javascript.builtins.Object.getOwnPropertyNames",
       "javascript.builtins.Object.getOwnPropertySymbols",
       "javascript.builtins.Object.getPrototypeOf",
-      "javascript.builtins.Object.hasOwn",
       "javascript.builtins.Object.hasOwnProperty",
       "javascript.builtins.Object.is",
       "javascript.builtins.Object.isExtensible",
@@ -23037,8 +23150,8 @@ export const features = {
     "compat_features": [
       "css.selectors.open"
     ],
-    "description": "The :open CSS pseudo-class matches elements that have open states, like <details, <dialog>, or <select>, based on their state.",
-    "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details</code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
+    "description": "The :open CSS pseudo-class matches elements that have open states, like <details>, <dialog>, or <select>, based on their state.",
+    "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details></code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
     "group": "selectors",
     "name": ":open",
     "spec": "https://drafts.csswg.org/selectors-4/#open-state",
@@ -24189,7 +24302,6 @@ export const features = {
       "api.Performance",
       "api.Performance.clearMarks",
       "api.Performance.clearMeasures",
-      "api.Performance.clearResourceTimings",
       "api.Performance.getEntries",
       "api.Performance.getEntriesByName",
       "api.Performance.getEntriesByType",
@@ -24200,8 +24312,6 @@ export const features = {
       "api.Performance.measure.measureOptions_parameter",
       "api.Performance.measure.returns_performancemeasure",
       "api.Performance.now",
-      "api.Performance.resourcetimingbufferfull_event",
-      "api.Performance.setResourceTimingBufferSize",
       "api.Performance.timeOrigin",
       "api.Performance.toJSON",
       "api.PerformanceEntry",
@@ -24232,14 +24342,13 @@ export const features = {
       "api.performance.worker_support",
       "http.headers.Timing-Allow-Origin"
     ],
-    "description": "The performance global object and the Performance API provide access to performance-related information for the current execution context.",
-    "description_html": "The <code>performance</code> global object and the <code>Performance</code> API provide access to performance-related information for the current execution context.",
+    "description": "The performance global object and the PerformanceObserver API provide access to performance-related information for the current execution context.",
+    "description_html": "The <code>performance</code> global object and the <code>PerformanceObserver</code> API provide access to performance-related information for the current execution context.",
     "group": "performance",
     "name": "Performance",
     "spec": [
       "https://w3c.github.io/hr-time/",
       "https://w3c.github.io/performance-timeline/",
-      "https://w3c.github.io/resource-timing/",
       "https://w3c.github.io/user-timing/#extensions-performance-interface"
     ],
     "status": {
@@ -25708,10 +25817,11 @@ export const features = {
       "css.properties.reading-flow.grid-order",
       "css.properties.reading-flow.grid-rows",
       "css.properties.reading-flow.normal",
-      "css.properties.reading-flow.source-order"
+      "css.properties.reading-flow.source-order",
+      "css.properties.reading-order"
     ],
-    "description": "The reading-flow CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation.",
-    "description_html": "The <code>reading-flow</code> CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation.",
+    "description": "The reading-flow CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation. The reading-order property overrides this order.",
+    "description_html": "The <code>reading-flow</code> CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation. The <code>reading-order</code> property overrides this order.",
     "group": "css",
     "name": "reading-flow",
     "spec": "https://drafts.csswg.org/css-display-4/#reading-flow",
@@ -26509,6 +26619,9 @@ export const features = {
   "resource-timing": {
     "caniuse": "resource-timing",
     "compat_features": [
+      "api.Performance.clearResourceTimings",
+      "api.Performance.resourcetimingbufferfull_event",
+      "api.Performance.setResourceTimingBufferSize",
       "api.PerformanceResourceTiming",
       "api.PerformanceResourceTiming.connectEnd",
       "api.PerformanceResourceTiming.connectStart",
@@ -26535,7 +26648,7 @@ export const features = {
     "description": "PerformanceResourceTiming entries report when network events happen while loading a resource, such as when connections start and end. You can use this information to measure loading times.",
     "description_html": "<code>PerformanceResourceTiming</code> entries report when network events happen while loading a resource, such as when connections start and end. You can use this information to measure loading times.",
     "group": "performance",
-    "name": "Resource timing (initial support)",
+    "name": "Resource timing",
     "spec": "https://w3c.github.io/resource-timing/",
     "status": {
       "baseline": "high",
@@ -29243,6 +29356,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "139",
+        "chrome_android": "139",
         "edge": "139"
       }
     }
@@ -29349,7 +29463,7 @@ export const features = {
     "description": "The spellcheck global HTML attribute sets whether the browser may check an element for spelling errors.",
     "description_html": "The <code>spellcheck</code> global HTML attribute sets whether the browser may check an element for spelling errors.",
     "name": "spellcheck",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
+    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-05-28",
@@ -29732,10 +29846,6 @@ export const features = {
       "api.ReadableStreamDefaultReader.read",
       "api.ReadableStreamDefaultReader.releaseLock",
       "api.ReadableStreamDefaultReader.releaseLock.reject_pending_read_request",
-      "api.TextDecoderStream.readable",
-      "api.TextDecoderStream.writable",
-      "api.TextEncoderStream.readable",
-      "api.TextEncoderStream.writable",
       "api.TransformStream",
       "api.TransformStream.TransformStream",
       "api.TransformStream.readable",
@@ -32429,6 +32539,8 @@ export const features = {
       "api.TextDecoderStream.encoding",
       "api.TextDecoderStream.fatal",
       "api.TextDecoderStream.ignoreBOM",
+      "api.TextDecoderStream.readable",
+      "api.TextDecoderStream.writable",
       "api.TextEncoder",
       "api.TextEncoder.TextEncoder",
       "api.TextEncoder.encode",
@@ -32437,7 +32549,9 @@ export const features = {
       "api.TextEncoder.worker_support",
       "api.TextEncoderStream",
       "api.TextEncoderStream.TextEncoderStream",
-      "api.TextEncoderStream.encoding"
+      "api.TextEncoderStream.encoding",
+      "api.TextEncoderStream.readable",
+      "api.TextEncoderStream.writable"
     ],
     "description": "The TextEncoder API transforms a stream of code points into a byte stream with UTF-8 encoding, and TextDecoder does the reverse.",
     "description_html": "The <code>TextEncoder</code> API transforms a stream of code points into a byte stream with UTF-8 encoding, and <code>TextDecoder</code> does the reverse.",
@@ -33944,9 +34058,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "124",
-        "chrome_android": "124",
-        "edge": "124"
+        "chrome": "90",
+        "chrome_android": "90",
+        "edge": "90"
       }
     }
   },
@@ -34472,6 +34586,7 @@ export const features = {
       "api.HTMLMediaElement.waiting_event",
       "api.HTMLVideoElement",
       "api.HTMLVideoElement.height",
+      "api.HTMLVideoElement.playsInline",
       "api.HTMLVideoElement.poster",
       "api.HTMLVideoElement.resize_event",
       "api.HTMLVideoElement.videoHeight",
@@ -34491,6 +34606,7 @@ export const features = {
       "html.elements.video.height",
       "html.elements.video.loop",
       "html.elements.video.muted",
+      "html.elements.video.playsinline",
       "html.elements.video.poster",
       "html.elements.video.preload",
       "html.elements.video.src",
@@ -35880,13 +35996,13 @@ export const features = {
       "baseline_high_date": "2018-01-29",
       "baseline_low_date": "2015-07-29",
       "support": {
-        "chrome": "11",
-        "chrome_android": "18",
+        "chrome": "37",
+        "chrome_android": "37",
         "edge": "12",
-        "firefox": "21",
-        "firefox_android": "21",
-        "safari": "5",
-        "safari_ios": "5"
+        "firefox": "34",
+        "firefox_android": "34",
+        "safari": "11",
+        "safari_ios": "11"
       }
     }
   },
@@ -36706,9 +36822,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "128",
         "chrome_android": "28",
-        "edge": "128",
         "safari": "7",
         "safari_ios": "7"
       }
