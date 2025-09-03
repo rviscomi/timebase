@@ -3335,8 +3335,8 @@ export const features = {
       "html.elements.iframe.allow.ambient-light-sensor",
       "http.headers.Permissions-Policy.ambient-light-sensor"
     ],
-    "description": "The AmbientLightSensor interface returns the current light level in lux of the ambient light level around the device.",
-    "description_html": "The <code>AmbientLightSensor</code> interface returns the current light level in lux of the ambient light level around the device.",
+    "description": "The AmbientLightSensor API returns the current light level in lux of the ambient light level around the device.",
+    "description_html": "The <code>AmbientLightSensor</code> API returns the current light level in lux of the ambient light level around the device.",
     "group": "sensors",
     "name": "Ambient light sensor",
     "spec": "https://w3c.github.io/ambient-light/",
@@ -5012,7 +5012,7 @@ export const features = {
     "description_html": "The <code>AudioWorklet</code> API runs module code in a separate thread, specifically for non-blocking, low latency audio processing.",
     "group": [
       "web-audio",
-      "workers"
+      "worklets"
     ],
     "name": "AudioWorklet",
     "spec": "https://webaudio.github.io/web-audio-api/#AudioWorklet",
@@ -8001,8 +8001,8 @@ export const features = {
       "api.DecompressionStream.readable",
       "api.DecompressionStream.writable"
     ],
-    "description": "The CompressionStream and DecompressionStream interfaces compress and decompress data using the gzip or deflate formats.",
-    "description_html": "The <code>CompressionStream</code> and <code>DecompressionStream</code> interfaces compress and decompress data using the gzip or deflate formats.",
+    "description": "The CompressionStream and DecompressionStream APIs compress and decompress data using the gzip or deflate formats.",
+    "description_html": "The <code>CompressionStream</code> and <code>DecompressionStream</code> APIs compress and decompress data using the gzip or deflate formats.",
     "name": "Compression streams",
     "spec": "https://compression.spec.whatwg.org/",
     "status": {
@@ -8727,6 +8727,7 @@ export const features = {
     ],
     "description": "The navigator.cookieEnabled property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
     "description_html": "The <code>navigator.cookieEnabled</code> property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
+    "group": "cookies",
     "name": "cookieEnabled",
     "spec": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
     "status": {
@@ -8776,8 +8777,9 @@ export const features = {
       "api.ServiceWorkerRegistration.cookies",
       "api.Window.cookieStore"
     ],
-    "description": "The CookieStore interface is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
-    "description_html": "The <code>CookieStore</code> interface is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
+    "description": "The CookieStore API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
+    "description_html": "The <code>CookieStore</code> API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
+    "group": "cookies",
     "name": "Cookie store",
     "spec": "https://cookiestore.spec.whatwg.org/",
     "status": {
@@ -8807,6 +8809,7 @@ export const features = {
     ],
     "description": "The Set-Cookie HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
     "description_html": "The <code>Set-Cookie</code> HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
+    "group": "cookies",
     "name": "Cookies",
     "spec": "https://httpwg.org/specs/rfc6265.html",
     "status": {
@@ -9069,6 +9072,7 @@ export const features = {
     }
   },
   "cross-document-view-transitions": {
+    "caniuse": "cross-document-view-transitions",
     "compat_features": [
       "api.CSSViewTransitionRule",
       "api.CSSViewTransitionRule.navigation",
@@ -10250,9 +10254,7 @@ export const features = {
       "support": {
         "chrome": "131",
         "chrome_android": "131",
-        "edge": "131",
-        "safari": "18.4",
-        "safari_ios": "18.4"
+        "edge": "131"
       }
     }
   },
@@ -11002,7 +11004,6 @@ export const features = {
       "api.Document.createTreeWalker.whatToShow_filter_parameters_optional",
       "api.Document.currentScript",
       "api.Document.defaultView",
-      "api.Document.designMode",
       "api.Document.dir",
       "api.Document.doctype",
       "api.Document.documentElement",
@@ -11365,8 +11366,8 @@ export const features = {
       "api.DOMRectReadOnly.x",
       "api.DOMRectReadOnly.y"
     ],
-    "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect interfaces offer a way to represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <canvas>, and SVG.",
-    "description_html": "The <code>DOMMatrix</code>, <code>DOMPoint</code>, <code>DOMQuad</code> and <code>DOMRect</code> interfaces offer a way to represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <code>&#x3C;canvas></code>, and SVG.",
+    "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <canvas>, and SVG.",
+    "description_html": "The <code>DOMMatrix</code>, <code>DOMPoint</code>, <code>DOMQuad</code> and <code>DOMRect</code> APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <code>&#x3C;canvas></code>, and SVG.",
     "name": "DOM Geometry",
     "spec": "https://drafts.fxtf.org/geometry-1/",
     "status": {
@@ -15786,11 +15787,19 @@ export const features = {
     ],
     "description": "The :host-context() CSS pseudo-class selects the containing element of the shadow tree in which it is used if that element or an ancestor matches the provided selector.",
     "description_html": "The <code>:host-context()</code> CSS pseudo-class selects the containing element of the shadow tree in which it is used if that element or an ancestor matches the provided selector.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/w3c/csswg-drafts/issues/1914#issuecomment-2737310093"
+      ],
+      "alternatives": [
+        "container-style-queries"
+      ]
+    },
     "group": [
       "selectors",
       "web-components"
     ],
-    "name": "host-context",
+    "name": ":host-context()",
     "spec": "https://drafts.csswg.org/css-scoping-1/#host-selector",
     "status": {
       "baseline": false,
@@ -21588,6 +21597,7 @@ export const features = {
   },
   "move-before": {
     "compat_features": [
+      "api.CustomElementRegistry.define.connectedMoveCallback_lifecycle_callback",
       "api.Document.moveBefore",
       "api.DocumentFragment.moveBefore",
       "api.Element.moveBefore"
@@ -21596,7 +21606,10 @@ export const features = {
     "description_html": "The <code>moveBefore()</code> DOM method relocates a node while preserving its state. For example, you can move the active element without losing focus, move an animated element without resetting the animation, or move an iframe without reloading its content.",
     "group": "dom",
     "name": "moveBefore()",
-    "spec": "https://github.com/whatwg/dom/pull/1307",
+    "spec": [
+      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24046,7 +24059,10 @@ export const features = {
     ],
     "description": "The paint() CSS function creates a custom image, drawn using a paint worklet, for an element's background or border.",
     "description_html": "The <code>paint()</code> CSS function creates a custom image, drawn using a paint worklet, for an element's background or border.",
-    "group": "css",
+    "group": [
+      "css",
+      "worklets"
+    ],
     "name": "paint()",
     "spec": "https://drafts.css-houdini.org/css-paint-api-1/",
     "status": {
@@ -24128,6 +24144,7 @@ export const features = {
     ],
     "description": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
     "description_html": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
+    "group": "cookies",
     "name": "Partitioned cookies",
     "spec": "https://cookiestore.spec.whatwg.org/",
     "status": {
@@ -26074,8 +26091,8 @@ export const features = {
       "api.CropTarget",
       "api.CropTarget.fromElement_static"
     ],
-    "description": "The CropTarget API crops an element from a video track derived from display-capture of the active browser tab. For example, you can crop out video conferencing during screen sharing.",
-    "description_html": "The <code>CropTarget</code> API crops an element from a video track derived from display-capture of the active browser tab. For example, you can crop out video conferencing during screen sharing.",
+    "description": "When using navigator.mediaDevices.getDisplayMedia() to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
+    "description_html": "When using <code>navigator.mediaDevices.getDisplayMedia()</code> to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
     "name": "Region capture",
     "spec": "https://w3c.github.io/mediacapture-region/",
     "status": {
@@ -27043,8 +27060,8 @@ export const features = {
       "api.Sanitizer.setDataAttributes",
       "api.ShadowRoot.setHTML"
     ],
-    "description": "The parseHTML() method for the Document interface and the setHTML() methods for the Element and ShadowRoot interfaces parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The Sanitizer API can customize the sanitization process.",
-    "description_html": "The <code>parseHTML()</code> method for the <code>Document</code> interface and the <code>setHTML()</code> methods for the <code>Element</code> and <code>ShadowRoot</code> interfaces parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The <code>Sanitizer</code> API can customize the sanitization process.",
+    "description": "The Document.parseHTML() static method and the setHTML() method of Element and ShadowRoot objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The Sanitizer API can customize the sanitization process.",
+    "description_html": "The <code>Document.parseHTML()</code> static method and the <code>setHTML()</code> method of <code>Element</code> and <code>ShadowRoot</code> objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The <code>Sanitizer</code> API can customize the sanitization process.",
     "name": "Sanitizer API",
     "spec": "https://wicg.github.io/sanitizer-api/",
     "status": {
@@ -28741,7 +28758,10 @@ export const features = {
     ],
     "description": "The sharedStorage API stores data to a shared space where the data can then be processed without the ability to track users across the different sites they visit. A common use case is measuring the reach of third-party ads without using user-tracking cookies.\"",
     "description_html": "The <code>sharedStorage</code> API stores data to a shared space where the data can then be processed without the ability to track users across the different sites they visit. A common use case is measuring the reach of third-party ads without using user-tracking cookies.\"",
-    "group": "storage",
+    "group": [
+      "storage",
+      "worklets"
+    ],
     "name": "Shared storage",
     "spec": "https://wicg.github.io/shared-storage/",
     "status": {
@@ -28972,9 +28992,9 @@ export const features = {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
       "support": {
-        "chrome": "86",
-        "chrome_android": "86",
-        "edge": "86",
+        "chrome": "92",
+        "chrome_android": "92",
+        "edge": "92",
         "firefox": "92",
         "firefox_android": "92",
         "safari": "16.4",
@@ -36460,8 +36480,8 @@ export const features = {
       "webdriver.classic.TakeElementScreenshot",
       "webdriver.classic.TakeScreenshot"
     ],
-    "description": "The WebDriver interface allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
-    "description_html": "The WebDriver interface allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
+    "description": "The WebDriver protocol allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
+    "description_html": "The WebDriver protocol allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
     "group": "webdriver",
     "name": "WebDriver",
     "spec": "https://w3c.github.io/webdriver/",
