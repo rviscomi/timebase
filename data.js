@@ -554,6 +554,10 @@ export const browsers = {
       {
         "date": "2025-08-05",
         "version": "139"
+      },
+      {
+        "date": "2025-09-02",
+        "version": "140"
       }
     ]
   },
@@ -1019,6 +1023,10 @@ export const browsers = {
       {
         "date": "2025-08-05",
         "version": "139"
+      },
+      {
+        "date": "2025-09-02",
+        "version": "140"
       }
     ]
   },
@@ -5953,11 +5961,11 @@ export const features = {
       "api.Window.appinstalled_event",
       "api.Window.beforeinstallprompt_event"
     ],
-    "description": "The beforeinstallprompt event fires when a Progressive Web App (PWA) is installable, usually on page load in browsers that support installing PWAs. You can use this event to prevent the install prompt from appearing until after the user interacts with an element on the page.",
-    "description_html": "The <code>beforeinstallprompt</code> event fires when a Progressive Web App (PWA) is installable, usually on page load in browsers that support installing PWAs. You can use this event to prevent the install prompt from appearing until after the user interacts with an element on the page.",
+    "description": "The beforeinstallprompt event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call event.prompt() to control when the installation prompt is shown. The appinstalled event fires when the PWA is successfully installed.",
+    "description_html": "The <code>beforeinstallprompt</code> event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call <code>event.prompt()</code> to control when the installation prompt is shown. The <code>appinstalled</code> event fires when the PWA is successfully installed.",
     "group": "progressive-web-app",
     "name": "beforeinstallprompt",
-    "spec": "https://wicg.github.io/manifest-incubations/",
+    "spec": "https://wicg.github.io/manifest-incubations/#installation-events",
     "status": {
       "baseline": false,
       "support": {
@@ -8805,7 +8813,8 @@ export const features = {
       "http.headers.Set-Cookie.SameSite.Strict",
       "http.headers.Set-Cookie.SameSite.none_requires_secure",
       "http.headers.Set-Cookie.SameSite.schemeful",
-      "http.headers.Set-Cookie.cookie_prefixes"
+      "http.headers.Set-Cookie.host_secure_prefixes",
+      "http.headers.Set-Cookie.http_host-http_prefixes"
     ],
     "description": "The Set-Cookie HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
     "description_html": "The <code>Set-Cookie</code> HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
@@ -12850,7 +12859,7 @@ export const features = {
     "description_html": "The <code>field-sizing</code> CSS property allows form controls such as <code>&#x3C;textarea></code> to be sized based on their content.",
     "group": "css",
     "name": "field-sizing",
-    "spec": "https://drafts.csswg.org/css-ui-4/#field-sizing",
+    "spec": "https://drafts.csswg.org/css-forms-1/#field-sizing",
     "status": {
       "baseline": false,
       "support": {
@@ -15593,6 +15602,21 @@ export const features = {
       }
     }
   },
+  "heading-selectors": {
+    "compat_features": [
+      "css.selectors.heading",
+      "css.selectors.headingfunction"
+    ],
+    "description": "The :heading and :heading() CSS pseudo-classes match headings of varying levels. The :heading pseudo-class matches any heading (<h1> through <h6>). The :heading() selector matches any of the given levels. For example, :heading(1, 2) matches headings level 1 and 2.",
+    "description_html": "The <code>:heading</code> and <code>:heading()</code> CSS pseudo-classes match headings of varying levels. The <code>:heading</code> pseudo-class matches any heading (<code>&#x3C;h1></code> through <code>&#x3C;h6></code>). The <code>:heading()</code> selector matches any of the given levels. For example, <code>:heading(1, 2)</code> matches headings level 1 and 2.",
+    "group": "selectors",
+    "name": "Heading pseudo-classes",
+    "spec": "https://drafts.csswg.org/selectors-5/#headings",
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "headings": {
     "compat_features": [
       "api.HTMLHeadingElement",
@@ -17387,7 +17411,7 @@ export const features = {
     ],
     "description": "The input event fires when a form control changes or an element with the contenteditable attribute changes.",
     "description_html": "The <code>input</code> event fires when a form control changes or an element with the <code>contenteditable</code> attribute changes.",
-    "name": "Input events",
+    "name": "input (event)",
     "spec": "https://w3c.github.io/uievents/#event-type-input",
     "status": {
       "baseline": "high",
@@ -17865,8 +17889,8 @@ export const features = {
       "api.IntersectionObserverEntry.target",
       "api.IntersectionObserverEntry.time"
     ],
-    "description": "The Intersection Observer API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
-    "description_html": "The Intersection Observer API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
+    "description": "The IntersectionObserver API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
+    "description_html": "The <code>IntersectionObserver</code> API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
     "name": "Intersection observer",
     "spec": "https://w3c.github.io/IntersectionObserver/",
     "status": {
@@ -24442,6 +24466,31 @@ export const features = {
       }
     }
   },
+  "periodic-background-sync": {
+    "compat_features": [
+      "api.PeriodicSyncEvent",
+      "api.PeriodicSyncEvent.PeriodicSyncEvent",
+      "api.PeriodicSyncEvent.tag",
+      "api.PeriodicSyncManager",
+      "api.PeriodicSyncManager.getTags",
+      "api.PeriodicSyncManager.register",
+      "api.PeriodicSyncManager.unregister",
+      "api.ServiceWorkerGlobalScope.periodicsync_event",
+      "api.ServiceWorkerRegistration.periodicSync"
+    ],
+    "description": "The periodic background synchronization API fires a recurring periodicsync event in a service worker. You can use this to update data in the background at regular intervals.",
+    "description_html": "The periodic background synchronization API fires a recurring <code>periodicsync</code> event in a service worker. You can use this to update data in the background at regular intervals.",
+    "name": "Periodic background sync",
+    "spec": "https://wicg.github.io/periodic-background-sync/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80"
+      }
+    }
+  },
   "permissions": {
     "caniuse": "permissions-api",
     "compat_features": [
@@ -27418,6 +27467,20 @@ export const features = {
     }
   },
   "scroll-buttons": {
+    "compat_features": [
+      "css.selectors.scroll-button",
+      "css.selectors.scroll-button.block-end",
+      "css.selectors.scroll-button.block-start",
+      "css.selectors.scroll-button.down",
+      "css.selectors.scroll-button.inline-end",
+      "css.selectors.scroll-button.inline-start",
+      "css.selectors.scroll-button.left",
+      "css.selectors.scroll-button.next",
+      "css.selectors.scroll-button.prev",
+      "css.selectors.scroll-button.right",
+      "css.selectors.scroll-button.star",
+      "css.selectors.scroll-button.up"
+    ],
     "description": "The ::scroll-button(<dir>) CSS pseudo-element is a focusable button which scrolls its originating scroll container element in the specified direction.",
     "description_html": "The <code>::scroll-button(&#x3C;dir>)</code> CSS pseudo-element is a focusable button which scrolls its originating scroll container element in the specified direction.",
     "group": "scrolling",
@@ -27897,6 +27960,25 @@ export const features = {
         "firefox_android": "4",
         "safari": "5",
         "safari_ios": "4.2"
+      }
+    }
+  },
+  "secure-payment-confirmation": {
+    "compat_features": [
+      "api.CredentialsContainer.create.publicKey_option.extensions.payment",
+      "api.PaymentRequest.securePaymentConfirmationAvailability_static"
+    ],
+    "description": "The payment extension of a web authentication credential allows a relying party (such as a bank) to create a credential that can be queried by any merchant origin as part of an online checkout that uses the Payment Request API's secure-payment-confirmation payment method. Also known as SPC.",
+    "description_html": "The <code>payment</code> extension of a web authentication credential allows a relying party (such as a bank) to create a credential that can be queried by any merchant origin as part of an online checkout that uses the Payment Request API's <code>secure-payment-confirmation</code> payment method. Also known as SPC.",
+    "group": "payments",
+    "name": "Secure payment confirmation",
+    "spec": "https://w3c.github.io/secure-payment-confirmation/",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139"
       }
     }
   },
@@ -28671,8 +28753,8 @@ export const features = {
       "html.elements.iframe.allow.web-share",
       "http.headers.Permissions-Policy.web-share"
     ],
-    "description": "The navigator.share() method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets.",
-    "description_html": "The <code>navigator.share()</code> method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets.",
+    "description": "The navigator.share() method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
+    "description_html": "The <code>navigator.share()</code> method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
     "name": "navigator.share()",
     "spec": "https://w3c.github.io/web-share/",
     "status": {
@@ -29313,7 +29395,7 @@ export const features = {
     "description_html": "Speculation rules are hints to the browser to proactively download pages in the background so they appear instantly when the user navigates to them.",
     "name": "Speculation rules",
     "spec": [
-      "https://wicg.github.io/nav-speculation/speculation-rules.html",
+      "https://github.com/whatwg/html/pull/11426",
       "https://wicg.github.io/nav-speculation/prerendering.html"
     ],
     "status": {
@@ -34101,6 +34183,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "140",
+        "chrome_android": "140",
         "firefox": "133",
         "firefox_android": "133",
         "safari": "18.2",
@@ -34735,6 +34819,38 @@ export const features = {
         "edge": "111",
         "safari": "18",
         "safari_ios": "18"
+      }
+    }
+  },
+  "viewport-segments": {
+    "compat_features": [
+      "api.Viewport",
+      "api.Viewport.segments",
+      "api.Window.viewport",
+      "css.at-rules.media.horizontal-viewport-segments",
+      "css.at-rules.media.vertical-viewport-segments",
+      "css.types.env.viewport-segment-bottom",
+      "css.types.env.viewport-segment-height",
+      "css.types.env.viewport-segment-left",
+      "css.types.env.viewport-segment-right",
+      "css.types.env.viewport-segment-top",
+      "css.types.env.viewport-segment-width"
+    ],
+    "description": "The viewport segment CSS environment variables and media features, and the viewport.segments API, allow you to adapt your layout to devices where the display is split, such as on foldable devices.",
+    "description_html": "The viewport segment CSS environment variables and media features, and the <code>viewport.segments</code> API, allow you to adapt your layout to devices where the display is split, such as on foldable devices.",
+    "name": "Viewport segments",
+    "spec": [
+      "https://drafts.csswg.org/css-env-1/#viewport-segments",
+      "https://drafts.csswg.org/css-viewport/#segments",
+      "https://drafts.csswg.org/mediaqueries-5/#mf-horizontal-viewport-segments",
+      "https://drafts.csswg.org/mediaqueries-5/#mf-vertical-viewport-segments"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138"
       }
     }
   },
@@ -36212,7 +36328,6 @@ export const features = {
       "api.CredentialsContainer.create.publicKey_option.extensions.credProtect",
       "api.CredentialsContainer.create.publicKey_option.extensions.largeBlob",
       "api.CredentialsContainer.create.publicKey_option.extensions.minPinLength",
-      "api.CredentialsContainer.create.publicKey_option.extensions.payment",
       "api.CredentialsContainer.create.publicKey_option.requireResidentKey",
       "api.CredentialsContainer.create.publicKey_option.residentKey",
       "api.CredentialsContainer.get.publicKey_option",
@@ -36237,6 +36352,7 @@ export const features = {
     ],
     "description": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
     "description_html": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
+    "group": "webauthn",
     "name": "Web authentication",
     "spec": "https://w3c.github.io/webauthn/",
     "status": {
@@ -36262,6 +36378,7 @@ export const features = {
     ],
     "description": "The getAuthenticatorData(), getPublicKey(), and getPublicKeyAlgorithm() methods of AuthenticatorAttestationResponse access credential data inside attestationObject without the need to parse it.",
     "description_html": "The <code>getAuthenticatorData()</code>, <code>getPublicKey()</code>, and <code>getPublicKeyAlgorithm()</code> methods of <code>AuthenticatorAttestationResponse</code> access credential data inside <code>attestationObject</code> without the need to parse it.",
+    "group": "webauthn",
     "name": "Web authentication easy public key access",
     "spec": "https://w3c.github.io/webauthn/#sctn-public-key-easy",
     "status": {
@@ -36275,6 +36392,26 @@ export const features = {
         "firefox_android": "119",
         "safari": "16",
         "safari_ios": "16"
+      }
+    }
+  },
+  "webauthn-signals": {
+    "compat_features": [
+      "api.PublicKeyCredential.signalAllAcceptedCredentials_static",
+      "api.PublicKeyCredential.signalCurrentUserDetails_static",
+      "api.PublicKeyCredential.signalUnknownCredential_static"
+    ],
+    "description": "The signalUnknownCredential(), signalAllAcceptedCredentials(), and signalCurrentUserDetails() methods of PublicKeyCredential inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
+    "description_html": "The <code>signalUnknownCredential()</code>, <code>signalAllAcceptedCredentials()</code>, and <code>signalCurrentUserDetails()</code> methods of <code>PublicKeyCredential</code> inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
+    "group": "webauthn",
+    "name": "Web authentication signal methods",
+    "spec": "https://w3c.github.io/webauthn/#sctn-signal-methods",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "132",
+        "chrome_android": "132",
+        "edge": "132"
       }
     }
   },
