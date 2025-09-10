@@ -1300,6 +1300,10 @@ export const browsers = {
       {
         "date": "2025-08-07",
         "version": "139"
+      },
+      {
+        "date": "2025-09-05",
+        "version": "140"
       }
     ]
   },
@@ -12592,8 +12596,6 @@ export const features = {
     "compat_features": [
       "api.FederatedCredential",
       "api.FederatedCredential.FederatedCredential",
-      "api.FederatedCredential.iconURL",
-      "api.FederatedCredential.name",
       "api.FederatedCredential.protocol",
       "api.FederatedCredential.provider"
     ],
@@ -32411,8 +32413,11 @@ export const features = {
       "css.properties.text-autospace.auto",
       "css.properties.text-autospace.ideograph-alpha",
       "css.properties.text-autospace.ideograph-numeric",
+      "css.properties.text-autospace.insert",
       "css.properties.text-autospace.no-autospace",
-      "css.properties.text-autospace.normal"
+      "css.properties.text-autospace.normal",
+      "css.properties.text-autospace.punctuation",
+      "css.properties.text-autospace.replace"
     ],
     "description": "The text-autospace CSS property sets whether and how to insert spaces in inter-script text (such as when mixing Latin and Chinese characters) and around punctuation.",
     "description_html": "The <code>text-autospace</code> CSS property sets whether and how to insert spaces in inter-script text (such as when mixing Latin and Chinese characters) and around punctuation.",
@@ -34181,10 +34186,12 @@ export const features = {
     "name": "Uint8Array base64 and hex conversion",
     "spec": "https://tc39.es/proposal-arraybuffer-base64/spec/",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-05",
       "support": {
         "chrome": "140",
         "chrome_android": "140",
+        "edge": "140",
         "firefox": "133",
         "firefox_android": "133",
         "safari": "18.2",
