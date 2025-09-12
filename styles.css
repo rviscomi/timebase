@@ -1056,3 +1056,37 @@ body {
     opacity: 0.9;
     font-weight: 500;
 }
+
+/* Collapsed state for feature details - hidden but searchable */
+.feature-details.collapsed {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 0.5rem;
+    margin-top: 0;
+    border-top: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin-top 0.3s ease;
+}
+
+.feature-details:not(.collapsed) {
+    max-height: 1000px; /* Large enough to accommodate content */
+    opacity: 1;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Regression-specific styles */
+
+.regression-warning-icon {
+    animation: pulse-warning 2s infinite;
+}
+
+@keyframes pulse-warning {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* Feature notes styles */
+.feature-notes {
+    margin-top: 1rem;
+}

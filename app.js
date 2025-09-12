@@ -58,12 +58,40 @@ class TimelineApp {
                     description_html: data.description_html || data.description,
                     spec: data.spec,
                     status: data.status,
-                    shipDates: shipDates
+                    shipDates: shipDates,
+                    notes: data.notes || []
                 };
                 
                 // Get current date for comparison
                 const now = new Date();
                 now.setHours(0, 0, 0, 0);
+                
+                // Check for baseline regressions
+                const regressionNotes = data.notes?.filter(note => note.category === 'baseline-regression') || [];
+                
+                // Process regression notes to add regression entries
+                regressionNotes.forEach(note => {
+                    const regressionDate = parseLocalDate(note.date);
+                    if (regressionDate) {
+                        // Determine the display type based on the new baseline value
+                        let displayType;
+                        if (note.new_baseline_value === false) {
+                            displayType = 'limited-availability-regression';
+                        } else if (note.new_baseline_value === 'low') {
+                            displayType = 'newly-available-regression';
+                        }
+                        
+                        if (displayType) {
+                            processedFeatures.push({
+                                ...baseFeature,
+                                date: regressionDate,
+                                displayType: displayType,
+                                regressionNote: note,
+                                isRegression: true
+                            });
+                        }
+                    }
+                });
                 
                 // Always add the newly available entry
                 processedFeatures.push({
@@ -225,8 +253,16 @@ class TimelineApp {
             let iconName;
             let titleText;
             
+            // Handle regression display types
+            if (feature.displayType === 'limited-availability-regression') {
+                iconName = 'baseline-limited-icon.svg';
+                titleText = 'Regressed to limited availability';
+            } else if (feature.displayType === 'newly-available-regression') {
+                iconName = 'baseline-newly-icon.svg';
+                titleText = 'Regressed to newly available';
+            }
             // First check if this is a limited availability feature
-            if (baseline === false) {
+            else if (baseline === false) {
                 // For limited availability
                 iconName = 'baseline-limited-icon.svg';
                 titleText = 'Limited availability across browsers';
@@ -252,9 +288,24 @@ class TimelineApp {
                 baselineIcon.src = `images/${iconName}`;
                 baselineIcon.alt = iconName.replace('baseline-', '').replace('-icon.svg', '') + ' support';
                 baselineIcon.className = 'baseline-icon';
+                if (feature.isRegression) {
+                    baselineIcon.classList.add('regression-icon');
+                }
                 baselineIcon.title = titleText;
                 title.appendChild(baselineIcon);
             }
+        }
+        
+        // Add regression warning icon for collapsed features
+        if (feature.isRegression) {
+            const regressionIcon = document.createElement('span');
+            regressionIcon.className = 'regression-warning-icon';
+            regressionIcon.innerHTML = '⚠️';
+            regressionIcon.title = 'Baseline regression - click to see details';
+            regressionIcon.style.marginLeft = '0.5em';
+            regressionIcon.style.marginRight = '0.5em'; // Add space after the alert emoji
+            regressionIcon.style.fontSize = '0.9em';
+            title.appendChild(regressionIcon);
         }
         
         // Add feature name text after the baseline icon
@@ -293,7 +344,7 @@ class TimelineApp {
         // Create details section (bottom row)
         const details = document.createElement('div');
         details.className = 'feature-details';
-        details.style.display = 'none';
+        details.classList.add('collapsed');
         
         // Format the date for display with full date (including day)
         const formattedDate = feature.date.toLocaleDateString('en-US', {
@@ -303,40 +354,88 @@ class TimelineApp {
         });
         
         // Create availability info text based on display type
+        let regressionText = '';
         let availabilityText = '';
-        if (feature.displayType === 'newly-available') {
-            // Check if this is actually a limited availability feature
-            if (feature.status?.baseline === false) {
-                // For limited availability features, use a different text format
-                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
-            } else {
-                // Calculate the widely available date (30 months after newly available)
-                const widelyAvailableDate = new Date(feature.date);
-                widelyAvailableDate.setMonth(widelyAvailableDate.getMonth() + 30);
-                
-                // Format the widely available date
-                const widelyFormattedDate = widelyAvailableDate.toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                });
-                
-                // Create the widely available feature ID
-                const widelyAvailableId = `feature-${feature.id}-widely-available`;
-                
-                // Check if the widely available date is in the past
-                const now = new Date();
-                now.setHours(0, 0, 0, 0);
-                
-                // Create the newly available text with a link to the widely available entry
-                // Use past tense if the widely available date is in the past
-                if (widelyAvailableDate <= now) {
-                    availabilityText = `Newly available since ${formattedDate}. Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
-                } else {
-                    availabilityText = `Newly available since ${formattedDate}. Will become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
-                }
+        
+        // Handle regression messages first (independent of other logic)
+        if (feature.displayType === 'limited-availability-regression') {
+            const oldStatusRaw = feature.regressionNote?.old_baseline_value || 'unknown';
+            const oldStatusReadable = oldStatusRaw === 'high' ? 'Widely available' : 
+                                    oldStatusRaw === 'low' ? 'Newly available' : oldStatusRaw;
+            
+            regressionText = `⚠️ <strong>Regression:</strong> Baseline status changed from ${oldStatusReadable} to Limited availability on ${formattedDate}.`;
+            
+            // Add regression message if available
+            const note = feature.regressionNote;
+            if (note && (note.message_html || note.message)) {
+                regressionText += `<br><br>${note.message_html || note.message}`;
             }
-        } else if (feature.displayType === 'widely-available') {
+            
+            // Add citations if available
+            if (note && note.citations && note.citations.length > 0) {
+                const citationLinks = note.citations.map(citation => 
+                    `<a href="${citation}" target="_blank" rel="noopener noreferrer">${citation}</a>`
+                ).join(', ');
+                regressionText += `<br><br><strong>Citations:</strong> ${citationLinks}`;
+            }
+        } else if (feature.displayType === 'newly-available-regression') {
+            const oldStatusRaw = feature.regressionNote?.old_baseline_value || 'unknown';
+            const oldStatusReadable = oldStatusRaw === 'high' ? 'Widely available' : 
+                                    oldStatusRaw === 'low' ? 'Newly available' : oldStatusRaw;
+            
+            regressionText = `⚠️ <strong>Regression:</strong> Baseline status changed from ${oldStatusReadable} to Newly available on ${formattedDate}.`;
+            
+            // Add regression message if available
+            const note = feature.regressionNote;
+            if (note && (note.message_html || note.message)) {
+                regressionText += `<br><br>${note.message_html || note.message}`;
+            }
+            
+            // Add citations if available
+            if (note && note.citations && note.citations.length > 0) {
+                const citationLinks = note.citations.map(citation => 
+                    `<a href="${citation}" target="_blank" rel="noopener noreferrer">${citation}</a>`
+                ).join(', ');
+                regressionText += `<br><br><strong>Citations:</strong> ${citationLinks}`;
+            }
+        }
+        
+        // Handle standard availability messages (treat regressions as their base type)
+        const baseDisplayType = feature.displayType.replace('-regression', '');
+        
+        // Check if this is actually a limited availability feature (overrides display type)
+        if (feature.status?.baseline === false) {
+            availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+        } else if (baseDisplayType === 'limited-availability') {
+            // For limited availability features, use a different text format
+            availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+        } else if (baseDisplayType === 'newly-available') {
+            // Calculate the widely available date (30 months after newly available)
+            const widelyAvailableDate = new Date(feature.date);
+            widelyAvailableDate.setMonth(widelyAvailableDate.getMonth() + 30);
+            
+            // Format the widely available date
+            const widelyFormattedDate = widelyAvailableDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Create the widely available feature ID
+            const widelyAvailableId = `feature-${feature.id}-widely-available`;
+            
+            // Check if the widely available date is in the past
+            const now = new Date();
+            now.setHours(0, 0, 0, 0);
+            
+            // Create the newly available text with a link to the widely available entry
+            // Use past tense if the widely available date is in the past
+            if (widelyAvailableDate <= now) {
+                availabilityText = `Newly available since ${formattedDate}. Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+            } else {
+                availabilityText = `Newly available since ${formattedDate}. Will become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+            }
+        } else if (baseDisplayType === 'widely-available') {
             const now = new Date();
             now.setHours(0, 0, 0, 0);
             
@@ -356,6 +455,14 @@ class TimelineApp {
             description.innerHTML = feature.description_html;
             details.appendChild(description);
             
+            // Add regression info if it exists
+            if (regressionText) {
+                const regressionInfo = document.createElement('div');
+                regressionInfo.className = 'availability-info-text';
+                regressionInfo.innerHTML = regressionText;
+                details.appendChild(regressionInfo);
+            }
+            
             // Add availability info if it exists as a separate element
             if (availabilityText) {
                 const availabilityInfo = document.createElement('div');
@@ -370,6 +477,14 @@ class TimelineApp {
             description.textContent = feature.description;
             details.appendChild(description);
             
+            // Add regression info if it exists
+            if (regressionText) {
+                const regressionInfo = document.createElement('div');
+                regressionInfo.className = 'availability-info-text';
+                regressionInfo.innerHTML = regressionText;
+                details.appendChild(regressionInfo);
+            }
+            
             // Add availability info if it exists as a separate element
             if (availabilityText) {
                 const availabilityInfo = document.createElement('div');
@@ -377,12 +492,82 @@ class TimelineApp {
                 availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
                 details.appendChild(availabilityInfo);
             }
-        } else if (availabilityText) {
-            // If there's no description but we have availability info, add it as the description
-            const availabilityInfo = document.createElement('div');
-            availabilityInfo.className = 'availability-info-text';
-            availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
-            details.appendChild(availabilityInfo);
+        } else if (regressionText || availabilityText) {
+            // If there's no description but we have regression or availability info, add them
+            
+            // Add regression info if it exists
+            if (regressionText) {
+                const regressionInfo = document.createElement('div');
+                regressionInfo.className = 'availability-info-text';
+                regressionInfo.innerHTML = regressionText;
+                details.appendChild(regressionInfo);
+            }
+            
+            // Add availability info if it exists
+            if (availabilityText) {
+                const availabilityInfo = document.createElement('div');
+                availabilityInfo.className = 'availability-info-text';
+                availabilityInfo.innerHTML = availabilityText; // Use innerHTML to render the link
+                details.appendChild(availabilityInfo);
+            }
+        }
+        
+        // Add notes if available
+        const hasNotes = feature.notes && feature.notes.length > 0;
+        
+
+        
+        if (hasNotes) {
+            const notesContainer = document.createElement('div');
+            notesContainer.className = 'feature-notes';
+            
+            // Add existing notes (excluding regression notes for regression features, since they're now in the availability text)
+            if (hasNotes) {
+                feature.notes.forEach(note => {
+                    // Skip regression notes for regression features since they're now combined with availability text
+                    if (note.category === 'baseline-regression' && feature.isRegression) {
+                        return;
+                    }
+                    
+                    const noteElement = document.createElement('div');
+                    noteElement.className = 'availability-info-text';
+                    
+                    // Build the note content as HTML
+                    let noteContent = '';
+                    
+                    // Add note title based on category
+                    if (note.category === 'baseline-regression') {
+                        noteContent += '<strong>Regression:</strong> ';
+                    } else {
+                        // Handle other note categories
+                        const categoryTitle = note.category.charAt(0).toUpperCase() + note.category.slice(1).replace('-', ' ');
+                        noteContent += `<strong>${categoryTitle}:</strong> `;
+                    }
+                    
+                    // Only add note message if it's different from the feature description
+                    const isDuplicateMessage = note.message === feature.description || 
+                                             note.message_html === feature.description_html;
+                    
+                    if (!isDuplicateMessage && (note.message_html || note.message)) {
+                        noteContent += note.message_html || note.message;
+                    }
+                    
+                    // Add citations if available
+                    if (note.citations && note.citations.length > 0) {
+                        const citationLinks = note.citations.map(citation => {
+                            return `<a href="${citation}" target="_blank" rel="noopener noreferrer">${citation}</a>`;
+                        }).join(', ');
+                        
+                        noteContent += `<br><br><strong>References:</strong> ${citationLinks}`;
+                    }
+                    
+                    noteElement.innerHTML = noteContent;
+                    
+                    notesContainer.appendChild(noteElement);
+                });
+            }
+            
+            details.appendChild(notesContainer);
         }
         
         // Add browser support table
@@ -568,16 +753,16 @@ class TimelineApp {
                 return;
             }
             
-            const isExpanded = details.style.display !== 'none';
-            details.style.display = isExpanded ? 'none' : 'block';
+            const isExpanded = !details.classList.contains('collapsed');
+            details.classList.toggle('collapsed');
             
             // Update accessibility attributes
-            topRow.setAttribute('aria-expanded', !isExpanded);
+            topRow.setAttribute('aria-expanded', isExpanded);
             
             // Toggle the expanded class on the parent card for styling
             const card = header.closest('.feature-card');
             if (card) {
-                if (isExpanded) {
+                if (!isExpanded) {
                     card.classList.remove('expanded');
                 } else {
                     card.classList.add('expanded');
@@ -594,8 +779,11 @@ class TimelineApp {
         // Store feature data on the card for selection functionality
         card.featureData = feature;
         
+        // Determine the base display type for CSS styling (strip -regression suffix)
+        const baseDisplayType = feature.displayType.replace('-regression', '');
+        
         // First check if this is a widely-available feature - these should always have the green border
-        if (feature.displayType === 'widely-available') {
+        if (baseDisplayType === 'widely-available') {
             card.className = 'feature-card widely-available';
             
             // Add 'future' class to widely available features that are in the future
@@ -610,9 +798,9 @@ class TimelineApp {
         else if (feature.status?.baseline === false) {
             card.className = 'feature-card limited-availability';
         } 
-        // Otherwise, it's a newly-available feature
+        // Otherwise, use the base display type for styling
         else {
-            card.className = `feature-card ${feature.displayType}`;
+            card.className = `feature-card ${baseDisplayType}`;
         }
         
         // Create a unique ID that includes both the feature name and its display type
@@ -924,9 +1112,9 @@ class TimelineApp {
                 card.setAttribute('data-scroll-target', 'true');
                 
                 // Expand the card if it's not already expanded
-                if (details.style.display === 'none') {
+                if (details.hidden) {
                     // First make the details visible but with opacity 0
-                    details.style.display = 'block';
+                    details.hidden = false;
                     details.style.opacity = '0';
                     topRow.setAttribute('aria-expanded', 'true');
                     card.classList.add('expanded');
