@@ -29391,7 +29391,7 @@ export const features = {
       "http.headers.Speculation-Rules",
       "http.headers.Supports-Loading-Mode",
       "http.headers.Supports-Loading-Mode.credentialed-prerender",
-      "http.headers.Supports-Loading-Mode.fenced-frames"
+      "http.headers.Supports-Loading-Mode.fenced-frame"
     ],
     "description": "Speculation rules are hints to the browser to proactively download pages in the background so they appear instantly when the user navigates to them.",
     "description_html": "Speculation rules are hints to the browser to proactively download pages in the background so they appear instantly when the user navigates to them.",
