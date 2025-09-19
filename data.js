@@ -2615,6 +2615,10 @@ export const browsers = {
       {
         "date": "2025-07-29",
         "version": "18.6"
+      },
+      {
+        "date": "2025-09-15",
+        "version": "26"
       }
     ]
   },
@@ -2820,6 +2824,10 @@ export const browsers = {
       {
         "date": "2025-07-29",
         "version": "18.6"
+      },
+      {
+        "date": "2025-09-15",
+        "version": "26"
       }
     ]
   }
@@ -2860,9 +2868,14 @@ export const features = {
     ],
     "description": "The <a> element creates a hyperlink to any resource that's accessible via a URL, such as web pages, files, email addresses, or locations within the same page.",
     "description_html": "The <code>&#x3C;a></code> element creates a hyperlink to any resource that's accessible via a URL, such as web pages, files, email addresses, or locations within the same page.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<a>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -2884,9 +2897,14 @@ export const features = {
     ],
     "description": "The <abbr> HTML element represents an abbreviation or acronym.",
     "description_html": "The <code>&#x3C;abbr></code> HTML element represents an abbreviation or acronym.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<abbr>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -2909,8 +2927,11 @@ export const features = {
     ],
     "description": "If you construct a fetch request with an AbortSignal, you can cancel the request.",
     "description_html": "If you construct a fetch request with an <code>AbortSignal</code>, you can cancel the request.",
+    "kind": "feature",
     "name": "Abortable fetch",
-    "spec": "https://fetch.spec.whatwg.org/#ref-for-dom-request-signal%E2%91%A1",
+    "spec": [
+      "https://fetch.spec.whatwg.org/#ref-for-dom-request-signal%E2%91%A1"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-09-25",
@@ -2927,7 +2948,9 @@ export const features = {
     }
   },
   "aborting": {
-    "caniuse": "abortcontroller",
+    "caniuse": [
+      "abortcontroller"
+    ],
     "compat_features": [
       "api.AbortController",
       "api.AbortController.AbortController",
@@ -2945,8 +2968,11 @@ export const features = {
     ],
     "description": "The AbortController and AbortSignal APIs allow you to cancel an ongoing operation, such as a fetch() request.",
     "description_html": "The <code>AbortController</code> and <code>AbortSignal</code> APIs allow you to cancel an ongoing operation, such as a <code>fetch()</code> request.",
+    "kind": "feature",
     "name": "AbortController and AbortSignal",
-    "spec": "https://dom.spec.whatwg.org/#aborting-ongoing-activities",
+    "spec": [
+      "https://dom.spec.whatwg.org/#aborting-ongoing-activities"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-09-25",
@@ -2968,8 +2994,11 @@ export const features = {
     ],
     "description": "The AbortSignal.any() static method combines an iterable of abort signals into a single signal, with the abort reason taken from the first signal to abort.",
     "description_html": "The <code>AbortSignal.any()</code> static method combines an iterable of abort signals into a single signal, with the abort reason taken from the first signal to abort.",
+    "kind": "feature",
     "name": "AbortSignal.any()",
-    "spec": "https://dom.spec.whatwg.org/#dom-abortsignal-any",
+    "spec": [
+      "https://dom.spec.whatwg.org/#dom-abortsignal-any"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-19",
@@ -2991,9 +3020,14 @@ export const features = {
     ],
     "description": "The abs() and sign() CSS functions compute the absolute value or the sign of the input.",
     "description_html": "The <code>abs()</code> and <code>sign()</code> CSS functions compute the absolute value or the sign of the input.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "abs() and sign()",
-    "spec": "https://drafts.csswg.org/css-values-4/#sign-funcs",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#sign-funcs"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-06-26",
@@ -3017,9 +3051,14 @@ export const features = {
     ],
     "description": "The position: absolute CSS declaration removes an element from the normal flow and positions it relative to its containing block, which is often the root element, or closest positioned ancestor.",
     "description_html": "The <code>position: absolute</code> CSS declaration removes an element from the normal flow and positions it relative to its containing block, which is often the root element, or closest positioned ancestor.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Absolute positioning",
-    "spec": "https://drafts.csswg.org/css-position-3/#abspos-insets",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#abspos-insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -3052,9 +3091,14 @@ export const features = {
     ],
     "description": "The Accelerometer, LinearAccelerationSensor and GravitySensor APIs read the acceleration applied to a device in three dimensions, either including the effect of gravity, without its effect, or only its effect, respectively.",
     "description_html": "The <code>Accelerometer</code>, <code>LinearAccelerationSensor</code> and <code>GravitySensor</code> APIs read the acceleration applied to a device in three dimensions, either including the effect of gravity, without its effect, or only its effect, respectively.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Accelerometer",
-    "spec": "https://w3c.github.io/accelerometer/",
+    "spec": [
+      "https://w3c.github.io/accelerometer/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3071,9 +3115,14 @@ export const features = {
     ],
     "description": "The accent-color CSS property sets a color for checkboxes, radio buttons, and other form controls.",
     "description_html": "The <code>accent-color</code> CSS property sets a color for checkboxes, radio buttons, and other form controls.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "accent-color",
-    "spec": "https://drafts.csswg.org/css-ui-4/#widget-accent",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#widget-accent"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3092,8 +3141,11 @@ export const features = {
     ],
     "description": "The accesskey global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
     "description_html": "The <code>accesskey</code> global HTML attribute gives a hint for generating a keyboard shortcut for the current element. The attribute value must consist of a single printable character.",
+    "kind": "feature",
     "name": "accesskey",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -3123,8 +3175,11 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "kind": "feature",
     "name": "Accessor methods",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype-legacy-accessor-methods",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype-legacy-accessor-methods"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3161,8 +3216,11 @@ export const features = {
       "view-transitions",
       "selectors"
     ],
+    "kind": "feature",
     "name": "Active view transition",
-    "spec": "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3180,9 +3238,14 @@ export const features = {
     ],
     "description": "The <address> element represents contact information for a person or people, or for an organization.",
     "description_html": "The <code>&#x3C;address></code> element represents contact information for a person or people, or for an organization.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<address>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-address-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-address-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -3206,8 +3269,11 @@ export const features = {
     ],
     "description": "The window.alert(), window.confirm(), and window.prompt() methods open modal dialogs for notifying the user, asking for confirmation, or entering text.",
     "description_html": "The <code>window.alert()</code>, <code>window.confirm()</code>, and <code>window.prompt()</code> methods open modal dialogs for notifying the user, asking for confirmation, or entering text.",
+    "kind": "feature",
     "name": "Alerts",
-    "spec": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#user-prompts"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -3229,9 +3295,14 @@ export const features = {
     ],
     "description": "The align-content property vertically aligns content in block layouts, like it does in flex or grid layouts.",
     "description_html": "The <code>align-content</code> property vertically aligns content in block layouts, like it does in flex or grid layouts.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "align-content in block layouts",
-    "spec": "https://drafts.csswg.org/css-align-3/#align-justify-content",
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#align-justify-content"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-04-16",
@@ -3258,9 +3329,14 @@ export const features = {
     ],
     "description": "The alignment-baseline CSS property sets which baseline of an element is aligned with the corresponding baseline of its parent.",
     "description_html": "The <code>alignment-baseline</code> CSS property sets which baseline of an element is aligned with the corresponding baseline of its parent.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "alignment-baseline",
-    "spec": "https://drafts.csswg.org/css-inline-3/#alignment-baseline-property",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#alignment-baseline-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3273,15 +3349,22 @@ export const features = {
     }
   },
   "all": {
-    "caniuse": "css-all",
+    "caniuse": [
+      "css-all"
+    ],
     "compat_features": [
       "css.properties.all"
     ],
     "description": "The all CSS property is a shorthand for all CSS properties, except for direction and unicode-bidi. It accepts only the keywords for explicit defaulting (such as initial and inherit), since they are the only values supported on all CSS properties.",
     "description_html": "The <code>all</code> CSS property is a shorthand for all CSS properties, except for <code>direction</code> and <code>unicode-bidi</code>. It accepts only the keywords for explicit defaulting (such as <code>initial</code> and <code>inherit</code>), since they are the only values supported on all CSS properties.",
-    "group": "explicit-defaults",
+    "group": [
+      "explicit-defaults"
+    ],
+    "kind": "feature",
     "name": "all",
-    "spec": "https://drafts.csswg.org/css-cascade-6/",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -3303,9 +3386,14 @@ export const features = {
     ],
     "description": "The / notation in content CSS property values adds alternative text to generated content. For example, the content: url('upvote-icon.svg') / 'Upvote' declaration adds accessible 'Upvote' text to the SVG icon. Also known as alternate text.",
     "description_html": "The <code>/</code> notation in <code>content</code> CSS property values adds alternative text to generated content. For example, the <code>content: url('upvote-icon.svg') / 'Upvote'</code> declaration adds accessible 'Upvote' text to the SVG icon. Also known as alternate text.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Alt text for generated content",
-    "spec": "https://drafts.csswg.org/css-content-3/#alt",
+    "spec": [
+      "https://drafts.csswg.org/css-content-3/#alt"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-07-09",
@@ -3326,9 +3414,14 @@ export const features = {
     ],
     "description": "The rel=\"alternate stylesheet\" attribute for the <link> HTML element offers an alternative style option to users.",
     "description_html": "The <code>rel=\"alternate stylesheet\"</code> attribute for the <code>&#x3C;link></code> HTML element offers an alternative style option to users.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Alternative style sheets",
-    "spec": "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag",
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3338,7 +3431,9 @@ export const features = {
     }
   },
   "ambient-light": {
-    "caniuse": "ambient-light",
+    "caniuse": [
+      "ambient-light"
+    ],
     "compat_features": [
       "api.AmbientLightSensor",
       "api.AmbientLightSensor.AmbientLightSensor",
@@ -3349,16 +3444,23 @@ export const features = {
     ],
     "description": "The AmbientLightSensor API returns the current light level in lux of the ambient light level around the device.",
     "description_html": "The <code>AmbientLightSensor</code> API returns the current light level in lux of the ambient light level around the device.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Ambient light sensor",
-    "spec": "https://w3c.github.io/ambient-light/",
+    "spec": [
+      "https://w3c.github.io/ambient-light/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "anchor-positioning": {
-    "caniuse": "css-anchor-positioning",
+    "caniuse": [
+      "css-anchor-positioning"
+    ],
     "compat_features": [
       "api.CSSPositionTryDescriptors",
       "api.CSSPositionTryDescriptors.align-self",
@@ -3558,14 +3660,19 @@ export const features = {
     ],
     "description": "Anchor positioning places an element based on the position of another element. For example, you can place a tooltip next to the content it references.",
     "description_html": "Anchor positioning places an element based on the position of another element. For example, you can place a tooltip next to the content it references.",
+    "kind": "feature",
     "name": "Anchor positioning",
-    "spec": "https://drafts.csswg.org/css-anchor-position-1/#anchoring",
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "125",
         "chrome_android": "125",
-        "edge": "125"
+        "edge": "125",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -3578,9 +3685,14 @@ export const features = {
     ],
     "description": "The ANGLE_instanced_arrays extension for WebGL 1.0 contexts draws the same object multiple times or groups of similar objects multiple times, if the group shares the same vertex data, primitive count and type.",
     "description_html": "The <code>ANGLE_instanced_arrays</code> extension for WebGL 1.0 contexts draws the same object multiple times or groups of similar objects multiple times, if the group shares the same vertex data, primitive count and type.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "ANGLE_instanced_arrays WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-12-07",
@@ -3602,9 +3714,14 @@ export const features = {
     ],
     "description": "The animation-composition CSS property chooses how to combine animations that affect the same property.",
     "description_html": "The <code>animation-composition</code> CSS property chooses how to combine animations that affect the same property.",
-    "group": "animation",
+    "group": [
+      "animation"
+    ],
+    "kind": "feature",
     "name": "animation-composition",
-    "spec": "https://drafts.csswg.org/css-animations-2/#animation-composition",
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/#animation-composition"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-07-04",
@@ -3620,7 +3737,9 @@ export const features = {
     }
   },
   "animations-css": {
-    "caniuse": "css-animation",
+    "caniuse": [
+      "css-animation"
+    ],
     "compat_features": [
       "api.AnimationEvent",
       "api.AnimationEvent.AnimationEvent",
@@ -3673,8 +3792,11 @@ export const features = {
       "animation",
       "css"
     ],
+    "kind": "feature",
     "name": "Animations (CSS)",
-    "spec": "https://drafts.csswg.org/css-animations-2/",
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -3697,9 +3819,14 @@ export const features = {
     ],
     "description": "The file_handlers web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
     "description_html": "The <code>file_handlers</code> web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "File handlers",
-    "spec": "https://wicg.github.io/manifest-incubations/#file_handlers-member",
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#file_handlers-member"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3720,9 +3847,14 @@ export const features = {
     ],
     "description": "The launch_handler web app manifest member, with the client_mode property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
     "description_html": "The <code>launch_handler</code> web app manifest member, with the <code>client_mode</code> property, configure how web app launches behave when an instance of the app is already open. For example, you can choose to focus the existing app instance instead of launching a new one.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Launch handler",
-    "spec": "https://wicg.github.io/web-app-launch/",
+    "spec": [
+      "https://wicg.github.io/web-app-launch/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3739,9 +3871,14 @@ export const features = {
     ],
     "description": "The protocol_handlers web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
     "description_html": "The <code>protocol_handlers</code> web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Protocol handlers",
-    "spec": "https://wicg.github.io/manifest-incubations/#protocol_handlers-member",
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#protocol_handlers-member"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3756,9 +3893,14 @@ export const features = {
     ],
     "description": "The share_target web app manifest member registers an installed web app as a handler for shared content. When a user shares content by using the device share dialog, the installed app can be listed as an option for handling the shared content.",
     "description_html": "The <code>share_target</code> web app manifest member registers an installed web app as a handler for shared content. When a user shares content by using the device share dialog, the installed app can be listed as an option for handling the shared content.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Share targets",
-    "spec": "https://w3c.github.io/web-share-target/#share_target-member",
+    "spec": [
+      "https://w3c.github.io/web-share-target/#share_target-member"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3774,9 +3916,14 @@ export const features = {
     ],
     "description": "The shortcuts web app manifest member registers common actions of an installed web app with the device. The device can present these actions to the user in contextually appropriate locations, such as jump lists on Windows or the app launcher on Android.",
     "description_html": "The <code>shortcuts</code> web app manifest member registers common actions of an installed web app with the device. The device can present these actions to the user in contextually appropriate locations, such as jump lists on Windows or the app launcher on Android.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Application shortcuts",
-    "spec": "https://w3c.github.io/manifest/#shortcuts-member",
+    "spec": [
+      "https://w3c.github.io/manifest/#shortcuts-member"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3806,9 +3953,14 @@ export const features = {
     ],
     "description": "The appearance CSS property controls the appearance of form controls. Using appearance: none disables any default native appearance and allows the elements to be styled with CSS.",
     "description_html": "The <code>appearance</code> CSS property controls the appearance of form controls. Using <code>appearance: none</code> disables any default native appearance and allows the elements to be styled with CSS.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "appearance",
-    "spec": "https://drafts.csswg.org/css-ui-4/#appearance-switching",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#appearance-switching"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -3835,9 +3987,14 @@ export const features = {
         "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "arguments.callee",
-    "spec": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -3959,8 +4116,11 @@ export const features = {
     ],
     "description": "WAI-ARIA attributes have corresponding properties on Element and ElementInternals objects.",
     "description_html": "WAI-ARIA attributes have corresponding properties on <code>Element</code> and <code>ElementInternals</code> objects.",
+    "kind": "feature",
     "name": "ARIA attribute reflection",
-    "spec": "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence",
+    "spec": [
+      "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -3994,9 +4154,14 @@ export const features = {
     ],
     "description": "Arrays are ordered lists of JavaScript values.",
     "description_html": "Arrays are ordered lists of JavaScript values.",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array (initial support)",
-    "snapshot": "ecmascript-1",
+    "snapshot": [
+      "ecmascript-1"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-constructor",
@@ -4040,9 +4205,14 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array at()",
-    "snapshot": "ecmascript-2022",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.at",
+    "snapshot": [
+      "ecmascript-2022"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.at"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -4074,8 +4244,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array by copy",
-    "snapshot": "ecmascript-2023",
+    "snapshot": [
+      "ecmascript-2023"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.toreversed",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.tosorted",
@@ -4110,9 +4283,14 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array copyWithin()",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.copywithin",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.copywithin"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -4139,8 +4317,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array fill()",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.fill",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.fill"
@@ -4177,8 +4358,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array find() and findIndex()",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.find",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findindex",
@@ -4213,8 +4397,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array findLast() and findLastIndex()",
-    "snapshot": "ecmascript-2023",
+    "snapshot": [
+      "ecmascript-2023"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlast",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findlastindex",
@@ -4237,16 +4424,23 @@ export const features = {
     }
   },
   "array-flat": {
-    "caniuse": "array-flat",
+    "caniuse": [
+      "array-flat"
+    ],
     "compat_features": [
       "javascript.builtins.Array.flat",
       "javascript.builtins.Array.flatMap"
     ],
     "description": "The flat() and flatMap() methods for arrays creates a new array such that each nested array item is concatenated into it.",
     "description_html": "The <code>flat()</code> and <code>flatMap()</code> methods for arrays creates a new array such that each nested array item is concatenated into it.",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array flat() and flatMap()",
-    "snapshot": "ecmascript-2019",
+    "snapshot": [
+      "ecmascript-2019"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flat",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flatmap"
@@ -4277,8 +4471,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array.from()",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.from",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.of"
@@ -4304,9 +4501,14 @@ export const features = {
     ],
     "description": "The Array.fromAsync() static method copies items from an async iterable object to make a new array.",
     "description_html": "The <code>Array.fromAsync()</code> static method copies items from an async iterable object to make a new array.",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array.fromAsync()",
-    "spec": "https://tc39.es/proposal-array-from-async/#sec-array.fromAsync",
+    "spec": [
+      "https://tc39.es/proposal-array-from-async/#sec-array.fromAsync"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-01-25",
@@ -4328,9 +4530,14 @@ export const features = {
     ],
     "description": "The Object.groupBy() and Map.groupBy() static methods group values of arrays and iterables based on a function that returns a key for each value.",
     "description_html": "The <code>Object.groupBy()</code> and <code>Map.groupBy()</code> static methods group values of arrays and iterables based on a function that returns a key for each value.",
-    "group": "maps",
+    "group": [
+      "maps"
+    ],
+    "kind": "feature",
     "name": "Array grouping",
-    "spec": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-groupby",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-groupby"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-05",
@@ -4346,7 +4553,9 @@ export const features = {
     }
   },
   "array-includes": {
-    "caniuse": "array-includes",
+    "caniuse": [
+      "array-includes"
+    ],
     "compat_features": [
       "javascript.builtins.Array.includes",
       "javascript.builtins.TypedArray.includes"
@@ -4357,8 +4566,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array includes()",
-    "snapshot": "ecmascript-2016",
+    "snapshot": [
+      "ecmascript-2016"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.includes",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.includes"
@@ -4384,10 +4596,17 @@ export const features = {
     ],
     "description": "The Array.isArray() static method checks whether a value is an array.",
     "description_html": "The <code>Array.isArray()</code> static method checks whether a value is an array.",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array.isArray()",
-    "snapshot": "ecmascript-5",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.isarray",
+    "snapshot": [
+      "ecmascript-5"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.isarray"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4417,9 +4636,14 @@ export const features = {
     ],
     "description": "Array iteration methods",
     "description_html": "Array iteration methods",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array iteration methods",
-    "snapshot": "ecmascript-5",
+    "snapshot": [
+      "ecmascript-5"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.every",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.filter",
@@ -4459,8 +4683,11 @@ export const features = {
       "arrays",
       "iterators"
     ],
+    "kind": "feature",
     "name": "Array iterators",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-@@iterator",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.entries",
@@ -4493,8 +4720,11 @@ export const features = {
       "arrays",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Array.of()",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.of",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.of"
@@ -4520,10 +4750,17 @@ export const features = {
     ],
     "description": "The array splice() method changes an array in-place. You can use it to delete items, overwrite items, or insert items, starting from an index.",
     "description_html": "The array <code>splice()</code> method changes an array in-place. You can use it to delete items, overwrite items, or insert items, starting from an index.",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Array splice()",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.splice",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.splice"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4545,9 +4782,14 @@ export const features = {
     ],
     "description": "The <article> element represents self-contained content, which is intended to be independently distributable or reusable, such as a comment, a blog post, or news article.",
     "description_html": "The <code>&#x3C;article></code> element represents self-contained content, which is intended to be independently distributable or reusable, such as a comment, a blog post, or news article.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<article>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4569,9 +4811,14 @@ export const features = {
     ],
     "description": "The <aside> element represents a portion of a document whose content is only indirectly related to the document's main content.",
     "description_html": "The <code>&#x3C;aside></code> element represents a portion of a document whose content is only indirectly related to the document's main content.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<aside>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-aside-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-aside-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4596,9 +4843,14 @@ export const features = {
     ],
     "description": "The aspect-ratio CSS property controls the width-to-height ratio of elements. For <img> and <video> elements, the width and height attributes used together with height: auto control the aspect ratio while the image/video is loading.",
     "description_html": "The <code>aspect-ratio</code> CSS property controls the width-to-height ratio of elements. For <code>&#x3C;img></code> and <code>&#x3C;video></code> elements, the <code>width</code> and <code>height</code> attributes used together with <code>height: auto</code> control the aspect ratio while the image/video is loading.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "aspect-ratio",
-    "spec": "https://drafts.csswg.org/css-sizing-4/#aspect-ratio",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-4/#aspect-ratio"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -4615,7 +4867,9 @@ export const features = {
     }
   },
   "async-await": {
-    "caniuse": "async-functions",
+    "caniuse": [
+      "async-functions"
+    ],
     "compat_features": [
       "javascript.builtins.AsyncFunction",
       "javascript.builtins.AsyncFunction.AsyncFunction",
@@ -4625,10 +4879,17 @@ export const features = {
     ],
     "description": "The async and await keywords allow you to use the asynchronous, promise-based behavior of a function without using promise chains.",
     "description_html": "The <code>async</code> and <code>await</code> keywords allow you to use the asynchronous, promise-based behavior of a function without using promise chains.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Async functions",
-    "snapshot": "ecmascript-2017",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions",
+    "snapshot": [
+      "ecmascript-2017"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -4645,7 +4906,9 @@ export const features = {
     }
   },
   "async-clipboard": {
-    "caniuse": "async-clipboard",
+    "caniuse": [
+      "async-clipboard"
+    ],
     "compat_features": [
       "api.Clipboard",
       "api.Clipboard.read",
@@ -4665,9 +4928,14 @@ export const features = {
     ],
     "description": "The navigator.clipboard API asynchronously reads and writes to the system clipboard.",
     "description_html": "The <code>navigator.clipboard</code> API asynchronously reads and writes to the system clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "Async clipboard",
-    "spec": "https://w3c.github.io/clipboard-apis/#async-clipboard-api",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-06-11",
@@ -4696,9 +4964,14 @@ export const features = {
     ],
     "description": "Async generator functions (async function*) create iterators that return multiple promises, one after another, on-demand.",
     "description_html": "Async generator functions (<code>async function*</code>) create iterators that return multiple promises, one after another, on-demand.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Async generators",
-    "snapshot": "ecmascript-2017",
+    "snapshot": [
+      "ecmascript-2017"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-objects",
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects"
@@ -4725,9 +4998,14 @@ export const features = {
     ],
     "description": "Asynchronous iteration of a stream allows you to use for await … of loops to iterate through a stream's incoming data.",
     "description_html": "Asynchronous iteration of a stream allows you to use <code>for await … of</code> loops to iterate through a stream's incoming data.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "Asynchronously iterable streams",
-    "spec": "https://streams.spec.whatwg.org/#rs-asynciterator",
+    "spec": [
+      "https://streams.spec.whatwg.org/#rs-asynciterator"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -4749,9 +5027,14 @@ export const features = {
     ],
     "description": "Asynchronous iterator objects, such as those returned by promises or generator functions, are iterable with the for await .. of loop.",
     "description_html": "Asynchronous iterator objects, such as those returned by promises or generator functions, are iterable with the <code>for await .. of</code> loop.",
-    "group": "iterators",
+    "group": [
+      "iterators"
+    ],
+    "kind": "feature",
     "name": "Async iterators and the for await..of loop",
-    "snapshot": "ecmascript-2018",
+    "snapshot": [
+      "ecmascript-2018"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asynciteratorprototype",
       "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements"
@@ -4777,8 +5060,11 @@ export const features = {
     ],
     "description": "The Atomics.pause() static method gives a hint to the CPU that the code calling the method is in a short-duration wait for shared memory, known as spinning or a spinlock.",
     "description_html": "The <code>Atomics.pause()</code> static method gives a hint to the CPU that the code calling the method is in a short-duration wait for shared memory, known as spinning or a spinlock.",
+    "kind": "feature",
     "name": "Atomics.pause()",
-    "spec": "https://tc39.es/proposal-atomics-microwait/",
+    "spec": [
+      "https://tc39.es/proposal-atomics-microwait/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-04-01",
@@ -4799,9 +5085,14 @@ export const features = {
     ],
     "description": "The Atomics.waitAsync() static method waits for a value in a shared memory location, providing a promise when the expected value is not yet in memory. The waitAsync() method is a non-blocking alternative to Atomics.wait().",
     "description_html": "The <code>Atomics.waitAsync()</code> static method waits for a value in a shared memory location, providing a promise when the expected value is not yet in memory. The <code>waitAsync()</code> method is a non-blocking alternative to <code>Atomics.wait()</code>.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Atomics.waitAsync",
-    "spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -4814,7 +5105,9 @@ export const features = {
     }
   },
   "attr": {
-    "caniuse": "css3-attr",
+    "caniuse": [
+      "css3-attr"
+    ],
     "compat_features": [
       "css.types.attr.fallback",
       "css.types.attr.type-or-unit",
@@ -4830,9 +5123,14 @@ export const features = {
     ],
     "description": "The attr() CSS function, in the context of any property, returns the value of an attribute of an HTML element, with the option to return it as a specific type or unit. You can set a default value for missing or invalid attributes.",
     "description_html": "The <code>attr()</code> CSS function, in the context of any property, returns the value of an attribute of an HTML element, with the option to return it as a specific type or unit. You can set a default value for missing or invalid attributes.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "attr()",
-    "spec": "https://drafts.csswg.org/css-values-5/#attr-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#attr-notation"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -4844,9 +5142,14 @@ export const features = {
     ],
     "description": "The attr() CSS function, in content property declarations, sets a ::before or ::after pseudo-element's content to the value of the specified HTML attribute.",
     "description_html": "The <code>attr()</code> CSS function, in <code>content</code> property declarations, sets a <code>::before</code> or <code>::after</code> pseudo-element's content to the value of the specified HTML attribute.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "attr() (content only)",
-    "spec": "https://drafts.csswg.org/css-values-5/#attr-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#attr-notation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4885,8 +5188,11 @@ export const features = {
     ],
     "description": "The Attribution Reporting API measures when an ad click or view leads to a conversion, such as a purchase on an advertiser site.",
     "description_html": "The Attribution Reporting API measures when an ad click or view leads to a conversion, such as a purchase on an advertiser site.",
+    "kind": "feature",
     "name": "Attribution reporting",
-    "spec": "https://wicg.github.io/attribution-reporting-api/",
+    "spec": [
+      "https://wicg.github.io/attribution-reporting-api/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -4897,7 +5203,9 @@ export const features = {
     }
   },
   "audio": {
-    "caniuse": "audio",
+    "caniuse": [
+      "audio"
+    ],
     "compat_features": [
       "api.HTMLAudioElement",
       "api.HTMLAudioElement.Audio",
@@ -4916,8 +5224,11 @@ export const features = {
       "media-elements",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<audio>",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#audio",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#audio"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -4941,8 +5252,11 @@ export const features = {
     ],
     "description": "The navigator.audioSession API controls how audio playback interacts with other applications. For example, playing music can pause audio from other applications, while ambient audio can play at the same time.",
     "description_html": "The <code>navigator.audioSession</code> API controls how audio playback interacts with other applications. For example, playing music can pause audio from other applications, while ambient audio can play at the same time.",
+    "kind": "feature",
     "name": "Audio session",
-    "spec": "https://w3c.github.io/audio-session/",
+    "spec": [
+      "https://w3c.github.io/audio-session/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -4987,9 +5301,14 @@ export const features = {
     ],
     "description": "The audioTracks and videoTracks APIs for media elements switch audio and video tracks during playback.",
     "description_html": "The <code>audioTracks</code> and <code>videoTracks</code> APIs for media elements switch audio and video tracks during playback.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "Audio and video tracks",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#media-resources-with-multiple-media-tracks",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#media-resources-with-multiple-media-tracks"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5026,8 +5345,11 @@ export const features = {
       "web-audio",
       "worklets"
     ],
+    "kind": "feature",
     "name": "AudioWorklet",
-    "spec": "https://webaudio.github.io/web-audio-api/#AudioWorklet",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#AudioWorklet"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -5050,8 +5372,11 @@ export const features = {
     ],
     "description": "The autocapitalize global HTML attribute sets the virtual keyboard capitalization behavior for user input on an element, such as the first letter of sentences or all words.",
     "description_html": "The <code>autocapitalize</code> global HTML attribute sets the virtual keyboard capitalization behavior for user input on an element, such as the first letter of sentences or all words.",
+    "kind": "feature",
     "name": "autocapitalize",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5071,8 +5396,11 @@ export const features = {
     ],
     "description": "The autocorrect global HTML attribute controls whether to automatically correct spelling or punctuation errors for user input.",
     "description_html": "The <code>autocorrect</code> global HTML attribute controls whether to automatically correct spelling or punctuation errors for user input.",
+    "kind": "feature",
     "name": "autocorrect",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#autocorrection",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#autocorrection"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5087,9 +5415,14 @@ export const features = {
     ],
     "description": "The :autofill pseudo-class matches <input> elements that have been filled in automatically by the browser.",
     "description_html": "The <code>:autofill</code> pseudo-class matches <code>&#x3C;input></code> elements that have been filled in automatically by the browser.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": ":autofill",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-autofill",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-autofill"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-02-09",
@@ -5105,7 +5438,9 @@ export const features = {
     }
   },
   "autofocus": {
-    "caniuse": "autofocus",
+    "caniuse": [
+      "autofocus"
+    ],
     "compat_features": [
       "api.HTMLElement.autofocus",
       "api.MathMLElement.autofocus",
@@ -5115,8 +5450,11 @@ export const features = {
     ],
     "description": "The autofocus HTML attribute gives focus to an element on page load.",
     "description_html": "The <code>autofocus</code> HTML attribute gives focus to an element on page load.",
+    "kind": "feature",
     "name": "autofocus",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5146,9 +5484,14 @@ export const features = {
     ],
     "description": "Autonomous custom elements are HTML elements with a hyphenated tag name (like <example-element>) that have behaviors you define.",
     "description_html": "Autonomous custom elements are HTML elements with a hyphenated tag name (like <code>&#x3C;example-element></code>) that have behaviors you define.",
-    "group": "custom-elements",
+    "group": [
+      "custom-elements"
+    ],
+    "kind": "feature",
     "name": "Autonomous custom elements",
-    "spec": "https://html.spec.whatwg.org/multipage/custom-elements.html#autonomous-custom-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#autonomous-custom-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -5165,11 +5508,16 @@ export const features = {
     }
   },
   "avif": {
-    "caniuse": "avif",
+    "caniuse": [
+      "avif"
+    ],
     "description": "AVIF (AV1 Image File Format) is an image format based on the AV1 video format.",
     "description_html": "AVIF (AV1 Image File Format) is an image format based on the AV1 video format.",
+    "kind": "feature",
     "name": "AVIF",
-    "spec": "https://aomediacodec.github.io/av1-avif/",
+    "spec": [
+      "https://aomediacodec.github.io/av1-avif/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-01-26",
@@ -5190,9 +5538,14 @@ export const features = {
     ],
     "description": "The <b> HTML element draws reader's attention to text, styling text as bold by default.",
     "description_html": "The <code>&#x3C;b></code> HTML element draws reader's attention to text, styling text as bold by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<b>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5216,9 +5569,14 @@ export const features = {
     ],
     "description": "The ::backdrop CSS pseudo-element is a box underneath an element in the top layer, such as a <dialog>. It can be used to create obscuring effects distinguishing a modal element from the elements underneath.",
     "description_html": "The <code>::backdrop</code> CSS pseudo-element is a box underneath an element in the top layer, such as a <code>&#x3C;dialog></code>. It can be used to create obscuring effects distinguishing a modal element from the elements underneath.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::backdrop",
-    "spec": "https://drafts.csswg.org/css-position-4/#backdrop",
+    "spec": [
+      "https://drafts.csswg.org/css-position-4/#backdrop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -5235,15 +5593,22 @@ export const features = {
     }
   },
   "backdrop-filter": {
-    "caniuse": "css-backdrop-filter",
+    "caniuse": [
+      "css-backdrop-filter"
+    ],
     "compat_features": [
       "css.properties.backdrop-filter"
     ],
     "description": "The backdrop-filter CSS property applies graphical effects such as blurring or color shifting to the area behind an element.",
     "description_html": "The <code>backdrop-filter</code> CSS property applies graphical effects such as blurring or color shifting to the area behind an element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "backdrop-filter",
-    "spec": "https://drafts.fxtf.org/filter-effects-2/#BackdropFilterProperty",
+    "spec": [
+      "https://drafts.fxtf.org/filter-effects-2/#BackdropFilterProperty"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -5259,16 +5624,23 @@ export const features = {
     }
   },
   "background": {
-    "caniuse": "multibackgrounds",
+    "caniuse": [
+      "multibackgrounds"
+    ],
     "compat_features": [
       "css.properties.background",
       "css.properties.background.multiple_backgrounds"
     ],
     "description": "The background CSS property is a shorthand that sets several background properties at once.",
     "description_html": "The <code>background</code> CSS property is a shorthand that sets several background properties at once.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5285,7 +5657,9 @@ export const features = {
     }
   },
   "background-attachment": {
-    "caniuse": "background-attachment",
+    "caniuse": [
+      "background-attachment"
+    ],
     "compat_features": [
       "css.properties.background-attachment",
       "css.properties.background-attachment.fixed",
@@ -5295,9 +5669,14 @@ export const features = {
     ],
     "description": "The background-attachment CSS property sets whether an element's background image or gradient moves as the element scrolls.",
     "description_html": "The <code>background-attachment</code> CSS property sets whether an element's background image or gradient moves as the element scrolls.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-attachment",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#the-background-attachment",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#the-background-attachment"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -5314,16 +5693,23 @@ export const features = {
     }
   },
   "background-blend-mode": {
-    "caniuse": "css-backgroundblendmode",
+    "caniuse": [
+      "css-backgroundblendmode"
+    ],
     "compat_features": [
       "css.properties.background-blend-mode",
       "css.types.blend-mode"
     ],
     "description": "The background-blend-mode CSS property blends an element's background image and background color using blend modes like multiply, difference, or color.",
     "description_html": "The <code>background-blend-mode</code> CSS property blends an element's background image and background color using blend modes like <code>multiply</code>, <code>difference</code>, or <code>color</code>.",
-    "group": "blend-mode",
+    "group": [
+      "blend-mode"
+    ],
+    "kind": "feature",
     "name": "background-blend-mode",
-    "spec": "https://drafts.fxtf.org/compositing-2/#background-blend-mode",
+    "spec": [
+      "https://drafts.fxtf.org/compositing-2/#background-blend-mode"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -5349,9 +5735,14 @@ export const features = {
     ],
     "description": "The background-clip CSS property sets the extent of the background: the padding box, the content box, or the default border box.",
     "description_html": "The <code>background-clip</code> CSS property sets the extent of the background: the padding box, the content box, or the default border box.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-clip",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-clip",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-clip"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5373,9 +5764,14 @@ export const features = {
     ],
     "description": "The background-clip: border-area CSS declaration draws the background underneath only the border of an element.",
     "description_html": "The <code>background-clip: border-area</code> CSS declaration draws the background underneath only the border of an element.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-clip: border-area",
-    "spec": "https://drafts.csswg.org/css-backgrounds-4/#background-clip",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5390,9 +5786,14 @@ export const features = {
     ],
     "description": "The background-clip: text CSS declaration draws the background underneath only the text in the element.",
     "description_html": "The <code>background-clip: text</code> CSS declaration draws the background underneath only the text in the element.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-clip: text",
-    "spec": "https://drafts.csswg.org/css-backgrounds-4/#background-clip",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5410,9 +5811,14 @@ export const features = {
     ],
     "description": "The background-color CSS property sets the fill color of an element, behind any content and background images or gradients.",
     "description_html": "The <code>background-color</code> CSS property sets the fill color of an element, behind any content and background images or gradients.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-color",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-color",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-color"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5464,8 +5870,11 @@ export const features = {
     ],
     "description": "Background fetch downloads data in the background even when the web page is closed.",
     "description_html": "Background fetch downloads data in the background even when the web page is closed.",
+    "kind": "feature",
     "name": "Background fetch",
-    "spec": "https://wicg.github.io/background-fetch/",
+    "spec": [
+      "https://wicg.github.io/background-fetch/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5483,9 +5892,14 @@ export const features = {
     ],
     "description": "The background-image CSS property sets the graphics to display behind the content of an element and in front of the background color. Graphics may be any combination of images or gradients.",
     "description_html": "The <code>background-image</code> CSS property sets the graphics to display behind the content of an element and in front of the background color. Graphics may be any combination of images or gradients.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-image",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-image",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-image"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5511,9 +5925,14 @@ export const features = {
     ],
     "description": "The background-origin CSS property sets the background starting position relative to the border and padding of an element.",
     "description_html": "The <code>background-origin</code> CSS property sets the background starting position relative to the border and padding of an element.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-origin",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-origin",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-origin"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5550,9 +5969,14 @@ export const features = {
     ],
     "description": "The background-position CSS property offsets the initial position of background images relative to the background origin.",
     "description_html": "The <code>background-position</code> CSS property offsets the initial position of background images relative to the background origin.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-position",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-position",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-position"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5569,7 +5993,9 @@ export const features = {
     }
   },
   "background-repeat": {
-    "caniuse": "background-repeat-round-space",
+    "caniuse": [
+      "background-repeat-round-space"
+    ],
     "compat_features": [
       "css.properties.background-repeat",
       "css.properties.background-repeat.2-value",
@@ -5583,9 +6009,14 @@ export const features = {
     ],
     "description": "The background-repeat CSS property sets how a background image is tiled.",
     "description_html": "The <code>background-repeat</code> CSS property sets how a background image is tiled.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-repeat",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-repeat",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-repeat"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -5611,9 +6042,14 @@ export const features = {
     ],
     "description": "The background-size CSS property scales or stretches a background based on the size of the element (with the contain and cover keywords), a length, or percentage.",
     "description_html": "The <code>background-size</code> CSS property scales or stretches a background based on the size of the element (with the <code>contain</code> and <code>cover</code> keywords), a length, or percentage.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "background-size",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#background-size",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-size"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5645,8 +6081,11 @@ export const features = {
     ],
     "description": "The background synchronization API registers a service worker callback to run only when the device is no longer offline. You can use this to let users continue using your app while offline and synchronize with a server after reconnecting.",
     "description_html": "The background synchronization API registers a service worker callback to run only when the device is no longer offline. You can use this to let users continue using your app while offline and synchronize with a server after reconnecting.",
+    "kind": "feature",
     "name": "Background sync",
-    "spec": "https://wicg.github.io/background-sync/spec/",
+    "spec": [
+      "https://wicg.github.io/background-sync/spec/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5663,8 +6102,11 @@ export const features = {
     ],
     "description": "The navigator.setAppBadge() method allows installed web applications to display an application badge, typically a dot or number shown alongside the application's icon on the device's home screen or application dock.",
     "description_html": "The <code>navigator.setAppBadge()</code> method allows installed web applications to display an application badge, typically a dot or number shown alongside the application's icon on the device's home screen or application dock.",
+    "kind": "feature",
     "name": "Badging",
-    "spec": "https://w3c.github.io/badging/",
+    "spec": [
+      "https://w3c.github.io/badging/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5684,8 +6126,11 @@ export const features = {
     ],
     "description": "The BarcodeDetector API recognizes various barcode formats in images.",
     "description_html": "The <code>BarcodeDetector</code> API recognizes various barcode formats in images.",
+    "kind": "feature",
     "name": "Barcode detector",
-    "spec": "https://wicg.github.io/shape-detection-api/#barcode-detection-api",
+    "spec": [
+      "https://wicg.github.io/shape-detection-api/#barcode-detection-api"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5707,8 +6152,11 @@ export const features = {
     ],
     "description": "The visible property of the window.locationbar, window.menubar, window.personalbar, window.scrollbars, window.statusbar, and window.toolbar APIs historically represented the visibility of a browser user interface. For privacy reasons, it now represents whether the window is a pop-up.",
     "description_html": "The <code>visible</code> property of the <code>window.locationbar</code>, <code>window.menubar</code>, <code>window.personalbar</code>, <code>window.scrollbars</code>, <code>window.statusbar</code>, and <code>window.toolbar</code> APIs historically represented the visibility of a browser user interface. For privacy reasons, it now represents whether the window is a pop-up.",
+    "kind": "feature",
     "name": "BarProp",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#browser-interface-elements",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#browser-interface-elements"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5737,9 +6185,14 @@ export const features = {
     ],
     "description": "The <base> element sets the base URL (the URL that relative URLs are relative to) for all relative URLs in the document.",
     "description_html": "The <code>&#x3C;base></code> element sets the base URL (the URL that relative URLs are relative to) for all relative URLs in the document.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<base>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5756,7 +6209,9 @@ export const features = {
     }
   },
   "base64encodedecode": {
-    "caniuse": "atob-btoa",
+    "caniuse": [
+      "atob-btoa"
+    ],
     "compat_features": [
       "api.atob",
       "api.atob.worker_support",
@@ -5765,8 +6220,11 @@ export const features = {
     ],
     "description": "The atob() and btoa() global functions encode and decode strings to and from base 64, respectively.",
     "description_html": "The <code>atob()</code> and <code>btoa()</code> global functions encode and decode strings to and from base 64, respectively.",
+    "kind": "feature",
     "name": "Base64 encoding and decoding",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#atob",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#atob"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -5791,9 +6249,14 @@ export const features = {
     ],
     "description": "The baseline-shift CSS property sets the position of an element relative to its dominant baseline.",
     "description_html": "The <code>baseline-shift</code> CSS property sets the position of an element relative to its dominant baseline.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "baseline-shift",
-    "spec": "https://drafts.csswg.org/css-inline-3/#baseline-shift-property",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#baseline-shift-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5814,8 +6277,11 @@ export const features = {
     ],
     "description": "The baseline-source CSS property controls how inline-level boxes with multiple lines of text are aligned with the surrounding text. By default, which typographic baseline is used depends on the display property value.",
     "description_html": "The <code>baseline-source</code> CSS property controls how inline-level boxes with multiple lines of text are aligned with the surrounding text. By default, which typographic baseline is used depends on the <code>display</code> property value.",
+    "kind": "feature",
     "name": "baseline-source",
-    "spec": "https://drafts.csswg.org/css-inline-3/#baseline-source",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#baseline-source"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5828,7 +6294,9 @@ export const features = {
     }
   },
   "battery": {
-    "caniuse": "battery-status",
+    "caniuse": [
+      "battery-status"
+    ],
     "compat_features": [
       "api.BatteryManager",
       "api.BatteryManager.charging",
@@ -5845,8 +6313,11 @@ export const features = {
     ],
     "description": "The navigator.getBattery() API obtains information about the device's battery, including charge level and status. Also known as the Battery API.",
     "description_html": "The <code>navigator.getBattery()</code> API obtains information about the device's battery, including charge level and status. Also known as the Battery API.",
+    "kind": "feature",
     "name": "Battery status",
-    "spec": "https://w3c.github.io/battery/",
+    "spec": [
+      "https://w3c.github.io/battery/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5862,9 +6333,14 @@ export const features = {
     ],
     "description": "The <bdi> element isolates text that may have a different text direction from its surrounding text. This prevents the browser's bidirectional text algorithm from affecting or being affected by the direction of the surrounding text.",
     "description_html": "The <code>&#x3C;bdi></code> element isolates text that may have a different text direction from its surrounding text. This prevents the browser's bidirectional text algorithm from affecting or being affected by the direction of the surrounding text.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<bdi>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -5886,9 +6362,14 @@ export const features = {
     ],
     "description": "The <bdo> element overrides the directionality of text, so that the text within is rendered in a different direction than the surrounding text.",
     "description_html": "The <code>&#x3C;bdo></code> element overrides the directionality of text, so that the text within is rendered in a different direction than the surrounding text.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<bdo>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5905,14 +6386,19 @@ export const features = {
     }
   },
   "beacons": {
-    "caniuse": "beacon",
+    "caniuse": [
+      "beacon"
+    ],
     "compat_features": [
       "api.Navigator.sendBeacon"
     ],
     "description": "The navigator.sendBeacon() method asynchronously sends an HTTP POST request with a limited amount of data, typically for app state, events, and analytics data. The one-way beacon is guaranteed to be initiated before the browser unloads the page, but the sender does not get to handle the response.",
     "description_html": "The <code>navigator.sendBeacon()</code> method asynchronously sends an HTTP POST request with a limited amount of data, typically for app state, events, and analytics data. The one-way beacon is guaranteed to be initiated before the browser unloads the page, but the sender does not get to handle the response.",
+    "kind": "feature",
     "name": "Beacons",
-    "spec": "https://w3c.github.io/beacon/",
+    "spec": [
+      "https://w3c.github.io/beacon/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-12",
@@ -5929,7 +6415,9 @@ export const features = {
     }
   },
   "before-after": {
-    "caniuse": "css-gencontent",
+    "caniuse": [
+      "css-gencontent"
+    ],
     "compat_features": [
       "css.selectors.after",
       "css.selectors.after.animation_and_transition_support",
@@ -5938,8 +6426,11 @@ export const features = {
     ],
     "description": "The ::before and ::after CSS pseudo-elements select inline boxes preceding and following an element. They are often used with the content property to generate cosmetic content.",
     "description_html": "The <code>::before</code> and <code>::after</code> CSS pseudo-elements select inline boxes preceding and following an element. They are often used with the <code>content</code> property to generate cosmetic content.",
+    "kind": "feature",
     "name": "::before and ::after",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#generated-content",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#generated-content"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -5967,9 +6458,14 @@ export const features = {
     ],
     "description": "The beforeinstallprompt event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call event.prompt() to control when the installation prompt is shown. The appinstalled event fires when the PWA is successfully installed.",
     "description_html": "The <code>beforeinstallprompt</code> event fires when a Progressive Web App (PWA) is installable. You can cancel the event and later call <code>event.prompt()</code> to control when the installation prompt is shown. The <code>appinstalled</code> event fires when the PWA is successfully installed.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "beforeinstallprompt",
-    "spec": "https://wicg.github.io/manifest-incubations/#installation-events",
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#installation-events"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -5988,8 +6484,11 @@ export const features = {
     ],
     "description": "The beforeunload event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
     "description_html": "The <code>beforeunload</code> event is fired when the current window is about to be unloaded. Typically this is used to display a dialog to confirm if users really want to leave the page when there is unsaved data that would be lost.",
+    "kind": "feature",
     "name": "beforeunload",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-beforeunloadevent-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6019,9 +6518,14 @@ export const features = {
     ],
     "description": "The notRestoredReasons property of a PerformanceNavigationTiming object explains why the current document was blocked from using the back/forward cache (also known as the bfcache) on navigation.",
     "description_html": "The <code>notRestoredReasons</code> property of a <code>PerformanceNavigationTiming</code> object explains why the current document was blocked from using the back/forward cache (also known as the bfcache) on navigation.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Back/forward cache blocking reasons",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-notrestoredreasons-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-notrestoredreasons-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6032,7 +6536,9 @@ export const features = {
     }
   },
   "bigint": {
-    "caniuse": "bigint",
+    "caniuse": [
+      "bigint"
+    ],
     "compat_features": [
       "javascript.builtins.BigInt",
       "javascript.builtins.BigInt.BigInt",
@@ -6043,10 +6549,17 @@ export const features = {
     ],
     "description": "The BigInt JavaScript type represents integers of any size, including integers too large for the primitive Number type.",
     "description_html": "The <code>BigInt</code> JavaScript type represents integers of any size, including integers too large for the primitive <code>Number</code> type.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "BigInt",
-    "snapshot": "ecmascript-2020",
-    "spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects",
+    "snapshot": [
+      "ecmascript-2020"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -6075,10 +6588,17 @@ export const features = {
     ],
     "description": "The BigInt64Array and BigUint64Array typed arrays represent 64-bit integers, signed and unsigned respectively.",
     "description_html": "The <code>BigInt64Array</code> and <code>BigUint64Array</code> typed arrays represent 64-bit integers, signed and unsigned respectively.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "BigInt64Array",
-    "snapshot": "ecmascript-2020",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+    "snapshot": [
+      "ecmascript-2020"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -6105,9 +6625,14 @@ export const features = {
     ],
     "description": "The blocking=\"render\" attribute for <link>, <script>, and <style> elements blocks rendering until the external script or stylesheet has been loaded. For <link rel=\"expect\">, rendering is blocked until a specific element is in the DOM.",
     "description_html": "The <code>blocking=\"render\"</code> attribute for <code>&#x3C;link></code>, <code>&#x3C;script></code>, and <code>&#x3C;style></code> elements blocks rendering until the external script or stylesheet has been loaded. For <code>&#x3C;link rel=\"expect\"></code>, rendering is blocked until a specific element is in the DOM.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "blocking=\"render\"",
-    "spec": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6126,9 +6651,14 @@ export const features = {
     ],
     "description": "The <blockquote> element represents an extended quotation, styling contents as an indented block by default.",
     "description_html": "The <code>&#x3C;blockquote></code> element represents an extended quotation, styling contents as an indented block by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<blockquote>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6151,9 +6681,14 @@ export const features = {
     ],
     "description": "The <body> element represents the content of an HTML document.",
     "description_html": "The <code>&#x3C;body></code> element represents the content of an HTML document.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<body>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-body-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-body-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6170,7 +6705,9 @@ export const features = {
     }
   },
   "border-image": {
-    "caniuse": "border-image",
+    "caniuse": [
+      "border-image"
+    ],
     "compat_features": [
       "css.properties.border-image",
       "css.properties.border-image-outset",
@@ -6189,9 +6726,14 @@ export const features = {
     ],
     "description": "The border-image CSS property draws an image around an element.",
     "description_html": "The <code>border-image</code> CSS property draws an image around an element.",
-    "group": "borders-outlines",
+    "group": [
+      "borders-outlines"
+    ],
+    "kind": "feature",
     "name": "Border images",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#border-images",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#border-images"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-08-01",
@@ -6208,7 +6750,9 @@ export const features = {
     }
   },
   "border-radius": {
-    "caniuse": "border-radius",
+    "caniuse": [
+      "border-radius"
+    ],
     "compat_features": [
       "css.properties.border-bottom-left-radius",
       "css.properties.border-bottom-left-radius.elliptical_corners",
@@ -6229,9 +6773,14 @@ export const features = {
     ],
     "description": "The border-radius CSS property rounds the corners of the border drawn around an element.",
     "description_html": "The <code>border-radius</code> CSS property rounds the corners of the border drawn around an element.",
-    "group": "borders-outlines",
+    "group": [
+      "borders-outlines"
+    ],
+    "kind": "feature",
     "name": "border-radius",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#corners",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#corners"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6283,9 +6832,14 @@ export const features = {
     ],
     "description": "The border CSS property sets the color, style, and width of the line around an element.",
     "description_html": "The <code>border</code> CSS property sets the color, style, and width of the line around an element.",
-    "group": "borders-outlines",
+    "group": [
+      "borders-outlines"
+    ],
+    "kind": "feature",
     "name": "Borders",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#borders",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#borders"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6302,7 +6856,9 @@ export const features = {
     }
   },
   "box-decoration-break": {
-    "caniuse": "css-boxdecorationbreak",
+    "caniuse": [
+      "css-boxdecorationbreak"
+    ],
     "compat_features": [
       "css.properties.box-decoration-break",
       "css.properties.box-decoration-break.clone",
@@ -6310,8 +6866,11 @@ export const features = {
     ],
     "description": "The box-decoration-break CSS property sets whether box decorations, such as borders or backgrounds, of an element divided across a page, column, or region wraps each fragment or splits across the break.",
     "description_html": "The <code>box-decoration-break</code> CSS property sets whether box decorations, such as borders or backgrounds, of an element divided across a page, column, or region wraps each fragment or splits across the break.",
+    "kind": "feature",
     "name": "box-decoration-break",
-    "spec": "https://drafts.csswg.org/css-break-4/#break-decoration",
+    "spec": [
+      "https://drafts.csswg.org/css-break-4/#break-decoration"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6324,7 +6883,9 @@ export const features = {
     }
   },
   "box-shadow": {
-    "caniuse": "css-boxshadow",
+    "caniuse": [
+      "css-boxshadow"
+    ],
     "compat_features": [
       "css.properties.box-shadow",
       "css.properties.box-shadow.inset",
@@ -6333,9 +6894,14 @@ export const features = {
     ],
     "description": "The box-shadow CSS property applies shadow effects around an element's frame. This can create drop shadow and inner shadow effects.",
     "description_html": "The <code>box-shadow</code> CSS property applies shadow effects around an element's frame. This can create drop shadow and inner shadow effects.",
-    "group": "background",
+    "group": [
+      "background"
+    ],
+    "kind": "feature",
     "name": "box-shadow",
-    "spec": "https://drafts.csswg.org/css-backgrounds-3/#box-shadow",
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#box-shadow"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6352,7 +6918,9 @@ export const features = {
     }
   },
   "box-sizing": {
-    "caniuse": "css3-boxsizing",
+    "caniuse": [
+      "css3-boxsizing"
+    ],
     "compat_features": [
       "css.properties.box-sizing",
       "css.properties.box-sizing.border-box",
@@ -6360,9 +6928,14 @@ export const features = {
     ],
     "description": "The box-sizing CSS property sets whether an element's width and height are calculated based on the content-box, which does not count the size of borders or padding, or border-box, which does count them.",
     "description_html": "The <code>box-sizing</code> CSS property sets whether an element's width and height are calculated based on the <code>content-box</code>, which does not count the size of borders or padding, or <code>border-box</code>, which does count them.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "box-sizing",
-    "spec": "https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6385,9 +6958,14 @@ export const features = {
     ],
     "description": "The <br> element produces line breaks in text.",
     "description_html": "The <code>&#x3C;br></code> element produces line breaks in text.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<br>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6404,7 +6982,9 @@ export const features = {
     }
   },
   "broadcast-channel": {
-    "caniuse": "broadcastchannel",
+    "caniuse": [
+      "broadcastchannel"
+    ],
     "compat_features": [
       "api.BroadcastChannel",
       "api.BroadcastChannel.BroadcastChannel",
@@ -6416,9 +6996,14 @@ export const features = {
     ],
     "description": "The BroadcastChannel API allows you to send messages between same-origin browsing contexts, such as between the same page loaded in multiple tabs.",
     "description_html": "The <code>BroadcastChannel</code> API allows you to send messages between same-origin browsing contexts, such as between the same page loaded in multiple tabs.",
-    "group": "messaging",
+    "group": [
+      "messaging"
+    ],
+    "kind": "feature",
     "name": "BroadcastChannel",
-    "spec": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -6435,15 +7020,20 @@ export const features = {
     }
   },
   "brotli": {
-    "caniuse": "brotli",
+    "caniuse": [
+      "brotli"
+    ],
     "compat_features": [
       "http.headers.Accept-Encoding.br",
       "http.headers.Content-Encoding.br"
     ],
     "description": "Brotli is a lossless data compression algorithm. When used as a content encoding, it often provides better compression than gzip.",
     "description_html": "Brotli is a lossless data compression algorithm. When used as a content encoding, it often provides better compression than gzip.",
+    "kind": "feature",
     "name": "Brotli compression",
-    "spec": "https://www.rfc-editor.org/rfc/rfc7932",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc7932"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-03-19",
@@ -6491,8 +7081,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<button>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6509,7 +7102,9 @@ export const features = {
     }
   },
   "calc": {
-    "caniuse": "calc",
+    "caniuse": [
+      "calc"
+    ],
     "compat_features": [
       "css.types.calc",
       "css.types.calc.gradient_color_stops",
@@ -6518,9 +7113,14 @@ export const features = {
     ],
     "description": "The calc() CSS function computes mathematical expressions such a calc(100%/3 - 1em).",
     "description_html": "The <code>calc()</code> CSS function computes mathematical expressions such a <code>calc(100%/3 - 1em)</code>.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "calc()",
-    "spec": "https://drafts.csswg.org/css-values-3/#calc-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-values-3/#calc-notation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6546,9 +7146,14 @@ export const features = {
     ],
     "description": "The e, pi, infinity, and NaN keywords represent well-defined constants accepted in CSS math functions such as calc().",
     "description_html": "The <code>e</code>, <code>pi</code>, <code>infinity</code>, and <code>NaN</code> keywords represent well-defined constants accepted in CSS math functions such as <code>calc()</code>.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "calc() keywords",
-    "spec": "https://drafts.csswg.org/css-values-4/#calc-keywords",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#calc-keywords"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-06-06",
@@ -6569,9 +7174,14 @@ export const features = {
     ],
     "description": "The calc-size() CSS function computes mathematical expressions that include height and width keyword values, for example calc-size(fit-content, size / 2). Not to be confused with the calc() CSS function, which cannot use keyword values.",
     "description_html": "The <code>calc-size()</code> CSS function computes mathematical expressions that include <code>height</code> and <code>width</code> keyword values, for example <code>calc-size(fit-content, size / 2)</code>. Not to be confused with the <code>calc()</code> CSS function, which cannot use keyword values.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "calc-size()",
-    "spec": "https://drafts.csswg.org/css-values-5/#calc-size",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#calc-size"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6599,8 +7209,11 @@ export const features = {
       "canvas",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<canvas>",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#canvas",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#canvas"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6738,9 +7351,14 @@ export const features = {
     ],
     "description": "The CanvasRenderingContext2D API is the \"2d\" rendering context for the <canvas> element. It represents a flat, two-dimensional space for drawing graphics and animations.",
     "description_html": "The <code>CanvasRenderingContext2D</code> API is the \"2d\" rendering context for the <code>&#x3C;canvas></code> element. It represents a flat, two-dimensional space for drawing graphics and animations.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "2D canvas",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -6762,9 +7380,14 @@ export const features = {
     ],
     "description": "The optional alpha parameter of a 2D canvas's getContext() method sets whether the canvas has an alpha transparency channel. If set to false, then this permits the browser to optimize compositing for an opaque canvas.",
     "description_html": "The optional <code>alpha</code> parameter of a 2D canvas's <code>getContext()</code> method sets whether the canvas has an alpha transparency channel. If set to <code>false</code>, then this permits the browser to optimize compositing for an opaque canvas.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "2D canvas opacity",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-alpha",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-alpha"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6782,9 +7405,14 @@ export const features = {
     ],
     "description": "The optional colorSpace parameter of a 2D canvas's getContext() method chooses the color representation, such as \"srgb\" or \"display-p3\".",
     "description_html": "The optional <code>colorSpace</code> parameter of a 2D canvas's <code>getContext()</code> method chooses the color representation, such as <code>\"srgb\"</code> or <code>\"display-p3\"</code>.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Color management for 2D canvas",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-space",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-space"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6802,9 +7430,14 @@ export const features = {
     ],
     "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a 2D canvas independently of the event loop. This can reduce drawing latency.",
     "description_html": "The optional <code>desynchronized</code> parameter of a canvas's <code>getContext()</code> method permits the browser to draw a 2D canvas independently of the event loop. This can reduce drawing latency.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Desynchronized 2D canvas",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-desynchronized",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-desynchronized"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6822,9 +7455,14 @@ export const features = {
     ],
     "description": "The optional willReadFrequently parameter of a canvas's getContext() method permits the browser to optimize for frequent getImageData() calls by avoiding hardware acceleration. Also known as multiple readback.",
     "description_html": "The optional <code>willReadFrequently</code> parameter of a canvas's <code>getContext()</code> method permits the browser to optimize for frequent <code>getImageData()</code> calls by avoiding hardware acceleration. Also known as multiple readback.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "willReadFrequently",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -6850,9 +7488,14 @@ export const features = {
     ],
     "description": "The contextlost event for <canvas> fires when the canvas backing storage is lost, while the contextrestored event fires when it is recreated.",
     "description_html": "The <code>contextlost</code> event for <code>&#x3C;canvas></code> fires when the canvas backing storage is lost, while the <code>contextrestored</code> event fires when it is recreated.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "contextlost and contextrestored",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#context-lost-steps",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#context-lost-steps"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6871,9 +7514,14 @@ export const features = {
     ],
     "description": "The createConicGradient() methods draw a conic gradient to a 2D canvas.",
     "description_html": "The <code>createConicGradient()</code> methods draw a conic gradient to a 2D canvas.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Canvas createConicGradient()",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createconicgradient-dev",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createconicgradient-dev"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-04-11",
@@ -6895,9 +7543,14 @@ export const features = {
     ],
     "description": "The reset() method clears a canvas to its initial state.",
     "description_html": "The <code>reset()</code> method clears a canvas to its initial state.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Canvas reset()",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -6919,9 +7572,14 @@ export const features = {
     ],
     "description": "The roundRect() methods draw a rounded rectangle to a 2D canvas.",
     "description_html": "The <code>roundRect()</code> methods draw a rounded rectangle to a 2D canvas.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Canvas roundRect()",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-04-11",
@@ -6942,9 +7600,14 @@ export const features = {
     ],
     "description": "The cap CSS length unit corresponds to the height of Latin capital letters.",
     "description_html": "The <code>cap</code> CSS length unit corresponds to the height of Latin capital letters.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "cap unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#cap",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#cap"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -6965,9 +7628,14 @@ export const features = {
     ],
     "description": "The captureStream() method for <audio> and <video> elements returns a MediaStream for the media element's content. You can use this to record media or send it elsewhere, such as a canvas or WebRTC connection.",
     "description_html": "The <code>captureStream()</code> method for <code>&#x3C;audio></code> and <code>&#x3C;video></code> elements returns a <code>MediaStream</code> for the media element's content. You can use this to record media or send it elsewhere, such as a canvas or WebRTC connection.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "captureStream() for <audio> and <video>",
-    "spec": "https://w3c.github.io/mediacapture-fromelement/#html-media-element-media-capture-extensions",
+    "spec": [
+      "https://w3c.github.io/mediacapture-fromelement/#html-media-element-media-capture-extensions"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -6986,9 +7654,14 @@ export const features = {
     ],
     "description": "The captureStream() method for <canvas> elements returns a MediaStream which includes a CanvasCaptureMediaStreamTrack representing real-time video of the canvas image. You can use this to record the canvas, or send it elsewhere, such as another canvas or WebRTC connection.",
     "description_html": "The <code>captureStream()</code> method for <code>&#x3C;canvas></code> elements returns a <code>MediaStream</code> which includes a <code>CanvasCaptureMediaStreamTrack</code> representing real-time video of the canvas image. You can use this to record the canvas, or send it elsewhere, such as another canvas or WebRTC connection.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "captureStream() for <canvas>",
-    "spec": "https://w3c.github.io/mediacapture-fromelement/#html-canvas-element-media-capture-extensions",
+    "spec": [
+      "https://w3c.github.io/mediacapture-fromelement/#html-canvas-element-media-capture-extensions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -7005,15 +7678,22 @@ export const features = {
     }
   },
   "caret-color": {
-    "caniuse": "css-caret-color",
+    "caniuse": [
+      "css-caret-color"
+    ],
     "compat_features": [
       "css.properties.caret-color"
     ],
     "description": "The caret-color CSS property sets the color of the text insertion pointer in a text input.",
     "description_html": "The <code>caret-color</code> CSS property sets the color of the text insertion pointer in a text input.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "caret-color",
-    "spec": "https://drafts.csswg.org/css-ui-4/#insertion-caret",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#insertion-caret"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -7030,7 +7710,9 @@ export const features = {
     }
   },
   "cascade-layers": {
-    "caniuse": "css-cascade-layers",
+    "caniuse": [
+      "css-cascade-layers"
+    ],
     "compat_features": [
       "api.CSSImportRule.layerName",
       "api.CSSLayerBlockRule",
@@ -7043,9 +7725,14 @@ export const features = {
     ],
     "description": "The @layer CSS at-rule avoids specificity conflicts by providing priority levels for different groups of CSS rules, such as low-priority styles like resets, and high-priority styles like UI components.",
     "description_html": "The <code>@layer</code> CSS at-rule avoids specificity conflicts by providing priority levels for different groups of CSS rules, such as low-priority styles like resets, and high-priority styles like UI components.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Cascade layers",
-    "spec": "https://drafts.csswg.org/css-cascade-5/",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-5/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -7062,15 +7749,22 @@ export const features = {
     }
   },
   "case-insensitive-attributes": {
-    "caniuse": "css-case-insensitive",
+    "caniuse": [
+      "css-case-insensitive"
+    ],
     "compat_features": [
       "css.selectors.attribute.case_insensitive_modifier"
     ],
     "description": "The i identifier in a CSS attribute selector matches attribute values case-insensitively in document languages like XML where attribute values are case-sensitive.",
     "description_html": "The <code>i</code> identifier in a CSS attribute selector matches attribute values case-insensitively in document languages like XML where attribute values are case-sensitive.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Case-insensitive attribute selector",
-    "spec": "https://drafts.csswg.org/selectors-4/#attribute-case",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#attribute-case"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -7092,9 +7786,14 @@ export const features = {
     ],
     "description": "The s identifier in a CSS attribute selector matches attribute values case-sensitively in document languages like HTML where attribute values are case-insensitive.",
     "description_html": "The <code>s</code> identifier in a CSS attribute selector matches attribute values case-sensitively in document languages like HTML where attribute values are case-insensitive.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Case-sensitive attribute selector",
-    "spec": "https://drafts.csswg.org/selectors-4/#attribute-case",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#attribute-case"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7104,15 +7803,22 @@ export const features = {
     }
   },
   "ch": {
-    "caniuse": "ch-unit",
+    "caniuse": [
+      "ch-unit"
+    ],
     "compat_features": [
       "css.types.length.ch"
     ],
     "description": "The ch CSS length unit is a font-relative length based on the width of the zero (0) character.",
     "description_html": "The <code>ch</code> CSS length unit is a font-relative length based on the width of the zero (0) character.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "ch unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -7134,6 +7840,7 @@ export const features = {
     ],
     "description": "The change event for <input>, <select>, and <textarea> elements fires when the user modifies the element's value. Unlike the input event, the change event does not necessarily fire on every alteration to an element's value.",
     "description_html": "The <code>change</code> event for <code>&#x3C;input></code>, <code>&#x3C;select></code>, and <code>&#x3C;textarea></code> elements fires when the user modifies the element's value. Unlike the <code>input</code> event, the change event does not necessarily fire on every alteration to an element's value.",
+    "kind": "feature",
     "name": "Change event",
     "spec": [
       "https://html.spec.whatwg.org/multipage/indices.html#event-change",
@@ -7155,7 +7862,9 @@ export const features = {
     }
   },
   "channel-messaging": {
-    "caniuse": "channel-messaging",
+    "caniuse": [
+      "channel-messaging"
+    ],
     "compat_features": [
       "api.MessageChannel",
       "api.MessageChannel.MessageChannel",
@@ -7171,9 +7880,14 @@ export const features = {
     ],
     "description": "Channel messaging communicates one-to-one between browsing contexts on the same origin, such as between <iframe> elements or two documents using a shared worker.",
     "description_html": "Channel messaging communicates one-to-one between browsing contexts on the same origin, such as between <code>&#x3C;iframe></code> elements or two documents using a shared worker.",
-    "group": "messaging",
+    "group": [
+      "messaging"
+    ],
+    "kind": "feature",
     "name": "Channel messaging",
-    "spec": "https://html.spec.whatwg.org/multipage/web-messaging.html#channel-messaging",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/web-messaging.html#channel-messaging"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-22",
@@ -7195,9 +7909,14 @@ export const features = {
     ],
     "description": "The @charset CSS at-rule specifies the character encoding of an external style sheet.",
     "description_html": "The <code>@charset</code> CSS at-rule specifies the character encoding of an external style sheet.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@charset",
-    "spec": "https://drafts.csswg.org/css2/#charset",
+    "spec": [
+      "https://drafts.csswg.org/css2/#charset"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -7224,8 +7943,11 @@ export const features = {
     ],
     "description": "The checkVisibility() method checks if an element is potentially visible, with optional parameters for the kinds of visibility to check. For example, it checks whether the element has the style display: none, but can also check for visibility: hidden.",
     "description_html": "The <code>checkVisibility()</code> method checks if an element is potentially visible, with optional parameters for the kinds of visibility to check. For example, it checks whether the element has the style <code>display: none</code>, but can also check for <code>visibility: hidden</code>.",
+    "kind": "feature",
     "name": "checkVisibility()",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-element-checkvisibility",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-element-checkvisibility"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-05",
@@ -7246,9 +7968,14 @@ export const features = {
     ],
     "description": "The <cite> element represents the title of a quoted, referenced, or mentioned creative work, such as a film or book.",
     "description_html": "The <code>&#x3C;cite></code> element represents the title of a quoted, referenced, or mentioned creative work, such as a film or book.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<cite>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -7265,7 +7992,9 @@ export const features = {
     }
   },
   "class-syntax": {
-    "caniuse": "es6-class",
+    "caniuse": [
+      "es6-class"
+    ],
     "compat_features": [
       "javascript.classes",
       "javascript.classes.constructor",
@@ -7284,10 +8013,17 @@ export const features = {
     ],
     "description": "Classes are an object-oriented syntax for JavaScript prototypes.",
     "description_html": "Classes are an object-oriented syntax for JavaScript prototypes.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Classes",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-09-08",
@@ -7316,8 +8052,11 @@ export const features = {
     ],
     "description": "The Clear-Site-Data header deletes browsing data (such as cookies, storage, or cache) associated with the requesting website.",
     "description_html": "The <code>Clear-Site-Data</code> header deletes browsing data (such as cookies, storage, or cache) associated with the requesting website.",
+    "kind": "feature",
     "name": "Clearing site data",
-    "spec": "https://w3c.github.io/webappsec-clear-site-data/",
+    "spec": [
+      "https://w3c.github.io/webappsec-clear-site-data/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -7349,9 +8088,14 @@ export const features = {
         "clip-path"
       ]
     },
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "clip",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#clip-property",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#clip-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7382,9 +8126,14 @@ export const features = {
     ],
     "description": "The clip-path CSS property and SVG attribute set the visible area of an element. Everything outside the area will be hidden.",
     "description_html": "The <code>clip-path</code> CSS property and SVG attribute set the visible area of an element. Everything outside the area will be hidden.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "clip-path",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#the-clip-path",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-07-21",
@@ -7406,9 +8155,14 @@ export const features = {
     ],
     "description": "The clip-path property can be animated using CSS transitions and animations.",
     "description_html": "The <code>clip-path</code> property can be animated using CSS transitions and animations.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "Animatable clipping paths",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#the-clip-path",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -7432,9 +8186,14 @@ export const features = {
     ],
     "description": "The fill-box, stroke-box, and view-box values for clip-path set an edge of the element's box to use as the clipping shape.",
     "description_html": "The <code>fill-box</code>, <code>stroke-box</code>, and <code>view-box</code> values for <code>clip-path</code> set an edge of the element's box to use as the clipping shape.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "Clip path boxes",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#the-clip-path",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -7455,9 +8214,14 @@ export const features = {
     ],
     "description": "The web  prefix for ClipboardItem data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
     "description_html": "The <code>web </code> prefix for <code>ClipboardItem</code> data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "Custom formats for clipboard items",
-    "spec": "https://w3c.github.io/clipboard-apis/#optional-data-types-x",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#optional-data-types-x"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7478,9 +8242,14 @@ export const features = {
     ],
     "description": "The \"copy\", \"cut\", and \"paste\" events fire on elements when the user starts an action with the clipboard.",
     "description_html": "The <code>\"copy\"</code>, <code>\"cut\"</code>, and <code>\"paste\"</code> events fire on elements when the user starts an action with the clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "Clipboard events",
-    "spec": "https://w3c.github.io/clipboard-apis/#clipboard-event-interfaces",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-interfaces"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -7502,9 +8271,14 @@ export const features = {
     ],
     "description": "The ClipboardItem.supports() static method checks if the browser supports writing data types such as \"image/svg+xml\" or other custom formats to the system clipboard.",
     "description_html": "The <code>ClipboardItem.supports()</code> static method checks if the browser supports writing data types such as \"image/svg+xml\" or other custom formats to the system clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "ClipboardItem.supports()",
-    "spec": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-supports"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-31",
@@ -7525,9 +8299,14 @@ export const features = {
     ],
     "description": "The image/svg+xml data type (also known as the MIME type) for ClipboardItem objects represents SVG data written to or read from the clipboard.",
     "description_html": "The <code>image/svg+xml</code> data type (also known as the MIME type) for <code>ClipboardItem</code> objects represents SVG data written to or read from the clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "SVG clipboard items",
-    "spec": "https://w3c.github.io/clipboard-apis/#optional-data-types-x",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#optional-data-types-x"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7543,9 +8322,14 @@ export const features = {
     ],
     "description": "The optional formats.unsanitized parameter of the navigator.clipboard.read() method reads unsanitized text/html data from the system clipboard.",
     "description_html": "The optional <code>formats.unsanitized</code> parameter of the <code>navigator.clipboard.read()</code> method reads unsanitized <code>text/html</code> data from the system clipboard.",
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "Read unsanitized clipboard data",
-    "spec": "https://w3c.github.io/clipboard-apis/#dom-clipboardunsanitizedformats-unsanitized",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#dom-clipboardunsanitizedformats-unsanitized"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7567,8 +8351,11 @@ export const features = {
     ],
     "description": "The CloseWatcher API listens and responds to close requests on in-page components, such as modals, popovers, and sidebars.",
     "description_html": "The <code>CloseWatcher</code> API listens and responds to close requests on in-page components, such as modals, popovers, and sidebars.",
+    "kind": "feature",
     "name": "CloseWatcher",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7584,9 +8371,14 @@ export const features = {
     ],
     "description": "The <code> element displays its contents as a fragment of computer code.",
     "description_html": "The <code>&#x3C;code></code> element displays its contents as a fragment of computer code.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<code>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -7609,9 +8401,14 @@ export const features = {
     ],
     "description": "The color CSS property sets the primary foreground color of an element, which is used for text, the default border color, and text decorations.",
     "description_html": "The <code>color</code> CSS property sets the primary foreground color of an element, which is used for text, the default border color, and text decorations.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Color",
-    "spec": "https://drafts.csswg.org/css-color-4/#the-color-property",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#the-color-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -7641,9 +8438,14 @@ export const features = {
         "print-color-adjust"
       ]
     },
-    "group": "print",
+    "group": [
+      "print"
+    ],
+    "kind": "feature",
     "name": "color-adjust",
-    "spec": "https://drafts.csswg.org/css-color-adjust-1/#color-adjust",
+    "spec": [
+      "https://drafts.csswg.org/css-color-adjust-1/#color-adjust"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7666,25 +8468,37 @@ export const features = {
         "contrast-color"
       ]
     },
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "color-contrast()",
-    "spec": "https://drafts.csswg.org/css-color-5/#contrast-color",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#contrast-color"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "color-function": {
-    "caniuse": "css-color-function",
+    "caniuse": [
+      "css-color-function"
+    ],
     "compat_features": [
       "css.types.color.color",
       "css.types.color.color.mixed_type_parameters"
     ],
     "description": "The color() function picks a color from a given color space. Wide gamut color spaces like display-p3 allow showing more vibrant and saturated colors than the standard srgb color space.",
     "description_html": "The <code>color()</code> function picks a color from a given color space. Wide gamut color spaces like <code>display-p3</code> allow showing more vibrant and saturated colors than the standard <code>srgb</code> color space.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "color()",
-    "spec": "https://drafts.csswg.org/css-color-4/#color-function",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#color-function"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -7705,9 +8519,14 @@ export const features = {
     ],
     "description": "The color-gamut media query sets styles based on the colors a device can display.",
     "description_html": "The <code>color-gamut</code> media query sets styles based on the colors a device can display.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "color-gamut media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#color-gamut",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#color-gamut"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-02-14",
@@ -7728,9 +8547,14 @@ export const features = {
     ],
     "description": "The color-mix() function mixes two colors in a given color space and by a given amount. Commonly, lighter or darker variations of a color are created by mixing with white or black.",
     "description_html": "The <code>color-mix()</code> function mixes two colors in a given color space and by a given amount. Commonly, lighter or darker variations of a color are created by mixing with white or black.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "color-mix()",
-    "spec": "https://drafts.csswg.org/css-color-5/#color-mix",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#color-mix"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -7756,9 +8580,14 @@ export const features = {
     ],
     "description": "The color-scheme CSS property sets which color schemes (light or dark) an element uses and may prevent automatic dark mode adjustments by the browser.",
     "description_html": "The <code>color-scheme</code> CSS property sets which color schemes (light or dark) an element uses and may prevent automatic dark mode adjustments by the browser.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "color-scheme",
-    "spec": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-color-adjust-1/#color-scheme-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-08-03",
@@ -7775,15 +8604,22 @@ export const features = {
     }
   },
   "colrv0": {
-    "caniuse": "colr",
+    "caniuse": [
+      "colr"
+    ],
     "compat_features": [
       "css.at-rules.font-face.OpenType_COLRv0"
     ],
     "description": "COLRv0 is a font format that supports multi-color glyphs. COLRv0 supports only solid colors.",
     "description_html": "COLRv0 is a font format that supports multi-color glyphs. COLRv0 supports only solid colors.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "COLRv0",
-    "spec": "https://www.iso.org/standard/87621.html",
+    "spec": [
+      "https://www.iso.org/standard/87621.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -7800,15 +8636,22 @@ export const features = {
     }
   },
   "colrv1": {
-    "caniuse": "colr-v1",
+    "caniuse": [
+      "colr-v1"
+    ],
     "compat_features": [
       "css.at-rules.font-face.OpenType_COLRv1"
     ],
     "description": "COLRv1 is a font format that supports multi-color glyphs. COLRv1 extends COLRv0 to support gradients, transforms, and blending modes.",
     "description_html": "COLRv1 is a font format that supports multi-color glyphs. COLRv1 extends COLRv0 to support gradients, transforms, and blending modes.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "COLRv1",
-    "spec": "https://www.iso.org/standard/87621.html",
+    "spec": [
+      "https://www.iso.org/standard/87621.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7840,9 +8683,14 @@ export const features = {
     ],
     "description": "In columnar layouts (created by the columns or column-count CSS properties), the break-after, break-before, break-inside properties control where columns start or end.",
     "description_html": "In columnar layouts (created by the <code>columns</code> or <code>column-count</code> CSS properties), the <code>break-after</code>, <code>break-before</code>, <code>break-inside</code> properties control where columns start or end.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Column breaks",
-    "spec": "https://drafts.csswg.org/css-break-3/#breaking-controls",
+    "spec": [
+      "https://drafts.csswg.org/css-break-3/#breaking-controls"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -7860,9 +8708,14 @@ export const features = {
     ],
     "description": "The column-fill CSS property sets the distribution of content across columns in a multi-column layout.",
     "description_html": "The <code>column-fill</code> CSS property sets the distribution of content across columns in a multi-column layout.",
-    "group": "multi-column",
+    "group": [
+      "multi-column"
+    ],
+    "kind": "feature",
     "name": "column-fill",
-    "spec": "https://drafts.csswg.org/css-multicol-1/#filling-columns",
+    "spec": [
+      "https://drafts.csswg.org/css-multicol-1/#filling-columns"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-07",
@@ -7879,17 +8732,28 @@ export const features = {
     }
   },
   "column-pseudo": {
+    "compat_features": [
+      "css.selectors.column",
+      "css.selectors.column.nested_scroll-marker"
+    ],
     "description": "The ::column CSS pseudo-element represents the individual columns of a multi-column layout container. Columns can only be styled with scroll snap CSS properties and can also have a ::scroll-marker pseudo-element, which scrolls to the column when activated.",
     "description_html": "The <code>::column</code> CSS pseudo-element represents the individual columns of a multi-column layout container. Columns can only be styled with scroll snap CSS properties and can also have a <code>::scroll-marker</code> pseudo-element, which scrolls to the column when activated.",
     "group": [
       "multi-column",
       "scrolling"
     ],
+    "kind": "feature",
     "name": "::column",
-    "spec": "https://drafts.csswg.org/css-multicol-2/#column-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-multicol-2/#column-pseudo"
+    ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135"
+      }
     }
   },
   "column-span": {
@@ -7900,9 +8764,14 @@ export const features = {
     ],
     "description": "The column-span CSS property controls whether a child element extends across all columns of a multi-column parent.",
     "description_html": "The <code>column-span</code> CSS property controls whether a child element extends across all columns of a multi-column parent.",
-    "group": "multi-column",
+    "group": [
+      "multi-column"
+    ],
+    "kind": "feature",
     "name": "column-span",
-    "spec": "https://drafts.csswg.org/css-multicol-1/#spanning-columns",
+    "spec": [
+      "https://drafts.csswg.org/css-multicol-1/#spanning-columns"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -7928,8 +8797,11 @@ export const features = {
       "selection",
       "web-components"
     ],
+    "kind": "feature",
     "name": "Selection composed ranges",
-    "spec": "https://w3c.github.io/selection-api/#dom-selection-getcomposedranges",
+    "spec": [
+      "https://w3c.github.io/selection-api/#dom-selection-getcomposedranges"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-08-19",
@@ -7955,8 +8827,11 @@ export const features = {
     ],
     "description": "The compositionstart, compositionupdate, and compositionend events fire when an input method editor adds characters that might not be commonly available on keyboards. Examples of these characters are emoji, logograms in Asian languages, or input from speech recognition processors.",
     "description_html": "The <code>compositionstart</code>, <code>compositionupdate</code>, and <code>compositionend</code> events fire when an input method editor adds characters that might not be commonly available on keyboards. Examples of these characters are emoji, logograms in Asian languages, or input from speech recognition processors.",
+    "kind": "feature",
     "name": "Composition events",
-    "spec": "https://w3c.github.io/uievents/#events-compositionevents",
+    "spec": [
+      "https://w3c.github.io/uievents/#events-compositionevents"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-19",
@@ -7985,8 +8860,11 @@ export const features = {
     ],
     "description": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
     "description_html": "Compression Dictionary Transport is a mechanism for using designated HTTP responses as an external dictionary for future HTTP responses for compression schemes that support using external dictionaries (e.g., Brotli and Zstandard)",
+    "kind": "feature",
     "name": "Compression Dictionary Transport",
-    "spec": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
+    "spec": [
+      "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8015,8 +8893,11 @@ export const features = {
     ],
     "description": "The CompressionStream and DecompressionStream APIs compress and decompress data using the gzip or deflate formats.",
     "description_html": "The <code>CompressionStream</code> and <code>DecompressionStream</code> APIs compress and decompress data using the gzip or deflate formats.",
+    "kind": "feature",
     "name": "Compression streams",
-    "spec": "https://compression.spec.whatwg.org/",
+    "spec": [
+      "https://compression.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -8033,7 +8914,6 @@ export const features = {
   },
   "compute-pressure": {
     "compat_features": [
-      "api.Permissions.permission_compute-pressure",
       "api.PressureObserver",
       "api.PressureObserver.PressureObserver",
       "api.PressureObserver.disconnect",
@@ -8051,9 +8931,14 @@ export const features = {
     ],
     "description": "The PressureObserver API monitors CPU load, allowing you to adjust workloads in response to available computing resources. Also known as the Compute Pressure API.",
     "description_html": "The <code>PressureObserver</code> API monitors CPU load, allowing you to adjust workloads in response to available computing resources. Also known as the Compute Pressure API.",
-    "group": "compute-pressure",
+    "group": [
+      "compute-pressure"
+    ],
+    "kind": "feature",
     "name": "CPU compute pressure",
-    "spec": "https://w3c.github.io/compute-pressure/",
+    "spec": [
+      "https://w3c.github.io/compute-pressure/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8063,17 +8948,25 @@ export const features = {
     }
   },
   "conic-gradients": {
-    "caniuse": "css-conic-gradients",
+    "caniuse": [
+      "css-conic-gradients"
+    ],
     "compat_features": [
       "css.types.gradient.conic-gradient",
       "css.types.gradient.conic-gradient.doubleposition",
+      "css.types.gradient.conic-gradient.single_color_stop",
       "css.types.gradient.repeating-conic-gradient"
     ],
     "description": "The conic-gradient() and repeating-conic-gradient() CSS functions create backgrounds that progress between two or more colors around a center point.",
     "description_html": "The <code>conic-gradient()</code> and <code>repeating-conic-gradient()</code> CSS functions create backgrounds that progress between two or more colors around a center point.",
-    "group": "gradients",
+    "group": [
+      "gradients"
+    ],
+    "kind": "feature",
     "name": "Conic gradients",
-    "spec": "https://drafts.csswg.org/css-images-4/#conic-gradients",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#conic-gradients"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-05-17",
@@ -8090,7 +8983,9 @@ export const features = {
     }
   },
   "console": {
-    "caniuse": "console-basic",
+    "caniuse": [
+      "console-basic"
+    ],
     "compat_features": [
       "api.console",
       "api.console.assert_static",
@@ -8117,9 +9012,14 @@ export const features = {
     ],
     "description": "The console API logs debugging messages to the browser development tools' console.",
     "description_html": "The <code>console</code> API logs debugging messages to the browser development tools' console.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "Console",
-    "spec": "https://console.spec.whatwg.org/#console-namespace",
+    "spec": [
+      "https://console.spec.whatwg.org/#console-namespace"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8136,7 +9036,9 @@ export const features = {
     }
   },
   "constraint-validation": {
-    "caniuse": "constraint-validation",
+    "caniuse": [
+      "constraint-validation"
+    ],
     "compat_features": [
       "api.HTMLButtonElement.checkValidity",
       "api.HTMLButtonElement.reportValidity",
@@ -8197,9 +9099,14 @@ export const features = {
     ],
     "description": "Methods that validate form controls before submission, such as checkValidity(), reportValidity() and setCustomValidity().",
     "description_html": "Methods that validate form controls before submission, such as <code>checkValidity()</code>, <code>reportValidity()</code> and <code>setCustomValidity()</code>.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "Constraint validation API",
-    "spec": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-06-11",
@@ -8226,6 +9133,7 @@ export const features = {
     ],
     "description": "The CSSStyleSheet constructor creates a new stylesheet which can be shared between a document and multiple shadow roots using adoptedStyleSheets.",
     "description_html": "The <code>CSSStyleSheet</code> constructor creates a new stylesheet which can be shared between a document and multiple shadow roots using <code>adoptedStyleSheets</code>.",
+    "kind": "feature",
     "name": "Constructed stylesheets",
     "spec": [
       "https://drafts.csswg.org/cssom-1/#dom-cssstylesheet-cssstylesheet",
@@ -8266,8 +9174,11 @@ export const features = {
     ],
     "description": "The navigator.contacts API allows you to ask users to share limited details about entries in their contact list with your application.",
     "description_html": "The <code>navigator.contacts</code> API allows you to ask users to share limited details about entries in their contact list with your application.",
+    "kind": "feature",
     "name": "Contact picker",
-    "spec": "https://w3c.github.io/contact-picker/#contacts-manager",
+    "spec": [
+      "https://w3c.github.io/contact-picker/#contacts-manager"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8276,7 +9187,9 @@ export const features = {
     }
   },
   "contain": {
-    "caniuse": "css-containment",
+    "caniuse": [
+      "css-containment"
+    ],
     "compat_features": [
       "css.properties.contain",
       "css.properties.contain.content",
@@ -8285,9 +9198,14 @@ export const features = {
     ],
     "description": "The contain CSS property sets limits to the scope of styles, layout, and paint rendering for speed and efficiency. The none keyword value disables containment, strict is equivalent to contain: size layout style paint, and content is equivalent to contain: layout style paint.",
     "description_html": "The <code>contain</code> CSS property sets limits to the scope of styles, layout, and paint rendering for speed and efficiency. The <code>none</code> keyword value disables containment, <code>strict</code> is equivalent to <code>contain: size layout style paint</code>, and <code>content</code> is equivalent to <code>contain: layout style paint</code>.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "contain",
-    "spec": "https://drafts.csswg.org/css-contain-2/#contain-property",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#contain-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -8309,9 +9227,14 @@ export const features = {
     ],
     "description": "The contain: inline-size CSS declaration prevents the element's inline dimension from being set by the element's contents. This permits the browser to avoid slower layout calculations.",
     "description_html": "The <code>contain: inline-size</code> CSS declaration prevents the element's inline dimension from being set by the element's contents. This permits the browser to avoid slower layout calculations.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "Inline-size containment",
-    "spec": "https://drafts.csswg.org/css-contain-3/#containment-inline-size",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-3/#containment-inline-size"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -8343,9 +9266,14 @@ export const features = {
     ],
     "description": "The contain-intrinsic-size CSS property sets the intrinsic size of an element. When using size containment, the browser will lay out the element as if it had a single child of this size.",
     "description_html": "The <code>contain-intrinsic-size</code> CSS property sets the intrinsic size of an element. When using size containment, the browser will lay out the element as if it had a single child of this size.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "contain-intrinsic-size",
-    "spec": "https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -8366,9 +9294,14 @@ export const features = {
     ],
     "description": "The contain: layout CSS declaration isolates the inside of an element such that it cannot affect the layout of the rest of the page or be affected by the rest of the page. This permits the browser to avoid slower layout calculations.",
     "description_html": "The <code>contain: layout</code> CSS declaration isolates the inside of an element such that it cannot affect the layout of the rest of the page or be affected by the rest of the page. This permits the browser to avoid slower layout calculations.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "Layout containment",
-    "spec": "https://drafts.csswg.org/css-contain-2/#containment-layout",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#containment-layout"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -8390,9 +9323,14 @@ export const features = {
     ],
     "description": "The contain: paint CSS declaration prevents an element's descendants from being drawn outside the boundaries of the containing element, with any overflow clipped. This permits the browser to avoid slower painting calculations.",
     "description_html": "The <code>contain: paint</code> CSS declaration prevents an element's descendants from being drawn outside the boundaries of the containing element, with any overflow clipped. This permits the browser to avoid slower painting calculations.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "Paint containment",
-    "spec": "https://drafts.csswg.org/css-contain-2/#containment-paint",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#containment-paint"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -8414,9 +9352,14 @@ export const features = {
     ],
     "description": "The contain: size CSS declaration sets an element's dimensions exclusively by its height and width properties, ignoring its contents and descendants. This permits the browser to avoid slower layout calculations.",
     "description_html": "The <code>contain: size</code> CSS declaration sets an element's dimensions exclusively by its <code>height</code> and <code>width</code> properties, ignoring its contents and descendants. This permits the browser to avoid slower layout calculations.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "Size containment",
-    "spec": "https://drafts.csswg.org/css-contain-2/#containment-size",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#containment-size"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -8438,9 +9381,14 @@ export const features = {
     ],
     "description": "The contain: style CSS declaration permits the browser to avoid slower layout calculations by preventing modification to counter (counter-increment and counter-set) and quotation styles (content property quote values) beyond the element's descendants.",
     "description_html": "The <code>contain: style</code> CSS declaration permits the browser to avoid slower layout calculations by preventing modification to counter (<code>counter-increment</code> and <code>counter-set</code>) and quotation styles (<code>content</code> property quote values) beyond the element's descendants.",
-    "group": "containment",
+    "group": [
+      "containment"
+    ],
+    "kind": "feature",
     "name": "Style containment",
-    "spec": "https://drafts.csswg.org/css-contain-2/#containment-style",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#containment-style"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-01-26",
@@ -8477,9 +9425,14 @@ export const features = {
     ],
     "description": "Container size queries with the @container at-rule apply styles to an element based on the dimensions of its container.",
     "description_html": "Container size queries with the <code>@container</code> at-rule apply styles to an element based on the dimensions of its container.",
-    "group": "container-queries",
+    "group": [
+      "container-queries"
+    ],
+    "kind": "feature",
     "name": "Container queries",
-    "spec": "https://drafts.csswg.org/css-conditional-5/#container-queries",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#container-queries"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-08-14",
@@ -8505,9 +9458,14 @@ export const features = {
     ],
     "description": "Container scroll-state queries with the @container scroll-state(...) at-rule apply styles to an element based on the sticky positioning, snapped, and scrollable state of the container.",
     "description_html": "Container scroll-state queries with the <code>@container scroll-state(...)</code> at-rule apply styles to an element based on the sticky positioning, snapped, and scrollable state of the container.",
-    "group": "container-queries",
+    "group": [
+      "container-queries"
+    ],
+    "kind": "feature",
     "name": "Container scroll-state queries",
-    "spec": "https://drafts.csswg.org/css-conditional-5/#scroll-state-container",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#scroll-state-container"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8518,15 +9476,22 @@ export const features = {
     }
   },
   "container-style-queries": {
-    "caniuse": "css-container-queries-style",
+    "caniuse": [
+      "css-container-queries-style"
+    ],
     "compat_features": [
       "css.at-rules.container.style_queries_for_custom_properties"
     ],
     "description": "Container style queries with the @container at-rule apply styles to an element based on the values of custom properties of its container.",
     "description_html": "Container style queries with the <code>@container</code> at-rule apply styles to an element based on the values of custom properties of its container.",
-    "group": "container-queries",
+    "group": [
+      "container-queries"
+    ],
+    "kind": "feature",
     "name": "Container style queries",
-    "spec": "https://drafts.csswg.org/css-conditional-5/#style-container",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#style-container"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8552,9 +9517,14 @@ export const features = {
     ],
     "description": "The content CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's often used with the ::before and ::after pseudo-elements to generate cosmetic content.",
     "description_html": "The <code>content</code> CSS property sets the content inside of an element or pseudo-element, replacing the current value. It's often used with the <code>::before</code> and <code>::after</code> pseudo-elements to generate cosmetic content.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Content",
-    "spec": "https://drafts.csswg.org/css-content-3/#content-property",
+    "spec": [
+      "https://drafts.csswg.org/css-content-3/#content-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8584,8 +9554,11 @@ export const features = {
     ],
     "description": "The Content Index API allows developers to register their offline enabled content with the browser.",
     "description_html": "The Content Index API allows developers to register their offline enabled content with the browser.",
+    "kind": "feature",
     "name": "Content Index",
-    "spec": "https://wicg.github.io/content-index/spec/",
+    "spec": [
+      "https://wicg.github.io/content-index/spec/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8594,7 +9567,9 @@ export const features = {
     }
   },
   "content-visibility": {
-    "caniuse": "css-content-visibility",
+    "caniuse": [
+      "css-content-visibility"
+    ],
     "compat_features": [
       "api.ContentVisibilityAutoStateChangeEvent",
       "api.ContentVisibilityAutoStateChangeEvent.ContentVisibilityAutoStateChangeEvent",
@@ -8607,22 +9582,32 @@ export const features = {
     ],
     "description": "The content-visibility CSS property delays rendering an element, including layout and painting, until it is needed.",
     "description_html": "The <code>content-visibility</code> CSS property delays rendering an element, including layout and painting, until it is needed.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "content-visibility",
-    "spec": "https://drafts.csswg.org/css-contain-2/#content-visibility",
+    "spec": [
+      "https://drafts.csswg.org/css-contain-2/#content-visibility"
+    ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-15",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
         "firefox": "130",
-        "firefox_android": "130"
+        "firefox_android": "130",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
   "contenteditable": {
-    "caniuse": "contenteditable",
+    "caniuse": [
+      "contenteditable"
+    ],
     "compat_features": [
       "api.HTMLElement.contentEditable",
       "api.HTMLElement.isContentEditable",
@@ -8630,8 +9615,11 @@ export const features = {
     ],
     "description": "The contenteditable global HTML attribute allows the user to edit the content of an element, such as inserting or deleting text.",
     "description_html": "The <code>contenteditable</code> global HTML attribute allows the user to edit the content of an element, such as inserting or deleting text.",
+    "kind": "feature",
     "name": "contenteditable",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8654,8 +9642,11 @@ export const features = {
     ],
     "description": "The contenteditable=\"plaintext-only\" global HTML attribute allows the user to edit the content of an element, but prevents rich-text formatting.",
     "description_html": "The <code>contenteditable=\"plaintext-only\"</code> global HTML attribute allows the user to edit the content of an element, but prevents rich-text formatting.",
+    "kind": "feature",
     "name": "contenteditable=\"plaintext-only\"",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable-plaintextonly-state",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable-plaintextonly-state"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-04",
@@ -8685,9 +9676,14 @@ export const features = {
     ],
     "description": "The context-fill and context-stroke CSS values are used with fill and stroke in SVG <marker> or <use> elements to match a color from where they appear.",
     "description_html": "The <code>context-fill</code> and <code>context-stroke</code> CSS values are used with <code>fill</code> and <code>stroke</code> in SVG <code>&#x3C;marker></code> or <code>&#x3C;use></code> elements to match a color from where they appear.",
-    "group": "svg",
+    "group": [
+      "svg"
+    ],
+    "kind": "feature",
     "name": "context-fill and context-stroke",
-    "spec": "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint",
+    "spec": [
+      "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8705,12 +9701,20 @@ export const features = {
     ],
     "description": "The contrast-color() CSS function picks a color that has guaranteed contrast against a specified foreground or background color.",
     "description_html": "The <code>contrast-color()</code> CSS function picks a color that has guaranteed contrast against a specified foreground or background color.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "contrast-color()",
-    "spec": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color",
+    "spec": [
+      "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color"
+    ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "26",
+        "safari_ios": "26"
+      }
     }
   },
   "controls-list": {
@@ -8721,9 +9725,14 @@ export const features = {
     ],
     "description": "The controlslist attribute for <audio> or <video> hides parts of the browser's built-in controls. For example, controlslist=\"nofullscreen\" removes the button to play the video in fullscreen.",
     "description_html": "The <code>controlslist</code> attribute for <code>&#x3C;audio></code> or <code>&#x3C;video></code> hides parts of the browser's built-in controls. For example, <code>controlslist=\"nofullscreen\"</code> removes the button to play the video in fullscreen.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "controlslist",
-    "spec": "https://wicg.github.io/controls-list/",
+    "spec": [
+      "https://wicg.github.io/controls-list/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8739,9 +9748,14 @@ export const features = {
     ],
     "description": "The navigator.cookieEnabled property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
     "description_html": "The <code>navigator.cookieEnabled</code> property is a boolean for whether the browser accepts or ignores attempts to write cookie data.",
-    "group": "cookies",
+    "group": [
+      "cookies"
+    ],
+    "kind": "feature",
     "name": "cookieEnabled",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#cookies"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -8757,7 +9771,9 @@ export const features = {
     }
   },
   "cookie-store": {
-    "caniuse": "cookie-store-api",
+    "caniuse": [
+      "cookie-store-api"
+    ],
     "compat_features": [
       "api.CookieChangeEvent",
       "api.CookieChangeEvent.CookieChangeEvent",
@@ -8791,9 +9807,14 @@ export const features = {
     ],
     "description": "The CookieStore API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
     "description_html": "The <code>CookieStore</code> API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
-    "group": "cookies",
+    "group": [
+      "cookies"
+    ],
+    "kind": "feature",
     "name": "Cookie store",
-    "spec": "https://cookiestore.spec.whatwg.org/",
+    "spec": [
+      "https://cookiestore.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8822,9 +9843,14 @@ export const features = {
     ],
     "description": "The Set-Cookie HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
     "description_html": "The <code>Set-Cookie</code> HTTP header stores limited amounts of data that persist across request and response, creating shared state between the browser and server.",
-    "group": "cookies",
+    "group": [
+      "cookies"
+    ],
+    "kind": "feature",
     "name": "Cookies",
-    "spec": "https://httpwg.org/specs/rfc6265.html",
+    "spec": [
+      "https://httpwg.org/specs/rfc6265.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8840,8 +9866,55 @@ export const features = {
       }
     }
   },
+  "corner-shape": {
+    "compat_features": [
+      "css.properties.corner-block-end-shape",
+      "css.properties.corner-block-start-shape",
+      "css.properties.corner-bottom-left-shape",
+      "css.properties.corner-bottom-right-shape",
+      "css.properties.corner-bottom-shape",
+      "css.properties.corner-end-end-shape",
+      "css.properties.corner-end-start-shape",
+      "css.properties.corner-inline-end-shape",
+      "css.properties.corner-inline-start-shape",
+      "css.properties.corner-left-shape",
+      "css.properties.corner-right-shape",
+      "css.properties.corner-shape",
+      "css.properties.corner-start-end-shape",
+      "css.properties.corner-start-start-shape",
+      "css.properties.corner-top-left-shape",
+      "css.properties.corner-top-right-shape",
+      "css.properties.corner-top-shape",
+      "css.types.corner-shape-value",
+      "css.types.corner-shape-value.bevel",
+      "css.types.corner-shape-value.notch",
+      "css.types.corner-shape-value.round",
+      "css.types.corner-shape-value.scoop",
+      "css.types.corner-shape-value.square",
+      "css.types.corner-shape-value.squircle",
+      "css.types.corner-shape-value.superellipse",
+      "css.types.superellipse"
+    ],
+    "description": "The corner-shape CSS property sets the shape of an element's corners when using border-radius, allowing for shapes other than rounded corners. For example, corner-shape: squircle is a shape in between a square and rounded corner.",
+    "description_html": "The <code>corner-shape</code> CSS property sets the shape of an element's corners when using <code>border-radius</code>, allowing for shapes other than rounded corners. For example, <code>corner-shape: squircle</code> is a shape in between a square and rounded corner.",
+    "kind": "feature",
+    "name": "corner-shape",
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139"
+      }
+    }
+  },
   "cors": {
-    "caniuse": "cors",
+    "caniuse": [
+      "cors"
+    ],
     "compat_features": [
       "http.headers.Access-Control-Allow-Credentials",
       "http.headers.Access-Control-Allow-Headers",
@@ -8858,9 +9931,14 @@ export const features = {
     ],
     "description": "Cross-Origin Resource Sharing is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. Also known as CORS.",
     "description_html": "Cross-Origin Resource Sharing is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. Also known as CORS.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "CORS",
-    "spec": "https://fetch.spec.whatwg.org/#http-cors-protocol",
+    "spec": [
+      "https://fetch.spec.whatwg.org/#http-cors-protocol"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8882,9 +9960,14 @@ export const features = {
     ],
     "description": "The reversed() CSS function for counter-reset creates a counter that counts down.",
     "description_html": "The <code>reversed()</code> CSS function for <code>counter-reset</code> creates a counter that counts down.",
-    "group": "counters",
+    "group": [
+      "counters"
+    ],
+    "kind": "feature",
     "name": "Reversed counter-reset",
-    "spec": "https://drafts.csswg.org/css-lists-3/#css-counter-reversed",
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#css-counter-reversed"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -8901,9 +9984,14 @@ export const features = {
     ],
     "description": "The counter-set CSS property creates (and optionally sets a value for) a counter, the numbers for a series of headings or ordered list items.",
     "description_html": "The <code>counter-set</code> CSS property creates (and optionally sets a value for) a counter, the numbers for a series of headings or ordered list items.",
-    "group": "counters",
+    "group": [
+      "counters"
+    ],
+    "kind": "feature",
     "name": "counter-set",
-    "spec": "https://drafts.csswg.org/css-lists-3/#propdef-counter-set",
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#propdef-counter-set"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -8919,7 +10007,9 @@ export const features = {
     }
   },
   "counter-style": {
-    "caniuse": "css-at-counter-style",
+    "caniuse": [
+      "css-at-counter-style"
+    ],
     "compat_features": [
       "api.CSSCounterStyleRule",
       "api.CSSCounterStyleRule.additiveSymbols",
@@ -8947,9 +10037,14 @@ export const features = {
     ],
     "description": "The @counter-style CSS at-rule sets custom counter styles for list items. For example, you can use a sequence of specific symbols instead of numbers for an ordered list.",
     "description_html": "The <code>@counter-style</code> CSS at-rule sets custom counter styles for list items. For example, you can use a sequence of specific symbols instead of numbers for an ordered list.",
-    "group": "counters",
+    "group": [
+      "counters"
+    ],
+    "kind": "feature",
     "name": "@counter-style",
-    "spec": "https://drafts.csswg.org/css-counter-styles-3/",
+    "spec": [
+      "https://drafts.csswg.org/css-counter-styles-3/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -8965,7 +10060,9 @@ export const features = {
     }
   },
   "counters": {
-    "caniuse": "css-counters",
+    "caniuse": [
+      "css-counters"
+    ],
     "compat_features": [
       "css.properties.counter-increment",
       "css.properties.counter-increment.list-item",
@@ -8979,9 +10076,14 @@ export const features = {
     ],
     "description": "The counter-reset and counter-increment CSS properties and the counter() and counters() functions automatically number headings or ordered list items.",
     "description_html": "The <code>counter-reset</code> and <code>counter-increment</code> CSS properties and the <code>counter()</code> and <code>counters()</code> functions automatically number headings or ordered list items.",
-    "group": "counters",
+    "group": [
+      "counters"
+    ],
+    "kind": "feature",
     "name": "Counters (CSS)",
-    "spec": "https://drafts.csswg.org/css-lists-3/#auto-numbering",
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#auto-numbering"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -8998,7 +10100,9 @@ export const features = {
     }
   },
   "createimagebitmap": {
-    "caniuse": "createimagebitmap",
+    "caniuse": [
+      "createimagebitmap"
+    ],
     "compat_features": [
       "api.ImageBitmap",
       "api.ImageBitmap.close",
@@ -9016,8 +10120,11 @@ export const features = {
     ],
     "description": "The createImageBitmap() global method creates an ImageBitmap object from a source such as an image, SVG, blob, or canvas. An ImageBitmap object represents pixel data that can be drawn to a canvas with lower latency than other types, such as ImageData.",
     "description_html": "The <code>createImageBitmap()</code> global method creates an <code>ImageBitmap</code> object from a source such as an image, SVG, blob, or canvas. An <code>ImageBitmap</code> object represents pixel data that can be drawn to a canvas with lower latency than other types, such as <code>ImageData</code>.",
+    "kind": "feature",
     "name": "createImageBitmap",
-    "spec": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -9047,9 +10154,14 @@ export const features = {
     ],
     "description": "The navigator.credentials API provides generic storage for authentication credentials. Other credential APIs represent specific kinds of credentials, such as password or public key credentials, that the credential management API stores.",
     "description_html": "The <code>navigator.credentials</code> API provides generic storage for authentication credentials. Other credential APIs represent specific kinds of credentials, such as password or public key credentials, that the credential management API stores.",
-    "group": "credential-management",
+    "group": [
+      "credential-management"
+    ],
+    "kind": "feature",
     "name": "Credential management",
-    "spec": "https://w3c.github.io/webappsec-credential-management/",
+    "spec": [
+      "https://w3c.github.io/webappsec-credential-management/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -9071,9 +10183,14 @@ export const features = {
     ],
     "description": "The image-rendering: crisp-edges CSS declaration scales images to preserve lines without blurring.",
     "description_html": "The <code>image-rendering: crisp-edges</code> CSS declaration scales images to preserve lines without blurring.",
-    "group": "image-scaling",
+    "group": [
+      "image-scaling"
+    ],
+    "kind": "feature",
     "name": "crisp-edges",
-    "spec": "https://drafts.csswg.org/css-images-3/#the-image-rendering",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-image-rendering"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9085,7 +10202,9 @@ export const features = {
     }
   },
   "cross-document-view-transitions": {
-    "caniuse": "cross-document-view-transitions",
+    "caniuse": [
+      "cross-document-view-transitions"
+    ],
     "compat_features": [
       "api.CSSViewTransitionRule",
       "api.CSSViewTransitionRule.navigation",
@@ -9094,9 +10213,14 @@ export const features = {
     ],
     "description": "The @view-transition CSS rule sets whether a document opts-in to transitions between documents in a multi-page application. Both the old and new document must opt-in for a transition to be triggered.",
     "description_html": "The <code>@view-transition</code> CSS rule sets whether a document opts-in to transitions between documents in a multi-page application. Both the old and new document must opt-in for a transition to be triggered.",
-    "group": "view-transitions",
+    "group": [
+      "view-transitions"
+    ],
+    "kind": "feature",
     "name": "Cross-document view transitions",
-    "spec": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in",
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9109,15 +10233,22 @@ export const features = {
     }
   },
   "cross-fade": {
-    "caniuse": "css-cross-fade",
+    "caniuse": [
+      "css-cross-fade"
+    ],
     "compat_features": [
       "css.types.image.cross-fade"
     ],
     "description": "The cross-fade() CSS function generates an image by mixing two images.",
     "description_html": "The <code>cross-fade()</code> CSS function generates an image by mixing two images.",
-    "group": "images",
+    "group": [
+      "images"
+    ],
+    "kind": "feature",
     "name": "cross-fade()",
-    "spec": "https://drafts.csswg.org/css-images-4/#cross-fade-function",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#cross-fade-function"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9189,9 +10320,14 @@ export const features = {
     ],
     "description": "Content Security Policy (CSP) helps to mitigate certain security threats, including cross-site scripting (XSS) and clickjacking attacks. It consists of a set of directives from a website to a browser, which instruct the browser to restrict the things that the site is allowed to do.",
     "description_html": "Content Security Policy (CSP) helps to mitigate certain security threats, including cross-site scripting (XSS) and clickjacking attacks. It consists of a set of directives from a website to a browser, which instruct the browser to restrict the things that the site is allowed to do.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Content Security Policy (CSP)",
-    "spec": "https://w3c.github.io/webappsec-csp/",
+    "spec": [
+      "https://w3c.github.io/webappsec-csp/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-02-02",
@@ -9213,9 +10349,14 @@ export const features = {
     ],
     "description": "The CSS.escape() static method escapes a string so that it can be used in a valid CSS selector.",
     "description_html": "The <code>CSS.escape()</code> static method escapes a string so that it can be used in a valid CSS selector.",
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "CSS.escape()",
-    "spec": "https://drafts.csswg.org/cssom-1/#the-css.escape()-method",
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#the-css.escape()-method"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -9237,8 +10378,11 @@ export const features = {
     ],
     "description": "Module import … with { type: \"css\" } statements load CSS modules as constructable stylesheets. Also known as CSS module scripts.",
     "description_html": "Module <code>import … with { type: \"css\" }</code> statements load CSS modules as constructable stylesheets. Also known as CSS module scripts.",
+    "kind": "feature",
     "name": "CSS import attributes",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#css-module-script",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#css-module-script"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9336,9 +10480,14 @@ export const features = {
     ],
     "description": "The CSS object model API reads, creates, and modifies CSS stylesheets and inline styles. Also known as CSSOM.",
     "description_html": "The CSS object model API reads, creates, and modifies CSS stylesheets and inline styles. Also known as CSSOM.",
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "CSS object model",
-    "spec": "https://drafts.csswg.org/cssom-1/#css-object-model",
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#css-object-model"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -9391,9 +10540,14 @@ export const features = {
         "css-object-model"
       ]
     },
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "CSS object model (DOM level 2)",
-    "spec": "https://www.w3.org/TR/DOM-Level-2-Style/",
+    "spec": [
+      "https://www.w3.org/TR/DOM-Level-2-Style/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9403,16 +10557,23 @@ export const features = {
     }
   },
   "css-supports": {
-    "caniuse": "css-supports-api",
+    "caniuse": [
+      "css-supports-api"
+    ],
     "compat_features": [
       "api.CSS.supports_static",
       "api.CSS.supports_static.optional_parens"
     ],
     "description": "The CSS.supports() static method returns whether the browser supports a CSS declaration (given by two arguments, a property and value) or an @supports at-rule condition string.",
     "description_html": "The <code>CSS.supports()</code> static method returns whether the browser supports a CSS declaration (given by two arguments, a property and value) or an <code>@supports</code> at-rule condition string.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "CSS.supports()",
-    "spec": "https://drafts.csswg.org/css-conditional-3/#the-css-namespace",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-3/#the-css-namespace"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -9565,9 +10726,14 @@ export const features = {
     ],
     "description": "The CSSStyleValue and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
     "description_html": "The <code>CSSStyleValue</code> and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "CSS typed object model",
-    "spec": "https://drafts.css-houdini.org/css-typed-om-1/",
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9590,8 +10756,11 @@ export const features = {
       "animation",
       "transitions"
     ],
+    "kind": "feature",
     "name": "cubic-bezier() easing",
-    "spec": "https://drafts.csswg.org/css-easing-2/#cubic-bezier-easing-functions",
+    "spec": [
+      "https://drafts.csswg.org/css-easing-2/#cubic-bezier-easing-functions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -9608,15 +10777,22 @@ export const features = {
     }
   },
   "currentcolor": {
-    "caniuse": "currentcolor",
+    "caniuse": [
+      "currentcolor"
+    ],
     "compat_features": [
       "css.types.color.currentcolor"
     ],
     "description": "The currentColor CSS value allows you to reuse an element's computed text color for other properties.",
     "description_html": "The <code>currentColor</code> CSS value allows you to reuse an element's computed text color for other properties.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "currentColor",
-    "spec": "https://drafts.csswg.org/css-color-3/#currentcolor",
+    "spec": [
+      "https://drafts.csswg.org/css-color-3/#currentcolor"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -9682,9 +10858,14 @@ export const features = {
     ],
     "description": "The cursor CSS property styles the pointer, allowing you to provide hints to the user on how to interact with the hovered element.",
     "description_html": "The <code>cursor</code> CSS property styles the pointer, allowing you to provide hints to the user on how to interact with the hovered element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Cursor styles",
-    "spec": "https://drafts.csswg.org/css-ui-4/#cursor",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#cursor"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9703,8 +10884,11 @@ export const features = {
     ],
     "description": "The text-overflow CSS property with a string value sets the string representing clipped text.",
     "description_html": "The <code>text-overflow</code> CSS property with a string value sets the string representing clipped text.",
+    "kind": "feature",
     "name": "Custom ellipses",
-    "spec": "https://drafts.csswg.org/css-overflow-4/#overflow-string",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-string"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9714,16 +10898,23 @@ export const features = {
     }
   },
   "custom-properties": {
-    "caniuse": "css-variables",
+    "caniuse": [
+      "css-variables"
+    ],
     "compat_features": [
       "css.properties.custom-property",
       "css.types.var"
     ],
     "description": "Custom properties are CSS properties prefixed with -- that set values you can reuse with the var() function. For example, you can set a --key-color property to reuse as border-color: var(--key-color). Also known as CSS variables.",
     "description_html": "Custom properties are CSS properties prefixed with <code>--</code> that set values you can reuse with the <code>var()</code> function. For example, you can set a <code>--key-color</code> property to reuse as <code>border-color: var(--key-color)</code>. Also known as CSS variables.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Custom properties",
-    "spec": "https://drafts.csswg.org/css-variables-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-variables-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -9753,8 +10944,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "Customizable <select>",
-    "spec": "https://open-ui.org/components/customizableselect/",
+    "spec": [
+      "https://open-ui.org/components/customizableselect/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9771,9 +10965,14 @@ export const features = {
     ],
     "description": "Customized built-in elements are HTML elements that extend built-in elements using the is attribute, to add new behaviors that you define.",
     "description_html": "Customized built-in elements are HTML elements that extend built-in elements using the <code>is</code> attribute, to add new behaviors that you define.",
-    "group": "custom-elements",
+    "group": [
+      "custom-elements"
+    ],
+    "kind": "feature",
     "name": "Customized built-in elements",
-    "spec": "https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9794,9 +10993,14 @@ export const features = {
     ],
     "description": "The <data> element links a given piece of content with a machine-readable translation.",
     "description_html": "The <code>&#x3C;data></code> element links a given piece of content with a machine-readable translation.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<data>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-04-24",
@@ -9822,8 +11026,11 @@ export const features = {
     ],
     "description": "Data URLs are URLs that start with the data: scheme and which directly contain data rather than point to remote resources.",
     "description_html": "Data URLs are URLs that start with the <code>data:</code> scheme and which directly contain data rather than point to remote resources.",
+    "kind": "feature",
     "name": "Data URLs",
-    "spec": "https://www.rfc-editor.org/rfc/rfc2397",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc2397"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -9840,7 +11047,9 @@ export const features = {
     }
   },
   "datalist": {
-    "caniuse": "datalist",
+    "caniuse": [
+      "datalist"
+    ],
     "compat_features": [
       "api.HTMLDataListElement",
       "api.HTMLDataListElement.options",
@@ -9848,9 +11057,14 @@ export const features = {
     ],
     "description": "The <datalist> element sets recommended values for an <input> element. Browsers may show a dropdown menu of all values or match values as the user types.",
     "description_html": "The <code>&#x3C;datalist></code> element sets recommended values for an <code>&#x3C;input></code> element. Browsers may show a dropdown menu of all values or match values as the user types.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "<datalist>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -9864,7 +11078,9 @@ export const features = {
     }
   },
   "dataset": {
-    "caniuse": "dataset",
+    "caniuse": [
+      "dataset"
+    ],
     "compat_features": [
       "api.DOMStringMap",
       "api.HTMLElement.dataset",
@@ -9873,8 +11089,11 @@ export const features = {
     ],
     "description": "The dataset API attaches and accesses custom data on elements, using either the dataset property of HTMLElement or attributes prefixed with data-.",
     "description_html": "The <code>dataset</code> API attaches and accesses custom data on elements, using either the <code>dataset</code> property of <code>HTMLElement</code> or attributes prefixed with <code>data-</code>.",
+    "kind": "feature",
     "name": "Dataset",
-    "spec": "https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -9943,9 +11162,14 @@ export const features = {
     ],
     "description": "The Date object represents a single moment in time.",
     "description_html": "The <code>Date</code> object represents a single moment in time.",
-    "group": "primitive-types",
+    "group": [
+      "primitive-types"
+    ],
+    "kind": "feature",
     "name": "Date",
-    "spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -9973,9 +11197,14 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "getYear() and setYear()",
-    "spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-date.prototype.getyear",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-date.prototype.getyear"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10000,8 +11229,11 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "kind": "feature",
     "name": "toGMTString()",
-    "spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-date.prototype.togmtstring",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-date.prototype.togmtstring"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10016,7 +11248,9 @@ export const features = {
     }
   },
   "declarative-shadow-dom": {
-    "caniuse": "declarative-shadow-dom",
+    "caniuse": [
+      "declarative-shadow-dom"
+    ],
     "compat_features": [
       "api.HTMLTemplateElement.shadowRootClonable",
       "api.HTMLTemplateElement.shadowRootDelegatesFocus",
@@ -10034,8 +11268,11 @@ export const features = {
       "dom",
       "web-components"
     ],
+    "kind": "feature",
     "name": "Declarative shadow DOM",
-    "spec": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-02-20",
@@ -10051,7 +11288,9 @@ export const features = {
     }
   },
   "dedicated-workers": {
-    "caniuse": "webworkers",
+    "caniuse": [
+      "webworkers"
+    ],
     "compat_features": [
       "api.DedicatedWorkerGlobalScope",
       "api.DedicatedWorkerGlobalScope.close",
@@ -10087,9 +11326,14 @@ export const features = {
     ],
     "description": "The Worker() constructor runs a script in its own thread, which can send and receive messages with the script that created it. Also known as web workers.",
     "description_html": "The <code>Worker()</code> constructor runs a script in its own thread, which can send and receive messages with the script that created it. Also known as web workers.",
-    "group": "workers",
+    "group": [
+      "workers"
+    ],
+    "kind": "feature",
     "name": "Dedicated workers",
-    "spec": "https://html.spec.whatwg.org/multipage/workers.html#workers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#workers"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10106,15 +11350,22 @@ export const features = {
     }
   },
   "default": {
-    "caniuse": "css-default-pseudo",
+    "caniuse": [
+      "css-default-pseudo"
+    ],
     "compat_features": [
       "css.selectors.default"
     ],
     "description": "The :default CSS pseudo-class matches the default element in a group of related form controls, such as checkboxes and radio buttons with the checked attribute.",
     "description_html": "The <code>:default</code> CSS pseudo-class matches the default element in a group of related form controls, such as checkboxes and radio buttons with the <code>checked</code> attribute.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":default",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-default-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-default-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -10141,9 +11392,14 @@ export const features = {
     ],
     "description": "The <del> element element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
     "description_html": "The <code>&#x3C;del></code> element element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<del>",
-    "spec": "https://html.spec.whatwg.org/multipage/edits.html#the-del-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/edits.html#the-del-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10168,7 +11424,10 @@ export const features = {
     ],
     "description": "The <dl>, <dt>, and <dd> HTML elements represent a list of terms and their associated descriptions. Use a description list to create glossaries or similar list of key-value pairs.",
     "description_html": "The <code>&#x3C;dl></code>, <code>&#x3C;dt></code>, and <code>&#x3C;dd></code> HTML elements represent a list of terms and their associated descriptions. Use a description list to create glossaries or similar list of key-value pairs.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "Description list",
     "spec": [
       "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dd-element",
@@ -10199,9 +11458,14 @@ export const features = {
     ],
     "description": "The destructuring assignment syntax is a JavaScript expression that unpacks values from arrays, or properties from objects, into distinct variables.",
     "description_html": "The destructuring assignment syntax is a JavaScript expression that unpacks values from arrays, or properties from objects, into distinct variables.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Destructuring",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-destructuring-assignment",
       "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-destructuring-binding-patterns"
@@ -10222,7 +11486,9 @@ export const features = {
     }
   },
   "details": {
-    "caniuse": "details",
+    "caniuse": [
+      "details"
+    ],
     "compat_features": [
       "api.HTMLDetailsElement",
       "api.HTMLDetailsElement.open",
@@ -10235,9 +11501,14 @@ export const features = {
     ],
     "description": "The <details> element is a disclosure widget which can be expanded to reveal additional content. When closed, only the nested <summary> element is visible.",
     "description_html": "The <code>&#x3C;details></code> element is a disclosure widget which can be expanded to reveal additional content. When closed, only the nested <code>&#x3C;summary></code> element is visible.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<details>",
-    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -10259,9 +11530,14 @@ export const features = {
     ],
     "description": "The ::details-content pseudo-element selects the expandable content of a <details> element, excluding the <summary>.",
     "description_html": "The <code>::details-content</code> pseudo-element selects the expandable content of a <code>&#x3C;details></code> element, excluding the <code>&#x3C;summary></code>.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::details-content",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#details-content-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#details-content-pseudo"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10278,9 +11554,14 @@ export const features = {
     ],
     "description": "Multiple <details> elements which use the same name attribute are mutually exclusive. When one member of the group is opened, all other members are closed.",
     "description_html": "Multiple <code>&#x3C;details></code> elements which use the same <code>name</code> attribute are mutually exclusive. When one member of the group is opened, all other members are closed.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "Mutually exclusive <details> elements",
-    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-03",
@@ -10303,8 +11584,11 @@ export const features = {
     ],
     "description": "The navigator.deviceMemory property is the approximate amount of device memory, in gigabytes.",
     "description_html": "The <code>navigator.deviceMemory</code> property is the approximate amount of device memory, in gigabytes.",
+    "kind": "feature",
     "name": "Device memory",
-    "spec": "https://www.w3.org/TR/device-memory/",
+    "spec": [
+      "https://www.w3.org/TR/device-memory/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10315,7 +11599,9 @@ export const features = {
     }
   },
   "device-orientation-events": {
-    "caniuse": "deviceorientation",
+    "caniuse": [
+      "deviceorientation"
+    ],
     "compat_features": [
       "api.DeviceMotionEvent",
       "api.DeviceMotionEvent.DeviceMotionEvent",
@@ -10345,9 +11631,14 @@ export const features = {
     ],
     "description": "The DeviceMotion and DeviceOrientation events report the movement and orientation of the browser's device in physical space. Note that coordinates can differ noticeably between platforms and devices.",
     "description_html": "The <code>DeviceMotion</code> and <code>DeviceOrientation</code> events report the movement and orientation of the browser's device in physical space. Note that coordinates can differ noticeably between platforms and devices.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Device orientation events",
-    "spec": "https://w3c.github.io/deviceorientation/",
+    "spec": [
+      "https://w3c.github.io/deviceorientation/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -10372,8 +11663,11 @@ export const features = {
     ],
     "description": "The device posture API and the device-posture CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
     "description_html": "The device posture API and the <code>device-posture</code> CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+    "kind": "feature",
     "name": "Device posture",
-    "spec": "https://w3c.github.io/device-posture/",
+    "spec": [
+      "https://w3c.github.io/device-posture/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10399,9 +11693,14 @@ export const features = {
         "media-queries"
       ]
     },
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Device media queries",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#mf-deprecated",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#mf-deprecated"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10416,14 +11715,19 @@ export const features = {
     }
   },
   "devicepixelratio": {
-    "caniuse": "devicepixelratio",
+    "caniuse": [
+      "devicepixelratio"
+    ],
     "compat_features": [
       "api.Window.devicePixelRatio"
     ],
     "description": "The window.devicePixelRatio property is the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
     "description_html": "The <code>window.devicePixelRatio</code> property is the ratio of the size of one CSS pixel to the vertical size of one physical pixel on the current display device.",
+    "kind": "feature",
     "name": "devicePixelRatio",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10441,9 +11745,14 @@ export const features = {
     ],
     "description": "The <dfn> element marks a term to be defined, styling text as italic by default.",
     "description_html": "The <code>&#x3C;dfn></code> element marks a term to be defined, styling text as italic by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<dfn>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10460,7 +11769,9 @@ export const features = {
     }
   },
   "dialog": {
-    "caniuse": "dialog",
+    "caniuse": [
+      "dialog"
+    ],
     "compat_features": [
       "api.HTMLDialogElement",
       "api.HTMLDialogElement.cancel_event",
@@ -10477,9 +11788,14 @@ export const features = {
     ],
     "description": "The <dialog> HTML element represents a modal or non-modal dialog box, such as a confirmation prompt or a subwindow used to enter data.",
     "description_html": "The <code>&#x3C;dialog></code> HTML element represents a modal or non-modal dialog box, such as a confirmation prompt or a subwindow used to enter data.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<dialog>",
-    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -10502,9 +11818,14 @@ export const features = {
     ],
     "description": "The closedby HTML attribute for <dialog> sets which user actions close a dialog. For example, closedby=\"any\" allows the dialog to be closed by clicking outside of it.",
     "description_html": "The <code>closedby</code> HTML attribute for <code>&#x3C;dialog></code> sets which user actions close a dialog. For example, <code>closedby=\"any\"</code> allows the dialog to be closed by clicking outside of it.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<dialog closedby>",
-    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10522,8 +11843,11 @@ export const features = {
     ],
     "description": "The window.getDigitalGoodsService API connects to stores or billing services for in-app products and subscriptions.",
     "description_html": "The <code>window.getDigitalGoodsService</code> API connects to stores or billing services for in-app products and subscriptions.",
+    "kind": "feature",
     "name": "Digital goods",
-    "spec": "https://wicg.github.io/digital-goods/",
+    "spec": [
+      "https://wicg.github.io/digital-goods/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10533,15 +11857,22 @@ export const features = {
     }
   },
   "dir-pseudo": {
-    "caniuse": "css-dir-pseudo",
+    "caniuse": [
+      "css-dir-pseudo"
+    ],
     "compat_features": [
       "css.selectors.dir"
     ],
     "description": "The :dir() CSS functional pseudo-class matches elements by text direction, either right to left (rtl) or left to right (ltr).",
     "description_html": "The <code>:dir()</code> CSS functional pseudo-class matches elements by text direction, either right to left (<code>rtl</code>) or left to right (<code>ltr</code>).",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":dir()",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-dir-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-dir-pseudo"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -10565,8 +11896,11 @@ export const features = {
     ],
     "description": "The dirname attribute of <textarea> and <input> HTML elements includes the field's writing direction as form data on submission.",
     "description_html": "The <code>dirname</code> attribute of <code>&#x3C;textarea></code> and <code>&#x3C;input></code> HTML elements includes the field's writing direction as form data on submission.",
+    "kind": "feature",
     "name": "dirname",
-    "spec": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-08-01",
@@ -10582,7 +11916,9 @@ export const features = {
     }
   },
   "display": {
-    "caniuse": "inline-block",
+    "caniuse": [
+      "inline-block"
+    ],
     "compat_features": [
       "css.properties.display",
       "css.properties.display.block",
@@ -10593,9 +11929,14 @@ export const features = {
     ],
     "description": "The display CSS property sets the display behavior of an element's box within its layout and sets the layout behavior for its child elements.",
     "description_html": "The <code>display</code> CSS property sets the display behavior of an element's box within its layout and sets the layout behavior for its child elements.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Display",
-    "spec": "https://drafts.csswg.org/css-display-3/#the-display-properties",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#the-display-properties"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10620,7 +11961,10 @@ export const features = {
     ],
     "description": "You can animate elements between display: none and any other display value or animate between content-visibility: hidden and any other content-visibility value. This also applies to transitions.",
     "description_html": "You can animate elements between <code>display: none</code> and any other <code>display</code> value or animate between <code>content-visibility: hidden</code> and any other <code>content-visibility</code> value. This also applies to transitions.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "display animation",
     "spec": [
       "https://drafts.csswg.org/css-display-4/#display-animation",
@@ -10638,7 +11982,9 @@ export const features = {
     }
   },
   "display-contents": {
-    "caniuse": "css-display-contents",
+    "caniuse": [
+      "css-display-contents"
+    ],
     "compat_features": [
       "css.properties.display.contents",
       "css.properties.display.contents.contents_unusual",
@@ -10646,24 +11992,36 @@ export const features = {
     ],
     "description": "The display: contents CSS declaration sets an element to display only its contents, not itself.",
     "description_html": "The <code>display: contents</code> CSS declaration sets an element to display only its contents, not itself.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "display: contents",
-    "spec": "https://drafts.csswg.org/css-display-3/#box-generation",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#box-generation"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "display-flow-root": {
-    "caniuse": "flow-root",
+    "caniuse": [
+      "flow-root"
+    ],
     "compat_features": [
       "css.properties.display.flow-root"
     ],
     "description": "The display: flow-root CSS declaration sets an element as the root element of a new flow layout for its children, preventing margin collapse with sibling elements.",
     "description_html": "The <code>display: flow-root</code> CSS declaration sets an element as the root element of a new flow layout for its children, preventing margin collapse with sibling elements.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "display: flow-root",
-    "spec": "https://drafts.csswg.org/css-display-3/#inner-model",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#inner-model"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -10690,8 +12048,11 @@ export const features = {
       "css",
       "lists"
     ],
+    "kind": "feature",
     "name": "display: list-item",
-    "spec": "https://drafts.csswg.org/css-display-3/#list-items",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#list-items"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10714,9 +12075,14 @@ export const features = {
     ],
     "description": "The display-mode CSS media query sets styles based on whether the web page is in fullscreen, standalone, minimal-ui, browser, or picture-in-picture mode.",
     "description_html": "The <code>display-mode</code> CSS media query sets styles based on whether the web page is in <code>fullscreen</code>, <code>standalone</code>, <code>minimal-ui,</code> <code>browser</code>, or <code>picture-in-picture</code> mode.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "display-mode media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#display-modes",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#display-modes"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10740,8 +12106,11 @@ export const features = {
       "css",
       "ruby"
     ],
+    "kind": "feature",
     "name": "display: ruby",
-    "spec": "https://drafts.csswg.org/css-display-3/#layout-specific-display",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#layout-specific-display"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10751,7 +12120,9 @@ export const features = {
     }
   },
   "display-table": {
-    "caniuse": "css-table",
+    "caniuse": [
+      "css-table"
+    ],
     "compat_features": [
       "css.properties.display.inline-table",
       "css.properties.display.table",
@@ -10766,9 +12137,14 @@ export const features = {
     ],
     "description": "The display: table CSS declaration renders an element with the box layout of a <table> HTML element. Child elements may use equivalents to <table> internal elements such as display: table-row for <tr>.",
     "description_html": "The <code>display: table</code> CSS declaration renders an element with the box layout of a <code>&#x3C;table></code> HTML element. Child elements may use equivalents to <code>&#x3C;table></code> internal elements such as <code>display: table-row</code> for <code>&#x3C;tr></code>.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "display: table",
-    "spec": "https://drafts.csswg.org/css-display-3/#layout-specific-display",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#layout-specific-display"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "≤2019-10-05",
@@ -10791,9 +12167,14 @@ export const features = {
     ],
     "description": "The <div> HTML element is the generic container for content.",
     "description_html": "The <code>&#x3C;div></code> HTML element is the generic container for content.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<div>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -10820,8 +12201,11 @@ export const features = {
     ],
     "description": "The document.caretPositionFromPoint() method finds an insertion point, represented by a DOM node and an offset within that node, for given coordinates in the viewport.",
     "description_html": "The <code>document.caretPositionFromPoint()</code> method finds an insertion point, represented by a DOM node and an offset within that node, for given coordinates in the viewport.",
+    "kind": "feature",
     "name": "document.caretPositionFromPoint()",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10854,8 +12238,11 @@ export const features = {
         "get-computed-style"
       ]
     },
+    "kind": "feature",
     "name": "Document colors",
-    "spec": "https://html.spec.whatwg.org/multipage/obsolete.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/obsolete.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10884,8 +12271,11 @@ export const features = {
     ],
     "description": "The document picture-in-picture API creates an always-on-top window from arbitrary HTML content.",
     "description_html": "The document picture-in-picture API creates an always-on-top window from arbitrary HTML content.",
+    "kind": "feature",
     "name": "Document picture-in-picture",
-    "spec": "https://wicg.github.io/document-picture-in-picture/",
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -10913,8 +12303,11 @@ export const features = {
         "dom"
       ]
     },
+    "kind": "feature",
     "name": "document.write()",
-    "spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -11218,9 +12611,14 @@ export const features = {
     ],
     "description": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
     "description_html": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
-    "group": "dom",
+    "group": [
+      "dom"
+    ],
+    "kind": "feature",
     "name": "DOM",
-    "spec": "https://dom.spec.whatwg.org/",
+    "spec": [
+      "https://dom.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -11381,8 +12779,11 @@ export const features = {
     ],
     "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <canvas>, and SVG.",
     "description_html": "The <code>DOMMatrix</code>, <code>DOMPoint</code>, <code>DOMQuad</code> and <code>DOMRect</code> APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, <code>&#x3C;canvas></code>, and SVG.",
+    "kind": "feature",
     "name": "DOM Geometry",
-    "spec": "https://drafts.fxtf.org/geometry-1/",
+    "spec": [
+      "https://drafts.fxtf.org/geometry-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -11411,9 +12812,14 @@ export const features = {
     ],
     "description": "The dominant-baseline CSS property sets the specific baseline used to align an elements's text and inline-level contents.",
     "description_html": "The <code>dominant-baseline</code> CSS property sets the specific baseline used to align an elements's text and inline-level contents.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "dominant-baseline",
-    "spec": "https://drafts.csswg.org/css-inline-3/#dominant-baseline-property",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#dominant-baseline-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -11439,9 +12845,14 @@ export const features = {
     ],
     "description": "The DOMParser API parses XML or HTML source code from a string into a DOM Document.",
     "description_html": "The <code>DOMParser</code> API parses XML or HTML source code from a string into a DOM Document.",
-    "group": "parsing-and-serialization",
+    "group": [
+      "parsing-and-serialization"
+    ],
+    "kind": "feature",
     "name": "DOMParser",
-    "spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-domparser-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-domparser-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-09-21",
@@ -11458,7 +12869,9 @@ export const features = {
     }
   },
   "download": {
-    "caniuse": "download",
+    "caniuse": [
+      "download"
+    ],
     "compat_features": [
       "api.HTMLAnchorElement.download",
       "api.HTMLAreaElement.download",
@@ -11469,8 +12882,11 @@ export const features = {
     ],
     "description": "The download attribute for <a> elements loads the target URL as a file to be saved, instead of navigating to it. An optional attribute value sets a default file name.",
     "description_html": "The <code>download</code> attribute for <code>&#x3C;a></code> elements loads the target URL as a file to be saved, instead of navigating to it. An optional attribute value sets a default file name.",
+    "kind": "feature",
     "name": "download",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-03-19",
@@ -11487,7 +12903,9 @@ export const features = {
     }
   },
   "draganddrop": {
-    "caniuse": "dragndrop",
+    "caniuse": [
+      "dragndrop"
+    ],
     "compat_features": [
       "api.DataTransfer",
       "api.DataTransfer.DataTransfer",
@@ -11525,8 +12943,11 @@ export const features = {
     ],
     "description": "The Drag and Drop API lets users drag and drop elements and external files such as images onto web pages. Developers can customize which elements can become draggable, the type of feedback the draggable elements produce, and the droppable elements.",
     "description_html": "The Drag and Drop API lets users drag and drop elements and external files such as images onto web pages. Developers can customize which elements can become draggable, the type of feedback the draggable elements produce, and the droppable elements.",
+    "kind": "feature",
     "name": "Drag and Drop",
-    "spec": "https://html.spec.whatwg.org/multipage/dnd.html#dnd",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dnd.html#dnd"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -11548,9 +12969,14 @@ export const features = {
     ],
     "description": "The dynamic-range CSS media query sets styles based on whether a device can display at least standard range colors or at least high range colors. Non-visual devices will match neither.",
     "description_html": "The <code>dynamic-range</code> CSS media query sets styles based on whether a device can display at least <code>standard</code> range colors or at least <code>high</code> range colors. Non-visual devices will match neither.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "dynamic-range media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#dynamic-range",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#dynamic-range"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-11-03",
@@ -11573,8 +12999,11 @@ export const features = {
     ],
     "description": "TLS 1.3 sessions may be resumed more quickly by sending so-called early data to servers before the TLS handshake has finished. Also known as zero round-trip time resumption or 0-RTT.",
     "description_html": "TLS 1.3 sessions may be resumed more quickly by sending so-called early data to servers before the TLS handshake has finished. Also known as zero round-trip time resumption or 0-RTT.",
+    "kind": "feature",
     "name": "Early data",
-    "spec": "https://httpwg.org/specs/rfc8470.html",
+    "spec": [
+      "https://httpwg.org/specs/rfc8470.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -11627,8 +13056,11 @@ export const features = {
     ],
     "description": "The EditContext API allows you to build rich text editors that support advanced text input, such as Input Method Editor (IME) composition, an emoji picker, or other platform-specific editing UI.",
     "description_html": "The <code>EditContext</code> API allows you to build rich text editors that support advanced text input, such as Input Method Editor (IME) composition, an emoji picker, or other platform-specific editing UI.",
+    "kind": "feature",
     "name": "EditContext",
-    "spec": "https://w3c.github.io/edit-context/",
+    "spec": [
+      "https://w3c.github.io/edit-context/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -11639,15 +13071,20 @@ export const features = {
     }
   },
   "element": {
-    "caniuse": "css-element-function",
+    "caniuse": [
+      "css-element-function"
+    ],
     "compat_features": [
       "css.properties.background-image.element",
       "css.types.image.element"
     ],
     "description": "The element() CSS function creates a live-updating image from an HTML element that can be used as an image or background image.",
     "description_html": "The <code>element()</code> CSS function creates a live-updating image from an HTML element that can be used as an image or background image.",
+    "kind": "feature",
     "name": "element()",
-    "spec": "https://drafts.csswg.org/css-images-4/#element-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#element-notation"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -11661,8 +13098,11 @@ export const features = {
     ],
     "description": "The restrictTo() method on screen capture media tracks limits capture to a specific element, excluding content which might occlude the element itself, such as video conferencing controls.",
     "description_html": "The <code>restrictTo()</code> method on screen capture media tracks limits capture to a specific element, excluding content which might occlude the element itself, such as video conferencing controls.",
+    "kind": "feature",
     "name": "Element capture",
-    "spec": "https://screen-share.github.io/element-capture/",
+    "spec": [
+      "https://screen-share.github.io/element-capture/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -11672,13 +13112,16 @@ export const features = {
     }
   },
   "element-from-point": {
-    "caniuse": "element-from-point",
+    "caniuse": [
+      "element-from-point"
+    ],
     "compat_features": [
       "api.Document.elementFromPoint",
       "api.Document.elementsFromPoint"
     ],
     "description": "The document.elementFromPoint() and document.elementsFromPoint() methods find the top-most element at a given point in the viewport, or all elements at a given point in the viewport, respectively.",
     "description_html": "The <code>document.elementFromPoint()</code> and <code>document.elementsFromPoint()</code> methods find the top-most element at a given point in the viewport, or all elements at a given point in the viewport, respectively.",
+    "kind": "feature",
     "name": "document.elementFromPoint() and document.elementsFromPoint()",
     "spec": [
       "https://drafts.csswg.org/cssom-view-1/#dom-document-elementfrompoint",
@@ -11716,9 +13159,14 @@ export const features = {
     ],
     "description": "The element performance entry and the PerformanceElementTiming API measures the time to render elements that have the elementtiming attribute.",
     "description_html": "The <code>element</code> performance entry and the <code>PerformanceElementTiming</code> API measures the time to render elements that have the <code>elementtiming</code> attribute.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Element timing",
-    "spec": "https://w3c.github.io/element-timing/",
+    "spec": [
+      "https://w3c.github.io/element-timing/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -11734,9 +13182,14 @@ export const features = {
     ],
     "description": "The <em> HTML element emphasizes or stresses the content, styling text as italic by default.",
     "description_html": "The <code>&#x3C;em></code> HTML element emphasizes or stresses the content, styling text as italic by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<em>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -11758,9 +13211,14 @@ export const features = {
     ],
     "description": "The em CSS length unit is a font-relative length equal to the specified font size. In an element with a 2 inch font, 1em equals 2 inches.",
     "description_html": "The <code>em</code> CSS length unit is a font-relative length equal to the specified font size. In an element with a 2 inch font, <code>1em</code> equals 2 inches.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "em unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -11792,7 +13250,10 @@ export const features = {
     ],
     "description": "The <embed> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
     "description_html": "The <code>&#x3C;embed></code> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<embed>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element",
@@ -11820,9 +13281,14 @@ export const features = {
     ],
     "description": "The :empty CSS pseudo-class matches elements without child elements.",
     "description_html": "The <code>:empty</code> CSS pseudo-class matches elements without child elements.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":empty",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-empty-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-empty-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -11839,7 +13305,9 @@ export const features = {
     }
   },
   "encrypted-media-extensions": {
-    "caniuse": "eme",
+    "caniuse": [
+      "eme"
+    ],
     "compat_features": [
       "api.HTMLMediaElement.encrypted_event",
       "api.HTMLMediaElement.mediaKeys",
@@ -11889,8 +13357,11 @@ export const features = {
     ],
     "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
     "description_html": "The <code>mediaKeys</code> property of <code>HTMLMediaElement</code> and the <code>navigator.requestMediaKeySystemAccess()</code> method control the playback of content subject to digital rights management. Also known as EME.",
+    "kind": "feature",
     "name": "Encrypted media extensions",
-    "spec": "https://w3c.github.io/encrypted-media/",
+    "spec": [
+      "https://w3c.github.io/encrypted-media/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-09-25",
@@ -11913,8 +13384,11 @@ export const features = {
     ],
     "description": "The enterkeyhint global HTML attribute sets the label for a virtual keyboard's Enter key. For example, enterkeyhint=\"search\" may label the key with a magnifying glass icon.",
     "description_html": "The <code>enterkeyhint</code> global HTML attribute sets the label for a virtual keyboard's Enter key. For example, <code>enterkeyhint=\"search\"</code> may label the key with a magnifying glass icon.",
+    "kind": "feature",
     "name": "enterkeyhint",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-05-02",
@@ -11937,8 +13411,11 @@ export const features = {
     ],
     "description": "The cause property of errors records the specific original cause of the error, particularly for errors that have been re-thrown.",
     "description_html": "The <code>cause</code> property of errors records the specific original cause of the error, particularly for errors that have been re-thrown.",
+    "kind": "feature",
     "name": "Error cause",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -11966,9 +13443,14 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "escape() and unescape()",
-    "spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-escape-string",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-escape-string"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12004,9 +13486,14 @@ export const features = {
     ],
     "description": "The event and first-input performance entries and the PerformanceEventTiming API measures the latency of user input events, such as mouse clicks or keypresses, and the latency of the first user input. First Input Delay (FID) is a common metric for perceived responsiveness.",
     "description_html": "The <code>event</code> and <code>first-input</code> performance entries and the <code>PerformanceEventTiming</code> API measures the latency of user input events, such as mouse clicks or keypresses, and the latency of the first user input. First Input Delay (FID) is a common metric for perceived responsiveness.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Event timing",
-    "spec": "https://w3c.github.io/event-timing/",
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12019,7 +13506,9 @@ export const features = {
     }
   },
   "events": {
-    "caniuse": "addeventlistener",
+    "caniuse": [
+      "addeventlistener"
+    ],
     "compat_features": [
       "api.CustomEvent",
       "api.CustomEvent.CustomEvent",
@@ -12057,6 +13546,7 @@ export const features = {
     ],
     "description": "The Event API and the addEventListener() method on objects that receive events (event targets) represent and handle significant things happening on a page. Many APIs fire events for a wide range of situations relating to those APIs, such as an image loading, a user clicking, or a value changing.",
     "description_html": "The <code>Event</code> API and the <code>addEventListener()</code> method on objects that receive events (event targets) represent and handle significant things happening on a page. Many APIs fire events for a wide range of situations relating to those APIs, such as an image loading, a user clicking, or a value changing.",
+    "kind": "feature",
     "name": "Events",
     "spec": [
       "https://html.spec.whatwg.org/multipage/indices.html#events-2",
@@ -12084,9 +13574,14 @@ export const features = {
     ],
     "description": "The ex CSS length unit is a font-relative length equal to the used x-height of the first available font. X-height is often equal to the height of the lowercase x.",
     "description_html": "The <code>ex</code> CSS length unit is a font-relative length equal to the used x-height of the first available font. X-height is often equal to the height of the lowercase x.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "ex unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -12126,9 +13621,14 @@ export const features = {
         "contenteditable"
       ]
     },
-    "group": "clipboard",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
     "name": "execCommand()",
-    "spec": "https://w3c.github.io/editing/docs/execCommand/",
+    "spec": [
+      "https://w3c.github.io/editing/docs/execCommand/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12152,9 +13652,14 @@ export const features = {
     ],
     "description": "The pow(), sqrt(), hypot(), log(), and exp() CSS functions compute various exponential functions.",
     "description_html": "The <code>pow()</code>, <code>sqrt()</code>, <code>hypot()</code>, <code>log()</code>, and <code>exp()</code> CSS functions compute various exponential functions.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "pow(), sqrt(), hypot(), log(), and exp()",
-    "spec": "https://drafts.csswg.org/css-values-4/#exponent-funcs",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12202,8 +13707,11 @@ export const features = {
     ],
     "description": "The using and await using declarations and the dispose and asyncDispose symbols manage the lifecycle of resources such as file handles and streams. The DisposableStack and AsyncDisposableStack objects can group, dispose, and coordinate dependencies between multiple disposable resources.",
     "description_html": "The <code>using</code> and <code>await using</code> declarations and the <code>dispose</code> and <code>asyncDispose</code> symbols manage the lifecycle of resources such as file handles and streams. The <code>DisposableStack</code> and <code>AsyncDisposableStack</code> objects can group, dispose, and coordinate dependencies between multiple disposable resources.",
+    "kind": "feature",
     "name": "Explicit resource management",
-    "spec": "https://tc39.es/proposal-async-explicit-resource-management/",
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12222,10 +13730,17 @@ export const features = {
     ],
     "description": "The exponentiation (**) operator returns the result of raising the first operand to the power of the second operand.",
     "description_html": "The exponentiation (<code>**</code>) operator returns the result of raising the first operand to the power of the second operand.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Exponentiation operator",
-    "snapshot": "ecmascript-2016",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-exp-operator",
+    "snapshot": [
+      "ecmascript-2016"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-exp-operator"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -12247,9 +13762,14 @@ export const features = {
     ],
     "description": "The EXT_blend_minmax extension for WebGL 1.0 contexts adds two blend equations, the minimum and maximum color components of the source and destination colors.",
     "description_html": "The <code>EXT_blend_minmax</code> extension for WebGL 1.0 contexts adds two blend equations, the minimum and maximum color components of the source and destination colors.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_blend_minmax WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-30",
@@ -12271,9 +13791,14 @@ export const features = {
     ],
     "description": "The EXT_color_buffer_float extension for WebGL 2.0 contexts adds color-renderable floating point formats to renderbufferStorage().",
     "description_html": "The <code>EXT_color_buffer_float</code> extension for WebGL 2.0 contexts adds color-renderable floating point formats to <code>renderbufferStorage()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_color_buffer_float WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -12295,9 +13820,14 @@ export const features = {
     ],
     "description": "The EXT_color_buffer_half_float extension for WebGL 1.0 and 2.0 contexts renders 16-bit floating-point color buffers.",
     "description_html": "The <code>EXT_color_buffer_half_float</code> extension for WebGL 1.0 and 2.0 contexts renders 16-bit floating-point color buffers.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_color_buffer_half_float WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -12328,9 +13858,14 @@ export const features = {
     ],
     "description": "The EXT_disjoint_timer_query extension for WebGL 1.0 contexts measures the duration of a set of GL commands, without stalling the rendering pipeline.",
     "description_html": "The <code>EXT_disjoint_timer_query</code> extension for WebGL 1.0 contexts measures the duration of a set of GL commands, without stalling the rendering pipeline.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_disjoint_timer_query WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -12342,9 +13877,14 @@ export const features = {
     ],
     "description": "The EXT_float_blend extension for WebGL 1.0 and 2.0 contexts adds 32-bit floating-point components to blending and draw buffers.",
     "description_html": "The <code>EXT_float_blend</code> extension for WebGL 1.0 and 2.0 contexts adds 32-bit floating-point components to blending and draw buffers.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_float_blend WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_float_blend/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12363,9 +13903,14 @@ export const features = {
     ],
     "description": "The EXT_frag_depth extension for WebGL 1.0 and 2.0 contexts adds setting the depth value of a fragment from within the fragment shader.",
     "description_html": "The <code>EXT_frag_depth</code> extension for WebGL 1.0 and 2.0 contexts adds setting the depth value of a fragment from within the fragment shader.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_frag_depth WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12384,9 +13929,14 @@ export const features = {
     ],
     "description": "The EXT_shader_texture_lod extension for WebGL 1.0 and 2.0 contexts adds texture functions to the OpenGL ES Shading Language such that the shader writer explicitly controls of the level of detail (LOD).",
     "description_html": "The <code>EXT_shader_texture_lod</code> extension for WebGL 1.0 and 2.0 contexts adds texture functions to the OpenGL ES Shading Language such that the shader writer explicitly controls of the level of detail (LOD).",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_shader_texture_lod WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12405,9 +13955,14 @@ export const features = {
     ],
     "description": "The EXT_sRGB extension for WebGL 1.0 contexts adds sRGB support to textures and framebuffer objects.",
     "description_html": "The <code>EXT_sRGB</code> extension for WebGL 1.0 contexts adds sRGB support to textures and framebuffer objects.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_sRGB WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_sRGB/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-08-07",
@@ -12429,9 +13984,14 @@ export const features = {
     ],
     "description": "The EXT_texture_compression_bptc extension for WebGL 1.0 and 2.0 contexts adds the BPTC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>EXT_texture_compression_bptc</code> extension for WebGL 1.0 and 2.0 contexts adds the BPTC compressed texture formats to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_texture_compression_bptc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12449,9 +14009,14 @@ export const features = {
     ],
     "description": "The EXT_texture_compression_rgtc extension for WebGL 1.0 and 2.0 contexts adds RGTC compressed texture formats. RGTC is a block-based texture compression format suited for unsigned and signed red and red-green textures. Also known as Red-Green Texture Compression.",
     "description_html": "The <code>EXT_texture_compression_rgtc</code> extension for WebGL 1.0 and 2.0 contexts adds RGTC compressed texture formats. RGTC is a block-based texture compression format suited for unsigned and signed red and red-green textures. Also known as Red-Green Texture Compression.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_texture_compression_rgtc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12468,9 +14033,14 @@ export const features = {
     ],
     "description": "The EXT_texture_filter_anisotropic extension for WebGL 1.0 and 2.0 contexts adds anisotropic filtering (AF). AF improves the quality of mipmapped texture access when viewing a textured primitive at an oblique angle.",
     "description_html": "The <code>EXT_texture_filter_anisotropic</code> extension for WebGL 1.0 and 2.0 contexts adds anisotropic filtering (AF). AF improves the quality of mipmapped texture access when viewing a textured primitive at an oblique angle.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_texture_filter_anisotropic WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-12-07",
@@ -12492,9 +14062,14 @@ export const features = {
     ],
     "description": "The EXT_texture_norm16 extension to WebGL 2.0 contexts adds 16 bit signed normalized and unsigned normalized fixed-point texture, renderbuffer, and texture buffer formats.",
     "description_html": "The <code>EXT_texture_norm16</code> extension to WebGL 2.0 contexts adds 16 bit signed normalized and unsigned normalized fixed-point texture, renderbuffer, and texture buffer formats.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "EXT_texture_norm16 WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12519,8 +14094,11 @@ export const features = {
         "https://html.spec.whatwg.org/multipage/obsolete.html#external"
       ]
     },
+    "kind": "feature",
     "name": "window.external",
-    "spec": "https://html.spec.whatwg.org/multipage/obsolete.html#external",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/obsolete.html#external"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12541,8 +14119,11 @@ export const features = {
     ],
     "description": "The EyeDropper API opens an eyedropper tool, a color picker that allows users to select a color from their screen.",
     "description_html": "The <code>EyeDropper</code> API opens an eyedropper tool, a color picker that allows users to select a color from their screen.",
+    "kind": "feature",
     "name": "Eyedropper",
-    "spec": "https://wicg.github.io/eyedropper-api/",
+    "spec": [
+      "https://wicg.github.io/eyedropper-api/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12557,9 +14138,14 @@ export const features = {
     ],
     "description": "The fastSeek() method seeks an <audio> or <video> element as fast as possible, by seeking to a keyframe instead of exactly the requested time.",
     "description_html": "The <code>fastSeek()</code> method seeks an <code>&#x3C;audio></code> or <code>&#x3C;video></code> element as fast as possible, by seeking to a keyframe instead of exactly the requested time.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "fastSeek()",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek-dev",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek-dev"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12580,9 +14166,14 @@ export const features = {
     ],
     "description": "The IdentityCredential API delegates authentication to a third-party identity provider, instead of using third-party cookies. Also known as FedCM.",
     "description_html": "The <code>IdentityCredential</code> API delegates authentication to a third-party identity provider, instead of using third-party cookies. Also known as FedCM.",
-    "group": "credential-management",
+    "group": [
+      "credential-management"
+    ],
+    "kind": "feature",
     "name": "Federated credential management",
-    "spec": "https://w3c-fedid.github.io/FedCM/",
+    "spec": [
+      "https://w3c-fedid.github.io/FedCM/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12601,9 +14192,14 @@ export const features = {
     ],
     "description": "The FederatedCredential API represents the details required to authenticate a user using a third-party identity provider. Not to be confused with federated credential management (FedCM).",
     "description_html": "The <code>FederatedCredential</code> API represents the details required to authenticate a user using a third-party identity provider. Not to be confused with federated credential management (FedCM).",
-    "group": "credential-management",
+    "group": [
+      "credential-management"
+    ],
+    "kind": "feature",
     "name": "Federated credentials",
-    "spec": "https://w3c.github.io/webappsec-credential-management/#federated",
+    "spec": [
+      "https://w3c.github.io/webappsec-credential-management/#federated"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12619,7 +14215,6 @@ export const features = {
       "api.Fence.getNestedConfigs",
       "api.Fence.reportEvent",
       "api.Fence.setReportEventDataForAutomaticBeacons",
-      "api.Fence.setReportEventDataForAutomaticBeacons.start_commit_eventType",
       "api.FencedFrameConfig",
       "api.FencedFrameConfig.setSharedStorageContext",
       "api.HTMLFencedFrameElement",
@@ -12640,8 +14235,11 @@ export const features = {
     ],
     "description": "The <fencedframe> element embeds another HTML page into the current page in a more secure and privacy-preserving way than <iframe> elements.",
     "description_html": "The <code>&#x3C;fencedframe></code> element embeds another HTML page into the current page in a more secure and privacy-preserving way than <code>&#x3C;iframe></code> elements.",
+    "kind": "feature",
     "name": "<fencedframe>",
-    "spec": "https://wicg.github.io/fenced-frame/",
+    "spec": [
+      "https://wicg.github.io/fenced-frame/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12652,7 +14250,9 @@ export const features = {
     }
   },
   "fetch": {
-    "caniuse": "fetch",
+    "caniuse": [
+      "fetch"
+    ],
     "compat_features": [
       "api.Headers",
       "api.Headers.@@iterator",
@@ -12733,8 +14333,11 @@ export const features = {
     ],
     "description": "The fetch() method makes asynchronous HTTP requests.",
     "description_html": "The <code>fetch()</code> method makes asynchronous HTTP requests.",
+    "kind": "feature",
     "name": "Fetch",
-    "spec": "https://fetch.spec.whatwg.org/",
+    "spec": [
+      "https://fetch.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -12759,8 +14362,11 @@ export const features = {
     ],
     "description": "The Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site, and Sec-Fetch-User HTTP headers provide extra information about the way a request was made, to help servers reject certain kinds of malicious requests.",
     "description_html": "The <code>Sec-Fetch-Dest</code>, <code>Sec-Fetch-Mode</code>, <code>Sec-Fetch-Site</code>, and <code>Sec-Fetch-User</code> HTTP headers provide extra information about the way a request was made, to help servers reject certain kinds of malicious requests.",
+    "kind": "feature",
     "name": "Fetch metadata request headers",
-    "spec": "https://w3c.github.io/webappsec-fetch-metadata/",
+    "spec": [
+      "https://w3c.github.io/webappsec-fetch-metadata/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -12792,6 +14398,7 @@ export const features = {
     ],
     "description": "The fetch() priority option and the fetchpriority HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
     "description_html": "The <code>fetch()</code> <code>priority</code> option and the <code>fetchpriority</code> HTML attribute give hints to the browser about which requests to do before other requests of the same type.",
+    "kind": "feature",
     "name": "Fetch priority",
     "spec": [
       "https://fetch.spec.whatwg.org/#request-priority",
@@ -12817,8 +14424,11 @@ export const features = {
     ],
     "description": "A fetch() request uploads a stream of data to the server when a request's body property is a ReadableStream object.",
     "description_html": "A <code>fetch()</code> request uploads a stream of data to the server when a request's <code>body</code> property is a <code>ReadableStream</code> object.",
+    "kind": "feature",
     "name": "Fetch upload streams",
-    "spec": "https://fetch.spec.whatwg.org/#concept-body-stream",
+    "spec": [
+      "https://fetch.spec.whatwg.org/#concept-body-stream"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12840,8 +14450,11 @@ export const features = {
     ],
     "description": "The fetchLater() method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
     "description_html": "The <code>fetchLater()</code> method requests a deferred fetch sent at an unknown time. The browser chooses a reliable time to send the request, ideally when the document is unloaded, and ignores the response. This API is useful for sending beacons to a server without expecting a particular response.",
+    "kind": "feature",
     "name": "fetchLater",
-    "spec": "https://github.com/whatwg/fetch/pull/1647",
+    "spec": [
+      "https://github.com/whatwg/fetch/pull/1647"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12859,9 +14472,14 @@ export const features = {
     ],
     "description": "The field-sizing CSS property allows form controls such as <textarea> to be sized based on their content.",
     "description_html": "The <code>field-sizing</code> CSS property allows form controls such as <code>&#x3C;textarea></code> to be sized based on their content.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "field-sizing",
-    "spec": "https://drafts.csswg.org/css-forms-1/#field-sizing",
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -12894,6 +14512,7 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<fieldset> and <legend>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element",
@@ -12921,7 +14540,10 @@ export const features = {
     ],
     "description": "The <figure> and <figcaption> HTML elements represent an illustration, diagram, text, or other self-contained reference content, with an optional caption.",
     "description_html": "The <code>&#x3C;figure></code> and <code>&#x3C;figcaption></code> HTML elements represent an illustration, diagram, text, or other self-contained reference content, with an optional caption.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<figure> and <figcaption>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
@@ -12943,7 +14565,9 @@ export const features = {
     }
   },
   "file": {
-    "caniuse": "fileapi",
+    "caniuse": [
+      "fileapi"
+    ],
     "compat_features": [
       "api.Blob",
       "api.Blob.Blob",
@@ -12988,8 +14612,11 @@ export const features = {
     ],
     "description": "The File API represents and reads from file data and metadata. Typically, you get files through other APIs, such as the <input type=\"file\"> element or drag-and-drop events. You may also send file data to other APIs, such as creating images or drawing on canvases.",
     "description_html": "The File API represents and reads from file data and metadata. Typically, you get files through other APIs, such as the <code>&#x3C;input type=\"file\"></code> element or drag-and-drop events. You may also send file data to other APIs, such as creating images or drawing on canvases.",
+    "kind": "feature",
     "name": "File API",
-    "spec": "https://w3c.github.io/FileAPI/",
+    "spec": [
+      "https://w3c.github.io/FileAPI/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -13011,9 +14638,14 @@ export const features = {
     ],
     "description": "The ::file-selector-button CSS pseudo-element selects the button of a <input type=\"file\"> element.",
     "description_html": "The <code>::file-selector-button</code> CSS pseudo-element selects the button of a <code>&#x3C;input type=\"file\"></code> element.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::file-selector-button",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#file-selector-button-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#file-selector-button-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -13030,7 +14662,9 @@ export const features = {
     }
   },
   "file-system-access": {
-    "caniuse": "native-filesystem-api",
+    "caniuse": [
+      "native-filesystem-api"
+    ],
     "compat_features": [
       "api.FileSystemDirectoryHandle.@@asyncIterator",
       "api.FileSystemFileHandle.createWritable",
@@ -13046,9 +14680,14 @@ export const features = {
     ],
     "description": "The showOpenFilePicker(), showDirectoryPicker(), and showSaveFilePicker() methods request access to files and directories on the user's device and returns a handle for reading and writing to them.",
     "description_html": "The <code>showOpenFilePicker()</code>, <code>showDirectoryPicker()</code>, and <code>showSaveFilePicker()</code> methods request access to files and directories on the user's device and returns a handle for reading and writing to them.",
-    "group": "file-system",
+    "group": [
+      "file-system"
+    ],
+    "kind": "feature",
     "name": "File system access",
-    "spec": "https://wicg.github.io/file-system-access/",
+    "spec": [
+      "https://wicg.github.io/file-system-access/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13059,7 +14698,9 @@ export const features = {
     }
   },
   "filter": {
-    "caniuse": "css-filters",
+    "caniuse": [
+      "css-filters"
+    ],
     "compat_features": [
       "css.properties.filter",
       "css.types.filter-function",
@@ -13076,9 +14717,14 @@ export const features = {
     ],
     "description": "The filter CSS property applies one or more graphic effects to an element. You can use filter functions, such as blur() and drop-shadow(), alone or combined to produce different effects.",
     "description_html": "The <code>filter</code> CSS property applies one or more graphic effects to an element. You can use filter functions, such as <code>blur()</code> and <code>drop-shadow()</code>, alone or combined to produce different effects.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "filter",
-    "spec": "https://drafts.fxtf.org/filter-effects-1/#propdef-filter",
+    "spec": [
+      "https://drafts.fxtf.org/filter-effects-1/#propdef-filter"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-07",
@@ -13095,7 +14741,9 @@ export const features = {
     }
   },
   "first-letter": {
-    "caniuse": "css-first-letter",
+    "caniuse": [
+      "css-first-letter"
+    ],
     "compat_features": [
       "css.selectors.first-letter",
       "css.selectors.first-letter.dutch_ij_digraph",
@@ -13103,9 +14751,14 @@ export const features = {
     ],
     "description": "The ::first-letter CSS pseudo-element selects the first letter in an element for styling.",
     "description_html": "The <code>::first-letter</code> CSS pseudo-element selects the first letter in an element for styling.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::first-letter",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#first-letter-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#first-letter-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13122,16 +14775,23 @@ export const features = {
     }
   },
   "first-line": {
-    "caniuse": "css-first-line",
+    "caniuse": [
+      "css-first-line"
+    ],
     "compat_features": [
       "css.selectors.first-line",
       "css.selectors.first-line.svg_text_element"
     ],
     "description": "The ::first-line CSS pseudo-element selects the first line of text in an element for styling.",
     "description_html": "The <code>::first-line</code> CSS pseudo-element selects the first line of text in an element for styling.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::first-line",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#first-line-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#first-line-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13158,9 +14818,14 @@ export const features = {
     ],
     "description": "The fit-content CSS keyword expands a box as needed to fit its contents until the maximum size is reached, preserving the content's preferred aspect ratio.",
     "description_html": "The <code>fit-content</code> CSS keyword expands a box as needed to fit its contents until the maximum size is reached, preserving the content's preferred aspect ratio.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "fit-content",
-    "spec": "https://drafts.csswg.org/css-sizing-4/#valdef-width-fit-content",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-4/#valdef-width-fit-content"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-05-02",
@@ -13193,24 +14858,36 @@ export const features = {
     ],
     "description": "The fit-content() CSS function, used outside of a grid layout property, clamps a length between min-content and max-content.",
     "description_html": "The <code>fit-content()</code> CSS function, used outside of a grid layout property, clamps a length between <code>min-content</code> and <code>max-content</code>.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "fit-content()",
-    "spec": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "fixed-positioning": {
-    "caniuse": "css-fixed",
+    "caniuse": [
+      "css-fixed"
+    ],
     "compat_features": [
       "css.properties.position.fixed"
     ],
     "description": "The position: fixed CSS declaration removes an element from the normal flow and positions it relative to the viewport or page.",
     "description_html": "The <code>position: fixed</code> CSS declaration removes an element from the normal flow and positions it relative to the viewport or page.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Fixed positioning",
-    "spec": "https://drafts.csswg.org/css-position-3/#abspos-insets",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#abspos-insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13227,7 +14904,9 @@ export const features = {
     }
   },
   "flexbox": {
-    "caniuse": "flexbox",
+    "caniuse": [
+      "flexbox"
+    ],
     "compat_features": [
       "css.properties.align-content",
       "css.properties.align-content.flex_context",
@@ -13306,9 +14985,14 @@ export const features = {
     ],
     "description": "Flexbox is a one-dimensional layout system, which places content either horizontally or vertically, with optional wrapping.",
     "description_html": "Flexbox is a one-dimensional layout system, which places content either horizontally or vertically, with optional wrapping.",
-    "group": "flexbox",
+    "group": [
+      "flexbox"
+    ],
+    "kind": "feature",
     "name": "Flexbox",
-    "spec": "https://drafts.csswg.org/css-flexbox-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -13325,7 +15009,9 @@ export const features = {
     }
   },
   "flexbox-gap": {
-    "caniuse": "flexbox-gap",
+    "caniuse": [
+      "flexbox-gap"
+    ],
     "compat_features": [
       "css.properties.column-gap.flex_context",
       "css.properties.gap.flex_context",
@@ -13333,9 +15019,14 @@ export const features = {
     ],
     "description": "The gap CSS property in a flexbox layout sets the size of the space between items.",
     "description_html": "The <code>gap</code> CSS property in a flexbox layout sets the size of the space between items.",
-    "group": "flexbox",
+    "group": [
+      "flexbox"
+    ],
+    "kind": "feature",
     "name": "Flexbox gap",
-    "spec": "https://drafts.csswg.org/css-align-3/#gaps",
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#gaps"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -13364,7 +15055,10 @@ export const features = {
     ],
     "description": "The float CSS property aligns an element to either side of its container, allowing text and inline elements to flow around it. The clear CSS property sets whether an element is moved below floating elements that proceed it.",
     "description_html": "The <code>float</code> CSS property aligns an element to either side of its container, allowing text and inline elements to flow around it. The <code>clear</code> CSS property sets whether an element is moved below floating elements that proceed it.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "float and clear",
     "spec": [
       "https://drafts.csswg.org/css2/#propdef-float",
@@ -13395,9 +15089,14 @@ export const features = {
     ],
     "description": "Float16Array is a typed array of 16-bit floating point numbers.",
     "description_html": "Float16Array is a typed array of 16-bit floating point numbers.",
-    "group": "typed-arrays",
+    "group": [
+      "typed-arrays"
+    ],
+    "kind": "feature",
     "name": "Float16Array",
-    "spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-04-04",
@@ -13428,8 +15127,11 @@ export const features = {
     ],
     "description": "Focus events, such as focus and blur, fire when an element gets or loses focus.",
     "description_html": "Focus events, such as <code>focus</code> and <code>blur</code>, fire when an element gets or loses focus.",
+    "kind": "feature",
     "name": "Focus events",
-    "spec": "https://w3c.github.io/uievents/#events-focusevent",
+    "spec": [
+      "https://w3c.github.io/uievents/#events-focusevent"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13446,15 +15148,22 @@ export const features = {
     }
   },
   "focus-visible": {
-    "caniuse": "css-focus-visible",
+    "caniuse": [
+      "css-focus-visible"
+    ],
     "compat_features": [
       "css.selectors.focus-visible"
     ],
     "description": "The :focus-visible CSS pseudo-class selects elements that match the :focus pseudo-class and meets the browser's criteria for visually emphasizing focused elements.",
     "description_html": "The <code>:focus-visible</code> CSS pseudo-class selects elements that match the <code>:focus</code> pseudo-class and meets the browser's criteria for visually emphasizing focused elements.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":focus-visible",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-focus-visible-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-focus-visible-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -13471,15 +15180,22 @@ export const features = {
     }
   },
   "focus-within": {
-    "caniuse": "css-focus-within",
+    "caniuse": [
+      "css-focus-within"
+    ],
     "compat_features": [
       "css.selectors.focus-within"
     ],
     "description": "The :focus-within CSS pseudo-class matches an element if the element or any of its children are focused.",
     "description_html": "The <code>:focus-within</code> CSS pseudo-class matches an element if the element or any of its children are focused.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":focus-within",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-focus-within-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-focus-within-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -13496,15 +15212,22 @@ export const features = {
     }
   },
   "font-display": {
-    "caniuse": "css-font-rendering-controls",
+    "caniuse": [
+      "css-font-rendering-controls"
+    ],
     "compat_features": [
       "css.at-rules.font-face.font-display"
     ],
     "description": "The font-display CSS descriptor sets whether to show a substitute font or nothing while a font face loads. The property manages what's known as a flash of unstyled text or flash of invisible text.",
     "description_html": "The <code>font-display</code> CSS descriptor sets whether to show a substitute font or nothing while a font face loads. The property manages what's known as a flash of unstyled text or flash of invisible text.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-display",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-display-desc",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-display-desc"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -13544,9 +15267,14 @@ export const features = {
     ],
     "description": "The @font-face CSS at-rule creates a custom font-family value. The at-rule's descriptors set the font's name, source, and various display settings.",
     "description_html": "The <code>@font-face</code> CSS at-rule creates a custom <code>font-family</code> value. The at-rule's descriptors set the font's name, source, and various display settings.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "@font-face",
-    "spec": "https://drafts.csswg.org/css-fonts-5/#font-face-rule",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-face-rule"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -13569,9 +15297,14 @@ export const features = {
     ],
     "description": "The font-family CSS property sets the desired font face for text, along with optional fallback font faces.",
     "description_html": "The <code>font-family</code> CSS property sets the desired font face for text, along with optional fallback font faces.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-family",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-family-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-family-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13593,8 +15326,11 @@ export const features = {
     ],
     "description": "The font-family: math CSS declaration uses the browser default font face for displaying mathematical expressions.",
     "description_html": "The <code>font-family: math</code> CSS declaration uses the browser default font face for displaying mathematical expressions.",
+    "kind": "feature",
     "name": "Math font family",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#math-def",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#math-def"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13605,14 +15341,19 @@ export const features = {
     }
   },
   "font-family-system": {
-    "caniuse": "font-family-system-ui",
+    "caniuse": [
+      "font-family-system-ui"
+    ],
     "compat_features": [
       "css.properties.font-family.system-ui"
     ],
     "description": "The font-family: system-ui CSS declaration uses the operating system default font for text.",
     "description_html": "The <code>font-family: system-ui</code> CSS declaration uses the operating system default font for text.",
+    "kind": "feature",
     "name": "System font",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#system-ui-def",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#system-ui-def"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-07",
@@ -13629,7 +15370,9 @@ export const features = {
     }
   },
   "font-family-ui": {
-    "caniuse": "extended-system-fonts",
+    "caniuse": [
+      "extended-system-fonts"
+    ],
     "compat_features": [
       "css.properties.font-family.ui-monospace",
       "css.properties.font-family.ui-rounded",
@@ -13638,9 +15381,14 @@ export const features = {
     ],
     "description": "The ui-serif, ui-sans-serif, ui-monospace and ui-rounded values for the font-family CSS property use device-default user interface fonts for text.",
     "description_html": "The <code>ui-serif</code>, <code>ui-sans-serif</code>, <code>ui-monospace</code> and <code>ui-rounded</code> values for the <code>font-family</code> CSS property use device-default user interface fonts for text.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "UI fonts",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#ui-serif-def",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#ui-serif-def"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13650,7 +15398,9 @@ export const features = {
     }
   },
   "font-feature-settings": {
-    "caniuse": "font-feature",
+    "caniuse": [
+      "font-feature"
+    ],
     "compat_features": [
       "css.at-rules.font-face.font-feature-settings",
       "css.properties.font-feature-settings",
@@ -13658,9 +15408,14 @@ export const features = {
     ],
     "description": "The font-feature-settings CSS property sets low-level OpenType feature tags for a font. When possible, use font-variant instead.",
     "description_html": "The <code>font-feature-settings</code> CSS property sets low-level OpenType feature tags for a font. When possible, use <code>font-variant</code> instead.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-feature-settings",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -13677,7 +15432,9 @@ export const features = {
     }
   },
   "font-kerning": {
-    "caniuse": "font-kerning",
+    "caniuse": [
+      "font-kerning"
+    ],
     "compat_features": [
       "css.properties.font-kerning",
       "css.properties.font-kerning.auto",
@@ -13686,9 +15443,14 @@ export const features = {
     ],
     "description": "The font-kerning CSS property sets whether kerning data from a font is used to adjust the space between letters.",
     "description_html": "The <code>font-kerning</code> CSS property sets whether kerning data from a font is used to adjust the space between letters.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-kerning",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-kerning-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-kerning-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -13710,9 +15472,14 @@ export const features = {
     ],
     "description": "The font-language-override CSS property sets which language-specific glyphs are displayed.",
     "description_html": "The <code>font-language-override</code> CSS property sets which language-specific glyphs are displayed.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-language-override",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-language-override-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-language-override-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13722,7 +15489,9 @@ export const features = {
     }
   },
   "font-loading": {
-    "caniuse": "font-loading",
+    "caniuse": [
+      "font-loading"
+    ],
     "compat_features": [
       "api.Document.fonts",
       "api.FontFace",
@@ -13767,8 +15536,11 @@ export const features = {
     ],
     "description": "The document.fonts API dynamically loads custom fonts and tracks when fonts are loading or ready to use.",
     "description_html": "The <code>document.fonts</code> API dynamically loads custom fonts and tracks when fonts are loading or ready to use.",
+    "kind": "feature",
     "name": "Font loading",
-    "spec": "https://drafts.csswg.org/css-font-loading-3/",
+    "spec": [
+      "https://drafts.csswg.org/css-font-loading-3/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -13795,9 +15567,14 @@ export const features = {
     ],
     "description": "The ascent-override, descent-override, and line-gap-override descriptors adjust the display of a font declared in an @font-face statement. This can help make fallback fonts look the same size.",
     "description_html": "The <code>ascent-override</code>, <code>descent-override</code>, and <code>line-gap-override</code> descriptors adjust the display of a font declared in an <code>@font-face</code> statement. This can help make fallback fonts look the same size.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "Font metric overrides",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13817,9 +15594,14 @@ export const features = {
     ],
     "description": "The font-optical-sizing CSS property sets whether text rendering is optimized for viewing at different sizes.",
     "description_html": "The <code>font-optical-sizing</code> CSS property sets whether text rendering is optimized for viewing at different sizes.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-optical-sizing",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-optical-sizing-def",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-optical-sizing-def"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-09-24",
@@ -13836,7 +15618,9 @@ export const features = {
     }
   },
   "font-palette": {
-    "caniuse": "css-font-palette",
+    "caniuse": [
+      "css-font-palette"
+    ],
     "compat_features": [
       "api.CSSFontPaletteValuesRule",
       "api.CSSFontPaletteValuesRule.basePalette",
@@ -13854,7 +15638,10 @@ export const features = {
     ],
     "description": "The font-palette CSS property selects a color palette from the font, optionally overriding individual colors in the @font-palette-values at-rule.",
     "description_html": "The <code>font-palette</code> CSS property selects a color palette from the font, optionally overriding individual colors in the <code>@font-palette-values</code> at-rule.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-palette",
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-palette-prop",
@@ -13882,9 +15669,14 @@ export const features = {
     ],
     "description": "You can animate color fonts between two font-palette values.",
     "description_html": "You can animate color fonts between two <code>font-palette</code> values.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-palette animation",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-palette-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-palette-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -13906,9 +15698,14 @@ export const features = {
     ],
     "description": "The font CSS property shorthand sets multiple font properties, including style, weight, size, and font family.",
     "description_html": "The <code>font</code> CSS property shorthand sets multiple font properties, including style, weight, size, and font family.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "Font shorthand",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13933,9 +15730,14 @@ export const features = {
     ],
     "description": "The font-size CSS property sets the text height.",
     "description_html": "The <code>font-size</code> CSS property sets the text height.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-size",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-size-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-size-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -13952,7 +15754,9 @@ export const features = {
     }
   },
   "font-size-adjust": {
-    "caniuse": "font-size-adjust",
+    "caniuse": [
+      "font-size-adjust"
+    ],
     "compat_features": [
       "css.at-rules.font-face.size-adjust",
       "css.properties.font-size-adjust",
@@ -13963,9 +15767,14 @@ export const features = {
     ],
     "description": "The font-size-adjust CSS property preserves apparent text size, regardless of the font used, by scaling fonts to the same size with respect to a specific metric, such as x-height. This can help make fallback fonts look the same size.",
     "description_html": "The <code>font-size-adjust</code> CSS property preserves apparent text size, regardless of the font used, by scaling fonts to the same size with respect to a specific metric, such as x-height. This can help make fallback fonts look the same size.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-size-adjust",
-    "spec": "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-07-25",
@@ -13981,7 +15790,9 @@ export const features = {
     }
   },
   "font-stretch": {
-    "caniuse": "css-font-stretch",
+    "caniuse": [
+      "css-font-stretch"
+    ],
     "compat_features": [
       "css.at-rules.font-face.font-stretch",
       "css.properties.font-stretch",
@@ -13999,9 +15810,14 @@ export const features = {
         "font-width"
       ]
     },
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-stretch",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-stretch-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-stretch-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14026,9 +15842,14 @@ export const features = {
     ],
     "description": "The font-style CSS property sets the text style, with normal, italic, and oblique options.",
     "description_html": "The <code>font-style</code> CSS property sets the text style, with <code>normal</code>, <code>italic</code>, and <code>oblique</code> options.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-style",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-style-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-style-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -14054,9 +15875,14 @@ export const features = {
     ],
     "description": "The font-synthesis CSS shorthand property disables all font synthesis except the given kinds. To disable a specific kind of font synthesis, instead use the longhand properties such as font-synthesis-style and font-synthesis-weight.",
     "description_html": "The <code>font-synthesis</code> CSS shorthand property disables all font synthesis except the given kinds. To disable a specific kind of font synthesis, instead use the longhand properties such as <code>font-synthesis-style</code> and <code>font-synthesis-weight</code>.",
-    "group": "font-synthesis",
+    "group": [
+      "font-synthesis"
+    ],
+    "kind": "feature",
     "name": "font-synthesis",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-synthesis",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-synthesis"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-07-06",
@@ -14080,9 +15906,14 @@ export const features = {
     ],
     "description": "The font-synthesis-position CSS property sets whether or not the browser should synthesize subscript and superscript typefaces when they're missing from the font.",
     "description_html": "The <code>font-synthesis-position</code> CSS property sets whether or not the browser should synthesize subscript and superscript typefaces when they're missing from the font.",
-    "group": "font-synthesis",
+    "group": [
+      "font-synthesis"
+    ],
+    "kind": "feature",
     "name": "font-synthesis-position",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-synthesis-position",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-synthesis-position"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14099,9 +15930,14 @@ export const features = {
     ],
     "description": "The font-synthesis-small-caps CSS property sets whether or not the browser should synthesize small caps typefaces when they're missing from the font.",
     "description_html": "The <code>font-synthesis-small-caps</code> CSS property sets whether or not the browser should synthesize small caps typefaces when they're missing from the font.",
-    "group": "font-synthesis",
+    "group": [
+      "font-synthesis"
+    ],
+    "kind": "feature",
     "name": "font-synthesis-small-caps",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-synthesis-small-caps",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-synthesis-small-caps"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -14124,9 +15960,14 @@ export const features = {
     ],
     "description": "The font-synthesis-style CSS property sets whether or not the browser should synthesize italic and oblique typefaces when they're missing from the font.",
     "description_html": "The <code>font-synthesis-style</code> CSS property sets whether or not the browser should synthesize italic and oblique typefaces when they're missing from the font.",
-    "group": "font-synthesis",
+    "group": [
+      "font-synthesis"
+    ],
+    "kind": "feature",
     "name": "font-synthesis-style",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-synthesis-style",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-synthesis-style"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -14149,9 +15990,14 @@ export const features = {
     ],
     "description": "The font-synthesis-weight CSS property sets whether or not the browser should synthesize bold typefaces when they're missing from the font.",
     "description_html": "The <code>font-synthesis-weight</code> CSS property sets whether or not the browser should synthesize bold typefaces when they're missing from the font.",
-    "group": "font-synthesis",
+    "group": [
+      "font-synthesis"
+    ],
+    "kind": "feature",
     "name": "font-synthesis-weight",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-synthesis-weight",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-synthesis-weight"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -14183,9 +16029,14 @@ export const features = {
     ],
     "description": "The font-variant CSS property is a shorthand for font-variant-alternates, font-variant-caps, font-variant-east-asian, font-variant-emoji, font-variant-ligatures, font-variant-numeric, and font-variant-position.",
     "description_html": "The <code>font-variant</code> CSS property is a shorthand for <code>font-variant-alternates</code>, <code>font-variant-caps</code>, <code>font-variant-east-asian</code>, <code>font-variant-emoji</code>, <code>font-variant-ligatures</code>, <code>font-variant-numeric</code>, and <code>font-variant-position</code>.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -14202,7 +16053,9 @@ export const features = {
     }
   },
   "font-variant-alternates": {
-    "caniuse": "font-variant-alternates",
+    "caniuse": [
+      "font-variant-alternates"
+    ],
     "compat_features": [
       "api.CSSFontFeatureValuesMap",
       "api.CSSFontFeatureValuesMap.@@iterator",
@@ -14244,11 +16097,17 @@ export const features = {
     ],
     "description": "The font-variant-alternates CSS property, along with the @font-feature-values at-rule, chooses when to use a font's alternate glyphs.",
     "description_html": "The <code>font-variant-alternates</code> CSS property, along with the <code>@font-feature-values</code> at-rule, chooses when to use a font's alternate glyphs.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-variant-alternates",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-alternates-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-alternates-prop"
+    ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-13",
       "baseline_low_date": "2023-03-13",
       "support": {
         "chrome": "111",
@@ -14274,9 +16133,14 @@ export const features = {
     ],
     "description": "The font-variant-caps CSS property sets whether text should be displayed in small caps, petite caps, or with capital letters designed for titles.",
     "description_html": "The <code>font-variant-caps</code> CSS property sets whether text should be displayed in small caps, petite caps, or with capital letters designed for titles.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-caps",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-caps-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-caps-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -14308,9 +16172,14 @@ export const features = {
     ],
     "description": "The font-variant-east-asian CSS property controls glyph substitution and sizing in East Asian text.",
     "description_html": "The <code>font-variant-east-asian</code> CSS property controls glyph substitution and sizing in East Asian text.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-east-asian",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-east-asian-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-east-asian-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -14336,9 +16205,14 @@ export const features = {
     ],
     "description": "The font-variant-emoji CSS property sets the default presentation for emoji characters.",
     "description_html": "The <code>font-variant-emoji</code> CSS property sets the default presentation for emoji characters.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-emoji",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-emoji-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-emoji-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14366,9 +16240,14 @@ export const features = {
     ],
     "description": "The font-variant-ligatures CSS property sets how characters can be visually combined for readability or stylistic reasons.",
     "description_html": "The <code>font-variant-ligatures</code> CSS property sets how characters can be visually combined for readability or stylistic reasons.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-ligatures",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-ligatures-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-ligatures-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -14385,7 +16264,9 @@ export const features = {
     }
   },
   "font-variant-numeric": {
-    "caniuse": "font-variant-numeric",
+    "caniuse": [
+      "font-variant-numeric"
+    ],
     "compat_features": [
       "css.properties.font-variant-numeric",
       "css.properties.font-variant-numeric.diagonal-fractions",
@@ -14400,9 +16281,14 @@ export const features = {
     ],
     "description": "The font-variant-numeric CSS property sets how numeric characters are displayed. For example, you can align columns of numbers or use zeroes that have a slash.",
     "description_html": "The <code>font-variant-numeric</code> CSS property sets how numeric characters are displayed. For example, you can align columns of numbers or use zeroes that have a slash.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-numeric",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-numeric-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-numeric-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -14427,9 +16313,14 @@ export const features = {
     ],
     "description": "The font-variant-position CSS property sets whether to use alternate glyphs for subscript and superscript text.",
     "description_html": "The <code>font-variant-position</code> CSS property sets whether to use alternate glyphs for subscript and superscript text.",
-    "group": "font-features",
+    "group": [
+      "font-features"
+    ],
+    "kind": "feature",
     "name": "font-variant-position",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variant-position-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-position-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14441,16 +16332,23 @@ export const features = {
     }
   },
   "font-variation-settings": {
-    "caniuse": "variable-fonts",
+    "caniuse": [
+      "variable-fonts"
+    ],
     "compat_features": [
       "css.at-rules.font-face.font-variation-settings",
       "css.properties.font-variation-settings"
     ],
     "description": "The font-variation-settings CSS property sets an \"axis of variability\" on a variable font, such as weight, optical size, or a custom axis defined by the typeface designer. When possible, use other CSS font properties, such as font-weight: bold. Also known as variable fonts.",
     "description_html": "The <code>font-variation-settings</code> CSS property sets an \"axis of variability\" on a variable font, such as weight, optical size, or a custom axis defined by the typeface designer. When possible, use other CSS font properties, such as <code>font-weight: bold</code>. Also known as variable fonts.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-variation-settings",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-variation-settings-def",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variation-settings-def"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-03-05",
@@ -14479,9 +16377,14 @@ export const features = {
     ],
     "description": "The font-weight CSS property controls the thickness of a font. It is set explicitly with the keyword bold or a number, or relative to the inherited thickness with the keywords bolder or lighter.",
     "description_html": "The <code>font-weight</code> CSS property controls the thickness of a font. It is set explicitly with the keyword <code>bold</code> or a number, or relative to the inherited thickness with the keywords <code>bolder</code> or <code>lighter</code>.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-weight",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-weight-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-weight-prop"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -14512,9 +16415,14 @@ export const features = {
     ],
     "description": "The font-width CSS property selects a font face from a font family based on width, either by a keyword such as condensed or a percentage.",
     "description_html": "The <code>font-width</code> CSS property selects a font face from a font family based on width, either by a keyword such as <code>condensed</code> or a percentage.",
-    "group": "fonts",
+    "group": [
+      "fonts"
+    ],
+    "kind": "feature",
     "name": "font-width",
-    "spec": "https://drafts.csswg.org/css-fonts-4/#font-width-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-width-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14532,7 +16440,10 @@ export const features = {
     ],
     "description": "The forced-colors CSS @media rule detects when a user has chosen to use a forced colors mode, also known as high-contrast mode, and the forced-color-adjust CSS property sets whether forced colors apply to an element.",
     "description_html": "The <code>forced-colors</code> CSS @media rule detects when a user has chosen to use a forced colors mode, also known as high-contrast mode, and the <code>forced-color-adjust</code> CSS property sets whether forced colors apply to an element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Forced colors",
     "spec": [
       "https://drafts.csswg.org/mediaqueries-5/#forced-colors",
@@ -14596,9 +16507,14 @@ export const features = {
     ],
     "description": "The <form> element contains interactive controls for submitting information.",
     "description_html": "The <code>&#x3C;form></code> element contains interactive controls for submitting information.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "<form>",
-    "spec": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/forms.html#the-form-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -14634,8 +16550,11 @@ export const features = {
       "custom-elements",
       "forms"
     ],
+    "kind": "feature",
     "name": "Form-associated custom elements",
-    "spec": "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -14667,9 +16586,14 @@ export const features = {
     ],
     "description": "The form validity CSS pseudo-classes match <form> elements based on the constraints of a form field, such as validity (:valid, :invalid, :in-range, :out-of-range) and necessity (:optional or :required).",
     "description_html": "The form validity CSS pseudo-classes match <code>&#x3C;form></code> elements based on the constraints of a form field, such as validity (<code>:valid</code>, <code>:invalid</code>, <code>:in-range</code>, <code>:out-of-range</code>) and necessity (<code>:optional</code> or <code>:required</code>).",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Form validity pseudo-classes",
-    "spec": "https://drafts.csswg.org/selectors-4/#ui-validity",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#ui-validity"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -14686,7 +16610,9 @@ export const features = {
     }
   },
   "fullscreen": {
-    "caniuse": "fullscreen",
+    "caniuse": [
+      "fullscreen"
+    ],
     "compat_features": [
       "api.Document.exitFullscreen",
       "api.Document.exitFullscreen.returns_promise",
@@ -14710,8 +16636,11 @@ export const features = {
     ],
     "description": "The fullscreen API makes a specific element fill the whole screen and hides most browser UI.",
     "description_html": "The fullscreen API makes a specific element fill the whole screen and hides most browser UI.",
+    "kind": "feature",
     "name": "Fullscreen API",
-    "spec": "https://fullscreen.spec.whatwg.org/",
+    "spec": [
+      "https://fullscreen.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14727,9 +16656,14 @@ export const features = {
   "function": {
     "description": "The @function CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the @media at-rule.",
     "description_html": "The <code>@function</code> CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the <code>@media</code> at-rule.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@function",
-    "spec": "https://drafts.csswg.org/css-mixins-1/#function-rule",
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -14778,7 +16712,10 @@ export const features = {
     ],
     "description": "Functions are series of statements that can be called and return a value. The function keyword (as in function () { }) and arrow (=>) expression create functions. The JavaScript functions protocol includes default and rest parameters and binding to this.",
     "description_html": "Functions are series of statements that can be called and return a value. The <code>function</code> keyword (as in <code>function () { }</code>) and arrow (<code>=></code>) expression create functions. The JavaScript functions protocol includes default and rest parameters and binding to <code>this</code>.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Functions",
     "spec": [
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-ecmascript-language-functions-and-classes",
@@ -14811,9 +16748,14 @@ export const features = {
         "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html#sec-forbidden-extensions"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Function caller and arguments",
-    "spec": "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html#sec-forbidden-extensions",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html#sec-forbidden-extensions"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14828,7 +16770,9 @@ export const features = {
     }
   },
   "gamepad": {
-    "caniuse": "gamepad",
+    "caniuse": [
+      "gamepad"
+    ],
     "compat_features": [
       "api.Gamepad",
       "api.Gamepad.axes",
@@ -14855,9 +16799,14 @@ export const features = {
     ],
     "description": "The navigator.getGamepads() API accesses and responds to signals from game controllers.",
     "description_html": "The <code>navigator.getGamepads()</code> API accesses and responds to signals from game controllers.",
-    "group": "gamepad",
+    "group": [
+      "gamepad"
+    ],
+    "kind": "feature",
     "name": "Gamepad",
-    "spec": "https://w3c.github.io/gamepad/",
+    "spec": [
+      "https://w3c.github.io/gamepad/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -14890,9 +16839,14 @@ export const features = {
     ],
     "description": "The gamepad.vibrationActuator property represents a gamepad's haptics hardware, which allows you to control the vibration motors in a gamepad.",
     "description_html": "The <code>gamepad.vibrationActuator</code> property represents a gamepad's haptics hardware, which allows you to control the vibration motors in a gamepad.",
-    "group": "gamepad",
+    "group": [
+      "gamepad"
+    ],
+    "kind": "feature",
     "name": "Gamepad haptic feedback",
-    "spec": "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface",
+    "spec": [
+      "https://w3c.github.io/gamepad/#gamepadhapticactuator-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14909,9 +16863,14 @@ export const features = {
     ],
     "description": "The touched property of a GamepadButton object indicates whether a button capable of detecting touch is currently touched.",
     "description_html": "The <code>touched</code> property of a <code>GamepadButton</code> object indicates whether a button capable of detecting touch is currently touched.",
-    "group": "gamepad",
+    "group": [
+      "gamepad"
+    ],
+    "kind": "feature",
     "name": "Gamepad touch buttons",
-    "spec": "https://w3c.github.io/gamepad/#dom-gamepadbutton-touched",
+    "spec": [
+      "https://w3c.github.io/gamepad/#dom-gamepadbutton-touched"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14940,9 +16899,14 @@ export const features = {
     ],
     "description": "The hand and pose properties of a Gamepad object represent the position in space and the hand that WebVR controllers are held in.",
     "description_html": "The <code>hand</code> and <code>pose</code> properties of a <code>Gamepad</code> object represent the position in space and the hand that WebVR controllers are held in.",
-    "group": "gamepad",
+    "group": [
+      "gamepad"
+    ],
+    "kind": "feature",
     "name": "Gamepad VR hands and poses",
-    "spec": "https://w3c.github.io/gamepad/extensions.html",
+    "spec": [
+      "https://w3c.github.io/gamepad/extensions.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -14959,15 +16923,20 @@ export const features = {
       "flexbox",
       "multi-column"
     ],
+    "kind": "feature",
     "name": "Gap decorations",
-    "spec": "https://drafts.csswg.org/css-gaps-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "generators": {
-    "caniuse": "es6-generators",
+    "caniuse": [
+      "es6-generators"
+    ],
     "compat_features": [
       "javascript.builtins.Generator",
       "javascript.builtins.Generator.next",
@@ -14986,9 +16955,14 @@ export const features = {
     ],
     "description": "Generator functions (function*) create iterators that return multiple values, one after another, on-demand.",
     "description_html": "Generator functions (<code>function*</code>) create iterators that return multiple values, one after another, on-demand.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Generators",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-objects",
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects"
@@ -15009,7 +16983,9 @@ export const features = {
     }
   },
   "geolocation": {
-    "caniuse": "geolocation",
+    "caniuse": [
+      "geolocation"
+    ],
     "compat_features": [
       "api.Geolocation",
       "api.Geolocation.clearWatch",
@@ -15043,8 +17019,11 @@ export const features = {
     ],
     "description": "The navigator.gelocation API requests the user's latitude, longitude, heading, and speed.",
     "description_html": "The <code>navigator.gelocation</code> API requests the user's latitude, longitude, heading, and speed.",
+    "kind": "feature",
     "name": "Geolocation",
-    "spec": "https://w3c.github.io/geolocation/",
+    "spec": [
+      "https://w3c.github.io/geolocation/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15061,16 +17040,23 @@ export const features = {
     }
   },
   "get-computed-style": {
-    "caniuse": "getcomputedstyle",
+    "caniuse": [
+      "getcomputedstyle"
+    ],
     "compat_features": [
       "api.Window.getComputedStyle",
       "api.Window.getComputedStyle.pseudo_element_support"
     ],
     "description": "The getComputedStyle() global method returns an CSSStyleDeclaration object that represents all CSS declarations applied to a given element.",
     "description_html": "The <code>getComputedStyle()</code> global method returns an <code>CSSStyleDeclaration</code> object that represents all CSS declarations applied to a given element.",
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "getComputedStyle()",
-    "spec": "https://drafts.csswg.org/cssom-1/#extensions-to-the-window-interface",
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#extensions-to-the-window-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15094,8 +17080,11 @@ export const features = {
     ],
     "description": "The getBoxQuads() method, when called on a document, element, pseudo-element, or text node, returns the list of DOMQuad objects that represent the CSS boxes used to render the node.",
     "description_html": "The <code>getBoxQuads()</code> method, when called on a document, element, pseudo-element, or text node, returns the list of <code>DOMQuad</code> objects that represent the CSS boxes used to render the node.",
+    "kind": "feature",
     "name": "getBoxQuads()",
-    "spec": "https://drafts.csswg.org/cssom-view-1/",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -15108,9 +17097,14 @@ export const features = {
     ],
     "description": "The getHTML() method of Element and ShadowRoot objects serializes an element's DOM to an HTML string.",
     "description_html": "The <code>getHTML()</code> method of <code>Element</code> and <code>ShadowRoot</code> objects serializes an element's DOM to an HTML string.",
-    "group": "dom",
+    "group": [
+      "dom"
+    ],
+    "kind": "feature",
     "name": "getHTML()",
-    "spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-serialization-methods"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -15131,10 +17125,17 @@ export const features = {
     ],
     "description": "The globalThis property accesses the global this value (and hence the global object itself) across environments.",
     "description_html": "The <code>globalThis</code> property accesses the global <code>this</code> value (and hence the global object itself) across environments.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "globalThis",
-    "snapshot": "ecmascript-2020",
-    "spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-globalthis",
+    "snapshot": [
+      "ecmascript-2020"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-globalthis"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -15164,9 +17165,14 @@ export const features = {
         "text-orientation"
       ]
     },
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "glyph-orientation-vertical",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#glyph-orientation",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#glyph-orientation"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15183,8 +17189,11 @@ export const features = {
     ],
     "description": "The Sec-GPC request header indicates that the user does not consent to a website or service selling or sharing their personal information with third parties.",
     "description_html": "The <code>Sec-GPC</code> request header indicates that the user does not consent to a website or service selling or sharing their personal information with third parties.",
+    "kind": "feature",
     "name": "Global privacy control",
-    "spec": "https://w3c.github.io/gpc/",
+    "spec": [
+      "https://w3c.github.io/gpc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15209,9 +17218,14 @@ export const features = {
     ],
     "description": "Gradient interpolation controls how the colors between gradient stops are calculated in CSS. For example, linear-gradient(to right in oklch longer hue, red, red); calculates in the oklch color space, with the hue going all the way around the hue circle from red back to red.",
     "description_html": "Gradient interpolation controls how the colors between gradient stops are calculated in CSS. For example, <code>linear-gradient(to right in oklch longer hue, red, red);</code> calculates in the <code>oklch</code> color space, with the hue going all the way around the hue circle from red back to red.",
-    "group": "gradients",
+    "group": [
+      "gradients"
+    ],
+    "kind": "feature",
     "name": "Gradient interpolation",
-    "spec": "https://drafts.csswg.org/css-color-4/#interpolation-space",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-06-11",
@@ -15234,6 +17248,7 @@ export const features = {
       "css.types.gradient.linear-gradient.doubleposition",
       "css.types.gradient.linear-gradient.interpolation_hints",
       "css.types.gradient.linear-gradient.premultiplied_gradients",
+      "css.types.gradient.linear-gradient.single_color_stop",
       "css.types.gradient.linear-gradient.to",
       "css.types.gradient.linear-gradient.unitless_0_angle",
       "css.types.gradient.radial-gradient",
@@ -15241,22 +17256,30 @@ export const features = {
       "css.types.gradient.radial-gradient.doubleposition",
       "css.types.gradient.radial-gradient.interpolation_hints",
       "css.types.gradient.radial-gradient.premultiplied_gradients",
+      "css.types.gradient.radial-gradient.single_color_stop",
       "css.types.gradient.repeating-linear-gradient",
       "css.types.gradient.repeating-linear-gradient.doubleposition",
       "css.types.gradient.repeating-linear-gradient.interpolation_hints",
+      "css.types.gradient.repeating-linear-gradient.single_color_stop",
       "css.types.gradient.repeating-linear-gradient.to",
       "css.types.gradient.repeating-linear-gradient.unitless_0_angle",
       "css.types.gradient.repeating-radial-gradient",
       "css.types.gradient.repeating-radial-gradient.at",
       "css.types.gradient.repeating-radial-gradient.doubleposition",
       "css.types.gradient.repeating-radial-gradient.interpolation_hints",
+      "css.types.gradient.repeating-radial-gradient.single_color_stop",
       "css.types.image"
     ],
     "description": "The linear-gradient() and radial-gradient() CSS functions and their repeating counterparts create backgrounds that progress smoothly between multiple colors.",
     "description_html": "The <code>linear-gradient()</code> and <code>radial-gradient()</code> CSS functions and their repeating counterparts create backgrounds that progress smoothly between multiple colors.",
-    "group": "gradients",
+    "group": [
+      "gradients"
+    ],
+    "kind": "feature",
     "name": "Gradients",
-    "spec": "https://drafts.csswg.org/css-images-3/#gradients",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#gradients"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15273,7 +17296,9 @@ export const features = {
     }
   },
   "grid": {
-    "caniuse": "css-grid",
+    "caniuse": [
+      "css-grid"
+    ],
     "compat_features": [
       "css.properties.align-content.grid_context",
       "css.properties.align-items.grid_context",
@@ -15340,9 +17365,14 @@ export const features = {
     ],
     "description": "CSS grid is a two-dimensional layout system, which lays content out in rows and columns.",
     "description_html": "CSS grid is a two-dimensional layout system, which lays content out in rows and columns.",
-    "group": "grid",
+    "group": [
+      "grid"
+    ],
+    "kind": "feature",
     "name": "Grid",
-    "spec": "https://drafts.csswg.org/css-grid-3/",
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-04-17",
@@ -15365,9 +17395,14 @@ export const features = {
     ],
     "description": "Grid animation allows you to animate the grid-template-columns and grid-template-rows CSS properties.",
     "description_html": "Grid animation allows you to animate the <code>grid-template-columns</code> and <code>grid-template-rows</code> CSS properties.",
-    "group": "grid",
+    "group": [
+      "grid"
+    ],
+    "kind": "feature",
     "name": "Grid animation",
-    "spec": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+    "spec": [
+      "https://drafts.csswg.org/css-grid-2/#track-sizing"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-04-27",
@@ -15396,9 +17431,14 @@ export const features = {
     ],
     "description": "The Gyroscope API reads the angular velocity of a device in three dimensions.",
     "description_html": "The <code>Gyroscope</code> API reads the angular velocity of a device in three dimensions.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Gyroscope",
-    "spec": "https://w3c.github.io/gyroscope/#gyroscope-interface",
+    "spec": [
+      "https://w3c.github.io/gyroscope/#gyroscope-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15409,7 +17449,9 @@ export const features = {
     }
   },
   "hanging-punctuation": {
-    "caniuse": "css-hanging-punctuation",
+    "caniuse": [
+      "css-hanging-punctuation"
+    ],
     "compat_features": [
       "css.properties.hanging-punctuation",
       "css.properties.hanging-punctuation.allow-end",
@@ -15419,23 +17461,31 @@ export const features = {
     ],
     "description": "The hanging-punctuation CSS property puts punctuation characters outside of the box to align the text with the rest of the document.",
     "description_html": "The <code>hanging-punctuation</code> CSS property puts punctuation characters outside of the box to align the text with the rest of the document.",
+    "kind": "feature",
     "name": "Hanging punctuation",
-    "spec": "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "hardware-concurrency": {
-    "caniuse": "hardwareconcurrency",
+    "caniuse": [
+      "hardwareconcurrency"
+    ],
     "compat_features": [
       "api.Navigator.hardwareConcurrency",
       "api.WorkerNavigator.hardwareConcurrency"
     ],
     "description": "The navigator.hardwareConcurrency property is the number of logical processors available to run threads on the user's computer.",
     "description_html": "The <code>navigator.hardwareConcurrency</code> property is the number of logical processors available to run threads on the user's computer.",
+    "kind": "feature",
     "name": "hardwareConcurrency",
-    "spec": "https://html.spec.whatwg.org/multipage/workers.html#navigator.hardwareconcurrency",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#navigator.hardwareconcurrency"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -15452,15 +17502,22 @@ export const features = {
     }
   },
   "has": {
-    "caniuse": "css-has",
+    "caniuse": [
+      "css-has"
+    ],
     "compat_features": [
       "css.selectors.has"
     ],
     "description": "The :has() CSS functional pseudo-class matches an element if any of the selectors passed as parameters would match at least one element.",
     "description_html": "The <code>:has()</code> CSS functional pseudo-class matches an element if any of the selectors passed as parameters would match at least one element.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":has()",
-    "spec": "https://drafts.csswg.org/selectors-4/#relational",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#relational"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-19",
@@ -15485,8 +17542,11 @@ export const features = {
       "selectors",
       "web-components"
     ],
+    "kind": "feature",
     "name": ":has-slotted",
-    "spec": "https://drafts.csswg.org/css-scoping-1/#the-has-slotted-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-scoping-1/#the-has-slotted-pseudo"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15504,10 +17564,17 @@ export const features = {
     ],
     "description": "The #! comment at the absolute start of a script or module is treated as a normal comment and is ignored by the JavaScript engine.",
     "description_html": "The <code>#!</code> comment at the absolute start of a script or module is treated as a normal comment and is ignored by the JavaScript engine.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Hashbang comments",
-    "snapshot": "ecmascript-2023",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-hashbang",
+    "snapshot": [
+      "ecmascript-2023"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#sec-hashbang"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-09-24",
@@ -15524,7 +17591,9 @@ export const features = {
     }
   },
   "hashchange": {
-    "caniuse": "hashchange",
+    "caniuse": [
+      "hashchange"
+    ],
     "compat_features": [
       "api.HashChangeEvent",
       "api.HashChangeEvent.HashChangeEvent",
@@ -15534,8 +17603,11 @@ export const features = {
     ],
     "description": "The hashchange event fires when the URL fragment identifier (the part of the URL starting with #) of the current page has changed.",
     "description_html": "The <code>hashchange</code> event fires when the URL fragment identifier (the part of the URL starting with <code>#</code>) of the current page has changed.",
+    "kind": "feature",
     "name": "hashchange",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-hashchangeevent-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-hashchangeevent-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15558,9 +17630,14 @@ export const features = {
     ],
     "description": "The <head> element contains machine-readable information (metadata) about the document, such as the title, <script> and <style> elements, and <meta> elements.",
     "description_html": "The <code>&#x3C;head></code> element contains machine-readable information (metadata) about the document, such as the title, <code>&#x3C;script></code> and <code>&#x3C;style></code> elements, and <code>&#x3C;meta></code> elements.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<head>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15583,7 +17660,10 @@ export const features = {
     ],
     "description": "The <header> and <footer> HTML elements represent content that precedes and follows the main page content, respectively.",
     "description_html": "The <code>&#x3C;header></code> and <code>&#x3C;footer></code> HTML elements represent content that precedes and follows the main page content, respectively.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<header> and <footer>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/sections.html#the-header-element",
@@ -15611,9 +17691,14 @@ export const features = {
     ],
     "description": "The :heading and :heading() CSS pseudo-classes match headings of varying levels. The :heading pseudo-class matches any heading (<h1> through <h6>). The :heading() selector matches any of the given levels. For example, :heading(1, 2) matches headings level 1 and 2.",
     "description_html": "The <code>:heading</code> and <code>:heading()</code> CSS pseudo-classes match headings of varying levels. The <code>:heading</code> pseudo-class matches any heading (<code>&#x3C;h1></code> through <code>&#x3C;h6></code>). The <code>:heading()</code> selector matches any of the given levels. For example, <code>:heading(1, 2)</code> matches headings level 1 and 2.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Heading pseudo-classes",
-    "spec": "https://drafts.csswg.org/selectors-5/#headings",
+    "spec": [
+      "https://drafts.csswg.org/selectors-5/#headings"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -15631,9 +17716,14 @@ export const features = {
     ],
     "description": "The <h1> through <h6> HTML elements represent six levels of section headings, in order of decreasing importance.",
     "description_html": "The <code>&#x3C;h1></code> through <code>&#x3C;h6></code> HTML elements represent six levels of section headings, in order of decreasing importance.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<h1> through <h6>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15655,9 +17745,14 @@ export const features = {
     ],
     "description": "The <hgroup> element represents a heading and related content.",
     "description_html": "The <code>&#x3C;hgroup></code> element represents a heading and related content.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<hgroup>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15680,9 +17775,14 @@ export const features = {
     ],
     "description": "The hidden=\"until-found\" attribute hides an element until it is found using the browser's find-in-page search or it is directly navigated to by following a URL fragment.",
     "description_html": "The <code>hidden=\"until-found\"</code> attribute hides an element until it is found using the browser's find-in-page search or it is directly navigated to by following a URL fragment.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "hidden=\"until-found\"",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15728,8 +17828,11 @@ export const features = {
     ],
     "description": "Custom highlights style arbitrary text ranges, without adding extra elements to the DOM.",
     "description_html": "Custom highlights style arbitrary text ranges, without adding extra elements to the DOM.",
+    "kind": "feature",
     "name": "Custom highlights",
-    "spec": "https://drafts.csswg.org/css-highlight-api-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-highlight-api-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15742,7 +17845,9 @@ export const features = {
     }
   },
   "history": {
-    "caniuse": "history",
+    "caniuse": [
+      "history"
+    ],
     "compat_features": [
       "api.History",
       "api.History.back",
@@ -15762,8 +17867,11 @@ export const features = {
     ],
     "description": "The window.history API manipulates the browser session history, from navigations to state management, in the tab or frame that the current page is loaded in.",
     "description_html": "The <code>window.history</code> API manipulates the browser session history, from navigations to state management, in the tab or frame that the current page is loaded in.",
+    "kind": "feature",
     "name": "History",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15790,8 +17898,11 @@ export const features = {
       "selectors",
       "web-components"
     ],
+    "kind": "feature",
     "name": "Host",
-    "spec": "https://drafts.csswg.org/css-scoping-1/#host-selector",
+    "spec": [
+      "https://drafts.csswg.org/css-scoping-1/#host-selector"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -15825,8 +17936,11 @@ export const features = {
       "selectors",
       "web-components"
     ],
+    "kind": "feature",
     "name": ":host-context()",
-    "spec": "https://drafts.csswg.org/css-scoping-1/#host-selector",
+    "spec": [
+      "https://drafts.csswg.org/css-scoping-1/#host-selector"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15843,9 +17957,14 @@ export const features = {
     ],
     "description": "The <hr> element represents a thematic break between paragraphs, often shown as a horizontal rule.",
     "description_html": "The <code>&#x3C;hr></code> element represents a thematic break between paragraphs, often shown as a horizontal rule.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<hr>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15862,7 +17981,9 @@ export const features = {
     }
   },
   "hsl": {
-    "caniuse": "css3-colors",
+    "caniuse": [
+      "css3-colors"
+    ],
     "compat_features": [
       "css.types.color.hsl",
       "css.types.color.hsl.alpha_parameter",
@@ -15871,9 +17992,14 @@ export const features = {
     ],
     "description": "The hsl() and hsla() CSS functions pick colors using hue, saturation, lightness, and alpha (transparency) channels.",
     "description_html": "The <code>hsl()</code> and <code>hsla()</code> CSS functions pick colors using hue, saturation, lightness, and alpha (transparency) channels.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "HSL",
-    "spec": "https://drafts.csswg.org/css-color-4/#the-hsl-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#the-hsl-notation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -15895,9 +18021,14 @@ export const features = {
     ],
     "description": "The Strict-Transport-Security HTTP response header informs browsers that the site should only be accessed using HTTPS, and that any future attempts to access it using HTTP should automatically be converted to HTTPS. Also known as HSTS.",
     "description_html": "The <code>Strict-Transport-Security</code> HTTP response header informs browsers that the site should only be accessed using HTTPS, and that any future attempts to access it using HTTP should automatically be converted to HTTPS. Also known as HSTS.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "HTTP Strict Transport Security",
-    "spec": "https://www.rfc-editor.org/rfc/rfc6797",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc6797"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15920,9 +18051,14 @@ export const features = {
     ],
     "description": "The <html> element represents the top-level of an HTML document and is referred to as the root element.",
     "description_html": "The <code>&#x3C;html></code> element represents the top-level of an HTML document and is referred to as the root element.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<html>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -15939,15 +18075,20 @@ export const features = {
     }
   },
   "html-media-capture": {
-    "caniuse": "html-media-capture",
+    "caniuse": [
+      "html-media-capture"
+    ],
     "compat_features": [
       "api.HTMLInputElement.capture",
       "html.elements.input.capture"
     ],
     "description": "The capture HTML attribute for <input type=\"file\"> elements allows the user to capture media using the device's camera or microphone.",
     "description_html": "The <code>capture</code> HTML attribute for <code>&#x3C;input type=\"file\"></code> elements allows the user to capture media using the device's camera or microphone.",
+    "kind": "feature",
     "name": "HTML media capture",
-    "spec": "https://w3c.github.io/html-media-capture/",
+    "spec": [
+      "https://w3c.github.io/html-media-capture/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -15984,9 +18125,14 @@ export const features = {
         "dom"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "HTML wrapper methods",
-    "spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-properties-of-the-string.prototype-object",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-properties-of-the-string.prototype-object"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16020,6 +18166,7 @@ export const features = {
     ],
     "description": "The Authorization and WWW-Authenticate headers authenticate a user with a server.",
     "description_html": "The <code>Authorization</code> and <code>WWW-Authenticate</code> headers authenticate a user with a server.",
+    "kind": "feature",
     "name": "HTTP authentication",
     "spec": [
       "https://httpwg.org/specs/rfc9110.html#authentication",
@@ -16091,8 +18238,11 @@ export const features = {
     ],
     "description": "HTTP/1.1 is a network protocol used by browsers and servers. It has been superseded by HTTP/2 and HTTP/3.",
     "description_html": "HTTP/1.1 is a network protocol used by browsers and servers. It has been superseded by HTTP/2 and HTTP/3.",
+    "kind": "feature",
     "name": "HTTP/1.1",
-    "spec": "https://httpwg.org/specs/rfc9112.html",
+    "spec": [
+      "https://httpwg.org/specs/rfc9112.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16109,11 +18259,16 @@ export const features = {
     }
   },
   "http2": {
-    "caniuse": "http2",
+    "caniuse": [
+      "http2"
+    ],
     "description": "The HTTP/2 protocol is a major revision of the HTTP network protocol, providing improved performance and efficiency by using a single TCP connection to send multiple streams of data at once.",
     "description_html": "The HTTP/2 protocol is a major revision of the HTTP network protocol, providing improved performance and efficiency by using a single TCP connection to send multiple streams of data at once.",
+    "kind": "feature",
     "name": "HTTP/2",
-    "spec": "https://httpwg.org/specs/rfc9113.html",
+    "spec": [
+      "https://httpwg.org/specs/rfc9113.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -16130,11 +18285,16 @@ export const features = {
     }
   },
   "http3": {
-    "caniuse": "http3",
+    "caniuse": [
+      "http3"
+    ],
     "description": "HTTP/3 is a major revision of the HTTP network protocol, providing improved performance and efficiency by using QUIC as the underlying transport protocol.",
     "description_html": "HTTP/3 is a major revision of the HTTP network protocol, providing improved performance and efficiency by using QUIC as the underlying transport protocol.",
+    "kind": "feature",
     "name": "HTTP/3",
-    "spec": "https://httpwg.org/specs/rfc9114.html",
+    "spec": [
+      "https://httpwg.org/specs/rfc9114.html"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -16156,9 +18316,14 @@ export const features = {
     ],
     "description": "The hwb() CSS function picks colors using hue, whiteness, and blackness channels.",
     "description_html": "The <code>hwb()</code> CSS function picks colors using hue, whiteness, and blackness channels.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "HWB",
-    "spec": "https://drafts.csswg.org/css-color-4/#the-hwb-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#the-hwb-notation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-10-28",
@@ -16181,9 +18346,14 @@ export const features = {
     ],
     "description": "The hyphenate-character CSS property sets the character or string to use at the end of a line before a line break.",
     "description_html": "The <code>hyphenate-character</code> CSS property sets the character or string to use at the end of a line before a line break.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "Hyphenate character",
-    "spec": "https://drafts.csswg.org/css-text-4/#hyphenate-character",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hyphenate-character"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -16205,9 +18375,14 @@ export const features = {
     ],
     "description": "The hyphenate-limit-chars CSS property sets the number of characters in a word before it is hyphenated and the minimum number of characters on either side of the hyphen.",
     "description_html": "The <code>hyphenate-limit-chars</code> CSS property sets the number of characters in a word before it is hyphenated and the minimum number of characters on either side of the hyphen.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "Hyphenate limit chars",
-    "spec": "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16220,7 +18395,9 @@ export const features = {
     }
   },
   "hyphens": {
-    "caniuse": "css-hyphens",
+    "caniuse": [
+      "css-hyphens"
+    ],
     "compat_features": [
       "css.properties.hyphens",
       "css.properties.hyphens.auto",
@@ -16290,9 +18467,14 @@ export const features = {
     ],
     "description": "The hyphens CSS property controls when long words are broken by line wrapping. Although called hyphens, the property applies to word-splitting behavior across languages, such as customary spelling changes or the use of other characters. Support for non-English languages varies significantly.",
     "description_html": "The <code>hyphens</code> CSS property controls when long words are broken by line wrapping. Although called <code>hyphens</code>, the property applies to word-splitting behavior across languages, such as customary spelling changes or the use of other characters. Support for non-English languages varies significantly.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Hyphenation",
-    "spec": "https://drafts.csswg.org/css-text-3/#hyphens-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-3/#hyphens-property"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -16313,9 +18495,14 @@ export const features = {
     ],
     "description": "The <i> HTML element identifies idiomatic content, styling text as italic by default.",
     "description_html": "The <code>&#x3C;i></code> HTML element identifies idiomatic content, styling text as italic by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<i>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16337,9 +18524,14 @@ export const features = {
     ],
     "description": "The ic CSS length unit corresponds to the width of CJK ideographic characters.",
     "description_html": "The <code>ic</code> CSS length unit corresponds to the width of CJK ideographic characters.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "ic unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#ic",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#ic"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-04-03",
@@ -16369,8 +18561,11 @@ export const features = {
     ],
     "description": "The IdleDetector API is used to notify a webpage of the user's idle, active, and locked state.",
     "description_html": "The <code>IdleDetector</code> API is used to notify a webpage of the user's idle, active, and locked state.",
+    "kind": "feature",
     "name": "Idle detection",
-    "spec": "https://wicg.github.io/idle-detection/",
+    "spec": [
+      "https://wicg.github.io/idle-detection/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16386,9 +18581,14 @@ export const features = {
     ],
     "description": "The if() CSS function is an inline conditional value that returns a value based on a set of conditions.",
     "description_html": "The <code>if()</code> CSS function is an inline conditional value that returns a value based on a set of conditions.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "if()",
-    "spec": "https://drafts.csswg.org/css-values-5/#if-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#if-notation"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16418,9 +18618,14 @@ export const features = {
     ],
     "description": "The <iframe> element embeds another HTML page into the current page.",
     "description_html": "The <code>&#x3C;iframe></code> element embeds another HTML page into the current page.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<iframe>",
-    "spec": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16444,9 +18649,14 @@ export const features = {
     ],
     "description": "The credentialless attribute for the <iframe> HTML element loads third-party content in an ephemeral context and does not send any credentials such as cookies. When using cross-origin isolation, this allows you to embed content that does not send Cross-Origin-Embedder-Policy headers.",
     "description_html": "The <code>credentialless</code> attribute for the <code>&#x3C;iframe></code> HTML element loads third-party content in an ephemeral context and does not send any credentials such as cookies. When using cross-origin isolation, this allows you to embed content that does not send <code>Cross-Origin-Embedder-Policy</code> headers.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Credentialless iframes",
-    "spec": "https://wicg.github.io/anonymous-iframe/",
+    "spec": [
+      "https://wicg.github.io/anonymous-iframe/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16457,7 +18667,9 @@ export const features = {
     }
   },
   "iframe-sandbox": {
-    "caniuse": "iframe-sandbox",
+    "caniuse": [
+      "iframe-sandbox"
+    ],
     "compat_features": [
       "api.HTMLIFrameElement.sandbox",
       "html.elements.iframe.sandbox",
@@ -16474,6 +18686,7 @@ export const features = {
     ],
     "description": "The sandbox attribute for the <iframe> HTML element sets many security restrictions on the iframe, such as preventing form submissions or opening modal dialogs. Optional allow- values relax specific restrictions.",
     "description_html": "The <code>sandbox</code> attribute for the <code>&#x3C;iframe></code> HTML element sets many security restrictions on the iframe, such as preventing form submissions or opening modal dialogs. Optional <code>allow-</code> values relax specific restrictions.",
+    "kind": "feature",
     "name": "Sandboxed iframes",
     "spec": [
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
@@ -16495,15 +18708,20 @@ export const features = {
     }
   },
   "iframe-srcdoc": {
-    "caniuse": "iframe-srcdoc",
+    "caniuse": [
+      "iframe-srcdoc"
+    ],
     "compat_features": [
       "api.HTMLIFrameElement.srcdoc",
       "html.elements.iframe.srcdoc"
     ],
     "description": "The srcdoc attribute for the <iframe> HTML element sets a string of HTML to embed in the document. The value of srcdoc overrides loading a document from the src attribute.",
     "description_html": "The <code>srcdoc</code> attribute for the <code>&#x3C;iframe></code> HTML element sets a string of HTML to embed in the document. The value of <code>srcdoc</code> overrides loading a document from the <code>src</code> attribute.",
+    "kind": "feature",
     "name": "srcdoc",
-    "spec": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -16522,9 +18740,14 @@ export const features = {
   "image-function": {
     "description": "The image() CSS function creates an image similar to url() but with additional functionality. It can create a solid color as an image, provide a fallback from an image URL to a solid color, or clip a sprite image using media fragments. Not to be confused with the Image() constructor.",
     "description_html": "The <code>image()</code> CSS function creates an image similar to <code>url()</code> but with additional functionality. It can create a solid color as an image, provide a fallback from an image URL to a solid color, or clip a sprite image using media fragments. Not to be confused with the <code>Image()</code> constructor.",
-    "group": "images",
+    "group": [
+      "images"
+    ],
+    "kind": "feature",
     "name": "image()",
-    "spec": "https://drafts.csswg.org/css-images-4/#image-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#image-notation"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -16573,9 +18796,14 @@ export const features = {
     ],
     "description": "The <area> and <map> elements define a clickable area on an image.",
     "description_html": "The <code>&#x3C;area></code> and <code>&#x3C;map></code> elements define a clickable area on an image.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "Image maps",
-    "spec": "https://html.spec.whatwg.org/multipage/image-maps.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/image-maps.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16592,7 +18820,9 @@ export const features = {
     }
   },
   "image-orientation": {
-    "caniuse": "css-image-orientation",
+    "caniuse": [
+      "css-image-orientation"
+    ],
     "compat_features": [
       "css.properties.image-orientation",
       "css.properties.image-orientation.from-image",
@@ -16600,9 +18830,14 @@ export const features = {
     ],
     "description": "The image-orientation CSS property corrects the rotation of an image using the image's metadata, such as EXIF.",
     "description_html": "The <code>image-orientation</code> CSS property corrects the rotation of an image using the image's metadata, such as EXIF.",
-    "group": "images",
+    "group": [
+      "images"
+    ],
+    "kind": "feature",
     "name": "image-orientation",
-    "spec": "https://drafts.csswg.org/css-images-3/#the-image-orientation",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-image-orientation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-10-13",
@@ -16619,7 +18854,9 @@ export const features = {
     }
   },
   "image-rendering": {
-    "caniuse": "css-crisp-edges",
+    "caniuse": [
+      "css-crisp-edges"
+    ],
     "compat_features": [
       "css.properties.image-rendering",
       "css.properties.image-rendering.auto",
@@ -16627,9 +18864,14 @@ export const features = {
     ],
     "description": "The image-rendering CSS property sets how images are scaled, retaining smoothness for photos, or hard edges for pixel art and QR codes.",
     "description_html": "The <code>image-rendering</code> CSS property sets how images are scaled, retaining smoothness for photos, or hard edges for pixel art and QR codes.",
-    "group": "image-scaling",
+    "group": [
+      "image-scaling"
+    ],
+    "kind": "feature",
     "name": "image-rendering",
-    "spec": "https://drafts.csswg.org/css-images-3/#the-image-rendering",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-image-rendering"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-04-05",
@@ -16646,7 +18888,9 @@ export const features = {
     }
   },
   "image-set": {
-    "caniuse": "css-image-set",
+    "caniuse": [
+      "css-image-set"
+    ],
     "compat_features": [
       "css.properties.background-image.image-set",
       "css.properties.content.image-set",
@@ -16654,9 +18898,14 @@ export const features = {
     ],
     "description": "The image-set() CSS function provides a set of images at different resolutions or pixel densities, which the browser can pick from, depending on the device capabilities.",
     "description_html": "The <code>image-set()</code> CSS function provides a set of images at different resolutions or pixel densities, which the browser can pick from, depending on the device capabilities.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "image-set()",
-    "spec": "https://drafts.csswg.org/css-images-4/#image-set-notation",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#image-set-notation"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -16681,8 +18930,11 @@ export const features = {
     ],
     "description": "The ImageBitmapRenderingContext API is the \"bitmaprenderer\" rendering context for the <canvas> element. It is commonly used to transfer frames from an OffscreenCanvas to a user-visible <canvas> element.",
     "description_html": "The <code>ImageBitmapRenderingContext</code> API is the <code>\"bitmaprenderer\"</code> rendering context for the <code>&#x3C;canvas></code> element. It is commonly used to transfer frames from an <code>OffscreenCanvas</code> to a user-visible <code>&#x3C;canvas></code> element.",
+    "kind": "feature",
     "name": "ImageBitmapRenderingContext",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#the-imagebitmaprenderingcontext-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-imagebitmaprenderingcontext-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -16709,9 +18961,14 @@ export const features = {
         "https://drafts.csswg.org/css-ui-3/#input-method-editor"
       ]
     },
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "ime-mode",
-    "spec": "https://drafts.csswg.org/css-ui-3/#input-method-editor",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-3/#input-method-editor"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -16746,9 +19003,14 @@ export const features = {
     ],
     "description": "The <img> element adds an image into the document.",
     "description_html": "The <code>&#x3C;img></code> element adds an image into the document.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<img>",
-    "spec": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16774,9 +19036,14 @@ export const features = {
     ],
     "description": "The @import CSS at-rule loads styles from another stylesheet.",
     "description_html": "The <code>@import</code> CSS at-rule loads styles from another stylesheet.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@import",
-    "spec": "https://drafts.csswg.org/css-cascade-5/#at-import",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-5/#at-import"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -16809,22 +19076,30 @@ export const features = {
         "json-modules"
       ]
     },
+    "kind": "feature",
     "name": "Import assertions",
-    "spec": "https://github.com/tc39/proposal-import-attributes/tree/abca60286360b47f9a6be25a28f489c2cb157beb",
+    "spec": [
+      "https://github.com/tc39/proposal-import-attributes/tree/abca60286360b47f9a6be25a28f489c2cb157beb"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "import-maps": {
-    "caniuse": "import-maps",
+    "caniuse": [
+      "import-maps"
+    ],
     "compat_features": [
       "html.elements.script.type.importmap"
     ],
     "description": "A <script type=\"importmap\"> HTML element provides an import map as a JSON string. An import map controls how the browser should resolve module specifiers when importing JavaScript modules.",
     "description_html": "A <code>&#x3C;script type=\"importmap\"></code> HTML element provides an import map as a JSON string. An import map controls how the browser should resolve module specifiers when importing JavaScript modules.",
+    "kind": "feature",
     "name": "Import maps",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#import-maps",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#import-maps"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -16840,7 +19115,9 @@ export const features = {
     }
   },
   "indeterminate": {
-    "caniuse": "css-indeterminate-pseudo",
+    "caniuse": [
+      "css-indeterminate-pseudo"
+    ],
     "compat_features": [
       "css.selectors.indeterminate",
       "css.selectors.indeterminate.checkbox",
@@ -16849,7 +19126,10 @@ export const features = {
     ],
     "description": "The :indeterminate CSS pseudo-class selects any form element whose state is indeterminate, such as checkboxes that have been set to an indeterminate state with JavaScript, or radio buttons which are members of a group in which all radio buttons are unchecked.",
     "description_html": "The <code>:indeterminate</code> CSS pseudo-class selects any form element whose state is indeterminate, such as checkboxes that have been set to an indeterminate state with JavaScript, or radio buttons which are members of a group in which all radio buttons are unchecked.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": ":indeterminate",
     "spec": [
       "https://drafts.csswg.org/selectors-4/#indeterminate",
@@ -16995,8 +19275,11 @@ export const features = {
     ],
     "description": "The IndexedDB API is a local storage transactional object database.",
     "description_html": "The IndexedDB API is a local storage transactional object database.",
+    "kind": "feature",
     "name": "IndexedDB",
-    "spec": "https://w3c.github.io/IndexedDB/",
+    "spec": [
+      "https://w3c.github.io/IndexedDB/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -17024,9 +19307,14 @@ export const features = {
     ],
     "description": "The translate, rotate, and scale CSS properties apply single transformations independently, as opposed to applying multiple transformations with the transform CSS property.",
     "description_html": "The <code>translate</code>, <code>rotate</code>, and <code>scale</code> CSS properties apply single transformations independently, as opposed to applying multiple transformations with the <code>transform</code> CSS property.",
-    "group": "transforms",
+    "group": [
+      "transforms"
+    ],
+    "kind": "feature",
     "name": "Individual transform properties",
-    "spec": "https://drafts.csswg.org/css-transforms-2/#individual-transforms",
+    "spec": [
+      "https://drafts.csswg.org/css-transforms-2/#individual-transforms"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-02-05",
@@ -17051,9 +19339,14 @@ export const features = {
     ],
     "description": "The inert HTML attribute marks an element and its descendants as non-interactive. Inert elements don't get focus or fire click events.",
     "description_html": "The <code>inert</code> HTML attribute marks an element and its descendants as non-interactive. Inert elements don't get focus or fire <code>click</code> events.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "inert",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-04-11",
@@ -17075,9 +19368,14 @@ export const features = {
     ],
     "description": "The inherit keyword resets any CSS property to the computed value of that property from the parent element.",
     "description_html": "The <code>inherit</code> keyword resets any CSS property to the computed value of that property from the parent element.",
-    "group": "explicit-defaults",
+    "group": [
+      "explicit-defaults"
+    ],
+    "kind": "feature",
     "name": "inherit",
-    "spec": "https://drafts.csswg.org/css-cascade-3/#inherit",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-3/#inherit"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17100,9 +19398,14 @@ export const features = {
     ],
     "description": "The initial-letter CSS property sets the number of lines the first letter of an element occupies. You can use the property to make a raised capital or drop cap.",
     "description_html": "The <code>initial-letter</code> CSS property sets the number of lines the first letter of an element occupies. You can use the property to make a raised capital or drop cap.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "initial-letter",
-    "spec": "https://drafts.csswg.org/css-inline-3/#sizing-drop-initials",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#sizing-drop-initials"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17113,15 +19416,22 @@ export const features = {
     }
   },
   "initial-value": {
-    "caniuse": "css-initial-value",
+    "caniuse": [
+      "css-initial-value"
+    ],
     "compat_features": [
       "css.types.global_keywords.initial"
     ],
     "description": "The initial keyword resets any CSS property to its initial value as defined by the specification. For example, the initial value of the display property is inline, regardless of the element being styled. Not to be confused with revert, which resets to the user or browser default style.",
     "description_html": "The <code>initial</code> keyword resets any CSS property to its initial value as defined by the specification. For example, the <code>initial</code> value of the <code>display</code> property is <code>inline</code>, regardless of the element being styled. Not to be confused with <code>revert</code>, which resets to the user or browser default style.",
-    "group": "explicit-defaults",
+    "group": [
+      "explicit-defaults"
+    ],
+    "kind": "feature",
     "name": "initial",
-    "spec": "https://drafts.csswg.org/css-cascade-3/#initial",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-3/#initial"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-05-12",
@@ -17148,8 +19458,11 @@ export const features = {
     ],
     "description": "The navigator.ink API uses the system compositor to draw to a <canvas> element ahead of pointer events, reducing the delay between moving a stylus or cursor and a pen stroke appearing on screen.",
     "description_html": "The <code>navigator.ink</code> API uses the system compositor to draw to a <code>&#x3C;canvas></code> element ahead of pointer events, reducing the delay between moving a stylus or cursor and a pen stroke appearing on screen.",
+    "kind": "feature",
     "name": "Ink",
-    "spec": "https://wicg.github.io/ink-enhancement/",
+    "spec": [
+      "https://wicg.github.io/ink-enhancement/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17228,8 +19541,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input>",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#the-input-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17255,8 +19571,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"button\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#button-state-(type=button)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#button-state-(type=button)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17284,8 +19603,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"checkbox\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#checkbox-state-(type=checkbox)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#checkbox-state-(type=checkbox)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17302,7 +19624,9 @@ export const features = {
     }
   },
   "input-color": {
-    "caniuse": "input-color",
+    "caniuse": [
+      "input-color"
+    ],
     "compat_features": [
       "api.HTMLInputElement.alpha",
       "api.HTMLInputElement.colorSpace",
@@ -17316,8 +19640,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"color\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#color-state-(type=color)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#color-state-(type=color)"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17331,7 +19658,9 @@ export const features = {
     }
   },
   "input-date-time": {
-    "caniuse": "input-datetime",
+    "caniuse": [
+      "input-datetime"
+    ],
     "compat_features": [
       "api.HTMLInputElement.valueAsDate",
       "html.elements.input.type_date",
@@ -17346,8 +19675,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "Date and time <input> types",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#date-state-(type=date)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -17364,7 +19696,9 @@ export const features = {
     }
   },
   "input-email-tel-url": {
-    "caniuse": "input-email-tel-url",
+    "caniuse": [
+      "input-email-tel-url"
+    ],
     "compat_features": [
       "html.elements.input.type_email",
       "html.elements.input.type_tel",
@@ -17376,6 +19710,7 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "Email, telephone, and URL <input> types",
     "spec": [
       "https://html.spec.whatwg.org/multipage/input.html#email-state-(type=email)",
@@ -17398,7 +19733,9 @@ export const features = {
     }
   },
   "input-event": {
-    "caniuse": "input-event",
+    "caniuse": [
+      "input-event"
+    ],
     "compat_features": [
       "api.Element.beforeinput_event",
       "api.Element.input_event",
@@ -17413,8 +19750,11 @@ export const features = {
     ],
     "description": "The input event fires when a form control changes or an element with the contenteditable attribute changes.",
     "description_html": "The <code>input</code> event fires when a form control changes or an element with the <code>contenteditable</code> attribute changes.",
+    "kind": "feature",
     "name": "input (event)",
-    "spec": "https://w3c.github.io/uievents/#event-type-input",
+    "spec": [
+      "https://w3c.github.io/uievents/#event-type-input"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -17441,8 +19781,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"file\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17468,8 +19811,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"hidden\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17496,8 +19842,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"image\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17514,7 +19863,9 @@ export const features = {
     }
   },
   "input-number": {
-    "caniuse": "input-number",
+    "caniuse": [
+      "input-number"
+    ],
     "compat_features": [
       "api.HTMLInputElement.max",
       "api.HTMLInputElement.min",
@@ -17533,8 +19884,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"number\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17561,8 +19915,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"password\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#password-state-(type=password)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#password-state-(type=password)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17588,8 +19945,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"radio\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17606,7 +19966,9 @@ export const features = {
     }
   },
   "input-range": {
-    "caniuse": "input-range",
+    "caniuse": [
+      "input-range"
+    ],
     "compat_features": [
       "html.elements.input.type_range",
       "html.elements.input.type_range.tick_marks",
@@ -17618,8 +19980,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"range\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#range-state-(type=range)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#range-state-(type=range)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-16",
@@ -17645,8 +20010,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"reset\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#reset-button-state-(type=reset)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#reset-button-state-(type=reset)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17674,6 +20042,7 @@ export const features = {
       "forms",
       "selectors"
     ],
+    "kind": "feature",
     "name": "Input selectors",
     "spec": [
       "https://drafts.csswg.org/selectors-4/#checked",
@@ -17704,8 +20073,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<input type=\"submit\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17722,15 +20094,20 @@ export const features = {
     }
   },
   "inputmode": {
-    "caniuse": "input-inputmode",
+    "caniuse": [
+      "input-inputmode"
+    ],
     "compat_features": [
       "api.HTMLElement.inputMode",
       "html.global_attributes.inputmode"
     ],
     "description": "The inputmode global HTML attribute gives a hint about what type of data is to be entered into an <input> element, such as text, numeric, or email, so the browser may help the user enter data using an adapted input mechanism, such as an on-screen virtual keyboard.",
     "description_html": "The <code>inputmode</code> global HTML attribute gives a hint about what type of data is to be entered into an <code>&#x3C;input></code> element, such as <code>text</code>, <code>numeric</code>, or <code>email</code>, so the browser may help the user enter data using an adapted input mechanism, such as an on-screen virtual keyboard.",
+    "kind": "feature",
     "name": "inputmode",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-06-07",
@@ -17754,9 +20131,14 @@ export const features = {
     ],
     "description": "The <ins> element element represents a range of text that has been inserted into a document, styling text as underlined by default.",
     "description_html": "The <code>&#x3C;ins></code> element element represents a range of text that has been inserted into a document, styling text as underlined by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<ins>",
-    "spec": "https://html.spec.whatwg.org/multipage/edits.html#the-ins-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/edits.html#the-ins-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -17785,8 +20167,11 @@ export const features = {
     ],
     "description": "The MediaStreamTrackProcessor and MediaStreamTrackGenerator APIs modify the contents of a media track for merging streams, applying real-time effects like funny hats, and content overlays.",
     "description_html": "The <code>MediaStreamTrackProcessor</code> and <code>MediaStreamTrackGenerator</code> APIs modify the contents of a media track for merging streams, applying real-time effects like funny hats, and content overlays.",
+    "kind": "feature",
     "name": "Insertable streams for MediaStreamTrack",
-    "spec": "https://w3c.github.io/mediacapture-transform/",
+    "spec": [
+      "https://w3c.github.io/mediacapture-transform/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17796,7 +20181,9 @@ export const features = {
     }
   },
   "interaction": {
-    "caniuse": "css-media-interaction",
+    "caniuse": [
+      "css-media-interaction"
+    ],
     "compat_features": [
       "css.at-rules.media.any-hover",
       "css.at-rules.media.any-pointer",
@@ -17805,9 +20192,14 @@ export const features = {
     ],
     "description": "The pointer, any-pointer, hover, and any-hover CSS media queries set styles based on the presence of pointing devices and their ability to hover over elements. For example, most smartphones match the (hover: none) and (pointer: coarse) media query.",
     "description_html": "The <code>pointer</code>, <code>any-pointer</code>, <code>hover</code>, and <code>any-hover</code> CSS media queries set styles based on the presence of pointing devices and their ability to hover over elements. For example, most smartphones match the <code>(hover: none) and (pointer: coarse)</code> media query.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Interaction media queries",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#mf-interaction",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#mf-interaction"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-06-11",
@@ -17831,8 +20223,11 @@ export const features = {
     ],
     "description": "The interactivity: inert CSS declaration makes an element and its descendants inert, like when using the inert HTML attribute. Inert elements can't be focused or clicked, their text can't be selected or found using the browser's find-in-page feature.",
     "description_html": "The <code>interactivity: inert</code> CSS declaration makes an element and its descendants inert, like when using the <code>inert</code> HTML attribute. Inert elements can't be focused or clicked, their text can't be selected or found using the browser's find-in-page feature.",
+    "kind": "feature",
     "name": "interactivity",
-    "spec": "https://drafts.csswg.org/css-ui-4/#inertness",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#inertness"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17853,8 +20248,11 @@ export const features = {
       "transitions",
       "animation"
     ],
+    "kind": "feature",
     "name": "interpolate-size",
-    "spec": "https://drafts.csswg.org/css-values-5/#interpolate-size",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#interpolate-size"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17865,7 +20263,9 @@ export const features = {
     }
   },
   "intersection-observer": {
-    "caniuse": "intersectionobserver",
+    "caniuse": [
+      "intersectionobserver"
+    ],
     "compat_features": [
       "api.IntersectionObserver",
       "api.IntersectionObserver.IntersectionObserver",
@@ -17893,8 +20293,11 @@ export const features = {
     ],
     "description": "The IntersectionObserver API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
     "description_html": "The <code>IntersectionObserver</code> API asynchronously observes changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
+    "kind": "feature",
     "name": "Intersection observer",
-    "spec": "https://w3c.github.io/IntersectionObserver/",
+    "spec": [
+      "https://w3c.github.io/IntersectionObserver/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-09-25",
@@ -17911,11 +20314,16 @@ export const features = {
     }
   },
   "intersection-observer-v2": {
-    "caniuse": "intersectionobserver-v2",
+    "caniuse": [
+      "intersectionobserver-v2"
+    ],
     "description": "The trackVisibility parameter for the IntersectionObserver constructor enables tracking the visibility of an element, to detect if it may be obscured by other content or visual effects. Also known as IntersectionObserver v2.",
     "description_html": "The <code>trackVisibility</code> parameter for the <code>IntersectionObserver</code> constructor enables tracking the visibility of an element, to detect if it may be obscured by other content or visual effects. Also known as IntersectionObserver v2.",
+    "kind": "feature",
     "name": "Intersection observer visibility tracking",
-    "spec": "https://w3c.github.io/IntersectionObserver/#calculate-visibility-algo",
+    "spec": [
+      "https://w3c.github.io/IntersectionObserver/#calculate-visibility-algo"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -17926,7 +20334,9 @@ export const features = {
     }
   },
   "intl": {
-    "caniuse": "internationalization",
+    "caniuse": [
+      "internationalization"
+    ],
     "compat_features": [
       "javascript.builtins.Array.toLocaleString",
       "javascript.builtins.Array.toLocaleString.locales_parameter",
@@ -18034,9 +20444,14 @@ export const features = {
     ],
     "description": "The Intl API provides language sensitive string comparison, number formatting, date and time formatting, and more.",
     "description_html": "The <code>Intl</code> API provides language sensitive string comparison, number formatting, date and time formatting, and more.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl",
-    "spec": "https://tc39.es/ecma402/#introduction",
+    "spec": [
+      "https://tc39.es/ecma402/#introduction"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-03-28",
@@ -18062,9 +20477,14 @@ export const features = {
     ],
     "description": "The Intl.DisplayNames API provides localized names of language, region, script, and currency codes.",
     "description_html": "The <code>Intl.DisplayNames</code> API provides localized names of language, region, script, and currency codes.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.DisplayNames",
-    "spec": "https://tc39.es/ecma402/#intl-displaynames-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#intl-displaynames-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -18091,9 +20511,14 @@ export const features = {
     ],
     "description": "The Intl.DurationFormat API creates a locale-aware formatter that turns an object representing a duration (such as days, hours, and minutes) into a string.",
     "description_html": "The <code>Intl.DurationFormat</code> API creates a locale-aware formatter that turns an object representing a duration (such as days, hours, and minutes) into a string.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.DurationFormat",
-    "spec": "https://tc39.es/proposal-intl-duration-format/",
+    "spec": [
+      "https://tc39.es/proposal-intl-duration-format/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-04",
@@ -18119,9 +20544,14 @@ export const features = {
     ],
     "description": "The Intl.ListFormat API creates a locale-aware formatter that turns iterable objects into localized strings.",
     "description_html": "The <code>Intl.ListFormat</code> API creates a locale-aware formatter that turns iterable objects into localized strings.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.ListFormat",
-    "spec": "https://tc39.es/ecma402/#listformat-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#listformat-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -18157,9 +20587,14 @@ export const features = {
     ],
     "description": "The Intl.Locale API parses Unicode locale identifiers, with language, region, and script codes, such as zh-Hans-CN or en-GB.",
     "description_html": "The <code>Intl.Locale</code> API parses Unicode locale identifiers, with language, region, and script codes, such as <code>zh-Hans-CN</code> or <code>en-GB</code>.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.Locale",
-    "spec": "https://tc39.es/ecma402/#locale-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#locale-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -18187,9 +20622,14 @@ export const features = {
     ],
     "description": "The getter methods of the Intl.Locale API provide supplemental information about a Unicode locale, such as the locale's calendar (for example, the first day in a week or the weekend start day), writing direction, 12- or 24-hour cycles, and numbering system.",
     "description_html": "The getter methods of the <code>Intl.Locale</code> API provide supplemental information about a Unicode locale, such as the locale's calendar (for example, the first day in a week or the weekend start day), writing direction, 12- or 24-hour cycles, and numbering system.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.Locale info",
-    "spec": "https://tc39.es/ecma402/#locale-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#locale-objects"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18217,9 +20657,14 @@ export const features = {
     ],
     "description": "The Intl.PluralRules API creates a locale-aware object that tells you which of the language's pluralization rules apply based on a given number.",
     "description_html": "The <code>Intl.PluralRules</code> API creates a locale-aware object that tells you which of the language's pluralization rules apply based on a given number.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.PluralRules",
-    "spec": "https://tc39.es/ecma402/#pluralrules-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#pluralrules-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-03-19",
@@ -18250,9 +20695,14 @@ export const features = {
     ],
     "description": "The Intl.RelativeTimeFormat API creates a locale-aware formatter that turns an object representing a relative time (such as '1 day ago') into a localized string.",
     "description_html": "The <code>Intl.RelativeTimeFormat</code> API creates a locale-aware formatter that turns an object representing a relative time (such as '1 day ago') into a localized string.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.RelativeTimeFormat",
-    "spec": "https://tc39.es/ecma402/#relativetimeformat-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#relativetimeformat-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -18281,9 +20731,14 @@ export const features = {
     ],
     "description": "The Intl.Segmenter API creates a locale-aware text splitter that can separate a string into meaningful graphemes, words, or sentences.",
     "description_html": "The <code>Intl.Segmenter</code> API creates a locale-aware text splitter that can separate a string into meaningful graphemes, words, or sentences.",
-    "group": "intl",
+    "group": [
+      "intl"
+    ],
+    "kind": "feature",
     "name": "Intl.Segmenter",
-    "spec": "https://tc39.es/ecma402/#segmenter-objects",
+    "spec": [
+      "https://tc39.es/ecma402/#segmenter-objects"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-04-16",
@@ -18304,9 +20759,14 @@ export const features = {
     ],
     "description": "The inverted-colors CSS media query sets styles based on whether the user has inverted all colors, such as with mobile accessibility settings.",
     "description_html": "The <code>inverted-colors</code> CSS media query sets styles based on whether the user has inverted all colors, such as with mobile accessibility settings.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "inverted-colors media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#inverted",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#inverted"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18329,8 +20789,11 @@ export const features = {
     ],
     "description": "The command and commandfor attributes for the <button> HTML element dispatch an action to an element when the button is invoked (by click or keystroke), as a declarative alternative to addEventListener() calls or onclick attribute handlers.",
     "description_html": "The <code>command</code> and <code>commandfor</code> attributes for the <code>&#x3C;button></code> HTML element dispatch an action to an element when the button is invoked (by click or keystroke), as a declarative alternative to <code>addEventListener()</code> calls or <code>onclick</code> attribute handlers.",
+    "kind": "feature",
     "name": "Invoker commands",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18341,16 +20804,23 @@ export const features = {
     }
   },
   "is": {
-    "caniuse": "css-matches-pseudo",
+    "caniuse": [
+      "css-matches-pseudo"
+    ],
     "compat_features": [
       "css.selectors.is",
       "css.selectors.is.forgiving_selector_list"
     ],
     "description": "The :is() CSS functional pseudo-class takes a selector list as its argument, and matches any element that can be selected by one of the selectors in that list.",
     "description_html": "The <code>:is()</code> CSS functional pseudo-class takes a selector list as its argument, and matches any element that can be selected by one of the selectors in that list.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":is()",
-    "spec": "https://drafts.csswg.org/selectors-4/#matches",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#matches"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-07-21",
@@ -18372,8 +20842,11 @@ export const features = {
     ],
     "description": "The Error.isError() static method checks whether a value is an Error object.",
     "description_html": "The <code>Error.isError()</code> static method checks whether a value is an <code>Error</code> object.",
+    "kind": "feature",
     "name": "Error.isError()",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.iserror",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.iserror"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18401,8 +20874,11 @@ export const features = {
         "scheduler"
       ]
     },
+    "kind": "feature",
     "name": "isInputPending()",
-    "spec": "https://wicg.github.io/is-input-pending/",
+    "spec": [
+      "https://wicg.github.io/is-input-pending/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18419,8 +20895,11 @@ export const features = {
     ],
     "description": "The isSecureContext global property is a boolean for whether the current browsing context is secure. This is primarily a check that the page has been served over an HTTPS URL.",
     "description_html": "The <code>isSecureContext</code> global property is a boolean for whether the current browsing context is secure. This is primarily a check that the page has been served over an HTTPS URL.",
+    "kind": "feature",
     "name": "isSecureContext",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-issecurecontext-dev",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#dom-issecurecontext-dev"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-12",
@@ -18442,9 +20921,14 @@ export const features = {
     ],
     "description": "The isolation CSS property creates a new stacking context, which impacts z-index ordering and blend modes.",
     "description_html": "The <code>isolation</code> CSS property creates a new stacking context, which impacts <code>z-index</code> ordering and blend modes.",
-    "group": "blend-mode",
+    "group": [
+      "blend-mode"
+    ],
+    "kind": "feature",
     "name": "isolation",
-    "spec": "https://drafts.fxtf.org/compositing-2/#isolation",
+    "spec": [
+      "https://drafts.fxtf.org/compositing-2/#isolation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -18478,9 +20962,14 @@ export const features = {
     ],
     "description": "The Iterator object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as filter(), find(), map(), and reduce(). You can also use the static method Iterator.from() to convert an existing iterable into an Iterator.",
     "description_html": "The <code>Iterator</code> object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as <code>filter()</code>, <code>find()</code>, <code>map()</code>, and <code>reduce()</code>. You can also use the static method <code>Iterator.from()</code> to convert an existing iterable into an <code>Iterator</code>.",
-    "group": "iterators",
+    "group": [
+      "iterators"
+    ],
+    "kind": "feature",
     "name": "Iterator methods",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-helper-objects"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-31",
@@ -18504,9 +20993,14 @@ export const features = {
     ],
     "description": "The for...of loop operates on a sequence of values sourced from an iterable object, such as arrays, array-like objects, DOM collections, iterators, generators, and user-defined iterables. All built-in iterators inherit from the Iterator class.",
     "description_html": "The <code>for...of</code> loop operates on a sequence of values sourced from an iterable object, such as arrays, array-like objects, DOM collections, iterators, generators, and user-defined iterables. All built-in iterators inherit from the <code>Iterator</code> class.",
-    "group": "iterators",
+    "group": [
+      "iterators"
+    ],
+    "kind": "feature",
     "name": "Iterators and the for...of loop",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%iteratorprototype%-object",
       "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements"
@@ -18633,9 +21127,14 @@ export const features = {
     ],
     "description": "JavaScript is a programming language that runs in browsers, usually through the <script> element. JavaScript has changed over many years. This feature represents the oldest language features, such as built-in objects, statements, and operators. Also known as ECMAScript.",
     "description_html": "JavaScript is a programming language that runs in browsers, usually through the <code>&#x3C;script></code> element. JavaScript has changed over many years. This feature represents the oldest language features, such as built-in objects, statements, and operators. Also known as ECMAScript.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "JavaScript (initial core language support)",
-    "spec": "https://tc39.es/ecma262/multipage/#sec-intro",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/#sec-intro"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -18652,11 +21151,16 @@ export const features = {
     }
   },
   "jpegxl": {
-    "caniuse": "jpegxl",
+    "caniuse": [
+      "jpegxl"
+    ],
     "description": "The JPEG XL image format is a raster graphics file format that supports animation, alpha transparency, and lossy as well as lossless compression.",
     "description_html": "The JPEG XL image format is a raster graphics file format that supports animation, alpha transparency, and lossy as well as lossless compression.",
+    "kind": "feature",
     "name": "JPEG XL",
-    "spec": "https://www.iso.org/standard/85253.html",
+    "spec": [
+      "https://www.iso.org/standard/85253.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18666,7 +21170,9 @@ export const features = {
     }
   },
   "js-modules": {
-    "caniuse": "es6-module",
+    "caniuse": [
+      "es6-module"
+    ],
     "compat_features": [
       "api.Worklet.ecmascript_modules",
       "html.elements.script.nomodule",
@@ -18686,9 +21192,14 @@ export const features = {
     ],
     "description": "JavaScript modules allow code to be organized into reusable units. Modules use import to load other modules and export to declare what is available to import from other modules. In HTML, modules are loaded with <script type=\"module\">.",
     "description_html": "JavaScript modules allow code to be organized into reusable units. Modules use <code>import</code> to load other modules and <code>export</code> to declare what is available to import from other modules. In HTML, modules are loaded with <code>&#x3C;script type=\"module\"></code>.",
-    "group": "js-modules",
+    "group": [
+      "js-modules"
+    ],
+    "kind": "feature",
     "name": "JavaScript modules",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://html.spec.whatwg.org/multipage/webappapis.html#javascript-module-script",
       "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modules"
@@ -18719,8 +21230,11 @@ export const features = {
       "js-modules",
       "workers"
     ],
+    "kind": "feature",
     "name": "JavaScript modules in service workers",
-    "spec": "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type",
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18743,8 +21257,11 @@ export const features = {
       "js-modules",
       "workers"
     ],
+    "kind": "feature",
     "name": "JavaScript modules in shared workers",
-    "spec": "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18770,8 +21287,11 @@ export const features = {
       "js-modules",
       "workers"
     ],
+    "kind": "feature",
     "name": "JavaScript modules in workers",
-    "spec": "https://html.spec.whatwg.org/multipage/workers.html#dom-worker-dev",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#dom-worker-dev"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-06-06",
@@ -18796,9 +21316,14 @@ export const features = {
     ],
     "description": "The JSON API provides static methods for parsing values from and converting values to JavaScript Object Notation (JSON), a serialization format for objects, arrays, numbers, strings, Boolean values, and null.",
     "description_html": "The <code>JSON</code> API provides static methods for parsing values from and converting values to JavaScript Object Notation (JSON), a serialization format for objects, arrays, numbers, strings, Boolean values, and null.",
-    "group": "json",
+    "group": [
+      "json"
+    ],
+    "kind": "feature",
     "name": "JSON",
-    "spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -18821,9 +21346,14 @@ export const features = {
     ],
     "description": "Module import … with { type: \"json\" } statements load JSON data. Also known as JSON module scripts.",
     "description_html": "Module <code>import … with { type: \"json\" }</code> statements load JSON data. Also known as JSON module scripts.",
-    "group": "json",
+    "group": [
+      "json"
+    ],
+    "kind": "feature",
     "name": "JSON import attributes",
-    "spec": "https://html.spec.whatwg.org/multipage/webappapis.html#json-module-script",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#json-module-script"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-04-29",
@@ -18846,9 +21376,14 @@ export const features = {
     ],
     "description": "To serialize and parse JSON in a lossless way, JSON.stringify() handles rawJSON values and JSON.parse()'s reviver callback takes a source context parameter.",
     "description_html": "To serialize and parse JSON in a lossless way, <code>JSON.stringify()</code> handles <code>rawJSON</code> values and <code>JSON.parse()</code>'s reviver callback takes a source context parameter.",
-    "group": "json",
+    "group": [
+      "json"
+    ],
+    "kind": "feature",
     "name": "JSON source text access",
-    "spec": "https://tc39.es/proposal-json-parse-with-source/#sec-json-object",
+    "spec": [
+      "https://tc39.es/proposal-json-parse-with-source/#sec-json-object"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18866,9 +21401,14 @@ export const features = {
     ],
     "description": "The <kbd> element represents textual user input, such as keyboard or voice input, styling text in monospaced type by default.",
     "description_html": "The <code>&#x3C;kbd></code> element represents textual user input, such as keyboard or voice input, styling text in monospaced type by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<kbd>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -18916,8 +21456,11 @@ export const features = {
     ],
     "description": "The keydown and keyup events fire for each key press (or, with modifier keys, a combination of key presses) on a keyboard.",
     "description_html": "The <code>keydown</code> and <code>keyup</code> events fire for each key press (or, with modifier keys, a combination of key presses) on a keyboard.",
+    "kind": "feature",
     "name": "Keyboard events",
-    "spec": "https://w3c.github.io/uievents/#events-keyboardevents",
+    "spec": [
+      "https://w3c.github.io/uievents/#events-keyboardevents"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -18942,8 +21485,11 @@ export const features = {
     ],
     "description": "The navigator.keyboard.lock() API allows you to capture keys that are normally reserved by the operating system. It can be used to provide an immersive fullscreen experience such as games.",
     "description_html": "The <code>navigator.keyboard.lock()</code> API allows you to capture keys that are normally reserved by the operating system. It can be used to provide an immersive fullscreen experience such as games.",
+    "kind": "feature",
     "name": "Keyboard lock",
-    "spec": "https://wicg.github.io/keyboard-lock/",
+    "spec": [
+      "https://wicg.github.io/keyboard-lock/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18968,8 +21514,11 @@ export const features = {
     ],
     "description": "The navigator.keyboard.getLayoutMap() API returns a map from key codes to human readable key names. It can be used to describe buttons to the user when using the keyboard as a set of buttons, such as in games.",
     "description_html": "The <code>navigator.keyboard.getLayoutMap()</code> API returns a map from key codes to human readable key names. It can be used to describe buttons to the user when using the keyboard as a set of buttons, such as in games.",
+    "kind": "feature",
     "name": "Keyboard map",
-    "spec": "https://wicg.github.io/keyboard-map/",
+    "spec": [
+      "https://wicg.github.io/keyboard-map/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -18985,9 +21534,14 @@ export const features = {
     ],
     "description": "The KHR_parallel_shader_compile extension for WebGL 1.0 and 2.0 contexts checks the status of shader compilation without blocking the runtime.",
     "description_html": "The <code>KHR_parallel_shader_compile</code> extension for WebGL 1.0 and 2.0 contexts checks the status of shader compilation without blocking the runtime.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "KHR_parallel_shader_compile WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19000,7 +21554,9 @@ export const features = {
     }
   },
   "lab": {
-    "caniuse": "css-lch-lab",
+    "caniuse": [
+      "css-lch-lab"
+    ],
     "compat_features": [
       "css.types.color.lab",
       "css.types.color.lab.mixed_type_parameters",
@@ -19009,9 +21565,14 @@ export const features = {
     ],
     "description": "The CIE Lab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is. LCH is a variant of Lab with polar coordinates. These color spaces can be used with the CSS color(), lab(), and lch() functions. Also known as CIELAB and CIELCH.",
     "description_html": "The CIE Lab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is. LCH is a variant of Lab with polar coordinates. These color spaces can be used with the CSS <code>color()</code>, <code>lab()</code>, and <code>lch()</code> functions. Also known as CIELAB and CIELCH.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "Lab and LCH",
-    "spec": "https://drafts.csswg.org/css-color-4/#cie-lab",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#cie-lab"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -19041,8 +21602,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<label>",
-    "spec": "https://html.spec.whatwg.org/multipage/forms.html#the-label-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/forms.html#the-label-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19066,9 +21630,14 @@ export const features = {
     ],
     "description": "The :lang() CSS functional pseudo-class matches elements based on their content language.",
     "description_html": "The <code>:lang()</code> CSS functional pseudo-class matches elements based on their content language.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":lang()",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-lang-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-lang-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19091,8 +21660,11 @@ export const features = {
     ],
     "description": "The lang global HTML attribute defines the language of an element. It's used by assistive technology to correctly read the content, translation tools to select the origin language, and other applications.",
     "description_html": "The <code>lang</code> global HTML attribute defines the language of an element. It's used by assistive technology to correctly read the content, translation tools to select the origin language, and other applications.",
+    "kind": "feature",
     "name": "lang",
-    "spec": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#attr-lang"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19119,8 +21691,11 @@ export const features = {
     ],
     "description": "The navigator.language property is a string representing the preferred language of the user, usually the language of the browser UI. The navigator.languages property is an array of strings representing the user's preferred languages.",
     "description_html": "The <code>navigator.language</code> property is a string representing the preferred language of the user, usually the language of the browser UI. The <code>navigator.languages</code> property is an array of strings representing the user's preferred languages.",
+    "kind": "feature",
     "name": "Language",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19149,9 +21724,14 @@ export const features = {
     ],
     "description": "The largest-contentful-paint performance entry and the LargestContentfulPaint API measures  the time it takes for the largest image or text to appear. Largest contentful paint (LCP) is a common metric for perceived loading times.",
     "description_html": "The <code>largest-contentful-paint</code> performance entry and the <code>LargestContentfulPaint</code> API measures  the time it takes for the largest image or text to appear. Largest contentful paint (LCP) is a common metric for perceived loading times.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Largest contentful paint (LCP)",
-    "spec": "https://w3c.github.io/largest-contentful-paint/",
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19178,7 +21758,10 @@ export const features = {
     ],
     "description": "The unicode-bidi and direction CSS properties override the Unicode layout algorithm. They are intended for Document Type Definition (DTD) designers. For HTML documents, you should use the dir global HTML attribute and <bdo> HTML element instead.",
     "description_html": "The <code>unicode-bidi</code> and <code>direction</code> CSS properties override the Unicode layout algorithm. They are intended for Document Type Definition (DTD) designers. For HTML documents, you should use the <code>dir</code> global HTML attribute and <code>&#x3C;bdo></code> HTML element instead.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Layout direction override",
     "spec": [
       "https://drafts.csswg.org/css-writing-modes-4/#direction",
@@ -19215,9 +21798,14 @@ export const features = {
     ],
     "description": "The layout-shift performance entry and LayoutShift API measures the layout stability of web pages based on movements of the elements on the page.",
     "description_html": "The <code>layout-shift</code> performance entry and <code>LayoutShift</code> API measures the layout stability of web pages based on movements of the elements on the page.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Layout instability",
-    "spec": "https://wicg.github.io/layout-instability/",
+    "spec": [
+      "https://wicg.github.io/layout-instability/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19238,10 +21826,17 @@ export const features = {
     ],
     "description": "The let and const declarations define block-scoped variables.",
     "description_html": "The <code>let</code> and <code>const</code> declarations define block-scoped variables.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Let and const",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-let-and-const-declarations",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-let-and-const-declarations"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -19258,7 +21853,9 @@ export const features = {
     }
   },
   "letter-spacing": {
-    "caniuse": "css-letter-spacing",
+    "caniuse": [
+      "css-letter-spacing"
+    ],
     "compat_features": [
       "css.properties.letter-spacing",
       "css.properties.letter-spacing.normal",
@@ -19266,9 +21863,14 @@ export const features = {
     ],
     "description": "The letter-spacing CSS property controls the amount of space between each letter in an element or block of text.",
     "description_html": "The <code>letter-spacing</code> CSS property controls the amount of space between each letter in an element or block of text.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "letter-spacing",
-    "spec": "https://drafts.csswg.org/css-text-4/#letter-spacing-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#letter-spacing-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19290,9 +21892,14 @@ export const features = {
     ],
     "description": "The lh CSS length unit corresponds to the requested line height, the computed value of the line-height property. Some lines may be higher than this based on their content.",
     "description_html": "The <code>lh</code> CSS length unit corresponds to the requested line height, the computed value of the <code>line-height</code> property. Some lines may be higher than this based on their content.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "lh unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#lh",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#lh"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -19313,9 +21920,14 @@ export const features = {
     ],
     "description": "The light-dark() CSS function accepts two colors and uses one depending on the current color scheme.",
     "description_html": "The <code>light-dark()</code> CSS function accepts two colors and uses one depending on the current color scheme.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "light-dark()",
-    "spec": "https://drafts.csswg.org/css-color-5/#light-dark",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#light-dark"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-13",
@@ -19341,9 +21953,14 @@ export const features = {
     ],
     "description": "The line-break CSS property sets how strictly to apply rules for wrapping text to new lines, especially for symbols and punctuation.",
     "description_html": "The <code>line-break</code> CSS property sets how strictly to apply rules for wrapping text to new lines, especially for symbols and punctuation.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "line-break",
-    "spec": "https://drafts.csswg.org/css-text-4/#line-break-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#line-break-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -19360,16 +21977,23 @@ export const features = {
     }
   },
   "line-clamp": {
-    "caniuse": "css-line-clamp",
+    "caniuse": [
+      "css-line-clamp"
+    ],
     "compat_features": [
       "css.properties.line-clamp",
       "css.properties.line-clamp.none"
     ],
     "description": "The line-clamp CSS property limits the text in a block container to a certain number of lines. The prefixed -webkit-line-clamp is widely supported but only works with -webkit-box-orient: vertical in combination with display: -webkit-box or display: -webkit-inline-box.",
     "description_html": "The <code>line-clamp</code> CSS property limits the text in a block container to a certain number of lines. The prefixed <code>-webkit-line-clamp</code> is widely supported but only works with <code>-webkit-box-orient: vertical</code> in combination with <code>display: -webkit-box</code> or <code>display: -webkit-inline-box</code>.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "line-clamp",
-    "spec": "https://drafts.csswg.org/css-overflow-4/#line-clamp",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#line-clamp"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -19382,9 +22006,14 @@ export const features = {
     ],
     "description": "The line-height CSS property sets the spacing between text baselines, oriented to the horizontal or vertical writing mode.",
     "description_html": "The <code>line-height</code> CSS property sets the spacing between text baselines, oriented to the horizontal or vertical writing mode.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "line-height",
-    "spec": "https://drafts.csswg.org/css-inline-3/#line-height-property",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#line-height-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19406,9 +22035,14 @@ export const features = {
     ],
     "description": "The linear() easing function for animations and transitions interpolates linearly between the control points, and can be used to approximate complex easing functions, such as a bounce effect.",
     "description_html": "The <code>linear()</code> easing function for animations and transitions interpolates linearly between the control points, and can be used to approximate complex easing functions, such as a bounce effect.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "linear() easing",
-    "spec": "https://drafts.csswg.org/css-easing-2/#the-linear-easing-function",
+    "spec": [
+      "https://drafts.csswg.org/css-easing-2/#the-linear-easing-function"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -19451,9 +22085,14 @@ export const features = {
     ],
     "description": "The <link> element creates a relationship between the current document and an external resource, such as a stylesheet or favicon.",
     "description_html": "The <code>&#x3C;link></code> element creates a relationship between the current document and an external resource, such as a stylesheet or favicon.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<link>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19470,23 +22109,30 @@ export const features = {
     }
   },
   "link-rel-dns-prefetch": {
-    "caniuse": "link-rel-dns-prefetch",
+    "caniuse": [
+      "link-rel-dns-prefetch"
+    ],
     "compat_features": [
       "html.elements.link.rel.dns-prefetch"
     ],
     "description": "The rel=\"dns-prefetch\" attribute for the <link> HTML element is a hint to the browser that the page or user is likely to request resources from another domain, so the browser should preemptively resolve DNS for the href value's domain.",
     "description_html": "The <code>rel=\"dns-prefetch\"</code> attribute for the <code>&#x3C;link></code> HTML element is a hint to the browser that the page or user is likely to request resources from another domain, so the browser should preemptively resolve DNS for the <code>href</code> value's domain.",
+    "kind": "feature",
     "name": "<link rel=\"dns-prefetch\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-dns-prefetch",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-dns-prefetch"
+    ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-15",
       "support": {
         "chrome": "46",
         "chrome_android": "46",
         "edge": "79",
         "firefox": "127",
         "firefox_android": "127",
-        "safari": "5"
+        "safari": "5",
+        "safari_ios": "26"
       }
     }
   },
@@ -19496,8 +22142,11 @@ export const features = {
     ],
     "description": "The rel=\"expect\" attribute for the <link> HTML element is a hint to the browser to block rendering until the element that the href value references is connected to the document and fully parsed.",
     "description_html": "The <code>rel=\"expect\"</code> attribute for the <code>&#x3C;link></code> HTML element is a hint to the browser to block rendering until the element that the <code>href</code> value references is connected to the document and fully parsed.",
+    "kind": "feature",
     "name": "<link rel=\"expect\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-expect",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-expect"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19513,8 +22162,11 @@ export const features = {
     ],
     "description": "The rel=\"preconnect\" attribute for the <link> HTML element is a hint to the browser that the page or user is likely to request resources from another origin, so the browser should preemptively start a connection to the href value's origin.",
     "description_html": "The <code>rel=\"preconnect\"</code> attribute for the <code>&#x3C;link></code> HTML element is a hint to the browser that the page or user is likely to request resources from another origin, so the browser should preemptively start a connection to the <code>href</code> value's origin.",
+    "kind": "feature",
     "name": "<link rel=\"preconnect\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-preconnect",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-preconnect"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -19531,7 +22183,9 @@ export const features = {
     }
   },
   "link-rel-prefetch": {
-    "caniuse": "link-rel-prefetch",
+    "caniuse": [
+      "link-rel-prefetch"
+    ],
     "compat_features": [
       "api.PerformanceResourceTiming.deliveryType.navigational-prefetch",
       "html.elements.link.rel.prefetch",
@@ -19540,8 +22194,11 @@ export const features = {
     ],
     "description": "The rel=\"prefetch\" attribute for the <link> HTML element is a hint to the browser that the user is likely to navigate to a resource, so the browser should preemptively fetch and cache the resource.",
     "description_html": "The <code>rel=\"prefetch\"</code> attribute for the <code>&#x3C;link></code> HTML element is a hint to the browser that the user is likely to navigate to a resource, so the browser should preemptively fetch and cache the resource.",
+    "kind": "feature",
     "name": "<link rel=\"prefetch\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-prefetch",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-prefetch"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19554,7 +22211,9 @@ export const features = {
     }
   },
   "link-rel-preload": {
-    "caniuse": "link-rel-preload",
+    "caniuse": [
+      "link-rel-preload"
+    ],
     "compat_features": [
       "html.elements.link.rel.preload",
       "html.elements.link.rel.preload.as-fetch",
@@ -19566,8 +22225,11 @@ export const features = {
     ],
     "description": "The rel=\"preload\" attribute for the <link> HTML element requests resources, such as images or style sheets, that the page needs soon, so the browser may prioritize them for loading before rendering begins.",
     "description_html": "The <code>rel=\"preload\"</code> attribute for the <code>&#x3C;link></code> HTML element requests resources, such as images or style sheets, that the page needs soon, so the browser may prioritize them for loading before rendering begins.",
+    "kind": "feature",
     "name": "<link rel=\"preload\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-preload",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-preload"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-07-26",
@@ -19584,7 +22246,9 @@ export const features = {
     }
   },
   "link-selectors": {
-    "caniuse": "css-any-link",
+    "caniuse": [
+      "css-any-link"
+    ],
     "compat_features": [
       "css.selectors.any-link",
       "css.selectors.any-link.not_match_link",
@@ -19596,9 +22260,14 @@ export const features = {
     ],
     "description": "The :link CSS pseudo-class matches unvisited links, :visited matches visited links, and :any-link matches both.",
     "description_html": "The <code>:link</code> CSS pseudo-class matches unvisited links, <code>:visited</code> matches visited links, and <code>:any-link</code> matches both.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Link selectors",
-    "spec": "https://drafts.csswg.org/selectors-4/#location",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#location"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -19637,6 +22306,7 @@ export const features = {
       "html-elements",
       "lists"
     ],
+    "kind": "feature",
     "name": "<ol>, <ul>, and <li>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
@@ -19729,9 +22399,14 @@ export const features = {
     ],
     "description": "The list-style shorthand CSS property and the list-style-image, list-style-position, and list-style-type longhand properties set the position and appearance of a list item's marker.",
     "description_html": "The <code>list-style</code> shorthand CSS property and the <code>list-style-image</code>, <code>list-style-position</code>, and <code>list-style-type</code> longhand properties set the position and appearance of a list item's marker.",
-    "group": "lists",
+    "group": [
+      "lists"
+    ],
+    "kind": "feature",
     "name": "List style",
-    "spec": "https://drafts.csswg.org/css-lists-3/#list-style-property",
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#list-style-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19748,7 +22423,9 @@ export const features = {
     }
   },
   "loading-lazy": {
-    "caniuse": "loading-lazy-attr",
+    "caniuse": [
+      "loading-lazy-attr"
+    ],
     "compat_features": [
       "api.HTMLIFrameElement.loading",
       "api.HTMLImageElement.loading",
@@ -19757,8 +22434,11 @@ export const features = {
     ],
     "description": "The loading=\"lazy\" attribute for <img> and <iframe> elements blocks loading the external resource until the user scrolls to that element's part of the page.",
     "description_html": "The <code>loading=\"lazy\"</code> attribute for <code>&#x3C;img></code> and <code>&#x3C;iframe></code> elements blocks loading the external resource until the user scrolls to that element's part of the page.",
+    "kind": "feature",
     "name": "Lazy-loading images and iframes",
-    "spec": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-19",
@@ -19788,8 +22468,11 @@ export const features = {
     ],
     "description": "The window.queryLocalFonts() method returns an array of locally-installed fonts, each represented by a FontData object.",
     "description_html": "The <code>window.queryLocalFonts()</code> method returns an array of locally-installed fonts, each represented by a <code>FontData</code> object.",
+    "kind": "feature",
     "name": "Local fonts",
-    "spec": "https://wicg.github.io/local-font-access/",
+    "spec": [
+      "https://wicg.github.io/local-font-access/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -19804,15 +22487,20 @@ export const features = {
     ],
     "description": "The \"local-network-access\" user permission (and certain actions that imply this permission, such as a fetch() request with { targetAddressSpace: \"local\" }) allows a site to send requests to servers on a user's local network.",
     "description_html": "The <code>\"local-network-access\"</code> user permission (and certain actions that imply this permission, such as a <code>fetch()</code> request with <code>{ targetAddressSpace: \"local\" }</code>) allows a site to send requests to servers on a user's local network.",
+    "kind": "feature",
     "name": "Local network access",
-    "spec": "https://wicg.github.io/local-network-access/",
+    "spec": [
+      "https://wicg.github.io/local-network-access/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "localstorage": {
-    "caniuse": "namevalue-storage",
+    "caniuse": [
+      "namevalue-storage"
+    ],
     "compat_features": [
       "api.Storage",
       "api.Storage.clear",
@@ -19834,9 +22522,14 @@ export const features = {
     ],
     "description": "The localStorage and sessionStorage APIs store data as key-value pairs. While localStorage persists across sessions, sessionStorage data is discarded when the page is closed.",
     "description_html": "The <code>localStorage</code> and <code>sessionStorage</code> APIs store data as key-value pairs. While <code>localStorage</code> persists across sessions, <code>sessionStorage</code> data is discarded when the page is closed.",
-    "group": "storage",
+    "group": [
+      "storage"
+    ],
+    "kind": "feature",
     "name": "localStorage and sessionStorage",
-    "spec": "https://storage.spec.whatwg.org/",
+    "spec": [
+      "https://storage.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19874,8 +22567,11 @@ export const features = {
     ],
     "description": "The location global object represents the current page's address. You can use it to get the parts of the address (such as location.hostname or location.pathname) or navigate to another URL.",
     "description_html": "The <code>location</code> global object represents the current page's address. You can use it to get the parts of the address (such as <code>location.hostname</code> or <code>location.pathname</code>) or navigate to another URL.",
+    "kind": "feature",
     "name": "Location",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-location-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -19898,9 +22594,14 @@ export const features = {
     ],
     "description": "The logical AND assignment (&&=) and the logical OR assignment (||=) operators short-circuit the respective binary logical operators.",
     "description_html": "The logical AND assignment (<code>&#x26;&#x26;=</code>) and the logical OR assignment (<code>||=</code>) operators short-circuit the respective binary logical operators.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Logical assignments",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -19917,7 +22618,9 @@ export const features = {
     }
   },
   "logical-properties": {
-    "caniuse": "css-logical-props",
+    "caniuse": [
+      "css-logical-props"
+    ],
     "compat_features": [
       "css.properties.block-size",
       "css.properties.block-size.fit-content",
@@ -20008,9 +22711,14 @@ export const features = {
     ],
     "description": "CSS logical properties control borders, size, margin, and padding with directions and dimensions relative to the writing mode. For example, in a left to right, top to bottom writing mode, block-end refers to the bottom. Also known as flow relative.",
     "description_html": "CSS logical properties control borders, size, margin, and padding with directions and dimensions relative to the writing mode. For example, in a left to right, top to bottom writing mode, <code>block-end</code> refers to the bottom. Also known as flow relative.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Logical properties",
-    "spec": "https://drafts.csswg.org/css-logical-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-logical-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -20050,9 +22758,14 @@ export const features = {
     ],
     "description": "The long-animation-frame performance event type and the PerformanceLongAnimationFrameTiming API provide information about rendering updates that take longer than 50 milliseconds. Also known as LoAFs.",
     "description_html": "The <code>long-animation-frame</code> performance event type and the <code>PerformanceLongAnimationFrameTiming</code> API provide information about rendering updates that take longer than 50 milliseconds. Also known as LoAFs.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Long animation frames",
-    "spec": "https://w3c.github.io/long-animation-frames/",
+    "spec": [
+      "https://w3c.github.io/long-animation-frames/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20076,9 +22789,14 @@ export const features = {
     ],
     "description": "The longtask performance event type and the PerformanceLongTaskTiming API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
     "description_html": "The <code>longtask</code> performance event type and the <code>PerformanceLongTaskTiming</code> API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Long tasks",
-    "spec": "https://w3c.github.io/longtasks/",
+    "spec": [
+      "https://w3c.github.io/longtasks/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20101,9 +22819,14 @@ export const features = {
     ],
     "description": "The Magnetometer API reads magnetic field sensor data from the device's magnetometer.",
     "description_html": "The <code>Magnetometer</code> API reads magnetic field sensor data from the device's magnetometer.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Magnetometer",
-    "spec": "https://w3c.github.io/magnetometer/",
+    "spec": [
+      "https://w3c.github.io/magnetometer/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -20115,9 +22838,14 @@ export const features = {
     ],
     "description": "The <main> element represents the dominant content of a document. It is commonly used together with <header> and <footer>.",
     "description_html": "The <code>&#x3C;main></code> element represents the dominant content of a document. It is commonly used together with <code>&#x3C;header></code> and <code>&#x3C;footer></code>.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<main>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -20145,8 +22873,11 @@ export const features = {
     ],
     "description": "The ManagedMediaSource API is a MediaSource where the browser manages the memory of source buffers and may evict data if needed.",
     "description_html": "The <code>ManagedMediaSource</code> API is a <code>MediaSource</code> where the browser manages the memory of source buffers and may evict data if needed.",
+    "kind": "feature",
     "name": "Managed media source",
-    "spec": "https://w3c.github.io/media-source/#managedmediasource-interface",
+    "spec": [
+      "https://w3c.github.io/media-source/#managedmediasource-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20176,9 +22907,14 @@ export const features = {
     ],
     "description": "A web app manifest file provides metadata about the site. The browser can use the metadata to install the site as a standalone application on the user's device. The metadata usually includes the app's name, icon, description, and ways in which the app wishes to integrate with the device.",
     "description_html": "A web app manifest file provides metadata about the site. The browser can use the metadata to install the site as a standalone application on the user's device. The metadata usually includes the app's name, icon, description, and ways in which the app wishes to integrate with the device.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Web app manifest",
-    "spec": "https://w3c.github.io/manifest/",
+    "spec": [
+      "https://w3c.github.io/manifest/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20213,9 +22949,14 @@ export const features = {
     ],
     "description": "Map objects hold key-value pairs and remember the original insertion order of the keys.",
     "description_html": "Map objects hold key-value pairs and remember the original insertion order of the keys.",
-    "group": "maps",
+    "group": [
+      "maps"
+    ],
+    "kind": "feature",
     "name": "Map (initial support)",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map-objects",
       "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map-constructor",
@@ -20262,9 +23003,14 @@ export const features = {
     ],
     "description": "The margin CSS property sets space around an element. It is a shorthand for margin-top, margin-right, margin-bottom, and margin-left.",
     "description_html": "The <code>margin</code> CSS property sets space around an element. It is a shorthand for <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "margin",
-    "spec": "https://drafts.csswg.org/css-box-4/#margins",
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margins"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -20293,9 +23039,14 @@ export const features = {
     ],
     "description": "The margin-trim CSS property removes the margins of child elements when they meet the edges of the container.",
     "description_html": "The <code>margin-trim</code> CSS property removes the margins of child elements when they meet the edges of the container.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "margin-trim",
-    "spec": "https://drafts.csswg.org/css-box-4/#margin-trim",
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20310,9 +23061,14 @@ export const features = {
     ],
     "description": "The <mark> element represents text which is marked or highlighted for reference or notation purposes.",
     "description_html": "The <code>&#x3C;mark></code> element represents text which is marked or highlighted for reference or notation purposes.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<mark>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -20329,16 +23085,23 @@ export const features = {
     }
   },
   "marker": {
-    "caniuse": "css-marker-pseudo",
+    "caniuse": [
+      "css-marker-pseudo"
+    ],
     "compat_features": [
       "css.selectors.marker",
       "css.selectors.marker.animation_and_transition_support"
     ],
     "description": "The ::marker CSS pseudo-element selects list item markers for styling numbers or bullets.",
     "description_html": "The <code>::marker</code> CSS pseudo-element selects list item markers for styling numbers or bullets.",
-    "group": "lists",
+    "group": [
+      "lists"
+    ],
+    "kind": "feature",
     "name": "::marker",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#marker-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#marker-pseudo"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20361,9 +23124,14 @@ export const features = {
     ],
     "description": "The mask-border CSS property sets how the edges of an element are masked. It is a shorthand for mask-border-outset, mask-border-repeat, mask-border-slice, mask-border-source, and mask-border-width.",
     "description_html": "The <code>mask-border</code> CSS property sets how the edges of an element are masked. It is a shorthand for <code>mask-border-outset</code>, <code>mask-border-repeat</code>, <code>mask-border-slice</code>, <code>mask-border-source</code>, and <code>mask-border-width</code>.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "mask-border",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#mask-borders",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#mask-borders"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20380,9 +23148,14 @@ export const features = {
     ],
     "description": "The mask-type CSS property on an SVG <mask> element sets whether the mask is a luminance or alpha mask.",
     "description_html": "The <code>mask-type</code> CSS property on an SVG <code>&#x3C;mask></code> element sets whether the mask is a <code>luminance</code> or <code>alpha</code> mask.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "mask-type",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#the-mask-type",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#the-mask-type"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -20399,7 +23172,9 @@ export const features = {
     }
   },
   "masks": {
-    "caniuse": "css-masks",
+    "caniuse": [
+      "css-masks"
+    ],
     "compat_features": [
       "css.properties.mask",
       "css.properties.mask-clip",
@@ -20432,9 +23207,14 @@ export const features = {
     ],
     "description": "The mask CSS property (and several longhand properties) partially or completely hides an element according to the shape and depth of an image.",
     "description_html": "The <code>mask</code> CSS property (and several longhand properties) partially or completely hides an element according to the shape and depth of an image.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "Masks",
-    "spec": "https://drafts.fxtf.org/css-masking-1/#positioned-masks",
+    "spec": [
+      "https://drafts.fxtf.org/css-masking-1/#positioned-masks"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -20456,16 +23236,23 @@ export const features = {
     ],
     "description": "Masonry is a type of CSS grid layout where the items on one of the axes are tightly packed together, like brickwork, instead of leaving gaps to align across the other axis.",
     "description_html": "Masonry is a type of CSS grid layout where the items on one of the axes are tightly packed together, like brickwork, instead of leaving gaps to align across the other axis.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Masonry",
-    "spec": "https://drafts.csswg.org/css-grid-3/",
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "matchmedia": {
-    "caniuse": "matchmedia",
+    "caniuse": [
+      "matchmedia"
+    ],
     "compat_features": [
       "api.MediaQueryList",
       "api.MediaQueryList.EventTarget_inheritance",
@@ -20480,8 +23267,11 @@ export const features = {
     ],
     "description": "The window.matchMedia() method checks whether a media query applies to the document.",
     "description_html": "The <code>window.matchMedia()</code> method checks whether a media query applies to the document.",
+    "kind": "feature",
     "name": "matchMedia",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-window-matchmedia",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-window-matchmedia"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -20503,9 +23293,14 @@ export const features = {
     ],
     "description": "The Math.sumPrecise() static method returns the sum of an iterable of numbers. It avoids the precision loss of intermediate partial sums, as found using reduce() or a loop to add together an array of values.",
     "description_html": "The <code>Math.sumPrecise()</code> static method returns the sum of an iterable of numbers. It avoids the precision loss of intermediate partial sums, as found using <code>reduce()</code> or a loop to add together an array of values.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Math.sumPrecise()",
-    "spec": "https://tc39.es/proposal-math-sum/",
+    "spec": [
+      "https://tc39.es/proposal-math-sum/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20515,7 +23310,9 @@ export const features = {
     }
   },
   "mathml": {
-    "caniuse": "mathml",
+    "caniuse": [
+      "mathml"
+    ],
     "compat_features": [
       "api.MathMLElement",
       "api.MathMLElement.attributeStyleMap",
@@ -20628,8 +23425,11 @@ export const features = {
     ],
     "description": "MathML, or the Mathematical Markup Language, describes mathematical notation, such as expressions and formulas. Also known as MathML Core.",
     "description_html": "MathML, or the Mathematical Markup Language, describes mathematical notation, such as expressions and formulas. Also known as MathML Core.",
+    "kind": "feature",
     "name": "MathML",
-    "spec": "https://w3c.github.io/mathml-core/",
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-07-12",
@@ -20651,9 +23451,14 @@ export const features = {
     ],
     "description": "The measureUserAgentSpecificMemory() method estimates the memory usage of a web application including all its iframes and workers.",
     "description_html": "The <code>measureUserAgentSpecificMemory()</code> method estimates the memory usage of a web application including all its iframes and workers.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Memory measurement",
-    "spec": "https://wicg.github.io/performance-measure-memory/",
+    "spec": [
+      "https://wicg.github.io/performance-measure-memory/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20673,8 +23478,11 @@ export const features = {
     ],
     "description": "The navigator.mediaCapabilities API queries the encoding and decoding abilities of the device, such as supported codecs, resolutions, and bitrates.",
     "description_html": "The <code>navigator.mediaCapabilities</code> API queries the encoding and decoding abilities of the device, such as supported codecs, resolutions, and bitrates.",
+    "kind": "feature",
     "name": "Media capabilities",
-    "spec": "https://w3c.github.io/media-capabilities/",
+    "spec": [
+      "https://w3c.github.io/media-capabilities/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-10-28",
@@ -20691,7 +23499,9 @@ export const features = {
     }
   },
   "media-capture": {
-    "caniuse": "stream",
+    "caniuse": [
+      "stream"
+    ],
     "compat_features": [
       "api.InputDeviceInfo",
       "api.InputDeviceInfo.getCapabilities",
@@ -20768,8 +23578,11 @@ export const features = {
     ],
     "description": "The navigator.mediaDevices.getUserMedia() API requests access to devices that produce audio or video streams, such as microphones or video cameras.",
     "description_html": "The <code>navigator.mediaDevices.getUserMedia()</code> API requests access to devices that produce audio or video streams, such as microphones or video cameras.",
+    "kind": "feature",
     "name": "Media capture",
-    "spec": "https://w3c.github.io/mediacapture-main/",
+    "spec": [
+      "https://w3c.github.io/mediacapture-main/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-03-19",
@@ -20795,8 +23608,11 @@ export const features = {
     ],
     "description": "The getVideoPlaybackQuality() method of HTMLVideoElement returns metrics that can be used to determine the playback quality of a video, such as how many frames were dropped.",
     "description_html": "The <code>getVideoPlaybackQuality()</code> method of <code>HTMLVideoElement</code> returns metrics that can be used to determine the playback quality of a video, such as how many frames were dropped.",
+    "kind": "feature",
     "name": "Media playback quality",
-    "spec": "https://w3c.github.io/media-playback-quality/",
+    "spec": [
+      "https://w3c.github.io/media-playback-quality/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-08-04",
@@ -20824,7 +23640,10 @@ export const features = {
     ],
     "description": "The :playing, :paused, :seeking, :buffering, :stalled, :muted, and :volume-locked CSS pseudo-classes match <audio> and <video> elements based on their state.",
     "description_html": "The <code>:playing</code>, <code>:paused</code>, <code>:seeking</code>, <code>:buffering</code>, <code>:stalled</code>, <code>:muted</code>, and <code>:volume-locked</code> CSS pseudo-classes match <code>&#x3C;audio></code> and <code>&#x3C;video></code> elements based on their state.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "Media element pseudo-classes",
     "spec": [
       "https://drafts.csswg.org/selectors-4/#resource-pseudos",
@@ -20839,7 +23658,9 @@ export const features = {
     }
   },
   "media-queries": {
-    "caniuse": "css-mediaqueries",
+    "caniuse": [
+      "css-mediaqueries"
+    ],
     "compat_features": [
       "css.at-rules.media",
       "css.at-rules.media.aspect-ratio",
@@ -20860,9 +23681,14 @@ export const features = {
     ],
     "description": "The @media CSS rule conditionally applies styles based on the output device type, its capabilities, and the user's preferences. Media queries are composed of an optional media type such as screen or print, and one or more mandatory media features, such as prefers-reduced-animations.",
     "description_html": "The <code>@media</code> CSS rule conditionally applies styles based on the output device type, its capabilities, and the user's preferences. Media queries are composed of an optional media type such as <code>screen</code> or <code>print</code>, and one or more mandatory media features, such as <code>prefers-reduced-animations</code>.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Media queries",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -20879,15 +23705,22 @@ export const features = {
     }
   },
   "media-query-range-syntax": {
-    "caniuse": "css-media-range-syntax",
+    "caniuse": [
+      "css-media-range-syntax"
+    ],
     "compat_features": [
       "css.at-rules.media.range_syntax"
     ],
     "description": "The range syntax of CSS media queries allows you to use mathematical comparison operators such as <, >, <=, and >= to define a range of values for a media query. For example, (400px < width < 1000px) returns true if the viewport width is between 400px and 1000px.",
     "description_html": "The range syntax of CSS media queries allows you to use mathematical comparison operators such as <code>&#x3C;</code>, <code>></code>, <code>&#x3C;=</code>, and <code>>=</code> to define a range of values for a media query. For example, <code>(400px &#x3C; width &#x3C; 1000px)</code> returns true if the viewport width is between 400px and 1000px.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Media query range syntax",
-    "spec": "https://drafts.csswg.org/mediaqueries-4/#mq-range-context",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-4/#mq-range-context"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -20941,8 +23774,11 @@ export const features = {
     ],
     "description": "The navigator.mediaSession API integrates with platform UI for media playback. It can be used to set metadata such as title and artwork, and to handle user actions like playing, pausing, or seeking.",
     "description_html": "The <code>navigator.mediaSession</code> API integrates with platform UI for media playback. It can be used to set metadata such as title and artwork, and to handle user actions like playing, pausing, or seeking.",
+    "kind": "feature",
     "name": "Media session",
-    "spec": "https://w3c.github.io/mediasession/",
+    "spec": [
+      "https://w3c.github.io/mediasession/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -20956,7 +23792,9 @@ export const features = {
     }
   },
   "media-source": {
-    "caniuse": "mediasource",
+    "caniuse": [
+      "mediasource"
+    ],
     "compat_features": [
       "api.AudioTrack.sourceBuffer",
       "api.BufferedChangeEvent",
@@ -21031,8 +23869,11 @@ export const features = {
     ],
     "description": "The MediaSource API is a custom data source for media elements commonly used for adaptive streaming. Also known as Media Source Extensions (MSE).",
     "description_html": "The <code>MediaSource</code> API is a custom data source for media elements commonly used for adaptive streaming. Also known as Media Source Extensions (MSE).",
+    "kind": "feature",
     "name": "Media source",
-    "spec": "https://w3c.github.io/media-source/",
+    "spec": [
+      "https://w3c.github.io/media-source/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -21072,8 +23913,11 @@ export const features = {
         "https://github.com/w3c/html/issues/246"
       ]
     },
+    "kind": "feature",
     "name": "MediaController",
-    "spec": "https://www.w3.org/TR/2018/SPSD-html5-20180327/embedded-content-0.html#synchronising-multiple-media-elements",
+    "spec": [
+      "https://www.w3.org/TR/2018/SPSD-html5-20180327/embedded-content-0.html#synchronising-multiple-media-elements"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -21112,8 +23956,11 @@ export const features = {
     ],
     "description": "The MediaRecorder API captures data generated by MediaStream or HTMLMediaElement objects for analysis, processing, or saving to disk. Also known as the Media Recording API.",
     "description_html": "The <code>MediaRecorder</code> API captures data generated by <code>MediaStream</code> or <code>HTMLMediaElement</code> objects for analysis, processing, or saving to disk. Also known as the Media Recording API.",
+    "kind": "feature",
     "name": "MediaStream recording",
-    "spec": "https://w3c.github.io/mediacapture-record/",
+    "spec": [
+      "https://w3c.github.io/mediacapture-record/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -21136,9 +23983,14 @@ export const features = {
     ],
     "description": "The <menu> element represents an unordered list of action items (<li>), such as a toolbar. It is a semantic alternative to the <ul> element.",
     "description_html": "The <code>&#x3C;menu></code> element represents an unordered list of action items (<code>&#x3C;li></code>), such as a toolbar. It is a semantic alternative to the <code>&#x3C;ul></code> element.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<menu>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#menus",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#menus"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21165,7 +24017,10 @@ export const features = {
     ],
     "description": "The messageerror event fires on a target, such as a window or worker, when an incoming message cannot be deserialized. This event can fire for many types of messages, such as cross-document messages or broadcast channel messages.",
     "description_html": "The <code>messageerror</code> event fires on a target, such as a window or worker, when an incoming message cannot be deserialized. This event can fire for many types of messages, such as cross-document messages or broadcast channel messages.",
-    "group": "messaging",
+    "group": [
+      "messaging"
+    ],
+    "kind": "feature",
     "name": "messageerror",
     "spec": [
       "https://html.spec.whatwg.org/multipage/indices.html#event-messageerror",
@@ -21203,9 +24058,14 @@ export const features = {
     ],
     "description": "The <meta> element represents metadata about the page used by the browser or search engines, including description, keywords, and character sets.",
     "description_html": "The <code>&#x3C;meta></code> element represents metadata about the page used by the browser or search engines, including description, keywords, and character sets.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<meta>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#meta",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#meta"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21227,9 +24087,14 @@ export const features = {
     ],
     "description": "The name=\"application-title\" attribute for the <meta> HTML element sets an installed web application's title bar text.",
     "description_html": "The <code>name=\"application-title\"</code> attribute for the <code>&#x3C;meta></code> HTML element sets an installed web application's title bar text.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "<meta name=\"application-title\">",
-    "spec": "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DocumentSubtitle/explainer.md",
+    "spec": [
+      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DocumentSubtitle/explainer.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -21240,15 +24105,22 @@ export const features = {
     }
   },
   "meta-theme-color": {
-    "caniuse": "meta-theme-color",
+    "caniuse": [
+      "meta-theme-color"
+    ],
     "compat_features": [
       "html.elements.meta.name.theme-color"
     ],
     "description": "The name=\"theme-color\" attribute for the <meta> HTML element sets the preferred color to customize the display of the page or the surrounding browser user interface.",
     "description_html": "The <code>name=\"theme-color\"</code> attribute for the <code>&#x3C;meta></code> HTML element sets the preferred color to customize the display of the page or the surrounding browser user interface.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "<meta name=\"theme-color\">",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -21259,7 +24131,9 @@ export const features = {
     }
   },
   "meter": {
-    "caniuse": "meter",
+    "caniuse": [
+      "meter"
+    ],
     "compat_features": [
       "api.HTMLMeterElement",
       "api.HTMLMeterElement.high",
@@ -21283,8 +24157,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<meter>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-04-02",
@@ -21301,7 +24178,9 @@ export const features = {
     }
   },
   "min-max-clamp": {
-    "caniuse": "css-math-functions",
+    "caniuse": [
+      "css-math-functions"
+    ],
     "compat_features": [
       "css.types.clamp",
       "css.types.max",
@@ -21309,9 +24188,14 @@ export const features = {
     ],
     "description": "The min() and max() CSS functions return the minimum or maximum of the arguments, while clamp() clamps a value to a given range.",
     "description_html": "The <code>min()</code> and <code>max()</code> CSS functions return the minimum or maximum of the arguments, while <code>clamp()</code> clamps a value to a given range.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "min(), max(), and clamp()",
-    "spec": "https://drafts.csswg.org/css-values-4/#comp-func",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#comp-func"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -21344,7 +24228,10 @@ export const features = {
     ],
     "description": "The min-content and max-content CSS keywords represent the smallest and largest intrinsic sizes of an element.",
     "description_html": "The <code>min-content</code> and <code>max-content</code> CSS keywords represent the smallest and largest intrinsic sizes of an element.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "min-content and max-content",
     "spec": [
       "https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content",
@@ -21366,7 +24253,9 @@ export const features = {
     }
   },
   "min-max-width-height": {
-    "caniuse": "minmaxwh",
+    "caniuse": [
+      "minmaxwh"
+    ],
     "compat_features": [
       "css.properties.max-height",
       "css.properties.max-height.none",
@@ -21379,6 +24268,7 @@ export const features = {
     ],
     "description": "The min-width, min-height, max-width, and max-height CSS properties set the minimum and maximum size of an element.",
     "description_html": "The <code>min-width</code>, <code>min-height</code>, <code>max-width</code>, and <code>max-height</code> CSS properties set the minimum and maximum size of an element.",
+    "kind": "feature",
     "name": "Min and max width and height",
     "spec": [
       "https://drafts.csswg.org/css-sizing-3/#min-size-properties",
@@ -21400,7 +24290,9 @@ export const features = {
     }
   },
   "mix-blend-mode": {
-    "caniuse": "css-mixblendmode",
+    "caniuse": [
+      "css-mixblendmode"
+    ],
     "compat_features": [
       "css.properties.mix-blend-mode",
       "css.properties.mix-blend-mode.plus-darker",
@@ -21409,9 +24301,14 @@ export const features = {
     ],
     "description": "The mix-blend-mode CSS property blends an element's content with its background or parent elements using blend modes like multiply, difference, or color.",
     "description_html": "The <code>mix-blend-mode</code> CSS property blends an element's content with its background or parent elements using blend modes like <code>multiply</code>, <code>difference</code>, or <code>color</code>.",
-    "group": "blend-mode",
+    "group": [
+      "blend-mode"
+    ],
+    "kind": "feature",
     "name": "mix-blend-mode",
-    "spec": "https://drafts.fxtf.org/compositing-2/#mix-blend-mode",
+    "spec": [
+      "https://drafts.fxtf.org/compositing-2/#mix-blend-mode"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -21440,9 +24337,14 @@ export const features = {
     ],
     "description": "When a document is loaded over HTTPS, browsers ensure that none of the document's resources are loaded over an insecure protocol. Instead, resources that the document attempts to load over an insecure protocol are either loaded over HTTPS or are blocked.",
     "description_html": "When a document is loaded over HTTPS, browsers ensure that none of the document's resources are loaded over an insecure protocol. Instead, resources that the document attempts to load over an insecure protocol are either loaded over HTTPS or are blocked.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Mixed content handling",
-    "spec": "https://w3c.github.io/webappsec-mixed-content/",
+    "spec": [
+      "https://w3c.github.io/webappsec-mixed-content/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -21464,9 +24366,14 @@ export const features = {
     ],
     "description": "The :modal pseudo-class selects elements that put other elements into a non-interactive state, such as a fullscreen element or a <dialog> element used with showModal().",
     "description_html": "The <code>:modal</code> pseudo-class selects elements that put other elements into a non-interactive state, such as a fullscreen element or a <code>&#x3C;dialog></code> element used with <code>showModal()</code>.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":modal",
-    "spec": "https://drafts.csswg.org/selectors-4/#modal-state",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#modal-state"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-02",
@@ -21483,14 +24390,19 @@ export const features = {
     }
   },
   "modulepreload": {
-    "caniuse": "link-rel-modulepreload",
+    "caniuse": [
+      "link-rel-modulepreload"
+    ],
     "compat_features": [
       "html.elements.link.rel.modulepreload"
     ],
     "description": "The rel=\"modulepreload\" attribute for the <link> HTML element indicates that a module script should be fetched, parsed, and compiled preemptively, and stored for later execution.",
     "description_html": "The <code>rel=\"modulepreload\"</code> attribute for the <code>&#x3C;link></code> HTML element indicates that a module script should be fetched, parsed, and compiled preemptively, and stored for later execution.",
+    "kind": "feature",
     "name": "<link rel=\"modulepreload\">",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -21506,7 +24418,9 @@ export const features = {
     }
   },
   "motion-path": {
-    "caniuse": "css-motion-paths",
+    "caniuse": [
+      "css-motion-paths"
+    ],
     "compat_features": [
       "css.properties.offset",
       "css.properties.offset-anchor",
@@ -21547,9 +24461,14 @@ export const features = {
     ],
     "description": "The offset CSS property animates an element along a defined motion path.",
     "description_html": "The <code>offset</code> CSS property animates an element along a defined motion path.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Motion path",
-    "spec": "https://drafts.fxtf.org/motion-1/",
+    "spec": [
+      "https://drafts.fxtf.org/motion-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -21604,8 +24523,11 @@ export const features = {
     ],
     "description": "Mouse events, such as click, mousedown, or mousemove, fire when users interact with an input or pointing device such as a mouse, trackpad, or touchscreen.",
     "description_html": "Mouse events, such as <code>click</code>, <code>mousedown</code>, or <code>mousemove</code>, fire when users interact with an input or pointing device such as a mouse, trackpad, or touchscreen.",
+    "kind": "feature",
     "name": "Mouse events",
-    "spec": "https://w3c.github.io/uievents/#events-mouse-types",
+    "spec": [
+      "https://w3c.github.io/uievents/#events-mouse-types"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21630,7 +24552,10 @@ export const features = {
     ],
     "description": "The moveBefore() DOM method relocates a node while preserving its state. For example, you can move the active element without losing focus, move an animated element without resetting the animation, or move an iframe without reloading its content.",
     "description_html": "The <code>moveBefore()</code> DOM method relocates a node while preserving its state. For example, you can move the active element without losing focus, move an animated element without resetting the animation, or move an iframe without reloading its content.",
-    "group": "dom",
+    "group": [
+      "dom"
+    ],
+    "kind": "feature",
     "name": "moveBefore()",
     "spec": [
       "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
@@ -21666,9 +24591,14 @@ export const features = {
     ],
     "description": "Multi-column layout flows an element's content across one or more columns in a single row, without affecting the display property of its children.",
     "description_html": "Multi-column layout flows an element's content across one or more columns in a single row, without affecting the <code>display</code> property of its children.",
-    "group": "multi-column",
+    "group": [
+      "multi-column"
+    ],
+    "kind": "feature",
     "name": "Multi-column layout",
-    "spec": "https://drafts.csswg.org/css-multicol-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-multicol-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-07",
@@ -21704,15 +24634,17 @@ export const features = {
         "mutationobserver"
       ]
     },
-    "group": "dom",
+    "group": [
+      "dom"
+    ],
+    "kind": "feature",
     "name": "Mutation events",
-    "spec": "https://w3c.github.io/uievents/",
+    "spec": [
+      "https://w3c.github.io/uievents/"
+    ],
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "1",
-        "safari_ios": "1"
-      }
+      "support": {}
     }
   },
   "mutationobserver": {
@@ -21735,9 +24667,14 @@ export const features = {
     ],
     "description": "The MutationObserver API watches for changes to the DOM tree and calls a callback function when DOM changes occur.",
     "description_html": "The <code>MutationObserver</code> API watches for changes to the DOM tree and calls a callback function when DOM changes occur.",
-    "group": "dom",
+    "group": [
+      "dom"
+    ],
+    "kind": "feature",
     "name": "MutationObserver",
-    "spec": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+    "spec": [
+      "https://dom.spec.whatwg.org/#interface-mutationobserver"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21754,7 +24691,9 @@ export const features = {
     }
   },
   "named-color": {
-    "caniuse": "css-rebeccapurple",
+    "caniuse": [
+      "css-rebeccapurple"
+    ],
     "compat_features": [
       "css.types.color.named-color",
       "css.types.color.named-color.rebeccapurple",
@@ -21762,9 +24701,14 @@ export const features = {
     ],
     "description": "Some CSS color values can be referenced by name, such as red or limegreen. They stand in for specific RGB color values.",
     "description_html": "Some CSS color values can be referenced by name, such as <code>red</code> or <code>limegreen</code>. They stand in for specific RGB color values.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "Named colors",
-    "spec": "https://drafts.csswg.org/css-color-4/#named-colors",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#named-colors"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21781,7 +24725,9 @@ export const features = {
     }
   },
   "namespace": {
-    "caniuse": "css-namespaces",
+    "caniuse": [
+      "css-namespaces"
+    ],
     "compat_features": [
       "api.CSSNamespaceRule",
       "api.CSSNamespaceRule.namespaceURI",
@@ -21795,8 +24741,11 @@ export const features = {
       "css",
       "selectors"
     ],
+    "kind": "feature",
     "name": "@namespace",
-    "spec": "https://drafts.csswg.org/css-namespaces-3/#declaration",
+    "spec": [
+      "https://drafts.csswg.org/css-namespaces-3/#declaration"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21818,9 +24767,14 @@ export const features = {
     ],
     "description": "The <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.",
     "description_html": "The <code>&#x3C;nav></code> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<nav>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21900,8 +24854,11 @@ export const features = {
     ],
     "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
     "description_html": "The <code>navigation</code> API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the <code>navigator</code> API.",
+    "kind": "feature",
     "name": "Navigation API",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -21929,9 +24886,14 @@ export const features = {
     ],
     "description": "The navigation performance entry and the PerformanceNavigationTiming API measures navigation events, such as loading time or the number of redirects.",
     "description_html": "The <code>navigation</code> performance entry and the <code>PerformanceNavigationTiming</code> API measures navigation events, such as loading time or the number of redirects.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Navigation timing",
-    "spec": "https://w3c.github.io/navigation-timing/",
+    "spec": [
+      "https://w3c.github.io/navigation-timing/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-04-25",
@@ -21954,8 +24916,11 @@ export const features = {
     ],
     "description": "The window.navigator API is a generic global object, under which many other, more interesting APIs are located. It doesn't do anything interesting on its own.",
     "description_html": "The <code>window.navigator</code> API is a generic global object, under which many other, more interesting APIs are located. It doesn't do anything interesting on its own.",
+    "kind": "feature",
     "name": "Navigator",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -21972,7 +24937,9 @@ export const features = {
     }
   },
   "nesting": {
-    "caniuse": "css-nesting",
+    "caniuse": [
+      "css-nesting"
+    ],
     "compat_features": [
       "api.CSSNestedDeclarations",
       "api.CSSNestedDeclarations.style",
@@ -21983,9 +24950,14 @@ export const features = {
     ],
     "description": "CSS nesting allows for shorter selectors, easier reading, and more modularity by nesting rules inside others.",
     "description_html": "CSS nesting allows for shorter selectors, easier reading, and more modularity by nesting rules inside others.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Nesting",
-    "spec": "https://drafts.csswg.org/css-nesting-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-nesting-1/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -22018,8 +24990,11 @@ export const features = {
     ],
     "description": "The navigator.connection API provides information about the network connection a device is using and fires events when the connection type changes.",
     "description_html": "The <code>navigator.connection</code> API provides information about the network connection a device is using and fires events when the connection type changes.",
+    "kind": "feature",
     "name": "Network Information",
-    "spec": "https://wicg.github.io/netinfo/",
+    "spec": [
+      "https://wicg.github.io/netinfo/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22061,9 +25036,14 @@ export const features = {
     ],
     "description": "Non-cookie storage access extends the requestStorageAccess() API to let content in cross-site iframes request access to first-party data beyond cookies.",
     "description_html": "Non-cookie storage access extends the <code>requestStorageAccess()</code> API to let content in cross-site iframes request access to first-party data beyond cookies.",
-    "group": "storage",
+    "group": [
+      "storage"
+    ],
+    "kind": "feature",
     "name": "Non-cookie storage access",
-    "spec": "https://privacycg.github.io/saa-non-cookie-storage/",
+    "spec": [
+      "https://privacycg.github.io/saa-non-cookie-storage/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22072,16 +25052,23 @@ export const features = {
     }
   },
   "not": {
-    "caniuse": "css-not-sel-list",
+    "caniuse": [
+      "css-not-sel-list"
+    ],
     "compat_features": [
       "css.selectors.not",
       "css.selectors.not.selector_list"
     ],
     "description": "The :not() functional pseudo-class matches elements that do not match the selectors in its argument.",
     "description_html": "The <code>:not()</code> functional pseudo-class matches elements that do not match the selectors in its argument.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":not()",
-    "spec": "https://drafts.csswg.org/selectors-4/#negation",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#negation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-07-21",
@@ -22146,8 +25133,11 @@ export const features = {
     ],
     "description": "The Notification() constructor shows a message to the user, typically using the notification system of the host operating system.",
     "description_html": "The <code>Notification()</code> constructor shows a message to the user, typically using the notification system of the host operating system.",
+    "kind": "feature",
     "name": "Notifications",
-    "spec": "https://notifications.spec.whatwg.org/",
+    "spec": [
+      "https://notifications.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22160,11 +25150,16 @@ export const features = {
     }
   },
   "notifications-apps": {
-    "caniuse": "notifications",
+    "caniuse": [
+      "notifications"
+    ],
     "description": "Notifications via service worker registration's showNotification() method, sent from installed web applications (for example, saved to the Home Screen on Safari for iOS), show a message to the user, typically using the notification system of the host operating system.",
     "description_html": "Notifications via service worker registration's <code>showNotification()</code> method, sent from installed web applications (for example, saved to the Home Screen on Safari for iOS), show a message to the user, typically using the notification system of the host operating system.",
+    "kind": "feature",
     "name": "Notifications from service workers and installed apps",
-    "spec": "https://notifications.spec.whatwg.org/#service-worker-api",
+    "spec": [
+      "https://notifications.spec.whatwg.org/#service-worker-api"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -22194,7 +25189,10 @@ export const features = {
     ],
     "description": "The :nth-child() and :nth-last-child() CSS functional pseudo-classes match elements based on their index within a list of elements. The :first-child and :last-child pseudo-classes match the first and last element in a list, and the :only-child pseudo-class matches an element with no siblings.",
     "description_html": "The <code>:nth-child()</code> and <code>:nth-last-child()</code> CSS functional pseudo-classes match elements based on their index within a list of elements. The <code>:first-child</code> and <code>:last-child</code> pseudo-classes match the first and last element in a list, and the <code>:only-child</code> pseudo-class matches an element with no siblings.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":nth-child()",
     "spec": [
       "https://drafts.csswg.org/selectors-3/#nth-child-pseudo",
@@ -22216,14 +25214,19 @@ export const features = {
     }
   },
   "nth-child-of": {
-    "caniuse": "css-nth-child-of",
+    "caniuse": [
+      "css-nth-child-of"
+    ],
     "compat_features": [
       "css.selectors.nth-child.of_syntax",
       "css.selectors.nth-last-child.of_syntax"
     ],
     "description": "The of syntax for the :nth-child() and :nth-last-child() CSS functional pseudo-classes match elements by the relative position of elements, counted from the first or last sibling matching a selector list.",
     "description_html": "The <code>of</code> syntax for the <code>:nth-child()</code> and <code>:nth-last-child()</code> CSS functional pseudo-classes match elements by the relative position of elements, counted from the first or last sibling matching a selector list.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":nth-child() of <selector>",
     "spec": [
       "https://drafts.csswg.org/selectors-4/#the-nth-child-pseudo",
@@ -22253,9 +25256,14 @@ export const features = {
     ],
     "description": "The :nth-of-type() and :nth-last-of-type() CSS functional pseudo-classes match elements based on their position among siblings of the same type. The :first-of-type, :last-of-type, and :only-of-type pseudo-classes match the first, last, and only elements of its type.",
     "description_html": "The <code>:nth-of-type()</code> and <code>:nth-last-of-type()</code> CSS functional pseudo-classes match elements based on their position among siblings of the same type. The <code>:first-of-type</code>, <code>:last-of-type</code>, and <code>:only-of-type</code> pseudo-classes match the first, last, and only elements of its type.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":nth-of-type() pseudo-classes",
-    "spec": "https://drafts.csswg.org/selectors-4/#typed-child-index",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#typed-child-index"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22278,10 +25286,17 @@ export const features = {
     ],
     "description": "The nullish coalescing (??) and nullish coalescing assignment (??=) operators return (or assign) its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.",
     "description_html": "The nullish coalescing (<code>??</code>) and nullish coalescing assignment (<code>??=</code>) operators return (or assign) its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Nullish coalescing",
-    "snapshot": "ecmascript-2020",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoalesceExpression",
+    "snapshot": [
+      "ecmascript-2020"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoalesceExpression"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -22376,9 +25391,14 @@ export const features = {
     ],
     "description": "The number type (and Number object) represents floating-point numbers, such as 42 or -4.201, while the Math API contains mathematical functions and constants. JavaScript can also represent boundless negative and positive values as Infinity or not-a-number as NaN (as in 0 * Infinity).",
     "description_html": "The number type (and <code>Number</code> object) represents floating-point numbers, such as 42 or -4.201, while the <code>Math</code> API contains mathematical functions and constants. JavaScript can also represent boundless negative and positive values as <code>Infinity</code> or not-a-number as <code>NaN</code> (as in <code>0 * Infinity</code>).",
-    "group": "primitive-types",
+    "group": [
+      "primitive-types"
+    ],
+    "kind": "feature",
     "name": "Math and numbers",
-    "spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22462,9 +25482,14 @@ export const features = {
     ],
     "description": "The numeric factory functions, such as CSS.px() or CSS.kHz(), return a CSSUnitValue representing a CSS number value (as in 12px or 440kHz).",
     "description_html": "The numeric factory functions, such as <code>CSS.px()</code> or <code>CSS.kHz()</code>, return a <code>CSSUnitValue</code> representing a CSS number value (as in <code>12px</code> or <code>440kHz</code>).",
-    "group": "cssom",
+    "group": [
+      "cssom"
+    ],
+    "kind": "feature",
     "name": "Numeric factory functions",
-    "spec": "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory",
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22476,15 +25501,20 @@ export const features = {
       }
     }
   },
-  "numeric-seperators": {
+  "numeric-separators": {
     "compat_features": [
       "javascript.grammar.numeric_separators"
     ],
     "description": "To improve readability for numeric literals, underscores (_) can be used as separators. For example, 1_050.95 is equivalent to 1050.95.",
     "description_html": "To improve readability for numeric literals, underscores (<code>_</code>) can be used as separators. For example, <code>1_050.95</code> is equivalent to <code>1050.95</code>.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Numeric separators",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-NumericLiteralSeparator",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-NumericLiteralSeparator"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -22499,6 +25529,10 @@ export const features = {
         "safari_ios": "13"
       }
     }
+  },
+  "numeric-seperators": {
+    "kind": "moved",
+    "redirect_target": "numeric-separators"
   },
   "object": {
     "compat_features": [
@@ -22522,9 +25556,14 @@ export const features = {
     ],
     "description": "The <object> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
     "description_html": "The <code>&#x3C;object></code> element represents an external resource such as a PDF or SVG document. It was historically used for plugins such as Shockwave Flash.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<object>",
-    "spec": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22541,7 +25580,9 @@ export const features = {
     }
   },
   "object-fit": {
-    "caniuse": "object-fit",
+    "caniuse": [
+      "object-fit"
+    ],
     "compat_features": [
       "css.properties.object-fit",
       "css.properties.object-fit.contain",
@@ -22552,8 +25593,11 @@ export const features = {
     ],
     "description": "The object-fit CSS property sets how images, videos, and other replaced elements are scaled within their container.",
     "description_html": "The <code>object-fit</code> CSS property sets how images, videos, and other replaced elements are scaled within their container.",
+    "kind": "feature",
     "name": "object-fit",
-    "spec": "https://drafts.csswg.org/css-images-4/#the-object-fit",
+    "spec": [
+      "https://drafts.csswg.org/css-images-4/#the-object-fit"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -22575,8 +25619,11 @@ export const features = {
     ],
     "description": "The Object.hasOwn() static method checks whether an object has a given property. It's a more robust alternative to the Object.prototype.hasOwnProperty() method.",
     "description_html": "The <code>Object.hasOwn()</code> static method checks whether an object has a given property. It's a more robust alternative to the <code>Object.prototype.hasOwnProperty()</code> method.",
+    "kind": "feature",
     "name": "Object.hasOwn()",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -22634,8 +25681,11 @@ export const features = {
     ],
     "description": "Objects in JavaScript are collections of key-value pairs.",
     "description_html": "Objects in JavaScript are collections of key-value pairs.",
+    "kind": "feature",
     "name": "Object",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22657,8 +25707,11 @@ export const features = {
     ],
     "description": "The object-position CSS property places images, videos, and other replaced elements within their boxes.",
     "description_html": "The <code>object-position</code> CSS property places images, videos, and other replaced elements within their boxes.",
+    "kind": "feature",
     "name": "object-position",
-    "spec": "https://drafts.csswg.org/css-images-3/#the-object-position",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-object-position"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -22681,9 +25734,14 @@ export const features = {
     ],
     "description": "The object-view-box CSS property crops and zooms to an inset area of an image.",
     "description_html": "The <code>object-view-box</code> CSS property crops and zooms to an inset area of an image.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "object-view-box",
-    "spec": "https://drafts.csswg.org/css-images-5/#the-object-view-box",
+    "spec": [
+      "https://drafts.csswg.org/css-images-5/#the-object-view-box"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22728,8 +25786,11 @@ export const features = {
     ],
     "description": "The when() method on a event target returns an Observable object, which provides a declarative API for subscribing to and operating on events. It's an alternative to addEventListener() callbacks.",
     "description_html": "The <code>when()</code> method on a event target returns an <code>Observable</code> object, which provides a declarative API for subscribing to and operating on events. It's an alternative to <code>addEventListener()</code> callbacks.",
+    "kind": "feature",
     "name": "Observable",
-    "spec": "https://wicg.github.io/observable/",
+    "spec": [
+      "https://wicg.github.io/observable/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22745,9 +25806,14 @@ export const features = {
     ],
     "description": "The OES_element_index_uint extension for WebGL 1.0 contexts adds support for gl.UNSIGNED_INT types to WebGLRenderingContext.drawElements().",
     "description_html": "The <code>OES_element_index_uint</code> extension for WebGL 1.0 contexts adds support for <code>gl.UNSIGNED_INT</code> types to <code>WebGLRenderingContext.drawElements()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_element_index_uint WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22769,9 +25835,14 @@ export const features = {
     ],
     "description": "The OES_fbo_render_mipmap extension for WebGL 1.0 contexts attaches any level of a texture to a framebuffer object.",
     "description_html": "The <code>OES_fbo_render_mipmap</code> extension for WebGL 1.0 contexts attaches any level of a texture to a framebuffer object.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_fbo_render_mipmap WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -22793,9 +25864,14 @@ export const features = {
     ],
     "description": "The OES_standard_derivatives extension for WebGL 1.0 contexts adds the GLSL derivative functions dFdx, dFdy, and fwidth.",
     "description_html": "The <code>OES_standard_derivatives</code> extension for WebGL 1.0 contexts adds the GLSL derivative functions <code>dFdx</code>, <code>dFdy</code>, and <code>fwidth</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_standard_derivatives WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22817,9 +25893,14 @@ export const features = {
     ],
     "description": "The OES_texture_float extension for WebGL 1.0 contexts adds floating-point pixel types for textures.",
     "description_html": "The <code>OES_texture_float</code> extension for WebGL 1.0 contexts adds floating-point pixel types for textures.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_texture_float WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_texture_float/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22841,9 +25922,14 @@ export const features = {
     ],
     "description": "The OES_texture_float_linear extension for WebGL 1.0 and 2.0 contexts adds linear filtering with floating-point pixel types for textures.",
     "description_html": "The <code>OES_texture_float_linear</code> extension for WebGL 1.0 and 2.0 contexts adds linear filtering with floating-point pixel types for textures.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_texture_float_linear WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -22865,9 +25951,14 @@ export const features = {
     ],
     "description": "The OES_texture_half_float extension for WebGL 1.0 contexts adds texture formats with 16-bit (also known as half float) and 32-bit floating-point components.",
     "description_html": "The <code>OES_texture_half_float</code> extension for WebGL 1.0 contexts adds texture formats with 16-bit (also known as half float) and 32-bit floating-point components.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_texture_half_float WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-02-02",
@@ -22889,9 +25980,14 @@ export const features = {
     ],
     "description": "The OES_texture_half_float_linear extension for WebGL 1.0 contexts adds linear filtering with half floating-point pixel types for textures.",
     "description_html": "The <code>OES_texture_half_float_linear</code> extension for WebGL 1.0 contexts adds linear filtering with half floating-point pixel types for textures.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_texture_half_float_linear WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -22915,9 +26011,14 @@ export const features = {
     ],
     "description": "The OES_vertex_array_object extension for WebGL 1.0 contexts adds vertex array objects (VAOs) which encapsulate vertex array states. These objects keep pointers to vertex data and names for different sets of vertex data.",
     "description_html": "The <code>OES_vertex_array_object</code> extension for WebGL 1.0 contexts adds vertex array objects (VAOs) which encapsulate vertex array states. These objects keep pointers to vertex data and names for different sets of vertex data.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_vertex_array_object WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-30",
@@ -22950,9 +26051,14 @@ export const features = {
     ],
     "description": "The OfflineAudioContext API represents an audio processing graph that writes to an AudioBuffer instead of an output device.",
     "description_html": "The <code>OfflineAudioContext</code> API represents an audio processing graph that writes to an <code>AudioBuffer</code> instead of an output device.",
-    "group": "web-audio",
+    "group": [
+      "web-audio"
+    ],
+    "kind": "feature",
     "name": "OfflineAudioContext",
-    "spec": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#OfflineAudioContext"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -22969,7 +26075,9 @@ export const features = {
     }
   },
   "offscreen-canvas": {
-    "caniuse": "offscreencanvas",
+    "caniuse": [
+      "offscreencanvas"
+    ],
     "compat_features": [
       "api.HTMLCanvasElement.transferControlToOffscreen",
       "api.OffscreenCanvas",
@@ -23054,9 +26162,14 @@ export const features = {
     ],
     "description": "The OffscreenCanvas API provides a canvas that can be drawn to off screen, with no dependencies on the DOM, which can be used to run heavy rendering operations inside a worker context.",
     "description_html": "The <code>OffscreenCanvas</code> API provides a canvas that can be drawn to off screen, with no dependencies on the DOM, which can be used to run heavy rendering operations inside a worker context.",
-    "group": "canvas",
+    "group": [
+      "canvas"
+    ],
+    "kind": "feature",
     "name": "Offscreen canvas",
-    "spec": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -23080,9 +26193,14 @@ export const features = {
     ],
     "description": "The Oklab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is, aiming to match how humans perceive colors. Oklch is a variant of Oklab with polar coordinates. These color spaces can be used with the CSS color(), oklab(), and oklch() functions.",
     "description_html": "The Oklab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is, aiming to match how humans perceive colors. Oklch is a variant of Oklab with polar coordinates. These color spaces can be used with the CSS <code>color()</code>, <code>oklab()</code>, and <code>oklch()</code> functions.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "Oklab and Oklch",
-    "spec": "https://drafts.csswg.org/css-color-4/#ok-lab",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#ok-lab"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -23098,7 +26216,9 @@ export const features = {
     }
   },
   "online": {
-    "caniuse": "online-status",
+    "caniuse": [
+      "online-status"
+    ],
     "compat_features": [
       "api.Navigator.onLine",
       "api.Window.offline_event",
@@ -23109,6 +26229,7 @@ export const features = {
     ],
     "description": "The navigator.onLine property is a boolean for whether the browser is connected to some network (though not necessarily the internet). The online and offline events fire when the connection state changes.",
     "description_html": "The <code>navigator.onLine</code> property is a boolean for whether the browser is connected to some network (though not necessarily the internet). The <code>online</code> and <code>offline</code> events fire when the connection state changes.",
+    "kind": "feature",
     "name": "Online status",
     "spec": [
       "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
@@ -23130,7 +26251,9 @@ export const features = {
     }
   },
   "opacity": {
-    "caniuse": "css-opacity",
+    "caniuse": [
+      "css-opacity"
+    ],
     "compat_features": [
       "css.properties.opacity",
       "css.properties.opacity.percentages",
@@ -23140,9 +26263,14 @@ export const features = {
     ],
     "description": "The opacity CSS property sets the transparency of an element.",
     "description_html": "The <code>opacity</code> CSS property sets the transparency of an element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "opacity",
-    "spec": "https://drafts.csswg.org/css-color-3/#transparency",
+    "spec": [
+      "https://drafts.csswg.org/css-color-3/#transparency"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -23167,9 +26295,14 @@ export const features = {
     ],
     "description": "The fill-opacity, and stroke-opacity SVG attributes and CSS properties control the transparency of a stroke or fill of an SVG element.",
     "description_html": "The <code>fill-opacity</code>, and <code>stroke-opacity</code> SVG attributes and CSS properties control the transparency of a stroke or fill of an SVG element.",
-    "group": "svg",
+    "group": [
+      "svg"
+    ],
+    "kind": "feature",
     "name": "Opacity (SVG)",
-    "spec": "https://svgwg.org/svg2-draft/render.html#ObjectAndGroupOpacityProperties",
+    "spec": [
+      "https://svgwg.org/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "≤2022-09-24",
@@ -23191,9 +26324,14 @@ export const features = {
     ],
     "description": "The :open CSS pseudo-class matches elements that have open states, like <details>, <dialog>, or <select>, based on their state.",
     "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details></code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":open",
-    "spec": "https://drafts.csswg.org/selectors-4/#open-state",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#open-state"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23211,10 +26349,17 @@ export const features = {
     ],
     "description": "Omit the the binding parameter of a catch clause when you don't need information about the exception in a try ... catch statement.",
     "description_html": "Omit the the binding parameter of a <code>catch</code> clause when you don't need information about the exception in a <code>try ... catch</code> statement.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Optional catch binding",
-    "snapshot": "ecmascript-2019",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-try-statement",
+    "snapshot": [
+      "ecmascript-2019"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-try-statement"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -23254,7 +26399,10 @@ export const features = {
     ],
     "description": "The AbsoluteOrientationSensor and RelativeOrientationSensor APIs describe the physical orientation of a device in three-dimensional space, either in relation to the Earth's coordinate system or in relation to the device's own orientation, respectively.",
     "description_html": "The <code>AbsoluteOrientationSensor</code> and <code>RelativeOrientationSensor</code> APIs describe the physical orientation of a device in three-dimensional space, either in relation to the Earth's coordinate system or in relation to the device's own orientation, respectively.",
-    "group": "sensors",
+    "group": [
+      "sensors"
+    ],
+    "kind": "feature",
     "name": "Orientation Sensor",
     "spec": [
       "https://w3c.github.io/orientation-sensor/#absoluteorientationsensor-interface",
@@ -23301,9 +26449,14 @@ export const features = {
     ],
     "description": "The navigator.storage.getDirectory() method returns a FileSystemDirectoryHandle that is restricted to a specific origin and invisible to the user's actual file system for faster file-based applications, such as SQLite databases.",
     "description_html": "The <code>navigator.storage.getDirectory()</code> method returns a <code>FileSystemDirectoryHandle</code> that is restricted to a specific origin and invisible to the user's actual file system for faster file-based applications, such as SQLite databases.",
-    "group": "file-system",
+    "group": [
+      "file-system"
+    ],
+    "kind": "feature",
     "name": "Origin private file system",
-    "spec": "https://fs.spec.whatwg.org/#origin-private-file-system",
+    "spec": [
+      "https://fs.spec.whatwg.org/#origin-private-file-system"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -23324,8 +26477,11 @@ export const features = {
     ],
     "description": "The outline CSS shorthand sets the color, style, and width of a line around an element, outside of the border.",
     "description_html": "The <code>outline</code> CSS shorthand sets the color, style, and width of a line around an element, outside of the border.",
+    "kind": "feature",
     "name": "outline",
-    "spec": "https://drafts.csswg.org/css-ui-4/#outline",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -23359,8 +26515,11 @@ export const features = {
     ],
     "description": "The outline-color, outline-style, and outline-width and outline-offset CSS properties style a line around an element, outside of the border.",
     "description_html": "The <code>outline-color</code>, <code>outline-style</code>, and <code>outline-width</code> and <code>outline-offset</code> CSS properties style a line around an element, outside of the border.",
+    "kind": "feature",
     "name": "Outlines",
-    "spec": "https://drafts.csswg.org/css-ui-4/#outline",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -23398,8 +26557,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<output>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "≤2021-04-02",
@@ -23422,7 +26584,10 @@ export const features = {
     ],
     "description": "The overflow-block and overflow-inline CSS media queries set styles based on the way a device displays content that's larger than the viewport or page area. For example, a laptop lets users scroll to reveal content, while a printer displays overflowing content on additional pages.",
     "description_html": "The <code>overflow-block</code> and <code>overflow-inline</code> CSS media queries set styles based on the way a device displays content that's larger than the viewport or page area. For example, a laptop lets users scroll to reveal content, while a printer displays overflowing content on additional pages.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Overflow media queries",
     "spec": [
       "https://drafts.csswg.org/mediaqueries-5/#mf-overflow-block",
@@ -23443,7 +26608,9 @@ export const features = {
     }
   },
   "overflow-anchor": {
-    "caniuse": "css-overflow-anchor",
+    "caniuse": [
+      "css-overflow-anchor"
+    ],
     "compat_features": [
       "css.properties.overflow-anchor",
       "css.properties.overflow-anchor.auto",
@@ -23451,9 +26618,14 @@ export const features = {
     ],
     "description": "The overflow-anchor CSS property sets an element as a possible scroll anchor, reducing unintended scrolling when document changes occur above the current scrollport. This is enabled by default where supported.",
     "description_html": "The <code>overflow-anchor</code> CSS property sets an element as a possible scroll anchor, reducing unintended scrolling when document changes occur above the current scrollport. This is enabled by default where supported.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "overflow-anchor",
-    "spec": "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api",
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23474,9 +26646,14 @@ export const features = {
     ],
     "description": "The overflow: clip CSS declaration clips an element's overflowing content to the box that's defined by the overflow-clip-margin property. Unlike overflow: hidden, it allows you to hide overflow on one axis while keeping overflow on the other axis visible.",
     "description_html": "The <code>overflow: clip</code> CSS declaration clips an element's overflowing content to the box that's defined by the <code>overflow-clip-margin</code> property. Unlike <code>overflow: hidden</code>, it allows you to hide overflow on one axis while keeping overflow on the other axis visible.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "overflow: clip",
-    "spec": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-3/#propdef-overflow"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -23501,16 +26678,23 @@ export const features = {
     ],
     "description": "The overflow-clip-margin CSS property sets how far overflow content may appear outside the bounds of an element before it's clipped by effects such as overflow: clip.",
     "description_html": "The <code>overflow-clip-margin</code> CSS property sets how far overflow content may appear outside the bounds of an element before it's clipped by effects such as <code>overflow: clip</code>.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "overflow-clip-margin",
-    "spec": "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "overflow-overlay": {
-    "caniuse": "css-overflow-overlay",
+    "caniuse": [
+      "css-overflow-overlay"
+    ],
     "compat_features": [
       "css.types.overflow.overlay"
     ],
@@ -23524,9 +26708,14 @@ export const features = {
         "overflow-shorthand"
       ]
     },
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "overflow: overlay",
-    "spec": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-3/#propdef-overflow"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23541,7 +26730,9 @@ export const features = {
     }
   },
   "overflow-shorthand": {
-    "caniuse": "css-overflow",
+    "caniuse": [
+      "css-overflow"
+    ],
     "compat_features": [
       "css.properties.overflow",
       "css.properties.overflow-x",
@@ -23563,9 +26754,14 @@ export const features = {
     ],
     "description": "The overflow CSS property sets the behavior for when content doesn't fit in an element.",
     "description_html": "The <code>overflow</code> CSS property sets the behavior for when content doesn't fit in an element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "overflow",
-    "spec": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-3/#propdef-overflow"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-09-24",
@@ -23582,7 +26778,9 @@ export const features = {
     }
   },
   "overflow-wrap": {
-    "caniuse": "wordwrap",
+    "caniuse": [
+      "wordwrap"
+    ],
     "compat_features": [
       "css.properties.overflow-wrap",
       "css.properties.overflow-wrap.anywhere",
@@ -23591,9 +26789,14 @@ export const features = {
     ],
     "description": "The overflow-wrap CSS property breaks a line of text onto multiple lines inside the targeted element in an otherwise unbreakable place to prevent overflow. The legacy property is word-wrap.",
     "description_html": "The <code>overflow-wrap</code> CSS property breaks a line of text onto multiple lines inside the targeted element in an otherwise unbreakable place to prevent overflow. The legacy property is <code>word-wrap</code>.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "overflow-wrap",
-    "spec": "https://drafts.csswg.org/css-text-4/#overflow-wrap-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#overflow-wrap-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-04-02",
@@ -23617,9 +26820,14 @@ export const features = {
     ],
     "description": "The overlay CSS property, used as an allow-discrete CSS transition, prevents a top layer element, such as a popover or a <dialog>, from being removed from the top layer before it has finished animating. You can't set the value of the overlay property; only use it as transition property.",
     "description_html": "The <code>overlay</code> CSS property, used as an <code>allow-discrete</code> CSS transition, prevents a top layer element, such as a popover or a <code>&#x3C;dialog></code>, from being removed from the top layer before it has finished animating. You can't set the value of the <code>overlay</code> property; only use it as transition property.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "overlay",
-    "spec": "https://drafts.csswg.org/css-position-4/#overlay",
+    "spec": [
+      "https://drafts.csswg.org/css-position-4/#overlay"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23630,7 +26838,9 @@ export const features = {
     }
   },
   "overscroll-behavior": {
-    "caniuse": "css-overscroll-behavior",
+    "caniuse": [
+      "css-overscroll-behavior"
+    ],
     "compat_features": [
       "css.properties.overscroll-behavior",
       "css.properties.overscroll-behavior-block",
@@ -23655,9 +26865,14 @@ export const features = {
     ],
     "description": "The overscroll-behavior CSS property disables default scrolling behaviors when the edges of a scrolling area are reached.",
     "description_html": "The <code>overscroll-behavior</code> CSS property disables default scrolling behaviors when the edges of a scrolling area are reached.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "overscroll-behavior",
-    "spec": "https://drafts.csswg.org/css-overscroll-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -23680,9 +26895,14 @@ export const features = {
     ],
     "description": "The OVR_multiview2 extension for WebGL 2.0 contexts renders into multiple views simultaneously. This especially useful for virtual reality (VR) and WebXR.",
     "description_html": "The <code>OVR_multiview2</code> extension for WebGL 2.0 contexts renders into multiple views simultaneously. This especially useful for virtual reality (VR) and WebXR.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OVR_multiview2 WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OVR_multiview2/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23697,9 +26917,14 @@ export const features = {
     ],
     "description": "The <p> element represents a paragraph of text.",
     "description_html": "The <code>&#x3C;p></code> element represents a paragraph of text.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<p>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -23725,9 +26950,14 @@ export const features = {
     ],
     "description": "The padding CSS property sets space between an element's edge and its contents. It is a shorthand for padding-top, padding-right, padding-bottom, and padding-left.",
     "description_html": "The <code>padding</code> CSS property sets space between an element's edge and its contents. It is a shorthand for <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "padding",
-    "spec": "https://drafts.csswg.org/css-box-4/#paddings",
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#paddings"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -23771,9 +27001,14 @@ export const features = {
         "page-breaks"
       ]
     },
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Page break aliases",
-    "spec": "https://drafts.csswg.org/css-break-4/#page-break-properties",
+    "spec": [
+      "https://drafts.csswg.org/css-break-4/#page-break-properties"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23821,9 +27056,14 @@ export const features = {
     ],
     "description": "In printed page layouts, the break-after, break-before, break-inside CSS properties control where printed pages start and end. Also known as pagination or page breaking.",
     "description_html": "In printed page layouts, the <code>break-after</code>, <code>break-before</code>, <code>break-inside</code> CSS properties control where printed pages start and end. Also known as pagination or page breaking.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Page breaks",
-    "spec": "https://drafts.csswg.org/css-break-4/#breaking-controls",
+    "spec": [
+      "https://drafts.csswg.org/css-break-4/#breaking-controls"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-07-29",
@@ -23847,8 +27087,11 @@ export const features = {
     ],
     "description": "The page lifecycle API helps you safely handle page suspensions or discards from memory. The freeze and resume events fire when the browser suspends or resumes a page from memory while the document.wasDiscarded property reports whether the page was reloaded after being dropped.",
     "description_html": "The page lifecycle API helps you safely handle page suspensions or discards from memory. The <code>freeze</code> and <code>resume</code> events fire when the browser suspends or resumes a page from memory while the <code>document.wasDiscarded</code> property reports whether the page was reloaded after being dropped.",
+    "kind": "feature",
     "name": "Page lifecycle",
-    "spec": "https://wicg.github.io/page-lifecycle/",
+    "spec": [
+      "https://wicg.github.io/page-lifecycle/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23868,8 +27111,11 @@ export const features = {
       "layout",
       "print"
     ],
+    "kind": "feature",
     "name": "page-orientation",
-    "spec": "https://drafts.csswg.org/css-page-3/#page-orientation-prop",
+    "spec": [
+      "https://drafts.csswg.org/css-page-3/#page-orientation-prop"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23894,8 +27140,11 @@ export const features = {
       "selectors",
       "print"
     ],
+    "kind": "feature",
     "name": "Page selectors",
-    "spec": "https://drafts.csswg.org/css-page-3/#page-selectors",
+    "spec": [
+      "https://drafts.csswg.org/css-page-3/#page-selectors"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -23908,7 +27157,9 @@ export const features = {
     }
   },
   "page-setup": {
-    "caniuse": "css-paged-media",
+    "caniuse": [
+      "css-paged-media"
+    ],
     "compat_features": [
       "css.at-rules.page",
       "css.at-rules.page.bottom-center",
@@ -23937,8 +27188,11 @@ export const features = {
       "layout",
       "print"
     ],
+    "kind": "feature",
     "name": "Page setup",
-    "spec": "https://drafts.csswg.org/css-page-3/#at-page-rule",
+    "spec": [
+      "https://drafts.csswg.org/css-page-3/#at-page-rule"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -23954,7 +27208,9 @@ export const features = {
     }
   },
   "page-transition-events": {
-    "caniuse": "page-transition-events",
+    "caniuse": [
+      "page-transition-events"
+    ],
     "compat_features": [
       "api.PageTransitionEvent",
       "api.PageTransitionEvent.PageTransitionEvent",
@@ -23964,8 +27220,11 @@ export const features = {
     ],
     "description": "The pageshow and pagehide transition events fire when a document loads or unloads due to a navigation, such as clicking on a link on a page or the back button in a browser.",
     "description_html": "The <code>pageshow</code> and <code>pagehide</code> transition events fire when a document loads or unloads due to a navigation, such as clicking on a link on a page or the back button in a browser.",
+    "kind": "feature",
     "name": "Page transition events",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagetransitionevent-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagetransitionevent-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -23982,7 +27241,9 @@ export const features = {
     }
   },
   "page-visibility": {
-    "caniuse": "pagevisibility",
+    "caniuse": [
+      "pagevisibility"
+    ],
     "compat_features": [
       "api.Document.hidden",
       "api.Document.visibilityState",
@@ -23990,8 +27251,11 @@ export const features = {
     ],
     "description": "The document.visibilityState and document.hidden properties tell you whether the page is visible to the user (for example, it's not minimized or in a background tab).",
     "description_html": "The <code>document.visibilityState</code> and <code>document.hidden</code> properties tell you whether the page is visible to the user (for example, it's not minimized or in a background tab).",
+    "kind": "feature",
     "name": "Page visibility",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24017,9 +27281,14 @@ export const features = {
     ],
     "description": "The visibility-state performance entry and the VisibilityStateEntry API measure the timing of page visibility state changes, such as when a tab is no longer visible or the user has switched to another app.",
     "description_html": "The <code>visibility-state</code> performance entry and the <code>VisibilityStateEntry</code> API measure the timing of page visibility state changes, such as when a tab is no longer visible or the user has switched to another app.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Page visibility state",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-visibilitystateentry-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-visibilitystateentry-interface"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24030,7 +27299,9 @@ export const features = {
     }
   },
   "paint": {
-    "caniuse": "css-paint-api",
+    "caniuse": [
+      "css-paint-api"
+    ],
     "compat_features": [
       "api.CSS.paintWorklet_static",
       "api.PaintRenderingContext2D",
@@ -24089,8 +27360,11 @@ export const features = {
       "css",
       "worklets"
     ],
+    "kind": "feature",
     "name": "paint()",
-    "spec": "https://drafts.css-houdini.org/css-paint-api-1/",
+    "spec": [
+      "https://drafts.css-houdini.org/css-paint-api-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24107,9 +27381,14 @@ export const features = {
     ],
     "description": "The paint-order CSS property sets the z-order of strokes, fills, and (in SVG content) markers. For example, paint-order: markers stroke fill; draws the markers, then stroke on top of markers, then fill on top of both markers and stroke.",
     "description_html": "The <code>paint-order</code> CSS property sets the z-order of strokes, fills, and (in SVG content) markers. For example, <code>paint-order: markers stroke fill;</code> draws the markers, then stroke on top of markers, then fill on top of both markers and stroke.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "paint-order",
-    "spec": "https://svgwg.org/svg2-draft/painting.html#PaintOrder",
+    "spec": [
+      "https://svgwg.org/svg2-draft/painting.html#PaintOrder"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24130,9 +27409,14 @@ export const features = {
     ],
     "description": "The paint performance entry and the PerformancePaintTiming API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
     "description_html": "The <code>paint</code> performance entry and the <code>PerformancePaintTiming</code> API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Paint timing",
-    "spec": "https://w3c.github.io/paint-timing/",
+    "spec": [
+      "https://w3c.github.io/paint-timing/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -24146,16 +27430,22 @@ export const features = {
     ],
     "description": "The Document.parseHTMLUnsafe() static method parses HTML into a DOM tree, while the setHTMLUnsafe() method of Element and ShadowRoot parses and inserts HTML into an existing tree. No sanitization applies to these methods, so never call them with user-provided HTML strings.",
     "description_html": "The <code>Document.parseHTMLUnsafe()</code> static method parses HTML into a DOM tree, while the <code>setHTMLUnsafe()</code> method of <code>Element</code> and <code>ShadowRoot</code> parses and inserts HTML into an existing tree. No sanitization applies to these methods, so never call them with user-provided HTML strings.",
+    "kind": "feature",
     "name": "Unsanitized HTML parsing methods",
-    "spec": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods"
+    ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-15",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
         "firefox": "128",
-        "firefox_android": "128"
+        "firefox_android": "128",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -24170,9 +27460,14 @@ export const features = {
     ],
     "description": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
     "description_html": "Partitioned cookies allow you to opt a cookie into partitioned storage, with a separate cookie jar per top-level site. Also known as Cookies Having Independent Partitioned State or CHIPS.",
-    "group": "cookies",
+    "group": [
+      "cookies"
+    ],
+    "kind": "feature",
     "name": "Partitioned cookies",
-    "spec": "https://cookiestore.spec.whatwg.org/",
+    "spec": [
+      "https://cookiestore.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24192,9 +27487,14 @@ export const features = {
     ],
     "description": "The PasswordCredential API represents a username and password.",
     "description_html": "The <code>PasswordCredential</code> API represents a username and password.",
-    "group": "credential-management",
+    "group": [
+      "credential-management"
+    ],
+    "kind": "feature",
     "name": "Password credentials",
-    "spec": "https://w3c.github.io/webappsec-credential-management/#passwords",
+    "spec": [
+      "https://w3c.github.io/webappsec-credential-management/#passwords"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24214,8 +27514,11 @@ export const features = {
     ],
     "description": "The path() CSS shape function creates a shape for clip-path, shape-outside, and the SVG attribute d.",
     "description_html": "The <code>path()</code> CSS shape function creates a shape for <code>clip-path</code>, <code>shape-outside</code>, and the SVG attribute <code>d</code>.",
+    "kind": "feature",
     "name": "path()",
-    "spec": "https://drafts.csswg.org/css-shapes-1/#supported-basic-shapes",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#supported-basic-shapes"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -24252,9 +27555,14 @@ export const features = {
     ],
     "description": "The payment handler API registers a web application as a payment handler and responds to payment requests in the browser's user interface, rather than redirecting users to a separate site to complete a payment.",
     "description_html": "The payment handler API registers a web application as a payment handler and responds to payment requests in the browser's user interface, rather than redirecting users to a separate site to complete a payment.",
-    "group": "payments",
+    "group": [
+      "payments"
+    ],
+    "kind": "feature",
     "name": "Payment handler",
-    "spec": "https://w3c.github.io/payment-handler/",
+    "spec": [
+      "https://w3c.github.io/payment-handler/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24300,9 +27608,14 @@ export const features = {
     ],
     "description": "The PaymentRequest API prompts the user to make a payment through the browser's user interface.",
     "description_html": "The <code>PaymentRequest</code> API prompts the user to make a payment through the browser's user interface.",
-    "group": "payments",
+    "group": [
+      "payments"
+    ],
+    "kind": "feature",
     "name": "Payment request",
-    "spec": "https://w3c.github.io/payment-request/",
+    "spec": [
+      "https://w3c.github.io/payment-request/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24320,8 +27633,11 @@ export const features = {
     ],
     "description": "The navigator.pdfViewerEnabled property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
     "description_html": "The <code>navigator.pdfViewerEnabled</code> property is a boolean for whether the browser navigates to and shows a PDF in the browser window or downloads the PDF.",
+    "kind": "feature",
     "name": "pdfViewerEnabled",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -24387,7 +27703,10 @@ export const features = {
     ],
     "description": "The performance global object and the PerformanceObserver API provide access to performance-related information for the current execution context.",
     "description_html": "The <code>performance</code> global object and the <code>PerformanceObserver</code> API provide access to performance-related information for the current execution context.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Performance",
     "spec": [
       "https://w3c.github.io/hr-time/",
@@ -24452,9 +27771,14 @@ export const features = {
         "navigation-timing"
       ]
     },
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "PerformanceTiming and PerformanceNavigation",
-    "spec": "https://w3c.github.io/navigation-timing/#obsolete",
+    "spec": [
+      "https://w3c.github.io/navigation-timing/#obsolete"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24482,8 +27806,11 @@ export const features = {
     ],
     "description": "The periodic background synchronization API fires a recurring periodicsync event in a service worker. You can use this to update data in the background at regular intervals.",
     "description_html": "The periodic background synchronization API fires a recurring <code>periodicsync</code> event in a service worker. You can use this to update data in the background at regular intervals.",
+    "kind": "feature",
     "name": "Periodic background sync",
-    "spec": "https://wicg.github.io/periodic-background-sync/",
+    "spec": [
+      "https://wicg.github.io/periodic-background-sync/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24494,7 +27821,9 @@ export const features = {
     }
   },
   "permissions": {
-    "caniuse": "permissions-api",
+    "caniuse": [
+      "permissions-api"
+    ],
     "compat_features": [
       "api.Navigator.permissions",
       "api.PermissionStatus",
@@ -24508,7 +27837,10 @@ export const features = {
     ],
     "description": "The navigator.permissions API checks whether a permission, such as access to geolocation data, has been granted.",
     "description_html": "The <code>navigator.permissions</code> API checks whether a permission, such as access to geolocation data, has been granted.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Permissions",
     "spec": [
       "https://w3c.github.io/permissions/",
@@ -24542,9 +27874,14 @@ export const features = {
     ],
     "description": "The physical CSS properties, top, right, bottom, and left, set the inset position of an element relative to the corresponding side of a container determined by the element's position property.",
     "description_html": "The physical CSS properties, <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>, set the inset position of an element relative to the corresponding side of a container determined by the element's <code>position</code> property.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Physical properties",
-    "spec": "https://drafts.csswg.org/css-position-3/#insets",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24561,16 +27898,23 @@ export const features = {
     }
   },
   "picture": {
-    "caniuse": "picture",
+    "caniuse": [
+      "picture"
+    ],
     "compat_features": [
       "api.HTMLPictureElement",
       "html.elements.picture"
     ],
     "description": "The <picture> element is used for art direction in responsive images, where a different image is displayed based on the <source> element.",
     "description_html": "The <code>&#x3C;picture></code> element is used for art direction in responsive images, where a different image is displayed based on the <code>&#x3C;source></code> element.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<picture>",
-    "spec": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-09-21",
@@ -24587,7 +27931,9 @@ export const features = {
     }
   },
   "picture-in-picture": {
-    "caniuse": "picture-in-picture",
+    "caniuse": [
+      "picture-in-picture"
+    ],
     "compat_features": [
       "api.Document.exitPictureInPicture",
       "api.Document.pictureInPictureElement",
@@ -24611,8 +27957,11 @@ export const features = {
     ],
     "description": "The picture-in-picture API allow websites to create a floating, always-on-top video window. Also known as PiP or pop-out video.",
     "description_html": "The picture-in-picture API allow websites to create a floating, always-on-top video window. Also known as PiP or pop-out video.",
+    "kind": "feature",
     "name": "Picture-in-picture (video)",
-    "spec": "https://w3c.github.io/picture-in-picture/",
+    "spec": [
+      "https://w3c.github.io/picture-in-picture/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24625,7 +27974,9 @@ export const features = {
     }
   },
   "ping": {
-    "caniuse": "ping",
+    "caniuse": [
+      "ping"
+    ],
     "compat_features": [
       "api.HTMLAnchorElement.ping",
       "api.HTMLAreaElement.ping",
@@ -24636,8 +27987,11 @@ export const features = {
     ],
     "description": "The ping attribute for <a> elements sets a URL to send a POST request to when the <a> is clicked. This is typically used for outbound link reporting.",
     "description_html": "The <code>ping</code> attribute for <code>&#x3C;a></code> elements sets a URL to send a POST request to when the <code>&#x3C;a></code> is clicked. This is typically used for outbound link reporting.",
+    "kind": "feature",
     "name": "ping",
-    "spec": "https://html.spec.whatwg.org/multipage/links.html#ping",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#ping"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24650,15 +28004,22 @@ export const features = {
     }
   },
   "placeholder": {
-    "caniuse": "css-placeholder",
+    "caniuse": [
+      "css-placeholder"
+    ],
     "compat_features": [
       "css.selectors.placeholder"
     ],
     "description": "The ::placeholder CSS pseudo-element selects help text in <input> and <textarea> elements when no value is set.",
     "description_html": "The <code>::placeholder</code> CSS pseudo-element selects help text in <code>&#x3C;input></code> and <code>&#x3C;textarea></code> elements when no value is set.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::placeholder",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#placeholder-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#placeholder-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -24675,16 +28036,23 @@ export const features = {
     }
   },
   "placeholder-shown": {
-    "caniuse": "css-placeholder-shown",
+    "caniuse": [
+      "css-placeholder-shown"
+    ],
     "compat_features": [
       "css.selectors.placeholder-shown",
       "css.selectors.placeholder-shown.non_text_types"
     ],
     "description": "The :placeholder-shown CSS pseudo-element selects <input> and <textarea> elements when no value is set and the element's placeholder attribute is not empty. Not to be confused with ::placeholder, which selects the placeholder text itself.",
     "description_html": "The <code>:placeholder-shown</code> CSS pseudo-element selects <code>&#x3C;input></code> and <code>&#x3C;textarea></code> elements when no value is set and the element's <code>placeholder</code> attribute is not empty. Not to be confused with <code>::placeholder</code>, which selects the placeholder text itself.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":placeholder-shown",
-    "spec": "https://drafts.csswg.org/selectors-4/#placeholder",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#placeholder"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -24701,16 +28069,23 @@ export const features = {
     }
   },
   "pointer-events": {
-    "caniuse": "pointer-events",
+    "caniuse": [
+      "pointer-events"
+    ],
     "compat_features": [
       "css.properties.pointer-events",
       "css.properties.pointer-events.html_elements"
     ],
     "description": "The pointer-events CSS property sets whether a user can interact with an element using a mouse, touch, or other pointing input device.",
     "description_html": "The <code>pointer-events</code> CSS property sets whether a user can interact with an element using a mouse, touch, or other pointing input device.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "pointer-events",
-    "spec": "https://drafts.csswg.org/css-ui-4/#pointer-events-control",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#pointer-events-control"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24727,7 +28102,9 @@ export const features = {
     }
   },
   "pointer-events-api": {
-    "caniuse": "pointer",
+    "caniuse": [
+      "pointer"
+    ],
     "compat_features": [
       "api.Element.auxclick_event.type_pointerevent",
       "api.Element.click_event.type_pointerevent",
@@ -24770,8 +28147,11 @@ export const features = {
     ],
     "description": "Pointer events, such as pointerdown, and the PointerEvent API, represent general pointing inputs, from a wide range of devices, such as a mouse, pen or stylus, or touch with one or more fingers. Not to be confused with the pointer-events CSS property.",
     "description_html": "Pointer events, such as <code>pointerdown</code>, and the <code>PointerEvent</code> API, represent general pointing inputs, from a wide range of devices, such as a mouse, pen or stylus, or touch with one or more fingers. Not to be confused with the <code>pointer-events</code> CSS property.",
+    "kind": "feature",
     "name": "Pointer Events",
-    "spec": "https://w3c.github.io/pointerevents/",
+    "spec": [
+      "https://w3c.github.io/pointerevents/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -24788,7 +28168,9 @@ export const features = {
     }
   },
   "pointer-lock": {
-    "caniuse": "pointerlock",
+    "caniuse": [
+      "pointerlock"
+    ],
     "compat_features": [
       "api.Document.exitPointerLock",
       "api.Document.pointerLockElement",
@@ -24798,8 +28180,11 @@ export const features = {
     ],
     "description": "Provides access to raw mouse movement by locking the target of mouse events to a single element and hiding the mouse cursor.",
     "description_html": "Provides access to raw mouse movement by locking the target of mouse events to a single element and hiding the mouse cursor.",
+    "kind": "feature",
     "name": "Pointer lock",
-    "spec": "https://w3c.github.io/pointerlock/",
+    "spec": [
+      "https://w3c.github.io/pointerlock/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24841,9 +28226,14 @@ export const features = {
     ],
     "description": "The popover HTML attribute creates an overlay to display content on top of other page content. Popovers can be shown declaratively using HTML, or using the showPopover() method.",
     "description_html": "The <code>popover</code> HTML attribute creates an overlay to display content on top of other page content. Popovers can be shown declaratively using HTML, or using the <code>showPopover()</code> method.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "Popover",
-    "spec": "https://html.spec.whatwg.org/multipage/popover.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-01-27",
@@ -24865,9 +28255,14 @@ export const features = {
     ],
     "description": "The popover=\"hint\" global HTML attribute creates a popover that is subordinate to popovers with a popover=\"auto\" attribute. You can use this to create tooltips that don't dismiss auto popovers.",
     "description_html": "The <code>popover=\"hint\"</code> global HTML attribute creates a popover that is subordinate to popovers with a <code>popover=\"auto\"</code> attribute. You can use this to create tooltips that don't dismiss <code>auto</code> popovers.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "popover=\"hint\"",
-    "spec": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -24878,7 +28273,9 @@ export const features = {
     }
   },
   "portal": {
-    "caniuse": "portals",
+    "caniuse": [
+      "portals"
+    ],
     "description": "The <portal> HTML element embeds another page into the current page as a non-interactive preview.",
     "description_html": "The <code>&#x3C;portal></code> HTML element embeds another page into the current page as a non-interactive preview.",
     "discouraged": {
@@ -24892,8 +28289,11 @@ export const features = {
         "view-transitions"
       ]
     },
+    "kind": "feature",
     "name": "Portals",
-    "spec": "https://wicg.github.io/portals/",
+    "spec": [
+      "https://wicg.github.io/portals/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -24905,9 +28305,14 @@ export const features = {
     ],
     "description": "The position CSS property sets the origin position of an element to an element, the element's scrollport, or the viewport.",
     "description_html": "The <code>position</code> CSS property sets the origin position of an element to an element, the element's scrollport, or the viewport.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Position",
-    "spec": "https://drafts.csswg.org/css-position-3/#position-property",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#position-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24924,7 +28329,9 @@ export const features = {
     }
   },
   "postmessage": {
-    "caniuse": "x-doc-messaging",
+    "caniuse": [
+      "x-doc-messaging"
+    ],
     "compat_features": [
       "api.DedicatedWorkerGlobalScope.message_event",
       "api.DedicatedWorkerGlobalScope.postMessage",
@@ -24941,9 +28348,14 @@ export const features = {
     ],
     "description": "The postMessage() global method sends cross-origin messages to windows and workers, including popups and iframes. Also known as cross-document messaging.",
     "description_html": "The <code>postMessage()</code> global method sends cross-origin messages to windows and workers, including popups and iframes. Also known as cross-document messaging.",
-    "group": "messaging",
+    "group": [
+      "messaging"
+    ],
+    "kind": "feature",
     "name": "postMessage",
-    "spec": "https://html.spec.whatwg.org/multipage/web-messaging.html#web-messaging",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/web-messaging.html#web-messaging"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24966,9 +28378,14 @@ export const features = {
     ],
     "description": "The <pre> element represents a block element of preformatted text that is presented exactly as written, including all white space.",
     "description_html": "The <code>&#x3C;pre></code> element represents a block element of preformatted text that is presented exactly as written, including all white space.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<pre>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -24992,9 +28409,14 @@ export const features = {
     ],
     "description": "The prefers-color-scheme CSS media query sets styles based on the requested color scheme, light or dark.",
     "description_html": "The <code>prefers-color-scheme</code> CSS media query sets styles based on the requested color scheme, light or dark.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "prefers-color-scheme media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -25016,9 +28438,14 @@ export const features = {
     ],
     "description": "The prefers-contrast CSS media query sets styles based on whether the user prefers more or less contrast, the difference between foreground and background colors.",
     "description_html": "The <code>prefers-contrast</code> CSS media query sets styles based on whether the user prefers more or less contrast, the difference between foreground and background colors.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "prefers-contrast media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#prefers-contrast",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#prefers-contrast"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-11-30",
@@ -25040,25 +28467,37 @@ export const features = {
     ],
     "description": "The prefers-reduced-data CSS media query detects whether the user has a preference for using less network traffic. For example, you can use this media query to avoid loading large font files and use a system font instead.",
     "description_html": "The <code>prefers-reduced-data</code> CSS media query detects whether the user has a preference for using less network traffic. For example, you can use this media query to avoid loading large font files and use a system font instead.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "prefers-reduced-data media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-data",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-data"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "prefers-reduced-motion": {
-    "caniuse": "prefers-reduced-motion",
+    "caniuse": [
+      "prefers-reduced-motion"
+    ],
     "compat_features": [
       "css.at-rules.media.prefers-reduced-motion",
       "http.headers.Sec-CH-Prefers-Reduced-Motion"
     ],
     "description": "The prefers-reduced-motion CSS media query sets styles based on whether the user prefers to minimize the amount of non-essential animations on the device, such as scrolling, panning, zooming, and strobing.",
     "description_html": "The <code>prefers-reduced-motion</code> CSS media query sets styles based on whether the user prefers to minimize the amount of non-essential animations on the device, such as scrolling, panning, zooming, and strobing.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "prefers-reduced-motion media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -25081,9 +28520,14 @@ export const features = {
     ],
     "description": "The prefers-reduced-transparency CSS media query sets styles based on whether the user prefers to reduce the amount of transparent effects on their device, for example to improve contrast and legibility.",
     "description_html": "The <code>prefers-reduced-transparency</code> CSS media query sets styles based on whether the user prefers to reduce the amount of transparent effects on their device, for example to improve contrast and legibility.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "prefers-reduced-transparency media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25102,8 +28546,11 @@ export const features = {
     ],
     "description": "The imagesrcset and imagesizes attributes with the rel=\"preload\" attribute for the <link> HTML element starts fetching responsive images before they're found in the body of the document.",
     "description_html": "The <code>imagesrcset</code> and <code>imagesizes</code> attributes with the <code>rel=\"preload\"</code> attribute for the <code>&#x3C;link></code> HTML element starts fetching responsive images before they're found in the body of the document.",
+    "kind": "feature",
     "name": "Preloading responsive images",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -25162,8 +28609,11 @@ export const features = {
     ],
     "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
     "description_html": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+    "kind": "feature",
     "name": "Presentation API",
-    "spec": "https://w3c.github.io/presentation-api/",
+    "spec": [
+      "https://w3c.github.io/presentation-api/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25179,9 +28629,14 @@ export const features = {
     ],
     "description": "The preservesPitch property for <audio> or <video> adjusts the pitch of audio to sound more natural when the playback rate is faster or slower than the default.",
     "description_html": "The <code>preservesPitch</code> property for <code>&#x3C;audio></code> or <code>&#x3C;video></code> adjusts the pitch of audio to sound more natural when the playback rate is faster or slower than the default.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "preservesPitch",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -25202,9 +28657,14 @@ export const features = {
     ],
     "description": "The window.print() method opens the browser's print dialog.",
     "description_html": "The <code>window.print()</code> method opens the browser's print dialog.",
-    "group": "print",
+    "group": [
+      "print"
+    ],
+    "kind": "feature",
     "name": "window.print()",
-    "spec": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-06-06",
@@ -25227,9 +28687,14 @@ export const features = {
     ],
     "description": "The print-color-adjust CSS property sets whether styles of printed pages should be adjusted to use less ink, in cases such as light text on a dark background.",
     "description_html": "The <code>print-color-adjust</code> CSS property sets whether styles of printed pages should be adjusted to use less ink, in cases such as light text on a dark background.",
-    "group": "print",
+    "group": [
+      "print"
+    ],
+    "kind": "feature",
     "name": "print-color-adjust",
-    "spec": "https://drafts.csswg.org/css-color-adjust-1/#propdef-print-color-adjust",
+    "spec": [
+      "https://drafts.csswg.org/css-color-adjust-1/#propdef-print-color-adjust"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-05-01",
@@ -25245,14 +28710,19 @@ export const features = {
     }
   },
   "print-events": {
-    "caniuse": "beforeafterprint",
+    "caniuse": [
+      "beforeafterprint"
+    ],
     "compat_features": [
       "api.Window.afterprint_event",
       "api.Window.beforeprint_event"
     ],
     "description": "An alternative to @media print queries, the beforeprint and afterprint events allow you to change the page for printing and and restore the page after printing.",
     "description_html": "An alternative to <code>@media print</code> queries, the <code>beforeprint</code> and <code>afterprint</code> events allow you to change the page for printing and and restore the page after printing.",
-    "group": "print",
+    "group": [
+      "print"
+    ],
+    "kind": "feature",
     "name": "Print events",
     "spec": [
       "https://html.spec.whatwg.org/multipage/indices.html#event-afterprint",
@@ -25280,8 +28750,11 @@ export const features = {
     ],
     "description": "The attributionsourceid and attributiondestination attributes for <a> elements measure clicks across websites without associating a click to a specific session. Not to be confused with attribution reporting. Also known as PCM.",
     "description_html": "The <code>attributionsourceid</code> and <code>attributiondestination</code> attributes for <code>&#x3C;a></code> elements measure clicks across websites without associating a click to a specific session. Not to be confused with attribution reporting. Also known as PCM.",
+    "kind": "feature",
     "name": "Private click measurement",
-    "spec": "https://privacycg.github.io/private-click-measurement/",
+    "spec": [
+      "https://privacycg.github.io/private-click-measurement/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25305,8 +28778,11 @@ export const features = {
         "local-network-access"
       ]
     },
+    "kind": "feature",
     "name": "Private network access",
-    "spec": "https://wicg.github.io/private-network-access/",
+    "spec": [
+      "https://wicg.github.io/private-network-access/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -25322,8 +28798,11 @@ export const features = {
     ],
     "description": "The Profiler API records data about the execution of a page, which you can send to a server for later analysis. Also known as self-profiling.",
     "description_html": "The <code>Profiler</code> API records data about the execution of a page, which you can send to a server for later analysis. Also known as self-profiling.",
+    "kind": "feature",
     "name": "Profiler",
-    "spec": "https://wicg.github.io/js-self-profiling/",
+    "spec": [
+      "https://wicg.github.io/js-self-profiling/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25334,7 +28813,9 @@ export const features = {
     }
   },
   "progress": {
-    "caniuse": "progress",
+    "caniuse": [
+      "progress"
+    ],
     "compat_features": [
       "api.HTMLProgressElement",
       "api.HTMLProgressElement.labels",
@@ -25351,8 +28832,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<progress>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -25369,7 +28853,9 @@ export const features = {
     }
   },
   "promise": {
-    "caniuse": "promises",
+    "caniuse": [
+      "promises"
+    ],
     "compat_features": [
       "javascript.builtins.Promise",
       "javascript.builtins.Promise.@@species",
@@ -25384,9 +28870,14 @@ export const features = {
     ],
     "description": "A promise represents an asynchronous operation which eventually succeeds or fails.",
     "description_html": "A promise represents an asynchronous operation which eventually succeeds or fails.",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise (initial support)",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects",
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-promise-@@species",
@@ -25419,10 +28910,17 @@ export const features = {
     ],
     "description": "The Promise.allSettled() static method waits for an array of promises to settle (resolve or reject).",
     "description_html": "The <code>Promise.allSettled()</code> static method waits for an array of promises to settle (resolve or reject).",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise.allSettled()",
-    "snapshot": "ecmascript-2020",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.allsettled",
+    "snapshot": [
+      "ecmascript-2020"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.allsettled"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -25448,10 +28946,17 @@ export const features = {
     ],
     "description": "The Promise.any() static method returns a promise that fulfills as soon as the first of an iterable of promises fulfills, with that promise's value. Otherwise, it rejects with an AggregateError when all of the promises have rejected.",
     "description_html": "The <code>Promise.any()</code> static method returns a promise that fulfills as soon as the first of an iterable of promises fulfills, with that promise's value. Otherwise, it rejects with an <code>AggregateError</code> when all of the promises have rejected.",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise.any()",
-    "snapshot": "ecmascript-2021",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.any",
+    "snapshot": [
+      "ecmascript-2021"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.any"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -25468,16 +28973,25 @@ export const features = {
     }
   },
   "promise-finally": {
-    "caniuse": "promise-finally",
+    "caniuse": [
+      "promise-finally"
+    ],
     "compat_features": [
       "javascript.builtins.Promise.finally"
     ],
     "description": "The promise finally() method executes a function when the promise settles (resolves or rejects).",
     "description_html": "The promise <code>finally()</code> method executes a function when the promise settles (resolves or rejects).",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise finally()",
-    "snapshot": "ecmascript-2018",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.finally",
+    "snapshot": [
+      "ecmascript-2018"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.finally"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-04-02",
@@ -25499,9 +29013,14 @@ export const features = {
     ],
     "description": "The Promise.try() static method returns a promise that takes a callback of any kind (returns or throws, synchronously or asynchronously) and wraps its result in a Promise.",
     "description_html": "The <code>Promise.try()</code> static method returns a promise that takes a callback of any kind (returns or throws, synchronously or asynchronously) and wraps its result in a <code>Promise</code>.",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise.try()",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.try",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.try"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-01-07",
@@ -25522,9 +29041,14 @@ export const features = {
     ],
     "description": "The Promise.withResolvers() static method is an alternative to the Promise() constructor that returns both the promise and resolution functions. You can use this to access resolve and reject outside the scope of the executor function.",
     "description_html": "The <code>Promise.withResolvers()</code> static method is an alternative to the <code>Promise()</code> constructor that returns both the promise and resolution functions. You can use this to access <code>resolve</code> and <code>reject</code> outside the scope of the executor function.",
-    "group": "promises",
+    "group": [
+      "promises"
+    ],
+    "kind": "feature",
     "name": "Promise.withResolvers()",
-    "spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-05",
@@ -25550,8 +29074,11 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "kind": "feature",
     "name": "__proto__",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__proto__",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__proto__"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25566,7 +29093,9 @@ export const features = {
     }
   },
   "proxy-reflect": {
-    "caniuse": "proxy",
+    "caniuse": [
+      "proxy"
+    ],
     "compat_features": [
       "javascript.builtins.Proxy",
       "javascript.builtins.Proxy.Proxy",
@@ -25601,10 +29130,17 @@ export const features = {
     ],
     "description": "The Proxy and Reflect JavaScript built-ins intercept and define custom behavior for fundamental language operations (such as property lookup, assignment, enumeration, or function invocation).",
     "description_html": "The <code>Proxy</code> and <code>Reflect</code> JavaScript built-ins intercept and define custom behavior for fundamental language operations (such as property lookup, assignment, enumeration, or function invocation).",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Proxy and Reflect",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflection",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/reflection.html#sec-reflection"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -25621,7 +29157,9 @@ export const features = {
     }
   },
   "push": {
-    "caniuse": "push-api",
+    "caniuse": [
+      "push-api"
+    ],
     "compat_features": [
       "api.Permissions.permission_push",
       "api.PushEvent",
@@ -25659,8 +29197,11 @@ export const features = {
     ],
     "description": "The Push API subscribes to and receives server-initiated messages. Subscribers receive pushed messages in the background, even after periods inactive or offline.",
     "description_html": "The Push API subscribes to and receives server-initiated messages. Subscribers receive pushed messages in the background, even after periods inactive or offline.",
+    "kind": "feature",
     "name": "Push messages",
-    "spec": "https://w3c.github.io/push-api/",
+    "spec": [
+      "https://w3c.github.io/push-api/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -25684,9 +29225,14 @@ export const features = {
     ],
     "description": "The <q> element represents a short inline quotation.",
     "description_html": "The <code>&#x3C;q></code> element represents a short inline quotation.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<q>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -25708,9 +29254,14 @@ export const features = {
     ],
     "description": "The Q CSS length unit is an absolute length anchored to the physical measurement of quarter-millimeters. 1Q is equivalent to 1/40 of 1 centimeter.",
     "description_html": "The <code>Q</code> CSS length unit is an absolute length anchored to the physical measurement of quarter-millimeters. <code>1Q</code> is equivalent to 1/40 of 1 centimeter.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "Q unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#absolute-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#absolute-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-09-24",
@@ -25734,9 +29285,14 @@ export const features = {
     ],
     "description": "The quotes CSS property sets the quotation marks inserted via the content CSS property or <q> element.",
     "description_html": "The <code>quotes</code> CSS property sets the quotation marks inserted via the <code>content</code> CSS property or <code>&#x3C;q></code> element.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Quotes",
-    "spec": "https://drafts.csswg.org/css-content-3/#quotes",
+    "spec": [
+      "https://drafts.csswg.org/css-content-3/#quotes"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -25758,9 +29314,14 @@ export const features = {
     ],
     "description": "The rcap CSS length unit is a font-relative length equal to the value of the cap unit on the root element. Cap-height is approximately equal to the height of a capital Latin letter.",
     "description_html": "The <code>rcap</code> CSS length unit is a font-relative length equal to the value of the <code>cap</code> unit on the root element. Cap-height is approximately equal to the height of a capital Latin letter.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "rcap unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25778,9 +29339,14 @@ export const features = {
     ],
     "description": "The rch CSS length unit is a font-relative length equal to the value of the ch unit on the root element. ch length is based on the width of the zero (0) character.",
     "description_html": "The <code>rch</code> CSS length unit is a font-relative length equal to the value of the <code>ch</code> unit on the root element. <code>ch</code> length is based on the width of the zero (0) character.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "rch unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25793,14 +29359,19 @@ export const features = {
     }
   },
   "read-write-pseudos": {
-    "caniuse": "css-read-only-write",
+    "caniuse": [
+      "css-read-only-write"
+    ],
     "compat_features": [
       "css.selectors.read-only",
       "css.selectors.read-write"
     ],
     "description": "The :read-only and :read-write CSS pseudo-classes match elements that are read-only or read-write, respectively. For example, :read-only matches <input> and <textarea> elements with the readonly attribute.",
     "description_html": "The <code>:read-only</code> and <code>:read-write</code> CSS pseudo-classes match elements that are read-only or read-write, respectively. For example, <code>:read-only</code> matches <code>&#x3C;input></code> and <code>&#x3C;textarea></code> elements with the <code>readonly</code> attribute.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": ":read-only and :read-write",
     "spec": [
       "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-read-only",
@@ -25822,7 +29393,9 @@ export const features = {
     }
   },
   "readable-byte-streams": {
-    "caniuse": "streams",
+    "caniuse": [
+      "streams"
+    ],
     "compat_features": [
       "api.ReadableByteStreamController",
       "api.ReadableByteStreamController.byobRequest",
@@ -25845,9 +29418,14 @@ export const features = {
     ],
     "description": "A ReadableStream constructed with { type: \"bytes\" } reads bytes from a stream without making extra copies, improving efficiency for streams of large chunks. Also known as BYOB or bring your own buffer.",
     "description_html": "A <code>ReadableStream</code> constructed with <code>{ type: \"bytes\" }</code> reads bytes from a stream without making extra copies, improving efficiency for streams of large chunks. Also known as BYOB or bring your own buffer.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "Readable byte streams",
-    "spec": "https://streams.spec.whatwg.org/",
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25865,9 +29443,14 @@ export const features = {
     ],
     "description": "The ReadableStream.from() static method converts an iterable or async iterable object, such as an array or async generator function, into a readable stream.",
     "description_html": "The <code>ReadableStream.from()</code> static method converts an iterable or async iterable object, such as an array or async generator function, into a readable stream.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "ReadableStream.from()",
-    "spec": "https://streams.spec.whatwg.org/#rs-from",
+    "spec": [
+      "https://streams.spec.whatwg.org/#rs-from"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25890,9 +29473,14 @@ export const features = {
     ],
     "description": "The reading-flow CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation. The reading-order property overrides this order.",
     "description_html": "The <code>reading-flow</code> CSS property sets the order in which flex or grid elements are rendered to speech or reached via focus navigation. The <code>reading-order</code> property overrides this order.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "reading-flow",
-    "spec": "https://drafts.csswg.org/css-display-4/#reading-flow",
+    "spec": [
+      "https://drafts.csswg.org/css-display-4/#reading-flow"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -25903,7 +29491,9 @@ export const features = {
     }
   },
   "referrer-policy": {
-    "caniuse": "referrer-policy",
+    "caniuse": [
+      "referrer-policy"
+    ],
     "compat_features": [
       "api.HTMLAnchorElement.referrerPolicy",
       "api.HTMLAnchorElement.referrerPolicy.no-referrer-when-downgrade",
@@ -25964,8 +29554,11 @@ export const features = {
     ],
     "description": "The Referrer-Policy HTTP header and referrerpolicy HTML attributes control whether requests have the Referer header and what information the header contains.",
     "description_html": "The <code>Referrer-Policy</code> HTTP header and <code>referrerpolicy</code> HTML attributes control whether requests have the <code>Referer</code> header and what information the header contains.",
+    "kind": "feature",
     "name": "Referrer policy",
-    "spec": "https://w3c.github.io/webappsec-referrer-policy/",
+    "spec": [
+      "https://w3c.github.io/webappsec-referrer-policy/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -26038,8 +29631,11 @@ export const features = {
     ],
     "description": "The RegExp object represents a regular expression, a notation for matching text patterns.",
     "description_html": "The <code>RegExp</code> object represents a regular expression, a notation for matching text patterns.",
+    "kind": "feature",
     "name": "Regular expressions",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -26066,8 +29662,11 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "kind": "feature",
     "name": "RegExp compile()",
-    "spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-regexp.prototype.compile",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-regexp.prototype.compile"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26087,8 +29686,11 @@ export const features = {
     ],
     "description": "The RegExp.escape() static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, RegExp.escape(\"[abc]\") returns \"\\\\[abc\\\\]\".",
     "description_html": "The <code>RegExp.escape()</code> static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, <code>RegExp.escape(\"[abc]\")</code> returns <code>\"\\\\[abc\\\\]\"</code>.",
+    "kind": "feature",
     "name": "RegExp.escape()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-05-01",
@@ -26119,8 +29721,11 @@ export const features = {
         "https://github.com/tc39/proposal-regexp-legacy-features"
       ]
     },
+    "kind": "feature",
     "name": "RegExp static properties",
-    "spec": "https://github.com/tc39/proposal-regexp-legacy-features",
+    "spec": [
+      "https://github.com/tc39/proposal-regexp-legacy-features"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26144,8 +29749,11 @@ export const features = {
     ],
     "description": "When using navigator.mediaDevices.getDisplayMedia() to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
     "description_html": "When using <code>navigator.mediaDevices.getDisplayMedia()</code> to capture a browser tab as a video stream, the region capture API allows you to crop the video to the bounding box of a given element. In contrast to the element capture API, any content that overlays that element is also captured.",
+    "kind": "feature",
     "name": "Region capture",
-    "spec": "https://w3c.github.io/mediacapture-region/",
+    "spec": [
+      "https://w3c.github.io/mediacapture-region/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26169,8 +29777,11 @@ export const features = {
     ],
     "description": "The CSS.registerProperty() static method and the @property CSS at-rule register custom properties for which types and behaviors can be defined.",
     "description_html": "The <code>CSS.registerProperty()</code> static method and the <code>@property</code> CSS at-rule register custom properties for which types and behaviors can be defined.",
+    "kind": "feature",
     "name": "Registered custom properties",
-    "spec": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-07-09",
@@ -26217,8 +29828,11 @@ export const features = {
     ],
     "description": "The navigator.registerProtocolHandler() method declares a site's ability to handle an address scheme (also known as a protocol). For example, an email site can register to open mailto: URLs or a VoIP site to open tel: URLs.",
     "description_html": "The <code>navigator.registerProtocolHandler()</code> method declares a site's ability to handle an address scheme (also known as a protocol). For example, an email site can register to open <code>mailto:</code> URLs or a VoIP site to open <code>tel:</code> URLs.",
+    "kind": "feature",
     "name": "registerProtocolHandler",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26230,7 +29844,9 @@ export const features = {
     }
   },
   "relative-color": {
-    "caniuse": "css-relative-colors",
+    "caniuse": [
+      "css-relative-colors"
+    ],
     "compat_features": [
       "css.types.calc.color_component",
       "css.types.color.color.relative_syntax",
@@ -26244,9 +29860,14 @@ export const features = {
     ],
     "description": "The from keyword for color functions (color(), hsl(), oklch(), etc.) creates a new color based on a given color by modifying the values of the input color. Also known as relative color syntax (RCS).",
     "description_html": "The <code>from</code> keyword for color functions (<code>color()</code>, <code>hsl()</code>, <code>oklch()</code>, etc.) creates a new color based on a given color by modifying the values of the input color. Also known as relative color syntax (RCS).",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Relative colors",
-    "spec": "https://drafts.csswg.org/css-color-5/#relative-colors",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#relative-colors"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -26267,9 +29888,14 @@ export const features = {
     ],
     "description": "The position: relative CSS declaration offsets the position of an element relative to its position in the normal flow.",
     "description_html": "The <code>position: relative</code> CSS declaration offsets the position of an element relative to its position in the normal flow.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Relative positioning",
-    "spec": "https://drafts.csswg.org/css-position-3/#relpos-insets",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#relpos-insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -26286,15 +29912,22 @@ export const features = {
     }
   },
   "rem": {
-    "caniuse": "rem",
+    "caniuse": [
+      "rem"
+    ],
     "compat_features": [
       "css.types.length.rem"
     ],
     "description": "The rem CSS length unit is a font-relative length that is equal to the font size of the root HTML element which for most browsers is 16px.",
     "description_html": "The <code>rem</code> CSS length unit is a font-relative length that is equal to the font size of the root HTML element which for most browsers is <code>16px</code>.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "rem",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -26327,8 +29960,11 @@ export const features = {
     ],
     "description": "The Remote Playback API initiates and controls playback of media on connected remote devices, such as smart TVs with AirPlay or Chromecast capabilities.",
     "description_html": "The Remote Playback API initiates and controls playback of media on connected remote devices, such as smart TVs with AirPlay or Chromecast capabilities.",
+    "kind": "feature",
     "name": "Remote playback",
-    "spec": "https://w3c.github.io/remote-playback/",
+    "spec": [
+      "https://w3c.github.io/remote-playback/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26367,6 +30003,7 @@ export const features = {
     ],
     "description": "The Reporting-Endpoints HTTP header and ReportingObserver() API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
     "description_html": "The <code>Reporting-Endpoints</code> HTTP header and <code>ReportingObserver()</code> API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
+    "kind": "feature",
     "name": "Reporting API",
     "spec": [
       "https://w3c.github.io/reporting/",
@@ -26386,15 +30023,20 @@ export const features = {
     }
   },
   "request-animation-frame": {
-    "caniuse": "requestanimationframe",
+    "caniuse": [
+      "requestanimationframe"
+    ],
     "compat_features": [
       "api.Window.cancelAnimationFrame",
       "api.Window.requestAnimationFrame"
     ],
     "description": "The requestAnimationFrame() method schedules a function that runs before the next repaint. You can use it to animate content with JavaScript.",
     "description_html": "The <code>requestAnimationFrame()</code> method schedules a function that runs before the next repaint. You can use it to animate content with JavaScript.",
+    "kind": "feature",
     "name": "requestAnimationFrame()",
-    "spec": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -26417,9 +30059,14 @@ export const features = {
     ],
     "description": "The requestAnimationFrame() method in workers schedules a function that runs before the next repaint. Together with offscreen canvas, you can animate content from a worker.",
     "description_html": "The <code>requestAnimationFrame()</code> method in workers schedules a function that runs before the next repaint. Together with offscreen canvas, you can animate content from a worker.",
-    "group": "workers",
+    "group": [
+      "workers"
+    ],
+    "kind": "feature",
     "name": "requestAnimationFrame() in workers",
-    "spec": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -26441,9 +30088,14 @@ export const features = {
     ],
     "description": "The requestVideoFrameCallback() method for <video> schedules a function that runs with the next video frame. It is similar to requestAnimationFrame(), but for video.",
     "description_html": "The <code>requestVideoFrameCallback()</code> method for <code>&#x3C;video></code> schedules a function that runs with the next video frame. It is similar to <code>requestAnimationFrame()</code>, but for video.",
-    "group": "media-elements",
+    "group": [
+      "media-elements"
+    ],
+    "kind": "feature",
     "name": "requestVideoFrameCallback()",
-    "spec": "https://wicg.github.io/video-rvfc/",
+    "spec": [
+      "https://wicg.github.io/video-rvfc/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-10-29",
@@ -26464,9 +30116,14 @@ export const features = {
     ],
     "description": "The requestClose() method of a <dialog> HTML element closes the dialog, firing a cancel event first, which listeners can use to prevent the dialog from closing. This differs from the close() method, which only fires the non-cancelable close event.",
     "description_html": "The <code>requestClose()</code> method of a <code>&#x3C;dialog></code> HTML element closes the dialog, firing a <code>cancel</code> event first, which listeners can use to prevent the dialog from closing. This differs from the <code>close()</code> method, which only fires the non-cancelable <code>close</code> event.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "dialog.requestClose()",
-    "spec": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-requestclose",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-requestclose"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-05-27",
@@ -26482,7 +30139,9 @@ export const features = {
     }
   },
   "requestidlecallback": {
-    "caniuse": "requestidlecallback",
+    "caniuse": [
+      "requestidlecallback"
+    ],
     "compat_features": [
       "api.IdleDeadline",
       "api.IdleDeadline.didTimeout",
@@ -26492,8 +30151,11 @@ export const features = {
     ],
     "description": "The requestIdleCallback() API queues a function that runs in idle browser time, either at the end of a frame or when the user is inactive. Also known as the background tasks API.",
     "description_html": "The <code>requestIdleCallback()</code> API queues a function that runs in idle browser time, either at the end of a frame or when the user is inactive. Also known as the background tasks API.",
+    "kind": "feature",
     "name": "requestIdleCallback()",
-    "spec": "https://w3c.github.io/requestidlecallback/",
+    "spec": [
+      "https://w3c.github.io/requestidlecallback/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26518,6 +30180,7 @@ export const features = {
     ],
     "description": "The resize() method of an ArrayBuffer and the grow() method of a SharedArrayBuffer, constructed with the maxByteLength option, changes the size of the buffer in place.",
     "description_html": "The <code>resize()</code> method of an <code>ArrayBuffer</code> and the <code>grow()</code> method of a <code>SharedArrayBuffer</code>, constructed with the <code>maxByteLength</code> option, changes the size of the buffer in place.",
+    "kind": "feature",
     "name": "Resizable buffers",
     "spec": [
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
@@ -26538,7 +30201,9 @@ export const features = {
     }
   },
   "resize": {
-    "caniuse": "css-resize",
+    "caniuse": [
+      "css-resize"
+    ],
     "compat_features": [
       "css.properties.resize",
       "css.properties.resize.block",
@@ -26547,9 +30212,14 @@ export const features = {
     ],
     "description": "The resize CSS property sets whether an element can be resized by the user, and on which axes.",
     "description_html": "The <code>resize</code> CSS property sets whether an element can be resized by the user, and on which axes.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "resize (CSS property)",
-    "spec": "https://drafts.csswg.org/css-ui-4/#resize",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#resize"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26562,7 +30232,9 @@ export const features = {
     }
   },
   "resize-observer": {
-    "caniuse": "resizeobserver",
+    "caniuse": [
+      "resizeobserver"
+    ],
     "compat_features": [
       "api.ResizeObserver",
       "api.ResizeObserver.ResizeObserver",
@@ -26582,8 +30254,11 @@ export const features = {
     ],
     "description": "The ResizeObserver API observes and reacts to changes in the size of DOM elements.",
     "description_html": "The <code>ResizeObserver</code> API observes and reacts to changes in the size of DOM elements.",
+    "kind": "feature",
     "name": "Resize observer",
-    "spec": "https://drafts.csswg.org/resize-observer-1/",
+    "spec": [
+      "https://drafts.csswg.org/resize-observer-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -26600,7 +30275,9 @@ export const features = {
     }
   },
   "resolution": {
-    "caniuse": "css-media-resolution",
+    "caniuse": [
+      "css-media-resolution"
+    ],
     "compat_features": [
       "css.at-rules.media.resolution",
       "css.types.resolution",
@@ -26611,9 +30288,14 @@ export const features = {
     ],
     "description": "The resolution CSS media query sets styles based on the pixel density, or how many pixels a device uses to display a single CSS pixel.",
     "description_html": "The <code>resolution</code> CSS media query sets styles based on the pixel density, or how many pixels a device uses to display a single CSS pixel.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "resolution media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#resolution",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#resolution"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -26637,9 +30319,14 @@ export const features = {
     ],
     "description": "The -webkit-device-pixel-ratio, -webkit-min-device-pixel-ratio, and -webkit-max-device-pixel-ratio CSS media queries are standardized compatibility alternatives to resolution media queries.",
     "description_html": "The <code>-webkit-device-pixel-ratio</code>, <code>-webkit-min-device-pixel-ratio</code>, and <code>-webkit-max-device-pixel-ratio</code> CSS media queries are standardized compatibility alternatives to <code>resolution</code> media queries.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "resolution media query (compatibility prefixes)",
-    "spec": "https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio",
+    "spec": [
+      "https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-04-23",
@@ -26663,7 +30350,10 @@ export const features = {
     ],
     "description": "The decodedBodySize, encodedBodySize, and transferSize properties of the PerformanceResourceTiming API reports the size of resources loaded.",
     "description_html": "The <code>decodedBodySize</code>, <code>encodedBodySize</code>, and <code>transferSize</code> properties of the <code>PerformanceResourceTiming</code> API reports the size of resources loaded.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Resource size",
     "spec": [
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-decodedbodysize",
@@ -26685,7 +30375,9 @@ export const features = {
     }
   },
   "resource-timing": {
-    "caniuse": "resource-timing",
+    "caniuse": [
+      "resource-timing"
+    ],
     "compat_features": [
       "api.Performance.clearResourceTimings",
       "api.Performance.resourcetimingbufferfull_event",
@@ -26715,9 +30407,14 @@ export const features = {
     ],
     "description": "PerformanceResourceTiming entries report when network events happen while loading a resource, such as when connections start and end. You can use this information to measure loading times.",
     "description_html": "<code>PerformanceResourceTiming</code> entries report when network events happen while loading a resource, such as when connections start and end. You can use this information to measure loading times.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Resource timing",
-    "spec": "https://w3c.github.io/resource-timing/",
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-03-19",
@@ -26734,15 +30431,22 @@ export const features = {
     }
   },
   "revert-value": {
-    "caniuse": "css-revert-value",
+    "caniuse": [
+      "css-revert-value"
+    ],
     "compat_features": [
       "css.types.global_keywords.revert"
     ],
     "description": "The revert CSS keyword resets any property to its previous default, provided by either the user or browser stylesheets. For example, setting display: revert on a <div> will likely result in display: block, the browser default style. This is often confused with initial.",
     "description_html": "The <code>revert</code> CSS keyword resets any property to its previous default, provided by either the user or browser stylesheets. For example, setting <code>display: revert</code> on a <code>&#x3C;div></code> will likely result in <code>display: block</code>, the browser default style. This is often confused with <code>initial</code>.",
-    "group": "explicit-defaults",
+    "group": [
+      "explicit-defaults"
+    ],
+    "kind": "feature",
     "name": "revert",
-    "spec": "https://drafts.csswg.org/css-cascade-4/#default",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-4/#default"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-27",
@@ -26764,9 +30468,14 @@ export const features = {
     ],
     "description": "The rex CSS length unit is a font-relative length that is equal to the x-height of the root element.",
     "description_html": "The <code>rex</code> CSS length unit is a font-relative length that is equal to the x-height of the root element.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "rex unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26790,9 +30499,14 @@ export const features = {
     ],
     "description": "The rgb(), rgba(), and hexadecimal (as in #004488ff) notations pick colors using red, green, blue, and alpha (transparency) channels.",
     "description_html": "The <code>rgb()</code>, <code>rgba()</code>, and hexadecimal (as in <code>#004488ff</code>) notations pick colors using red, green, blue, and alpha (transparency) channels.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "RGB",
-    "spec": "https://drafts.csswg.org/css-color-4/#rgb-functions",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#rgb-functions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -26811,9 +30525,14 @@ export const features = {
   "rhythmic-sizing": {
     "description": "The line-height-step CSS property creates consistent vertical rhythm by setting the spacing between body text baselines. It rounds taller lines like headings up to the next multiple of the body text spacing.",
     "description_html": "The <code>line-height-step</code> CSS property creates consistent vertical rhythm by setting the spacing between body text baselines. It rounds taller lines like headings up to the next multiple of the body text spacing.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "Rhythmic sizing",
-    "spec": "https://drafts.csswg.org/css-rhythm-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-rhythm-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -26825,9 +30544,14 @@ export const features = {
     ],
     "description": "The ric CSS length unit, or root international character, is a font-relative length equal to the width of CJK character relative to the root element.",
     "description_html": "The <code>ric</code> CSS length unit, or root international character, is a font-relative length equal to the width of CJK character relative to the root element.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "ric unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -26845,9 +30569,14 @@ export const features = {
     ],
     "description": "The rlh CSS length unit is a font-relative length relative to the line height of root element.",
     "description_html": "The <code>rlh</code> CSS length unit is a font-relative length relative to the line height of root element.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "rlh unit",
-    "spec": "https://drafts.csswg.org/css-values-4/#font-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -26868,9 +30597,14 @@ export const features = {
     ],
     "description": "The :root pseudo-class matches the root element of the document, usually the <html> element.",
     "description_html": "The <code>:root</code> pseudo-class matches the root element of the document, usually the <code>&#x3C;html></code> element.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":root",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-root-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-root-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -26894,9 +30628,14 @@ export const features = {
     ],
     "description": "The round(), mod(), and rem() CSS functions compute rounded values and the remainder after division.",
     "description_html": "The <code>round()</code>, <code>mod()</code>, and <code>rem()</code> CSS functions compute rounded values and the remainder after division.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "round(), mod(), and rem()",
-    "spec": "https://drafts.csswg.org/css-values-4/#round-func",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#round-func"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-17",
@@ -26912,7 +30651,9 @@ export const features = {
     }
   },
   "ruby": {
-    "caniuse": "ruby",
+    "caniuse": [
+      "ruby"
+    ],
     "compat_features": [
       "html.elements.rp",
       "html.elements.rt",
@@ -26924,6 +30665,7 @@ export const features = {
       "html",
       "ruby"
     ],
+    "kind": "feature",
     "name": "<ruby>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element",
@@ -26955,9 +30697,14 @@ export const features = {
     ],
     "description": "The ruby-align CSS property sets the spacing and alignment of ruby annotation text when it does not fill its available space.",
     "description_html": "The <code>ruby-align</code> CSS property sets the spacing and alignment of ruby annotation text when it does not fill its available space.",
-    "group": "ruby",
+    "group": [
+      "ruby"
+    ],
+    "kind": "feature",
     "name": "ruby-align",
-    "spec": "https://drafts.csswg.org/css-ruby-1/#ruby-align-property",
+    "spec": [
+      "https://drafts.csswg.org/css-ruby-1/#ruby-align-property"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -26980,9 +30727,14 @@ export const features = {
     ],
     "description": "The ruby-overhang CSS property sets whether ruby annotations may overlap adjacent text.",
     "description_html": "The <code>ruby-overhang</code> CSS property sets whether ruby annotations may overlap adjacent text.",
-    "group": "ruby",
+    "group": [
+      "ruby"
+    ],
+    "kind": "feature",
     "name": "ruby-overhang",
-    "spec": "https://drafts.csswg.org/css-ruby-1/#ruby-overhang",
+    "spec": [
+      "https://drafts.csswg.org/css-ruby-1/#ruby-overhang"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27000,9 +30752,14 @@ export const features = {
     ],
     "description": "The ruby-position CSS property sets the position of a ruby annotation in relation to its base text. Annotations can display over, under, or interleaved with the base text.",
     "description_html": "The <code>ruby-position</code> CSS property sets the position of a ruby annotation in relation to its base text. Annotations can display over, under, or interleaved with the base text.",
-    "group": "ruby",
+    "group": [
+      "ruby"
+    ],
+    "kind": "feature",
     "name": "ruby-position",
-    "spec": "https://drafts.csswg.org/css-ruby-1/#rubypos",
+    "spec": [
+      "https://drafts.csswg.org/css-ruby-1/#rubypos"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -27023,9 +30780,14 @@ export const features = {
     ],
     "description": "The <s> HTML element indicates text that is no longer relevant or accurate, styling text as strikethrough by default.",
     "description_html": "The <code>&#x3C;s></code> HTML element indicates text that is no longer relevant or accurate, styling text as strikethrough by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<s>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27042,7 +30804,9 @@ export const features = {
     }
   },
   "safe-area-inset": {
-    "caniuse": "css-env-function",
+    "caniuse": [
+      "css-env-function"
+    ],
     "compat_features": [
       "css.types.env",
       "css.types.env.safe-area-inset-bottom",
@@ -27052,9 +30816,14 @@ export const features = {
     ],
     "description": "The safe-area-inset- CSS environment variables represent a rectangle that cannot cut off content within a non-rectangular screen. For example, top:\\ env(safe-area-inset-top); positions the top of an element below the notch on an iPhone.",
     "description_html": "The <code>safe-area-inset-</code> CSS environment variables represent a rectangle that cannot cut off content within a non-rectangular screen. For example, <code>top:\\ env(safe-area-inset-top);</code> positions the top of an element below the notch on an iPhone.",
-    "group": "environment-variables",
+    "group": [
+      "environment-variables"
+    ],
+    "kind": "feature",
     "name": "Safe area inset environment variables",
-    "spec": "https://drafts.csswg.org/css-env-1/#safe-area-insets",
+    "spec": [
+      "https://drafts.csswg.org/css-env-1/#safe-area-insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -27076,9 +30845,14 @@ export const features = {
     ],
     "description": "The <samp> element represents a sample or quoted output from a computer program. Styled in a monospace font by default.",
     "description_html": "The <code>&#x3C;samp></code> element represents a sample or quoted output from a computer program. Styled in a monospace font by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<samp>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27113,8 +30887,11 @@ export const features = {
     ],
     "description": "The Document.parseHTML() static method and the setHTML() method of Element and ShadowRoot objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The Sanitizer API can customize the sanitization process.",
     "description_html": "The <code>Document.parseHTML()</code> static method and the <code>setHTML()</code> method of <code>Element</code> and <code>ShadowRoot</code> objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The <code>Sanitizer</code> API can customize the sanitization process.",
+    "kind": "feature",
     "name": "Sanitizer API",
-    "spec": "https://wicg.github.io/sanitizer-api/",
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -27127,8 +30904,11 @@ export const features = {
     ],
     "description": "Browsers send the Save-Data HTTP request header when the user turns on a data-saving mode. It is a hint to reduce data sent to the browser. Servers should respond with alternative content, such as smaller images and videos, or different markup and styling.",
     "description_html": "Browsers send the <code>Save-Data</code> HTTP request header when the user turns on a data-saving mode. It is a hint to reduce data sent to the browser. Servers should respond with alternative content, such as smaller images and videos, or different markup and styling.",
+    "kind": "feature",
     "name": "Save-Data",
-    "spec": "https://wicg.github.io/savedata/",
+    "spec": [
+      "https://wicg.github.io/savedata/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27157,8 +30937,11 @@ export const features = {
     ],
     "description": "The scheduler API provides a way to prioritize all tasks belonging to an application.",
     "description_html": "The <code>scheduler</code> API provides a way to prioritize all tasks belonging to an application.",
+    "kind": "feature",
     "name": "Scheduler API",
-    "spec": "https://wicg.github.io/scheduling-apis/",
+    "spec": [
+      "https://wicg.github.io/scheduling-apis/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27171,7 +30954,9 @@ export const features = {
     }
   },
   "scope": {
-    "caniuse": "css-cascade-scope",
+    "caniuse": [
+      "css-cascade-scope"
+    ],
     "compat_features": [
       "api.CSSScopeRule",
       "api.CSSScopeRule.end",
@@ -27180,9 +30965,14 @@ export const features = {
     ],
     "description": "The @scope CSS at-rule sets the scope for a group of rules.",
     "description_html": "The <code>@scope</code> CSS at-rule sets the scope for a group of rules.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@scope",
-    "spec": "https://drafts.csswg.org/css-cascade-6/#scope-atrule",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27201,9 +30991,14 @@ export const features = {
     ],
     "description": "The :scope CSS pseudo-class matches the scoping root, for instance the element that querySelector() is called on, or the root of a DOM subtree specified with @scope.",
     "description_html": "The <code>:scope</code> CSS pseudo-class matches the scoping root, for instance the element that <code>querySelector()</code> is called on, or the root of a DOM subtree specified with <code>@scope</code>.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":scope (pseudo-class)",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-scope-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-scope-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -27230,7 +31025,10 @@ export const features = {
     ],
     "description": "The CustomElementRegistry() constructor creates a new custom element registry that's separate from the global window.customElements registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
     "description_html": "The <code>CustomElementRegistry()</code> constructor creates a new custom element registry that's separate from the global <code>window.customElements</code> registry. Creating more than one registry is useful for multiple custom elements that have the same tag name to coexist.",
-    "group": "custom-elements",
+    "group": [
+      "custom-elements"
+    ],
+    "kind": "feature",
     "name": "Scoped custom element registries",
     "spec": [
       "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
@@ -27238,7 +31036,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "26",
+        "safari_ios": "26"
+      }
     }
   },
   "screen": {
@@ -27253,8 +31054,11 @@ export const features = {
     ],
     "description": "The window.screen property contains information about the screen of the output device that the referenced window is being rendered on.",
     "description_html": "The <code>window.screen</code> property contains information about the screen of the output device that the referenced <code>window</code> is being rendered on.",
+    "kind": "feature",
     "name": "Screen",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#screen",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#screen"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27290,8 +31094,11 @@ export const features = {
     ],
     "description": "The navigator.mediaDevices.getDisplayMedia() method asks the user to choose a screen or portion of a screen (such as a window) to capture as a media stream.",
     "description_html": "The <code>navigator.mediaDevices.getDisplayMedia()</code> method asks the user to choose a screen or portion of a screen (such as a window) to capture as a media stream.",
+    "kind": "feature",
     "name": "Screen capture",
-    "spec": "https://w3c.github.io/mediacapture-screen-share/",
+    "spec": [
+      "https://w3c.github.io/mediacapture-screen-share/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27303,7 +31110,9 @@ export const features = {
     }
   },
   "screen-orientation": {
-    "caniuse": "screen-orientation",
+    "caniuse": [
+      "screen-orientation"
+    ],
     "compat_features": [
       "api.Screen.orientation",
       "api.ScreenOrientation",
@@ -27313,8 +31122,11 @@ export const features = {
     ],
     "description": "The screen.orientation API gets information about the orientation of the viewport, such as landscape or portrait. With this API, you can adapt an application's layout or behavior in response to changes in orientation.",
     "description_html": "The <code>screen.orientation</code> API gets information about the orientation of the viewport, such as landscape or portrait. With this API, you can adapt an application's layout or behavior in response to changes in orientation.",
+    "kind": "feature",
     "name": "Screen orientation",
-    "spec": "https://w3c.github.io/screen-orientation/",
+    "spec": [
+      "https://w3c.github.io/screen-orientation/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -27336,8 +31148,11 @@ export const features = {
     ],
     "description": "The screen.orientation.lock() method prevents changes to the screen orientation, typically in fullscreen applications such as games. For example, while locked, rotating a phone to the side won't change the screen orientation from landscape to portrait.",
     "description_html": "The <code>screen.orientation.lock()</code> method prevents changes to the screen orientation, typically in fullscreen applications such as games. For example, while locked, rotating a phone to the side won't change the screen orientation from landscape to portrait.",
+    "kind": "feature",
     "name": "Screen orientation lock",
-    "spec": "https://w3c.github.io/screen-orientation/#lock-method",
+    "spec": [
+      "https://w3c.github.io/screen-orientation/#lock-method"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27346,7 +31161,9 @@ export const features = {
     }
   },
   "screen-wake-lock": {
-    "caniuse": "wake-lock",
+    "caniuse": [
+      "wake-lock"
+    ],
     "compat_features": [
       "api.Navigator.wakeLock",
       "api.Permissions.permission_screen-wake-lock",
@@ -27362,8 +31179,11 @@ export const features = {
     ],
     "description": "The navigator.wakeLock.request(\"screen\") API prevents the device's screen from dimming or being turned off.",
     "description_html": "The <code>navigator.wakeLock.request(\"screen\")</code> API prevents the device's screen from dimming or being turned off.",
+    "kind": "feature",
     "name": "Screen wake lock",
-    "spec": "https://w3c.github.io/screen-wake-lock/",
+    "spec": [
+      "https://w3c.github.io/screen-wake-lock/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-03-31",
@@ -27400,9 +31220,14 @@ export const features = {
     ],
     "description": "The <script> element contains or loads data or executable code. This is typically used to load JavaScript code. The <noscript> element represents alternative content to show when scripting is not allowed.",
     "description_html": "The <code>&#x3C;script></code> element contains or loads data or executable code. This is typically used to load JavaScript code. The <code>&#x3C;noscript></code> element represents alternative content to show when scripting is not allowed.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<script> and <noscript>",
-    "spec": "https://html.spec.whatwg.org/multipage/scripting.html#script",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#script"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27424,9 +31249,14 @@ export const features = {
     ],
     "description": "The scripting CSS media query sets styles based on whether scripting such as JavaScript is available. Values are enabled if scripting is available, initial-only if scripting is only available on page load (for example, printed content), or none.",
     "description_html": "The <code>scripting</code> CSS media query sets styles based on whether scripting such as JavaScript is available. Values are <code>enabled</code> if scripting is available, <code>initial-only</code> if scripting is only available on page load (for example, printed content), or <code>none</code>.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "scripting media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#scripting",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#scripting"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -27442,7 +31272,9 @@ export const features = {
     }
   },
   "scroll-behavior": {
-    "caniuse": "css-scroll-behavior",
+    "caniuse": [
+      "css-scroll-behavior"
+    ],
     "compat_features": [
       "css.properties.scroll-behavior",
       "css.properties.scroll-behavior.auto",
@@ -27450,9 +31282,14 @@ export const features = {
     ],
     "description": "The scroll-behavior CSS property controls whether scrolling is smooth or snaps, for scroll actions not performed by the user such as those triggered by navigation.",
     "description_html": "The <code>scroll-behavior</code> CSS property controls whether scrolling is smooth or snaps, for scroll actions not performed by the user such as those triggered by navigation.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scroll-behavior",
-    "spec": "https://drafts.csswg.org/css-overflow-3/#smooth-scrolling",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-3/#smooth-scrolling"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -27485,9 +31322,14 @@ export const features = {
     ],
     "description": "The ::scroll-button(<dir>) CSS pseudo-element is a focusable button which scrolls its originating scroll container element in the specified direction.",
     "description_html": "The <code>::scroll-button(&#x3C;dir>)</code> CSS pseudo-element is a focusable button which scrolls its originating scroll container element in the specified direction.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "::scroll-button",
-    "spec": "https://drafts.csswg.org/css-overflow-5/#scroll-buttons",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-buttons"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -27539,19 +31381,26 @@ export const features = {
       "scrolling",
       "animation"
     ],
+    "kind": "feature",
     "name": "Scroll-driven animations",
-    "spec": "https://drafts.csswg.org/scroll-animations-1/",
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
-        "edge": "115"
+        "edge": "115",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
   "scroll-elements": {
-    "caniuse": "element-scroll-methods",
+    "caniuse": [
+      "element-scroll-methods"
+    ],
     "compat_features": [
       "api.Document.scroll_event",
       "api.Document.scrollingElement",
@@ -27591,8 +31440,11 @@ export const features = {
     ],
     "description": "The scroll() and scrollBy() methods change the scroll position of overflow content within an element. Similar to setting scrollTop and scrollLeft properties, but with options setting whether the scroll should animate smoothly or jump. Note that scrollTo() is an alias for scroll().",
     "description_html": "The <code>scroll()</code> and <code>scrollBy()</code> methods change the scroll position of overflow content within an element. Similar to setting <code>scrollTop</code> and <code>scrollLeft</code> properties, but with options setting whether the scroll should animate smoothly or jump. Note that <code>scrollTo()</code> is an alias for <code>scroll()</code>.",
+    "kind": "feature",
     "name": "Scroll methods on elements",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-element-scroll",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-element-scroll"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -27616,8 +31468,11 @@ export const features = {
     ],
     "description": "The scroll-initial-target: nearest CSS declaration sets the initial scroll position of its scroll container to the top of the element, much like scrolling to a URL fragment.",
     "description_html": "The <code>scroll-initial-target: nearest</code> CSS declaration sets the initial scroll position of its scroll container to the top of the element, much like scrolling to a URL fragment.",
+    "kind": "feature",
     "name": "scroll-initial-target",
-    "spec": "https://drafts.csswg.org/css-scroll-snap-2/#properties-on-the-scroll-container",
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-snap-2/#properties-on-the-scroll-container"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27628,7 +31483,9 @@ export const features = {
     }
   },
   "scroll-into-view": {
-    "caniuse": "scrollintoview",
+    "caniuse": [
+      "scrollintoview"
+    ],
     "compat_features": [
       "api.Element.scrollIntoView",
       "api.Element.scrollIntoView.options_container_parameter",
@@ -27636,9 +31493,14 @@ export const features = {
     ],
     "description": "The scrollIntoView() method scrolls an element's ancestor containers such that the element is visible to the user.",
     "description_html": "The <code>scrollIntoView()</code> method scrolls an element's ancestor containers such that the element is visible to the user.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scrollIntoView()",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -27665,9 +31527,14 @@ export const features = {
     ],
     "description": "A scroll container can be navigated by activating ::scroll-marker pseudo-elements which appear in a generated ::scroll-marker-group pseudo-element, either before or after the scroll container.",
     "description_html": "A scroll container can be navigated by activating <code>::scroll-marker</code> pseudo-elements which appear in a generated <code>::scroll-marker-group</code> pseudo-element, either before or after the scroll container.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "Scroll markers",
-    "spec": "https://drafts.csswg.org/css-overflow-5/#scroll-markers",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-markers"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27677,7 +31544,9 @@ export const features = {
     }
   },
   "scroll-snap": {
-    "caniuse": "css-snappoints",
+    "caniuse": [
+      "css-snappoints"
+    ],
     "compat_features": [
       "css.properties.scroll-margin",
       "css.properties.scroll-margin-block",
@@ -27726,9 +31595,14 @@ export const features = {
     ],
     "description": "CSS scroll snap controls the panning and scrolling behavior within a scroll container.",
     "description_html": "CSS scroll snap controls the panning and scrolling behavior within a scroll container.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "Scroll snap",
-    "spec": "https://drafts.csswg.org/css-scroll-snap-2/",
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-snap-2/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -27759,9 +31633,14 @@ export const features = {
     ],
     "description": "The scrollsnapchanging and scrollsnapchange events fire when a scroll gesture changes the selected scroll snap target.",
     "description_html": "The <code>scrollsnapchanging</code> and <code>scrollsnapchange</code> events fire when a scroll gesture changes the selected scroll snap target.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "Scroll snap events",
-    "spec": "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging",
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchange-and-scrollsnapchanging"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27772,7 +31651,9 @@ export const features = {
     }
   },
   "scroll-to-text-fragment": {
-    "caniuse": "url-scroll-to-text-fragment",
+    "caniuse": [
+      "url-scroll-to-text-fragment"
+    ],
     "compat_features": [
       "api.Document.fragmentDirective",
       "api.FragmentDirective",
@@ -27784,8 +31665,11 @@ export const features = {
       "text-fragments",
       "scrolling"
     ],
+    "kind": "feature",
     "name": "Scroll to text fragment",
-    "spec": "https://wicg.github.io/scroll-to-text-fragment/",
+    "spec": [
+      "https://wicg.github.io/scroll-to-text-fragment/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-10-01",
@@ -27807,9 +31691,14 @@ export const features = {
     ],
     "description": "The scrollbar-color CSS property sets the color of the scrollbar track and thumb.",
     "description_html": "The <code>scrollbar-color</code> CSS property sets the color of the scrollbar track and thumb.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scrollbar-color",
-    "spec": "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color",
+    "spec": [
+      "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27829,9 +31718,14 @@ export const features = {
     ],
     "description": "The scrollbar-gutter CSS property reserves space for the scrollbar, preventing unwanted layout changes as the scrollbar appears and disappears.",
     "description_html": "The <code>scrollbar-gutter</code> CSS property reserves space for the scrollbar, preventing unwanted layout changes as the scrollbar appears and disappears.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scrollbar-gutter",
-    "spec": "https://drafts.csswg.org/css-overflow-3/#scrollbar-gutter-property",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-3/#scrollbar-gutter-property"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -27855,9 +31749,14 @@ export const features = {
     ],
     "description": "The scrollbar-width CSS property sets the width of the scrollbar.",
     "description_html": "The <code>scrollbar-width</code> CSS property sets the width of the scrollbar.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scrollbar-width",
-    "spec": "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-width",
+    "spec": [
+      "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-width"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -27879,9 +31778,14 @@ export const features = {
     ],
     "description": "The scrollend event fires when an element or document has finished scrolling.",
     "description_html": "The <code>scrollend</code> event fires when an element or document has finished scrolling.",
-    "group": "scrolling",
+    "group": [
+      "scrolling"
+    ],
+    "kind": "feature",
     "name": "scrollend",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -27899,9 +31803,14 @@ export const features = {
     ],
     "description": "The <search> HTML element is a container that represents the parts of the web page with search functionality.",
     "description_html": "The <code>&#x3C;search></code> HTML element is a container that represents the parts of the web page with search functionality.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<search>",
-    "spec": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -27917,15 +31826,22 @@ export const features = {
     }
   },
   "search-input-type": {
-    "caniuse": "input-search",
+    "caniuse": [
+      "input-search"
+    ],
     "compat_features": [
       "html.elements.input.type_search"
     ],
     "description": "The <input type=\"search\"> HTML element represents a text field for search queries.",
     "description_html": "The <code>&#x3C;input type=\"search\"></code> HTML element represents a text field for search queries.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "<input type=\"search\">",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search)",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#text-(type=text)-state-and-search-state-(type=search)"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27947,9 +31863,14 @@ export const features = {
     ],
     "description": "The <section> element is a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.",
     "description_html": "The <code>&#x3C;section></code> element is a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<section>",
-    "spec": "https://html.spec.whatwg.org/multipage/sections.html#the-section-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#the-section-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -27972,9 +31893,14 @@ export const features = {
     ],
     "description": "The payment extension of a web authentication credential allows a relying party (such as a bank) to create a credential that can be queried by any merchant origin as part of an online checkout that uses the Payment Request API's secure-payment-confirmation payment method. Also known as SPC.",
     "description_html": "The <code>payment</code> extension of a web authentication credential allows a relying party (such as a bank) to create a credential that can be queried by any merchant origin as part of an online checkout that uses the Payment Request API's <code>secure-payment-confirmation</code> payment method. Also known as SPC.",
-    "group": "payments",
+    "group": [
+      "payments"
+    ],
+    "kind": "feature",
     "name": "Secure payment confirmation",
-    "spec": "https://w3c.github.io/secure-payment-confirmation/",
+    "spec": [
+      "https://w3c.github.io/secure-payment-confirmation/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28042,6 +31968,7 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<select>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
@@ -28064,7 +31991,9 @@ export const features = {
     }
   },
   "selection": {
-    "caniuse": "css-selection",
+    "caniuse": [
+      "css-selection"
+    ],
     "compat_features": [
       "css.selectors.selection"
     ],
@@ -28074,8 +32003,11 @@ export const features = {
       "selectors",
       "selection"
     ],
+    "kind": "feature",
     "name": "::selection",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#selectordef-selection"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28089,7 +32021,9 @@ export const features = {
     }
   },
   "selection-api": {
-    "caniuse": "selection-api",
+    "caniuse": [
+      "selection-api"
+    ],
     "compat_features": [
       "api.AbstractRange",
       "api.AbstractRange.collapsed",
@@ -28172,9 +32106,14 @@ export const features = {
     ],
     "description": "The Selection API controls and modifies user text selections within the page.",
     "description_html": "The Selection API controls and modifies user text selections within the page.",
-    "group": "selection",
+    "group": [
+      "selection"
+    ],
+    "kind": "feature",
     "name": "Selection",
-    "spec": "https://w3c.github.io/selection-api/",
+    "spec": [
+      "https://w3c.github.io/selection-api/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-07",
@@ -28191,7 +32130,9 @@ export const features = {
     }
   },
   "selectors": {
-    "caniuse": "css-sel2",
+    "caniuse": [
+      "css-sel2"
+    ],
     "compat_features": [
       "css.selectors.attribute",
       "css.selectors.child",
@@ -28208,9 +32149,14 @@ export const features = {
     ],
     "description": "CSS selectors match elements based on their type, attributes, and relationship to other elements. They define the specific elements to which a block of styles will be applied. This feature represents the oldest selectors of CSS.",
     "description_html": "CSS selectors match elements based on their type, attributes, and relationship to other elements. They define the specific elements to which a block of styles will be applied. This feature represents the oldest selectors of CSS.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Selectors (core)",
-    "spec": "https://drafts.csswg.org/selectors-4/",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -28255,8 +32201,11 @@ export const features = {
     ],
     "description": "The navigator.serial API communicates with devices over serial ports, such as microcontrollers.",
     "description_html": "The <code>navigator.serial</code> API communicates with devices over serial ports, such as microcontrollers.",
+    "kind": "feature",
     "name": "Web serial",
-    "spec": "https://wicg.github.io/serial/",
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28278,8 +32227,11 @@ export const features = {
     ],
     "description": "The DOMException, Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError, and URIError objects are serializable. You can call structuredClone() on an error object or pass it to a worker using postMessage().",
     "description_html": "The <code>DOMException</code>, <code>Error</code>, <code>EvalError</code>, <code>RangeError</code>, <code>ReferenceError</code>, <code>SyntaxError</code>, <code>TypeError</code>, and <code>URIError</code> objects are serializable. You can call <code>structuredClone()</code> on an error object or pass it to a worker using <code>postMessage()</code>.",
+    "kind": "feature",
     "name": "Serializable errors",
-    "spec": "https://webidl.spec.whatwg.org/#idl-DOMException",
+    "spec": [
+      "https://webidl.spec.whatwg.org/#idl-DOMException"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28292,7 +32244,9 @@ export const features = {
     }
   },
   "server-sent-events": {
-    "caniuse": "eventsource",
+    "caniuse": [
+      "eventsource"
+    ],
     "compat_features": [
       "api.EventSource",
       "api.EventSource.EventSource",
@@ -28308,9 +32262,14 @@ export const features = {
     ],
     "description": "The EventSource API creates a connection to a server and listens to a stream of events sent by the server.",
     "description_html": "The <code>EventSource</code> API creates a connection to a server and listens to a stream of events sent by the server.",
-    "group": "messaging",
+    "group": [
+      "messaging"
+    ],
+    "kind": "feature",
     "name": "Server-sent events",
-    "spec": "https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/server-sent-events.html#server-sent-events"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -28327,7 +32286,9 @@ export const features = {
     }
   },
   "server-timing": {
-    "caniuse": "server-timing",
+    "caniuse": [
+      "server-timing"
+    ],
     "compat_features": [
       "api.PerformanceResourceTiming.serverTiming",
       "api.PerformanceServerTiming",
@@ -28340,9 +32301,14 @@ export const features = {
     ],
     "description": "The serverTiming property of the PerformanceResourceTiming API contains server timing information about network requests.",
     "description_html": "The <code>serverTiming</code> property of the <code>PerformanceResourceTiming</code> API contains server timing information about network requests.",
-    "group": "performance",
+    "group": [
+      "performance"
+    ],
+    "kind": "feature",
     "name": "Server timing",
-    "spec": "https://w3c.github.io/server-timing/",
+    "spec": [
+      "https://w3c.github.io/server-timing/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -28358,7 +32324,9 @@ export const features = {
     }
   },
   "service-workers": {
-    "caniuse": "serviceworkers",
+    "caniuse": [
+      "serviceworkers"
+    ],
     "compat_features": [
       "api.Cache",
       "api.Cache.add",
@@ -28466,9 +32434,14 @@ export const features = {
     ],
     "description": "The service worker of a website is a script that runs in its own thread and which acts as local proxy that intercepts network requests from the website. Use a service worker to implement advanced caching strategies, offline support, background tasks, or push notification support on your website.",
     "description_html": "The service worker of a website is a script that runs in its own thread and which acts as local proxy that intercepts network requests from the website. Use a service worker to implement advanced caching strategies, offline support, background tasks, or push notification support on your website.",
-    "group": "workers",
+    "group": [
+      "workers"
+    ],
+    "kind": "feature",
     "name": "Service workers",
-    "spec": "https://w3c.github.io/ServiceWorker/",
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-30",
@@ -28505,10 +32478,17 @@ export const features = {
     ],
     "description": "Set objects store unique values of any type.",
     "description_html": "Set objects store unique values of any type.",
-    "group": "sets",
+    "group": [
+      "sets"
+    ],
+    "kind": "feature",
     "name": "Set (initial support)",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -28536,9 +32516,14 @@ export const features = {
     ],
     "description": "The difference(), intersection(), isDisjointFrom(), isSubsetOf(), isSupersetOf(), symmetricDifference(), and union() methods of the JavaScript Set object performs operations between two sets.",
     "description_html": "The <code>difference()</code>, <code>intersection()</code>, <code>isDisjointFrom()</code>, <code>isSubsetOf()</code>, <code>isSupersetOf()</code>, <code>symmetricDifference()</code>, and <code>union()</code> methods of the JavaScript <code>Set</code> object performs operations between two sets.",
-    "group": "sets",
+    "group": [
+      "sets"
+    ],
+    "kind": "feature",
     "name": "Set methods",
-    "spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-06-11",
@@ -28562,8 +32547,11 @@ export const features = {
     ],
     "description": "The setInterval() global function repeatedly executes provided code on a given delay, and the accompanying clearInterval() cancels the interval.",
     "description_html": "The <code>setInterval()</code> global function repeatedly executes provided code on a given delay, and the accompanying <code>clearInterval()</code> cancels the interval.",
+    "kind": "feature",
     "name": "setInterval",
-    "spec": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -28588,8 +32576,11 @@ export const features = {
     ],
     "description": "The setTimeout() global function executes provided code after a given duration of time, and the accompanying clearTimeout() cancels the timer.",
     "description_html": "The <code>setTimeout()</code> global function executes provided code after a given duration of time, and the accompanying <code>clearTimeout()</code> cancels the timer.",
+    "kind": "feature",
     "name": "setTimeout()",
-    "spec": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -28606,7 +32597,9 @@ export const features = {
     }
   },
   "shadow-dom": {
-    "caniuse": "shadowdomv1",
+    "caniuse": [
+      "shadowdomv1"
+    ],
     "compat_features": [
       "api.Element.attachShadow",
       "api.Element.attachShadow.options_clonable_parameter",
@@ -28630,8 +32623,11 @@ export const features = {
       "dom",
       "web-components"
     ],
+    "kind": "feature",
     "name": "Shadow DOM",
-    "spec": "https://dom.spec.whatwg.org/#shadow-trees",
+    "spec": [
+      "https://dom.spec.whatwg.org/#shadow-trees"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -28660,8 +32656,11 @@ export const features = {
       "selectors",
       "web-components"
     ],
+    "kind": "feature",
     "name": "Shadow parts",
-    "spec": "https://drafts.csswg.org/css-shadow-parts-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-shadow-parts-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -28693,9 +32692,14 @@ export const features = {
     ],
     "description": "The shape-outside CSS property, along with shape-margin and shape-image-threshold, sets the shape around which adjacent content will wrap.",
     "description_html": "The <code>shape-outside</code> CSS property, along with <code>shape-margin</code> and <code>shape-image-threshold</code>, sets the shape around which adjacent content will wrap.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "shape-outside",
-    "spec": "https://drafts.csswg.org/css-shapes-1/#declaring-shapes",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#declaring-shapes"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -28712,7 +32716,9 @@ export const features = {
     }
   },
   "shapes": {
-    "caniuse": "css-shapes",
+    "caniuse": [
+      "css-shapes"
+    ],
     "compat_features": [
       "css.types.basic-shape",
       "css.types.basic-shape.animation",
@@ -28726,9 +32732,14 @@ export const features = {
     ],
     "description": "The circle(), ellipse(), inset(), polygon(), rect(), and xywh() CSS shape functions create shapes for use with clip-path and shape-outside.",
     "description_html": "The <code>circle()</code>, <code>ellipse()</code>, <code>inset()</code>, <code>polygon()</code>, <code>rect()</code>, and <code>xywh()</code> CSS shape functions create shapes for use with <code>clip-path</code> and <code>shape-outside</code>.",
-    "group": "clipping-shapes-masking",
+    "group": [
+      "clipping-shapes-masking"
+    ],
+    "kind": "feature",
     "name": "shapes",
-    "spec": "https://drafts.csswg.org/css-shapes-1/#basic-shape-functions",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#basic-shape-functions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -28757,8 +32768,11 @@ export const features = {
     ],
     "description": "The navigator.share() method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
     "description_html": "The <code>navigator.share()</code> method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
+    "kind": "feature",
     "name": "navigator.share()",
-    "spec": "https://w3c.github.io/web-share/",
+    "spec": [
+      "https://w3c.github.io/web-share/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28772,7 +32786,9 @@ export const features = {
     }
   },
   "shared-memory": {
-    "caniuse": "sharedarraybuffer",
+    "caniuse": [
+      "sharedarraybuffer"
+    ],
     "compat_features": [
       "javascript.builtins.Atomics",
       "javascript.builtins.Atomics.Atomic_operations_on_non_shared_buffers",
@@ -28797,7 +32813,10 @@ export const features = {
     ],
     "description": "The SharedArrayBuffer object represents bytes shared between multiple workers and the main thread. The Atomics object safely accesses SharedArrayBuffer data to make sure predictable values are read and written and that operations are not interrupted.",
     "description_html": "The <code>SharedArrayBuffer</code> object represents bytes shared between multiple workers and the main thread. The <code>Atomics</code> object safely accesses <code>SharedArrayBuffer</code> data to make sure predictable values are read and written and that operations are not interrupted.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "SharedArrayBuffer and Atomics",
     "spec": [
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects",
@@ -28846,8 +32865,11 @@ export const features = {
       "storage",
       "worklets"
     ],
+    "kind": "feature",
     "name": "Shared storage",
-    "spec": "https://wicg.github.io/shared-storage/",
+    "spec": [
+      "https://wicg.github.io/shared-storage/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28872,8 +32894,11 @@ export const features = {
     ],
     "description": "The withLock option to set(), append(), delete(), clear(), and batchUpdate() methods of the sharedStorage API prevents duplicate reporting from cross-site race conditions.",
     "description_html": "The <code>withLock</code> option to <code>set()</code>, <code>append()</code>, <code>delete()</code>, <code>clear()</code>, and <code>batchUpdate()</code> methods of the <code>sharedStorage</code> API prevents duplicate reporting from cross-site race conditions.",
+    "kind": "feature",
     "name": "Shared storage locks",
-    "spec": "https://wicg.github.io/shared-storage/#web-locks-integration",
+    "spec": [
+      "https://wicg.github.io/shared-storage/#web-locks-integration"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28884,7 +32909,9 @@ export const features = {
     }
   },
   "shared-workers": {
-    "caniuse": "sharedworkers",
+    "caniuse": [
+      "sharedworkers"
+    ],
     "compat_features": [
       "api.SharedWorker",
       "api.SharedWorker.SharedWorker",
@@ -28899,9 +32926,14 @@ export const features = {
     ],
     "description": "The SharedWorker() constructor runs a script in its own thread, which can send and receive messages with other scripts running at the same origin.",
     "description_html": "The <code>SharedWorker()</code> constructor runs a script in its own thread, which can send and receive messages with other scripts running at the same origin.",
-    "group": "workers",
+    "group": [
+      "workers"
+    ],
+    "kind": "feature",
     "name": "Shared worker",
-    "spec": "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28924,9 +32956,14 @@ export const features = {
     ],
     "description": "The showPicker() method for <input> elements shows the user interface for picking a value. For example, for <input type=\"date\"> it shows the interface for picking a date.",
     "description_html": "The <code>showPicker()</code> method for <code>&#x3C;input></code> elements shows the user interface for picking a value. For example, for <code>&#x3C;input type=\"date\"></code> it shows the interface for picking a date.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "showPicker() for <input>",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#dom-input-showpicker",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#dom-input-showpicker"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28945,9 +32982,14 @@ export const features = {
     ],
     "description": "The showPicker() method for <select> elements shows the dropdown menu or other user interface for picking one of the options.",
     "description_html": "The <code>showPicker()</code> method for <code>&#x3C;select></code> elements shows the dropdown menu or other user interface for picking one of the options.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "showPicker() for <select>",
-    "spec": "https://html.spec.whatwg.org/multipage/input.html#dom-select-showpicker",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#dom-select-showpicker"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28966,9 +33008,14 @@ export const features = {
     ],
     "description": "The sibling-count() and sibling-index() CSS functions return integers that are useful to style elements based on their positions among siblings or on the number of siblings, for example as part of a calc() expression.",
     "description_html": "The <code>sibling-count()</code> and <code>sibling-index()</code> CSS functions return integers that are useful to style elements based on their positions among siblings or on the number of siblings, for example as part of a <code>calc()</code> expression.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "sibling-count() and sibling-index()",
-    "spec": "https://drafts.csswg.org/css-values-5/#tree-counting",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#tree-counting"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -28979,32 +33026,11 @@ export const features = {
     }
   },
   "single-color-gradients": {
-    "compat_features": [
-      "css.types.gradient.conic-gradient.single_color_stop",
-      "css.types.gradient.linear-gradient.single_color_stop",
-      "css.types.gradient.radial-gradient.single_color_stop",
-      "css.types.gradient.repeating-conic-gradient.single_color_stop",
-      "css.types.gradient.repeating-linear-gradient.single_color_stop",
-      "css.types.gradient.repeating-radial-gradient.single_color_stop"
-    ],
-    "description": "A single color stop can be provided to the linear-gradient(), radial-gradient(), and conic-gradient() CSS functions, and their repeating counterparts, to create a solid color background.",
-    "description_html": "A single color stop can be provided to the <code>linear-gradient()</code>, <code>radial-gradient()</code>, and <code>conic-gradient()</code> CSS functions, and their repeating counterparts, to create a solid color background.",
-    "group": "gradients",
-    "name": "Single color stop gradients",
-    "spec": "https://drafts.csswg.org/css-images-4/#color-stop-syntax",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-04-04",
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "136",
-        "firefox_android": "136",
-        "safari": "18.4",
-        "safari_ios": "18.4"
-      }
-    }
+    "kind": "split",
+    "redirect_targets": [
+      "gradients",
+      "conic-gradients"
+    ]
   },
   "sizes-auto": {
     "compat_features": [
@@ -29012,9 +33038,14 @@ export const features = {
     ],
     "description": "The sizes=\"auto\" attribute for the <img> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the loading=\"lazy\" attribute.",
     "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
-    "group": "images",
+    "group": [
+      "images"
+    ],
+    "kind": "feature",
     "name": "<img sizes=\"auto\" loading=\"lazy\">",
-    "spec": "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -29045,8 +33076,11 @@ export const features = {
       "html-elements",
       "web-components"
     ],
+    "kind": "feature",
     "name": "<slot>",
-    "spec": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -29069,9 +33103,14 @@ export const features = {
     ],
     "description": "The assign() method for <slot> elements assigns nodes to the slot, as an alternative to using the slot and name HTML attributes. The nodes must be children of a shadow host and the shadow root must be created with the slotAssignment set to \"manual\". Also known as manual slot assignment.",
     "description_html": "The <code>assign()</code> method for <code>&#x3C;slot></code> elements assigns nodes to the slot, as an alternative to using the <code>slot</code> and <code>name</code> HTML attributes. The nodes must be children of a shadow host and the shadow root must be created with the <code>slotAssignment</code> set to \"manual\". Also known as manual slot assignment.",
-    "group": "web-components",
+    "group": [
+      "web-components"
+    ],
+    "kind": "feature",
     "name": "Imperative slot assignment",
-    "spec": "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assign",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assign"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -29092,9 +33131,14 @@ export const features = {
     ],
     "description": "The <small> element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. Styled in a reduced font size by default.",
     "description_html": "The <code>&#x3C;small></code> element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. Styled in a reduced font size by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<small>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -29111,7 +33155,9 @@ export const features = {
     }
   },
   "smil-svg-animations": {
-    "caniuse": "svg-smil",
+    "caniuse": [
+      "svg-smil"
+    ],
     "compat_features": [
       "api.SVGAnimateElement",
       "api.SVGAnimateMotionElement",
@@ -29210,8 +33256,11 @@ export const features = {
       "animation",
       "svg"
     ],
+    "kind": "feature",
     "name": "SMIL SVG animations",
-    "spec": "https://svgwg.org/specs/animations/",
+    "spec": [
+      "https://svgwg.org/specs/animations/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -29233,9 +33282,14 @@ export const features = {
     ],
     "description": "The image-rendering: smooth CSS declaration scales images while retaining a gradual color blending that is useful for photos.",
     "description_html": "The <code>image-rendering: smooth</code> CSS declaration scales images while retaining a gradual color blending that is useful for photos.",
-    "group": "image-scaling",
+    "group": [
+      "image-scaling"
+    ],
+    "kind": "feature",
     "name": "smooth",
-    "spec": "https://drafts.csswg.org/css-images-3/#the-image-rendering",
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-image-rendering"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -29259,8 +33313,11 @@ export const features = {
       "media-elements",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<source>",
-    "spec": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -29282,8 +33339,11 @@ export const features = {
     ],
     "description": "The Sourcemap HTTP response header links generated code to a source map, so the browser shows the original source in a debugger. This makes it easier to work with minified or transpiled code.",
     "description_html": "The <code>Sourcemap</code> HTTP response header links generated code to a source map, so the browser shows the original source in a debugger. This makes it easier to work with minified or transpiled code.",
+    "kind": "feature",
     "name": "Sourcemap header",
-    "spec": "https://tc39.es/ecma426/",
+    "spec": [
+      "https://tc39.es/ecma426/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -29306,9 +33366,14 @@ export const features = {
     ],
     "description": "The <span> HTML element is the generic inline container for content.",
     "description_html": "The <code>&#x3C;span></code> HTML element is the generic inline container for content.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<span>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -29334,8 +33399,11 @@ export const features = {
       "speech",
       "css"
     ],
+    "kind": "feature",
     "name": "speak",
-    "spec": "https://drafts.csswg.org/css-speech-1/#speaking-props-speak",
+    "spec": [
+      "https://drafts.csswg.org/css-speech-1/#speaking-props-speak"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -29356,8 +33424,11 @@ export const features = {
       "speech",
       "css"
     ],
+    "kind": "feature",
     "name": "speak-as",
-    "spec": "https://drafts.csswg.org/css-speech-1/#speaking-props-speak-as",
+    "spec": [
+      "https://drafts.csswg.org/css-speech-1/#speaking-props-speak-as"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -29395,6 +33466,7 @@ export const features = {
     ],
     "description": "Speculation rules are hints to the browser to proactively download pages in the background so they appear instantly when the user navigates to them.",
     "description_html": "Speculation rules are hints to the browser to proactively download pages in the background so they appear instantly when the user navigates to them.",
+    "kind": "feature",
     "name": "Speculation rules",
     "spec": [
       "https://github.com/whatwg/html/pull/11426",
@@ -29410,7 +33482,9 @@ export const features = {
     }
   },
   "speech-recognition": {
-    "caniuse": "speech-recognition",
+    "caniuse": [
+      "speech-recognition"
+    ],
     "compat_features": [
       "api.SpeechRecognition",
       "api.SpeechRecognition.SpeechRecognition",
@@ -29453,9 +33527,14 @@ export const features = {
     ],
     "description": "The SpeechRecognition API converts audio into text using the device's speech recognition service.",
     "description_html": "The <code>SpeechRecognition</code> API converts audio into text using the device's speech recognition service.",
-    "group": "speech",
+    "group": [
+      "speech"
+    ],
+    "kind": "feature",
     "name": "Speech recognition",
-    "spec": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -29485,16 +33564,23 @@ export const features = {
         "https://github.com/WebAudio/web-speech-api/pull/117"
       ]
     },
-    "group": "speech",
+    "group": [
+      "speech"
+    ],
+    "kind": "feature",
     "name": "Speech recognition grammar",
-    "spec": "https://webaudio.github.io/web-speech-api/#speechreco-section",
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "speech-synthesis": {
-    "caniuse": "speech-synthesis",
+    "caniuse": [
+      "speech-synthesis"
+    ],
     "compat_features": [
       "api.SpeechSynthesis",
       "api.SpeechSynthesis.cancel",
@@ -29541,9 +33627,14 @@ export const features = {
     ],
     "description": "The SpeechSynthesis API converts text to speech with artificial voices.",
     "description_html": "The <code>SpeechSynthesis</code> API converts text to speech with artificial voices.",
-    "group": "speech",
+    "group": [
+      "speech"
+    ],
+    "kind": "feature",
     "name": "Speech synthesis",
-    "spec": "https://webaudio.github.io/web-speech-api/#tts-section",
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#tts-section"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-03-05",
@@ -29566,8 +33657,11 @@ export const features = {
     ],
     "description": "The spellcheck global HTML attribute sets whether the browser may check an element for spelling errors.",
     "description_html": "The <code>spellcheck</code> global HTML attribute sets whether the browser may check an element for spelling errors.",
+    "kind": "feature",
     "name": "spellcheck",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-05-28",
@@ -29590,7 +33684,10 @@ export const features = {
     ],
     "description": "The ::spelling-error and ::grammar-error CSS pseudo-elements match text that is highlighted as misspelled and grammatically incorrect, respectively.",
     "description_html": "The <code>::spelling-error</code> and <code>::grammar-error</code> CSS pseudo-elements match text that is highlighted as misspelled and grammatically incorrect, respectively.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "::spelling-error and ::grammar-error",
     "spec": [
       "https://drafts.csswg.org/css-pseudo-4/#selectordef-spelling-error",
@@ -29616,10 +33713,17 @@ export const features = {
     ],
     "description": "The spread (...) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.",
     "description_html": "The spread (<code>...</code>) syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Spread syntax",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-SpreadElement",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-SpreadElement"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -29636,7 +33740,9 @@ export const features = {
     }
   },
   "srcset": {
-    "caniuse": "srcset",
+    "caniuse": [
+      "srcset"
+    ],
     "compat_features": [
       "api.HTMLImageElement.sizes",
       "api.HTMLImageElement.srcset",
@@ -29649,9 +33755,14 @@ export const features = {
     ],
     "description": "The srcset and sizes attributes for <img> elements set a list of possible sources for the image and a corresponding list of size conditions for choosing a source, to show a responsive image that fits the size of the display.",
     "description_html": "The <code>srcset</code> and <code>sizes</code> attributes for <code>&#x3C;img></code> elements set a list of possible sources for the image and a corresponding list of size conditions for choosing a source, to show a responsive image that fits the size of the display.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "srcset and sizes",
-    "spec": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -29673,10 +33784,17 @@ export const features = {
     ],
     "description": "Stable array sort() function",
     "description_html": "Stable array sort() function",
-    "group": "arrays",
+    "group": [
+      "arrays"
+    ],
+    "kind": "feature",
     "name": "Stable array sort",
-    "snapshot": "ecmascript-2019",
-    "spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.sort",
+    "snapshot": [
+      "ecmascript-2019"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.sort"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -29699,9 +33817,14 @@ export const features = {
     ],
     "description": "The @starting-style CSS at-rule sets the starting values for properties that are transitioning when the target element's style is first updated.",
     "description_html": "The <code>@starting-style</code> CSS at-rule sets the starting values for properties that are transitioning when the target element's style is first updated.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@starting-style",
-    "spec": "https://drafts.csswg.org/css-transitions-2/#defining-before-change-style",
+    "spec": [
+      "https://drafts.csswg.org/css-transitions-2/#defining-before-change-style"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-08-06",
@@ -29734,9 +33857,14 @@ export const features = {
     ],
     "description": "The :state() CSS pseudo-class matches custom elements based on their custom state, set through the ElementInternals.states API.",
     "description_html": "The <code>:state()</code> CSS pseudo-class matches custom elements based on their custom state, set through the <code>ElementInternals.states</code> API.",
-    "group": "custom-elements",
+    "group": [
+      "custom-elements"
+    ],
+    "kind": "feature",
     "name": ":state()",
-    "spec": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-state-pseudo-class",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-state-pseudo-class"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-17",
@@ -29757,9 +33885,14 @@ export const features = {
     ],
     "description": "The position: static CSS declaration positions an element in the normal flow. A statically positioned element ignores physical and logical properties such as top or inset-block-start.",
     "description_html": "The <code>position: static</code> CSS declaration positions an element in the normal flow. A statically positioned element ignores physical and logical properties such as <code>top</code> or <code>inset-block-start</code>.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Static positioning",
-    "spec": "https://drafts.csswg.org/css-position-3/#position-property",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#position-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -29786,8 +33919,11 @@ export const features = {
       "animation",
       "transitions"
     ],
+    "kind": "feature",
     "name": "steps() easing",
-    "spec": "https://drafts.csswg.org/css-easing-2/#step-easing-functions",
+    "spec": [
+      "https://drafts.csswg.org/css-easing-2/#step-easing-functions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -29804,16 +33940,23 @@ export const features = {
     }
   },
   "sticky-positioning": {
-    "caniuse": "css-sticky",
+    "caniuse": [
+      "css-sticky"
+    ],
     "compat_features": [
       "css.properties.position.position_sticky_table_elements",
       "css.properties.position.sticky"
     ],
     "description": "The position: sticky CSS declaration positions an element in the normal flow until it crosses a specified threshold, at which points it becomes fixed (stuck) at that position.",
     "description_html": "The <code>position: sticky</code> CSS declaration positions an element in the normal flow until it crosses a specified threshold, at which points it becomes fixed (stuck) at that position.",
-    "group": "positioning",
+    "group": [
+      "positioning"
+    ],
+    "kind": "feature",
     "name": "Sticky positioning",
-    "spec": "https://drafts.csswg.org/css-position-3/#stickypos-insets",
+    "spec": [
+      "https://drafts.csswg.org/css-position-3/#stickypos-insets"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-03-19",
@@ -29841,9 +33984,14 @@ export const features = {
     ],
     "description": "The document.requestStorageAccess() method allows content in iframes to request storing and reading cookies and other site data, while the document.hasStorageAccess() method checks if such access is granted.",
     "description_html": "The <code>document.requestStorageAccess()</code> method allows content in iframes to request storing and reading cookies and other site data, while the <code>document.hasStorageAccess()</code> method checks if such access is granted.",
-    "group": "storage",
+    "group": [
+      "storage"
+    ],
+    "kind": "feature",
     "name": "Storage access",
-    "spec": "https://privacycg.github.io/storage-access/",
+    "spec": [
+      "https://privacycg.github.io/storage-access/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-05",
@@ -29879,9 +34027,14 @@ export const features = {
     ],
     "description": "The navigator.storageBuckets API allows you to organize locally stored data into groups called storage buckets. Each bucket can have different settings, allowing the browser to manage and delete buckets independently rather than applying the same treatment to all.",
     "description_html": "The <code>navigator.storageBuckets</code> API allows you to organize locally stored data into groups called storage buckets. Each bucket can have different settings, allowing the browser to manage and delete buckets independently rather than applying the same treatment to all.",
-    "group": "storage",
+    "group": [
+      "storage"
+    ],
+    "kind": "feature",
     "name": "Storage buckets",
-    "spec": "https://wicg.github.io/storage-buckets/",
+    "spec": [
+      "https://wicg.github.io/storage-buckets/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -29903,9 +34056,14 @@ export const features = {
     ],
     "description": "The navigator.storage API provides information about the availability and persistence of the data that a site stores on the device, by using APIs such as the Cache API or the IndexedDB API.",
     "description_html": "The <code>navigator.storage</code> API provides information about the availability and persistence of the data that a site stores on the device, by using APIs such as the Cache API or the IndexedDB API.",
-    "group": "storage",
+    "group": [
+      "storage"
+    ],
+    "kind": "feature",
     "name": "Storage manager",
-    "spec": "https://storage.spec.whatwg.org/",
+    "spec": [
+      "https://storage.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -29980,9 +34138,14 @@ export const features = {
     ],
     "description": "The streams API creates, composes, and consumes continuously generated data.",
     "description_html": "The streams API creates, composes, and consumes continuously generated data.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "Streams",
-    "spec": "https://streams.spec.whatwg.org/",
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-12-28",
@@ -30009,9 +34172,14 @@ export const features = {
     ],
     "description": "The stretch CSS keyword expands a box as needed to fit its contents until the maximum size is reached, without preserving the content's preferred aspect ratio.",
     "description_html": "The <code>stretch</code> CSS keyword expands a box as needed to fit its contents until the maximum size is reached, without preserving the content's preferred aspect ratio.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "stretch",
-    "spec": "https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -30027,9 +34195,14 @@ export const features = {
     ],
     "description": "The at() method of strings returns the character (one UTF-16 code unit) at an index, including negative indices for getting the character relative to the end of the string. Also known as the relative indexing method.",
     "description_html": "The <code>at()</code> method of strings returns the character (one UTF-16 code unit) at an index, including negative indices for getting the character relative to the end of the string. Also known as the relative indexing method.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String at()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -30052,9 +34225,14 @@ export const features = {
     ],
     "description": "The codePointAt() method returns the numeric value of the UTF-16 code point at an index of the string. The fromCodePoint() method returns a string created from one or more code points.",
     "description_html": "The <code>codePointAt()</code> method returns the numeric value of the UTF-16 code point at an index of the string. The <code>fromCodePoint()</code> method returns a string created from one or more code points.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String codePointAt() and fromCodePoint()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30071,15 +34249,22 @@ export const features = {
     }
   },
   "string-includes": {
-    "caniuse": "es6-string-includes",
+    "caniuse": [
+      "es6-string-includes"
+    ],
     "compat_features": [
       "javascript.builtins.String.includes"
     ],
     "description": "The includes() method of strings returns whether a search string appears within the string.",
     "description_html": "The <code>includes()</code> method of strings returns whether a search string appears within the string.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String includes()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30101,9 +34286,14 @@ export const features = {
     ],
     "description": "The matchAll() method of strings matches a string against a regular expression and returns an iterator of all results, including capturing groups.",
     "description_html": "The <code>matchAll()</code> method of strings matches a string against a regular expression and returns an iterator of all results, including capturing groups.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String matchAll()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -30125,9 +34315,14 @@ export const features = {
     ],
     "description": "The normalize() method of strings returns a Unicode normal form of a string as a new string. More than one code point sequence can represent the same characters. You can use the normalize() method to find canonically or compatibly equivalent strings.",
     "description_html": "The <code>normalize()</code> method of strings returns a Unicode normal form of a string as a new string. More than one code point sequence can represent the same characters. You can use the <code>normalize()</code> method to find canonically or compatibly equivalent strings.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String normalize()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -30144,16 +34339,23 @@ export const features = {
     }
   },
   "string-pad": {
-    "caniuse": "pad-start-end",
+    "caniuse": [
+      "pad-start-end"
+    ],
     "compat_features": [
       "javascript.builtins.String.padEnd",
       "javascript.builtins.String.padStart"
     ],
     "description": "The padStart() and padEnd() methods of strings return a string lengthened to a minimum number of characters by adding characters to the start or end of the string.",
     "description_html": "The <code>padStart()</code> and <code>padEnd()</code> methods of strings return a string lengthened to a minimum number of characters by adding characters to the start or end of the string.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String padStart() and padEnd()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -30175,9 +34377,14 @@ export const features = {
     ],
     "description": "The String.raw() static method interpolates template literal substitutions, but ignores escape sequences. It is the tag function for template literals.",
     "description_html": "The <code>String.raw()</code> static method interpolates template literal substitutions, but ignores escape sequences. It is the tag function for template literals.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String raw()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30199,9 +34406,14 @@ export const features = {
     ],
     "description": "The repeat() method of strings returns the original string repeated a number of times.",
     "description_html": "The <code>repeat()</code> method of strings returns the original string repeated a number of times.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String repeat()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30223,9 +34435,14 @@ export const features = {
     ],
     "description": "The replaceAll() method of strings returns a new string where all matches of a pattern (a string or regular expression) have been substituted with a replacement string.",
     "description_html": "The <code>replaceAll()</code> method of strings returns a new string where all matches of a pattern (a string or regular expression) have been substituted with a replacement string.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String replaceAll()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-02-27",
@@ -30248,9 +34465,14 @@ export const features = {
     ],
     "description": "The startsWith() and endsWith() methods of strings returns whether a search string appears at the beginning or end of the provided string.",
     "description_html": "The <code>startsWith()</code> and <code>endsWith()</code> methods of strings returns whether a search string appears at the beginning or end of the provided string.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String startsWith() and endsWith()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30273,9 +34495,14 @@ export const features = {
     ],
     "description": "The trimStart() and trimEnd() methods of strings return a new string with whitespace removed from the beginning or end of the string.",
     "description_html": "The <code>trimStart()</code> and <code>trimEnd()</code> methods of strings return a new string with whitespace removed from the beginning or end of the string.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String trimStart() and trimEnd()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -30298,9 +34525,14 @@ export const features = {
     ],
     "description": "The isWellFormed() method of strings returns a boolean indicating if the string contains any Unicode lone surrogates. The toWellFormed() method returns a new string where all lone surrogates are replaced by the Unicode replacement character.",
     "description_html": "The <code>isWellFormed()</code> method of strings returns a boolean indicating if the string contains any Unicode lone surrogates. The <code>toWellFormed()</code> method returns a new string where all lone surrogates are replaced by the Unicode replacement character.",
-    "group": "string",
+    "group": [
+      "string"
+    ],
+    "kind": "feature",
     "name": "String isWellFormed() and toWellFormed()",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -30343,9 +34575,14 @@ export const features = {
     ],
     "description": "The string type (and String object) represents a sequence of characters.",
     "description_html": "The string type (and <code>String</code> object) represents a sequence of characters.",
-    "group": "primitive-types",
+    "group": [
+      "primitive-types"
+    ],
+    "kind": "feature",
     "name": "String (initial support)",
-    "spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -30367,9 +34604,14 @@ export const features = {
     ],
     "description": "The <strong> HTML element brings attention to the content, styling text as bold by default.",
     "description_html": "The <code>&#x3C;strong></code> HTML element brings attention to the content, styling text as bold by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<strong>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -30391,8 +34633,11 @@ export const features = {
     ],
     "description": "The structuredClone() global method creates a deep copy of an object. Values that cannot be cloned can instead be transferred, making the original value no longer usable.",
     "description_html": "The <code>structuredClone()</code> global method creates a deep copy of an object. Values that cannot be cloned can instead be transferred, making the original value no longer usable.",
+    "kind": "feature",
     "name": "structuredClone()",
-    "spec": "https://html.spec.whatwg.org/multipage/structured-data.html#structured-cloning",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/structured-data.html#structured-cloning"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -30418,9 +34663,14 @@ export const features = {
     ],
     "description": "The <style> element embeds an inline CSS stylesheet in a document.",
     "description_html": "The <code>&#x3C;style></code> element embeds an inline CSS stylesheet in a document.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<style>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -30446,8 +34696,11 @@ export const features = {
       "css",
       "html"
     ],
+    "kind": "feature",
     "name": "style (attribute)",
-    "spec": "https://html.spec.whatwg.org/multipage/dom.html#the-style-attribute",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#the-style-attribute"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -30470,7 +34723,10 @@ export const features = {
     ],
     "description": "The <sub> and <sup> elements sets inline text to be displayed as subscript or superscript for solely typographical reasons.",
     "description_html": "The <code>&#x3C;sub></code> and <code>&#x3C;sup></code> elements sets inline text to be displayed as subscript or superscript for solely typographical reasons.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<sub> and <sup>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-element",
@@ -30492,16 +34748,23 @@ export const features = {
     }
   },
   "subgrid": {
-    "caniuse": "css-subgrid",
+    "caniuse": [
+      "css-subgrid"
+    ],
     "compat_features": [
       "css.properties.grid-template-columns.subgrid",
       "css.properties.grid-template-rows.subgrid"
     ],
     "description": "The subgrid value for the grid-template-columns and grid-template-rows properties allows a grid item to inherit the grid definition of its parent grid container.",
     "description_html": "The <code>subgrid</code> value for the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties allows a grid item to inherit the grid definition of its parent grid container.",
-    "group": "grid",
+    "group": [
+      "grid"
+    ],
+    "kind": "feature",
     "name": "Subgrid",
-    "spec": "https://drafts.csswg.org/css-grid-2/#subgrids",
+    "spec": [
+      "https://drafts.csswg.org/css-grid-2/#subgrids"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-15",
@@ -30537,8 +34800,11 @@ export const features = {
     ],
     "description": "The Summarizer API uses an on-device language model to summarize text.",
     "description_html": "The <code>Summarizer</code> API uses an on-device language model to summarize text.",
+    "kind": "feature",
     "name": "Summarizer",
-    "spec": "https://webmachinelearning.github.io/writing-assistance-apis/",
+    "spec": [
+      "https://webmachinelearning.github.io/writing-assistance-apis/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -30547,7 +34813,9 @@ export const features = {
     }
   },
   "supports": {
-    "caniuse": "css-featurequeries",
+    "caniuse": [
+      "css-featurequeries"
+    ],
     "compat_features": [
       "api.CSSImportRule.supportsText",
       "api.CSSSupportsRule",
@@ -30559,9 +34827,14 @@ export const features = {
     ],
     "description": "The @supports at-rule applies styles based on a browser's support for CSS features, such as a CSS property and value. Also known as feature queries.",
     "description_html": "The <code>@supports</code> at-rule applies styles based on a browser's support for CSS features, such as a CSS property and value. Also known as feature queries.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "@supports",
-    "spec": "https://drafts.csswg.org/css-conditional-3/#at-supports",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-3/#at-supports"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -30583,9 +34856,14 @@ export const features = {
     ],
     "description": "The @supports (-webkit-transform-3d) CSS media query is a standardized compatibility alternative to @supports (transform-style).",
     "description_html": "The <code>@supports (-webkit-transform-3d)</code> CSS media query is a standardized compatibility alternative to <code>@supports (transform-style)</code>.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "@supports (compatibility prefix)",
-    "spec": "https://compat.spec.whatwg.org/#css-media-queries-webkit-transform-3d",
+    "spec": [
+      "https://compat.spec.whatwg.org/#css-media-queries-webkit-transform-3d"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-03-20",
@@ -30602,7 +34880,9 @@ export const features = {
     }
   },
   "svg": {
-    "caniuse": "svg",
+    "caniuse": [
+      "svg"
+    ],
     "compat_features": [
       "api.CanvasRenderingContext2D.drawImage.SVGImageElement_source_image",
       "api.DOMParser.parseFromString.svg",
@@ -31202,9 +35482,14 @@ export const features = {
     ],
     "description": "The SVG image format, represented by the <svg> element, creates two-dimensional vector graphics with declarative or scripted interaction and animation.",
     "description_html": "The SVG image format, represented by the <code>&#x3C;svg></code> element, creates two-dimensional vector graphics with declarative or scripted interaction and animation.",
-    "group": "svg",
+    "group": [
+      "svg"
+    ],
+    "kind": "feature",
     "name": "SVG",
-    "spec": "https://svgwg.org/svg2-draft/",
+    "spec": [
+      "https://svgwg.org/svg2-draft/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -31293,15 +35578,20 @@ export const features = {
         "font-face"
       ]
     },
+    "kind": "feature",
     "name": "SVG 1.1 (discouraged)",
-    "spec": "https://www.w3.org/TR/SVG11/",
+    "spec": [
+      "https://www.w3.org/TR/SVG11/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "svg-filters": {
-    "caniuse": "svg-filters",
+    "caniuse": [
+      "svg-filters"
+    ],
     "compat_features": [
       "api.SVGFEBlendElement",
       "api.SVGFEBlendElement.height",
@@ -31626,9 +35916,14 @@ export const features = {
     ],
     "description": "The <filter> SVG element applies custom effects such as color manipulation, blurring, or morphing to SVG elements.",
     "description_html": "The <code>&#x3C;filter></code> SVG element applies custom effects such as color manipulation, blurring, or morphing to SVG elements.",
-    "group": "svg",
+    "group": [
+      "svg"
+    ],
+    "kind": "feature",
     "name": "SVG filters",
-    "spec": "https://drafts.fxtf.org/filter-effects-1/",
+    "spec": [
+      "https://drafts.fxtf.org/filter-effects-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -31670,9 +35965,14 @@ export const features = {
     ],
     "description": "A Symbol value is a unique, non-enumerable primitive value used for encapsulation or information hiding. For example, a symbol can be a key of an object that can never collide with any other key.",
     "description_html": "A <code>Symbol</code> value is a unique, non-enumerable primitive value used for encapsulation or information hiding. For example, a symbol can be a key of an object that can never collide with any other key.",
-    "group": "primitive-types",
+    "group": [
+      "primitive-types"
+    ],
+    "kind": "feature",
     "name": "Symbol",
-    "spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -31696,9 +35996,14 @@ export const features = {
     ],
     "description": "The system color CSS keywords, such as ButtonBorder or LinkText, allow you to match default colors from the user agent.",
     "description_html": "The system color CSS keywords, such as <code>ButtonBorder</code> or <code>LinkText</code>, allow you to match default colors from the user agent.",
-    "group": "color-types",
+    "group": [
+      "color-types"
+    ],
+    "kind": "feature",
     "name": "System colors",
-    "spec": "https://drafts.csswg.org/css-color-4/#css-system-colors",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#css-system-colors"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -31715,16 +36020,23 @@ export const features = {
     }
   },
   "tab-size": {
-    "caniuse": "css3-tabsize",
+    "caniuse": [
+      "css3-tabsize"
+    ],
     "compat_features": [
       "css.properties.tab-size",
       "css.properties.tab-size.length"
     ],
     "description": "The tab-size CSS property sets the width of the tab character.",
     "description_html": "The <code>tab-size</code> CSS property sets the width of the tab character.",
-    "group": "white-space",
+    "group": [
+      "white-space"
+    ],
+    "kind": "feature",
     "name": "tab-size",
-    "spec": "https://drafts.csswg.org/css-text-4/#tab-size-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#tab-size-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-02-10",
@@ -31741,16 +36053,23 @@ export const features = {
     }
   },
   "tabindex": {
-    "caniuse": "tabindex-attr",
+    "caniuse": [
+      "tabindex-attr"
+    ],
     "compat_features": [
       "api.HTMLElement.tabIndex",
       "html.global_attributes.tabindex"
     ],
     "description": "The tabindex HTML attribute make an element focusable, and sets the element's relative ordering for sequential focus navigation.",
     "description_html": "The <code>tabindex</code> HTML attribute make an element focusable, and sets the element's relative ordering for sequential focus navigation.",
-    "group": "html",
+    "group": [
+      "html"
+    ],
+    "kind": "feature",
     "name": "tabindex",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2021-04-02",
@@ -31846,9 +36165,14 @@ export const features = {
     ],
     "description": "The <table> HTML element, with several related elements, represents tabular data in rows and columns of cells.",
     "description_html": "The <code>&#x3C;table></code> HTML element, with several related elements, represents tabular data in rows and columns of cells.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "Tables",
-    "spec": "https://html.spec.whatwg.org/multipage/tables.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/tables.html"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -31963,9 +36287,14 @@ export const features = {
         "https://html.spec.whatwg.org/multipage/obsolete.html"
       ]
     },
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "Table styling",
-    "spec": "https://html.spec.whatwg.org/multipage/obsolete.html",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/obsolete.html"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -31983,9 +36312,14 @@ export const features = {
     ],
     "description": "The :target CSS pseudo-class matches the element with an ID matching the URL fragment.",
     "description_html": "The <code>:target</code> CSS pseudo-class matches the element with an ID matching the URL fragment.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":target",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-target-pseudo",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#the-target-pseudo"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32007,9 +36341,14 @@ export const features = {
     ],
     "description": "The ::target-text pseudo-element allows you to style text highlighted by a URL text fragment such as #:~:text=snippet.",
     "description_html": "The <code>::target-text</code> pseudo-element allows you to style text highlighted by a URL text fragment such as <code>#:~:text=snippet</code>.",
-    "group": "text-fragments",
+    "group": [
+      "text-fragments"
+    ],
+    "kind": "feature",
     "name": "::target-text",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#selectordef-target-text",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#selectordef-target-text"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -32027,16 +36366,33 @@ export const features = {
   "target-within": {
     "description": "The :target-within CSS pseudo-class matches the element with an ID matching the URL fragment and its ancestors.",
     "description_html": "The <code>:target-within</code> CSS pseudo-class matches the element with an ID matching the URL fragment and its ancestors.",
-    "group": "selectors",
+    "discouraged": {
+      "according_to": [
+        "https://drafts.csswg.org/selectors-4/#the-target-pseudo",
+        "https://github.com/w3c/csswg-drafts/issues/8357"
+      ],
+      "alternatives": [
+        "has",
+        "target"
+      ]
+    },
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":target-within",
-    "spec": "https://drafts.csswg.org/selectors-4/#the-target-within-pseudo",
+    "spec": [
+      "https://www.w3.org/TR/2022/WD-selectors-4-20220507/#the-target-within-pseudo"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "template": {
-    "caniuse": "template",
+    "caniuse": [
+      "template"
+    ],
     "compat_features": [
       "api.HTMLTemplateElement",
       "api.HTMLTemplateElement.content",
@@ -32048,8 +36404,11 @@ export const features = {
       "html-elements",
       "web-components"
     ],
+    "kind": "feature",
     "name": "<template>",
-    "spec": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-05-12",
@@ -32072,9 +36431,14 @@ export const features = {
     ],
     "description": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.",
     "description_html": "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Template literals",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-template-literals",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-template-literals"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -32091,7 +36455,9 @@ export const features = {
     }
   },
   "temporal": {
-    "caniuse": "temporal",
+    "caniuse": [
+      "temporal"
+    ],
     "compat_features": [
       "javascript.builtins.Date.toTemporalInstant",
       "javascript.builtins.Temporal",
@@ -32339,9 +36705,14 @@ export const features = {
     ],
     "description": "The Temporal API allows you to work with dates, times, time zones, and durations. It is more powerful than the Date API.",
     "description_html": "The <code>Temporal</code> API allows you to work with dates, times, time zones, and durations. It is more powerful than the <code>Date</code> API.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Temporal",
-    "spec": "https://tc39.es/proposal-temporal/",
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32363,9 +36734,14 @@ export const features = {
     ],
     "description": "The text-align CSS property sets the horizontal placement of the inner content of a block element.",
     "description_html": "The <code>text-align</code> CSS property sets the horizontal placement of the inner content of a block element.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-align",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-align-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-align-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32382,16 +36758,23 @@ export const features = {
     }
   },
   "text-align-last": {
-    "caniuse": "css-text-align-last",
+    "caniuse": [
+      "css-text-align-last"
+    ],
     "compat_features": [
       "css.properties.text-align-last",
       "css.properties.text-align-last.auto"
     ],
     "description": "The text-align-last CSS property sets the alignment of the last line of text before a forced line break.",
     "description_html": "The <code>text-align-last</code> CSS property sets the alignment of the last line of text before a forced line break.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-align-last",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-align-last-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-align-last-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-03-12",
@@ -32421,8 +36804,11 @@ export const features = {
     ],
     "description": "The text-autospace CSS property sets whether and how to insert spaces in inter-script text (such as when mixing Latin and Chinese characters) and around punctuation.",
     "description_html": "The <code>text-autospace</code> CSS property sets whether and how to insert spaces in inter-script text (such as when mixing Latin and Chinese characters) and around punctuation.",
+    "kind": "feature",
     "name": "text-autospace",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-autospace-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-autospace-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32432,7 +36818,9 @@ export const features = {
     }
   },
   "text-box": {
-    "caniuse": "css-text-box-trim",
+    "caniuse": [
+      "css-text-box-trim"
+    ],
     "compat_features": [
       "css.properties.text-box",
       "css.properties.text-box-edge",
@@ -32451,9 +36839,14 @@ export const features = {
     ],
     "description": "The text-box CSS property sets the spacing above and below text based on a font's typographic features. For example, text-box: trim-both ex alphabetic trims the top to the top of the letter x and the bottom to the bottom of most letters, without descenders.",
     "description_html": "The <code>text-box</code> CSS property sets the spacing above and below text based on a font's typographic features. For example, <code>text-box: trim-both ex alphabetic</code> trims the top to the top of the letter x and the bottom to the bottom of most letters, without descenders.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-box",
-    "spec": "https://drafts.csswg.org/css-inline-3/#leading-trim",
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32473,9 +36866,14 @@ export const features = {
     ],
     "description": "The text-combine-upright CSS property displays multiple characters in the space of a single character in vertical text. This is used in East Asian documents to display Latin-based strings such as components of a date or letters of an initialism.",
     "description_html": "The <code>text-combine-upright</code> CSS property displays multiple characters in the space of a single character in vertical text. This is used in East Asian documents to display Latin-based strings such as components of a date or letters of an initialism.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-combine-upright",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#text-combine-upright",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#text-combine-upright"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -32492,7 +36890,9 @@ export const features = {
     }
   },
   "text-decoration": {
-    "caniuse": "text-decoration",
+    "caniuse": [
+      "text-decoration"
+    ],
     "compat_features": [
       "css.properties.text-decoration",
       "css.properties.text-decoration-color",
@@ -32521,8 +36921,11 @@ export const features = {
     ],
     "description": "The text-decoration CSS property sets the style and color of decorative lines including underline, overline, line-through, or a combination of lines.",
     "description_html": "The <code>text-decoration</code> CSS property sets the style and color of decorative lines including underline, overline, line-through, or a combination of lines.",
+    "kind": "feature",
     "name": "text-decoration",
-    "spec": "https://drafts.csswg.org/css-text-decor-4/#line-decoration",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32556,8 +36959,11 @@ export const features = {
       "animation",
       "css"
     ],
+    "kind": "feature",
     "name": "text-decoration-line: blink",
-    "spec": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-blink",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-blink"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32581,8 +36987,11 @@ export const features = {
       "selectors",
       "selection"
     ],
+    "kind": "feature",
     "name": "text-decoration in ::selection",
-    "spec": "https://drafts.csswg.org/css-pseudo-4/#highlight-styling",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#highlight-styling"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32593,7 +37002,9 @@ export const features = {
     }
   },
   "text-emphasis": {
-    "caniuse": "text-emphasis",
+    "caniuse": [
+      "text-emphasis"
+    ],
     "compat_features": [
       "css.properties.text-emphasis",
       "css.properties.text-emphasis-color",
@@ -32614,8 +37025,11 @@ export const features = {
     ],
     "description": "The text-emphasis CSS property sets position and style for text emphasis marks, especially for East Asian languages.",
     "description_html": "The <code>text-emphasis</code> CSS property sets position and style for text emphasis marks, especially for East Asian languages.",
+    "kind": "feature",
     "name": "text-emphasis",
-    "spec": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-03",
@@ -32632,7 +37046,9 @@ export const features = {
     }
   },
   "text-encoding": {
-    "caniuse": "textencoder",
+    "caniuse": [
+      "textencoder"
+    ],
     "compat_features": [
       "api.TextDecoder",
       "api.TextDecoder.TextDecoder",
@@ -32662,8 +37078,11 @@ export const features = {
     ],
     "description": "The TextEncoder API transforms a stream of code points into a byte stream with UTF-8 encoding, and TextDecoder does the reverse.",
     "description_html": "The <code>TextEncoder</code> API transforms a stream of code points into a byte stream with UTF-8 encoding, and <code>TextDecoder</code> does the reverse.",
+    "kind": "feature",
     "name": "Text encoding and decoding",
-    "spec": "https://encoding.spec.whatwg.org/",
+    "spec": [
+      "https://encoding.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -32680,15 +37099,22 @@ export const features = {
     }
   },
   "text-indent": {
-    "caniuse": "css-text-indent",
+    "caniuse": [
+      "css-text-indent"
+    ],
     "compat_features": [
       "css.properties.text-indent"
     ],
     "description": "The text-indent CSS property sets the size of the empty space (indentation) at the beginning of lines in a text.",
     "description_html": "The <code>text-indent</code> CSS property sets the size of the empty space (indentation) at the beginning of lines in a text.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "text-indent",
-    "spec": "https://drafts.csswg.org/css-text-3/#text-indent-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-3/#text-indent-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32710,9 +37136,14 @@ export const features = {
     ],
     "description": "The text-indent: each-line CSS declaration indents text after forced breaks as well as to the first line of a block.",
     "description_html": "The <code>text-indent: each-line</code> CSS declaration indents text after forced breaks as well as to the first line of a block.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-indent: each-line",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-indent-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-indent-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32729,9 +37160,14 @@ export const features = {
     ],
     "description": "The text-indent: hanging CSS declaration indents all lines except the first.",
     "description_html": "The <code>text-indent: hanging</code> CSS declaration indents all lines except the first.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-indent: hanging",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-indent-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-indent-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32743,7 +37179,9 @@ export const features = {
     }
   },
   "text-justify": {
-    "caniuse": "css-text-justify",
+    "caniuse": [
+      "css-text-justify"
+    ],
     "compat_features": [
       "css.properties.text-justify",
       "css.properties.text-justify.auto",
@@ -32753,9 +37191,14 @@ export const features = {
     ],
     "description": "The text-justify CSS property sets the justification method of text when text-align: justify is set.",
     "description_html": "The <code>text-justify</code> CSS property sets the justification method of text when <code>text-align: justify</code> is set.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-justify",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-justify-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-justify-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32765,7 +37208,9 @@ export const features = {
     }
   },
   "text-orientation": {
-    "caniuse": "css-text-orientation",
+    "caniuse": [
+      "css-text-orientation"
+    ],
     "compat_features": [
       "css.properties.text-orientation",
       "css.properties.text-orientation.mixed",
@@ -32774,9 +37219,14 @@ export const features = {
     ],
     "description": "The text-orientation CSS property sets the how text is typeset within a line when the writing mode is vertical.",
     "description_html": "The <code>text-orientation</code> CSS property sets the how text is typeset within a line when the writing mode is vertical.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-orientation",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#text-orientation",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#text-orientation"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -32793,7 +37243,9 @@ export const features = {
     }
   },
   "text-overflow": {
-    "caniuse": "text-overflow",
+    "caniuse": [
+      "text-overflow"
+    ],
     "compat_features": [
       "css.properties.text-overflow",
       "css.properties.text-overflow.clip",
@@ -32803,9 +37255,14 @@ export const features = {
     ],
     "description": "The text-overflow CSS property sets how hidden overflow content appears to users. The property can clip content, truncate content with an ellipsis (…), or truncate with a custom string.",
     "description_html": "The <code>text-overflow</code> CSS property sets how hidden overflow content appears to users. The property can clip content, truncate content with an ellipsis (…), or truncate with a custom string.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Text overflow",
-    "spec": "https://drafts.csswg.org/css-overflow-4/#text-overflow",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#text-overflow"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32822,15 +37279,22 @@ export const features = {
     }
   },
   "text-shadow": {
-    "caniuse": "css-textshadow",
+    "caniuse": [
+      "css-textshadow"
+    ],
     "compat_features": [
       "css.properties.text-shadow"
     ],
     "description": "The text-shadow CSS property sets the position and styles of shadow on text.",
     "description_html": "The <code>text-shadow</code> CSS property sets the position and styles of shadow on text.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-shadow",
-    "spec": "https://drafts.csswg.org/css-text-decor-4/#text-shadow-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-shadow-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -32847,7 +37311,9 @@ export const features = {
     }
   },
   "text-size-adjust": {
-    "caniuse": "text-size-adjust",
+    "caniuse": [
+      "text-size-adjust"
+    ],
     "compat_features": [
       "css.properties.text-size-adjust",
       "css.properties.text-size-adjust.auto",
@@ -32856,8 +37322,11 @@ export const features = {
     ],
     "description": "The text-size-adjust CSS property disables or modifies the browser's default text size adjustment for small screen sizes.",
     "description_html": "The <code>text-size-adjust</code> CSS property disables or modifies the browser's default text size adjustment for small screen sizes.",
+    "kind": "feature",
     "name": "text-size-adjust",
-    "spec": "https://drafts.csswg.org/css-size-adjust-1/#adjustment-control",
+    "spec": [
+      "https://drafts.csswg.org/css-size-adjust-1/#adjustment-control"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32877,9 +37346,14 @@ export const features = {
     ],
     "description": "The text-spacing-trim CSS property controls spacing around CJK characters, avoiding excessive whitespace when using full-width punctuation characters.",
     "description_html": "The <code>text-spacing-trim</code> CSS property controls spacing around CJK characters, avoiding excessive whitespace when using full-width punctuation characters.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "text-spacing-trim",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-spacing-trim-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-spacing-trim-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -32890,7 +37364,9 @@ export const features = {
     }
   },
   "text-stroke-fill": {
-    "caniuse": "text-stroke",
+    "caniuse": [
+      "text-stroke"
+    ],
     "compat_features": [
       "css.properties.-webkit-text-fill-color",
       "css.properties.-webkit-text-stroke",
@@ -32899,9 +37375,14 @@ export const features = {
     ],
     "description": "The -webkit-text-stroke-width and -webkit-text-stroke-color CSS properties set the thickness and color of text outlines. The -webkit-text-fill-color sets the color within text character outlines. Both default to the text color.",
     "description_html": "The <code>-webkit-text-stroke-width</code> and <code>-webkit-text-stroke-color</code> CSS properties set the thickness and color of text outlines. The <code>-webkit-text-fill-color</code> sets the color within text character outlines. Both default to the text color.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Text stroke and fill  (compatibility prefixes)",
-    "spec": "https://compat.spec.whatwg.org/#text-fill-and-stroking",
+    "spec": [
+      "https://compat.spec.whatwg.org/#text-fill-and-stroking"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-05",
@@ -32972,8 +37453,11 @@ export const features = {
       "media-elements",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "Text tracks",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#timed-text-tracks",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#timed-text-tracks"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -33006,9 +37490,14 @@ export const features = {
     ],
     "description": "The text-transform CSS property sets text case and capitalization.",
     "description_html": "The <code>text-transform</code> CSS property sets text case and capitalization.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-transform",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-transform-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-transform-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -33032,9 +37521,14 @@ export const features = {
     ],
     "description": "The text-underline-offset CSS property shifts underlines on text from the initial position by a given distance. The initial position is affected by the text-underline-position property.",
     "description_html": "The <code>text-underline-offset</code> CSS property shifts underlines on text from the initial position by a given distance. The initial position is affected by the <code>text-underline-position</code> property.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-underline-offset",
-    "spec": "https://drafts.csswg.org/css-text-decor-4/#underline-offset",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#underline-offset"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-05-19",
@@ -33061,9 +37555,14 @@ export const features = {
     ],
     "description": "The text-underline-position CSS property sets the position of underlines on text. For example, text-underline-position: under places the underline below the text, avoiding crossing descenders. The underline may be further adjusted by the text-underline-offset property.",
     "description_html": "The <code>text-underline-position</code> CSS property sets the position of underlines on text. For example, <code>text-underline-position: under</code> places the underline below the text, avoiding crossing descenders. The underline may be further adjusted by the <code>text-underline-offset</code> property.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "text-underline-position",
-    "spec": "https://drafts.csswg.org/css-text-decor-4/#text-underline-position-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-underline-position-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-01-28",
@@ -33086,9 +37585,14 @@ export const features = {
     ],
     "description": "The text-wrap CSS property sets how lines break in text that overflows the container. It is a shorthand for text-wrap-style and text-wrap-mode.",
     "description_html": "The <code>text-wrap</code> CSS property sets how lines break in text that overflows the container. It is a shorthand for <code>text-wrap-style</code> and <code>text-wrap-mode</code>.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-wrap-shorthand",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-wrap-shorthand"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-19",
@@ -33109,9 +37613,14 @@ export const features = {
     ],
     "description": "The text-wrap: balance CSS declaration balances the length of each line when text is broken into multiple lines. Also known as headline balancing.",
     "description_html": "The <code>text-wrap: balance</code> CSS declaration balances the length of each line when text is broken into multiple lines. Also known as headline balancing.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap: balance",
-    "spec": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-13",
@@ -33138,8 +37647,11 @@ export const features = {
       "white-space",
       "text-wrap"
     ],
+    "kind": "feature",
     "name": "text-wrap-mode",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-wrap-mode",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-wrap-mode"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-10-17",
@@ -33160,9 +37672,14 @@ export const features = {
     ],
     "description": "The text-wrap: nowrap CSS declaration prevents text breaking into multiple lines. Text that doesn't fit overflows instead.",
     "description_html": "The <code>text-wrap: nowrap</code> CSS declaration prevents text breaking into multiple lines. Text that doesn't fit overflows instead.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap: nowrap",
-    "spec": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-mode-nowrap",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-mode-nowrap"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-19",
@@ -33183,15 +37700,22 @@ export const features = {
     ],
     "description": "The text-wrap: pretty CSS declaration prioritizes better layout over speed when text is broken into multiple lines.",
     "description_html": "The <code>text-wrap: pretty</code> CSS declaration prioritizes better layout over speed when text is broken into multiple lines.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap: pretty",
-    "spec": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "117",
         "chrome_android": "117",
-        "edge": "117"
+        "edge": "117",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -33201,9 +37725,14 @@ export const features = {
     ],
     "description": "The text-wrap: stable CSS declaration wraps text using the default algorithm, but does not change wrapping on earlier lines while the text is being edited.",
     "description_html": "The <code>text-wrap: stable</code> CSS declaration wraps text using the default algorithm, but does not change wrapping on earlier lines while the text is being edited.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap: stable",
-    "spec": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-stable",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-stable"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-10-17",
@@ -33228,15 +37757,22 @@ export const features = {
     ],
     "description": "The text-wrap-style CSS property sets how lines break in text that overflows the container. It can also be set with the text-wrap shorthand.",
     "description_html": "The <code>text-wrap-style</code> CSS property sets how lines break in text that overflows the container. It can also be set with the <code>text-wrap</code> shorthand.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "text-wrap-style",
-    "spec": "https://drafts.csswg.org/css-text-4/#text-wrap-style",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-wrap-style"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "130",
         "chrome_android": "130",
-        "edge": "130"
+        "edge": "130",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -33289,8 +37825,11 @@ export const features = {
       "forms",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<textarea>",
-    "spec": "https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -33315,9 +37854,14 @@ export const features = {
     ],
     "description": "The <time> HTML element represents a time, such as a calendar date, clock time, or duration. It may include the datetime attribute to translate dates into machine-readable format.",
     "description_html": "The <code>&#x3C;time></code> HTML element represents a time, such as a calendar date, clock time, or duration. It may include the <code>datetime</code> attribute to translate dates into machine-readable format.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<time>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-04-24",
@@ -33340,9 +37884,14 @@ export const features = {
     ],
     "description": "The :past and :future CSS pseudo-classes match prior or upcoming text track cues during media playback.",
     "description_html": "The <code>:past</code> and <code>:future</code> CSS pseudo-classes match prior or upcoming text track cues during media playback.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "Time-relative pseudo-selectors",
-    "spec": "https://w3c.github.io/webvtt/#the-past-and-future-pseudo-classes",
+    "spec": [
+      "https://w3c.github.io/webvtt/#the-past-and-future-pseudo-classes"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -33362,9 +37911,14 @@ export const features = {
     ],
     "description": "The <title> element sets the title of the document and exposes it to users via the UI of the browser or app they're using and through assistive technology.",
     "description_html": "The <code>&#x3C;title></code> element sets the title of the document and exposes it to users via the UI of the browser or app they're using and through assistive technology.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<title>",
-    "spec": "https://html.spec.whatwg.org/multipage/semantics.html#the-title-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-title-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -33388,8 +37942,11 @@ export const features = {
     ],
     "description": "The title global HTML attribute sets information about an element, such as a name or description. The value is typically shown as a tooltip that appears on mouse over. Since it's not often available to touch-only, keyboard-only, or assistive technology users, it's not a substitute for other text.",
     "description_html": "The <code>title</code> global HTML attribute sets information about an element, such as a name or description. The value is typically shown as a tooltip that appears on mouse over. Since it's not often available to touch-only, keyboard-only, or assistive technology users, it's not a substitute for other text.",
+    "kind": "feature",
     "name": "title (attribute)",
-    "spec": "https://html.spec.whatwg.org/multipage/dom.html#attr-title",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#attr-title"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -33411,9 +37968,14 @@ export const features = {
     ],
     "description": "The await keyword, when used at the top level of a module (outside of an async function), delays parent module execution until after a promise fulfills.",
     "description_html": "The <code>await</code> keyword, when used at the top level of a module (outside of an async function), delays parent module execution until after a promise fulfills.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Top-level await",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -33430,7 +37992,9 @@ export const features = {
     }
   },
   "touch-action": {
-    "caniuse": "css-touch-action",
+    "caniuse": [
+      "css-touch-action"
+    ],
     "compat_features": [
       "css.properties.touch-action",
       "css.properties.touch-action.manipulation",
@@ -33445,6 +38009,7 @@ export const features = {
     ],
     "description": "The touch-action CSS property sets whether an element on a touch screen can be panned or pinched to zoom.",
     "description_html": "The <code>touch-action</code> CSS property sets whether an element on a touch screen can be panned or pinched to zoom.",
+    "kind": "feature",
     "name": "touch-action",
     "spec": [
       "https://w3c.github.io/pointerevents/#the-touch-action-css-property",
@@ -33466,7 +38031,9 @@ export const features = {
     }
   },
   "touch-events": {
-    "caniuse": "touch",
+    "caniuse": [
+      "touch"
+    ],
     "compat_features": [
       "api.Element.touchcancel_event",
       "api.Element.touchend_event",
@@ -33504,8 +38071,11 @@ export const features = {
     ],
     "description": "Touch events touchstart, touchmove, touchend, and touchcancel fire when users interact with a touch-sensitive surface, such as a screen or drawing tablet. These events are similar to mouse events.",
     "description_html": "Touch events <code>touchstart</code>, <code>touchmove</code>, <code>touchend</code>, and <code>touchcancel</code> fire when users interact with a touch-sensitive surface, such as a screen or drawing tablet. These events are similar to mouse events.",
+    "kind": "feature",
     "name": "Touch events",
-    "spec": "https://w3c.github.io/touch-events/",
+    "spec": [
+      "https://w3c.github.io/touch-events/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -33526,8 +38096,11 @@ export const features = {
     ],
     "description": "The transfer() and transferToFixedLength() methods of ArrayBuffer move a buffer from one context to another (for example, to a worker).",
     "description_html": "The <code>transfer()</code> and <code>transferToFixedLength()</code> methods of <code>ArrayBuffer</code> move a buffer from one context to another (for example, to a worker).",
+    "kind": "feature",
     "name": "Transferable ArrayBuffer",
-    "spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-05",
@@ -33550,9 +38123,14 @@ export const features = {
     ],
     "description": "Streams are transferable objects, which can be moved between contexts such as windows and workers.",
     "description_html": "Streams are transferable objects, which can be moved between contexts such as windows and workers.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "Transferable streams",
-    "spec": "https://streams.spec.whatwg.org/#rs-transfer",
+    "spec": [
+      "https://streams.spec.whatwg.org/#rs-transfer"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -33575,8 +38153,11 @@ export const features = {
     ],
     "description": "The transform-box CSS property sets the position and dimensions of the reference box relative to which an element's transformations are calculated.",
     "description_html": "The <code>transform-box</code> CSS property sets the position and dimensions of the reference box relative to which an element's transformations are calculated.",
+    "kind": "feature",
     "name": "transform-box",
-    "spec": "https://drafts.csswg.org/css-transforms-1/#transform-box",
+    "spec": [
+      "https://drafts.csswg.org/css-transforms-1/#transform-box"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-04-16",
@@ -33592,7 +38173,9 @@ export const features = {
     }
   },
   "transforms2d": {
-    "caniuse": "transforms2d",
+    "caniuse": [
+      "transforms2d"
+    ],
     "compat_features": [
       "css.properties.transform",
       "css.properties.transform-origin",
@@ -33626,9 +38209,14 @@ export const features = {
     ],
     "description": "The transform CSS property and its 2D transform functions allow rotating, scaling, skewing, and translating an element. Arbitrary 2D transforms are also possible using a transformation matrix.",
     "description_html": "The <code>transform</code> CSS property and its 2D transform functions allow rotating, scaling, skewing, and translating an element. Arbitrary 2D transforms are also possible using a transformation matrix.",
-    "group": "transforms",
+    "group": [
+      "transforms"
+    ],
+    "kind": "feature",
     "name": "2D transforms",
-    "spec": "https://drafts.csswg.org/css-transforms-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-transforms-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -33645,7 +38233,9 @@ export const features = {
     }
   },
   "transforms3d": {
-    "caniuse": "transforms3d",
+    "caniuse": [
+      "transforms3d"
+    ],
     "compat_features": [
       "css.properties.backface-visibility",
       "css.properties.perspective",
@@ -33672,9 +38262,14 @@ export const features = {
     ],
     "description": "The transform CSS property and its 3D transform functions allow rotations and other transforms in three dimensions, including perspective transforms.",
     "description_html": "The <code>transform</code> CSS property and its 3D transform functions allow rotations and other transforms in three dimensions, including perspective transforms.",
-    "group": "transforms",
+    "group": [
+      "transforms"
+    ],
+    "kind": "feature",
     "name": "3D transforms",
-    "spec": "https://drafts.csswg.org/css-transforms-2/",
+    "spec": [
+      "https://drafts.csswg.org/css-transforms-2/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -33696,9 +38291,14 @@ export const features = {
     ],
     "description": "The cancel() method of a TransformStream transformer cleans up resources when the readable side cancels or the writable side aborts.",
     "description_html": "The <code>cancel()</code> method of a <code>TransformStream</code> transformer cleans up resources when the readable side cancels or the writable side aborts.",
-    "group": "streams",
+    "group": [
+      "streams"
+    ],
+    "kind": "feature",
     "name": "TransformStream transformer cancel() method",
-    "spec": "https://streams.spec.whatwg.org/#dom-transformer-cancel",
+    "spec": [
+      "https://streams.spec.whatwg.org/#dom-transformer-cancel"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -33711,9 +38311,14 @@ export const features = {
     ],
     "description": "The transition-behavior: allow-discrete CSS declaration allows transitions for properties whose animation behavior is discrete. Such properties can't be interpolated and swap from their start value to the end value at 50%.",
     "description_html": "The <code>transition-behavior: allow-discrete</code> CSS declaration allows transitions for properties whose animation behavior is discrete. Such properties can't be interpolated and swap from their start value to the end value at 50%.",
-    "group": "transitions",
+    "group": [
+      "transitions"
+    ],
+    "kind": "feature",
     "name": "transition-behavior",
-    "spec": "https://drafts.csswg.org/css-transitions-2/#transition-behavior-property",
+    "spec": [
+      "https://drafts.csswg.org/css-transitions-2/#transition-behavior-property"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-08-06",
@@ -33729,7 +38334,9 @@ export const features = {
     }
   },
   "transitions": {
-    "caniuse": "css-transitions",
+    "caniuse": [
+      "css-transitions"
+    ],
     "compat_features": [
       "api.CSSTransition",
       "api.CSSTransition.transitionProperty",
@@ -33755,9 +38362,14 @@ export const features = {
     ],
     "description": "The transition shorthand CSS property sets how changes to an element's styles may occur over time. Transitions can be applied to specific CSS properties, all properties, or none.",
     "description_html": "The <code>transition</code> shorthand CSS property sets how changes to an element's styles may occur over time. Transitions can be applied to specific CSS properties, all properties, or none.",
-    "group": "transitions",
+    "group": [
+      "transitions"
+    ],
+    "kind": "feature",
     "name": "Transitions (CSS)",
-    "spec": "https://drafts.csswg.org/css-transitions-2/",
+    "spec": [
+      "https://drafts.csswg.org/css-transitions-2/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -33780,10 +38392,14 @@ export const features = {
     ],
     "description": "The translate HTML attribute marks whether an element's text should be translated.",
     "description_html": "The <code>translate</code> HTML attribute marks whether an element's text should be translated.",
+    "kind": "feature",
     "name": "translate",
-    "spec": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#attr-translate"
+    ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-14",
       "baseline_low_date": "2023-03-14",
       "support": {
         "chrome": "19",
@@ -33808,11 +38424,17 @@ export const features = {
     ],
     "description": "The sin(), cos(), tan(), asin(), acos(), atan(), and atan2() CSS functions compute various trigonometric functions.",
     "description_html": "The <code>sin()</code>, <code>cos()</code>, <code>tan()</code>, <code>asin()</code>, <code>acos()</code>, <code>atan()</code>, and <code>atan2()</code> CSS functions compute various trigonometric functions.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)",
-    "spec": "https://drafts.csswg.org/css-values-4/#trig-funcs",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#trig-funcs"
+    ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-13",
       "baseline_low_date": "2023-03-13",
       "support": {
         "chrome": "111",
@@ -33826,7 +38448,9 @@ export const features = {
     }
   },
   "trusted-types": {
-    "caniuse": "trusted-types",
+    "caniuse": [
+      "trusted-types"
+    ],
     "compat_features": [
       "api.Element.innerHTML.enforces_trusted_types",
       "api.HTMLElement.innerText.enforces_trusted_types",
@@ -33866,15 +38490,22 @@ export const features = {
     ],
     "description": "Trusted types allow you to lock down insecure parts of the DOM API and prevent client-side cross-site scripting (XSS) attacks.",
     "description_html": "Trusted types allow you to lock down insecure parts of the DOM API and prevent client-side cross-site scripting (XSS) attacks.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Trusted types",
-    "spec": "https://w3c.github.io/trusted-types/dist/spec/",
+    "spec": [
+      "https://w3c.github.io/trusted-types/dist/spec/"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "83",
         "chrome_android": "83",
-        "edge": "83"
+        "edge": "83",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -33884,9 +38515,14 @@ export const features = {
     ],
     "description": "The display CSS property accepts multiple keyword values, such as inline flex or block flow, to explicitly set an element's inner and outer layout mode. Also known as 2-value, multi-keyword, or multiple value syntax.",
     "description_html": "The <code>display</code> CSS property accepts multiple keyword values, such as <code>inline flex</code> or <code>block flow</code>, to explicitly set an element's inner and outer layout mode. Also known as 2-value, multi-keyword, or multiple value syntax.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Two-value display property",
-    "spec": "https://drafts.csswg.org/css-display-3/#the-display-properties",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#the-display-properties"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-07-21",
@@ -33915,9 +38551,14 @@ export const features = {
     ],
     "description": "Typed array iteration methods",
     "description_html": "Typed array iteration methods",
-    "group": "typed-arrays",
+    "group": [
+      "typed-arrays"
+    ],
+    "kind": "feature",
     "name": "Typed array iteration methods",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.every",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.filter",
@@ -33957,8 +38598,11 @@ export const features = {
       "iterators",
       "typed-arrays"
     ],
+    "kind": "feature",
     "name": "Typed array iterators",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype-@@iterator",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.entries",
@@ -33981,7 +38625,9 @@ export const features = {
     }
   },
   "typed-arrays": {
-    "caniuse": "typedarrays",
+    "caniuse": [
+      "typedarrays"
+    ],
     "compat_features": [
       "javascript.builtins.ArrayBuffer",
       "javascript.builtins.ArrayBuffer.@@species",
@@ -34068,9 +38714,14 @@ export const features = {
     ],
     "description": "Typed arrays are ordered lists of JavaScript values, where all values are of the same numerical type, such as 8-bit integers or 32-bit floating point numbers.",
     "description_html": "Typed arrays are ordered lists of JavaScript values, where all values are of the same numerical type, such as 8-bit integers or 32-bit floating point numbers.",
-    "group": "typed-arrays",
+    "group": [
+      "typed-arrays"
+    ],
+    "kind": "feature",
     "name": "Typed arrays (initial support)",
-    "snapshot": "ecmascript-2015",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
     "spec": [
       "https://tc39.es/ecma262/multipage/indexed-collections.html#table-49",
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-constructors",
@@ -34111,9 +38762,14 @@ export const features = {
     ],
     "description": "The <u> HTML element makes non-textual annotations, styling text as underlined by default.",
     "description_html": "The <code>&#x3C;u></code> HTML element makes non-textual annotations, styling text as underlined by default.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<u>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34160,8 +38816,11 @@ export const features = {
     ],
     "description": "The Sec-CH-UA HTTP request header and the navigator.userAgentData API expose browser and platform information used to vary responses and application logic. User agent client hints are similar to user agent strings but more privacy-preserving and safer to parse.",
     "description_html": "The <code>Sec-CH-UA</code> HTTP request header and the <code>navigator.userAgentData</code> API expose browser and platform information used to vary responses and application logic. User agent client hints are similar to user agent strings but more privacy-preserving and safer to parse.",
+    "kind": "feature",
     "name": "User agent client hints",
-    "spec": "https://wicg.github.io/ua-client-hints/",
+    "spec": [
+      "https://wicg.github.io/ua-client-hints/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34182,9 +38841,14 @@ export const features = {
     ],
     "description": "The Uint8Array object methods fromBase64(), toBase64(), and setFromBase64() convert to and from base64 strings. The fromHex(), toHex(), and setFromHex() methods convert to and from hex strings.",
     "description_html": "The <code>Uint8Array</code> object methods <code>fromBase64()</code>, <code>toBase64()</code>, and <code>setFromBase64()</code> convert to and from base64 strings. The <code>fromHex()</code>, <code>toHex()</code>, and <code>setFromHex()</code> methods convert to and from hex strings.",
-    "group": "typed-arrays",
+    "group": [
+      "typed-arrays"
+    ],
+    "kind": "feature",
     "name": "Uint8Array base64 and hex conversion",
-    "spec": "https://tc39.es/proposal-arraybuffer-base64/spec/",
+    "spec": [
+      "https://tc39.es/proposal-arraybuffer-base64/spec/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-09-05",
@@ -34205,10 +38869,17 @@ export const features = {
     ],
     "description": "Unicode point escapes (\\\\u{}) represent Unicode characters within strings.",
     "description_html": "Unicode point escapes (<code>\\\\u{}</code>) represent Unicode characters within strings.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Unicode point escapes",
-    "snapshot": "ecmascript-2015",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-UnicodeEscapeSequence",
+    "snapshot": [
+      "ecmascript-2015"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-UnicodeEscapeSequence"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -34225,15 +38896,22 @@ export const features = {
     }
   },
   "unset-value": {
-    "caniuse": "css-unset-value",
+    "caniuse": [
+      "css-unset-value"
+    ],
     "compat_features": [
       "css.types.global_keywords.unset"
     ],
     "description": "The unset keyword resets any CSS property, removing any values previously set by the author, user, or browser. Inherited properties (like color) reset to the parent element's computed value. Non-inherited properties (like display) reset to the specified initial value (inline).",
     "description_html": "The <code>unset</code> keyword resets any CSS property, removing any values previously set by the author, user, or browser. Inherited properties (like <code>color</code>) reset to the parent element's computed value. Non-inherited properties (like <code>display</code>) reset to the specified initial value (<code>inline</code>).",
-    "group": "explicit-defaults",
+    "group": [
+      "explicit-defaults"
+    ],
+    "kind": "feature",
     "name": "unset",
-    "spec": "https://drafts.csswg.org/css-cascade-3/#inherit-initial",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-3/#inherit-initial"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-09-21",
@@ -34255,9 +38933,14 @@ export const features = {
     ],
     "description": "The update CSS media query sets styles based on whether and how fast the user's device can modify display after it has been rendered. For example, you can avoid animations on devices that aren't fast enough to display them smoothly.",
     "description_html": "The <code>update</code> CSS media query sets styles based on whether and how fast the user's device can modify display after it has been rendered. For example, you can avoid animations on devices that aren't fast enough to display them smoothly.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "Update frequency media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#update",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#update"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-09-18",
@@ -34279,9 +38962,14 @@ export const features = {
     ],
     "description": "The Upgrade-Insecure-Requests HTTP request header tells the server that the response should redirect to a secure (HTTPS) resource.",
     "description_html": "The <code>Upgrade-Insecure-Requests</code> HTTP request header tells the server that the response should redirect to a secure (HTTPS) resource.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Upgrade insecure requests",
-    "spec": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+    "spec": [
+      "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-30",
@@ -34298,7 +38986,9 @@ export const features = {
     }
   },
   "url": {
-    "caniuse": "url",
+    "caniuse": [
+      "url"
+    ],
     "compat_features": [
       "api.URL",
       "api.URL.URL",
@@ -34341,8 +39031,11 @@ export const features = {
     ],
     "description": "A URL object represents a web address, like https://example.com/, and parts of the address, such as the domain, path, and query string (as URLSearchParams).",
     "description_html": "A <code>URL</code> object represents a web address, like <code>https://example.com/</code>, and parts of the address, such as the domain, path, and query string (as <code>URLSearchParams</code>).",
+    "kind": "feature",
     "name": "URL",
-    "spec": "https://url.spec.whatwg.org/",
+    "spec": [
+      "https://url.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34364,8 +39057,11 @@ export const features = {
     ],
     "description": "The URL.canParse() static method checks whether a URL can be parsed into a valid URL object. It's an alternative to calling new URL() in a try … catch statement.",
     "description_html": "The <code>URL.canParse()</code> static method checks whether a URL can be parsed into a valid <code>URL</code> object. It's an alternative to calling <code>new URL()</code> in a <code>try … catch</code> statement.",
+    "kind": "feature",
     "name": "URL.canParse()",
-    "spec": "https://url.spec.whatwg.org/#dom-url-canparse",
+    "spec": [
+      "https://url.spec.whatwg.org/#dom-url-canparse"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -34399,16 +39095,22 @@ export const features = {
     ],
     "description": "The URLPattern API creates patterns that can be matched against URLs or URL components.",
     "description_html": "The <code>URLPattern</code> API creates patterns that can be matched against URLs or URL components.",
+    "kind": "feature",
     "name": "URLPattern",
-    "spec": "https://urlpattern.spec.whatwg.org/",
+    "spec": [
+      "https://urlpattern.spec.whatwg.org/"
+    ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-15",
       "support": {
         "chrome": "95",
         "chrome_android": "95",
         "edge": "95",
         "firefox": "142",
-        "firefox_android": "142"
+        "firefox_android": "142",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -34423,7 +39125,10 @@ export const features = {
     ],
     "description": "The :active, :focus, and :hover CSS pseudo-classes match elements based on how users are interacting with them.",
     "description_html": "The <code>:active</code>, <code>:focus</code>, and <code>:hover</code> CSS pseudo-classes match elements based on how users are interacting with them.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": "User action pseudo-classes",
     "spec": [
       "https://drafts.csswg.org/selectors-4/#the-hover-pseudo",
@@ -34454,9 +39159,14 @@ export const features = {
     ],
     "description": "The navigator.userActivation API reveals whether the user has interacted with the page through an \"activation\" gesture such as a click, tap, or key press. User activation gated APIs (such as the fullscreen API) fail without user interaction, and this API allows you to predict such a failure.",
     "description_html": "The <code>navigator.userActivation</code> API reveals whether the user has interacted with the page through an \"activation\" gesture such as a click, tap, or key press. User activation gated APIs (such as the fullscreen API) fail without user interaction, and this API allows you to predict such a failure.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "User activation",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -34478,8 +39188,11 @@ export const features = {
     ],
     "description": "The navigator.userAgent property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
     "description_html": "The <code>navigator.userAgent</code> property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
+    "kind": "feature",
     "name": "User agent sniffing",
-    "spec": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34502,9 +39215,14 @@ export const features = {
     ],
     "description": "The :user-valid and :user-invalid pseudo-classes match form controls that have been marked as valid or invalid based on their validation constraints.",
     "description_html": "The <code>:user-valid</code> and <code>:user-invalid</code> pseudo-classes match form controls that have been marked as valid or invalid based on their validation constraints.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":user-valid and :user-invalid",
-    "spec": "https://drafts.csswg.org/selectors-4/#user-pseudos",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#user-pseudos"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -34520,7 +39238,9 @@ export const features = {
     }
   },
   "user-select": {
-    "caniuse": "user-select-none",
+    "caniuse": [
+      "user-select-none"
+    ],
     "compat_features": [
       "css.properties.user-select",
       "css.properties.user-select.all",
@@ -34530,9 +39250,14 @@ export const features = {
     ],
     "description": "The user-select CSS property controls which elements can be selected by the user.",
     "description_html": "The <code>user-select</code> CSS property controls which elements can be selected by the user.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "user-select",
-    "spec": "https://drafts.csswg.org/css-ui-4/#content-selection",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#content-selection"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34550,9 +39275,14 @@ export const features = {
     ],
     "description": "The <var> element represents the name of a variable in a mathematical expression or a programming context.",
     "description_html": "The <code>&#x3C;var></code> element represents the name of a variable in a mathematical expression or a programming context.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<var>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34582,9 +39312,14 @@ export const features = {
     ],
     "description": "The vertical-align CSS property sets the vertical alignment of inline, inline-block, and table cell elements. It has no effect on block-level elements.",
     "description_html": "The <code>vertical-align</code> CSS property sets the vertical alignment of inline, inline-block, and table cell elements. It has no effect on block-level elements.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "vertical-align",
-    "spec": "https://drafts.csswg.org/css2/#propdef-vertical-align",
+    "spec": [
+      "https://drafts.csswg.org/css2/#propdef-vertical-align"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34607,9 +39342,14 @@ export const features = {
     ],
     "description": "The writing-mode CSS property orients form elements (such as radio buttons, progress bars, or select menus) vertically when the writing mode is vertical-lr or vertical-rl. The direction CSS property sets whether inputs flow from top to bottom or bottom to top.",
     "description_html": "The <code>writing-mode</code> CSS property orients form elements (such as radio buttons, progress bars, or select menus) vertically when the writing mode is <code>vertical-lr</code> or <code>vertical-rl</code>. The <code>direction</code> CSS property sets whether inputs flow from top to bottom or bottom to top.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "Vertical form controls",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#vertical-modes",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#vertical-modes"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-04-18",
@@ -34630,8 +39370,11 @@ export const features = {
     ],
     "description": "The navigator.vibrate() method makes a tactile alert, if the device is equipped with a haptic motor.",
     "description_html": "The <code>navigator.vibrate()</code> method makes a tactile alert, if the device is equipped with a haptic motor.",
+    "kind": "feature",
     "name": "Vibration",
-    "spec": "https://w3c.github.io/vibration/",
+    "spec": [
+      "https://w3c.github.io/vibration/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34642,7 +39385,9 @@ export const features = {
     }
   },
   "video": {
-    "caniuse": "video",
+    "caniuse": [
+      "video"
+    ],
     "compat_features": [
       "api.HTMLMediaElement",
       "api.HTMLMediaElement.abort_event",
@@ -34729,8 +39474,11 @@ export const features = {
       "media-elements",
       "html-elements"
     ],
+    "kind": "feature",
     "name": "<video>",
-    "spec": "https://html.spec.whatwg.org/multipage/media.html#video",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/media.html#video"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -34752,9 +39500,14 @@ export const features = {
     ],
     "description": "The video-dynamic-range CSS media query sets styles based on whether a device can display video with at least standard range colors or at least high range colors. Non-visual devices will match neither.",
     "description_html": "The <code>video-dynamic-range</code> CSS media query sets styles based on whether a device can display video with at least <code>standard</code> range colors or at least <code>high</code> range colors. Non-visual devices will match neither.",
-    "group": "media-queries",
+    "group": [
+      "media-queries"
+    ],
+    "kind": "feature",
     "name": "video-dynamic-range media query",
-    "spec": "https://drafts.csswg.org/mediaqueries-5/#dynamic-range",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#dynamic-range"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34770,9 +39523,14 @@ export const features = {
     ],
     "description": "The view-transition-class CSS property sets a name that can be used to apply styles to multiple named view transition pseudo-elements.",
     "description_html": "The <code>view-transition-class</code> CSS property sets a name that can be used to apply styles to multiple named view transition pseudo-elements.",
-    "group": "view-transitions",
+    "group": [
+      "view-transitions"
+    ],
+    "kind": "feature",
     "name": "view-transition-class",
-    "spec": "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class",
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34785,7 +39543,9 @@ export const features = {
     }
   },
   "view-transitions": {
-    "caniuse": "view-transitions",
+    "caniuse": [
+      "view-transitions"
+    ],
     "compat_features": [
       "api.Document.startViewTransition",
       "api.Document.startViewTransition.callbackOptions_parameter",
@@ -34815,9 +39575,14 @@ export const features = {
     ],
     "description": "View transitions allow you to create animated visual transitions between different states of a document.",
     "description_html": "View transitions allow you to create animated visual transitions between different states of a document.",
-    "group": "view-transitions",
+    "group": [
+      "view-transitions"
+    ],
+    "kind": "feature",
     "name": "View transitions",
-    "spec": "https://drafts.csswg.org/css-view-transitions-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34845,6 +39610,7 @@ export const features = {
     ],
     "description": "The viewport segment CSS environment variables and media features, and the viewport.segments API, allow you to adapt your layout to devices where the display is split, such as on foldable devices.",
     "description_html": "The viewport segment CSS environment variables and media features, and the <code>viewport.segments</code> API, allow you to adapt your layout to devices where the display is split, such as on foldable devices.",
+    "kind": "feature",
     "name": "Viewport segments",
     "spec": [
       "https://drafts.csswg.org/css-env-1/#viewport-segments",
@@ -34862,7 +39628,9 @@ export const features = {
     }
   },
   "viewport-unit-variants": {
-    "caniuse": "viewport-unit-variants",
+    "caniuse": [
+      "viewport-unit-variants"
+    ],
     "compat_features": [
       "css.types.length.vb",
       "css.types.length.vi",
@@ -34872,6 +39640,7 @@ export const features = {
     ],
     "description": "The sv*, lv*, and dv* CSS viewport units are relative to the smallest, largest, and current (dynamic) viewport size. They are used to size elements in relation to the viewport's dimensions.",
     "description_html": "The <code>sv*</code>, <code>lv*</code>, and <code>dv*</code> CSS viewport units are relative to the smallest, largest, and current (dynamic) viewport size. They are used to size elements in relation to the viewport's dimensions.",
+    "kind": "feature",
     "name": "Small, large, and dynamic viewport units",
     "spec": [
       "https://drafts.csswg.org/css-values-4/#viewport-variants",
@@ -34893,7 +39662,9 @@ export const features = {
     }
   },
   "viewport-units": {
-    "caniuse": "viewport-units",
+    "caniuse": [
+      "viewport-units"
+    ],
     "compat_features": [
       "css.types.length.vh",
       "css.types.length.vmax",
@@ -34902,9 +39673,14 @@ export const features = {
     ],
     "description": "The vw, vh, vmin, and vmax CSS viewport units are relative to the size of the viewport, and are used to size elements in relation to the viewport's dimensions.",
     "description_html": "The <code>vw</code>, <code>vh</code>, <code>vmin</code>, and <code>vmax</code> CSS viewport units are relative to the size of the viewport, and are used to size elements in relation to the viewport's dimensions.",
-    "group": "units",
+    "group": [
+      "units"
+    ],
+    "kind": "feature",
     "name": "Viewport units",
-    "spec": "https://drafts.csswg.org/css-values-4/#viewport-relative-lengths",
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#viewport-relative-lengths"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-04-17",
@@ -34934,8 +39710,11 @@ export const features = {
     ],
     "description": "The navigator.virtualKeyboard API inspects and controls on-screen virtual keyboards. You can use it to programmatically hide or show a virtual keyboard or respond to the keyboard disappearing or appearing.",
     "description_html": "The <code>navigator.virtualKeyboard</code> API inspects and controls on-screen virtual keyboards. You can use it to programmatically hide or show a virtual keyboard or respond to the keyboard disappearing or appearing.",
+    "kind": "feature",
     "name": "Virtual keyboard",
-    "spec": "https://w3c.github.io/virtual-keyboard/",
+    "spec": [
+      "https://w3c.github.io/virtual-keyboard/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34957,8 +39736,11 @@ export const features = {
       "compute-pressure",
       "webdriver"
     ],
+    "kind": "feature",
     "name": "Virtual pressure sources",
-    "spec": "https://w3c.github.io/compute-pressure/",
+    "spec": [
+      "https://w3c.github.io/compute-pressure/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -34981,8 +39763,11 @@ export const features = {
       "sensors",
       "webdriver"
     ],
+    "kind": "feature",
     "name": "Virtual sensors",
-    "spec": "https://w3c.github.io/sensors/#automation",
+    "spec": [
+      "https://w3c.github.io/sensors/#automation"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35001,9 +39786,14 @@ export const features = {
     ],
     "description": "The visibility CSS property sets whether an element is shown. Invisible elements still affect the document layout.",
     "description_html": "The <code>visibility</code> CSS property sets whether an element is shown. Invisible elements still affect the document layout.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "visibility",
-    "spec": "https://drafts.csswg.org/css-display-3/#visibility",
+    "spec": [
+      "https://drafts.csswg.org/css-display-3/#visibility"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -35036,8 +39826,11 @@ export const features = {
     ],
     "description": "The visualViewport API provides a way to query and modify the user-visible viewport of a web page.",
     "description_html": "The <code>visualViewport</code> API provides a way to query and modify the user-visible viewport of a web page.",
+    "kind": "feature",
     "name": "Visual viewport API",
-    "spec": "https://drafts.csswg.org/cssom-view-1/#visualViewport",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#visualViewport"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-02-10",
@@ -35054,7 +39847,9 @@ export const features = {
     }
   },
   "wasm": {
-    "caniuse": "wasm",
+    "caniuse": [
+      "wasm"
+    ],
     "compat_features": [
       "webassembly.api",
       "webassembly.api.CompileError",
@@ -35093,9 +39888,14 @@ export const features = {
     ],
     "description": "The WebAssembly.instantiate() and WebAssembly.instantiateStreaming() global static methods load WebAssembly code (also known as Wasm), a portable binary instruction format.",
     "description_html": "The <code>WebAssembly.instantiate()</code> and <code>WebAssembly.instantiateStreaming()</code> global static methods load WebAssembly code (also known as Wasm), a portable binary instruction format.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "WebAssembly",
-    "spec": "https://webassembly.github.io/gc/core/bikeshed/",
+    "spec": [
+      "https://webassembly.github.io/gc/core/bikeshed/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-04-17",
@@ -35112,15 +39912,22 @@ export const features = {
     }
   },
   "wasm-bigint": {
-    "caniuse": "wasm-bigint",
+    "caniuse": [
+      "wasm-bigint"
+    ],
     "compat_features": [
       "webassembly.BigInt-to-i64-integration"
     ],
     "description": "Integer values pass bidirectionally between JavaScript and WebAssembly, converted to i64 values in WebAssembly or BigInt values in JavaScript.",
     "description_html": "Integer values pass bidirectionally between JavaScript and WebAssembly, converted to i64 values in WebAssembly or BigInt values in JavaScript.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "BigInt to i64 conversion (WebAssembly)",
-    "spec": "https://webassembly.github.io/spec/js-api/#ref-for-syntax-numtype①⓪",
+    "spec": [
+      "https://webassembly.github.io/spec/js-api/#ref-for-syntax-numtype①⓪"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -35137,15 +39944,22 @@ export const features = {
     }
   },
   "wasm-bulk-memory": {
-    "caniuse": "wasm-bulk-memory",
+    "caniuse": [
+      "wasm-bulk-memory"
+    ],
     "compat_features": [
       "webassembly.bulk-memory-operations"
     ],
     "description": "Bulk memory operations, such as copy and init, mirror the efficiency of native memcpy and memmove operations.",
     "description_html": "Bulk memory operations, such as <code>copy</code> and <code>init</code>, mirror the efficiency of native <code>memcpy</code> and <code>memmove</code> operations.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Bulk memory operations (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/spec/blob/main/proposals/bulk-memory-operations/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/spec/blob/main/proposals/bulk-memory-operations/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-04-25",
@@ -35176,9 +39990,14 @@ export const features = {
     ],
     "description": "Exceptions break the normal control flow of execution to represent exceptional behavior, such as an error. You can respond to the exception in JavaScript code.",
     "description_html": "Exceptions break the normal control flow of execution to represent exceptional behavior, such as an error. You can respond to the exception in JavaScript code.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Exception handling (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/legacy/Exceptions.md",
+    "spec": [
+      "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/legacy/Exceptions.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-11-03",
@@ -35200,9 +40019,14 @@ export const features = {
     ],
     "description": "When caught, an exception is reified into an exception reference, a value of the new type exnref.",
     "description_html": "When caught, an exception is reified into an exception reference, a value of the new type <code>exnref</code>.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Exception references with exnref (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/Exceptions.md",
+    "spec": [
+      "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/Exceptions.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35221,9 +40045,14 @@ export const features = {
     ],
     "description": "The i32.add, i32.sub, i32.mul, i64.add, i64.sub, and i64.mul operations extend constant expressions to include arithmetic.",
     "description_html": "The <code>i32.add</code>, <code>i32.sub</code>, <code>i32.mul</code>, <code>i64.add</code>, <code>i64.sub</code>, and <code>i64.mul</code> operations extend constant expressions to include arithmetic.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Extended constant expressions (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/extended-const/blob/main/proposals/extended-const/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/extended-const/blob/main/proposals/extended-const/Overview.md"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-05",
@@ -35244,9 +40073,14 @@ export const features = {
     ],
     "description": "Garbage collection tracks references for better memory management with garbage-collected languages running in WebAssmbly.",
     "description_html": "Garbage collection tracks references for better memory management with garbage-collected languages running in WebAssmbly.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Garbage collection (WebAssembly)",
-    "spec": "https://webassembly.github.io/gc/core/bikeshed/#garbage-collection①",
+    "spec": [
+      "https://webassembly.github.io/gc/core/bikeshed/#garbage-collection①"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -35267,9 +40101,14 @@ export const features = {
     ],
     "description": "Instructions accept 64-bit memory indexes.",
     "description_html": "Instructions accept 64-bit memory indexes.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Memory64 (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35287,9 +40126,14 @@ export const features = {
     ],
     "description": "A single module in WebAssembly can have multiple memories.",
     "description_html": "A single module in WebAssembly can have multiple memories.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Multi-memory (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/multi-memory/blob/main/proposals/multi-memory/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/multi-memory/blob/main/proposals/multi-memory/Overview.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35302,15 +40146,22 @@ export const features = {
     }
   },
   "wasm-multi-value": {
-    "caniuse": "wasm-multi-value",
+    "caniuse": [
+      "wasm-multi-value"
+    ],
     "compat_features": [
       "webassembly.multi-value"
     ],
     "description": "Instructions and blocks can produce multiple result values.",
     "description_html": "Instructions and blocks can produce multiple result values.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Multi-value (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/spec/blob/main/proposals/multi-value/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/spec/blob/main/proposals/multi-value/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-04-20",
@@ -35327,15 +40178,22 @@ export const features = {
     }
   },
   "wasm-mutable-globals": {
-    "caniuse": "wasm-mutable-globals",
+    "caniuse": [
+      "wasm-mutable-globals"
+    ],
     "compat_features": [
       "webassembly.mutable-globals"
     ],
     "description": "Mutable global variables are importable and exportable.",
     "description_html": "Mutable global variables are importable and exportable.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Import and export of mutable globals (WebAssembly)",
-    "spec": "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-mutable",
+    "spec": [
+      "https://webassembly.github.io/spec/js-api/#dom-globaldescriptor-mutable"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-09-24",
@@ -35352,15 +40210,22 @@ export const features = {
     }
   },
   "wasm-non-trapping-float-to-int": {
-    "caniuse": "wasm-nontrapping-fptoint",
+    "caniuse": [
+      "wasm-nontrapping-fptoint"
+    ],
     "compat_features": [
       "webassembly.non-trapping-float-to-int-conversions"
     ],
     "description": "Saturating floating-point to integer conversion operators return the maximum or minimum integer value on overflow instead of trapping.",
     "description_html": "Saturating floating-point to integer conversion operators return the maximum or minimum integer value on overflow instead of trapping.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Non-trapping float-to-int conversion (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/spec/blob/main/proposals/nontrapping-float-to-int-conversion/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/spec/blob/main/proposals/nontrapping-float-to-int-conversion/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-04-25",
@@ -35377,15 +40242,22 @@ export const features = {
     }
   },
   "wasm-reference-types": {
-    "caniuse": "wasm-reference-types",
+    "caniuse": [
+      "wasm-reference-types"
+    ],
     "compat_features": [
       "webassembly.reference-types"
     ],
     "description": "The externref type can be both a value type and a table element type, while funcref can be a value type.",
     "description_html": "The <code>externref</code> type can be both a value type and a table element type, while <code>funcref</code> can be a value type.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Reference types (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/spec/blob/main/proposals/reference-types/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/spec/blob/main/proposals/reference-types/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-05-19",
@@ -35402,15 +40274,22 @@ export const features = {
     }
   },
   "wasm-sign-extension-operators": {
-    "caniuse": "wasm-signext",
+    "caniuse": [
+      "wasm-signext"
+    ],
     "compat_features": [
       "webassembly.sign-extension-operations"
     ],
     "description": "Sign-extension operator instructions extend the width of 8-bit, 16-bit, and 32-bit values to 32-bit and 64-bit values.",
     "description_html": "Sign-extension operator instructions extend the width of 8-bit, 16-bit, and 32-bit values to 32-bit and 64-bit values.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Sign extension operators (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/spec/blob/main/proposals/sign-extension-ops/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/spec/blob/main/proposals/sign-extension-ops/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -35427,15 +40306,22 @@ export const features = {
     }
   },
   "wasm-simd": {
-    "caniuse": "wasm-simd",
+    "caniuse": [
+      "wasm-simd"
+    ],
     "compat_features": [
       "webassembly.fixed-width-SIMD"
     ],
     "description": "128-bit SIMD (Single Instruction Multiple Data) performs one instruction on multiple units of data, when running on hardware that supports such instructions. Also known as vector instructions.",
     "description_html": "128-bit SIMD (Single Instruction Multiple Data) performs one instruction on multiple units of data, when running on hardware that supports such instructions. Also known as vector instructions.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Fixed-width SIMD (WebAssembly)",
-    "spec": "https://webassembly.github.io/spec/core/bikeshed/#vector-instructions",
+    "spec": [
+      "https://webassembly.github.io/spec/core/bikeshed/#vector-instructions"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-03-27",
@@ -35456,9 +40342,14 @@ export const features = {
     ],
     "description": "Relaxed SIMD (Single Instruction Multiple Data) introduces local non-determinism, where the results of the instructions may vary based on hardware support.",
     "description_html": "Relaxed SIMD (Single Instruction Multiple Data) introduces local non-determinism, where the results of the instructions may vary based on hardware support.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Relaxed-width SIMD (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35480,9 +40371,14 @@ export const features = {
     ],
     "description": "The WebAssembly builtin string functions mirror a subset of the JavaScript String API and adapt it to be efficiently callable without JavaScript glue code.",
     "description_html": "The WebAssembly builtin string functions mirror a subset of the JavaScript <code>String</code> API and adapt it to be efficiently callable without JavaScript glue code.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "String builtins (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/js-string-builtins/blob/main/proposals/js-string-builtins/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/js-string-builtins/blob/main/proposals/js-string-builtins/Overview.md"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -35500,9 +40396,14 @@ export const features = {
     ],
     "description": "Tail call optimization discards a caller frame and replaces the call with a jump instruction.",
     "description_html": "Tail call optimization discards a caller frame and replaces the call with a jump instruction.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Tail call optimization (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/tail-call/blob/main/proposals/tail-call/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/tail-call/blob/main/proposals/tail-call/Overview.md"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-12-11",
@@ -35518,16 +40419,23 @@ export const features = {
     }
   },
   "wasm-threads": {
-    "caniuse": "wasm-threads",
+    "caniuse": [
+      "wasm-threads"
+    ],
     "compat_features": [
       "webassembly.api.Memory.Memory.shared",
       "webassembly.threads-and-atomics"
     ],
     "description": "Threads in WebAssembly run code in parallel, while atomic memory instructions can guarantee that no two threads can read or write to shared memory at the same time.",
     "description_html": "Threads in WebAssembly run code in parallel, while atomic memory instructions can guarantee that no two threads can read or write to shared memory at the same time.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Threads and atomics (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/threads/blob/main/proposals/threads/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/threads/blob/main/proposals/threads/Overview.md"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-06-13",
@@ -35549,9 +40457,14 @@ export const features = {
     ],
     "description": "A typed function reference can be called directly.",
     "description_html": "A typed function reference can be called directly.",
-    "group": "webassembly",
+    "group": [
+      "webassembly"
+    ],
+    "kind": "feature",
     "name": "Typed function references (WebAssembly)",
-    "spec": "https://github.com/WebAssembly/function-references/blob/main/proposals/function-references/Overview.md",
+    "spec": [
+      "https://github.com/WebAssembly/function-references/blob/main/proposals/function-references/Overview.md"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-09-16",
@@ -35567,15 +40480,22 @@ export const features = {
     }
   },
   "wbr": {
-    "caniuse": "wbr-element",
+    "caniuse": [
+      "wbr-element"
+    ],
     "compat_features": [
       "html.elements.wbr"
     ],
     "description": "The <wbr> HTML element represents a word break opportunity, to explicitly mark a place within a word where a line might be broken.",
     "description_html": "The <code>&#x3C;wbr></code> HTML element represents a word break opportunity, to explicitly mark a place within a word where a line might be broken.",
-    "group": "html-elements",
+    "group": [
+      "html-elements"
+    ],
+    "kind": "feature",
     "name": "<wbr>",
-    "spec": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -35606,10 +40526,17 @@ export const features = {
     ],
     "description": "The WeakRef and FinalizationRegistry objects hold references to garbage-collectable objects without creating strong references that prevent their garbage collection.",
     "description_html": "The <code>WeakRef</code> and <code>FinalizationRegistry</code> objects hold references to garbage-collectable objects without creating strong references that prevent their garbage collection.",
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "Weak references",
-    "snapshot": "ecmascript-2021",
-    "spec": "https://tc39.es/ecma262/multipage/managing-memory.html#sec-managing-memory",
+    "snapshot": [
+      "ecmascript-2021"
+    ],
+    "spec": [
+      "https://tc39.es/ecma262/multipage/managing-memory.html#sec-managing-memory"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -35639,9 +40566,14 @@ export const features = {
     ],
     "description": "A WeakMap object holds key-value pairs that do not create strong references to its keys, such that value data can be associated with a key without preventing garbage collection of the key.",
     "description_html": "A <code>WeakMap</code> object holds key-value pairs that do not create strong references to its keys, such that value data can be associated with a key without preventing garbage collection of the key.",
-    "group": "collections",
+    "group": [
+      "collections"
+    ],
+    "kind": "feature",
     "name": "WeakMap",
-    "spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakmap-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakmap-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -35670,9 +40602,14 @@ export const features = {
     ],
     "description": "A WeakSet object stores unique values of any type without creating strong references to the values, such that membership in the set does not prevent garbage collection of the value.",
     "description_html": "A <code>WeakSet</code> object stores unique values of any type without creating strong references to the values, such that membership in the set does not prevent garbage collection of the value.",
-    "group": "collections",
+    "group": [
+      "collections"
+    ],
+    "kind": "feature",
     "name": "WeakSet",
-    "spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -35689,7 +40626,9 @@ export const features = {
     }
   },
   "web-animations": {
-    "caniuse": "web-animation",
+    "caniuse": [
+      "web-animation"
+    ],
     "compat_features": [
       "api.Animation",
       "api.Animation.Animation",
@@ -35757,9 +40696,14 @@ export const features = {
     ],
     "description": "The web animation API programmatically creates, inspects, and controls element animations, to change and synchronize appearance over time.",
     "description_html": "The web animation API programmatically creates, inspects, and controls element animations, to change and synchronize appearance over time.",
-    "group": "animation",
+    "group": [
+      "animation"
+    ],
+    "kind": "feature",
     "name": "Web animations",
-    "spec": "https://drafts.csswg.org/web-animations-1/",
+    "spec": [
+      "https://drafts.csswg.org/web-animations-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -35776,7 +40720,9 @@ export const features = {
     }
   },
   "web-audio": {
-    "caniuse": "audio-api",
+    "caniuse": [
+      "audio-api"
+    ],
     "compat_features": [
       "api.AnalyserNode",
       "api.AnalyserNode.AnalyserNode",
@@ -35985,9 +40931,14 @@ export const features = {
     ],
     "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
     "description_html": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
-    "group": "web-audio",
+    "group": [
+      "web-audio"
+    ],
+    "kind": "feature",
     "name": "Web Audio",
-    "spec": "https://webaudio.github.io/web-audio-api/",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-10-26",
@@ -36004,7 +40955,9 @@ export const features = {
     }
   },
   "web-bluetooth": {
-    "caniuse": "web-bluetooth",
+    "caniuse": [
+      "web-bluetooth"
+    ],
     "compat_features": [
       "api.Bluetooth",
       "api.Bluetooth.getAvailability",
@@ -36070,8 +41023,11 @@ export const features = {
     ],
     "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
     "description_html": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+    "kind": "feature",
     "name": "Web Bluetooth",
-    "spec": "https://webbluetoothcg.github.io/web-bluetooth/",
+    "spec": [
+      "https://webbluetoothcg.github.io/web-bluetooth/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36082,7 +41038,9 @@ export const features = {
     }
   },
   "web-cryptography": {
-    "caniuse": "cryptography",
+    "caniuse": [
+      "cryptography"
+    ],
     "compat_features": [
       "api.Crypto",
       "api.Crypto.getRandomValues",
@@ -36128,7 +41086,10 @@ export const features = {
     ],
     "description": "The Web Cryptography API performs low-level cryptographic operations, such as encryption, decryption, and signature verification. Also known as the Web Crypto API.",
     "description_html": "The Web Cryptography API performs low-level cryptographic operations, such as encryption, decryption, and signature verification. Also known as the Web Crypto API.",
-    "group": "security",
+    "group": [
+      "security"
+    ],
+    "kind": "feature",
     "name": "Web Cryptography",
     "spec": [
       "https://w3c.github.io/webcrypto/",
@@ -36162,8 +41123,11 @@ export const features = {
     ],
     "description": "The navigator.locks API coordinates work with shared resources through mutually exclusive ownership of a resource's name. Also known as web locks.",
     "description_html": "The <code>navigator.locks</code> API coordinates work with shared resources through mutually exclusive ownership of a resource's name. Also known as web locks.",
+    "kind": "feature",
     "name": "Locks",
-    "spec": "https://w3c.github.io/web-locks/",
+    "spec": [
+      "https://w3c.github.io/web-locks/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-09-14",
@@ -36180,7 +41144,9 @@ export const features = {
     }
   },
   "web-midi": {
-    "caniuse": "midi",
+    "caniuse": [
+      "midi"
+    ],
     "compat_features": [
       "api.MIDIAccess",
       "api.MIDIAccess.inputs",
@@ -36235,8 +41201,11 @@ export const features = {
     ],
     "description": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
     "description_html": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
+    "kind": "feature",
     "name": "Web MIDI",
-    "spec": "https://webaudio.github.io/web-midi-api/",
+    "spec": [
+      "https://webaudio.github.io/web-midi-api/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36248,7 +41217,9 @@ export const features = {
     }
   },
   "web-nfc": {
-    "caniuse": "webnfc",
+    "caniuse": [
+      "webnfc"
+    ],
     "compat_features": [
       "api.NDEFMessage",
       "api.NDEFMessage.NDEFMessage",
@@ -36280,8 +41251,11 @@ export const features = {
     ],
     "description": "The NDEFReader API reads and writes messages to near-field communication (NFC) tags.",
     "description_html": "The <code>NDEFReader</code> API reads and writes messages to near-field communication (NFC) tags.",
+    "kind": "feature",
     "name": "Web NFC",
-    "spec": "https://w3c.github.io/web-nfc/",
+    "spec": [
+      "https://w3c.github.io/web-nfc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36299,9 +41273,14 @@ export const features = {
     ],
     "description": "The OTPCredential API represents a one-time-password (OTP).",
     "description_html": "The <code>OTPCredential</code> API represents a one-time-password (OTP).",
-    "group": "credential-management",
+    "group": [
+      "credential-management"
+    ],
+    "kind": "feature",
     "name": "WebOTP",
-    "spec": "https://wicg.github.io/web-otp/",
+    "spec": [
+      "https://wicg.github.io/web-otp/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36312,7 +41291,9 @@ export const features = {
     }
   },
   "webauthn": {
-    "caniuse": "webauthn",
+    "caniuse": [
+      "webauthn"
+    ],
     "compat_features": [
       "api.AuthenticatorAssertionResponse",
       "api.AuthenticatorAssertionResponse.authenticatorData",
@@ -36359,9 +41340,14 @@ export const features = {
     ],
     "description": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
     "description_html": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
-    "group": "webauthn",
+    "group": [
+      "webauthn"
+    ],
+    "kind": "feature",
     "name": "Web authentication",
-    "spec": "https://w3c.github.io/webauthn/",
+    "spec": [
+      "https://w3c.github.io/webauthn/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-07",
@@ -36385,9 +41371,14 @@ export const features = {
     ],
     "description": "The getAuthenticatorData(), getPublicKey(), and getPublicKeyAlgorithm() methods of AuthenticatorAttestationResponse access credential data inside attestationObject without the need to parse it.",
     "description_html": "The <code>getAuthenticatorData()</code>, <code>getPublicKey()</code>, and <code>getPublicKeyAlgorithm()</code> methods of <code>AuthenticatorAttestationResponse</code> access credential data inside <code>attestationObject</code> without the need to parse it.",
-    "group": "webauthn",
+    "group": [
+      "webauthn"
+    ],
+    "kind": "feature",
     "name": "Web authentication easy public key access",
-    "spec": "https://w3c.github.io/webauthn/#sctn-public-key-easy",
+    "spec": [
+      "https://w3c.github.io/webauthn/#sctn-public-key-easy"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -36410,20 +41401,29 @@ export const features = {
     ],
     "description": "The signalUnknownCredential(), signalAllAcceptedCredentials(), and signalCurrentUserDetails() methods of PublicKeyCredential inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
     "description_html": "The <code>signalUnknownCredential()</code>, <code>signalAllAcceptedCredentials()</code>, and <code>signalCurrentUserDetails()</code> methods of <code>PublicKeyCredential</code> inform authenticators of the state of public key credentials, so that incorrect or revoked credentials may be updated, removed, or hidden.",
-    "group": "webauthn",
+    "group": [
+      "webauthn"
+    ],
+    "kind": "feature",
     "name": "Web authentication signal methods",
-    "spec": "https://w3c.github.io/webauthn/#sctn-signal-methods",
+    "spec": [
+      "https://w3c.github.io/webauthn/#sctn-signal-methods"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "132",
         "chrome_android": "132",
-        "edge": "132"
+        "edge": "132",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
   "webcodecs": {
-    "caniuse": "webcodecs",
+    "caniuse": [
+      "webcodecs"
+    ],
     "compat_features": [
       "api.AudioData",
       "api.AudioData.AudioData",
@@ -36553,15 +41553,20 @@ export const features = {
     ],
     "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
     "description_html": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+    "kind": "feature",
     "name": "WebCodecs",
-    "spec": "https://w3c.github.io/webcodecs/",
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "94",
         "chrome_android": "94",
         "edge": "94",
-        "firefox": "130"
+        "firefox": "130",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -36626,9 +41631,14 @@ export const features = {
     ],
     "description": "The WebDriver protocol allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
     "description_html": "The WebDriver protocol allows out-of-process programs to inspect and control browsers to, for example, run tests of web applications. Also known as WebDriver classic.",
-    "group": "webdriver",
+    "group": [
+      "webdriver"
+    ],
+    "kind": "feature",
     "name": "WebDriver",
-    "spec": "https://w3c.github.io/webdriver/",
+    "spec": [
+      "https://w3c.github.io/webdriver/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36639,9 +41649,14 @@ export const features = {
   "webdriver-bidi": {
     "description": "WebDriver BiDi is a bidirectional protocol that allows a WebDriver client and a browser to communicate with each other.",
     "description_html": "WebDriver BiDi is a bidirectional protocol that allows a WebDriver client and a browser to communicate with each other.",
-    "group": "webdriver",
+    "group": [
+      "webdriver"
+    ],
+    "kind": "feature",
     "name": "WebDriver BiDi",
-    "spec": "https://w3c.github.io/webdriver-bidi/",
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36654,7 +41669,9 @@ export const features = {
     }
   },
   "webgl": {
-    "caniuse": "webgl",
+    "caniuse": [
+      "webgl"
+    ],
     "compat_features": [
       "api.HTMLCanvasElement.getContext.webgl_context",
       "api.HTMLCanvasElement.getContext.webgl_context.options_alpha_parameter",
@@ -36838,9 +41855,14 @@ export const features = {
     ],
     "description": "The WebGLRenderingContext API is the \"webgl\" rendering context for the <canvas> element. It represents a space for drawing two- and three-dimensional graphics and animations.",
     "description_html": "The <code>WebGLRenderingContext</code> API is the <code>\"webgl\"</code> rendering context for the <code>&#x3C;canvas></code> element. It represents a space for drawing two- and three-dimensional graphics and animations.",
-    "group": "webgl",
+    "group": [
+      "webgl"
+    ],
+    "kind": "feature",
     "name": "WebGL",
-    "spec": "https://registry.khronos.org/webgl/specs/latest/1.0/",
+    "spec": [
+      "https://registry.khronos.org/webgl/specs/latest/1.0/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -36862,9 +41884,14 @@ export const features = {
     ],
     "description": "The WEBGL_color_buffer_float extension for WebGL 1.0 contexts adds the 32-bit floating-point type RGBA32F as a color-renderable format.",
     "description_html": "The <code>WEBGL_color_buffer_float</code> extension for WebGL 1.0 contexts adds the 32-bit floating-point type <code>RGBA32F</code> as a color-renderable format.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_color_buffer_float WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -36887,7 +41914,10 @@ export const features = {
     ],
     "description": "The drawingBufferColorSpace and unpackColorSpace properties of WebGLRenderingContext sets the color representation for the buffer and imported textures, such as \"srgb\" or \"display-p3\".",
     "description_html": "The <code>drawingBufferColorSpace</code> and <code>unpackColorSpace</code> properties of <code>WebGLRenderingContext</code> sets the color representation for the buffer and imported textures, such as <code>\"srgb\"</code> or <code>\"display-p3\"</code>.",
-    "group": "webgl",
+    "group": [
+      "webgl"
+    ],
+    "kind": "feature",
     "name": "Color management for WebGL",
     "spec": [
       "https://registry.khronos.org/webgl/specs/latest/1.0/#DOM-WebGLRenderingContext-drawingBufferColorSpace",
@@ -36914,9 +41944,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_astc extension for WebGL 1.0 and 2.0 contexts adds the Adaptive Scalable Texture Compression format to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_astc</code> extension for WebGL 1.0 and 2.0 contexts adds the Adaptive Scalable Texture Compression format to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_astc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -36938,9 +41973,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_etc extension for WebGL 1.0 and 2.0 contexts adds many ETC2 and EAC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_etc</code> extension for WebGL 1.0 and 2.0 contexts adds many ETC2 and EAC compressed texture formats to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_etc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36959,9 +41999,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_etc1 extension for WebGL 1.0 and 2.0 contexts adds the ETC1 compressed texture format to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_etc1</code> extension for WebGL 1.0 and 2.0 contexts adds the ETC1 compressed texture format to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_etc1 WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36980,9 +42025,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_pvrtc extension for WebGL 1.0 and 2.0 contexts adds PVRTC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_pvrtc</code> extension for WebGL 1.0 and 2.0 contexts adds PVRTC compressed texture formats to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_pvrtc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -36998,9 +42048,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_s3tc extension for WebGL 1.0 and 2.0 contexts adds S3TC compressed texture formats to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_s3tc</code> extension for WebGL 1.0 and 2.0 contexts adds S3TC compressed texture formats to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_s3tc WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37017,9 +42072,14 @@ export const features = {
     ],
     "description": "The WEBGL_compressed_texture_s3tc_srgb extension for WebGL 1.0 and 2.0 contexts adds S3TC compressed texture formats for the sRGB colorspace to compressedTexImage2D() and compressedTexSubImage2D().",
     "description_html": "The <code>WEBGL_compressed_texture_s3tc_srgb</code> extension for WebGL 1.0 and 2.0 contexts adds S3TC compressed texture formats for the sRGB colorspace to <code>compressedTexImage2D()</code> and <code>compressedTexSubImage2D()</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_compressed_texture_s3tc_srgb WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37038,9 +42098,14 @@ export const features = {
     ],
     "description": "The WEBGL_debug_renderer_info extension for WebGL 1.0 and 2.0 contexts exposes information about the graphics driver for debugging purposes.",
     "description_html": "The <code>WEBGL_debug_renderer_info</code> extension for WebGL 1.0 and 2.0 contexts exposes information about the graphics driver for debugging purposes.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_debug_renderer_info WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-10-19",
@@ -37063,9 +42128,14 @@ export const features = {
     ],
     "description": "The WEBGL_debug_shaders extension for WebGL 1.0 and 2.0 contexts adds the getTranslatedShaderSource() method to debug shaders from privileged contexts.",
     "description_html": "The <code>WEBGL_debug_shaders</code> extension for WebGL 1.0 and 2.0 contexts adds the <code>getTranslatedShaderSource()</code> method to debug shaders from privileged contexts.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_debug_shaders WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -37087,9 +42157,14 @@ export const features = {
     ],
     "description": "The WEBGL_depth_texture extension for WebGL 1.0 contexts defines 2D depth and depth-stencil textures.",
     "description_html": "The <code>WEBGL_depth_texture</code> extension for WebGL 1.0 contexts defines 2D depth and depth-stencil textures.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_depth_texture WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -37111,9 +42186,14 @@ export const features = {
     ],
     "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a WebGL canvas independently of the event loop. This can reduce drawing latency.",
     "description_html": "The optional <code>desynchronized</code> parameter of a canvas's <code>getContext()</code> method permits the browser to draw a WebGL canvas independently of the event loop. This can reduce drawing latency.",
-    "group": "webgl",
+    "group": [
+      "webgl"
+    ],
+    "kind": "feature",
     "name": "Desynchronized WebGL canvas",
-    "spec": "https://registry.khronos.org/webgl/specs/latest/1.0/#5.2.1",
+    "spec": [
+      "https://registry.khronos.org/webgl/specs/latest/1.0/#5.2.1"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37130,9 +42210,14 @@ export const features = {
     ],
     "description": "The WEBGL_draw_buffers extension for WebGL 1.0 contexts enables a fragment shader to write to several textures, which is useful for deferred shading, for example.",
     "description_html": "The <code>WEBGL_draw_buffers</code> extension for WebGL 1.0 contexts enables a fragment shader to write to several textures, which is useful for deferred shading, for example.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_draw_buffers WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37152,9 +42237,14 @@ export const features = {
     ],
     "description": "The WEBGL_lose_context extension for WebGL 1.0 and 2.0 contexts simulates losing and restoring a WebGLRenderingContext or WebGL2RenderingContext.",
     "description_html": "The <code>WEBGL_lose_context</code> extension for WebGL 1.0 and 2.0 contexts simulates losing and restoring a <code>WebGLRenderingContext</code> or <code>WebGL2RenderingContext</code>.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_lose_context WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2020-10-30",
@@ -37180,9 +42270,14 @@ export const features = {
     ],
     "description": "The WEBGL_multi_draw extension for WebGL 1.0 and 2.0 contexts renders more than one primitive with a single function call.",
     "description_html": "The <code>WEBGL_multi_draw</code> extension for WebGL 1.0 and 2.0 contexts renders more than one primitive with a single function call.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "WEBGL_multi_draw WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37207,9 +42302,14 @@ export const features = {
     ],
     "description": "The OES_draw_buffers_indexed extension for WebGL 2.0 contexts allows you to control blending on a per-color basis when writing to multiple color buffers simultaneously.",
     "description_html": "The <code>OES_draw_buffers_indexed</code> extension for WebGL 2.0 contexts allows you to control blending on a per-color basis when writing to multiple color buffers simultaneously.",
-    "group": "webgl-extensions",
+    "group": [
+      "webgl-extensions"
+    ],
+    "kind": "feature",
     "name": "OES_draw_buffers_indexed WebGL extension",
-    "spec": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-06-13",
@@ -37262,7 +42362,10 @@ export const features = {
     ],
     "description": "SharedArrayBuffer objects can be used in WebGL APIs that previously only worked with ArrayBuffer objects.",
     "description_html": "<code>SharedArrayBuffer</code> objects can be used in WebGL APIs that previously only worked with <code>ArrayBuffer</code> objects.",
-    "group": "webgl",
+    "group": [
+      "webgl"
+    ],
+    "kind": "feature",
     "name": "SharedArrayBuffer in WebGL",
     "spec": [
       "https://registry.khronos.org/webgl/specs/latest/1.0/",
@@ -37280,7 +42383,9 @@ export const features = {
     }
   },
   "webgl2": {
-    "caniuse": "webgl2",
+    "caniuse": [
+      "webgl2"
+    ],
     "compat_features": [
       "api.HTMLCanvasElement.getContext.webgl2_context",
       "api.HTMLCanvasElement.getContext.webgl2_context.options_alpha_parameter",
@@ -37524,8 +42629,11 @@ export const features = {
     ],
     "description": "The WebGL2RenderingContext API is the \"webgl2\" rendering context for the <canvas> element. It represents a space for drawing two- and three-dimensional graphics and animations. It corresponds to OpenGL ES 3.0.",
     "description_html": "The <code>WebGL2RenderingContext</code> API is the <code>\"webgl2\"</code> rendering context for the <code>&#x3C;canvas></code> element. It represents a space for drawing two- and three-dimensional graphics and animations. It corresponds to OpenGL ES 3.0.",
+    "kind": "feature",
     "name": "WebGL2",
-    "spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
+    "spec": [
+      "https://registry.khronos.org/webgl/specs/latest/2.0/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2024-03-20",
@@ -37548,8 +42656,11 @@ export const features = {
     ],
     "description": "The drawingBufferColorSpace and unpackColorSpace properties of WebGL2RenderingContext sets the color representation for the buffer and imported textures, such as \"srgb\" or \"display-p3\".",
     "description_html": "The <code>drawingBufferColorSpace</code> and <code>unpackColorSpace</code> properties of <code>WebGL2RenderingContext</code> sets the color representation for the buffer and imported textures, such as <code>\"srgb\"</code> or <code>\"display-p3\"</code>.",
+    "kind": "feature",
     "name": "Color management for WebGL2",
-    "spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
+    "spec": [
+      "https://registry.khronos.org/webgl/specs/latest/2.0/"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-10-29",
@@ -37570,8 +42681,11 @@ export const features = {
     ],
     "description": "The optional desynchronized parameter of a canvas's getContext() method permits the browser to draw a WebGL2 canvas independently of the event loop. This can reduce drawing latency.",
     "description_html": "The optional <code>desynchronized</code> parameter of a canvas's <code>getContext()</code> method permits the browser to draw a WebGL2 canvas independently of the event loop. This can reduce drawing latency.",
+    "kind": "feature",
     "name": "Desynchronized WebGL2 canvas",
-    "spec": "https://registry.khronos.org/webgl/specs/latest/2.0/",
+    "spec": [
+      "https://registry.khronos.org/webgl/specs/latest/2.0/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -37582,7 +42696,9 @@ export const features = {
     }
   },
   "webgpu": {
-    "caniuse": "webgpu",
+    "caniuse": [
+      "webgpu"
+    ],
     "compat_features": [
       "api.GPU",
       "api.GPU.getPreferredCanvasFormat",
@@ -37887,19 +43003,26 @@ export const features = {
     ],
     "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
     "description_html": "The <code>navigator.gpu</code> API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+    "kind": "feature",
     "name": "WebGPU",
-    "spec": "https://gpuweb.github.io/gpuweb/",
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ],
     "status": {
       "baseline": false,
       "support": {
         "chrome": "113",
         "chrome_android": "121",
-        "edge": "113"
+        "edge": "113",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
   "webhid": {
-    "caniuse": "webhid",
+    "caniuse": [
+      "webhid"
+    ],
     "compat_features": [
       "api.HID",
       "api.HID.connect_event",
@@ -37937,8 +43060,11 @@ export const features = {
     ],
     "description": "The WebHID API provides access to Human Interface Devices (HID) that are connected to the user's device.",
     "description_html": "The WebHID API provides access to Human Interface Devices (HID) that are connected to the user's device.",
+    "kind": "feature",
     "name": "WebHID",
-    "spec": "https://wicg.github.io/webhid/",
+    "spec": [
+      "https://wicg.github.io/webhid/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -38055,19 +43181,27 @@ export const features = {
     ],
     "description": "The WebNN API constructs and executes computational graphs of neural networks by making use of the various machine learning capabilities and hardware accelerators available on the device. Also known as Web Neural Network API.",
     "description_html": "The WebNN API constructs and executes computational graphs of neural networks by making use of the various machine learning capabilities and hardware accelerators available on the device. Also known as Web Neural Network API.",
+    "kind": "feature",
     "name": "WebNN",
-    "spec": "https://www.w3.org/TR/webnn/",
+    "spec": [
+      "https://www.w3.org/TR/webnn/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "webp": {
-    "caniuse": "webp",
+    "caniuse": [
+      "webp"
+    ],
     "description": "The WebP image format is a raster graphics file format that supports animation, alpha transparency, and lossy as well as lossless compression.",
     "description_html": "The WebP image format is a raster graphics file format that supports animation, alpha transparency, and lossy as well as lossless compression.",
+    "kind": "feature",
     "name": "WebP",
-    "spec": "https://www.rfc-editor.org/rfc/rfc9649",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc9649"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-03-16",
@@ -38084,7 +43218,9 @@ export const features = {
     }
   },
   "webrtc": {
-    "caniuse": "rtcpeerconnection",
+    "caniuse": [
+      "rtcpeerconnection"
+    ],
     "compat_features": [
       "api.RTCCertificate",
       "api.RTCCertificate.expires",
@@ -38315,9 +43451,14 @@ export const features = {
     ],
     "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
     "description_html": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
-    "group": "webrtc",
+    "group": [
+      "webrtc"
+    ],
+    "kind": "feature",
     "name": "WebRTC",
-    "spec": "https://w3c.github.io/webrtc-pc/",
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -38360,9 +43501,14 @@ export const features = {
     ],
     "description": "The WebRTC encoded transform API allows you to modify audio and video streams in WebRTC connections. For example, it can be used for visual effects or custom codecs.",
     "description_html": "The WebRTC encoded transform API allows you to modify audio and video streams in WebRTC connections. For example, it can be used for visual effects or custom codecs.",
-    "group": "webrtc",
+    "group": [
+      "webrtc"
+    ],
+    "kind": "feature",
     "name": "WebRTC encoded transform",
-    "spec": "https://w3c.github.io/webrtc-encoded-transform/",
+    "spec": [
+      "https://w3c.github.io/webrtc-encoded-transform/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -38385,9 +43531,14 @@ export const features = {
     ],
     "description": "The sctp object on RTCPeerConnection represents the negotiated SCTP transport. SCTP (Stream Control Transmission Protocol) is the protocol that RTCDataChannel uses.",
     "description_html": "The <code>sctp</code> object on <code>RTCPeerConnection</code> represents the negotiated SCTP transport. SCTP (Stream Control Transmission Protocol) is the protocol that <code>RTCDataChannel</code> uses.",
-    "group": "webrtc",
+    "group": [
+      "webrtc"
+    ],
+    "kind": "feature",
     "name": "WebRTC SCTP information",
-    "spec": "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface",
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-05-09",
@@ -38665,9 +43816,14 @@ export const features = {
     ],
     "description": "The RTCPeerConnection.getStats(), RTCRtpSender.getStats(), and RTCRtpReceiver.getStats() methods return detailed information about the status, performance, network, and media for a given WebRTC connection.",
     "description_html": "The <code>RTCPeerConnection.getStats()</code>, <code>RTCRtpSender.getStats()</code>, and <code>RTCRtpReceiver.getStats()</code> methods return detailed information about the status, performance, network, and media for a given WebRTC connection.",
-    "group": "webrtc",
+    "group": [
+      "webrtc"
+    ],
+    "kind": "feature",
     "name": "WebRTC statistics",
-    "spec": "https://w3c.github.io/webrtc-stats/",
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -38684,7 +43840,9 @@ export const features = {
     }
   },
   "websockets": {
-    "caniuse": "websockets",
+    "caniuse": [
+      "websockets"
+    ],
     "compat_features": [
       "api.CloseEvent",
       "api.CloseEvent.CloseEvent",
@@ -38720,8 +43878,11 @@ export const features = {
     ],
     "description": "The WebSocket API opens a two-way communication channel between the user's browser and a server.",
     "description_html": "The <code>WebSocket</code> API opens a two-way communication channel between the user's browser and a server.",
+    "kind": "feature",
     "name": "WebSockets",
-    "spec": "https://websockets.spec.whatwg.org/",
+    "spec": [
+      "https://websockets.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -38738,7 +43899,9 @@ export const features = {
     }
   },
   "webtransport": {
-    "caniuse": "webtransport",
+    "caniuse": [
+      "webtransport"
+    ],
     "compat_features": [
       "api.WebTransport",
       "api.WebTransport.WebTransport",
@@ -38787,8 +43950,11 @@ export const features = {
     ],
     "description": "The WebTransport API transmits data between a client and a server, by using the HTTP/3 protocol.",
     "description_html": "The <code>WebTransport</code> API transmits data between a client and a server, by using the HTTP/3 protocol.",
+    "kind": "feature",
     "name": "WebTransport",
-    "spec": "https://w3c.github.io/webtransport/",
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -38801,7 +43967,9 @@ export const features = {
     }
   },
   "webusb": {
-    "caniuse": "webusb",
+    "caniuse": [
+      "webusb"
+    ],
     "compat_features": [
       "api.Navigator.usb",
       "api.USB",
@@ -38912,8 +44080,11 @@ export const features = {
     ],
     "description": "The WebUSB API exposes USB compatible devices to web pages.",
     "description_html": "The WebUSB API exposes USB compatible devices to web pages.",
+    "kind": "feature",
     "name": "WebUSB",
-    "spec": "https://wicg.github.io/webusb/",
+    "spec": [
+      "https://wicg.github.io/webusb/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -38924,7 +44095,9 @@ export const features = {
     }
   },
   "webvr": {
-    "caniuse": "webvr",
+    "caniuse": [
+      "webvr"
+    ],
     "compat_features": [
       "api.Gamepad.displayId",
       "api.Navigator.activeVRDisplays",
@@ -39011,15 +44184,20 @@ export const features = {
         "webxr-device"
       ]
     },
+    "kind": "feature",
     "name": "WebVR",
-    "spec": "https://immersive-web.github.io/webvr/spec/1.1/",
+    "spec": [
+      "https://immersive-web.github.io/webvr/spec/1.1/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
     }
   },
   "webvtt": {
-    "caniuse": "webvtt",
+    "caniuse": [
+      "webvtt"
+    ],
     "compat_features": [
       "api.VTTCue",
       "api.VTTCue.VTTCue",
@@ -39031,8 +44209,11 @@ export const features = {
     ],
     "description": "WebVTT is a captions and subtitles format. WebVTT files are loaded using the <track> element, and the VTTCue API can be used to create or update cues dynamically.",
     "description_html": "WebVTT is a captions and subtitles format. WebVTT files are loaded using the <code>&#x3C;track></code> element, and the <code>VTTCue</code> API can be used to create or update cues dynamically.",
+    "kind": "feature",
     "name": "WebVTT",
-    "spec": "https://w3c.github.io/webvtt/",
+    "spec": [
+      "https://w3c.github.io/webvtt/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -39055,6 +44236,7 @@ export const features = {
     ],
     "description": "The WebVTT cue alignment settings control which part of the cue is aligned with the given line and position. Cue alignment is set using line and position settings in WebVTT files or the lineAlign and positionAlign properties of VTTCue using JavaScript.",
     "description_html": "The WebVTT cue alignment settings control which part of the cue is aligned with the given line and position. Cue alignment is set using <code>line</code> and <code>position</code> settings in WebVTT files or the <code>lineAlign</code> and <code>positionAlign</code> properties of <code>VTTCue</code> using JavaScript.",
+    "kind": "feature",
     "name": "WebVTT cue alignment",
     "spec": [
       "https://w3c.github.io/webvtt/#dom-vttcue-linealign",
@@ -39081,8 +44263,11 @@ export const features = {
     ],
     "description": "The VTTCue API updates various aspects of cues dynamically, such as alignment, size and position.",
     "description_html": "The <code>VTTCue</code> API updates various aspects of cues dynamically, such as alignment, size and position.",
+    "kind": "feature",
     "name": "WebVTT cue settings",
-    "spec": "https://w3c.github.io/webvtt/#the-vttcue-interface",
+    "spec": [
+      "https://w3c.github.io/webvtt/#the-vttcue-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -39114,8 +44299,11 @@ export const features = {
     ],
     "description": "WebVTT regions set the areas of the video where captions or subtitles should be rendered, such as placing roll-up captions used for live captions.",
     "description_html": "WebVTT regions set the areas of the video where captions or subtitles should be rendered, such as placing roll-up captions used for live captions.",
+    "kind": "feature",
     "name": "WebVTT regions",
-    "spec": "https://w3c.github.io/webvtt/#regions",
+    "spec": [
+      "https://w3c.github.io/webvtt/#regions"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39145,9 +44333,14 @@ export const features = {
     ],
     "description": "An XRAnchor object keeps track of a pose that is fixed relative to the real world. Anchors build an illusion that the placed objects are really present in the user's environment.",
     "description_html": "An <code>XRAnchor</code> object keeps track of a pose that is fixed relative to the real world. Anchors build an illusion that the placed objects are really present in the user's environment.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Anchors (WebXR)",
-    "spec": "https://immersive-web.github.io/anchors/",
+    "spec": [
+      "https://immersive-web.github.io/anchors/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39165,9 +44358,14 @@ export const features = {
     ],
     "description": "The \"immersive-ar\" value for navigator.xr.requestSession() starts an augmented reality WebXR session that renders content aligned with the visible environment.",
     "description_html": "The <code>\"immersive-ar\"</code> value for <code>navigator.xr.requestSession()</code> starts an augmented reality WebXR session that renders content aligned with the visible environment.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Augmented reality",
-    "spec": "https://immersive-web.github.io/webxr-ar-module/",
+    "spec": [
+      "https://immersive-web.github.io/webxr-ar-module/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39187,9 +44385,14 @@ export const features = {
     ],
     "description": "The XRView.camera property provides direct access to pose-synchronized camera images within a WebXR session.",
     "description_html": "The <code>XRView.camera</code> property provides direct access to pose-synchronized camera images within a WebXR session.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Raw camera access for WebXR",
-    "spec": "https://immersive-web.github.io/raw-camera-access/",
+    "spec": [
+      "https://immersive-web.github.io/raw-camera-access/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39218,9 +44421,14 @@ export const features = {
     ],
     "description": "An XRDepthInformation object represents a measurement of the distance from the user's device to the real-world geometry in the user's environment.",
     "description_html": "An <code>XRDepthInformation</code> object represents a measurement of the distance from the user's device to the real-world geometry in the user's environment.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Depth sensing",
-    "spec": "https://immersive-web.github.io/depth-sensing/",
+    "spec": [
+      "https://immersive-web.github.io/depth-sensing/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39342,9 +44550,14 @@ export const features = {
     ],
     "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
     "description_html": "The <code>navigator.xr</code> API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "WebXR",
-    "spec": "https://immersive-web.github.io/webxr/",
+    "spec": [
+      "https://immersive-web.github.io/webxr/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39362,9 +44575,14 @@ export const features = {
     ],
     "description": "A DOM overlay shows 2D DOM content as an interactive, transparent layer on top of a WebXR application's WebGL content and camera image.",
     "description_html": "A DOM overlay shows 2D DOM content as an interactive, transparent layer on top of a WebXR application's WebGL content and camera image.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "DOM overlays for WebXR",
-    "spec": "https://immersive-web.github.io/dom-overlays/",
+    "spec": [
+      "https://immersive-web.github.io/dom-overlays/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39380,9 +44598,14 @@ export const features = {
     ],
     "description": "The gamepad attribute of an XRInputSource represents an XR input device, such as a motion controller, that reports data from physical inputs (such as buttons, touch pads, and triggers).",
     "description_html": "The <code>gamepad</code> attribute of an <code>XRInputSource</code> represents an XR input device, such as a motion controller, that reports data from physical inputs (such as buttons, touch pads, and triggers).",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Gamepad (WebXR)",
-    "spec": "https://immersive-web.github.io/webxr-gamepads-module/",
+    "spec": [
+      "https://immersive-web.github.io/webxr-gamepads-module/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39413,9 +44636,14 @@ export const features = {
     ],
     "description": "An XRHand object, from the hand attribute of an XRInputSource object, represents a WebXR session's fully-articulated hand tracking model.",
     "description_html": "An <code>XRHand</code> object, from the <code>hand</code> attribute of an <code>XRInputSource</code> object, represents a WebXR session's fully-articulated hand tracking model.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Hand input",
-    "spec": "https://immersive-web.github.io/webxr-hand-input/",
+    "spec": [
+      "https://immersive-web.github.io/webxr-hand-input/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39447,9 +44675,14 @@ export const features = {
     ],
     "description": "The getHitTestResults() method of an XRFrame object helps place objects in an augmented reality session by finding where cast rays intersect with real-world geometry.",
     "description_html": "The <code>getHitTestResults()</code> method of an <code>XRFrame</code> object helps place objects in an augmented reality session by finding where cast rays intersect with real-world geometry.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Hit test",
-    "spec": "https://immersive-web.github.io/hit-test/",
+    "spec": [
+      "https://immersive-web.github.io/hit-test/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39528,9 +44761,14 @@ export const features = {
     ],
     "description": "WebXR layer types, such as XRCylinderLayer, XRCylinderLayer, XREquirectLayer, XRProjectionLayer or XRQuadLayer, are managed by the system compositor, to reduce latency or resampling.",
     "description_html": "WebXR layer types, such as <code>XRCylinderLayer</code>, <code>XRCylinderLayer</code>, <code>XREquirectLayer</code>, <code>XRProjectionLayer</code> or <code>XRQuadLayer</code>, are managed by the system compositor, to reduce latency or resampling.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Layers (WebXR)",
-    "spec": "https://immersive-web.github.io/layers/",
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ],
     "status": {
       "baseline": false,
       "support": {}
@@ -39552,9 +44790,14 @@ export const features = {
     ],
     "description": "The XRLightProbe and XRLightEstimate objects represent real-world environmental lighting conditions during a WebXR session.",
     "description_html": "The <code>XRLightProbe</code> and <code>XRLightEstimate</code> objects represent real-world environmental lighting conditions during a WebXR session.",
-    "group": "webxr",
+    "group": [
+      "webxr"
+    ],
+    "kind": "feature",
     "name": "Lighting estimation",
-    "spec": "https://immersive-web.github.io/lighting-estimation/",
+    "spec": [
+      "https://immersive-web.github.io/lighting-estimation/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39577,8 +44820,11 @@ export const features = {
     ],
     "description": "The wheel event fires when the user moves a mouse wheel or similar spatially rotating input device.",
     "description_html": "The <code>wheel</code> event fires when the user moves a mouse wheel or similar spatially rotating input device.",
+    "kind": "feature",
     "name": "Wheel events",
-    "spec": "https://w3c.github.io/uievents/#events-wheelevents",
+    "spec": [
+      "https://w3c.github.io/uievents/#events-wheelevents"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39598,9 +44844,14 @@ export const features = {
     ],
     "description": "The :where() CSS functional pseudo-class takes a selector list as its argument, and matches any element that can be selected by one of the selectors in that list. It is functionally equivalent to the selectors in the list, but doesn't affect the CSS rule specificity.",
     "description_html": "The <code>:where()</code> CSS functional pseudo-class takes a selector list as its argument, and matches any element that can be selected by one of the selectors in that list. It is functionally equivalent to the selectors in the list, but doesn't affect the CSS rule specificity.",
-    "group": "selectors",
+    "group": [
+      "selectors"
+    ],
+    "kind": "feature",
     "name": ":where()",
-    "spec": "https://drafts.csswg.org/selectors-4/#zero-matches",
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#zero-matches"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2023-07-21",
@@ -39632,9 +44883,14 @@ export const features = {
     ],
     "description": "The white-space CSS property sets how white space is collapsed and how lines wrap. It is a shorthand for white-space-collapse and text-wrap-mode.",
     "description_html": "The <code>white-space</code> CSS property sets how white space is collapsed and how lines wrap. It is a shorthand for <code>white-space-collapse</code> and <code>text-wrap-mode</code>.",
-    "group": "white-space",
+    "group": [
+      "white-space"
+    ],
+    "kind": "feature",
     "name": "white-space",
-    "spec": "https://drafts.csswg.org/css-text-4/#white-space-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -39661,9 +44917,14 @@ export const features = {
     ],
     "description": "The white-space-collapse CSS property sets whether new line characters are shown as line breaks, and whether multiple consecutive spaces are all displayed or combined.",
     "description_html": "The <code>white-space-collapse</code> CSS property sets whether new line characters are shown as line breaks, and whether multiple consecutive spaces are all displayed or combined.",
-    "group": "white-space",
+    "group": [
+      "white-space"
+    ],
+    "kind": "feature",
     "name": "white-space-collapse",
-    "spec": "https://drafts.csswg.org/css-text-4/#white-space-collapsing",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-collapsing"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-19",
@@ -39679,16 +44940,23 @@ export const features = {
     }
   },
   "widows-orphans": {
-    "caniuse": "css-widows-orphans",
+    "caniuse": [
+      "css-widows-orphans"
+    ],
     "compat_features": [
       "css.properties.orphans",
       "css.properties.widows"
     ],
     "description": "The widows and orphans CSS properties set the minimum lines included in a text fragment created by page, column, or region breaks.",
     "description_html": "The <code>widows</code> and <code>orphans</code> CSS properties set the minimum lines included in a text fragment created by page, column, or region breaks.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Widows and orphans",
-    "spec": "https://drafts.csswg.org/css-break-4/#widows-orphans",
+    "spec": [
+      "https://drafts.csswg.org/css-break-4/#widows-orphans"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39714,9 +44982,14 @@ export const features = {
     ],
     "description": "The width and height CSS properties set the preferred physical size of an element.",
     "description_html": "The <code>width</code> and <code>height</code> CSS properties set the preferred physical size of an element.",
-    "group": "layout",
+    "group": [
+      "layout"
+    ],
+    "kind": "feature",
     "name": "Width and height",
-    "spec": "https://drafts.csswg.org/css-sizing-3/#preferred-size-properties",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-3/#preferred-size-properties"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -39733,7 +45006,9 @@ export const features = {
     }
   },
   "will-change": {
-    "caniuse": "will-change",
+    "caniuse": [
+      "will-change"
+    ],
     "compat_features": [
       "css.properties.will-change",
       "css.properties.will-change.auto",
@@ -39742,9 +45017,14 @@ export const features = {
     ],
     "description": "The will-change CSS property gives hints to the browser about expected changes to an element's scroll position, contents, or style. These hints allow browsers to optimize for upcoming style changes.",
     "description_html": "The <code>will-change</code> CSS property gives hints to the browser about expected changes to an element's scroll position, contents, or style. These hints allow browsers to optimize for upcoming style changes.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "will-change",
-    "spec": "https://drafts.csswg.org/css-will-change-1/",
+    "spec": [
+      "https://drafts.csswg.org/css-will-change-1/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2022-07-15",
@@ -39801,8 +45081,11 @@ export const features = {
     ],
     "description": "The window global object represents a browser tab or iframe and its relationship to the document and other tabs. It's also a generic global object, under which many other APIs are located.",
     "description_html": "The <code>window</code> global object represents a browser tab or iframe and its relationship to the document and other tabs. It's also a generic global object, under which many other APIs are located.",
+    "kind": "feature",
     "name": "Window",
-    "spec": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-window-object"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -39837,9 +45120,14 @@ export const features = {
     ],
     "description": "The display_override:\\ [\"window-controls-overlay\"] web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
     "description_html": "The <code>display_override:\\ [\"window-controls-overlay\"]</code> web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
-    "group": "progressive-web-app",
+    "group": [
+      "progressive-web-app"
+    ],
+    "kind": "feature",
     "name": "Window Controls Overlay",
-    "spec": "https://wicg.github.io/window-controls-overlay/",
+    "spec": [
+      "https://wicg.github.io/window-controls-overlay/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39880,8 +45168,11 @@ export const features = {
     ],
     "description": "The window.getScreenDetails() method gets information about the screens on a device, which you can use to place new windows on a specific screen with window.open().",
     "description_html": "The <code>window.getScreenDetails()</code> method gets information about the screens on a device, which you can use to place new windows on a specific screen with <code>window.open()</code>.",
+    "kind": "feature",
     "name": "Window management",
-    "spec": "https://w3c.github.io/window-management/",
+    "spec": [
+      "https://w3c.github.io/window-management/"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39906,9 +45197,14 @@ export const features = {
         "destructuring"
       ]
     },
-    "group": "javascript",
+    "group": [
+      "javascript"
+    ],
+    "kind": "feature",
     "name": "with",
-    "spec": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-with-statement",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-with-statement"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39923,7 +45219,9 @@ export const features = {
     }
   },
   "word-break": {
-    "caniuse": "word-break",
+    "caniuse": [
+      "word-break"
+    ],
     "compat_features": [
       "css.properties.word-break",
       "css.properties.word-break.break-all",
@@ -39932,9 +45230,14 @@ export const features = {
     ],
     "description": "The word-break CSS property sets how lines break within words.",
     "description_html": "The <code>word-break</code> CSS property sets how lines break within words.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "word-break",
-    "spec": "https://drafts.csswg.org/css-text-4/#word-break-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#word-break-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-03-30",
@@ -39956,9 +45259,14 @@ export const features = {
     ],
     "description": "The word-break: auto-phrase CSS declaration specifies that wrapping should occur at natural phrase boundaries, especially in CJK languages.",
     "description_html": "The <code>word-break: auto-phrase</code> CSS declaration specifies that wrapping should occur at natural phrase boundaries, especially in CJK languages.",
-    "group": "text-wrap",
+    "group": [
+      "text-wrap"
+    ],
+    "kind": "feature",
     "name": "word-break: auto-phrase",
-    "spec": "https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -39982,9 +45290,14 @@ export const features = {
         "overflow-wrap"
       ]
     },
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "word-break: break-word",
-    "spec": "https://drafts.csswg.org/css-text-3/#word-break-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-3/#word-break-property"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -40006,9 +45319,14 @@ export const features = {
     ],
     "description": "The word-spacing CSS property sets the amount of white space between words.",
     "description_html": "The <code>word-spacing</code> CSS property sets the amount of white space between words.",
-    "group": "text",
+    "group": [
+      "text"
+    ],
+    "kind": "feature",
     "name": "word-spacing",
-    "spec": "https://drafts.csswg.org/css-text-4/#word-spacing-property",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#word-spacing-property"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40025,7 +45343,9 @@ export const features = {
     }
   },
   "writing-mode": {
-    "caniuse": "css-writing-mode",
+    "caniuse": [
+      "css-writing-mode"
+    ],
     "compat_features": [
       "css.properties.writing-mode",
       "css.properties.writing-mode.horizontal-tb",
@@ -40037,9 +45357,14 @@ export const features = {
     ],
     "description": "The writing-mode CSS property sets whether text is laid out horizontally or vertically, and left to right, or right to left.",
     "description_html": "The <code>writing-mode</code> CSS property sets whether text is laid out horizontally or vertically, and left to right, or right to left.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "writing-mode",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#block-flow",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#block-flow"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2019-09-27",
@@ -40074,9 +45399,14 @@ export const features = {
         "writing-mode"
       ]
     },
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "writing-mode SVG 1.1 values",
-    "spec": "https://drafts.csswg.org/css-writing-modes-4/#block-flow",
+    "spec": [
+      "https://drafts.csswg.org/css-writing-modes-4/#block-flow"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -40097,9 +45427,14 @@ export const features = {
     ],
     "description": "The writingsuggestions HTML attribute turns on or off a browser's writing suggestions. Writing suggestions vary by browser. For example, if turned on then a browser might show inline text completions accepted by pressing Tab.",
     "description_html": "The <code>writingsuggestions</code> HTML attribute turns on or off a browser's writing suggestions. Writing suggestions vary by browser. For example, if turned on then a browser might show inline text completions accepted by pressing Tab.",
-    "group": "forms",
+    "group": [
+      "forms"
+    ],
+    "kind": "feature",
     "name": "writingsuggestions",
-    "spec": "https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#writing-suggestions"
+    ],
     "status": {
       "baseline": false,
       "support": {
@@ -40188,8 +45523,11 @@ export const features = {
     ],
     "description": "The XMLHttpRequest API makes HTTP requests. It's the predecessor to fetch(). Also known as XHR.",
     "description_html": "The <code>XMLHttpRequest</code> API makes HTTP requests. It's the predecessor to <code>fetch()</code>. Also known as XHR.",
+    "kind": "feature",
     "name": "XMLHttpRequest",
-    "spec": "https://xhr.spec.whatwg.org/",
+    "spec": [
+      "https://xhr.spec.whatwg.org/"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40217,8 +45555,11 @@ export const features = {
       "parsing-and-serialization",
       "xml"
     ],
+    "kind": "feature",
     "name": "XMLSerializer",
-    "spec": "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface",
+    "spec": [
+      "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40235,7 +45576,9 @@ export const features = {
     }
   },
   "xpath": {
-    "caniuse": "document-evaluate-xpath",
+    "caniuse": [
+      "document-evaluate-xpath"
+    ],
     "compat_features": [
       "api.Document.createExpression",
       "api.Document.evaluate",
@@ -40258,9 +45601,14 @@ export const features = {
     ],
     "description": "The document.evaluate() method selects elements in an HTML or XML document based on an expression of XPath, a domain specific language for querying XML documents. Also known as XML Path Language.",
     "description_html": "The <code>document.evaluate()</code> method selects elements in an HTML or XML document based on an expression of XPath, a domain specific language for querying XML documents. Also known as XML Path Language.",
-    "group": "xml",
+    "group": [
+      "xml"
+    ],
+    "kind": "feature",
     "name": "XPath",
-    "spec": "https://dom.spec.whatwg.org/#xpath",
+    "spec": [
+      "https://dom.spec.whatwg.org/#xpath"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40291,9 +45639,14 @@ export const features = {
     ],
     "description": "The XSLTProcessor API transforms XML documents into new XML or HTML documents, using XSLT stylesheets. You can use XSLT to convert data between different XML schemas or to convert XML data into web pages or PDF documents. Also known as Extensible Stylesheet Language Transformations.",
     "description_html": "The <code>XSLTProcessor</code> API transforms XML documents into new XML or HTML documents, using XSLT stylesheets. You can use XSLT to convert data between different XML schemas or to convert XML data into web pages or PDF documents. Also known as Extensible Stylesheet Language Transformations.",
-    "group": "xml",
+    "group": [
+      "xml"
+    ],
+    "kind": "feature",
     "name": "XSLT",
-    "spec": "https://dom.spec.whatwg.org/#xslt",
+    "spec": [
+      "https://dom.spec.whatwg.org/#xslt"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40318,9 +45671,14 @@ export const features = {
     ],
     "description": "The z-index CSS property orders overlapping elements, with higher values appearing in front of or on top of lower values.",
     "description_html": "The <code>z-index</code> CSS property orders overlapping elements, with higher values appearing in front of or on top of lower values.",
-    "group": "css",
+    "group": [
+      "css"
+    ],
+    "kind": "feature",
     "name": "z-index",
-    "spec": "https://drafts.csswg.org/css2/#z-index",
+    "spec": [
+      "https://drafts.csswg.org/css2/#z-index"
+    ],
     "status": {
       "baseline": "high",
       "baseline_high_date": "2018-01-29",
@@ -40337,14 +45695,19 @@ export const features = {
     }
   },
   "zoom": {
-    "caniuse": "css-zoom",
+    "caniuse": [
+      "css-zoom"
+    ],
     "compat_features": [
       "css.properties.zoom"
     ],
     "description": "The zoom CSS property scales the size of an element. Unlike the transform property, a zoomed element affects page layout.",
     "description_html": "The <code>zoom</code> CSS property scales the size of an element. Unlike the <code>transform</code> property, a zoomed element affects page layout.",
+    "kind": "feature",
     "name": "zoom",
-    "spec": "https://drafts.csswg.org/css-viewport/#zoom-property",
+    "spec": [
+      "https://drafts.csswg.org/css-viewport/#zoom-property"
+    ],
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-14",
@@ -40360,15 +45723,20 @@ export const features = {
     }
   },
   "zstd": {
-    "caniuse": "zstd",
+    "caniuse": [
+      "zstd"
+    ],
     "compat_features": [
       "http.headers.Accept-Encoding.zstd",
       "http.headers.Content-Encoding.zstd"
     ],
     "description": "Zstandard or zstd is fast lossless compression algorithm. When used as a content encoding, it is often faster and offers better compression than brotli.",
     "description_html": "Zstandard or <code>zstd</code> is fast lossless compression algorithm. When used as a content encoding, it is often faster and offers better compression than brotli.",
+    "kind": "feature",
     "name": "Zstandard compression",
-    "spec": "https://www.rfc-editor.org/rfc/rfc8878",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc8878"
+    ],
     "status": {
       "baseline": false,
       "support": {
