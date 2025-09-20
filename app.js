@@ -1,13 +1,33 @@
 import { browsers, features } from './data.js';
 import { browserIcons } from './browser-icons.js';
 import { downloadICal } from './ical-generator.js';
+import { fetchDeveloperSignals } from './developer-signals.js';
 
 class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
-        this.features = this.processFeatures();
+        this.developerSignals = null; // Will be populated after fetch
+        this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
         this.init();
+    }
+
+    async init() {
+        try {
+            // Fetch developer signals data
+            this.developerSignals = await fetchDeveloperSignals();
+            
+            // Process features after getting developer signals
+            this.features = this.processFeatures();
+            
+            // Render the timeline
+            this.renderTimeline();
+            
+            // Initialize event listeners
+            this.initEventListeners();
+        } catch (error) {
+            console.error('Error initializing timeline:', error);
+        }
     }
 
     processFeatures() {
@@ -15,6 +35,11 @@ class TimelineApp {
         
         Object.entries(features)
             .forEach(([id, data]) => {
+                // Skip non-feature kinds (moved or split)
+                if (data.kind && data.kind !== 'feature') {
+                    return;
+                }
+                
                 // Get all ship dates from browsers
                 const shipDates = Object.entries(data.status?.support || {})
                     .map(([browser, version]) => {
@@ -58,7 +83,9 @@ class TimelineApp {
                     description_html: data.description_html || data.description,
                     spec: data.spec,
                     status: data.status,
-                    shipDates: shipDates
+                    shipDates: shipDates,
+                    // Add developer signals data if available
+                    developerSignal: this.developerSignals?.[id] || null
                 };
                 
                 // Get current date for comparison
@@ -261,12 +288,42 @@ class TimelineApp {
         const nameText = document.createTextNode(feature.name);
         title.appendChild(nameText);
         
+        // Add upvote info next to the feature name if available
+        if (feature.developerSignal) {
+            const upvoteInfo = document.createElement('div');
+            upvoteInfo.className = 'upvote-info title-upvote';
+            
+            // Create a linked upvote count (the entire element is clickable)
+            const upvoteLink = document.createElement('a');
+            upvoteLink.href = feature.developerSignal.url;
+            upvoteLink.className = 'upvote-count';
+            upvoteLink.target = '_blank';
+            upvoteLink.rel = 'noopener noreferrer';
+            upvoteLink.innerHTML = `<span class="upvote-icon">👍</span>${feature.developerSignal.votes}`;
+            upvoteLink.title = 'Add your support for this feature on GitHub';
+            
+            // Add event to prevent card selection when clicking the button
+            upvoteLink.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+            
+            upvoteInfo.appendChild(upvoteLink);
+            title.appendChild(upvoteInfo);
+        }
+        
         // Add a link icon for deep linking to this feature
         const linkIcon = document.createElement('a');
         linkIcon.href = `#${uniqueCardId}`;
         linkIcon.className = 'feature-link-icon';
         linkIcon.innerHTML = '🔗';
-        linkIcon.title = `Link to ${feature.name} (${feature.displayType})`;
+        
+        // Use the correct display type in tooltip - check if it's a limited availability feature
+        let displayTypeForTooltip = feature.displayType;
+        if (feature.status?.baseline === false) {
+            displayTypeForTooltip = 'limited-availability';
+        }
+        linkIcon.title = `Link to ${feature.name} (${displayTypeForTooltip})`;
+        
         linkIcon.style.fontSize = '0.8em';
         linkIcon.style.marginLeft = '0.5em';
         linkIcon.style.opacity = '0';
@@ -617,7 +674,12 @@ class TimelineApp {
         
         // Create a unique ID that includes both the feature name and its display type
         // This ensures each instance (newly vs widely available) has a unique ID
-        const uniqueCardId = `feature-${feature.id}-${feature.displayType}`;
+        let cardType = feature.displayType;
+        // Use 'limited-availability' in the ID for limited availability features instead of 'newly-available'
+        if (feature.status?.baseline === false) {
+            cardType = 'limited-availability';
+        }
+        const uniqueCardId = `feature-${feature.id}-${cardType}`;
         
         // Add a unique ID to the feature card for deep linking
         card.id = uniqueCardId;
@@ -725,7 +787,7 @@ class TimelineApp {
         });
     }
 
-    init() {
+    initEventListeners() {
         // Add event listeners for iCal download buttons
         const downloadTopBtn = document.getElementById('download-ical-top');
         const downloadBottomBtn = document.getElementById('download-ical-bottom');
@@ -735,13 +797,18 @@ class TimelineApp {
                 downloadICal(this.getSelectedFeatures());
             });
         }
-        
+
         if (downloadBottomBtn) {
             downloadBottomBtn.addEventListener('click', () => {
                 downloadICal(this.getSelectedFeatures());
             });
         }
+    }
 
+    renderTimeline() {
+        // Clear existing content
+        this.timelineContent.innerHTML = '';
+        
         const groups = this.groupFeaturesByDate();
         
         // Find the current month for scrolling
