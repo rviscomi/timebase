@@ -316,7 +316,14 @@ class TimelineApp {
         linkIcon.href = `#${uniqueCardId}`;
         linkIcon.className = 'feature-link-icon';
         linkIcon.innerHTML = '🔗';
-        linkIcon.title = `Link to ${feature.name} (${feature.displayType})`;
+        
+        // Use the correct display type in tooltip - check if it's a limited availability feature
+        let displayTypeForTooltip = feature.displayType;
+        if (feature.status?.baseline === false) {
+            displayTypeForTooltip = 'limited-availability';
+        }
+        linkIcon.title = `Link to ${feature.name} (${displayTypeForTooltip})`;
+        
         linkIcon.style.fontSize = '0.8em';
         linkIcon.style.marginLeft = '0.5em';
         linkIcon.style.opacity = '0';
