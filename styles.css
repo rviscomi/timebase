@@ -262,6 +262,21 @@ body {
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
     height: 24px; /* Fixed height for consistency */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.browser-tag:hover {
+    border-color: #a0aec0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.browser-tag.active-filter {
+    background-color: #ebf4ff !important;
+    border-color: #4299e1;
+    color: #2b6cb0;
+    font-weight: 500;
 }
 
 .browser-logo {

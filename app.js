@@ -9,6 +9,7 @@ class TimelineApp {
         this.developerSignals = developerSignalsData; // Load directly from JSON import
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
+        this.allFeatures = []; // Store all processed features for filtering
         this.init();
     }
 
@@ -16,6 +17,8 @@ class TimelineApp {
         try {
             // Process features with developer signals already loaded
             this.features = this.processFeatures();
+            // Store all processed features for filtering
+            this.allFeatures = [...this.features];
             
             // Render the timeline
             this.renderTimeline();
@@ -192,8 +195,13 @@ class TimelineApp {
     }
 
     createBrowserTag(browser, version) {
-        const tag = document.createElement('span');
+        const tag = document.createElement('button'); // Change to button for better accessibility
         tag.className = `browser-tag ${browser}`;
+        tag.type = 'button'; // Specify button type
+        tag.setAttribute('data-browser', browser);
+        tag.setAttribute('data-version', version);
+        tag.setAttribute('data-filter', `${browser}:${version}`);
+        tag.setAttribute('aria-pressed', 'false');
         
         // Get base browser name for logo
         const baseBrowser = browser.replace('_android', '').replace('_ios', '');
@@ -225,6 +233,31 @@ class TimelineApp {
         textSpan.textContent = displayText;
         
         tag.appendChild(textSpan);
+        
+        // Add click event listener for filtering
+        tag.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card expansion when clicking the tag
+            
+            const isActive = tag.classList.contains('active-filter');
+            const filterKey = tag.getAttribute('data-filter');
+            
+            if (isActive) {
+                // If untoggling, also untoggle all chips with the same browser version
+                document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.remove('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'false');
+                });
+            } else {
+                // When toggling on, also toggle all chips with the same browser version
+                document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.add('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'true');
+                });
+            }
+            
+            this.updateFeatureVisibility();
+        });
+        
         return tag;
     }
 
@@ -681,6 +714,13 @@ class TimelineApp {
         // Add a unique ID to the feature card for deep linking
         card.id = uniqueCardId;
         
+        // Add data attributes for browser filtering
+        if (feature.shipDates) {
+            feature.shipDates.forEach(shipDate => {
+                card.setAttribute(`data-browser-${shipDate.browser}-${shipDate.version}`, 'true');
+            });
+        }
+        
         // Create header with title
         const header = this.createFeatureHeader(feature, uniqueCardId);
         
@@ -779,6 +819,7 @@ class TimelineApp {
                 if (release.isRecent) {
                     tag.classList.add('recent-release');
                 }
+                
                 container.appendChild(tag);
             }
         });
@@ -800,6 +841,48 @@ class TimelineApp {
                 downloadICal(this.getSelectedFeatures());
             });
         }
+    }
+    
+    // Method to update the visibility of feature cards based on active browser filters
+    updateFeatureVisibility() {
+        // Get all active filters
+        const activeFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
+            .map(tag => tag.getAttribute('data-filter'));
+        
+        // Get all feature cards
+        const allCards = document.querySelectorAll('.feature-card');
+        
+        if (activeFilters.length > 0) {
+            // Hide cards that don't match any of the active filters
+            allCards.forEach(card => {
+                const matchesFilter = activeFilters.some(filter => {
+                    const [browser, version] = filter.split(':');
+                    return card.hasAttribute(`data-browser-${browser}-${version}`);
+                });
+                
+                card.style.display = matchesFilter ? '' : 'none';
+            });
+        } else {
+            // Show all cards
+            allCards.forEach(card => {
+                card.style.display = '';
+            });
+        }
+        
+        // Hide date headers with no visible cards
+        this.updateDateHeadersVisibility();
+    }
+    
+    // Helper method to hide date headers with no visible feature cards
+    updateDateHeadersVisibility() {
+        const dateGroups = document.querySelectorAll('.date-group');
+        
+        dateGroups.forEach(group => {
+            const hasVisibleCards = Array.from(group.querySelectorAll('.feature-card'))
+                .some(card => card.style.display !== 'none');
+            
+            group.style.display = hasVisibleCards ? '' : 'none';
+        });
     }
 
     renderTimeline() {
