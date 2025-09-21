@@ -853,14 +853,14 @@ class TimelineApp {
         const allCards = document.querySelectorAll('.feature-card');
         
         if (activeFilters.length > 0) {
-            // Hide cards that don't match any of the active filters
+            // Hide cards that don't match ALL of the active filters
             allCards.forEach(card => {
-                const matchesFilter = activeFilters.some(filter => {
+                const matchesAllFilters = activeFilters.every(filter => {
                     const [browser, version] = filter.split(':');
                     return card.hasAttribute(`data-browser-${browser}-${version}`);
                 });
                 
-                card.style.display = matchesFilter ? '' : 'none';
+                card.style.display = matchesAllFilters ? '' : 'none';
             });
         } else {
             // Show all cards
