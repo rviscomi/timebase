@@ -10,6 +10,7 @@ class TimelineApp {
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
         this.allFeatures = []; // Store all processed features for filtering
+        this.currentStatusFilter = null; // Track the current status filter
         this.init();
     }
 
@@ -25,6 +26,9 @@ class TimelineApp {
             
             // Initialize event listeners
             this.initEventListeners();
+            
+            // Initialize filters from URL parameters
+            this.initializeFiltersFromURL();
         } catch (error) {
             console.error('Error initializing timeline:', error);
         }
@@ -236,10 +240,8 @@ class TimelineApp {
         
         tag.appendChild(textSpan);
         
-        // Add click event listener for filtering
-        tag.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent card expansion when clicking the tag
-            
+        // Function to toggle the filter
+        const toggleFilter = () => {
             const isActive = tag.classList.contains('active-filter');
             const filterKey = tag.getAttribute('data-filter');
             
@@ -258,6 +260,21 @@ class TimelineApp {
             }
             
             this.updateFeatureVisibility();
+        };
+        
+        // Add click event listener for filtering
+        tag.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card expansion when clicking the tag
+            toggleFilter();
+        });
+        
+        // Add keyboard event listener for filtering via spacebar
+        tag.addEventListener('keydown', (e) => {
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault(); // Prevent scrolling with spacebar
+                e.stopPropagation();
+                toggleFilter();
+            }
         });
         
         return tag;
@@ -396,14 +413,8 @@ class TimelineApp {
         if (feature.displayType === 'newly-available') {
             // Check if this is actually a limited availability feature
             if (feature.status?.baseline === false) {
-                // For limited availability features, use the earliest browser implementation date
-                const earliestDate = feature.shipDates[0].date;
-                const earliestFormattedDate = earliestDate.toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                });
-                availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
+                // For limited availability features, use a different text format
+                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
             } else {
                 // Calculate the widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(feature.date);
@@ -895,36 +906,117 @@ class TimelineApp {
                 downloadICal(this.getSelectedFeatures());
             });
         }
+        
+        // Set up keyboard shortcuts dialog
+        this.initShortcutsDialog();
+        
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Only handle keypresses if no input element is focused
+            const activeElement = document.activeElement;
+            const isInputFocused = activeElement.tagName === 'INPUT' || 
+                                 activeElement.tagName === 'TEXTAREA' || 
+                                 activeElement.isContentEditable;
+            
+            if (isInputFocused) {
+                return;
+            }
+            
+            switch(e.key.toLowerCase()) {
+                case 'w': // Filter widely available features
+                    this.filterFeaturesByType('widely-available');
+                    break;
+                case 'n': // Filter newly available features
+                    this.filterFeaturesByType('newly-available');
+                    break;
+                case 'l': // Filter limited availability features
+                    this.filterFeaturesByType('limited-availability');
+                    break;
+                case 'c': // Scroll to current month
+                    this.scrollToCurrentMonth();
+                    break;
+                case 'r': // Reset filters
+                    this.resetFilters();
+                    break;
+                case '?': // Show keyboard shortcuts dialog
+                    this.showShortcutsDialog();
+                    break;
+            }
+        });
+    }
+    
+    // Initialize the keyboard shortcuts dialog
+    initShortcutsDialog() {
+        this.shortcutsDialog = document.getElementById('shortcuts-dialog');
+        const closeButton = document.getElementById('close-dialog');
+        
+        if (this.shortcutsDialog && closeButton) {
+            // Add click event to close button
+            closeButton.addEventListener('click', () => {
+                this.shortcutsDialog.close();
+            });
+            
+            // Close dialog when clicking on the backdrop (outside the dialog)
+            this.shortcutsDialog.addEventListener('click', (e) => {
+                if (e.target === this.shortcutsDialog) {
+                    this.shortcutsDialog.close();
+                }
+            });
+        }
+    }
+    
+    // Show the keyboard shortcuts dialog
+    showShortcutsDialog() {
+        if (this.shortcutsDialog && !this.shortcutsDialog.open) {
+            this.shortcutsDialog.showModal();
+        }
     }
     
     // Method to update the visibility of feature cards based on active browser filters
     updateFeatureVisibility() {
-        // Get all active filters
-        const activeFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
+        // Get all active browser filters
+        const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
             .map(tag => tag.getAttribute('data-filter'));
         
         // Get all feature cards
         const allCards = document.querySelectorAll('.feature-card');
         
-        if (activeFilters.length > 0) {
-            // Hide cards that don't match ALL of the active filters
-            allCards.forEach(card => {
-                const matchesAllFilters = activeFilters.every(filter => {
+        allCards.forEach(card => {
+            let shouldDisplay = true;
+            
+            // Check browser filters if there are any
+            if (activeBrowserFilters.length > 0) {
+                const matchesAllBrowserFilters = activeBrowserFilters.every(filter => {
                     const [browser, version] = filter.split(':');
                     return card.hasAttribute(`data-browser-${browser}-${version}`);
                 });
                 
-                card.style.display = matchesAllFilters ? '' : 'none';
-            });
-        } else {
-            // Show all cards
-            allCards.forEach(card => {
-                card.style.display = '';
-            });
-        }
+                if (!matchesAllBrowserFilters) {
+                    shouldDisplay = false;
+                }
+            }
+            
+            // Check status filter if one is active
+            if (shouldDisplay && this.currentStatusFilter) {
+                if (this.currentStatusFilter === 'limited-availability') {
+                    // Special handling for limited availability features
+                    if (!card.classList.contains('limited-availability')) {
+                        shouldDisplay = false;
+                    }
+                } else if (!card.classList.contains(this.currentStatusFilter)) {
+                    shouldDisplay = false;
+                }
+            }
+            
+            // Apply visibility
+            card.style.display = shouldDisplay ? '' : 'none';
+        });
         
         // Hide date headers with no visible cards
         this.updateDateHeadersVisibility();
+        
+        // Update URL parameters to reflect current filter state
+        this.updateURLWithFilters();
     }
     
     // Helper method to hide date headers with no visible feature cards
@@ -937,6 +1029,65 @@ class TimelineApp {
             
             group.style.display = hasVisibleCards ? '' : 'none';
         });
+    }
+    
+    // Update URL with current filter state
+    updateURLWithFilters() {
+        const url = new URL(window.location);
+        
+        // Clear existing filter parameters
+        url.searchParams.delete('browser');
+        url.searchParams.delete('status');
+        
+        // Add browser filters - using Set to deduplicate
+        const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
+            .map(tag => tag.getAttribute('data-filter'));
+        
+        // Deduplicate the filters
+        const uniqueFilters = [...new Set(activeBrowserFilters)];
+        
+        if (uniqueFilters.length > 0) {
+            uniqueFilters.forEach(filter => {
+                url.searchParams.append('browser', filter);
+            });
+        }
+        
+        // Add status filter
+        if (this.currentStatusFilter) {
+            url.searchParams.set('status', this.currentStatusFilter);
+        }
+        
+        // Update the URL without reloading the page
+        window.history.replaceState({}, '', url);
+    }
+    
+    // Initialize filters from URL parameters
+    initializeFiltersFromURL() {
+        const url = new URL(window.location);
+        
+        // Get browser filters
+        const browserFilters = url.searchParams.getAll('browser');
+        if (browserFilters.length > 0) {
+            browserFilters.forEach(filter => {
+                // Find and activate matching browser tags
+                document.querySelectorAll(`.browser-tag[data-filter="${filter}"]`).forEach(tag => {
+                    tag.classList.add('active-filter');
+                    tag.setAttribute('aria-pressed', 'true');
+                });
+            });
+        }
+        
+        // Get status filter
+        const statusFilter = url.searchParams.get('status');
+        if (statusFilter) {
+            // Set the status filter
+            this.currentStatusFilter = statusFilter;
+        }
+        
+        // If any filters were applied, update visibility
+        if (browserFilters.length > 0 || statusFilter) {
+            this.updateFeatureVisibility();
+        }
     }
 
     renderTimeline() {
@@ -1287,6 +1438,63 @@ class TimelineApp {
             const featureId = `${feature.id}-${feature.displayType}`;
             return this.selectedFeatures.has(featureId);
         });
+    }
+    
+    // Filter features by type (widely-available, newly-available, limited-availability)
+    filterFeaturesByType(type) {
+        // Check if we're toggling the same filter
+        if (this.currentStatusFilter === type) {
+            // Toggle off the filter
+            this.currentStatusFilter = null;
+            this.resetFilters(false); // Don't reset browser filters
+        } else {
+            // Set the new filter
+            this.currentStatusFilter = type;
+            
+            // Apply the filter using our combined filtering logic
+            this.updateFeatureVisibility();
+        }
+    }
+    
+    // Reset all filters and show all features
+    resetFilters(resetBrowserFilters = true) {
+        // Reset status filter
+        this.currentStatusFilter = null;
+        
+        // If requested, also reset browser filters
+        if (resetBrowserFilters) {
+            document.querySelectorAll('.browser-tag.active-filter').forEach(tag => {
+                tag.classList.remove('active-filter');
+                tag.setAttribute('aria-pressed', 'false');
+            });
+        }
+        
+        // Show all feature cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.style.display = 'block';
+        });
+        
+        // Update date headers visibility
+        this.updateDateHeadersVisibility();
+        
+        // Update URL to remove filters
+        this.updateURLWithFilters();
+    }
+    
+    // Scroll to the current month in the timeline
+    scrollToCurrentMonth() {
+        const now = new Date();
+        const currentMonthName = now.toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
+        const currentYear = now.getFullYear();
+        const monthId = `${currentMonthName}-${currentYear}`;
+        
+        // Find the current month element
+        const currentMonthElement = document.getElementById(monthId) || 
+                                  document.querySelector(`[id^="${currentMonthName}-"]`); // Fallback to any instance of this month
+        
+        if (currentMonthElement) {
+            currentMonthElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     }
 }
 
