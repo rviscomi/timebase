@@ -1,12 +1,12 @@
 import { browsers, features } from './data.js';
 import { browserIcons } from './browser-icons.js';
 import { downloadICal } from './ical-generator.js';
-import { fetchDeveloperSignals } from './developer-signals.js';
+import developerSignalsData from './developer-signals.json' with { type: "json" };
 
 class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
-        this.developerSignals = null; // Will be populated after fetch
+        this.developerSignals = developerSignalsData; // Load directly from JSON import
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
         this.init();
@@ -14,10 +14,7 @@ class TimelineApp {
 
     async init() {
         try {
-            // Fetch developer signals data
-            this.developerSignals = await fetchDeveloperSignals();
-            
-            // Process features after getting developer signals
+            // Process features with developer signals already loaded
             this.features = this.processFeatures();
             
             // Render the timeline

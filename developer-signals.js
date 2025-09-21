@@ -1,25 +1,37 @@
-// Fetches and caches developer signals data from web-features-mappings
-let developerSignalsCache = null;
+/**
+ * developer-signals.js
+ * 
+ * Simple script to fetch developer signals data from GitHub and
+ * save it to a local JSON file for the application to use.
+ */
 
-export async function fetchDeveloperSignals() {
-    // Return cached data if available
-    if (developerSignalsCache) {
-        return developerSignalsCache;
+import fs from 'fs/promises';
+
+// URL to the raw JSON file on GitHub
+const DEVELOPER_SIGNALS_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/developer-signals.json';
+const OUTPUT_FILE = './developer-signals.json';
+
+async function run() {
+  try {
+    console.log(`Fetching developer signals from ${DEVELOPER_SIGNALS_URL}...`);
+    
+    const response = await fetch(DEVELOPER_SIGNALS_URL);
+    
+    if (!response.ok) {
+      throw new Error(`Request failed with status: ${response.status}`);
     }
     
-    try {
-        // Use local file to avoid CORS issues
-        const response = await fetch('./developer-signals-data.json');
-        
-        if (!response.ok) {
-            throw new Error(`Failed to fetch developer signals: ${response.status}`);
-        }
-        
-        developerSignalsCache = await response.json();
-        return developerSignalsCache;
-    } catch (error) {
-        console.error('Error fetching developer signals:', error);
-        // Return an empty object as fallback
-        return {};
-    }
+    const jsonData = await response.json();
+    
+    console.log(`Saving data to ${OUTPUT_FILE}...`);
+    await fs.writeFile(OUTPUT_FILE, JSON.stringify(jsonData, null, 2));
+    
+    console.log('Developer signals data updated successfully!');
+  } catch (error) {
+    console.error(`Error updating developer signals: ${error.message}`);
+    process.exit(1);
+  }
 }
+
+// Just run the script
+run();

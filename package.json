@@ -4,8 +4,9 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "update": "npm update web-features --save && node extract-data.js",
+    "update": "npm update web-features --save && node extract-data.js && node developer-signals.js",
     "extract-logos": "node extract-logos.js",
+    "update-signals": "node developer-signals.js",
     "start": "npx http-server ./ -p 8080 -c-1 --cors -o -a localhost -d false -i index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
     "build": "npm run update && npm run extract-logos",
