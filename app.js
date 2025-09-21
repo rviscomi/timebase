@@ -1,24 +1,24 @@
 import { browsers, features } from './data.js';
 import { browserIcons } from './browser-icons.js';
 import { downloadICal } from './ical-generator.js';
-import { fetchDeveloperSignals } from './developer-signals.js';
+import developerSignalsData from './developer-signals.json' with { type: "json" };
 
 class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
-        this.developerSignals = null; // Will be populated after fetch
+        this.developerSignals = developerSignalsData; // Load directly from JSON import
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
+        this.allFeatures = []; // Store all processed features for filtering
         this.init();
     }
 
     async init() {
         try {
-            // Fetch developer signals data
-            this.developerSignals = await fetchDeveloperSignals();
-            
-            // Process features after getting developer signals
+            // Process features with developer signals already loaded
             this.features = this.processFeatures();
+            // Store all processed features for filtering
+            this.allFeatures = [...this.features];
             
             // Render the timeline
             this.renderTimeline();
@@ -195,8 +195,13 @@ class TimelineApp {
     }
 
     createBrowserTag(browser, version) {
-        const tag = document.createElement('span');
+        const tag = document.createElement('button'); // Change to button for better accessibility
         tag.className = `browser-tag ${browser}`;
+        tag.type = 'button'; // Specify button type
+        tag.setAttribute('data-browser', browser);
+        tag.setAttribute('data-version', version);
+        tag.setAttribute('data-filter', `${browser}:${version}`);
+        tag.setAttribute('aria-pressed', 'false');
         
         // Get base browser name for logo
         const baseBrowser = browser.replace('_android', '').replace('_ios', '');
@@ -213,7 +218,9 @@ class TimelineApp {
         // Start with just the version number
         let displayText = version;
         
-        // Add platform information if applicable
+        // Add platform information if applicable, but only if browser includes platform info
+        // This ensures that if we're using the base browser name (because all platforms have same version),
+        // we won't add platform info
         if (browser.includes('_')) {
             const platform = browser.split('_')[1];
             
@@ -228,6 +235,31 @@ class TimelineApp {
         textSpan.textContent = displayText;
         
         tag.appendChild(textSpan);
+        
+        // Add click event listener for filtering
+        tag.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card expansion when clicking the tag
+            
+            const isActive = tag.classList.contains('active-filter');
+            const filterKey = tag.getAttribute('data-filter');
+            
+            if (isActive) {
+                // If untoggling, also untoggle all chips with the same browser version
+                document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.remove('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'false');
+                });
+            } else {
+                // When toggling on, also toggle all chips with the same browser version
+                document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.add('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'true');
+                });
+            }
+            
+            this.updateFeatureVisibility();
+        });
+        
         return tag;
     }
 
@@ -364,8 +396,14 @@ class TimelineApp {
         if (feature.displayType === 'newly-available') {
             // Check if this is actually a limited availability feature
             if (feature.status?.baseline === false) {
-                // For limited availability features, use a different text format
-                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+                // For limited availability features, use the earliest browser implementation date
+                const earliestDate = feature.shipDates[0].date;
+                const earliestFormattedDate = earliestDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
             } else {
                 // Calculate the widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(feature.date);
@@ -684,6 +722,13 @@ class TimelineApp {
         // Add a unique ID to the feature card for deep linking
         card.id = uniqueCardId;
         
+        // Add data attributes for browser filtering
+        if (feature.shipDates) {
+            feature.shipDates.forEach(shipDate => {
+                card.setAttribute(`data-browser-${shipDate.browser}-${shipDate.version}`, 'true');
+            });
+        }
+        
         // Create header with title
         const header = this.createFeatureHeader(feature, uniqueCardId);
         
@@ -720,7 +765,42 @@ class TimelineApp {
         const browserReleases = [];
         const processedBrowsers = new Set();
         
-        // First collect all browser releases with their dates
+        // Create a map to track versions across platforms
+        const browserVersionMap = new Map();
+        
+        // First collect all browser versions to identify which ones have the same version across platforms
+        if (feature.shipDates) {
+            feature.shipDates.forEach(shipDate => {
+                const browser = shipDate.browser;
+                const cleanVersion = shipDate.version;
+                const baseBrowser = browser.replace('_android', '').replace('_ios', '');
+                
+                // Track versions by base browser name
+                if (!browserVersionMap.has(baseBrowser)) {
+                    browserVersionMap.set(baseBrowser, {
+                        versions: new Map(),
+                        platforms: new Set()
+                    });
+                }
+                
+                const browserData = browserVersionMap.get(baseBrowser);
+                
+                // Track if this is a platform variant (mobile)
+                if (browser !== baseBrowser) {
+                    browserData.platforms.add(browser);
+                }
+                
+                // Track this version
+                if (!browserData.versions.has(cleanVersion)) {
+                    browserData.versions.set(cleanVersion, new Set());
+                }
+                
+                // Add this browser to the set of browsers with this version
+                browserData.versions.get(cleanVersion).add(browser);
+            });
+        }
+        
+        // Now process the shipDates again, but with knowledge of which versions are shared
         if (feature.shipDates) {
             feature.shipDates.forEach(shipDate => {
                 const browser = shipDate.browser;
@@ -744,12 +824,22 @@ class TimelineApp {
                 
                 processedBrowsers.add(baseBrowser);
                 
+                // Check if this version is shared across all platforms for this browser
+                const browserData = browserVersionMap.get(baseBrowser);
+                const browsersWithThisVersion = browserData.versions.get(cleanVersion);
+                
+                // If all platforms of this browser have the same version, use the base browser name
+                const useBaseBrowserOnly = browserData.platforms.size > 0 && 
+                    [...browserData.platforms].every(platformBrowser => 
+                        browsersWithThisVersion.has(platformBrowser));
+                
                 browserReleases.push({
-                    browser,
+                    browser: useBaseBrowserOnly ? baseBrowser : browser,
                     baseBrowser,
                     version: cleanVersion,
                     date: releaseDate,
-                    isRecent: isInCurrentMonth
+                    isRecent: isInCurrentMonth,
+                    useBaseBrowserOnly
                 });
             });
         }
@@ -771,6 +861,7 @@ class TimelineApp {
         browserOrder.forEach(browser => {
             if (browserMap[browser]) {
                 const release = browserMap[browser];
+                // Use the browser name determined in processBrowserSupport
                 const tag = this.createBrowserTag(release.browser, release.version);
                 
                 // Add full info as tooltip
@@ -782,6 +873,7 @@ class TimelineApp {
                 if (release.isRecent) {
                     tag.classList.add('recent-release');
                 }
+                
                 container.appendChild(tag);
             }
         });
@@ -803,6 +895,48 @@ class TimelineApp {
                 downloadICal(this.getSelectedFeatures());
             });
         }
+    }
+    
+    // Method to update the visibility of feature cards based on active browser filters
+    updateFeatureVisibility() {
+        // Get all active filters
+        const activeFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
+            .map(tag => tag.getAttribute('data-filter'));
+        
+        // Get all feature cards
+        const allCards = document.querySelectorAll('.feature-card');
+        
+        if (activeFilters.length > 0) {
+            // Hide cards that don't match ALL of the active filters
+            allCards.forEach(card => {
+                const matchesAllFilters = activeFilters.every(filter => {
+                    const [browser, version] = filter.split(':');
+                    return card.hasAttribute(`data-browser-${browser}-${version}`);
+                });
+                
+                card.style.display = matchesAllFilters ? '' : 'none';
+            });
+        } else {
+            // Show all cards
+            allCards.forEach(card => {
+                card.style.display = '';
+            });
+        }
+        
+        // Hide date headers with no visible cards
+        this.updateDateHeadersVisibility();
+    }
+    
+    // Helper method to hide date headers with no visible feature cards
+    updateDateHeadersVisibility() {
+        const dateGroups = document.querySelectorAll('.date-group');
+        
+        dateGroups.forEach(group => {
+            const hasVisibleCards = Array.from(group.querySelectorAll('.feature-card'))
+                .some(card => card.style.display !== 'none');
+            
+            group.style.display = hasVisibleCards ? '' : 'none';
+        });
     }
 
     renderTimeline() {
