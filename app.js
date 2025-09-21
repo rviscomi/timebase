@@ -218,7 +218,9 @@ class TimelineApp {
         // Start with just the version number
         let displayText = version;
         
-        // Add platform information if applicable
+        // Add platform information if applicable, but only if browser includes platform info
+        // This ensures that if we're using the base browser name (because all platforms have same version),
+        // we won't add platform info
         if (browser.includes('_')) {
             const platform = browser.split('_')[1];
             
@@ -394,8 +396,14 @@ class TimelineApp {
         if (feature.displayType === 'newly-available') {
             // Check if this is actually a limited availability feature
             if (feature.status?.baseline === false) {
-                // For limited availability features, use a different text format
-                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+                // For limited availability features, use the earliest browser implementation date
+                const earliestDate = feature.shipDates[0].date;
+                const earliestFormattedDate = earliestDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
             } else {
                 // Calculate the widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(feature.date);
@@ -757,7 +765,42 @@ class TimelineApp {
         const browserReleases = [];
         const processedBrowsers = new Set();
         
-        // First collect all browser releases with their dates
+        // Create a map to track versions across platforms
+        const browserVersionMap = new Map();
+        
+        // First collect all browser versions to identify which ones have the same version across platforms
+        if (feature.shipDates) {
+            feature.shipDates.forEach(shipDate => {
+                const browser = shipDate.browser;
+                const cleanVersion = shipDate.version;
+                const baseBrowser = browser.replace('_android', '').replace('_ios', '');
+                
+                // Track versions by base browser name
+                if (!browserVersionMap.has(baseBrowser)) {
+                    browserVersionMap.set(baseBrowser, {
+                        versions: new Map(),
+                        platforms: new Set()
+                    });
+                }
+                
+                const browserData = browserVersionMap.get(baseBrowser);
+                
+                // Track if this is a platform variant (mobile)
+                if (browser !== baseBrowser) {
+                    browserData.platforms.add(browser);
+                }
+                
+                // Track this version
+                if (!browserData.versions.has(cleanVersion)) {
+                    browserData.versions.set(cleanVersion, new Set());
+                }
+                
+                // Add this browser to the set of browsers with this version
+                browserData.versions.get(cleanVersion).add(browser);
+            });
+        }
+        
+        // Now process the shipDates again, but with knowledge of which versions are shared
         if (feature.shipDates) {
             feature.shipDates.forEach(shipDate => {
                 const browser = shipDate.browser;
@@ -781,12 +824,22 @@ class TimelineApp {
                 
                 processedBrowsers.add(baseBrowser);
                 
+                // Check if this version is shared across all platforms for this browser
+                const browserData = browserVersionMap.get(baseBrowser);
+                const browsersWithThisVersion = browserData.versions.get(cleanVersion);
+                
+                // If all platforms of this browser have the same version, use the base browser name
+                const useBaseBrowserOnly = browserData.platforms.size > 0 && 
+                    [...browserData.platforms].every(platformBrowser => 
+                        browsersWithThisVersion.has(platformBrowser));
+                
                 browserReleases.push({
-                    browser,
+                    browser: useBaseBrowserOnly ? baseBrowser : browser,
                     baseBrowser,
                     version: cleanVersion,
                     date: releaseDate,
-                    isRecent: isInCurrentMonth
+                    isRecent: isInCurrentMonth,
+                    useBaseBrowserOnly
                 });
             });
         }
@@ -808,6 +861,7 @@ class TimelineApp {
         browserOrder.forEach(browser => {
             if (browserMap[browser]) {
                 const release = browserMap[browser];
+                // Use the browser name determined in processBrowserSupport
                 const tag = this.createBrowserTag(release.browser, release.version);
                 
                 // Add full info as tooltip
