@@ -2,11 +2,13 @@ import { browsers, features } from './data.js';
 import { browserIcons } from './browser-icons.js';
 import { downloadICal } from './ical-generator.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
+import interopData from './interop.json' with { type: "json" };
 
 class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
         this.developerSignals = developerSignalsData; // Load directly from JSON import
+        this.interopData = interopData; // Load directly from JSON import
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
         this.allFeatures = []; // Store all processed features for filtering
@@ -90,7 +92,9 @@ class TimelineApp {
                     status: data.status,
                     shipDates: shipDates,
                     // Add developer signals data if available
-                    developerSignal: this.developerSignals?.[id] || null
+                    developerSignal: this.developerSignals?.[id] || null,
+                    // Add interop data if available
+                    interop: this.interopData?.[id] || null
                 };
                 
                 // Get current date for comparison
@@ -262,6 +266,80 @@ class TimelineApp {
                 });
             }
             
+            this.updateFeatureVisibility();
+        };
+        
+        // Add click event listener for filtering
+        tag.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card expansion when clicking the tag
+            toggleFilter();
+        });
+        
+        // Add keyboard event listener for filtering via spacebar
+        tag.addEventListener('keydown', (e) => {
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault(); // Prevent scrolling with spacebar
+                e.stopPropagation();
+                toggleFilter();
+            }
+        });
+        
+        return tag;
+    }
+
+    createInteropTag(year) {
+        const tag = document.createElement('button');
+        tag.className = 'interop-tag';
+        tag.type = 'button';
+        tag.setAttribute('data-interop-year', year);
+        tag.setAttribute('data-filter', `interop:${year}`);
+        tag.setAttribute('aria-pressed', 'false');
+        
+        // Create text for the tag
+        const textSpan = document.createElement('span');
+        textSpan.textContent = `Interop ${year}`;
+        tag.appendChild(textSpan);
+        
+        // Function to toggle the filter
+        const toggleFilter = () => {
+            const isActive = tag.classList.contains('active-filter');
+            const filterKey = tag.getAttribute('data-filter');
+            
+            // Check if the 'any' interop filter is active in the URL
+            const url = new URL(window.location);
+            const hasAnyInteropFilter = url.searchParams.getAll('interop').includes('any');
+            
+            if (isActive) {
+                // If untoggling, also untoggle all chips with the same interop year
+                document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.remove('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'false');
+                });
+            } else {
+                // When toggling on, first check if 'any' filter is active
+                if (hasAnyInteropFilter) {
+                    // Remove the 'any' filter from URL
+                    url.searchParams.delete('interop');
+                    
+                    // Also remove any data-interop-any attributes
+                    document.querySelectorAll('[data-interop-any]').forEach(card => {
+                        card.removeAttribute('data-interop-any');
+                    });
+                    
+                    window.history.replaceState({}, '', url);
+                }
+                
+                // Then toggle all chips with the same interop year
+                document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+                    matchingTag.classList.add('active-filter');
+                    matchingTag.setAttribute('aria-pressed', 'true');
+                });
+            }
+            
+            // First update the URL with the new filter state
+            this.updateURLWithFilters();
+            
+            // Then update feature visibility based on the new filters
             this.updateFeatureVisibility();
         };
         
@@ -773,6 +851,27 @@ class TimelineApp {
         // Add browser support tags in a specific order
         this.addBrowserTagsInOrder(browserSupport, browserReleases);
         
+        // Add Interop tags if applicable
+        if (feature.interop) {
+            // Sort interop years by most recent first
+            const interopYears = feature.interop.map(entry => entry.year).sort((a, b) => b - a);
+            
+            // Add the most recent interop year tag
+            if (interopYears.length > 0) {
+                const mostRecentYear = interopYears[0];
+                
+                // Create an interop tag
+                const interopTag = this.createInteropTag(mostRecentYear);
+                interopTag.title = `Part of Interop ${mostRecentYear}`;
+                
+                // Add data attribute for filtering
+                card.setAttribute(`data-interop-${mostRecentYear}`, 'true');
+                
+                // Add the tag to browser support
+                browserSupport.appendChild(interopTag);
+            }
+        }
+        
         // Add browser support to the top row
         topRow.appendChild(browserSupport);
         
@@ -937,7 +1036,9 @@ class TimelineApp {
                                  activeElement.tagName === 'TEXTAREA' || 
                                  activeElement.isContentEditable;
             
-            if (isInputFocused) {
+            // Skip if an input is focused or if Cmd/Ctrl/Alt keys are pressed
+            // (but allow Shift modifier for potential alternative shortcuts)
+            if (isInputFocused || e.metaKey || e.ctrlKey || e.altKey) {
                 return;
             }
             
@@ -960,6 +1061,9 @@ class TimelineApp {
                 case 'r': // Reset filters
                     this.resetFilters();
                     break;
+                case 'i': // Filter features with interop tags
+                    this.filterInteropFeatures();
+                    break;
                 case '?': // Show keyboard shortcuts dialog
                     this.showShortcutsDialog();
                     break;
@@ -970,11 +1074,11 @@ class TimelineApp {
     // Initialize the keyboard shortcuts dialog
     initShortcutsDialog() {
         this.shortcutsDialog = document.getElementById('shortcuts-dialog');
-        const closeButton = document.getElementById('close-dialog');
+        const closeShortcutsButton = document.getElementById('close-shortcuts');
         
-        if (this.shortcutsDialog && closeButton) {
+        if (this.shortcutsDialog && closeShortcutsButton) {
             // Add click event to close button
-            closeButton.addEventListener('click', () => {
+            closeShortcutsButton.addEventListener('click', () => {
                 this.shortcutsDialog.close();
             });
             
@@ -1000,6 +1104,20 @@ class TimelineApp {
         const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
             .map(tag => tag.getAttribute('data-filter'));
         
+        // Get all active interop filters from tag elements
+        const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
+            .map(tag => tag.getAttribute('data-filter'))
+            .map(filter => filter.split(':')[1]); // Extract year from 'interop:YYYY'
+        
+        // Check if we have the special 'any' interop filter in the URL
+        const url = new URL(window.location);
+        const hasAnyInteropFilter = url.searchParams.getAll('interop').includes('any');
+        
+        // If we have the 'any' filter, add it to our active filters
+        const allInteropFilters = hasAnyInteropFilter 
+            ? [...activeInteropFilters, 'any']
+            : activeInteropFilters;
+            
         // Get all feature cards
         const allCards = document.querySelectorAll('.feature-card');
         
@@ -1015,6 +1133,29 @@ class TimelineApp {
                 
                 if (!matchesAllBrowserFilters) {
                     shouldDisplay = false;
+                }
+            }
+            
+            // Check interop filters if there are any
+            if (shouldDisplay && allInteropFilters.length > 0) {
+                // Check if this is the special 'any' filter
+                if (allInteropFilters.includes('any')) {
+                    // For 'any', check if the card has any interop attribute
+                    const hasInterop = Array.from(card.attributes)
+                        .some(attr => attr.name.startsWith('data-interop-'));
+                    
+                    if (!hasInterop) {
+                        shouldDisplay = false;
+                    }
+                } else {
+                    // For specific years, check each one
+                    const matchesAnyInteropFilter = allInteropFilters.some(year => {
+                        return card.hasAttribute(`data-interop-${year}`);
+                    });
+                    
+                    if (!matchesAnyInteropFilter) {
+                        shouldDisplay = false;
+                    }
                 }
             }
             
@@ -1046,6 +1187,63 @@ class TimelineApp {
         this.updateURLWithFilters();
     }
     
+    // Method to filter features by interop
+    filterInteropFeatures() {
+        // Get the current URL
+        const url = new URL(window.location);
+        const currentInteropFilter = url.searchParams.get('interop');
+        
+        // If 'any' is already active, toggle it off
+        if (currentInteropFilter === 'any') {
+            // Remove the "any" interop filter
+            url.searchParams.delete('interop');
+            
+            // Update the URL without reloading the page
+            window.history.replaceState({}, '', url);
+            
+            // Update feature visibility with all active filters
+            this.updateFeatureVisibility();
+            return;
+        }
+        
+        // Don't reset any active status filters - preserve them
+        
+        // Don't reset any active browser filters - preserve them
+        
+        // Reset any active interop filters first
+        // (to prevent conflicts with the "any" interop filter)
+        document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
+            tag.classList.remove('active-filter');
+            tag.setAttribute('aria-pressed', 'false');
+        });
+        
+        // Create a special "any" interop filter data attribute on all feature cards
+        const allCards = document.querySelectorAll('.feature-card');
+        allCards.forEach(card => {
+            // Check if this card has any interop data attribute
+            const hasInterop = Array.from(card.attributes)
+                .some(attr => attr.name.startsWith('data-interop-'));
+                
+            if (hasInterop) {
+                // Set a special data attribute for filtering
+                card.setAttribute('data-interop-any', 'true');
+            } else {
+                // Remove the attribute if it exists
+                card.removeAttribute('data-interop-any');
+            }
+        });
+        
+        // Add the "any" interop filter
+        url.searchParams.delete('interop'); // Remove any specific interop year filters
+        url.searchParams.set('interop', 'any'); // Add the "any" filter
+        
+        // Update the URL without reloading the page
+        window.history.replaceState({}, '', url);
+        
+        // Update feature visibility with all active filters
+        this.updateFeatureVisibility();
+    }
+    
     // Helper method to hide date headers with no visible feature cards
     updateDateHeadersVisibility() {
         const dateGroups = document.querySelectorAll('.date-group');
@@ -1066,17 +1264,47 @@ class TimelineApp {
         url.searchParams.delete('browser');
         url.searchParams.delete('status');
         
+        // We'll handle interop filters purely based on active tag elements
+        // and completely clear any existing interop params
+        url.searchParams.delete('interop');
+        
         // Add browser filters - using Set to deduplicate
         const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
             .map(tag => tag.getAttribute('data-filter'));
         
         // Deduplicate the filters
-        const uniqueFilters = [...new Set(activeBrowserFilters)];
+        const uniqueBrowserFilters = [...new Set(activeBrowserFilters)];
         
-        if (uniqueFilters.length > 0) {
-            uniqueFilters.forEach(filter => {
+        if (uniqueBrowserFilters.length > 0) {
+            uniqueBrowserFilters.forEach(filter => {
                 url.searchParams.append('browser', filter);
             });
+        }
+        
+        // Get active interop filters from tag elements
+        const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
+            .map(tag => tag.getAttribute('data-filter'))
+            .map(filter => filter.split(':')[1]); // Extract year from 'interop:YYYY'
+        
+        // If we have specific year filters, add them to the URL
+        if (activeInteropFilters.length > 0) {
+            // Deduplicate the interop filters
+            const uniqueInteropFilters = [...new Set(activeInteropFilters)];
+            
+            uniqueInteropFilters.forEach(year => {
+                url.searchParams.append('interop', year);
+            });
+        } else {
+            // Check if we should preserve the 'any' filter
+            // This happens when the 'i' shortcut was used but no specific year is selected
+            const allCards = document.querySelectorAll('.feature-card');
+            const anyInteropFilterActive = Array.from(allCards).some(card => {
+                return card.hasAttribute('data-interop-any');
+            });
+            
+            if (anyInteropFilterActive) {
+                url.searchParams.set('interop', 'any');
+            }
         }
         
         // Add status filter
@@ -1104,6 +1332,23 @@ class TimelineApp {
             });
         }
         
+        // Get interop filters
+        const interopFilters = url.searchParams.getAll('interop');
+        if (interopFilters.length > 0) {
+            // Don't need to do anything special for 'any' - 
+            // updateFeatureVisibility will check for it directly from the URL
+            
+            // For specific years, find and activate matching tags
+            interopFilters.forEach(year => {
+                if (year !== 'any') {
+                    document.querySelectorAll(`.interop-tag[data-filter="interop:${year}"]`).forEach(tag => {
+                        tag.classList.add('active-filter');
+                        tag.setAttribute('aria-pressed', 'true');
+                    });
+                }
+            });
+        }
+        
         // Get status filter
         const statusFilter = url.searchParams.get('status');
         if (statusFilter) {
@@ -1112,7 +1357,7 @@ class TimelineApp {
         }
         
         // If any filters were applied, update visibility
-        if (browserFilters.length > 0 || statusFilter) {
+        if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter) {
             this.updateFeatureVisibility();
         }
     }
@@ -1493,6 +1738,24 @@ class TimelineApp {
             document.querySelectorAll('.browser-tag.active-filter').forEach(tag => {
                 tag.classList.remove('active-filter');
                 tag.setAttribute('aria-pressed', 'false');
+            });
+        }
+        
+        // Always reset interop filters
+        document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
+            tag.classList.remove('active-filter');
+            tag.setAttribute('aria-pressed', 'false');
+        });
+        
+        // Clear the 'any' interop filter from URL if present
+        const url = new URL(window.location);
+        if (url.searchParams.has('interop')) {
+            url.searchParams.delete('interop');
+            window.history.replaceState({}, '', url);
+            
+            // Also clean up the special 'any' interop data attribute
+            document.querySelectorAll('[data-interop-any]').forEach(card => {
+                card.removeAttribute('data-interop-any');
             });
         }
         

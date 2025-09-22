@@ -7,6 +7,7 @@
     <title>Baseline timeline</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="developer-signals.css">
+    <link rel="stylesheet" href="interop.css">
 </head>
 <body>
     <header class="download-header">
@@ -58,6 +59,10 @@
                     <td>Filter deprecated features</td>
                 </tr>
                 <tr>
+                    <td><kbd>i</kbd></td>
+                    <td>Filter features with Interop tags</td>
+                </tr>
+                <tr>
                     <td><kbd>c</kbd></td>
                     <td>Scroll to current month</td>
                 </tr>
@@ -70,10 +75,10 @@
                     <td>Close this dialog</td>
                 </tr>
             </table>
-            <button id="close-dialog" class="close-dialog-btn" type="button">Close</button>
+            <button id="close-shortcuts" class="dialog-close-btn">Close</button>
         </div>
     </dialog>
 
     <script type="module" src="app.js"></script>
 </body>
-</html> 
+</html>
