@@ -505,8 +505,19 @@ class TimelineApp {
                 }).join(', ');
                 availabilityText = `This feature is discouraged by ${authority}.`;
             } else if (feature.status?.baseline === false) {
-                // For limited availability features, use a different text format
-                availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+                // For limited availability features, use the earliest ship date
+                // Get the earliest ship date (we know shipDates is already sorted)
+                const earliestShipDate = feature.shipDates[0].date;
+                
+                // Format the earliest date
+                const earliestFormattedDate = earliestShipDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                
+                // Use the earliest date for limited availability features
+                availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
             } else {
                 // Calculate the widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(feature.date);
