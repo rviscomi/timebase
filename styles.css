@@ -133,8 +133,11 @@ body {
 
 /* Style for limited availability features - no colored stripe */
 .feature-card.limited-availability {
-    border-left: 5px solid #e0e0e0; /* Slightly thicker gray border */
+    border-left: 1px solid #e2e8f0;
     background-color: #ffffff;
+}
+.feature-card.discouraged {
+    padding-left: calc(1rem + 5px);
 }
 
 /* Style for future widely available features - ensure consistent border thickness */
@@ -285,6 +288,9 @@ body {
     margin-right: 4px;
     display: inline-flex;
     align-items: center;
+}
+.feature-card.discouraged .browser-logo {
+    filter: grayscale(100%);
 }
 
 .version-text {
@@ -520,6 +526,10 @@ body {
     display: inline-flex;
 }
 
+.feature-card.discouraged .baseline-icon {
+    filter: grayscale(100%);
+}
+
 /* Remove old baseline tag styles */
 .baseline-tag,
 .baseline-limited,
@@ -736,6 +746,11 @@ body {
 .feature-card.limited-availability .availability-info-text {
     border-left-color: #e0e0e0;
     background-color: rgba(224, 224, 224, 0.2);
+}
+
+.discouraged .availability-info-text a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 /* Style for the widely available link in the newly available text */

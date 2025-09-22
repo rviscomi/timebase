@@ -85,6 +85,7 @@ class TimelineApp {
                     name: data.name || id,
                     description: data.description,
                     description_html: data.description_html || data.description,
+                    discouraged: data.discouraged,
                     spec: data.spec,
                     status: data.status,
                     shipDates: shipDates,
@@ -100,7 +101,8 @@ class TimelineApp {
                 processedFeatures.push({
                     ...baseFeature,
                     date: newlyAvailableDate,
-                    displayType: 'newly-available'
+                    displayType: 'newly-available',
+                    displayName: 'Newly available'
                 });
                 
                 // Only add widely available entry if:
@@ -111,7 +113,8 @@ class TimelineApp {
                     processedFeatures.push({
                         ...baseFeature,
                         date: widelyAvailableDate,
-                        displayType: 'widely-available'
+                        displayType: 'widely-available',
+                        displayName: 'Widely available'
                     });
                 }
             });
@@ -305,23 +308,21 @@ class TimelineApp {
             if (baseline === false) {
                 // For limited availability
                 iconName = 'baseline-limited-icon.svg';
-                titleText = 'Limited availability across browsers';
+                if (feature.discouraged) {
+                    titleText = 'This feature is discouraged';
+                } else {
+                    titleText = 'Limited availability across browsers';
+                }
             }
             // Then prioritize the display type for non-limited features
             else if (feature.displayType === 'widely-available') {
                 // For widely-available, always show the widely icon
                 iconName = 'baseline-widely-icon.svg';
-                titleText = 'Baseline Widely available';
+                titleText = `Baseline ${feature.displayName}`;
             } else if (feature.displayType === 'newly-available') {
                 // For newly-available, always show the newly icon regardless of baseline value
                 iconName = 'baseline-newly-icon.svg';
-                titleText = 'Baseline Newly available';
-            } else if (baseline === 'low') {
-                iconName = 'baseline-newly-icon.svg';
-                titleText = 'Baseline Newly available';
-            } else if (baseline === 'high') {
-                iconName = 'baseline-widely-icon.svg';
-                titleText = 'Baseline Widely available';
+                titleText = `Baseline ${feature.displayName}`;
             }
             
             if (iconName) {
@@ -348,7 +349,7 @@ class TimelineApp {
             upvoteLink.className = 'upvote-count';
             upvoteLink.target = '_blank';
             upvoteLink.rel = 'noopener noreferrer';
-            upvoteLink.innerHTML = `<span class="upvote-icon">👍</span>${feature.developerSignal.votes}`;
+            upvoteLink.innerHTML = `<span class="upvote-icon">👍</span> ${feature.developerSignal.votes}`;
             upvoteLink.title = 'Add your support for this feature on GitHub';
             
             // Add event to prevent card selection when clicking the button
@@ -367,9 +368,11 @@ class TimelineApp {
         linkIcon.innerHTML = '🔗';
         
         // Use the correct display type in tooltip - check if it's a limited availability feature
-        let displayTypeForTooltip = feature.displayType;
-        if (feature.status?.baseline === false) {
-            displayTypeForTooltip = 'limited-availability';
+        let displayTypeForTooltip = feature.displayName;
+        if (feature.discouraged) {
+            displayTypeForTooltip = 'discouraged';
+        } else if (feature.status?.baseline === false) {
+            displayTypeForTooltip = 'Limited availability';
         }
         linkIcon.title = `Link to ${feature.name} (${displayTypeForTooltip})`;
         
@@ -412,7 +415,18 @@ class TimelineApp {
         let availabilityText = '';
         if (feature.displayType === 'newly-available') {
             // Check if this is actually a limited availability feature
-            if (feature.status?.baseline === false) {
+            if (feature.discouraged) {
+                const authority = feature.discouraged.according_to.map(url => {
+                    const hostname = new URL(url).hostname;
+                    if (hostname == 'github.com') {
+                        // Use the repo name as the authority
+                        const repo = url.split('/').slice(-2).join('/');
+                        return `<a href="${url}" target="_blank">${repo}</a>`;
+                    }
+                    return `<a href="${url}" target="_blank">${hostname}</a>`;
+                }).join(', ');
+                availabilityText = `This feature is discouraged by ${authority}.`;
+            } else if (feature.status?.baseline === false) {
                 // For limited availability features, use a different text format
                 availabilityText = `Limited availability across browsers since ${formattedDate}.`;
             } else {
@@ -619,16 +633,18 @@ class TimelineApp {
         const linksContainer = document.createElement('div');
         linksContainer.className = 'feature-links';
         
-        // Add "Add to calendar" button
-        const addToCalendarBtn = document.createElement('button');
-        addToCalendarBtn.className = 'add-to-calendar-btn';
-        addToCalendarBtn.textContent = '📅 Add to Calendar';
-        addToCalendarBtn.type = 'button';
-        addToCalendarBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent card expansion toggle
-            this.toggleFeatureSelection(feature);
-        });
-        linksContainer.appendChild(addToCalendarBtn);
+        if (feature.status.baseline) {
+            // Add "Add to calendar" button
+            const addToCalendarBtn = document.createElement('button');
+            addToCalendarBtn.className = 'add-to-calendar-btn';
+            addToCalendarBtn.textContent = '📅 Add to Calendar';
+            addToCalendarBtn.type = 'button';
+            addToCalendarBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent card expansion toggle
+                this.toggleFeatureSelection(feature);
+            });
+            linksContainer.appendChild(addToCalendarBtn);
+        }
         
         // Add spec link if available
         if (feature.spec) {
@@ -711,6 +727,9 @@ class TimelineApp {
             if (feature.date > now) {
                 card.classList.add('future');
             }
+        }
+        else if (feature.discouraged) {
+            card.className = 'feature-card discouraged';
         }
         // Then check if this is a limited availability feature
         else if (feature.status?.baseline === false) {
