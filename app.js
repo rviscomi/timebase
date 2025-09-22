@@ -951,6 +951,9 @@ class TimelineApp {
                 case 'l': // Filter limited availability features
                     this.filterFeaturesByType('limited-availability');
                     break;
+                case 'd': // Filter deprecated (discouraged) features
+                    this.filterDeprecatedFeatures();
+                    break;
                 case 'c': // Scroll to current month
                     this.scrollToCurrentMonth();
                     break;
@@ -1020,6 +1023,11 @@ class TimelineApp {
                 if (this.currentStatusFilter === 'limited-availability') {
                     // Special handling for limited availability features
                     if (!card.classList.contains('limited-availability')) {
+                        shouldDisplay = false;
+                    }
+                } else if (this.currentStatusFilter === 'discouraged') {
+                    // Special handling for deprecated (discouraged) features
+                    if (!card.classList.contains('discouraged')) {
                         shouldDisplay = false;
                     }
                 } else if (!card.classList.contains(this.currentStatusFilter)) {
@@ -1498,6 +1506,35 @@ class TimelineApp {
         
         // Update URL to remove filters
         this.updateURLWithFilters();
+    }
+    
+    // Filter to show only deprecated (discouraged) features
+    filterDeprecatedFeatures() {
+        // Check if we're toggling the same filter
+        if (this.currentStatusFilter === 'discouraged') {
+            // Toggle off the filter
+            this.currentStatusFilter = null;
+            this.resetFilters(false); // Don't reset browser filters
+        } else {
+            // Set the new filter
+            this.currentStatusFilter = 'discouraged';
+            
+            // Get all feature cards
+            const allCards = document.querySelectorAll('.feature-card');
+            
+            allCards.forEach(card => {
+                let shouldDisplay = card.classList.contains('discouraged');
+                
+                // Apply visibility
+                card.style.display = shouldDisplay ? '' : 'none';
+            });
+            
+            // Hide date headers with no visible cards
+            this.updateDateHeadersVisibility();
+            
+            // Update URL parameters to reflect current filter state
+            this.updateURLWithFilters();
+        }
     }
     
     // Scroll to the current month in the timeline
