@@ -1636,25 +1636,20 @@ class TimelineApp {
         // Add the FAB to the document
         document.body.appendChild(fab);
         
-        // Set up scroll event listener to show/hide the FAB
-        const viewportHeight = window.innerHeight;
-        const threshold = viewportHeight * 0.01; // 1vh
-        
-        window.addEventListener('scroll', () => {
-            if (!currentMonthElement) return;
-            
-            const rect = currentMonthElement.getBoundingClientRect();
-            const isVisible = 
-                (rect.top >= -threshold && rect.top <= viewportHeight) ||
-                (rect.bottom >= 0 && rect.bottom <= viewportHeight + threshold);
-            
-            // Show/hide FAB based on current month visibility
-            if (!isVisible) {
-                fab.classList.remove('hidden');
-            } else {
-                fab.classList.add('hidden');
-            }
-        });
+        // Set up Intersection Observer to show/hide the FAB
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // isIntersecting is true if the element is at all visible.
+                // We want to show the FAB when the current month is NOT visible.
+                if (entry.isIntersecting) {
+                    fab.classList.add('hidden');
+                } else {
+                    fab.classList.remove('hidden');
+                }
+            });
+        }, { threshold: 0 });
+
+        observer.observe(currentMonthElement);
     }
 
     // Add selection methods
