@@ -541,7 +541,7 @@ class TimelineApp {
                 if (widelyAvailableDate <= now) {
                     availabilityText = `Newly available since ${formattedDate}. Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
                 } else {
-                    availabilityText = `Newly available since ${formattedDate}. Will become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+                    availabilityText = `Newly available since ${formattedDate}. Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
                 }
             }
         } else if (feature.displayType === 'widely-available') {
@@ -549,7 +549,7 @@ class TimelineApp {
             now.setHours(0, 0, 0, 0);
             
             if (feature.date > now) {
-                availabilityText = `Will become widely available on ${formattedDate}.`;
+                availabilityText = `Expected to become widely available on ${formattedDate}.`;
             } else {
                 availabilityText = `Widely available since ${formattedDate}.`;
             }
