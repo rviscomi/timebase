@@ -1,5 +1,4 @@
 import { browsers, features } from './data.js';
-import { browserIcons } from './browser-icons.js';
 import { downloadICal } from './ical-generator.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
@@ -1692,9 +1691,9 @@ class TimelineApp {
         const downloadButtons = document.querySelectorAll('.download-btn');
         downloadButtons.forEach(btn => {
             if (selectedCount === 0) {
-                btn.innerHTML = '📅 Download iCal Calendar';
+                btn.innerHTML = '📅 Download ICS Calendar';
             } else {
-                btn.innerHTML = `📅 Download iCal Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
+                btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
             }
         });
 

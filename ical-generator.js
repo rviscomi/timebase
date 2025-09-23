@@ -1,7 +1,6 @@
-import { browsers, features } from './data.js';
+import { browsers } from './data.js';
 
-export function generateICal(customFeatures = null) {
-    const featuresToProcess = customFeatures || features;
+export function generateICal(featuresToProcess) {
     
     const ical = [
         'BEGIN:VCALENDAR',
