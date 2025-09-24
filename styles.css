@@ -111,7 +111,7 @@ body {
 }
 
 .feature-card {
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem 0;
     border: 1px solid #eee;
     border-radius: 8px;
@@ -204,7 +204,6 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem;
     border-radius: 4px;
 }
 
@@ -252,7 +251,6 @@ body {
 .browser-support {
     display: flex;
     gap: 0.5rem;
-    margin-right: 1rem;
     align-items: center;
     flex-shrink: 0;
 }
