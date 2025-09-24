@@ -1889,6 +1889,10 @@ export const browsers = {
       {
         "date": "2025-08-19",
         "version": "142"
+      },
+      {
+        "date": "2025-09-16",
+        "version": "143"
       }
     ]
   },
@@ -2398,6 +2402,10 @@ export const browsers = {
       {
         "date": "2025-08-19",
         "version": "142"
+      },
+      {
+        "date": "2025-09-16",
+        "version": "143"
       }
     ]
   },
@@ -11543,7 +11551,9 @@ export const features = {
       "support": {
         "chrome": "131",
         "chrome_android": "131",
-        "edge": "131"
+        "edge": "131",
+        "firefox": "143",
+        "firefox_android": "143"
       }
     }
   },
@@ -11957,7 +11967,9 @@ export const features = {
       "css.properties.content-visibility.is_transitionable",
       "css.properties.content-visibility.keyframe_animatable",
       "css.properties.display.is_transitionable",
-      "css.properties.display.keyframe_animatable"
+      "css.properties.display.keyframe_animatable",
+      "css.properties.transition-behavior.transitionable_content-visibility",
+      "css.properties.transition-behavior.transitionable_display"
     ],
     "description": "You can animate elements between display: none and any other display value or animate between content-visibility: hidden and any other content-visibility value. This also applies to transitions.",
     "description_html": "You can animate elements between <code>display: none</code> and any other <code>display</code> value or animate between <code>content-visibility: hidden</code> and any other <code>content-visibility</code> value. This also applies to transitions.",
@@ -17119,6 +17131,25 @@ export const features = {
       }
     }
   },
+  "getorinsert": {
+    "compat_features": [
+      "javascript.builtins.Map.getOrInsert",
+      "javascript.builtins.Map.getOrInsertComputed",
+      "javascript.builtins.WeakMap.getOrInsert",
+      "javascript.builtins.WeakMap.getOrInsertComputed"
+    ],
+    "description": "The getOrInsert() and getOrInsertComputed() methods of Map objects get a value, setting and getting a default value if needed.",
+    "description_html": "The <code>getOrInsert()</code> and <code>getOrInsertComputed()</code> methods of <code>Map</code> objects get a value, setting and getting a default value if needed.",
+    "kind": "feature",
+    "name": "Map getOrInsert()",
+    "spec": [
+      "https://tc39.es/proposal-upsert/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "globalthis": {
     "compat_features": [
       "javascript.builtins.globalThis"
@@ -19628,10 +19659,6 @@ export const features = {
       "input-color"
     ],
     "compat_features": [
-      "api.HTMLInputElement.alpha",
-      "api.HTMLInputElement.colorSpace",
-      "html.elements.input.alpha",
-      "html.elements.input.colorspace",
       "html.elements.input.type_color"
     ],
     "description": "The <input type=\"color\"> HTML element shows a color picker from which users can choose a color value.",
@@ -19654,6 +19681,32 @@ export const features = {
         "firefox": "29",
         "safari": "12.1",
         "safari_ios": "12.2"
+      }
+    }
+  },
+  "input-color-alpha": {
+    "compat_features": [
+      "api.HTMLInputElement.alpha",
+      "api.HTMLInputElement.colorSpace",
+      "html.elements.input.alpha",
+      "html.elements.input.colorspace"
+    ],
+    "description": "The ability to control the opacity of a color picked using <input type=\"color\"> and determine the colorspace of the selected color.",
+    "description_html": "The ability to control the opacity of a color picked using <code>&#x3C;input type=\"color\"></code> and determine the colorspace of the selected color.",
+    "group": [
+      "forms",
+      "html-elements"
+    ],
+    "kind": "feature",
+    "name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -38453,10 +38506,10 @@ export const features = {
     ],
     "compat_features": [
       "api.Element.innerHTML.enforces_trusted_types",
-      "api.HTMLElement.innerText.enforces_trusted_types",
+      "api.HTMLScriptElement.innerText.enforces_trusted_types",
       "api.HTMLScriptElement.src.enforces_trusted_types",
       "api.HTMLScriptElement.text.enforces_trusted_types",
-      "api.Node.textContent.enforces_trusted_types",
+      "api.HTMLScriptElement.textContent.enforces_trusted_types",
       "api.ShadowRoot.innerHTML.enforces_trusted_types",
       "api.TrustedHTML",
       "api.TrustedHTML.toJSON",
