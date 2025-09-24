@@ -2,12 +2,14 @@ import { browsers, features } from './data.js';
 import { downloadICal } from './ical-generator.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
+import mdnDocsData from './mdn.json' with { type: "json" };
 
 class TimelineApp {
     constructor() {
         this.timelineContent = document.querySelector('.timeline-content');
         this.developerSignals = developerSignalsData; // Load directly from JSON import
         this.interopData = interopData; // Load directly from JSON import
+        this.mdnDocs = mdnDocsData; // Load directly from JSON import
         this.features = [];
         this.selectedFeatures = new Set(); // Track selected features
         this.allFeatures = []; // Store all processed features for filtering
@@ -759,6 +761,19 @@ class TimelineApp {
         webPlatformDxLink.textContent = 'Web Features Explorer';
         webPlatformDxLink.target = '_blank';
         linksContainer.appendChild(webPlatformDxLink);
+
+        // Add MDN documentation links if available
+        if (this.mdnDocs[feature.id]) {
+            // Only include the first doc
+            const mdnEntry = this.mdnDocs[feature.id][0];
+            const mdnLink = document.createElement('a');
+            mdnLink.href = mdnEntry.url;
+            mdnLink.className = 'mdn-link';
+            mdnLink.textContent = 'MDN';
+            mdnLink.title = mdnEntry.title; // Add title as tooltip
+            mdnLink.target = '_blank';
+            linksContainer.appendChild(mdnLink);
+        }
         
         details.appendChild(linksContainer);
         header.appendChild(details);
