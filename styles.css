@@ -118,7 +118,7 @@ body {
     background: #fafafa;
     transition: all 0.2s ease;
     scroll-margin-top: 100px;
-    content-visibility: auto;
+    /* content-visibility: auto; */
 }
 
 /* Styles for newly-available and widely-available cards */
