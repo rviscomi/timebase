@@ -4,7 +4,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "update": "npm update web-features --save && node extract-data.js && node developer-signals.js && node interop.js && node mdn-docs.js",
+    "update": "npm update web-futures --save && node extract-data.js && node developer-signals.js && node interop.js && node mdn-docs.js",
     "extract-logos": "node extract-logos.js",
     "update-signals": "node developer-signals.js",
     "update-interop": "node interop.js",
@@ -23,7 +23,7 @@
     "@browser-logos/edge": "^2.0.0",
     "@browser-logos/firefox": "^3.0.0",
     "@browser-logos/safari": "^2.0.0",
-    "web-features": "^3.1.0"
+    "web-futures": "^3.1.0"
   },
   "devDependencies": {
     "http-server": "^14.1.1"

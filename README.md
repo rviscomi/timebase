@@ -80,7 +80,7 @@ npm run update
 ```
 
 This command will:
-1. Update the `web-features` dependency to the latest version
+1. Update the `web-futures` dependency to the latest version
 2. Run the `extract-data.js` script to generate a fresh `data.js` file
 
 ## Project Structure
@@ -89,7 +89,7 @@ This command will:
 timebase/
 ├── app.js                # Main application
 ├── browser-icons.js      # Browser icon configuration
-├── data.js               # Generated data from web-features
+├── data.js               # Generated data from web-futures
 ├── extract-data.js       # Data extraction script
 ├── extract-logos.js      # Logo extraction script
 ├── images/               # Browser logos
@@ -105,7 +105,7 @@ The application uses two main data structures:
 1. `browsers` - Information about browser versions and release dates
 2. `features` - Web platform features and their support across browsers
 
-These are extracted from the `web-features` package and processed to create the timeline visualization.
+These are extracted from the `web-futures` package and processed to create the timeline visualization.
 
 ## Browser Support
 

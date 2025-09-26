@@ -1,4 +1,4 @@
-// Generated from web-features package
+// Generated from web-futures package
 export const browsers = {
   "chrome": {
     "name": "Chrome",
@@ -558,6 +558,22 @@ export const browsers = {
       {
         "date": "2025-09-02",
         "version": "140"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "141"
+      },
+      {
+        "date": "2025-10-28",
+        "version": "142"
+      },
+      {
+        "date": "null",
+        "version": "143"
+      },
+      {
+        "date": "null",
+        "version": "preview"
       }
     ]
   },
@@ -1027,6 +1043,18 @@ export const browsers = {
       {
         "date": "2025-09-02",
         "version": "140"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "141"
+      },
+      {
+        "date": "2025-10-28",
+        "version": "142"
+      },
+      {
+        "date": "null",
+        "version": "143"
       }
     ]
   },
@@ -1304,6 +1332,18 @@ export const browsers = {
       {
         "date": "2025-09-05",
         "version": "140"
+      },
+      {
+        "date": "2025-10-02",
+        "version": "141"
+      },
+      {
+        "date": "2025-10-30",
+        "version": "142"
+      },
+      {
+        "date": "2025-12-04",
+        "version": "143"
       }
     ]
   },
@@ -1893,6 +1933,22 @@ export const browsers = {
       {
         "date": "2025-09-16",
         "version": "143"
+      },
+      {
+        "date": "2025-10-14",
+        "version": "144"
+      },
+      {
+        "date": "2025-11-11",
+        "version": "145"
+      },
+      {
+        "date": "2025-12-09",
+        "version": "146"
+      },
+      {
+        "date": "null",
+        "version": "preview"
       }
     ]
   },
@@ -2406,6 +2462,18 @@ export const browsers = {
       {
         "date": "2025-09-16",
         "version": "143"
+      },
+      {
+        "date": "2025-10-14",
+        "version": "144"
+      },
+      {
+        "date": "2025-11-11",
+        "version": "145"
+      },
+      {
+        "date": "2025-12-09",
+        "version": "146"
       }
     ]
   },
@@ -2627,6 +2695,10 @@ export const browsers = {
       {
         "date": "2025-09-15",
         "version": "26"
+      },
+      {
+        "date": "null",
+        "version": "preview"
       }
     ]
   },
@@ -8369,7 +8441,8 @@ export const features = {
       "support": {
         "chrome": "126",
         "chrome_android": "126",
-        "edge": "126"
+        "edge": "126",
+        "firefox": "preview"
       }
     }
   },
@@ -14497,7 +14570,8 @@ export const features = {
       "support": {
         "chrome": "123",
         "chrome_android": "123",
-        "edge": "123"
+        "edge": "123",
+        "safari": "preview"
       }
     }
   },
@@ -17147,7 +17221,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "144",
+        "firefox_android": "144"
+      }
     }
   },
   "globalthis": {
@@ -20852,7 +20929,8 @@ export const features = {
       "support": {
         "chrome": "135",
         "chrome_android": "135",
-        "edge": "135"
+        "edge": "135",
+        "safari": "preview"
       }
     }
   },
@@ -23299,7 +23377,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "matchmedia": {
@@ -31209,7 +31289,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome_android": "38"
+        "chrome_android": "38",
+        "firefox": "144",
+        "firefox_android": "144"
       }
     }
   },
@@ -39585,11 +39667,14 @@ export const features = {
       "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-10-14",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "144",
+        "firefox_android": "144",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -39637,11 +39722,14 @@ export const features = {
       "https://drafts.csswg.org/css-view-transitions-1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-10-14",
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
+        "firefox": "144",
+        "firefox_android": "144",
         "safari": "18",
         "safari_ios": "18"
       }
@@ -40408,7 +40496,8 @@ export const features = {
       "support": {
         "chrome": "114",
         "chrome_android": "114",
-        "edge": "114"
+        "edge": "114",
+        "firefox": "preview"
       }
     }
   },
@@ -43563,8 +43652,12 @@ export const features = {
       "https://w3c.github.io/webrtc-encoded-transform/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-10-02",
       "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
         "firefox": "117",
         "firefox_android": "117",
         "safari": "15.4",

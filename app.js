@@ -54,6 +54,16 @@ class TimelineApp {
                         if (typeof version !== 'string') {
                             return null;
                         }
+                        // Handle preview versions specially
+                        if (version === 'preview') {
+                            // For preview versions, we create an entry with null date
+                            return {
+                                date: null,
+                                browser,
+                                version: 'preview',
+                                isPreview: true
+                            };
+                        }
                         // Clean up the version number
                         const cleanVersion = version.replace('≤', '');
                         // Find the release date from browsers data
@@ -66,17 +76,68 @@ class TimelineApp {
                         if (!release) {
                             return null;
                         }
-                        return release.date ? { date: parseLocalDate(release.date), browser, version: cleanVersion } : null;
+                        // Include releases even with null dates
+                        return { 
+                            date: release.date ? parseLocalDate(release.date) : null, 
+                            browser, 
+                            version: cleanVersion,
+                            isPreview: false
+                        };
                     })
                     .filter(item => item !== null);
 
                 if (!shipDates.length) return;
 
-                // Sort ship dates chronologically
-                shipDates.sort((a, b) => a.date - b.date);
+                // Sort ship dates chronologically:
+                // 1. Regular releases with dates first, sorted by date
+                // 2. Preview versions last for widely available features
+                //    but first for limited availability features
+                shipDates.sort((a, b) => {
+                    // Handle preview versions based on baseline status
+                    if (data.status?.baseline === false) {
+                        // For limited availability features, put preview versions first
+                        if (a.isPreview && !b.isPreview) return -1;
+                        if (!a.isPreview && b.isPreview) return 1;
+                        if (a.isPreview && b.isPreview) return 0;
+                    } else {
+                        // For other features, put preview versions last
+                        if (a.isPreview && !b.isPreview) return 1;
+                        if (!a.isPreview && b.isPreview) return -1;
+                        if (a.isPreview && b.isPreview) return 0;
+                    }
+                    
+                    // For non-preview versions, sort by date
+                    if (!a.date && !b.date) return 0;
+                    if (!a.date) return 1;
+                    if (!b.date) return -1;
+                    return a.date - b.date;
+                });
                 
-                // The newly available date is when the last browser adds support
-                const newlyAvailableDate = shipDates[shipDates.length - 1].date;
+                // For limited availability features, consider preview versions when determining dates
+                let newlyAvailableDate;
+                if (data.status?.baseline === false) {
+                    // For preview versions, use the last second of the current month
+                    const now = new Date();
+                    const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+                    lastDay.setHours(23, 59, 59, 999);
+                    // Find first non-null date or use end of month if there's a preview version
+                    const firstDate = shipDates.find(item => item.date)?.date;
+                    const hasPreview = shipDates.some(item => item.isPreview);
+                    newlyAvailableDate = hasPreview ? lastDay : firstDate;
+                } else {
+                    // For other features, use only non-preview releases with dates
+                    const nonPreviewDates = shipDates.filter(item => !item.isPreview && item.date !== null);
+                    if (!nonPreviewDates.length) {
+                        // Skip if no regular releases with dates
+                        return;
+                    }
+                    newlyAvailableDate = nonPreviewDates[nonPreviewDates.length - 1].date;
+                }
+                
+                // Ensure we have a valid date
+                if (!newlyAvailableDate || !(newlyAvailableDate instanceof Date)) {
+                    return;
+                }
                 
                 // Calculate widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(newlyAvailableDate);
@@ -101,20 +162,34 @@ class TimelineApp {
                 // Get current date for comparison
                 const now = new Date();
                 now.setHours(0, 0, 0, 0);
-                
-                // Always add the newly available entry
-                processedFeatures.push({
-                    ...baseFeature,
-                    date: newlyAvailableDate,
-                    displayType: 'newly-available',
-                    displayName: 'Newly available'
-                });
-                
-                // Only add widely available entry if:
-                // 1. The newly available date is in the past or present (feature is already available)
-                // 2. We're not filtering out future widely available dates
-                // 3. The feature has full browser support (baseline is not false)
-                if (newlyAvailableDate <= now && data.status?.baseline !== false) {
+
+
+                if (newlyAvailableDate <= now) {
+                    processedFeatures.push({
+                        ...baseFeature,
+                        date: newlyAvailableDate,
+                        displayType: 'newly-available',
+                        displayName: 'Newly available'
+                    });
+                } else if (newlyAvailableDate > now) {
+                    processedFeatures.push({
+                        ...baseFeature,
+                        prediction: true,
+                        date: newlyAvailableDate,
+                        displayType: 'newly-available',
+                        displayName: 'Newly available'
+                    });
+                }
+            
+                if (data.status.baseline === 'low') {
+                    processedFeatures.push({
+                        ...baseFeature,
+                        prediction: true,
+                        date: widelyAvailableDate,
+                        displayType: 'widely-available',
+                        displayName: 'Widely available'
+                    });
+                } else if (data.status.baseline === 'high') {
                     processedFeatures.push({
                         ...baseFeature,
                         date: widelyAvailableDate,
@@ -143,6 +218,10 @@ class TimelineApp {
     groupFeaturesByDate() {
         const groups = {};
         this.features.forEach(feature => {
+            // Skip features without a valid date
+            if (!feature.date || !(feature.date instanceof Date)) {
+                return;
+            }
             const year = feature.date.getFullYear();
             const month = feature.date.getMonth();
             const key = `${year}-${month}`;
@@ -414,7 +493,12 @@ class TimelineApp {
         }
         
         // Add feature name text after the baseline icon
-        const nameText = document.createTextNode(feature.name);
+        let featureName = feature.name;
+        if (feature.prediction) {
+            featureName = '🔮 ' + featureName;
+        }
+        const nameText = document.createElement('span');
+        nameText.textContent = featureName;
         title.appendChild(nameText);
         
         // Add upvote info next to the feature name if available
@@ -484,12 +568,12 @@ class TimelineApp {
         details.style.display = 'none';
         
         // Format the date for display with full date (including day)
-        const formattedDate = feature.date.toLocaleDateString('en-US', {
+        const formattedDate = feature.date ? feature.date.toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
-        });
-        
+        }) : 'N/A';
+
         // Create availability info text based on display type
         let availabilityText = '';
         if (feature.displayType === 'newly-available') {
@@ -511,25 +595,28 @@ class TimelineApp {
                 const earliestShipDate = feature.shipDates[0].date;
                 
                 // Format the earliest date
-                const earliestFormattedDate = earliestShipDate.toLocaleDateString('en-US', {
+                const earliestFormattedDate = earliestShipDate ? earliestShipDate.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
-                });
+                }) : 'N/A';
                 
-                // Use the earliest date for limited availability features
-                availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
+                if (feature.prediction) {
+                    availabilityText = `🔮 Expected to become Limited availability across browsers on ${earliestFormattedDate}.`;
+                } else {
+                    availabilityText = `Limited availability across browsers since ${earliestFormattedDate}.`;
+                }
             } else {
                 // Calculate the widely available date (30 months after newly available)
                 const widelyAvailableDate = new Date(feature.date);
                 widelyAvailableDate.setMonth(widelyAvailableDate.getMonth() + 30);
                 
                 // Format the widely available date
-                const widelyFormattedDate = widelyAvailableDate.toLocaleDateString('en-US', {
+                const widelyFormattedDate = widelyAvailableDate ? widelyAvailableDate.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
-                });
+                }) : 'N/A';
                 
                 // Create the widely available feature ID
                 const widelyAvailableId = `feature-${feature.id}-widely-available`;
@@ -542,6 +629,8 @@ class TimelineApp {
                 // Use past tense if the widely available date is in the past
                 if (widelyAvailableDate <= now) {
                     availabilityText = `Newly available since ${formattedDate}. Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
+                } else if (feature.prediction) {
+                    availabilityText = `🔮 Expected to become Newly available on ${formattedDate}. Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
                 } else {
                     availabilityText = `Newly available since ${formattedDate}. Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link" data-target-id="${widelyAvailableId}">${widelyFormattedDate}</a>.`;
                 }
@@ -550,8 +639,8 @@ class TimelineApp {
             const now = new Date();
             now.setHours(0, 0, 0, 0);
             
-            if (feature.date > now) {
-                availabilityText = `Expected to become widely available on ${formattedDate}.`;
+            if (feature.prediction) {
+                availabilityText = `🔮 Expected to become widely available on ${formattedDate}.`;
             } else {
                 availabilityText = `Widely available since ${formattedDate}.`;
             }
@@ -704,11 +793,11 @@ class TimelineApp {
                 // Date cell
                 const dateCell = document.createElement('td');
                 dateCell.className = 'date-cell';
-                dateCell.textContent = shipDate.date.toLocaleDateString('en-US', {
+                dateCell.textContent = shipDate.date ? shipDate.date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric'
-                });
+                }) : 'TBD';
                 row.appendChild(dateCell);
                 
                 tableBody.appendChild(row);
@@ -819,28 +908,16 @@ class TimelineApp {
         // Store feature data on the card for selection functionality
         card.featureData = feature;
         
-        // First check if this is a widely-available feature - these should always have the green border
-        if (feature.displayType === 'widely-available') {
-            card.className = 'feature-card widely-available';
-            
-            // Add 'future' class to widely available features that are in the future
-            const now = new Date();
-            now.setHours(0, 0, 0, 0);
-            
-            if (feature.date > now) {
-                card.classList.add('future');
-            }
+        card.classList.add('feature-card');
+        if (feature.prediction) {
+            card.classList.add('prediction');
         }
-        else if (feature.discouraged) {
-            card.className = 'feature-card discouraged';
-        }
-        // Then check if this is a limited availability feature
-        else if (feature.status?.baseline === false) {
-            card.className = 'feature-card limited-availability';
-        } 
-        // Otherwise, it's a newly-available feature
-        else {
-            card.className = `feature-card ${feature.displayType}`;
+        if (feature.discouraged) {
+            card.classList.add('discouraged');
+        } else if (feature.status?.baseline === false) {
+            card.classList.add('limited-availability');
+        } else {
+            card.classList.add(feature.displayType);
         }
         
         // Create a unique ID that includes both the feature name and its display type
@@ -963,8 +1040,10 @@ class TimelineApp {
                 
                 // For widely-available, we want to show all browsers
                 // For newly-available, we only show browsers released in the current month
+                // Preview versions (with null dates) are always shown
                 const isInCurrentMonth = 
                     feature.displayType === 'widely-available' || 
+                    !releaseDate || // Include preview versions
                     (releaseDate.getMonth() === feature.date.getMonth() && 
                      releaseDate.getFullYear() === feature.date.getFullYear());
                 
@@ -1089,6 +1168,9 @@ class TimelineApp {
                 case 'i': // Filter features with interop tags
                     this.filterInteropFeatures();
                     break;
+                case 'p': // Toggle predictions
+                    this.filterPredictedFeatures();
+                    break;
                 case '?': // Show keyboard shortcuts dialog
                     this.showShortcutsDialog();
                     break;
@@ -1123,16 +1205,17 @@ class TimelineApp {
         }
     }
     
-    // Method to update the visibility of feature cards based on active browser filters
+    // Method to update the visibility of feature cards based on active filters and prediction visibility
     updateFeatureVisibility() {
-        // Get all active browser filters
+        // Get all active filters
         const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
             .map(tag => tag.getAttribute('data-filter'));
         
-        // Get all active interop filters from tag elements
         const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
             .map(tag => tag.getAttribute('data-filter'))
             .map(filter => filter.split(':')[1]); // Extract year from 'interop:YYYY'
+        
+        // We now use the 'prediction' class and status filter for prediction visibility
         
         // Check if we have the special 'any' interop filter in the URL
         const url = new URL(window.location);
@@ -1194,6 +1277,11 @@ class TimelineApp {
                 } else if (this.currentStatusFilter === 'discouraged') {
                     // Special handling for deprecated (discouraged) features
                     if (!card.classList.contains('discouraged')) {
+                        shouldDisplay = false;
+                    }
+                } else if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
+                    // Hide predicted features when predictions=false
+                    if (this.currentStatusFilter.value === 'false' && card.classList.contains('prediction')) {
                         shouldDisplay = false;
                     }
                 } else if (!card.classList.contains(this.currentStatusFilter)) {
@@ -1332,9 +1420,18 @@ class TimelineApp {
             }
         }
         
-        // Add status filter
-        if (this.currentStatusFilter) {
+        // Handle predictions filter
+        if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
+            url.searchParams.set('predictions', this.currentStatusFilter.value);
+        } else {
+            url.searchParams.delete('predictions');
+        }
+        
+        // Handle other status filters
+        if (this.currentStatusFilter && !this.currentStatusFilter.type) {
             url.searchParams.set('status', this.currentStatusFilter);
+        } else {
+            url.searchParams.delete('status');
         }
         
         // Update the URL without reloading the page
@@ -1374,15 +1471,21 @@ class TimelineApp {
             });
         }
         
-        // Get status filter
+        // Get predictions filter
+        const predictionsFilter = url.searchParams.get('predictions');
+        if (predictionsFilter === 'false' || predictionsFilter === 'true') {
+            this.currentStatusFilter = { type: 'predictions', value: predictionsFilter };
+        }
+        
+        // Get other status filters
         const statusFilter = url.searchParams.get('status');
-        if (statusFilter) {
+        if (statusFilter && statusFilter !== 'predictions') {
             // Set the status filter
             this.currentStatusFilter = statusFilter;
         }
-        
-        // If any filters were applied, update visibility
-        if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter) {
+
+        // Update visibility if any filters are applied
+        if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter || predictionsFilter) {
             this.updateFeatureVisibility();
         }
     }
@@ -1789,6 +1892,26 @@ class TimelineApp {
         
         // Update URL to remove filters
         this.updateURLWithFilters();
+    }
+    
+    // Toggle prediction visibility
+    filterPredictedFeatures() {
+        const url = new URL(window.location);
+        const currentFilter = this.currentStatusFilter;
+        
+        if (currentFilter && currentFilter.type === 'predictions' && currentFilter.value === 'false') {
+            // Currently hiding predictions, remove the filter
+            this.currentStatusFilter = null;
+            url.searchParams.delete('predictions');
+        } else {
+            // Currently showing predictions (or no filter), hide them
+            this.currentStatusFilter = { type: 'predictions', value: 'false' };
+            url.searchParams.set('predictions', 'false');
+        }
+        
+        // Update the URL without reloading the page
+        window.history.replaceState({}, '', url);
+        this.updateFeatureVisibility();
     }
     
     // Filter to show only deprecated (discouraged) features
