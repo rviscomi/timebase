@@ -1279,10 +1279,16 @@ class TimelineApp {
                     if (!card.classList.contains('discouraged')) {
                         shouldDisplay = false;
                     }
-                } else if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
-                    // Hide predicted features when predictions=false
-                    if (this.currentStatusFilter.value === 'false' && card.classList.contains('prediction')) {
+                } else if (this.currentStatusFilter === 'predictions') {
+                    // Hide anything that's not a prediction when status=predictions
+                    // (this is a special off-menu filter that isn't hooked up to any keyboard shortcuts)
+                    if (!card.classList.contains('prediction')) {
                         shouldDisplay = false;
+                    }
+                } else if (this.currentStatusFilter.type === 'predictions') {
+                    // Hide predicted features when predictions=false
+                    if (card.classList.contains('prediction')) {
+                        shouldDisplay = this.currentStatusFilter.value === 'true';
                     }
                 } else if (!card.classList.contains(this.currentStatusFilter)) {
                     shouldDisplay = false;
@@ -1479,7 +1485,7 @@ class TimelineApp {
         
         // Get other status filters
         const statusFilter = url.searchParams.get('status');
-        if (statusFilter && statusFilter !== 'predictions') {
+        if (statusFilter) {
             // Set the status filter
             this.currentStatusFilter = statusFilter;
         }

@@ -2698,6 +2698,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "26.1"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -2908,6 +2912,10 @@ export const browsers = {
       {
         "date": "2025-09-15",
         "version": "26"
+      },
+      {
+        "date": "null",
+        "version": "26.1"
       }
     ]
   }
