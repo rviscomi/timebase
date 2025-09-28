@@ -313,8 +313,7 @@ class TimelineApp {
       const filterKey = tag.getAttribute('data-filter');
 
       // Check if the 'any' interop filter is active in the URL
-      const url = new URL(window.location);
-      const hasAnyInteropFilter = url.searchParams.getAll('interop').includes('any');
+      const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
 
       if (isActive) {
         // If untoggling, also untoggle all chips with the same interop year
@@ -326,14 +325,14 @@ class TimelineApp {
         // When toggling on, first check if 'any' filter is active
         if (hasAnyInteropFilter) {
           // Remove the 'any' filter from URL
-          url.searchParams.delete('interop');
+          this.url.searchParams.delete('interop');
 
           // Also remove any data-interop-any attributes
           document.querySelectorAll('[data-interop-any]').forEach(card => {
             card.removeAttribute('data-interop-any');
           });
 
-          window.history.replaceState({}, '', url);
+          window.history.replaceState({}, '', this.url);
         }
 
         // Then toggle all chips with the same interop year
@@ -1119,8 +1118,7 @@ class TimelineApp {
     // We now use the 'prediction' class and status filter for prediction visibility
 
     // Check if we have the special 'any' interop filter in the URL
-    const url = new URL(window.location);
-    const hasAnyInteropFilter = url.searchParams.getAll('interop').includes('any');
+    const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
 
     // If we have the 'any' filter, add it to our active filters
     const allInteropFilters = hasAnyInteropFilter
@@ -1209,9 +1207,7 @@ class TimelineApp {
 
   // Method to filter features by interop
   filterInteropFeatures() {
-    // Get the current URL
-    const url = new URL(window.location);
-    const currentInteropFilter = url.searchParams.get('interop');
+    const currentInteropFilter = this.url.searchParams.get('interop');
 
     // If 'any' is already active, toggle it off
     if (currentInteropFilter === 'any') {
@@ -1219,7 +1215,7 @@ class TimelineApp {
       url.searchParams.delete('interop');
 
       // Update the URL without reloading the page
-      window.history.replaceState({}, '', url);
+      window.history.replaceState({}, '', this.url);
 
       // Update feature visibility with all active filters
       this.updateFeatureVisibility();
@@ -1254,11 +1250,11 @@ class TimelineApp {
     });
 
     // Add the "any" interop filter
-    url.searchParams.delete('interop'); // Remove any specific interop year filters
-    url.searchParams.set('interop', 'any'); // Add the "any" filter
+    this.url.searchParams.delete('interop'); // Remove any specific interop year filters
+    this.url.searchParams.set('interop', 'any'); // Add the "any" filter
 
     // Update the URL without reloading the page
-    window.history.replaceState({}, '', url);
+    window.history.replaceState({}, '', this.url);
 
     // Update feature visibility with all active filters
     this.updateFeatureVisibility();
@@ -1278,15 +1274,13 @@ class TimelineApp {
 
   // Update URL with current filter state
   updateURLWithFilters() {
-    const url = new URL(window.location);
-
     // Clear existing filter parameters
-    url.searchParams.delete('browser');
-    url.searchParams.delete('status');
+    this.url.searchParams.delete('browser');
+    this.url.searchParams.delete('status');
 
     // We'll handle interop filters purely based on active tag elements
     // and completely clear any existing interop params
-    url.searchParams.delete('interop');
+    this.url.searchParams.delete('interop');
 
     // Add browser filters - using Set to deduplicate
     const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
@@ -1297,7 +1291,7 @@ class TimelineApp {
 
     if (uniqueBrowserFilters.length > 0) {
       uniqueBrowserFilters.forEach(filter => {
-        url.searchParams.append('browser', filter);
+        this.url.searchParams.append('browser', filter);
       });
     }
 
@@ -1312,7 +1306,7 @@ class TimelineApp {
       const uniqueInteropFilters = [...new Set(activeInteropFilters)];
 
       uniqueInteropFilters.forEach(year => {
-        url.searchParams.append('interop', year);
+        this.url.searchParams.append('interop', year);
       });
     } else {
       // Check if we should preserve the 'any' filter
@@ -1323,34 +1317,32 @@ class TimelineApp {
       });
 
       if (anyInteropFilterActive) {
-        url.searchParams.set('interop', 'any');
+        this.url.searchParams.set('interop', 'any');
       }
     }
 
     // Handle predictions filter
     if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
-      url.searchParams.set('predictions', this.currentStatusFilter.value);
+      this.url.searchParams.set('predictions', this.currentStatusFilter.value);
     } else {
-      url.searchParams.delete('predictions');
+      this.url.searchParams.delete('predictions');
     }
 
     // Handle other status filters
     if (this.currentStatusFilter && !this.currentStatusFilter.type) {
-      url.searchParams.set('status', this.currentStatusFilter);
+      this.url.searchParams.set('status', this.currentStatusFilter);
     } else {
-      url.searchParams.delete('status');
+      this.url.searchParams.delete('status');
     }
 
     // Update the URL without reloading the page
-    window.history.replaceState({}, '', url);
+    window.history.replaceState({}, '', this.url);
   }
 
   // Initialize filters from URL parameters
   initializeFiltersFromURL() {
-    const url = new URL(window.location);
-
     // Get browser filters
-    const browserFilters = url.searchParams.getAll('browser');
+    const browserFilters = this.url.searchParams.getAll('browser');
     if (browserFilters.length > 0) {
       browserFilters.forEach(filter => {
         // Find and activate matching browser tags
@@ -1362,7 +1354,7 @@ class TimelineApp {
     }
 
     // Get interop filters
-    const interopFilters = url.searchParams.getAll('interop');
+    const interopFilters = this.url.searchParams.getAll('interop');
     if (interopFilters.length > 0) {
       // Don't need to do anything special for 'any' - 
       // updateFeatureVisibility will check for it directly from the URL
@@ -1379,13 +1371,13 @@ class TimelineApp {
     }
 
     // Get predictions filter
-    const predictionsFilter = url.searchParams.get('predictions');
+    const predictionsFilter = this.url.searchParams.get('predictions');
     if (predictionsFilter === 'false' || predictionsFilter === 'true') {
       this.currentStatusFilter = { type: 'predictions', value: predictionsFilter };
     }
 
     // Get other status filters
-    const statusFilter = url.searchParams.get('status');
+    const statusFilter = this.url.searchParams.get('status');
     if (statusFilter) {
       // Set the status filter
       this.currentStatusFilter = statusFilter;
@@ -1778,10 +1770,9 @@ class TimelineApp {
     });
 
     // Clear the 'any' interop filter from URL if present
-    const url = new URL(window.location);
-    if (url.searchParams.has('interop')) {
-      url.searchParams.delete('interop');
-      window.history.replaceState({}, '', url);
+    if (this.url.searchParams.has('interop')) {
+      this.url.searchParams.delete('interop');
+      window.history.replaceState({}, '', this.url);
 
       // Also clean up the special 'any' interop data attribute
       document.querySelectorAll('[data-interop-any]').forEach(card => {
@@ -1803,21 +1794,20 @@ class TimelineApp {
 
   // Toggle prediction visibility
   filterPredictedFeatures() {
-    const url = new URL(window.location);
     const currentFilter = this.currentStatusFilter;
 
     if (currentFilter && currentFilter.type === 'predictions' && currentFilter.value === 'false') {
       // Currently hiding predictions, remove the filter
       this.currentStatusFilter = null;
-      url.searchParams.delete('predictions');
+      this.url.searchParams.delete('predictions');
     } else {
       // Currently showing predictions (or no filter), hide them
       this.currentStatusFilter = { type: 'predictions', value: 'false' };
-      url.searchParams.set('predictions', 'false');
+      this.url.searchParams.set('predictions', 'false');
     }
 
     // Update the URL without reloading the page
-    window.history.replaceState({}, '', url);
+    window.history.replaceState({}, '', this.url);
     this.updateFeatureVisibility();
   }
 
