@@ -1166,6 +1166,13 @@ class TimelineApp {
         }
       }
 
+      if (shouldDisplay && this.url.searchParams.get('predictions') === 'false') {
+          // Hide predicted features when predictions=false
+          if (card.classList.contains('prediction')) {
+            shouldDisplay = this.url.searchParams.get('predictions') !== 'false';
+          }
+        }
+
       // Check status filter if one is active
       if (shouldDisplay && this.currentStatusFilter) {
         if (this.currentStatusFilter === 'limited-availability') {
@@ -1183,11 +1190,6 @@ class TimelineApp {
           // (this is a special off-menu filter that isn't hooked up to any keyboard shortcuts)
           if (!card.classList.contains('prediction')) {
             shouldDisplay = false;
-          }
-        } else if (this.currentStatusFilter.type === 'predictions') {
-          // Hide predicted features when predictions=false
-          if (card.classList.contains('prediction')) {
-            shouldDisplay = this.currentStatusFilter.value === 'true';
           }
         } else if (!card.classList.contains(this.currentStatusFilter)) {
           shouldDisplay = false;
@@ -1321,15 +1323,8 @@ class TimelineApp {
       }
     }
 
-    // Handle predictions filter
-    if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
-      this.url.searchParams.set('predictions', this.currentStatusFilter.value);
-    } else {
-      this.url.searchParams.delete('predictions');
-    }
-
     // Handle other status filters
-    if (this.currentStatusFilter && !this.currentStatusFilter.type) {
+    if (this.currentStatusFilter) {
       this.url.searchParams.set('status', this.currentStatusFilter);
     } else {
       this.url.searchParams.delete('status');
@@ -1372,9 +1367,6 @@ class TimelineApp {
 
     // Get predictions filter
     const predictionsFilter = this.url.searchParams.get('predictions');
-    if (predictionsFilter === 'false' || predictionsFilter === 'true') {
-      this.currentStatusFilter = { type: 'predictions', value: predictionsFilter };
-    }
 
     // Get other status filters
     const statusFilter = this.url.searchParams.get('status');
@@ -1740,14 +1732,13 @@ class TimelineApp {
     if (this.currentStatusFilter === type) {
       // Toggle off the filter
       this.currentStatusFilter = null;
-      this.resetFilters(false); // Don't reset browser filters
     } else {
       // Set the new filter
       this.currentStatusFilter = type;
-
-      // Apply the filter using our combined filtering logic
-      this.updateFeatureVisibility();
     }
+
+    window.history.replaceState({}, '', this.url);
+    this.updateFeatureVisibility();
   }
 
   // Reset all filters and show all features
@@ -1772,7 +1763,6 @@ class TimelineApp {
     // Clear the 'any' interop filter from URL if present
     if (this.url.searchParams.has('interop')) {
       this.url.searchParams.delete('interop');
-      window.history.replaceState({}, '', this.url);
 
       // Also clean up the special 'any' interop data attribute
       document.querySelectorAll('[data-interop-any]').forEach(card => {
@@ -1780,10 +1770,14 @@ class TimelineApp {
       });
     }
 
+    this.url.searchParams.delete('predictions');
+
     // Show all feature cards
     document.querySelectorAll('.feature-card').forEach(card => {
       card.style.display = 'block';
     });
+
+    window.history.replaceState({}, '', this.url);
 
     // Update date headers visibility
     this.updateDateHeadersVisibility();
@@ -1794,15 +1788,9 @@ class TimelineApp {
 
   // Toggle prediction visibility
   filterPredictedFeatures() {
-    const currentFilter = this.currentStatusFilter;
-
-    if (currentFilter && currentFilter.type === 'predictions' && currentFilter.value === 'false') {
-      // Currently hiding predictions, remove the filter
-      this.currentStatusFilter = null;
+    if (this.url.searchParams.get('predictions') === 'false') {
       this.url.searchParams.delete('predictions');
     } else {
-      // Currently showing predictions (or no filter), hide them
-      this.currentStatusFilter = { type: 'predictions', value: 'false' };
       this.url.searchParams.set('predictions', 'false');
     }
 
