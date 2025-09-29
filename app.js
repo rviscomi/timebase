@@ -1535,6 +1535,15 @@ class TimelineApp {
         const link = event.target.classList.contains('widely-available-link') ?
           event.target : event.target.closest('.widely-available-link');
 
+        if (this.currentStatusFilter) {
+          // Toggle the filtered status off to ensure that the widely available feature is visible
+          this.filterFeaturesByType(this.currentStatusFilter);
+        }
+        if (this.url.searchParams.get('predictions') === 'false') {
+          // Toggle predictions off for the same reason
+          this.filterPredictedFeatures();
+        }
+
         // Get the target ID from the data attribute
         const targetId = link.dataset.targetId;
 
