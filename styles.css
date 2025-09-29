@@ -293,6 +293,13 @@ body {
     filter: grayscale(100%);
 }
 
+.timeline-content[data-filter-interop="any"] .feature-card:has(button[data-interop-year]) {
+    display: block;
+}
+.timeline-content[data-filter-interop="any"] .feature-card:not(:has(button[data-interop-year])) {
+    display: none;
+}
+
 .version-text {
     font-weight: 500;
     line-height: 1;

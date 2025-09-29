@@ -1,4 +1,5 @@
 import { browsers, features } from './data.js';
+import { Filters } from './filters.js';
 import { downloadICal } from './ical-generator.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
@@ -7,6 +8,7 @@ import mdnDocsData from './mdn.json' with { type: "json" };
 class TimelineApp {
   constructor() {
     this.url = new URL(window.location);
+    this.filters = new Filters(this.url);
     this.timelineContent = document.querySelector('.timeline-content');
     this.developerSignals = developerSignalsData; // Load directly from JSON import
     this.interopData = interopData; // Load directly from JSON import
@@ -14,11 +16,10 @@ class TimelineApp {
     this.features = this.processFeatures();;
     this.selectedFeatures = new Set(); // Track selected features
     this.allFeatures = [...this.features]; // Store all processed features for filtering
-    this.currentStatusFilter = null; // Track the current status filter
 
     this.renderTimeline();
     this.initEventListeners();
-    this.initializeFiltersFromURL();
+    this.initFilters();
   }
 
   processFeatures() {
@@ -254,41 +255,10 @@ class TimelineApp {
 
     tag.appendChild(textSpan);
 
-    // Function to toggle the filter
-    const toggleFilter = () => {
-      const isActive = tag.classList.contains('active-filter');
-      const filterKey = tag.getAttribute('data-filter');
-
-      if (isActive) {
-        // If untoggling, also untoggle all chips with the same browser version
-        document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-          matchingTag.classList.remove('active-filter');
-          matchingTag.setAttribute('aria-pressed', 'false');
-        });
-      } else {
-        // When toggling on, also toggle all chips with the same browser version
-        document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-          matchingTag.classList.add('active-filter');
-          matchingTag.setAttribute('aria-pressed', 'true');
-        });
-      }
-
-      this.updateFeatureVisibility();
-    };
-
     // Add click event listener for filtering
     tag.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent card expansion when clicking the tag
-      toggleFilter();
-    });
-
-    // Add keyboard event listener for filtering via spacebar
-    tag.addEventListener('keydown', (e) => {
-      if (e.key === ' ' || e.key === 'Enter') {
-        e.preventDefault(); // Prevent scrolling with spacebar
-        e.stopPropagation();
-        toggleFilter();
-      }
+      this.toggleFilter('browser', `${browser}:${version}`);
     });
 
     return tag;
@@ -307,61 +277,10 @@ class TimelineApp {
     textSpan.textContent = `Interop ${year}`;
     tag.appendChild(textSpan);
 
-    // Function to toggle the filter
-    const toggleFilter = () => {
-      const isActive = tag.classList.contains('active-filter');
-      const filterKey = tag.getAttribute('data-filter');
-
-      // Check if the 'any' interop filter is active in the URL
-      const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
-
-      if (isActive) {
-        // If untoggling, also untoggle all chips with the same interop year
-        document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-          matchingTag.classList.remove('active-filter');
-          matchingTag.setAttribute('aria-pressed', 'false');
-        });
-      } else {
-        // When toggling on, first check if 'any' filter is active
-        if (hasAnyInteropFilter) {
-          // Remove the 'any' filter from URL
-          this.url.searchParams.delete('interop');
-
-          // Also remove any data-interop-any attributes
-          document.querySelectorAll('[data-interop-any]').forEach(card => {
-            card.removeAttribute('data-interop-any');
-          });
-
-          window.history.replaceState({}, '', this.url);
-        }
-
-        // Then toggle all chips with the same interop year
-        document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-          matchingTag.classList.add('active-filter');
-          matchingTag.setAttribute('aria-pressed', 'true');
-        });
-      }
-
-      // First update the URL with the new filter state
-      this.updateURLWithFilters();
-
-      // Then update feature visibility based on the new filters
-      this.updateFeatureVisibility();
-    };
-
     // Add click event listener for filtering
     tag.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent card expansion when clicking the tag
-      toggleFilter();
-    });
-
-    // Add keyboard event listener for filtering via spacebar
-    tag.addEventListener('keydown', (e) => {
-      if (e.key === ' ' || e.key === 'Enter') {
-        e.preventDefault(); // Prevent scrolling with spacebar
-        e.stopPropagation();
-        toggleFilter();
-      }
+      this.toggleFilter('interop', year);
     });
 
     return tag;
@@ -933,7 +852,7 @@ class TimelineApp {
 
     // Now process the shipDates again, but with knowledge of which versions are shared
     if (feature.shipDates) {
-      feature.shipDates.forEach(shipDate => {
+      feature.shipDates.sort((a,b) => b.date - a.date).forEach(shipDate => {
         const browser = shipDate.browser;
         const cleanVersion = shipDate.version;
         const releaseDate = shipDate.date;
@@ -1057,7 +976,7 @@ class TimelineApp {
           this.filterFeaturesByType('limited-availability');
           break;
         case 'd': // Filter deprecated (discouraged) features
-          this.filterDeprecatedFeatures();
+          this.toggleFilter('status', 'discouraged');
           break;
         case 'c': // Scroll to current month
           this.scrollToCurrentMonth();
@@ -1069,7 +988,7 @@ class TimelineApp {
           this.filterInteropFeatures();
           break;
         case 'p': // Toggle predictions
-          this.filterPredictedFeatures();
+          this.toggleFilter('predictions', 'off');
           break;
         case '?': // Show keyboard shortcuts dialog
           this.showShortcutsDialog();
@@ -1105,159 +1024,15 @@ class TimelineApp {
     }
   }
 
-  // Method to update the visibility of feature cards based on active filters and prediction visibility
-  updateFeatureVisibility() {
-    // Get all active filters
-    const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'));
-
-    const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'))
-      .map(filter => filter.split(':')[1]); // Extract year from 'interop:YYYY'
-
-    // We now use the 'prediction' class and status filter for prediction visibility
-
-    // Check if we have the special 'any' interop filter in the URL
-    const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
-
-    // If we have the 'any' filter, add it to our active filters
-    const allInteropFilters = hasAnyInteropFilter
-      ? [...activeInteropFilters, 'any']
-      : activeInteropFilters;
-
-    // Get all feature cards
-    const allCards = document.querySelectorAll('.feature-card');
-
-    allCards.forEach(card => {
-      let shouldDisplay = true;
-
-      // Check browser filters if there are any
-      if (activeBrowserFilters.length > 0) {
-        const matchesAllBrowserFilters = activeBrowserFilters.every(filter => {
-          const [browser, version] = filter.split(':');
-          return card.hasAttribute(`data-browser-${browser}-${version}`);
-        });
-
-        if (!matchesAllBrowserFilters) {
-          shouldDisplay = false;
-        }
-      }
-
-      // Check interop filters if there are any
-      if (shouldDisplay && allInteropFilters.length > 0) {
-        // Check if this is the special 'any' filter
-        if (allInteropFilters.includes('any')) {
-          // For 'any', check if the card has any interop attribute
-          const hasInterop = Array.from(card.attributes)
-            .some(attr => attr.name.startsWith('data-interop-'));
-
-          if (!hasInterop) {
-            shouldDisplay = false;
-          }
-        } else {
-          // For specific years, check each one
-          const matchesAnyInteropFilter = allInteropFilters.some(year => {
-            return card.hasAttribute(`data-interop-${year}`);
-          });
-
-          if (!matchesAnyInteropFilter) {
-            shouldDisplay = false;
-          }
-        }
-      }
-
-      // Check status filter if one is active
-      if (shouldDisplay && this.currentStatusFilter) {
-        if (this.currentStatusFilter === 'limited-availability') {
-          // Special handling for limited availability features
-          if (!card.classList.contains('limited-availability')) {
-            shouldDisplay = false;
-          }
-        } else if (this.currentStatusFilter === 'discouraged') {
-          // Special handling for deprecated (discouraged) features
-          if (!card.classList.contains('discouraged')) {
-            shouldDisplay = false;
-          }
-        } else if (this.currentStatusFilter === 'predictions') {
-          // Hide anything that's not a prediction when status=predictions
-          // (this is a special off-menu filter that isn't hooked up to any keyboard shortcuts)
-          if (!card.classList.contains('prediction')) {
-            shouldDisplay = false;
-          }
-        } else if (this.currentStatusFilter.type === 'predictions') {
-          // Hide predicted features when predictions=false
-          if (card.classList.contains('prediction')) {
-            shouldDisplay = this.currentStatusFilter.value === 'true';
-          }
-        } else if (!card.classList.contains(this.currentStatusFilter)) {
-          shouldDisplay = false;
-        }
-      }
-
-      // Apply visibility
-      card.style.display = shouldDisplay ? '' : 'none';
-    });
-
-    // Hide date headers with no visible cards
-    this.updateDateHeadersVisibility();
-
-    // Update URL parameters to reflect current filter state
-    this.updateURLWithFilters();
-  }
-
   // Method to filter features by interop
   filterInteropFeatures() {
-    const currentInteropFilter = this.url.searchParams.get('interop');
-
     // If 'any' is already active, toggle it off
-    if (currentInteropFilter === 'any') {
-      // Remove the "any" interop filter
-      url.searchParams.delete('interop');
-
-      // Update the URL without reloading the page
-      window.history.replaceState({}, '', this.url);
-
-      // Update feature visibility with all active filters
-      this.updateFeatureVisibility();
+    if (this.filters.interop === 'any') {
+      this.filters.delete('interop');
       return;
     }
 
-    // Don't reset any active status filters - preserve them
-
-    // Don't reset any active browser filters - preserve them
-
-    // Reset any active interop filters first
-    // (to prevent conflicts with the "any" interop filter)
-    document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
-      tag.classList.remove('active-filter');
-      tag.setAttribute('aria-pressed', 'false');
-    });
-
-    // Create a special "any" interop filter data attribute on all feature cards
-    const allCards = document.querySelectorAll('.feature-card');
-    allCards.forEach(card => {
-      // Check if this card has any interop data attribute
-      const hasInterop = Array.from(card.attributes)
-        .some(attr => attr.name.startsWith('data-interop-'));
-
-      if (hasInterop) {
-        // Set a special data attribute for filtering
-        card.setAttribute('data-interop-any', 'true');
-      } else {
-        // Remove the attribute if it exists
-        card.removeAttribute('data-interop-any');
-      }
-    });
-
-    // Add the "any" interop filter
-    this.url.searchParams.delete('interop'); // Remove any specific interop year filters
-    this.url.searchParams.set('interop', 'any'); // Add the "any" filter
-
-    // Update the URL without reloading the page
-    window.history.replaceState({}, '', this.url);
-
-    // Update feature visibility with all active filters
-    this.updateFeatureVisibility();
+    this.filters.set('interop', 'any');
   }
 
   // Helper method to hide date headers with no visible feature cards
@@ -1272,121 +1047,60 @@ class TimelineApp {
     });
   }
 
-  // Update URL with current filter state
-  updateURLWithFilters() {
-    // Clear existing filter parameters
-    this.url.searchParams.delete('browser');
-    this.url.searchParams.delete('status');
+  initFilters() {
+    this.filters.onChange('interop', (interop) => {
+      this.timelineContent.setAttribute('data-filter-interop', interop);
+      this.updateDateHeadersVisibility();
+    });
 
-    // We'll handle interop filters purely based on active tag elements
-    // and completely clear any existing interop params
-    this.url.searchParams.delete('interop');
+    this.filters.onChange('predictions', (predictions) => {
+      this.timelineContent.setAttribute('data-filter-predictions', predictions);
+      this.updateDateHeadersVisibility();
+    });
 
-    // Add browser filters - using Set to deduplicate
-    const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'));
+    this.filters.onChange('status', (status) => {
+      this.timelineContent.setAttribute('data-filter-status', status);
+      this.updateDateHeadersVisibility();
+    });
 
-    // Deduplicate the filters
-    const uniqueBrowserFilters = [...new Set(activeBrowserFilters)];
+    this.filters.onChange('browser', (browsers) => {
+      this.timelineContent.setAttribute('data-filter-browsers', browsers.join(' '));
+      this.updateDateHeadersVisibility();
+    });
 
-    if (uniqueBrowserFilters.length > 0) {
-      uniqueBrowserFilters.forEach(filter => {
-        this.url.searchParams.append('browser', filter);
-      });
-    }
+    // Dynamically generate CSS to filter features
+    let styleRules = [];
+    const activeStyles = `background-color: #ebf4ff !important; border-color: #4299e1; color: #2b6cb0; font-weight: 500;`
+    const interopYears = new Set(Object.values(interopData).flatMap(feature => {
+      return feature.map(data => data.year);
+    }));
+    styleRules = styleRules.concat(Array.from(interopYears).flatMap(year => {
+      return [
+        `.timeline-content[data-filter-interop="${year}"] .feature-card:has(button[data-interop-year="${year}"]) { display: block; }`,
+        `.timeline-content[data-filter-interop="${year}"] button[data-interop-year="${year}"] { ${activeStyles} }`,
+        `.timeline-content[data-filter-interop="${year}"] .feature-card:not(:has(button[data-interop-year="${year}"])) { display: none; }`
+      ];
+    }));
 
-    // Get active interop filters from tag elements
-    const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'))
-      .map(filter => filter.split(':')[1]); // Extract year from 'interop:YYYY'
+    const browserVersions = new Set(this.allFeatures.flatMap(feature => {
+      return feature.shipDates.map(browserSupport => {
+        return [browserSupport.browser, browserSupport.version];
+      })
+    }));
+    styleRules = styleRules.concat(Array.from(browserVersions).flatMap(([browser, version]) => {
+      return [
+        `.timeline-content[data-filter-browsers~="${browser}:${version}"] .feature-card[data-browser-${browser}-${version}] { display: block; }`,
+        `.timeline-content[data-filter-browsers~="${browser}:${version}"] .feature-card:not([data-browser-${browser}-${version}]) { display: none; }`,
+        `.timeline-content[data-filter-browsers~="${browser}:${version}"] .browser-tag[data-browser="${browser}"][data-version="${version}"] { ${activeStyles} }`,
+      ];
+    }))
 
-    // If we have specific year filters, add them to the URL
-    if (activeInteropFilters.length > 0) {
-      // Deduplicate the interop filters
-      const uniqueInteropFilters = [...new Set(activeInteropFilters)];
+    const filterStyles = document.createElement('style');
+    filterStyles.id = 'filter-styles';
+    filterStyles.textContent = styleRules.join('\n');
+    document.body.appendChild(filterStyles);
 
-      uniqueInteropFilters.forEach(year => {
-        this.url.searchParams.append('interop', year);
-      });
-    } else {
-      // Check if we should preserve the 'any' filter
-      // This happens when the 'i' shortcut was used but no specific year is selected
-      const allCards = document.querySelectorAll('.feature-card');
-      const anyInteropFilterActive = Array.from(allCards).some(card => {
-        return card.hasAttribute('data-interop-any');
-      });
-
-      if (anyInteropFilterActive) {
-        this.url.searchParams.set('interop', 'any');
-      }
-    }
-
-    // Handle predictions filter
-    if (this.currentStatusFilter && this.currentStatusFilter.type === 'predictions') {
-      this.url.searchParams.set('predictions', this.currentStatusFilter.value);
-    } else {
-      this.url.searchParams.delete('predictions');
-    }
-
-    // Handle other status filters
-    if (this.currentStatusFilter && !this.currentStatusFilter.type) {
-      this.url.searchParams.set('status', this.currentStatusFilter);
-    } else {
-      this.url.searchParams.delete('status');
-    }
-
-    // Update the URL without reloading the page
-    window.history.replaceState({}, '', this.url);
-  }
-
-  // Initialize filters from URL parameters
-  initializeFiltersFromURL() {
-    // Get browser filters
-    const browserFilters = this.url.searchParams.getAll('browser');
-    if (browserFilters.length > 0) {
-      browserFilters.forEach(filter => {
-        // Find and activate matching browser tags
-        document.querySelectorAll(`.browser-tag[data-filter="${filter}"]`).forEach(tag => {
-          tag.classList.add('active-filter');
-          tag.setAttribute('aria-pressed', 'true');
-        });
-      });
-    }
-
-    // Get interop filters
-    const interopFilters = this.url.searchParams.getAll('interop');
-    if (interopFilters.length > 0) {
-      // Don't need to do anything special for 'any' - 
-      // updateFeatureVisibility will check for it directly from the URL
-
-      // For specific years, find and activate matching tags
-      interopFilters.forEach(year => {
-        if (year !== 'any') {
-          document.querySelectorAll(`.interop-tag[data-filter="interop:${year}"]`).forEach(tag => {
-            tag.classList.add('active-filter');
-            tag.setAttribute('aria-pressed', 'true');
-          });
-        }
-      });
-    }
-
-    // Get predictions filter
-    const predictionsFilter = this.url.searchParams.get('predictions');
-    if (predictionsFilter === 'false' || predictionsFilter === 'true') {
-      this.currentStatusFilter = { type: 'predictions', value: predictionsFilter };
-    }
-
-    // Get other status filters
-    const statusFilter = this.url.searchParams.get('status');
-    if (statusFilter) {
-      // Set the status filter
-      this.currentStatusFilter = statusFilter;
-    }
-
-    // Update visibility if any filters are applied
-    if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter || predictionsFilter) {
-      this.updateFeatureVisibility();
-    }
+    this.filters.init();
   }
 
   renderTimeline() {
@@ -1736,49 +1450,24 @@ class TimelineApp {
 
   // Filter features by type (widely-available, newly-available, limited-availability)
   filterFeaturesByType(type) {
-    // Check if we're toggling the same filter
-    if (this.currentStatusFilter === type) {
-      // Toggle off the filter
-      this.currentStatusFilter = null;
-      this.resetFilters(false); // Don't reset browser filters
+    if (this.filters.status === type) {
+      this.filters.delete('status');
     } else {
-      // Set the new filter
-      this.currentStatusFilter = type;
-
-      // Apply the filter using our combined filtering logic
-      this.updateFeatureVisibility();
+      this.filters.set('status', type);
     }
   }
 
   // Reset all filters and show all features
-  resetFilters(resetBrowserFilters = true) {
-    // Reset status filter
-    this.currentStatusFilter = null;
+  resetFilters() {
+    this.filters.delete('status');
+    this.filters.delete('browser');
+    this.filters.delete('interop');
+    this.filters.delete('predictions');
 
-    // If requested, also reset browser filters
-    if (resetBrowserFilters) {
-      document.querySelectorAll('.browser-tag.active-filter').forEach(tag => {
-        tag.classList.remove('active-filter');
-        tag.setAttribute('aria-pressed', 'false');
-      });
-    }
-
-    // Always reset interop filters
-    document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
+    document.querySelectorAll('.browser-tag.active-filter').forEach(tag => {
       tag.classList.remove('active-filter');
       tag.setAttribute('aria-pressed', 'false');
     });
-
-    // Clear the 'any' interop filter from URL if present
-    if (this.url.searchParams.has('interop')) {
-      this.url.searchParams.delete('interop');
-      window.history.replaceState({}, '', this.url);
-
-      // Also clean up the special 'any' interop data attribute
-      document.querySelectorAll('[data-interop-any]').forEach(card => {
-        card.removeAttribute('data-interop-any');
-      });
-    }
 
     // Show all feature cards
     document.querySelectorAll('.feature-card').forEach(card => {
@@ -1787,56 +1476,24 @@ class TimelineApp {
 
     // Update date headers visibility
     this.updateDateHeadersVisibility();
-
-    // Update URL to remove filters
-    this.updateURLWithFilters();
   }
 
-  // Toggle prediction visibility
-  filterPredictedFeatures() {
-    const currentFilter = this.currentStatusFilter;
-
-    if (currentFilter && currentFilter.type === 'predictions' && currentFilter.value === 'false') {
-      // Currently hiding predictions, remove the filter
-      this.currentStatusFilter = null;
-      this.url.searchParams.delete('predictions');
-    } else {
-      // Currently showing predictions (or no filter), hide them
-      this.currentStatusFilter = { type: 'predictions', value: 'false' };
-      this.url.searchParams.set('predictions', 'false');
+  toggleFilter(filter, value) {
+    value = String(value);
+    
+    if (Array.isArray(this.filters[filter])) {
+      if (this.filters[filter].includes(value)) {
+        this.filters.delete(filter, value);
+      } else {
+        this.filters.append(filter, value);
+      }
+      return;
     }
 
-    // Update the URL without reloading the page
-    window.history.replaceState({}, '', this.url);
-    this.updateFeatureVisibility();
-  }
-
-  // Filter to show only deprecated (discouraged) features
-  filterDeprecatedFeatures() {
-    // Check if we're toggling the same filter
-    if (this.currentStatusFilter === 'discouraged') {
-      // Toggle off the filter
-      this.currentStatusFilter = null;
-      this.resetFilters(false); // Don't reset browser filters
+    if (this.filters[filter] === value) {
+      this.filters.delete(filter);
     } else {
-      // Set the new filter
-      this.currentStatusFilter = 'discouraged';
-
-      // Get all feature cards
-      const allCards = document.querySelectorAll('.feature-card');
-
-      allCards.forEach(card => {
-        let shouldDisplay = card.classList.contains('discouraged');
-
-        // Apply visibility
-        card.style.display = shouldDisplay ? '' : 'none';
-      });
-
-      // Hide date headers with no visible cards
-      this.updateDateHeadersVisibility();
-
-      // Update URL parameters to reflect current filter state
-      this.updateURLWithFilters();
+      this.filters.set(filter, value);
     }
   }
 
