@@ -933,7 +933,7 @@ class TimelineApp {
 
     // Now process the shipDates again, but with knowledge of which versions are shared
     if (feature.shipDates) {
-      feature.shipDates.forEach(shipDate => {
+      feature.shipDates.sort((a,b) => b.date - a.date).forEach(shipDate => {
         const browser = shipDate.browser;
         const cleanVersion = shipDate.version;
         const releaseDate = shipDate.date;
@@ -1860,7 +1860,7 @@ class TimelineApp {
 // Helper to parse YYYY-MM-DD as a local date (not UTC)
 function parseLocalDate(dateString) {
   if (!dateString) return;
-  if (dateString instanceof Date) return dateString;
+  if (dateString instanceof Date) return new Date(dateString);
   const [year, month, day] = dateString.split('-').map(Number);
   return new Date(year, month - 1, day);
 }
