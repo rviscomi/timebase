@@ -16748,6 +16748,20 @@ export const features = {
     }
   },
   "function": {
+    "compat_features": [
+      "api.CSSFunctionDeclarations",
+      "api.CSSFunctionDeclarations.style",
+      "api.CSSFunctionDescriptors",
+      "api.CSSFunctionDescriptors.result",
+      "api.CSSFunctionRule",
+      "api.CSSFunctionRule.getParameters",
+      "api.CSSFunctionRule.name",
+      "api.CSSFunctionRule.returnType",
+      "css.at-rules.function",
+      "css.at-rules.function.result",
+      "css.types.dashed-function",
+      "css.types.type"
+    ],
     "description": "The @function CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the @media at-rule.",
     "description_html": "The <code>@function</code> CSS at-rule defines a custom function that takes CSS values or custom properties as arguments, and returns a CSS value. It can be based on conditional logic such as by using the <code>@media</code> at-rule.",
     "group": [
@@ -16760,7 +16774,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139"
+      }
     }
   },
   "functions": {
@@ -17935,7 +17953,6 @@ export const features = {
       "api.HighlightRegistry.forEach",
       "api.HighlightRegistry.get",
       "api.HighlightRegistry.has",
-      "api.HighlightRegistry.highlightsFromPoint",
       "api.HighlightRegistry.keys",
       "api.HighlightRegistry.set",
       "api.HighlightRegistry.size",
@@ -17957,6 +17974,26 @@ export const features = {
         "edge": "105",
         "safari": "17.2",
         "safari_ios": "17.2"
+      }
+    }
+  },
+  "highlightsfrompoint": {
+    "compat_features": [
+      "api.HighlightRegistry.highlightsFromPoint"
+    ],
+    "description": "The CSS.highlights.highlightsFromPoint() method returns an array of Highlight objects at a specified point.",
+    "description_html": "The <code>CSS.highlights.highlightsFromPoint()</code> method returns an array of <code>Highlight</code> objects at a specified point.",
+    "kind": "feature",
+    "name": "Custom highlights from point",
+    "spec": [
+      "https://drafts.csswg.org/css-highlight-api-1/#dom-highlightregistry-highlightsfrompoint"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140"
       }
     }
   },
@@ -33585,6 +33622,7 @@ export const features = {
       "api.Document.prerendering",
       "api.Document.prerenderingchange_event",
       "api.PerformanceNavigationTiming.activationStart",
+      "api.Request.destination.speculationrules",
       "html.elements.script.type.speculationrules",
       "html.elements.script.type.speculationrules.eagerness",
       "html.elements.script.type.speculationrules.expects_no_vary_search",
@@ -38131,6 +38169,34 @@ export const features = {
         "firefox_android": "89",
         "safari": "15",
         "safari_ios": "15"
+      }
+    }
+  },
+  "topics": {
+    "compat_features": [
+      "api.Document.browsingTopics",
+      "api.HTMLIFrameElement.browsingTopics",
+      "api.Request.Request.init_browsingTopics_parameter",
+      "api.fetch.init_browsingTopics_parameter",
+      "html.elements.iframe.allow.browsing-topics",
+      "html.elements.iframe.browsingtopics",
+      "http.headers.Observe-Browsing-Topics",
+      "http.headers.Permissions-Policy.browsing-topics",
+      "http.headers.Sec-Browsing-Topics"
+    ],
+    "description": "The Topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
+    "description_html": "The Topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
+    "kind": "feature",
+    "name": "Topics",
+    "spec": [
+      "https://patcg-individual-drafts.github.io/topics/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126"
       }
     }
   },
