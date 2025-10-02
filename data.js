@@ -3421,7 +3421,9 @@ export const features = {
       "css.properties.alignment-baseline.central",
       "css.properties.alignment-baseline.ideographic",
       "css.properties.alignment-baseline.mathematical",
-      "css.properties.alignment-baseline.middle"
+      "css.properties.alignment-baseline.middle",
+      "css.properties.alignment-baseline.text-after-edge",
+      "css.properties.alignment-baseline.text-before-edge"
     ],
     "description": "The alignment-baseline CSS property sets which baseline of an element is aligned with the corresponding baseline of its parent.",
     "description_html": "The <code>alignment-baseline</code> CSS property sets which baseline of an element is aligned with the corresponding baseline of its parent.",
@@ -3701,7 +3703,11 @@ export const features = {
       "css.properties.position-area.left",
       "css.properties.position-area.none",
       "css.properties.position-area.right",
+      "css.properties.position-area.self-block-end",
+      "css.properties.position-area.self-block-start",
       "css.properties.position-area.self-end",
+      "css.properties.position-area.self-inline-end",
+      "css.properties.position-area.self-inline-start",
       "css.properties.position-area.self-start",
       "css.properties.position-area.span-all",
       "css.properties.position-area.span-block-end",
@@ -3710,11 +3716,21 @@ export const features = {
       "css.properties.position-area.span-end",
       "css.properties.position-area.span-inline-end",
       "css.properties.position-area.span-inline-start",
+      "css.properties.position-area.span-self-block-end",
+      "css.properties.position-area.span-self-block-start",
+      "css.properties.position-area.span-self-end",
+      "css.properties.position-area.span-self-inline-end",
+      "css.properties.position-area.span-self-inline-start",
+      "css.properties.position-area.span-self-start",
       "css.properties.position-area.span-start",
       "css.properties.position-area.span-top",
       "css.properties.position-area.span-x-end",
+      "css.properties.position-area.span-x-self-end",
+      "css.properties.position-area.span-x-self-start",
       "css.properties.position-area.span-x-start",
       "css.properties.position-area.span-y-end",
+      "css.properties.position-area.span-y-self-end",
+      "css.properties.position-area.span-y-self-start",
       "css.properties.position-area.span-y-start",
       "css.properties.position-area.start",
       "css.properties.position-area.top",
@@ -5080,8 +5096,8 @@ export const features = {
         "chrome": "63",
         "chrome_android": "63",
         "edge": "79",
-        "firefox": "55",
-        "firefox_android": "55",
+        "firefox": "57",
+        "firefox_android": "57",
         "safari": "12",
         "safari_ios": "12"
       }
@@ -8435,6 +8451,22 @@ export const features = {
       }
     }
   },
+  "clipboardchange": {
+    "description": "The clipboardchange event for navigator.clipboard fires when the user modifies the clipboard's contents.",
+    "description_html": "The <code>clipboardchange</code> event for <code>navigator.clipboard</code> fires when the user modifies the clipboard's contents.",
+    "group": [
+      "clipboard"
+    ],
+    "kind": "feature",
+    "name": "clipboardchange",
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "closewatcher": {
     "compat_features": [
       "api.CloseWatcher",
@@ -9237,7 +9269,8 @@ export const features = {
       "https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-adoptedstylesheets"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "73",
@@ -14469,16 +14502,13 @@ export const features = {
       "https://w3c.github.io/webappsec-fetch-metadata/"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-03-27",
+      "baseline": false,
       "support": {
         "chrome": "80",
         "chrome_android": "80",
         "edge": "80",
         "firefox": "90",
-        "firefox_android": "90",
-        "safari": "16.4",
-        "safari_ios": "16.4"
+        "firefox_android": "90"
       }
     }
   },
@@ -16041,7 +16071,8 @@ export const features = {
       "https://drafts.csswg.org/css-fonts-4/#font-synthesis-small-caps"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "97",
@@ -16071,7 +16102,8 @@ export const features = {
       "https://drafts.csswg.org/css-fonts-4/#font-synthesis-style"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "97",
@@ -16101,7 +16133,8 @@ export const features = {
       "https://drafts.csswg.org/css-fonts-4/#font-synthesis-weight"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "97",
@@ -16658,7 +16691,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/custom-elements.html#form-associated-custom-elements"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "77",
@@ -19262,7 +19296,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/webappapis.html#import-maps"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "89",
@@ -23908,7 +23943,8 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-4/#mq-range-context"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "104",
@@ -24213,7 +24249,8 @@ export const features = {
       "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-messageerror"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "60",
@@ -26357,7 +26394,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "69",
@@ -26644,7 +26682,8 @@ export const features = {
       "https://fs.spec.whatwg.org/#origin-private-file-system"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "108",
@@ -26669,7 +26708,8 @@ export const features = {
       "https://drafts.csswg.org/css-ui-4/#outline"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "94",
@@ -27591,7 +27631,8 @@ export const features = {
     "compat_features": [
       "api.PerformancePaintTiming",
       "api.PerformancePaintTiming.first-contentful-paint",
-      "api.PerformancePaintTiming.first-paint"
+      "api.PerformancePaintTiming.first-paint",
+      "api.PerformancePaintTiming.toJSON"
     ],
     "description": "The paint performance entry and the PerformancePaintTiming API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
     "description_html": "The <code>paint</code> performance entry and the <code>PerformancePaintTiming</code> API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
@@ -27604,8 +27645,18 @@ export const features = {
       "https://w3c.github.io/paint-timing/"
     ],
     "status": {
-      "baseline": false,
-      "support": {}
+      "baseline": "high",
+      "baseline_high_date": "2023-10-26",
+      "baseline_low_date": "2021-04-26",
+      "support": {
+        "chrome": "60",
+        "chrome_android": "60",
+        "edge": "79",
+        "firefox": "84",
+        "firefox_android": "84",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
     }
   },
   "parse-html-unsafe": {
@@ -27825,7 +27876,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "94",
@@ -29389,7 +29441,8 @@ export const features = {
       "https://w3c.github.io/push-api/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "50",
@@ -30254,7 +30307,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "69",
@@ -30547,7 +30601,8 @@ export const features = {
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "54",
@@ -31314,7 +31369,8 @@ export const features = {
       "https://w3c.github.io/screen-orientation/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "38",
@@ -31676,8 +31732,10 @@ export const features = {
     ],
     "compat_features": [
       "api.Element.scrollIntoView",
-      "api.Element.scrollIntoView.options_container_parameter",
-      "api.Element.scrollIntoView.options_parameter"
+      "api.Element.scrollIntoView.options_parameter",
+      "api.Element.scrollIntoView.options_parameter.block_option",
+      "api.Element.scrollIntoView.options_parameter.container_option",
+      "api.Element.scrollIntoView.options_parameter.inline_option"
     ],
     "description": "The scrollIntoView() method scrolls an element's ancestor containers such that the element is visible to the user.",
     "description_html": "The <code>scrollIntoView()</code> method scrolls an element's ancestor containers such that the element is visible to the user.",
@@ -32498,7 +32556,8 @@ export const features = {
       "https://w3c.github.io/server-timing/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "65",
@@ -33300,7 +33359,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assign"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "92",
@@ -36486,13 +36546,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "1",
-        "chrome_android": "18",
-        "edge": "12",
-        "safari": "≤4",
-        "safari_ios": "≤3.2"
-      }
+      "support": {}
     }
   },
   "target": {
@@ -37000,10 +37054,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "18.4",
-        "safari_ios": "18.4"
-      }
+      "support": {}
     }
   },
   "text-box": {
@@ -40546,7 +40597,8 @@ export const features = {
       "https://webassembly.github.io/spec/core/bikeshed/#vector-instructions"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "91",
