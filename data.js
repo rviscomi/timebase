@@ -568,8 +568,12 @@ export const browsers = {
         "version": "142"
       },
       {
-        "date": "null",
+        "date": "2025-12-02",
         "version": "143"
+      },
+      {
+        "date": "null",
+        "version": "144"
       },
       {
         "date": "null",
@@ -1053,8 +1057,12 @@ export const browsers = {
         "version": "142"
       },
       {
-        "date": "null",
+        "date": "2025-12-02",
         "version": "143"
+      },
+      {
+        "date": "null",
+        "version": "144"
       }
     ]
   },
