@@ -205,6 +205,7 @@ body {
     align-items: center;
     cursor: pointer;
     border-radius: 2px;
+    overflow: hidden;
 }
 
 .feature-top-row:hover {
@@ -254,6 +255,7 @@ body {
     gap: 0.5rem;
     align-items: center;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .browser-tag {
@@ -804,28 +806,31 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     opacity: 1;
     padding: 0 16px;
     gap: 8px;
-    transform: scale(1) translateY(0);
+    transform: translateY(0);
     pointer-events: auto;
+    will-change: transform, opacity;
+    visibility: visible; /* Ensure visibility is explicitly set */
 }
 
 .scroll-to-current-month-fab.hidden {
     opacity: 0;
-    transform: scale(0.8) translateY(20px);
+    transform: translateY(20px);
     pointer-events: none;
+    visibility: hidden; /* Ensure the element can't be interacted with when hidden */
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
 }
 
 .scroll-to-current-month-fab:hover {
     background-color: #3949ab;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05) translateY(-2px);
 }
 
 .scroll-to-current-month-fab:active {
-    transform: scale(0.95) translateY(0);
+    transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

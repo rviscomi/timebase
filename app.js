@@ -1657,16 +1657,24 @@ class TimelineApp {
     // Set up Intersection Observer to show/hide the FAB
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        // isIntersecting is true if the element is at all visible.
-        // We want to show the FAB when the current month is NOT visible.
-        if (entry.isIntersecting) {
+        // Using intersection ratio to determine visibility more precisely
+        // This helps with mobile devices where elements can be partially visible
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.15) {
+          // When current month is sufficiently visible, hide the button
           fab.classList.add('hidden');
         } else {
+          // When current month is not visible enough, show the button
           fab.classList.remove('hidden');
         }
       });
-    }, { threshold: 0 });
+    }, { 
+      // Create a more generous threshold area for mobile
+      rootMargin: '-80px 0px',
+      // Use multiple thresholds for better detection of visibility
+      threshold: [0, 0.15, 0.3]
+    });
 
+    // Start observing the current month element
     observer.observe(currentMonthElement);
   }
 
