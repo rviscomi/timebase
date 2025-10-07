@@ -1352,6 +1352,10 @@ export const browsers = {
       {
         "date": "2025-12-04",
         "version": "143"
+      },
+      {
+        "date": "2026-01-15",
+        "version": "144"
       }
     ]
   },
