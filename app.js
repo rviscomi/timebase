@@ -712,7 +712,7 @@ class TimelineApp {
     const linksContainer = document.createElement('div');
     linksContainer.className = 'feature-links';
 
-    if (feature.status.baseline) {
+    if (feature.prediction && feature.date > new Date()) {
       // Add "Add to calendar" button
       const addToCalendarBtn = document.createElement('button');
       addToCalendarBtn.className = 'add-to-calendar-btn';
