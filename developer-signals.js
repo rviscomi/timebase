@@ -8,7 +8,7 @@
 import fs from 'fs/promises';
 
 // URL to the raw JSON file on GitHub
-const DEVELOPER_SIGNALS_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/developer-signals.json';
+const DEVELOPER_SIGNALS_URL = 'https://web-platform-dx.github.io/developer-signals/web-features-signals.json';
 const OUTPUT_FILE = './developer-signals.json';
 
 async function run() {
