@@ -693,7 +693,7 @@ class TimelineApp {
         // Date cell
         const dateCell = document.createElement('td');
         dateCell.className = 'date-cell';
-        dateCell.textContent = shipDate.date ? shipDate.date.toLocaleDateString('en-US', {
+        dateCell.textContent = (shipDate.date && !shipDate.isPreview) ? shipDate.date.toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'short',
           day: 'numeric'
