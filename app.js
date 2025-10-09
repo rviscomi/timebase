@@ -25,6 +25,7 @@ class TimelineApp {
     const processedFeatures = [];
     const now = new Date();
     now.setHours(0, 0, 0, 0);
+    this.now = now;
     const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
     lastDay.setHours(23, 59, 59, 999);
 
@@ -72,7 +73,7 @@ class TimelineApp {
 
       if (!shipDates.length) return;
       shipDates.sort((a,b) => {
-        return a - b;
+        return a.date - b.date;
       });
 
       // Create the base feature object
@@ -94,8 +95,8 @@ class TimelineApp {
       if (data.status.baseline === false) {
         processedFeatures.push({
           ...baseFeature,
-          date: shipDates[0].date,
-          prediction: shipDates[0].date > now,
+          date: shipDates.at(-1).date,
+          prediction: shipDates.at(-1).date > now,
           displayType: 'limited-availability',
           displayName: 'Limited availability'
         });
@@ -494,7 +495,11 @@ class TimelineApp {
     details.style.display = 'none';
 
     // Format the date for display with full date (including day)
-    const formattedDate = feature.date.toLocaleDateString('en-US', {
+    let featureDate = feature.date;
+    if (feature.displayType === 'limited-availability') {
+      featureDate = feature.shipDates[0].date;
+    }
+    const formattedDate = featureDate.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -515,7 +520,7 @@ class TimelineApp {
           return `<a href="${url}" target="_blank">${hostname}</a>`;
         }).join(', ');
         availabilityText = `This feature is discouraged by ${authority}.`;
-      } else if (feature.prediction) {
+      } else if (featureDate > this.now) {
         availabilityText = `🔮 Expected to become Limited availability across browsers on ${formattedDate}.`;
       } else {
         availabilityText = `Limited availability across browsers since ${formattedDate}.`;
