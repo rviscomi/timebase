@@ -1,6 +1,4 @@
-import { browsers } from './data.js';
-
-export function generateICal(featuresToProcess) {
+export function generateICal(selectedFeatures) {
     
     const ical = [
         'BEGIN:VCALENDAR',
@@ -13,77 +11,12 @@ export function generateICal(featuresToProcess) {
         ''
     ];
 
-    // Process features similar to the main app
-    const processedFeatures = [];
+    // selectedFeatures is already processed from app.js and contains the specific timeline events
+    // Each feature has id, name, description, date, displayType, and shipDates
+    // No need to process them again - just use them directly
     
-    // If customFeatures is provided, it's already processed
-    if (customFeatures) {
-        processedFeatures.push(...customFeatures);
-    } else {
-        // Process all features from the data
-        Object.entries(featuresToProcess)
-            .forEach(([id, data]) => {
-                // Get all ship dates from browsers
-                const shipDates = Object.entries(data.status?.support || {})
-                    .map(([browser, version]) => {
-                        if (typeof version !== 'string') {
-                            return null;
-                        }
-                        const cleanVersion = version.replace('≤', '');
-                        const browserData = browsers[browser];
-                        if (!browserData?.releases) {
-                            return null;
-                        }
-                        const release = browserData.releases.find(r => r.version === cleanVersion);
-                        if (!release) {
-                            return null;
-                        }
-                        return release.date ? { date: parseLocalDate(release.date), browser, version: cleanVersion } : null;
-                    })
-                    .filter(item => item !== null);
-
-                if (!shipDates.length) return;
-
-                // Sort ship dates chronologically
-                shipDates.sort((a, b) => a.date - b.date);
-                
-                // The newly available date is when the last browser adds support
-                const newlyAvailableDate = shipDates[shipDates.length - 1].date;
-                
-                // Calculate widely available date (30 months after newly available)
-                const widelyAvailableDate = new Date(newlyAvailableDate);
-                widelyAvailableDate.setMonth(widelyAvailableDate.getMonth() + 30);
-                
-                // Get current date for comparison
-                const now = new Date();
-                now.setHours(0, 0, 0, 0);
-                
-                // Always add the newly available entry
-                processedFeatures.push({
-                    id,
-                    name: data.name || id,
-                    description: data.description,
-                    date: newlyAvailableDate,
-                    displayType: 'newly-available',
-                    shipDates
-                });
-                
-                // Only add widely available entry if the feature is already available and has full browser support
-                if (newlyAvailableDate <= now && data.status?.baseline !== false) {
-                    processedFeatures.push({
-                        id,
-                        name: data.name || id,
-                        description: data.description,
-                        date: widelyAvailableDate,
-                        displayType: 'widely-available',
-                        shipDates
-                    });
-                }
-            });
-    }
-
     // Sort features by date in ascending order (earliest first) for chronological order in the calendar
-    const sortedFeatures = processedFeatures
+    const sortedFeatures = selectedFeatures
         .filter(feature => feature && feature.date && !isNaN(feature.date))
         .sort((a, b) => a.date - b.date);
 
@@ -93,7 +26,10 @@ export function generateICal(featuresToProcess) {
         const formattedDate = formatDateForICal(eventDate);
         
         // Create event title
-        const eventType = feature.displayType === 'newly-available' ? '🆕 Newly Available' : '✅ Widely Available';
+        const eventType = feature.displayType === 'newly-available' ? '🆕 Newly Available' : 
+                         feature.displayType === 'widely-available' ? '✅ Widely Available' :
+                         feature.displayType === 'limited-availability' ? '⚠️ Limited Availability' :
+                         '📅 ' + (feature.displayName || feature.displayType);
         const title = `${eventType}: ${feature.name}`;
         
         // Create event description
@@ -123,11 +59,6 @@ export function generateICal(featuresToProcess) {
     return ical.join('\r\n');
 }
 
-function parseLocalDate(dateString) {
-    const [year, month, day] = dateString.split('-').map(Number);
-    return new Date(year, month - 1, day);
-}
-
 function formatDateForICal(date) {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -144,7 +75,7 @@ function escapeICalText(text) {
         .replace(/\r/g, '\\r');
 }
 
-export function downloadICal(selectedFeatures = null) {
+export function downloadICal(selectedFeatures = []) {
     const icalContent = generateICal(selectedFeatures);
     const blob = new Blob([icalContent], { type: 'text/calendar;charset=utf-8' });
     const url = URL.createObjectURL(blob);
