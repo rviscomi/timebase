@@ -1342,7 +1342,7 @@ export const browsers = {
         "version": "140"
       },
       {
-        "date": "2025-10-02",
+        "date": "2025-10-03",
         "version": "141"
       },
       {
@@ -4249,6 +4249,23 @@ export const features = {
         "safari": "16.4",
         "safari_ios": "16.4"
       }
+    }
+  },
+  "arianotify": {
+    "compat_features": [
+      "api.Document.ariaNotify",
+      "api.Element.ariaNotify"
+    ],
+    "description": "The ariaNotify() method of Element and Document requests assistive technology software, if activated, to announce a message to the user. This can help make dynamic content changes more accessible to users.",
+    "description_html": "The <code>ariaNotify()</code> method of <code>Element</code> and <code>Document</code> requests assistive technology software, if activated, to announce a message to the user. This can help make dynamic content changes more accessible to users.",
+    "kind": "feature",
+    "name": "ariaNotify()",
+    "spec": [
+      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "array": {
@@ -8996,7 +9013,7 @@ export const features = {
     "kind": "feature",
     "name": "Compression Dictionary Transport",
     "spec": [
-      "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html"
+      "https://www.rfc-editor.org/rfc/rfc9842"
     ],
     "status": {
       "baseline": false,
@@ -10569,7 +10586,6 @@ export const features = {
       "api.CSSRuleList.length",
       "api.CSSStyleDeclaration",
       "api.CSSStyleDeclaration.@@iterator",
-      "api.CSSStyleDeclaration.cssFloat",
       "api.CSSStyleDeclaration.cssText",
       "api.CSSStyleDeclaration.getPropertyPriority",
       "api.CSSStyleDeclaration.getPropertyValue",
@@ -14839,6 +14855,16 @@ export const features = {
     ],
     "compat_features": [
       "css.properties.filter",
+      "css.properties.filter.blur",
+      "css.properties.filter.brightness",
+      "css.properties.filter.contrast",
+      "css.properties.filter.drop-shadow",
+      "css.properties.filter.grayscale",
+      "css.properties.filter.hue-rotate",
+      "css.properties.filter.invert",
+      "css.properties.filter.opacity",
+      "css.properties.filter.saturate",
+      "css.properties.filter.sepia",
       "css.types.filter-function",
       "css.types.filter-function.blur",
       "css.types.filter-function.brightness",
@@ -17230,6 +17256,31 @@ export const features = {
       }
     }
   },
+  "getallrecords": {
+    "compat_features": [
+      "api.IDBIndex.getAllRecords",
+      "api.IDBObjectStore.getAllRecords"
+    ],
+    "description": "The getAllRecords() method of IDBObjectStore and IDBIndex return records and their primary keys from an IndexedDB store or index. The records can be read in batches and in reverse order. The getAllRecords() methods speed up read operations on large datasets.",
+    "description_html": "The <code>getAllRecords()</code> method of <code>IDBObjectStore</code> and <code>IDBIndex</code> return records and their primary keys from an IndexedDB store or index. The records can be read in batches and in reverse order. The <code>getAllRecords()</code> methods speed up read operations on large datasets.",
+    "group": [
+      "indexeddb"
+    ],
+    "kind": "feature",
+    "name": "IndexedDB getAllRecords()",
+    "spec": [
+      "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
+      "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141"
+      }
+    }
+  },
   "getboxquads": {
     "compat_features": [
       "api.Document.getBoxQuads",
@@ -19475,6 +19526,9 @@ export const features = {
     ],
     "description": "The IndexedDB API is a local storage transactional object database.",
     "description_html": "The IndexedDB API is a local storage transactional object database.",
+    "group": [
+      "indexeddb"
+    ],
     "kind": "feature",
     "name": "IndexedDB",
     "spec": [
@@ -25388,7 +25442,8 @@ export const features = {
       "https://notifications.spec.whatwg.org/#service-worker-api"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
       "baseline_low_date": "2023-03-27",
       "support": {
         "chrome": "20",
@@ -30868,8 +30923,11 @@ export const features = {
   "round-mod-rem": {
     "compat_features": [
       "css.types.mod",
+      "css.types.mod.mixed_type_parameters",
       "css.types.rem",
-      "css.types.round"
+      "css.types.rem.mixed_type_parameters",
+      "css.types.round",
+      "css.types.round.mixed_type_parameters"
     ],
     "description": "The round(), mod(), and rem() CSS functions compute rounded values and the remainder after division.",
     "description_html": "The <code>round()</code>, <code>mod()</code>, and <code>rem()</code> CSS functions compute rounded values and the remainder after division.",
@@ -30890,8 +30948,8 @@ export const features = {
         "edge": "125",
         "firefox": "118",
         "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
+        "safari": "17.2",
+        "safari_ios": "17.2"
       }
     }
   },
@@ -33538,7 +33596,7 @@ export const features = {
       "image-scaling"
     ],
     "kind": "feature",
-    "name": "smooth",
+    "name": "image-rendering: smooth",
     "spec": [
       "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ],
@@ -43791,7 +43849,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-02",
+      "baseline_low_date": "2025-10-03",
       "support": {
         "chrome": "141",
         "chrome_android": "141",
