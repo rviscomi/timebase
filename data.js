@@ -3275,6 +3275,9 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Accessor methods",
     "spec": [
@@ -5343,7 +5346,6 @@ export const features = {
       "api.HTMLAudioElement",
       "api.HTMLAudioElement.Audio",
       "html.elements.audio",
-      "html.elements.audio.autoplay",
       "html.elements.audio.controls",
       "html.elements.audio.crossorigin",
       "html.elements.audio.loop",
@@ -7656,7 +7658,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createconicgradient-dev"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-10-11",
       "baseline_low_date": "2023-04-11",
       "support": {
         "chrome": "99",
@@ -7714,7 +7717,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-10-11",
       "baseline_low_date": "2023-04-11",
       "support": {
         "chrome": "99",
@@ -7840,6 +7844,26 @@ export const features = {
         "safari": "11.1",
         "safari_ios": "11.3"
       }
+    }
+  },
+  "caret-shape": {
+    "compat_features": [
+      "css.properties.caret-shape",
+      "css.properties.caret-shape.auto",
+      "css.properties.caret-shape.bar",
+      "css.properties.caret-shape.block",
+      "css.properties.caret-shape.underscore"
+    ],
+    "description": "The caret-shape CSS property controls the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
+    "description_html": "The <code>caret-shape</code> CSS property controls the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
+    "kind": "feature",
+    "name": "caret-shape",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "cascade-layers": {
@@ -11379,6 +11403,9 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "toGMTString()",
     "spec": [
@@ -11689,13 +11716,16 @@ export const features = {
       "https://drafts.csswg.org/css-pseudo-4/#details-content-pseudo"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-09-16",
       "support": {
         "chrome": "131",
         "chrome_android": "131",
         "edge": "131",
         "firefox": "143",
-        "firefox_android": "143"
+        "firefox_android": "143",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -13565,6 +13595,9 @@ export const features = {
     ],
     "description": "The cause property of errors records the specific original cause of the error, particularly for errors that have been re-thrown.",
     "description_html": "The <code>cause</code> property of errors records the specific original cause of the error, particularly for errors that have been re-thrown.",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Error cause",
     "spec": [
@@ -17428,7 +17461,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "120"
+        "firefox": "120",
+        "firefox_android": "122"
       }
     }
   },
@@ -19602,7 +19636,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-10-11",
       "baseline_low_date": "2023-04-11",
       "support": {
         "chrome": "102",
@@ -21076,6 +21111,8 @@ export const features = {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
         "safari": "preview"
       }
     }
@@ -21119,6 +21156,9 @@ export const features = {
     ],
     "description": "The Error.isError() static method checks whether a value is an Error object.",
     "description_html": "The <code>Error.isError()</code> static method checks whether a value is an <code>Error</code> object.",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Error.isError()",
     "spec": [
@@ -23584,7 +23624,8 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "137",
-        "firefox_android": "137"
+        "firefox_android": "137",
+        "safari": "preview"
       }
     }
   },
@@ -25901,6 +25942,9 @@ export const features = {
     ],
     "description": "The Object.hasOwn() static method checks whether an object has a given property. It's a more robust alternative to the Object.prototype.hasOwnProperty() method.",
     "description_html": "The <code>Object.hasOwn()</code> static method checks whether an object has a given property. It's a more robust alternative to the <code>Object.prototype.hasOwnProperty()</code> method.",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Object.hasOwn()",
     "spec": [
@@ -25963,6 +26007,9 @@ export const features = {
     ],
     "description": "Objects in JavaScript are collections of key-value pairs.",
     "description_html": "Objects in JavaScript are collections of key-value pairs.",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Object",
     "spec": [
@@ -29371,6 +29418,9 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "__proto__",
     "spec": [
@@ -29572,6 +29622,32 @@ export const features = {
         "firefox_android": "49",
         "safari": "13.1",
         "safari_ios": "13.4"
+      }
+    }
+  },
+  "queuemicrotask": {
+    "compat_features": [
+      "api.queueMicrotask"
+    ],
+    "description": "The queueMicrotask() method schedules a function to run after the currently running synchronous JavaScript finishes but before returning to the event loop.",
+    "description_html": "The <code>queueMicrotask()</code> method schedules a function to run after the currently running synchronous JavaScript finishes but before returning to the event loop.",
+    "kind": "feature",
+    "name": "queueMicrotask()",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2023-01-28",
+      "baseline_low_date": "2020-07-28",
+      "support": {
+        "chrome": "71",
+        "chrome_android": "71",
+        "edge": "79",
+        "firefox": "69",
+        "firefox_android": "79",
+        "safari": "12.1",
+        "safari_ios": "12.2"
       }
     }
   },
@@ -29929,6 +30005,9 @@ export const features = {
     ],
     "description": "The RegExp object represents a regular expression, a notation for matching text patterns.",
     "description_html": "The <code>RegExp</code> object represents a regular expression, a notation for matching text patterns.",
+    "group": [
+      "regexps"
+    ],
     "kind": "feature",
     "name": "Regular expressions",
     "spec": [
@@ -29960,6 +30039,9 @@ export const features = {
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
       ]
     },
+    "group": [
+      "regexps"
+    ],
     "kind": "feature",
     "name": "RegExp compile()",
     "spec": [
@@ -29984,6 +30066,9 @@ export const features = {
     ],
     "description": "The RegExp.escape() static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, RegExp.escape(\"[abc]\") returns \"\\\\[abc\\\\]\".",
     "description_html": "The <code>RegExp.escape()</code> static method takes a string and replaces any characters that are potentially special characters of a regular expression with equivalent escape sequences. For example, <code>RegExp.escape(\"[abc]\")</code> returns <code>\"\\\\[abc\\\\]\"</code>.",
+    "group": [
+      "regexps"
+    ],
     "kind": "feature",
     "name": "RegExp.escape()",
     "spec": [
@@ -30019,6 +30104,9 @@ export const features = {
         "https://github.com/tc39/proposal-regexp-legacy-features"
       ]
     },
+    "group": [
+      "regexps"
+    ],
     "kind": "feature",
     "name": "RegExp static properties",
     "spec": [
@@ -30479,6 +30567,9 @@ export const features = {
     ],
     "description": "The resize() method of an ArrayBuffer and the grow() method of a SharedArrayBuffer, constructed with the maxByteLength option, changes the size of the buffer in place.",
     "description_html": "The <code>resize()</code> method of an <code>ArrayBuffer</code> and the <code>grow()</code> method of a <code>SharedArrayBuffer</code>, constructed with the <code>maxByteLength</code> option, changes the size of the buffer in place.",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Resizable buffers",
     "spec": [
@@ -32101,7 +32192,8 @@ export const features = {
         "chrome_android": "114",
         "edge": "114",
         "firefox": "109",
-        "firefox_android": "109"
+        "firefox_android": "109",
+        "safari": "preview"
       }
     }
   },
@@ -33330,7 +33422,8 @@ export const features = {
       "support": {
         "chrome": "138",
         "chrome_android": "138",
-        "edge": "138"
+        "edge": "138",
+        "safari": "preview"
       }
     }
   },
@@ -33345,8 +33438,8 @@ export const features = {
     "compat_features": [
       "html.elements.img.sizes.auto"
     ],
-    "description": "The sizes=\"auto\" attribute for the <img> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the loading=\"lazy\" attribute.",
-    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element reserves layout space for an image before it loads, avoiding some layout shifts. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
+    "description": "The sizes=\"auto\" attribute for the <img> HTML element determines the layout size for the image based on computed layout size when choosing a source from the srcset. This attribute only applies to images with the loading=\"lazy\" attribute.",
+    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element determines the layout size for the image based on computed layout size when choosing a source from the <code>srcset</code>. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
     "group": [
       "images"
     ],
@@ -38426,6 +38519,9 @@ export const features = {
     ],
     "description": "The transfer() and transferToFixedLength() methods of ArrayBuffer move a buffer from one context to another (for example, to a worker).",
     "description_html": "The <code>transfer()</code> and <code>transferToFixedLength()</code> methods of <code>ArrayBuffer</code> move a buffer from one context to another (for example, to a worker).",
+    "group": [
+      "javascript"
+    ],
     "kind": "feature",
     "name": "Transferable ArrayBuffer",
     "spec": [
@@ -43349,9 +43445,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "113",
         "chrome_android": "121",
-        "edge": "113",
         "safari": "26",
         "safari_ios": "26"
       }
