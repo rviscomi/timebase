@@ -9,7 +9,15 @@ const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 // Extract both browsers and features data
 const moduleContent = `// Generated from web-futures package
 export const browsers = ${JSON.stringify(data.browsers, null, 2)};
-export const features = ${JSON.stringify(data.features, null, 2)};
+export const features = ${JSON.stringify(Object.fromEntries(Object.entries(data.features).map(([key, feature]) => {
+  delete feature.status?.by_compat_key;
+  delete feature.compat_features;
+  delete feature.description;
+  delete feature.group;
+  delete feature.caniuse;
+  delete feature.snapshot;
+  return [key, feature];
+})), null, 2)};
 `;
 
 writeFileSync('data.js', moduleContent);
