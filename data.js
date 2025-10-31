@@ -1959,10 +1959,6 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "2026-01-13",
-        "version": "147"
-      },
-      {
         "date": "null",
         "version": "preview"
       }
@@ -2490,10 +2486,6 @@ export const browsers = {
       {
         "date": "2025-12-09",
         "version": "146"
-      },
-      {
-        "date": "2026-01-13",
-        "version": "147"
       }
     ]
   },
@@ -3357,7 +3349,6 @@ export const features = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4201,14 +4192,11 @@ export const features = {
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-11-11",
+      "baseline": false,
       "support": {
         "chrome": "87",
         "chrome_android": "89",
         "edge": "87",
-        "firefox": "145",
-        "firefox_android": "145",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8882,7 +8870,7 @@ export const features = {
     }
   },
   "event-timing": {
-    "description_html": "The <code>event</code> and <code>first-input</code> performance entries and the <code>PerformanceEventTiming</code> API measures the latency of user input events, such as mouse clicks or keypresses. They're used to calculate Interaction to Next Paint (INP), a common metric for perceived responsiveness.",
+    "description_html": "The <code>event</code> and <code>first-input</code> performance entries and the <code>PerformanceEventTiming</code> API measures the latency of user input events, such as mouse clicks or keypresses, and the latency of the first user input. First Input Delay (FID) is a common metric for perceived responsiveness.",
     "kind": "feature",
     "name": "Event timing",
     "spec": [
@@ -9455,7 +9443,7 @@ export const features = {
     "kind": "feature",
     "name": "fetchLater",
     "spec": [
-      "https://fetch.spec.whatwg.org/#dom-window-fetchlater"
+      "https://github.com/whatwg/fetch/pull/1647"
     ],
     "status": {
       "baseline": false,
@@ -9943,9 +9931,7 @@ export const features = {
       "support": {
         "chrome": "109",
         "chrome_android": "109",
-        "edge": "109",
-        "firefox": "145",
-        "firefox_android": "145"
+        "edge": "109"
       }
     }
   },
@@ -13674,7 +13660,7 @@ export const features = {
     }
   },
   "layout-instability": {
-    "description_html": "The <code>layout-shift</code> performance entry and <code>LayoutShift</code> API measures the layout stability of web pages based on movements of the elements on the page. They're used to calculate Cumulative Layout Shift (CLS), a common metric for perceived stability.",
+    "description_html": "The <code>layout-shift</code> performance entry and <code>LayoutShift</code> API measures the layout stability of web pages based on movements of the elements on the page.",
     "kind": "feature",
     "name": "Layout instability",
     "spec": [
@@ -18666,9 +18652,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "firefox": "preview"
-      }
+      "support": {}
     }
   },
   "savedata": {
