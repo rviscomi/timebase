@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "update": "npm update web-futures --save && npm run update:meta",
-    "update:meta": "node extract-data.js && node extract-bcd-data.js && node developer-signals.js && node interop.js && node mdn-docs.js",
+    "update:meta": "node extract-data.js && node developer-signals.js && node interop.js && node mdn-docs.js",
     "extract-logos": "node extract-logos.js",
     "update-signals": "node developer-signals.js",
     "update-interop": "node interop.js",
