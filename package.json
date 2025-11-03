@@ -10,9 +10,9 @@
     "update-signals": "node developer-signals.js",
     "update-interop": "node interop.js",
     "update-mdn": "node mdn-docs.js",
-    "start": "npx http-server ./ -p 8080 -c-1 --cors -o -a localhost -d false -i index.html",
+    "start": "npx http-server ./dist -p 8080 -c-1 --cors -o -a localhost -d false -i dist/index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
-    "build": "npm run update && npm run extract-logos",
+    "build": "node build.js",
     "clear-cache": "echo 'Clearing browser cache...' && rm -rf ~/.cache/Cursor/Cache/*",
     "dev": "npm run build && npm run start"
   },
