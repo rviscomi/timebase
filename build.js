@@ -10,7 +10,7 @@ import mdnDocsData from './mdn.json' with { type: "json" };
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DIST_DIR = path.resolve(__dirname, 'dist');
+const DIST_DIR = path.resolve(__dirname, 'docs');
 const TEMPLATE_PATH = path.resolve(__dirname, 'index.html');
 
 // Helper to parse YYYY-MM-DD as a local date (not UTC)
