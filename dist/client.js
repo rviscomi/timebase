@@ -15,6 +15,8 @@ class TimelineApp {
     this.selectedFeatures = new Set(); // Track selected features
     this.allFeatures = [...this.features]; // Store all processed features for filtering
     this.currentStatusFilter = null; // Track the current status filter
+    this.scrollFAB = null; // Track the scroll FAB element
+    this.scrollObserver = null; // Track the intersection observer
 
     this.initEventListeners();
     this.attachInteractivityToStaticHTML();
@@ -329,15 +331,62 @@ class TimelineApp {
       }
     });
 
-    // Create scroll to current month FAB
+    // Create scroll to current month FAB with current or most recent past visible month
+    this.updateScrollTarget();
+  }
+
+  // Find current or most recent past visible month
+  updateScrollTarget() {
     const now = new Date();
-    const monthName = now.toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
-    const currentYear = now.getFullYear();
-    const monthId = `${monthName}-${currentYear}`;
-    const currentMonthElement = document.getElementById(monthId);
+    now.setHours(0, 0, 0, 0);
     
-    if (currentMonthElement) {
-      this.createScrollToCurrentMonthFAB(currentMonthElement);
+    const visibleMonths = Array.from(document.querySelectorAll('.date-group:not([style*="display: none"])'));
+    
+    // Month names to indices
+    const monthMap = {
+      'january': 0, 'february': 1, 'march': 2, 'april': 3,
+      'may': 4, 'june': 5, 'july': 6, 'august': 7,
+      'september': 8, 'october': 9, 'november': 10, 'december': 11
+    };
+    
+    let targetMonth = null;
+    
+    // Find the first visible month that's on or before today
+    for (const month of visibleMonths) {
+      const [monthName, yearStr] = month.id.split('-');
+      const monthIndex = monthMap[monthName];
+      const year = parseInt(yearStr, 10);
+      
+      if (monthIndex !== undefined && !isNaN(year)) {
+        const monthDate = new Date(year, monthIndex, 1);
+        monthDate.setHours(0, 0, 0, 0);
+        
+        if (monthDate <= now) {
+          targetMonth = month;
+          break;
+        }
+      }
+    }
+    
+    // Fallback to first visible month
+    if (!targetMonth && visibleMonths.length > 0) {
+      targetMonth = visibleMonths[0];
+    }
+    
+    // Remove old FAB and observer if they exist
+    if (this.scrollFAB) {
+      this.scrollFAB.remove();
+      this.scrollFAB = null;
+    }
+    
+    if (this.scrollObserver) {
+      this.scrollObserver.disconnect();
+      this.scrollObserver = null;
+    }
+    
+    // Create new FAB with the target month
+    if (targetMonth) {
+      this.createScrollToCurrentMonthFAB(targetMonth);
     }
   }
 
@@ -707,6 +756,8 @@ class TimelineApp {
     // Update visibility if any filters are applied
     if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter || predictionsFilter) {
       this.updateFeatureVisibility();
+      // Update scroll target after filters change visibility
+      this.updateScrollTarget();
     }
   }
 
@@ -778,6 +829,9 @@ class TimelineApp {
     // Create the FAB element
     const fab = document.createElement('button');
     fab.className = 'scroll-to-current-month-fab';
+    
+    // Store reference to the FAB
+    this.scrollFAB = fab;
 
     // Get current month and year for the button text
     const now = new Date();
@@ -798,8 +852,16 @@ class TimelineApp {
       currentMonthElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
-    // Initially hide the FAB (using opacity and transform for smooth transitions)
-    fab.classList.add('hidden');
+    // Check if target is already in view to set initial state
+    const rect = currentMonthElement.getBoundingClientRect();
+    const isInView = rect.top >= 80 && rect.top <= window.innerHeight;
+    
+    // Initially hide the FAB if target is in view, otherwise show it
+    if (isInView) {
+      fab.classList.add('hidden');
+    } else {
+      fab.classList.remove('hidden');
+    }
 
     // Add the FAB to the document
     document.body.appendChild(fab);
@@ -824,6 +886,9 @@ class TimelineApp {
       threshold: [0, 0.15, 0.3]
     });
 
+    // Store reference to the observer
+    this.scrollObserver = observer;
+    
     // Start observing the current month element
     observer.observe(currentMonthElement);
   }
@@ -998,16 +1063,36 @@ class TimelineApp {
   // Scroll to the current month in the timeline
   scrollToCurrentMonth() {
     const now = new Date();
-    const currentMonthName = now.toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
-    const currentYear = now.getFullYear();
-    const monthId = `${currentMonthName}-${currentYear}`;
-
-    // Find the current month element
-    const currentMonthElement = document.getElementById(monthId) ||
-      document.querySelector(`[id^="${currentMonthName}-"]`); // Fallback to any instance of this month
-
-    if (currentMonthElement) {
-      currentMonthElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    now.setHours(0, 0, 0, 0);
+    
+    const visibleMonths = Array.from(document.querySelectorAll('.date-group:not([style*="display: none"])'));
+    
+    const monthMap = {
+      'january': 0, 'february': 1, 'march': 2, 'april': 3,
+      'may': 4, 'june': 5, 'july': 6, 'august': 7,
+      'september': 8, 'october': 9, 'november': 10, 'december': 11
+    };
+    
+    // Find the first visible month that's on or before today
+    for (const month of visibleMonths) {
+      const [monthName, yearStr] = month.id.split('-');
+      const monthIndex = monthMap[monthName];
+      const year = parseInt(yearStr, 10);
+      
+      if (monthIndex !== undefined && !isNaN(year)) {
+        const monthDate = new Date(year, monthIndex, 1);
+        monthDate.setHours(0, 0, 0, 0);
+        
+        if (monthDate <= now) {
+          month.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+      }
+    }
+    
+    // Fallback to first visible month
+    if (visibleMonths.length > 0) {
+      visibleMonths[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }
