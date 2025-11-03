@@ -345,6 +345,20 @@ body {
     transition: all 0.2s ease;
 }
 
+/* Permalink icon for feature header */
+.feature-link-icon {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    opacity: 0;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+
+.feature-top-row:hover .feature-link-icon,
+.feature-link-icon:focus {
+    opacity: 0.6;
+}
+
 .feature-links a:hover {
     text-decoration: underline;
     color: #2b6cb0;

@@ -127,7 +127,7 @@ function processBrowserSupport(feature) {
   }
 
   if (feature.shipDates) {
-    feature.shipDates.sort((a, b) => b.date - a.date).forEach(shipDate => {
+    [...feature.shipDates].sort((a, b) => b.date - a.date).forEach(shipDate => {
       const browser = shipDate.browser;
       const cleanVersion = shipDate.version;
       const releaseDate = shipDate.date;
@@ -223,15 +223,155 @@ function createFeatureHeader(feature, uniqueCardId) {
     }
   }
 
-  // Details section
-  let availabilityText = '';
-  // ... (rest of the availability text logic)
+  // Create availability info text
+  let availabilityHTML = '';
+  let featureDate = feature.date;
+  if (feature.displayType === 'limited-availability') {
+    // For limited availability, use the earliest ship date (which is shipDates[0] since it's sorted ascending in build.js)
+    featureDate = feature.shipDates[0].date;
+  }
+  if (!featureDate && feature.shipDates && feature.shipDates.length > 0) {
+    featureDate = feature.shipDates[0].date;
+  }
+  
+  if (featureDate) {
+    const now = new Date();
+    const formattedDate = featureDate.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    let availabilityText = '';
+    if (feature.displayType === 'limited-availability') {
+      if (feature.discouraged) {
+        const authority = feature.discouraged.according_to.map(url => {
+          const hostname = new URL(url).hostname;
+          if (hostname == 'github.com') {
+            const repo = url.split('/').slice(-2).join('/');
+            return `<a href="${url}" target="_blank">${repo}</a>`;
+          }
+          return `<a href="${url}" target="_blank">${hostname}</a>`;
+        }).join(', ');
+        availabilityText = `This feature is discouraged by ${authority}.`;
+      } else if (featureDate > now) {
+        availabilityText = `🔮 Expected to become Limited availability across browsers on ${formattedDate}.`;
+      } else {
+        availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+      }
+    } else if (feature.displayType === 'newly-available' && feature.status?.baseline_high_date) {
+      const widelyFormattedDate = feature.status.baseline_high_date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      const widelyAvailableId = `feature-${feature.id}-widely-available`;
+      
+      if (feature.status.baseline === 'high') {
+        availabilityText = `Newly available since ${formattedDate}.<br>Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      } else if (feature.prediction) {
+        availabilityText = `🔮 Expected to become newly available on ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      } else {
+        availabilityText = `Newly available since ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      }
+    } else if (feature.displayType === 'widely-available') {
+      if (feature.prediction) {
+        availabilityText = `🔮 Expected to become widely available on ${formattedDate}.`;
+      } else {
+        availabilityText = `Widely available since ${formattedDate}.`;
+      }
+    }
+
+    if (availabilityText) {
+      availabilityHTML = `<div class="availability-info-text">${availabilityText}</div>`;
+    }
+  }
+
+  // Create browser support table
+  let browserTableHTML = '';
+  if (feature.shipDates && feature.shipDates.length > 0) {
+    const sortedShipDates = [...feature.shipDates].sort((a, b) => {
+      const baseA = a.browser.replace('_android', '').replace('_ios', '');
+      const baseB = b.browser.replace('_android', '').replace('_ios', '');
+      
+      if (baseA !== baseB) {
+        const browserOrder = ['chrome', 'edge', 'safari', 'firefox'];
+        return browserOrder.indexOf(baseA) - browserOrder.indexOf(baseB);
+      }
+      
+      const isPlatformA = a.browser.includes('_');
+      const isPlatformB = b.browser.includes('_');
+      
+      if (isPlatformA !== isPlatformB) {
+        return isPlatformA ? 1 : -1;
+      }
+      
+      if (isPlatformA && isPlatformB) {
+        const platformA = a.browser.split('_')[1];
+        const platformB = b.browser.split('_')[1];
+        return platformA.localeCompare(platformB);
+      }
+      
+      return 0;
+    });
+
+    let tableRows = '';
+    sortedShipDates.forEach(shipDate => {
+      const baseBrowser = shipDate.browser.replace('_android', '').replace('_ios', '');
+      let displayName = baseBrowser.charAt(0).toUpperCase() + baseBrowser.slice(1);
+      let fullText = displayName + ' ' + shipDate.version;
+      
+      if (shipDate.browser.includes('_')) {
+        const platform = shipDate.browser.split('_')[1];
+        if (platform.toLowerCase() === 'ios') {
+          fullText += ' (iOS)';
+        } else {
+          fullText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
+        }
+      }
+      
+      const dateText = (shipDate.date && !shipDate.isPreview) ? 
+        shipDate.date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric'
+        }) : 'TBD';
+      
+      tableRows += `
+        <tr>
+          <td>
+            <div class="browser-cell">
+              <img src="images/${baseBrowser}.svg" alt="${baseBrowser} logo" class="browser-logo">
+              <span>${escapeHtml(fullText)}</span>
+            </div>
+          </td>
+          <td class="date-cell">${dateText}</td>
+        </tr>
+      `;
+    });
+
+    browserTableHTML = `
+      <div class="browser-support-table-container">
+        <table class="browser-support-table">
+          <thead>
+            <tr>
+              <th>Browser Version</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
 
   let descriptionHTML = '';
   if (feature.description_html) {
     descriptionHTML = `<div class="feature-description">${feature.description_html}</div>`;
   } else if (feature.description) {
-    descriptionHTML = `<div class="feature-description">${feature.description}</div>`;
+    descriptionHTML = `<div class="feature-description">${escapeHtml(feature.description)}</div>`;
   }
 
   let linksHTML = '';
@@ -261,6 +401,8 @@ function createFeatureHeader(feature, uniqueCardId) {
       </div>
       <div class="feature-details" id="details-${uniqueCardId}" style="display: none;">
         ${descriptionHTML}
+        ${availabilityHTML}
+        ${browserTableHTML}
         <div class="feature-links">${linksHTML}</div>
       </div>
     </div>
