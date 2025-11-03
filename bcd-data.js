@@ -10291,6 +10291,26 @@ export const bcdKeys = {
       "https://w3c.github.io/uievents/#event-type-input"
     ]
   },
+  "api.File.webkitRelativePath": {
+    "parent_feature": "input-file-webkitdirectory",
+    "parent_feature_name": "<input type=\"file\" webkitdirectory>",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "support": {
+        "chrome": "13",
+        "chrome_android": "18",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "11.3"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
+    ]
+  },
   "api.IntersectionObserver.scrollMargin": {
     "parent_feature": "intersection-observer",
     "parent_feature_name": "Intersection observer",

@@ -20067,7 +20067,7 @@ export const features = {
     }
   },
   "caret-shape": {
-    "description_html": "The <code>caret-shape</code> CSS property controls the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
+    "description_html": "The <code>caret-shape</code> CSS property sets the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
     "kind": "feature",
     "name": "caret-shape",
     "spec": [
@@ -22673,7 +22673,7 @@ export const features = {
     "kind": "feature",
     "name": "Compression Dictionary Transport",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc9842"
+      "https://httpwg.org/specs/rfc9842.html"
     ],
     "status": {
       "baseline": false,
@@ -68372,20 +68372,6 @@ export const features = {
             "safari_ios": "10.3"
           }
         },
-        "api.HTMLInputElement.multiple": {
-          "baseline": "high",
-          "baseline_high_date": "2018-01-29",
-          "baseline_low_date": "2015-07-29",
-          "support": {
-            "chrome": "2",
-            "chrome_android": "18",
-            "edge": "12",
-            "firefox": "3.6",
-            "firefox_android": "4",
-            "safari": "4",
-            "safari_ios": "3.2"
-          }
-        },
         "api.HTMLInputElement.name": {
           "baseline": "high",
           "baseline_high_date": "2018-01-29",
@@ -68804,20 +68790,6 @@ export const features = {
             "firefox_android": "51",
             "safari": "10.1",
             "safari_ios": "10.3"
-          }
-        },
-        "html.elements.input.multiple": {
-          "baseline": "high",
-          "baseline_high_date": "2018-01-29",
-          "baseline_low_date": "2015-07-29",
-          "support": {
-            "chrome": "2",
-            "chrome_android": "18",
-            "edge": "12",
-            "firefox": "3.6",
-            "firefox_android": "4",
-            "safari": "4",
-            "safari_ios": "3.2"
           }
         },
         "html.elements.input.name": {
@@ -69499,6 +69471,118 @@ export const features = {
         "firefox_android": "4",
         "safari": "4",
         "safari_ios": "3"
+      }
+    }
+  },
+  "input-file-multiple": {
+    "description_html": "The <code>&#x3C;input type=\"file\" multiple></code> HTML element shows a file picker from which users can choose one or more files to upload with a form.",
+    "kind": "feature",
+    "name": "<input type=\"file\" multiple>",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "by_compat_key": {
+        "api.HTMLInputElement.multiple": {
+          "baseline": "high",
+          "baseline_high_date": "2018-01-29",
+          "baseline_low_date": "2015-07-29",
+          "support": {
+            "chrome": "2",
+            "chrome_android": "18",
+            "edge": "12",
+            "firefox": "3.6",
+            "firefox_android": "4",
+            "safari": "4",
+            "safari_ios": "3.2"
+          }
+        },
+        "api.HTMLInputElement.webkitEntries": {
+          "baseline": false,
+          "support": {
+            "chrome": "22",
+            "chrome_android": "25",
+            "edge": "79",
+            "firefox": "50",
+            "safari": "11.1",
+            "safari_ios": "11.3"
+          }
+        },
+        "html.elements.input.multiple": {
+          "baseline": "high",
+          "baseline_high_date": "2018-01-29",
+          "baseline_low_date": "2015-07-29",
+          "support": {
+            "chrome": "2",
+            "chrome_android": "18",
+            "edge": "12",
+            "firefox": "3.6",
+            "firefox_android": "4",
+            "safari": "4",
+            "safari_ios": "3.2"
+          }
+        }
+      },
+      "support": {
+        "chrome": "2",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "3.6",
+        "firefox_android": "4",
+        "safari": "4",
+        "safari_ios": "3.2"
+      }
+    }
+  },
+  "input-file-webkitdirectory": {
+    "description_html": "The <code>&#x3C;input type=\"file\" webkitdirectory></code> HTML element shows a file picker from which users can choose a folder to upload with the form.",
+    "kind": "feature",
+    "name": "<input type=\"file\" webkitdirectory>",
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "by_compat_key": {
+        "api.File.webkitRelativePath": {
+          "baseline": "low",
+          "baseline_low_date": "2025-08-19",
+          "support": {
+            "chrome": "13",
+            "chrome_android": "18",
+            "edge": "13",
+            "firefox": "50",
+            "firefox_android": "142",
+            "safari": "11.1",
+            "safari_ios": "11.3"
+          }
+        },
+        "html.elements.input.webkitdirectory": {
+          "baseline": "low",
+          "baseline_low_date": "2025-07-22",
+          "support": {
+            "chrome": "7",
+            "chrome_android": "132",
+            "edge": "13",
+            "firefox": "50",
+            "firefox_android": "141",
+            "safari": "11.1",
+            "safari_ios": "18.4"
+          }
+        }
+      },
+      "support": {
+        "chrome": "13",
+        "chrome_android": "132",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -97892,6 +97976,10 @@ export const features = {
     }
   },
   "open-closed": {
+    "kind": "moved",
+    "redirect_target": "open-pseudo"
+  },
+  "open-pseudo": {
     "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details></code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
     "kind": "feature",
     "name": ":open",
@@ -108794,6 +108882,19 @@ export const features = {
         "chrome_android": "137",
         "edge": "137"
       }
+    }
+  },
+  "referencetarget": {
+    "description_html": "The <code>referenceTarget</code> property of a <code>ShadowRoot</code> object forwards attributes such as <code>for</code> and <code>aria-labelledby</code> to elements inside a shadow DOM. You can use this to, for example, link a <code>&#x3C;label></code> to its <code>&#x3C;input></code> even if the <code>&#x3C;input></code> is in the shadow DOM of a web component.",
+    "kind": "feature",
+    "name": "Reference target",
+    "spec": [
+      "https://github.com/whatwg/dom/pull/1353",
+      "https://github.com/whatwg/html/pull/10995"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "referrer-policy": {
@@ -123292,7 +123393,7 @@ export const features = {
     ]
   },
   "sizes-auto": {
-    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element determines the layout size for the image based on computed layout size when choosing a source from the <code>srcset</code>. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
+    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element sets the layout size for the image based on the computed layout size when choosing a source from the <code>srcset</code>. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
     "kind": "feature",
     "name": "<img sizes=\"auto\" loading=\"lazy\">",
     "spec": [
@@ -125147,7 +125248,7 @@ export const features = {
     "kind": "feature",
     "name": "Speculation rules",
     "spec": [
-      "https://github.com/whatwg/html/pull/11426",
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
       "https://wicg.github.io/nav-speculation/prerendering.html"
     ],
     "status": {
@@ -129757,6 +129858,18 @@ export const features = {
         "safari": "9",
         "safari_ios": "9"
       }
+    }
+  },
+  "supports-at-rule": {
+    "description_html": "The <code>at-rule()</code> function, when used with <code>@supports</code>, checks if a CSS at-rule is supported. For example <code>@supports at-rule(@starting-style)</code> checks if the <code>@starting-style</code> at-rule is supported.",
+    "kind": "feature",
+    "name": "at-rule()",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "supports-compat": {
@@ -151609,9 +151722,7 @@ export const features = {
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2024-03-20",
-      "baseline_low_date": "2021-09-20",
+      "baseline": false,
       "by_compat_key": {
         "javascript.operators.await.top_level": {
           "baseline": false,
@@ -151629,9 +151740,7 @@ export const features = {
         "chrome_android": "89",
         "edge": "89",
         "firefox": "89",
-        "firefox_android": "89",
-        "safari": "15",
-        "safari_ios": "15"
+        "firefox_android": "89"
       }
     }
   },
