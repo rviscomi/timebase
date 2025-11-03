@@ -149,7 +149,8 @@ function createBcdKeyHeader(bcdKey, uniqueCardId) {
   if (bcdKey.spec) {
     linksHTML += `<a href="${bcdKey.spec}" class="spec-link" target="_blank">Specification</a>`;
   }
-  linksHTML += `<a href="https://webstatus.dev/features/${bcdKey.id}" class="webstatus-link" target="_blank">Web Status</a>`;
+  linksHTML += `<a href="https://webstatus.dev/features/${bcdKey.parent_feature}" class="webstatus-link" target="_blank">Web Status</a>`;
+  linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${bcdKey.parent_feature}/" class="web-platform-dx-link" target="_blank">Web Features Explorer</a>`;
   if (bcdKey.mdn) {
     const mdnEntry = bcdKey.mdn[0];
     linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;

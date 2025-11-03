@@ -107,12 +107,19 @@ function processBcdKeys() {
     });
   });
 
+  // Filter to only include entries within the date range
+  const currentDate = new Date();
+  const startDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 3, 1);
+  const endDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 4, 0);
+  endDate.setHours(23, 59, 59, 999);
+
   return processedKeys
     .filter(key => {
       if (!key || !key.date || isNaN(key.date)) {
         return false;
       }
-      return true;
+      // Only include entries with dates in the target range
+      return key.date >= startDate && key.date <= endDate;
     })
     .sort((a, b) => b.date - a.date);
 }
