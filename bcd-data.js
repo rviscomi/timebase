@@ -572,8 +572,12 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "null",
+        "date": "2026-01-13",
         "version": "144"
+      },
+      {
+        "date": "null",
+        "version": "145"
       },
       {
         "date": "null",
@@ -1061,8 +1065,12 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "null",
+        "date": "2026-01-13",
         "version": "144"
+      },
+      {
+        "date": "null",
+        "version": "145"
       }
     ]
   },
@@ -8562,6 +8570,7 @@ export const bcdKeys = {
         "chrome": "86",
         "chrome_android": "86",
         "edge": "86",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -8587,6 +8596,7 @@ export const bcdKeys = {
         "chrome": "86",
         "chrome_android": "86",
         "edge": "86",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -8856,6 +8866,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-prop"
+    ]
+  },
+  "css.properties.font-language-override": {
+    "parent_feature": "font-language-override",
+    "parent_feature_name": "font-language-override",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "34",
+        "firefox_android": "34"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-language-override-prop"
     ]
   },
   "api.FontFace.variationSettings": {
@@ -10015,6 +10042,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.Window.gamepadconnected_event": {
+    "parent_feature": "gamepad",
+    "parent_feature_name": "Gamepad",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-04",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/gamepad/"
+    ]
+  },
+  "api.Window.gamepaddisconnected_event": {
+    "parent_feature": "gamepad",
+    "parent_feature_name": "Gamepad",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-04",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/gamepad/"
     ]
   },
   "api.IDBIndex.getAllRecords": {
@@ -16633,6 +16700,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16650,6 +16718,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16667,6 +16736,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16684,6 +16754,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16700,6 +16771,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "83",
         "chrome_android": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16717,6 +16789,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -16972,6 +17045,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17057,6 +17131,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17074,6 +17149,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17142,6 +17218,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17159,6 +17236,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17176,6 +17254,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17188,11 +17267,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-11-11",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "145",
+        "firefox_android": "145",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -17210,6 +17292,7 @@ export const bcdKeys = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }

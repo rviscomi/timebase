@@ -231,6 +231,7 @@ body {
     margin-right: 1rem;
     display: flex;
     align-items: center;
+    word-break: break-word;
 }
 
 .feature-type {

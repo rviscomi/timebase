@@ -152,6 +152,10 @@ async function build() {
     .replace('<h1>Baseline Timeline</h1>', '<h1>Baseline Timeline - BCD Keys</h1>')
     .replace('<p>Timeline of web features and browser support</p>', '<p>Timeline of BCD keys and browser support</p>')
     .replace('<meta name="description" content="Timeline of web features and browser support">', '<meta name="description" content="Timeline of BCD keys and browser support">')
+    // Remove calendar buttons
+    .replace(/<button id="download-ical-top"[^>]*>[\s\S]*?<\/button>/g, '')
+    .replace(/<button id="download-ical-bottom"[^>]*>[\s\S]*?<\/button>/g, '')
+    .replace(/<p>Add web features timeline to your calendar<\/p>/g, '')
     // Update paths to reference parent directory for shared assets
     .replace(/href="styles\.css"/g, 'href="../styles.css"')
     .replace(/href="developer-signals\.css"/g, 'href="../developer-signals.css"')

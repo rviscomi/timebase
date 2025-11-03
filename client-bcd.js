@@ -1,5 +1,4 @@
 import { browsers, bcdKeys } from './bcd-data.js';
-import { downloadICal } from '../ical-generator.js';
 import developerSignalsData from '../developer-signals.json' with { type: "json" };
 import interopData from '../interop.json' with { type: "json" };
 import mdnDocsData from '../mdn.json' with { type: "json" };
@@ -12,7 +11,6 @@ class BcdTimelineApp {
     this.interopData = interopData;
     this.mdnDocs = mdnDocsData;
     this.bcdKeys = this.processBcdKeys();
-    this.selectedKeys = new Set();
     this.allKeys = [...this.bcdKeys];
     this.currentStatusFilter = null;
     this.scrollFAB = null;
@@ -339,21 +337,6 @@ class BcdTimelineApp {
   }
 
   initEventListeners() {
-    const downloadTopBtn = document.getElementById('download-ical-top');
-    const downloadBottomBtn = document.getElementById('download-ical-bottom');
-
-    if (downloadTopBtn) {
-      downloadTopBtn.addEventListener('click', () => {
-        downloadICal(this.getSelectedKeys());
-      });
-    }
-
-    if (downloadBottomBtn) {
-      downloadBottomBtn.addEventListener('click', () => {
-        downloadICal(this.getSelectedKeys());
-      });
-    }
-
     this.initShortcutsDialog();
 
     document.addEventListener('keydown', (e) => {
@@ -725,67 +708,6 @@ class BcdTimelineApp {
 
     this.scrollObserver = observer;
     observer.observe(currentMonthElement);
-  }
-
-  toggleKeySelection(key) {
-    const keyId = `${key.id}-${key.displayType}`;
-    if (this.selectedKeys.has(keyId)) {
-      this.selectedKeys.delete(keyId);
-    } else {
-      this.selectedKeys.add(keyId);
-    }
-    this.updateSelectionUI();
-  }
-
-  isKeySelected(key) {
-    const keyId = `${key.id}-${key.displayType}`;
-    return this.selectedKeys.has(keyId);
-  }
-
-  updateSelectionUI() {
-    document.querySelectorAll('.feature-card').forEach(card => {
-      const key = card.bcdKeyData;
-      if (key) {
-        if (this.isKeySelected(key)) {
-          card.classList.add('selected');
-        } else {
-          card.classList.remove('selected');
-        }
-      }
-    });
-
-    const selectedCount = this.selectedKeys.size;
-    const downloadButtons = document.querySelectorAll('.download-btn');
-    downloadButtons.forEach(btn => {
-      if (selectedCount === 0) {
-        btn.innerHTML = '📅 Download ICS Calendar';
-      } else {
-        btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
-      }
-    });
-
-    document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
-      const card = btn.closest('.feature-card');
-      if (card && card.bcdKeyData) {
-        const key = card.bcdKeyData;
-        if (this.isKeySelected(key)) {
-          btn.innerHTML = '✅ Remove from Calendar';
-        } else {
-          btn.innerHTML = '📅 Add to Calendar';
-        }
-      }
-    });
-  }
-
-  getSelectedKeys() {
-    if (this.selectedKeys.size === 0) {
-      return this.bcdKeys;
-    }
-
-    return this.bcdKeys.filter(key => {
-      const keyId = `${key.id}-${key.displayType}`;
-      return this.selectedKeys.has(keyId);
-    });
   }
 
   filterFeaturesByType(type) {

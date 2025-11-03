@@ -572,8 +572,12 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "null",
+        "date": "2026-01-13",
         "version": "144"
+      },
+      {
+        "date": "null",
+        "version": "145"
       },
       {
         "date": "null",
@@ -1061,8 +1065,12 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "null",
+        "date": "2026-01-13",
         "version": "144"
+      },
+      {
+        "date": "null",
+        "version": "145"
       }
     ]
   },
@@ -12546,13 +12554,17 @@ export const features = {
           "baseline": false,
           "support": {
             "firefox": "136",
-            "firefox_android": "136"
+            "firefox_android": "136",
+            "safari": "14.1",
+            "safari_ios": "14.5"
           }
         }
       },
       "support": {
         "firefox": "136",
-        "firefox_android": "136"
+        "firefox_android": "136",
+        "safari": "14.1",
+        "safari_ios": "14.5"
       }
     }
   },
@@ -22775,6 +22787,13 @@ export const features = {
             "safari_ios": "16.4"
           }
         },
+        "api.CompressionStream.CompressionStream.brotli": {
+          "baseline": false,
+          "support": {
+            "safari": "18.4",
+            "safari_ios": "18.4"
+          }
+        },
         "api.CompressionStream.CompressionStream.deflate": {
           "baseline": "low",
           "baseline_low_date": "2023-05-09",
@@ -22864,6 +22883,13 @@ export const features = {
             "firefox_android": "113",
             "safari": "16.4",
             "safari_ios": "16.4"
+          }
+        },
+        "api.DecompressionStream.DecompressionStream.brotli": {
+          "baseline": false,
+          "support": {
+            "safari": "18.4",
+            "safari_ios": "18.4"
           }
         },
         "api.DecompressionStream.DecompressionStream.deflate": {
@@ -36070,6 +36096,7 @@ export const features = {
             "chrome": "86",
             "chrome_android": "86",
             "edge": "86",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -36092,6 +36119,7 @@ export const features = {
             "chrome": "86",
             "chrome_android": "86",
             "edge": "86",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -51971,12 +51999,18 @@ export const features = {
         "css.properties.font-language-override": {
           "baseline": false,
           "support": {
+            "chrome": "143",
+            "chrome_android": "143",
+            "edge": "143",
             "firefox": "34",
             "firefox_android": "34"
           }
         }
       },
       "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
         "firefox": "34",
         "firefox_android": "34"
       }
@@ -57530,8 +57564,12 @@ export const features = {
           }
         },
         "api.Window.gamepadconnected_event": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-04",
           "support": {
+            "chrome": "143",
+            "chrome_android": "143",
+            "edge": "143",
             "firefox": "89",
             "firefox_android": "89",
             "safari": "16",
@@ -57539,8 +57577,12 @@ export const features = {
           }
         },
         "api.Window.gamepaddisconnected_event": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-04",
           "support": {
+            "chrome": "143",
+            "chrome_android": "143",
+            "edge": "143",
             "firefox": "89",
             "firefox_android": "89",
             "safari": "16",
@@ -60516,18 +60558,12 @@ export const features = {
         "css.selectors.has-slotted": {
           "baseline": false,
           "support": {
-            "chrome": "134",
-            "chrome_android": "134",
-            "edge": "134",
             "firefox": "136",
             "firefox_android": "136"
           }
         }
       },
       "support": {
-        "chrome": "134",
-        "chrome_android": "134",
-        "edge": "134",
         "firefox": "136",
         "firefox_android": "136"
       }
@@ -153726,6 +153762,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153736,6 +153773,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153746,6 +153784,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153756,6 +153795,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153765,6 +153805,7 @@ export const features = {
           "support": {
             "chrome": "83",
             "chrome_android": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153775,6 +153816,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153925,6 +153967,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153975,6 +154018,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -153985,6 +154029,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -154025,6 +154070,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -154035,6 +154081,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -154045,16 +154092,20 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
         },
         "http.headers.Content-Security-Policy.require-trusted-types-for": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-11-11",
           "support": {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "145",
+            "firefox_android": "145",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -154065,6 +154116,7 @@ export const features = {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -154074,6 +154126,7 @@ export const features = {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
