@@ -1354,7 +1354,7 @@ export const browsers = {
         "version": "141"
       },
       {
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "version": "142"
       },
       {
@@ -1364,6 +1364,10 @@ export const browsers = {
       {
         "date": "2026-01-15",
         "version": "144"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "145"
       }
     ]
   },
@@ -2725,8 +2729,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       },
       {
         "date": "null",
@@ -2942,8 +2950,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       }
     ]
   }
@@ -31895,6 +31907,18 @@ export const features = {
       }
     }
   },
+  "custom-media-queries": {
+    "description_html": "The <code>@custom-media</code> CSS at-rule names a media query, which you can reuse in multiple <code>@media</code> rules.",
+    "kind": "feature",
+    "name": "Custom media queries",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#custom-mq"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "custom-properties": {
     "description_html": "Custom properties are CSS properties prefixed with <code>--</code> that set values you can reuse with the <code>var()</code> function. For example, you can set a <code>--key-color</code> property to reuse as <code>border-color: var(--key-color)</code>. Also known as CSS variables.",
     "kind": "feature",
@@ -31968,9 +31992,9 @@ export const features = {
         "css.selectors.checkmark": {
           "baseline": false,
           "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135"
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
           }
         },
         "css.selectors.picker": {
@@ -31984,9 +32008,9 @@ export const features = {
         "css.selectors.picker-icon": {
           "baseline": false,
           "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135"
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
           }
         },
         "html.elements.selectedcontent": {
@@ -68150,7 +68174,8 @@ export const features = {
           }
         },
         "api.HTMLInputElement.cancel_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-05",
           "baseline_low_date": "2023-05-05",
           "support": {
             "chrome": "113",
@@ -108884,6 +108909,56 @@ export const features = {
       }
     }
   },
+  "rect-xywx": {
+    "description_html": "The <code>rect()</code> CSS function creates a rectangle shape with insets from the edges of an element. The <code>xywh()</code> CSS function creates a rectangle shifted by an <code>x</code> and <code>y</code> distance. They can be used with <code>clip-path</code> and <code>shape-outside</code>.",
+    "kind": "feature",
+    "name": "rect() and xywh()",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-xywh",
+      "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-01-23",
+      "by_compat_key": {
+        "css.types.basic-shape.rect": {
+          "baseline": "low",
+          "baseline_low_date": "2024-01-23",
+          "support": {
+            "chrome": "119",
+            "chrome_android": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "122",
+            "safari": "17.2",
+            "safari_ios": "17.2"
+          }
+        },
+        "css.types.basic-shape.xywh": {
+          "baseline": "low",
+          "baseline_low_date": "2024-01-23",
+          "support": {
+            "chrome": "119",
+            "chrome_android": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "122",
+            "safari": "17.2",
+            "safari_ios": "17.2"
+          }
+        }
+      },
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    }
+  },
   "referencetarget": {
     "description_html": "The <code>referenceTarget</code> property of a <code>ShadowRoot</code> object forwards attributes such as <code>for</code> and <code>aria-labelledby</code> to elements inside a shadow DOM. You can use this to, for example, link a <code>&#x3C;label></code> to its <code>&#x3C;input></code> even if the <code>&#x3C;input></code> is in the shadow DOM of a web component.",
     "kind": "feature",
@@ -122133,6 +122208,38 @@ export const features = {
       }
     }
   },
+  "shape-function": {
+    "description_html": "The <code>shape()</code> CSS function creates shapes with a series of commands like <code>line</code>, <code>move</code>, and <code>curve</code>. It can be used with <code>clip-path</code> and <code>shape-outside</code>.",
+    "kind": "feature",
+    "name": "shape()",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#shape-function"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.types.basic-shape.shape": {
+          "baseline": false,
+          "support": {
+            "chrome": "135",
+            "chrome_android": "135",
+            "edge": "135",
+            "firefox": "preview",
+            "safari": "18.4",
+            "safari_ios": "18.4"
+          }
+        }
+      },
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "preview",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    }
+  },
   "shape-outside": {
     "description_html": "The <code>shape-outside</code> CSS property, along with <code>shape-margin</code> and <code>shape-image-threshold</code>, sets the shape around which adjacent content will wrap.",
     "kind": "feature",
@@ -122298,7 +122405,7 @@ export const features = {
     }
   },
   "shapes": {
-    "description_html": "The <code>circle()</code>, <code>ellipse()</code>, <code>inset()</code>, <code>polygon()</code>, <code>rect()</code>, and <code>xywh()</code> CSS shape functions create shapes for use with <code>clip-path</code> and <code>shape-outside</code>.",
+    "description_html": "The <code>circle()</code>, <code>ellipse()</code>, <code>inset()</code>, and <code>polygon()</code> CSS shape functions create shapes for use with <code>clip-path</code> and <code>shape-outside</code>.",
     "kind": "feature",
     "name": "shapes",
     "spec": [
@@ -122391,43 +122498,6 @@ export const features = {
             "firefox_android": "54",
             "safari": "10.1",
             "safari_ios": "10.3"
-          }
-        },
-        "css.types.basic-shape.rect": {
-          "baseline": "low",
-          "baseline_low_date": "2024-01-23",
-          "support": {
-            "chrome": "119",
-            "chrome_android": "119",
-            "edge": "119",
-            "firefox": "122",
-            "firefox_android": "122",
-            "safari": "17.2",
-            "safari_ios": "17.2"
-          }
-        },
-        "css.types.basic-shape.shape": {
-          "baseline": false,
-          "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135",
-            "firefox": "preview",
-            "safari": "18.4",
-            "safari_ios": "18.4"
-          }
-        },
-        "css.types.basic-shape.xywh": {
-          "baseline": "low",
-          "baseline_low_date": "2024-01-23",
-          "support": {
-            "chrome": "119",
-            "chrome_android": "119",
-            "edge": "119",
-            "firefox": "122",
-            "firefox_android": "122",
-            "safari": "17.2",
-            "safari_ios": "17.2"
           }
         }
       },

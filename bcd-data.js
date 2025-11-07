@@ -1354,7 +1354,7 @@ export const browsers = {
         "version": "141"
       },
       {
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "version": "142"
       },
       {
@@ -1364,6 +1364,10 @@ export const browsers = {
       {
         "date": "2026-01-15",
         "version": "144"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "145"
       }
     ]
   },
@@ -2725,8 +2729,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       },
       {
         "date": "null",
@@ -2942,8 +2950,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       }
     ]
   }
@@ -10254,7 +10266,8 @@ export const bcdKeys = {
     "parent_feature": "input",
     "parent_feature_name": "<input>",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-05",
       "baseline_low_date": "2023-05-05",
       "support": {
         "chrome": "113",
