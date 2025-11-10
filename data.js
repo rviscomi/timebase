@@ -11585,42 +11585,66 @@ export const features = {
         },
         "css.types.attr.type-or-unit.angle": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.color": {
           "baseline": false,
-          "support": {}
-        },
-        "css.types.attr.type-or-unit.frequency": {
-          "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.integer": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.length": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.number": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.percentage": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.time": {
           "baseline": false,
-          "support": {}
-        },
-        "css.types.attr.type-or-unit.url": {
-          "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         }
       },
-      "support": {}
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133"
+      }
     }
   },
   "attr-contents": {
@@ -76051,6 +76075,40 @@ export const features = {
       }
     }
   },
+  "justify-self-block": {
+    "description_html": "The <code>justify-self</code> CSS property aligns an item along a container's inline axis in block layouts, like it does in grid layouts. Likewise, the <code>justify-items</code> property sets a default <code>justify-self</code> value for all items in a container in a block layout.",
+    "kind": "feature",
+    "name": "justify-self in block layouts",
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#justify-block"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.properties.justify-items.block_context": {
+          "baseline": false,
+          "support": {
+            "chrome": "130",
+            "chrome_android": "130",
+            "edge": "130"
+          }
+        },
+        "css.properties.justify-self.block_context": {
+          "baseline": false,
+          "support": {
+            "chrome": "130",
+            "chrome_android": "130",
+            "edge": "130"
+          }
+        }
+      },
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130"
+      }
+    }
+  },
   "kbd": {
     "description_html": "The <code>&#x3C;kbd></code> element represents textual user input, such as keyboard or voice input, styling text in monospaced type by default.",
     "kind": "feature",
@@ -106910,6 +106968,32 @@ export const features = {
       }
     }
   },
+  "progress-function": {
+    "description_html": "The <code>progress()</code> CSS function returns a ratio for the relative position of one value between two other values, clamped between 0 and 1. You can use it to interpolate a value for other calculations.",
+    "kind": "feature",
+    "name": "progress()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#progress"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.types.progress": {
+          "baseline": false,
+          "support": {
+            "chrome": "138",
+            "chrome_android": "138",
+            "edge": "138"
+          }
+        }
+      },
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138"
+      }
+    }
+  },
   "promise": {
     "description_html": "A promise represents an asynchronous operation which eventually succeeds or fails.",
     "kind": "feature",
@@ -113962,11 +114046,14 @@ export const features = {
           }
         },
         "css.at-rules.scope": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-09",
           "support": {
             "chrome": "118",
             "chrome_android": "118",
             "edge": "118",
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "17.4",
             "safari_ios": "17.4"
           }
@@ -117969,7 +118056,9 @@ export const features = {
         },
         "html.elements.select.hr_in_select": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "firefox_android": "145"
+          }
         },
         "html.elements.select.multiple": {
           "baseline": "high",
@@ -176748,12 +176837,10 @@ export const features = {
             "safari_ios": "26"
           }
         },
-        "api.GPUAdapter.requestDevice.lost_device_on_duplicate": {
+        "api.GPUAdapter.requestDevice.handles_duplicate_calls": {
           "baseline": false,
           "support": {
-            "chrome_android": "121",
-            "safari": "26",
-            "safari_ios": "26"
+            "chrome_android": "140"
           }
         },
         "api.GPUAdapterInfo": {

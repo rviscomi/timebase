@@ -47,16 +47,16 @@
   ],
   "abs-sign": [
     {
-      "slug": "Web/CSS/abs",
+      "slug": "Web/CSS/Reference/Values/abs",
       "title": "abs()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/abs"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/abs"
     },
     {
-      "slug": "Web/CSS/sign",
+      "slug": "Web/CSS/Reference/Values/sign",
       "title": "sign()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/sign"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/sign"
     }
   ],
   "absolute-positioning": [
@@ -195,10 +195,10 @@
   ],
   "anchor-positioning": [
     {
-      "slug": "Web/CSS/CSS_anchor_positioning",
+      "slug": "Web/CSS/Guides/Anchor_positioning",
       "title": "CSS anchor positioning",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_anchor_positioning"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Anchor_positioning"
     }
   ],
   "angle-instanced-arrays": [
@@ -587,18 +587,18 @@
   ],
   "attr": [
     {
-      "slug": "Web/CSS/attr",
+      "slug": "Web/CSS/Reference/Values/attr",
       "title": "attr()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/attr"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/attr"
     }
   ],
   "attr-contents": [
     {
-      "slug": "Web/CSS/attr",
+      "slug": "Web/CSS/Reference/Values/attr",
       "title": "attr()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/attr"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/attr"
     }
   ],
   "attribution-reporting": [
@@ -1085,26 +1085,26 @@
   ],
   "calc": [
     {
-      "slug": "Web/CSS/calc",
+      "slug": "Web/CSS/Reference/Values/calc",
       "title": "calc()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/calc"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/calc"
     }
   ],
   "calc-constants": [
     {
-      "slug": "Web/CSS/calc-keyword",
+      "slug": "Web/CSS/Reference/Values/calc-keyword",
       "title": "<calc-keyword>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/calc-keyword"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/calc-keyword"
     }
   ],
   "calc-size": [
     {
-      "slug": "Web/CSS/calc-size",
+      "slug": "Web/CSS/Reference/Values/calc-size",
       "title": "calc-size()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/calc-size"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/calc-size"
     }
   ],
   "canvas": [
@@ -1201,10 +1201,10 @@
   ],
   "cap": [
     {
-      "slug": "Web/CSS/length#cap",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "cap",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#cap"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "capture-stream-audio-video": [
@@ -1257,10 +1257,10 @@
   ],
   "ch": [
     {
-      "slug": "Web/CSS/length#ch",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "ch",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#ch"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "change-event": [
@@ -1449,10 +1449,10 @@
   ],
   "color-function": [
     {
-      "slug": "Web/CSS/color_value/color",
+      "slug": "Web/CSS/Reference/Values/color_value/color",
       "title": "color()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/color"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/color"
     }
   ],
   "color-gamut": [
@@ -1465,10 +1465,10 @@
   ],
   "color-mix": [
     {
-      "slug": "Web/CSS/color_value/color-mix",
+      "slug": "Web/CSS/Reference/Values/color_value/color-mix",
       "title": "color-mix()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/color-mix"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/color-mix"
     }
   ],
   "color-scheme": [
@@ -1585,16 +1585,16 @@
   ],
   "conic-gradients": [
     {
-      "slug": "Web/CSS/gradient/conic-gradient",
+      "slug": "Web/CSS/Reference/Values/gradient/conic-gradient",
       "title": "conic-gradient()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/gradient/conic-gradient"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/gradient/conic-gradient"
     },
     {
-      "slug": "Web/CSS/gradient/repeating-conic-gradient",
+      "slug": "Web/CSS/Reference/Values/gradient/repeating-conic-gradient",
       "title": "repeating-conic-gradient()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/gradient/repeating-conic-gradient"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/gradient/repeating-conic-gradient"
     }
   ],
   "console": [
@@ -1687,18 +1687,18 @@
   ],
   "container-queries": [
     {
-      "slug": "Web/CSS/CSS_containment/Container_queries",
+      "slug": "Web/CSS/Guides/Containment/Container_queries",
       "title": "CSS container queries",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_containment/Container_queries"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries"
     }
   ],
   "container-scroll-state-queries": [
     {
-      "slug": "Web/CSS/CSS_conditional_rules/Container_scroll-state_queries",
+      "slug": "Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries",
       "title": "Using container scroll-state queries",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_conditional_rules/Container_scroll-state_queries"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries"
     }
   ],
   "container-style-queries": [
@@ -1765,10 +1765,10 @@
   ],
   "contrast-color": [
     {
-      "slug": "Web/CSS/color_value/contrast-color",
+      "slug": "Web/CSS/Reference/Values/color_value/contrast-color",
       "title": "contrast-color()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/contrast-color"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/contrast-color"
     }
   ],
   "controls-list": [
@@ -1897,10 +1897,10 @@
   ],
   "cross-fade": [
     {
-      "slug": "Web/CSS/cross-fade",
+      "slug": "Web/CSS/Reference/Values/cross-fade",
       "title": "cross-fade()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/cross-fade"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/cross-fade"
     }
   ],
   "csp": [
@@ -1973,18 +1973,18 @@
   ],
   "cubic-bezier-easing": [
     {
-      "slug": "Web/CSS/easing-function",
+      "slug": "Web/CSS/Reference/Values/easing-function",
       "title": "<easing-function>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/easing-function"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/easing-function"
     }
   ],
   "currentcolor": [
     {
-      "slug": "Web/CSS/color_value#currentcolor_keyword",
+      "slug": "Web/CSS/Reference/Values/color_value",
       "title": "<color>",
-      "anchor": "currentcolor_keyword",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value#currentcolor_keyword"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value"
     }
   ],
   "cursor": [
@@ -2297,10 +2297,10 @@
   ],
   "display-list-item": [
     {
-      "slug": "Web/CSS/display-listitem",
+      "slug": "Web/CSS/Reference/Values/display-listitem",
       "title": "<display-listitem>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/display-listitem"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/display-listitem"
     }
   ],
   "display-mode": [
@@ -2475,10 +2475,10 @@
   ],
   "element": [
     {
-      "slug": "Web/CSS/element",
+      "slug": "Web/CSS/Reference/Values/element",
       "title": "element()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/element"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/element"
     }
   ],
   "element-capture": [
@@ -2521,10 +2521,10 @@
   ],
   "em-unit": [
     {
-      "slug": "Web/CSS/length#em",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "em",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#em"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "embed": [
@@ -2585,10 +2585,10 @@
   ],
   "ex": [
     {
-      "slug": "Web/CSS/length#ex",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "ex",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#ex"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "execcommand": [
@@ -2601,34 +2601,34 @@
   ],
   "exp-functions": [
     {
-      "slug": "Web/CSS/pow",
+      "slug": "Web/CSS/Reference/Values/pow",
       "title": "pow()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/pow"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/pow"
     },
     {
-      "slug": "Web/CSS/sqrt",
+      "slug": "Web/CSS/Reference/Values/sqrt",
       "title": "sqrt()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/sqrt"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/sqrt"
     },
     {
-      "slug": "Web/CSS/hypot",
+      "slug": "Web/CSS/Reference/Values/hypot",
       "title": "hypot()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/hypot"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/hypot"
     },
     {
-      "slug": "Web/CSS/log",
+      "slug": "Web/CSS/Reference/Values/log",
       "title": "log()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/log"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/log"
     },
     {
-      "slug": "Web/CSS/exp",
+      "slug": "Web/CSS/Reference/Values/exp",
       "title": "exp()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/exp"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/exp"
     }
   ],
   "exponentiation": [
@@ -2973,18 +2973,18 @@
   ],
   "fit-content": [
     {
-      "slug": "Web/CSS/fit-content",
+      "slug": "Web/CSS/Reference/Values/fit-content",
       "title": "fit-content",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/fit-content"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/fit-content"
     }
   ],
   "fit-content-function": [
     {
-      "slug": "Web/CSS/fit-content_function",
+      "slug": "Web/CSS/Reference/Values/fit-content_function",
       "title": "fit-content()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/fit-content_function"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/fit-content_function"
     }
   ],
   "fixed-positioning": [
@@ -3565,32 +3565,32 @@
   ],
   "gradient-interpolation": [
     {
-      "slug": "Web/CSS/color-interpolation-method",
+      "slug": "Web/CSS/Reference/Values/color-interpolation-method",
       "title": "<color-interpolation-method>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color-interpolation-method"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color-interpolation-method"
     },
     {
-      "slug": "Web/CSS/hue-interpolation-method",
+      "slug": "Web/CSS/Reference/Values/hue-interpolation-method",
       "title": "<hue-interpolation-method>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/hue-interpolation-method"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/hue-interpolation-method"
     }
   ],
   "gradients": [
     {
-      "slug": "Web/CSS/CSS_images/Using_CSS_gradients",
+      "slug": "Web/CSS/Guides/Images/Using_gradients",
       "title": "Using CSS gradients",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_images/Using_CSS_gradients"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Images/Using_gradients"
     }
   ],
   "grid": [
     {
-      "slug": "Web/CSS/CSS_grid_layout",
+      "slug": "Web/CSS/Guides/Grid_layout",
       "title": "CSS grid layout",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Grid_layout"
     }
   ],
   "grid-animation": [
@@ -3757,10 +3757,10 @@
   ],
   "hsl": [
     {
-      "slug": "Web/CSS/color_value/hsl",
+      "slug": "Web/CSS/Reference/Values/color_value/hsl",
       "title": "hsl()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/hsl"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/hsl"
     }
   ],
   "hsts": [
@@ -3913,10 +3913,10 @@
   ],
   "hwb": [
     {
-      "slug": "Web/CSS/color_value/hwb",
+      "slug": "Web/CSS/Reference/Values/color_value/hwb",
       "title": "hwb()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/hwb"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/hwb"
     }
   ],
   "hyphenate-character": [
@@ -3953,10 +3953,10 @@
   ],
   "ic": [
     {
-      "slug": "Web/CSS/length#ic",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "ic",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#ic"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "idle-detection": [
@@ -4001,10 +4001,10 @@
   ],
   "image-function": [
     {
-      "slug": "Web/CSS/image/image",
+      "slug": "Web/CSS/Reference/Values/image/image",
       "title": "image()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/image/image"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/image/image"
     }
   ],
   "image-maps": [
@@ -4039,10 +4039,10 @@
   ],
   "image-set": [
     {
-      "slug": "Web/CSS/image/image-set",
+      "slug": "Web/CSS/Reference/Values/image/image-set",
       "title": "image-set()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/image/image-set"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/image/image-set"
     }
   ],
   "img": [
@@ -4095,22 +4095,22 @@
   ],
   "individual-transforms": [
     {
-      "slug": "Web/CSS/transform-function/translate",
+      "slug": "Web/CSS/Reference/Values/transform-function/translate",
       "title": "translate()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/transform-function/translate"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/transform-function/translate"
     },
     {
-      "slug": "Web/CSS/transform-function/rotate",
+      "slug": "Web/CSS/Reference/Values/transform-function/rotate",
       "title": "rotate()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/transform-function/rotate"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/transform-function/rotate"
     },
     {
-      "slug": "Web/CSS/transform-function/scale",
+      "slug": "Web/CSS/Reference/Values/transform-function/scale",
       "title": "scale()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/transform-function/scale"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/transform-function/scale"
     }
   ],
   "inert": [
@@ -4123,10 +4123,10 @@
   ],
   "inherit-value": [
     {
-      "slug": "Web/CSS/inherit",
+      "slug": "Web/CSS/Reference/Values/inherit",
       "title": "inherit",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/inherit"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/inherit"
     }
   ],
   "initial-letter": [
@@ -4139,10 +4139,10 @@
   ],
   "initial-value": [
     {
-      "slug": "Web/CSS/initial",
+      "slug": "Web/CSS/Reference/Values/initial",
       "title": "initial",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/initial"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/initial"
     }
   ],
   "ink": [
@@ -4647,16 +4647,16 @@
   ],
   "lab": [
     {
-      "slug": "Web/CSS/color_value/lab",
+      "slug": "Web/CSS/Reference/Values/color_value/lab",
       "title": "lab()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/lab"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/lab"
     },
     {
-      "slug": "Web/CSS/color_value/lch",
+      "slug": "Web/CSS/Reference/Values/color_value/lch",
       "title": "lch()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/lch"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/lch"
     }
   ],
   "label": [
@@ -4751,18 +4751,18 @@
   ],
   "lh": [
     {
-      "slug": "Web/CSS/length#lh",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "lh",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#lh"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "light-dark": [
     {
-      "slug": "Web/CSS/color_value/light-dark",
+      "slug": "Web/CSS/Reference/Values/color_value/light-dark",
       "title": "light-dark()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/light-dark"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/light-dark"
     }
   ],
   "line-break": [
@@ -4791,10 +4791,10 @@
   ],
   "linear-easing": [
     {
-      "slug": "Web/CSS/easing-function#linear",
+      "slug": "Web/CSS/Reference/Values/easing-function",
       "title": "<easing-function>",
-      "anchor": "linear",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/easing-function#linear"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/easing-function"
     }
   ],
   "link": [
@@ -4947,10 +4947,10 @@
   ],
   "logical-properties": [
     {
-      "slug": "Web/CSS/CSS_logical_properties_and_values",
+      "slug": "Web/CSS/Guides/Logical_properties_and_values",
       "title": "CSS logical properties and values",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_logical_properties_and_values"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Logical_properties_and_values"
     }
   ],
   "long-animation-frames": [
@@ -5067,10 +5067,10 @@
   ],
   "masonry": [
     {
-      "slug": "Web/CSS/CSS_grid_layout/Masonry_layout",
+      "slug": "Web/CSS/Guides/Grid_layout/Masonry_layout",
       "title": "Masonry layout",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Masonry_layout"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Grid_layout/Masonry_layout"
     }
   ],
   "matchmedia": [
@@ -5153,10 +5153,10 @@
   ],
   "media-query-range-syntax": [
     {
-      "slug": "Web/CSS/CSS_media_queries/Using_media_queries#syntax_improvements_in_level_4",
+      "slug": "Web/CSS/Guides/Media_queries/Using",
       "title": "Using media queries",
-      "anchor": "syntax_improvements_in_level_4",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries#syntax_improvements_in_level_4"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Media_queries/Using"
     }
   ],
   "media-session": [
@@ -5247,36 +5247,36 @@
   ],
   "min-max-clamp": [
     {
-      "slug": "Web/CSS/min",
+      "slug": "Web/CSS/Reference/Values/min",
       "title": "min()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/min"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/min"
     },
     {
-      "slug": "Web/CSS/max",
+      "slug": "Web/CSS/Reference/Values/max",
       "title": "max()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/max"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/max"
     },
     {
-      "slug": "Web/CSS/clamp",
+      "slug": "Web/CSS/Reference/Values/clamp",
       "title": "clamp()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/clamp"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/clamp"
     }
   ],
   "min-max-content": [
     {
-      "slug": "Web/CSS/min-content",
+      "slug": "Web/CSS/Reference/Values/min-content",
       "title": "min-content",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/min-content"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/min-content"
     },
     {
-      "slug": "Web/CSS/max-content",
+      "slug": "Web/CSS/Reference/Values/max-content",
       "title": "max-content",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/max-content"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/max-content"
     }
   ],
   "min-max-width-height": [
@@ -5399,10 +5399,10 @@
   ],
   "named-color": [
     {
-      "slug": "Web/CSS/named-color",
+      "slug": "Web/CSS/Reference/Values/named-color",
       "title": "<named-color>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/named-color"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/named-color"
     }
   ],
   "namespace": [
@@ -5687,16 +5687,16 @@
   ],
   "oklab": [
     {
-      "slug": "Web/CSS/color_value/oklab",
+      "slug": "Web/CSS/Reference/Values/color_value/oklab",
       "title": "oklab()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/oklab"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/oklab"
     },
     {
-      "slug": "Web/CSS/color_value/oklch",
+      "slug": "Web/CSS/Reference/Values/color_value/oklch",
       "title": "oklch()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/oklch"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/oklch"
     }
   ],
   "online": [
@@ -5819,10 +5819,10 @@
   ],
   "overflow-anchor": [
     {
-      "slug": "Web/CSS/CSS_scroll_anchoring/Scroll_anchoring",
+      "slug": "Web/CSS/Guides/Scroll_anchoring/Overview",
       "title": "Overview of scroll anchoring",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_scroll_anchoring/Scroll_anchoring"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_anchoring/Overview"
     },
     {
       "slug": "Web/CSS/Reference/Properties/overflow-anchor",
@@ -6067,10 +6067,10 @@
   ],
   "path-shape": [
     {
-      "slug": "Web/CSS/basic-shape/path",
+      "slug": "Web/CSS/Reference/Values/basic-shape/path",
       "title": "path()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/path"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/path"
     }
   ],
   "payment-handler": [
@@ -6461,10 +6461,10 @@
   ],
   "q-unit": [
     {
-      "slug": "Web/CSS/length#q",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "q",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#q"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "quotes": [
@@ -6477,18 +6477,18 @@
   ],
   "rcap": [
     {
-      "slug": "Web/CSS/length#rcap",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "rcap",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#rcap"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "rch": [
     {
-      "slug": "Web/CSS/length#rch",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "rch",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#rch"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "read-write-pseudos": [
@@ -6599,10 +6599,10 @@
   ],
   "relative-color": [
     {
-      "slug": "Web/CSS/CSS_colors/Relative_colors",
+      "slug": "Web/CSS/Guides/Colors/Using_relative_colors",
       "title": "Using relative colors",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_colors/Relative_colors"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Colors/Using_relative_colors"
     }
   ],
   "relative-positioning": [
@@ -6615,10 +6615,10 @@
   ],
   "rem": [
     {
-      "slug": "Web/CSS/length#rem",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "rem",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#rem"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "remote-playback": [
@@ -6721,10 +6721,10 @@
   ],
   "resolution": [
     {
-      "slug": "Web/CSS/resolution",
+      "slug": "Web/CSS/Reference/Values/resolution",
       "title": "<resolution>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/resolution"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/resolution"
     },
     {
       "slug": "Web/CSS/Reference/At-rules/@media/resolution",
@@ -6783,32 +6783,32 @@
   ],
   "revert-value": [
     {
-      "slug": "Web/CSS/revert",
+      "slug": "Web/CSS/Reference/Values/revert",
       "title": "revert",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/revert"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/revert"
     }
   ],
   "rex": [
     {
-      "slug": "Web/CSS/length#rex",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "rex",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#rex"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "rgb": [
     {
-      "slug": "Web/CSS/color_value/rgb",
+      "slug": "Web/CSS/Reference/Values/color_value/rgb",
       "title": "rgb()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/color_value/rgb"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/color_value/rgb"
     },
     {
-      "slug": "Web/CSS/hex-color",
+      "slug": "Web/CSS/Reference/Values/hex-color",
       "title": "<hex-color>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/hex-color"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/hex-color"
     }
   ],
   "rhythmic-sizing": [
@@ -6821,18 +6821,18 @@
   ],
   "ric": [
     {
-      "slug": "Web/CSS/length#ric",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "ric",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#ric"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "rlh": [
     {
-      "slug": "Web/CSS/length#rlh",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "rlh",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#rlh"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "root": [
@@ -6845,22 +6845,22 @@
   ],
   "round-mod-rem": [
     {
-      "slug": "Web/CSS/mod",
+      "slug": "Web/CSS/Reference/Values/mod",
       "title": "mod()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/mod"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/mod"
     },
     {
-      "slug": "Web/CSS/rem",
+      "slug": "Web/CSS/Reference/Values/rem",
       "title": "rem()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/rem"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/rem"
     },
     {
-      "slug": "Web/CSS/round",
+      "slug": "Web/CSS/Reference/Values/round",
       "title": "round()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/round"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/round"
     }
   ],
   "ruby": [
@@ -6897,10 +6897,10 @@
   ],
   "safe-area-inset": [
     {
-      "slug": "Web/CSS/env",
+      "slug": "Web/CSS/Reference/Values/env",
       "title": "env()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/env"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/env"
     }
   ],
   "samp": [
@@ -7023,10 +7023,10 @@
   ],
   "scroll-driven-animations": [
     {
-      "slug": "Web/CSS/CSS_scroll-driven_animations",
+      "slug": "Web/CSS/Guides/Scroll-driven_animations",
       "title": "CSS scroll-driven animations",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_scroll-driven_animations"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll-driven_animations"
     }
   ],
   "scroll-elements": [
@@ -7059,10 +7059,10 @@
   ],
   "scroll-snap": [
     {
-      "slug": "Web/CSS/CSS_scroll_snap",
+      "slug": "Web/CSS/Guides/Scroll_snap",
       "title": "CSS scroll snap",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_scroll_snap"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_snap"
     }
   ],
   "scroll-snap-events": [
@@ -7169,10 +7169,10 @@
   ],
   "selectors": [
     {
-      "slug": "Web/CSS/CSS_selectors",
+      "slug": "Web/CSS/Guides/Selectors",
       "title": "CSS selectors",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_selectors"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Selectors"
     }
   ],
   "serial": [
@@ -7351,52 +7351,52 @@
   ],
   "shapes": [
     {
-      "slug": "Web/CSS/basic-shape",
+      "slug": "Web/CSS/Reference/Values/basic-shape",
       "title": "<basic-shape>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape"
     },
     {
-      "slug": "Web/CSS/basic-shape/circle",
+      "slug": "Web/CSS/Reference/Values/basic-shape/circle",
       "title": "circle()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/circle"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/circle"
     },
     {
-      "slug": "Web/CSS/basic-shape/ellipse",
+      "slug": "Web/CSS/Reference/Values/basic-shape/ellipse",
       "title": "ellipse()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/ellipse"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/ellipse"
     },
     {
-      "slug": "Web/CSS/basic-shape/inset",
+      "slug": "Web/CSS/Reference/Values/basic-shape/inset",
       "title": "inset()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/inset"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/inset"
     },
     {
-      "slug": "Web/CSS/basic-shape/polygon",
+      "slug": "Web/CSS/Reference/Values/basic-shape/polygon",
       "title": "polygon()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/polygon"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/polygon"
     },
     {
-      "slug": "Web/CSS/basic-shape/rect",
+      "slug": "Web/CSS/Reference/Values/basic-shape/rect",
       "title": "rect()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/rect"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/rect"
     },
     {
-      "slug": "Web/CSS/basic-shape/shape",
+      "slug": "Web/CSS/Reference/Values/basic-shape/shape",
       "title": "shape()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/shape"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/shape"
     },
     {
-      "slug": "Web/CSS/basic-shape/xywh",
+      "slug": "Web/CSS/Reference/Values/basic-shape/xywh",
       "title": "xywh()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/basic-shape/xywh"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/basic-shape/xywh"
     }
   ],
   "share": [
@@ -7633,10 +7633,10 @@
   ],
   "steps-easing": [
     {
-      "slug": "Web/CSS/easing-function#step-easing-function",
+      "slug": "Web/CSS/Reference/Values/easing-function",
       "title": "<easing-function>",
-      "anchor": "step-easing-function",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/easing-function#step-easing-function"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/easing-function"
     }
   ],
   "sticky-positioning": [
@@ -7861,10 +7861,10 @@
   ],
   "subgrid": [
     {
-      "slug": "Web/CSS/CSS_grid_layout/Subgrid",
+      "slug": "Web/CSS/Guides/Grid_layout/Subgrid",
       "title": "Subgrid",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Grid_layout/Subgrid"
     }
   ],
   "summarizer": [
@@ -7937,10 +7937,10 @@
   ],
   "system-color": [
     {
-      "slug": "Web/CSS/system-color",
+      "slug": "Web/CSS/Reference/Values/system-color",
       "title": "<system-color>",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/system-color"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/system-color"
     }
   ],
   "tab-size": [
@@ -8385,10 +8385,10 @@
   ],
   "transitions": [
     {
-      "slug": "Web/CSS/CSS_transitions/Using_CSS_transitions",
+      "slug": "Web/CSS/Guides/Transitions/Using",
       "title": "Using CSS transitions",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_transitions/Using_CSS_transitions"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Transitions/Using"
     }
   ],
   "translate": [
@@ -8401,46 +8401,46 @@
   ],
   "trig-functions": [
     {
-      "slug": "Web/CSS/sin",
+      "slug": "Web/CSS/Reference/Values/sin",
       "title": "sin()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/sin"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/sin"
     },
     {
-      "slug": "Web/CSS/cos",
+      "slug": "Web/CSS/Reference/Values/cos",
       "title": "cos()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/cos"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/cos"
     },
     {
-      "slug": "Web/CSS/tan",
+      "slug": "Web/CSS/Reference/Values/tan",
       "title": "tan()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/tan"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/tan"
     },
     {
-      "slug": "Web/CSS/asin",
+      "slug": "Web/CSS/Reference/Values/asin",
       "title": "asin()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/asin"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/asin"
     },
     {
-      "slug": "Web/CSS/acos",
+      "slug": "Web/CSS/Reference/Values/acos",
       "title": "acos()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/acos"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/acos"
     },
     {
-      "slug": "Web/CSS/atan",
+      "slug": "Web/CSS/Reference/Values/atan",
       "title": "atan()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/atan"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/atan"
     },
     {
-      "slug": "Web/CSS/atan2",
+      "slug": "Web/CSS/Reference/Values/atan2",
       "title": "atan2()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/atan2"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/atan2"
     }
   ],
   "trusted-types": [
@@ -8453,10 +8453,10 @@
   ],
   "two-value-display": [
     {
-      "slug": "Web/CSS/CSS_display/multi-keyword_syntax_of_display",
+      "slug": "Web/CSS/Guides/Display/Multi-keyword_syntax",
       "title": "Using the multi-keyword syntax with CSS display",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/CSS_display/multi-keyword_syntax_of_display"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Guides/Display/Multi-keyword_syntax"
     }
   ],
   "typed-array-iteration-methods": [
@@ -8595,10 +8595,10 @@
   ],
   "unset-value": [
     {
-      "slug": "Web/CSS/unset",
+      "slug": "Web/CSS/Reference/Values/unset",
       "title": "unset",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/unset"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/unset"
     }
   ],
   "update": [
@@ -8771,10 +8771,10 @@
   ],
   "viewport-units": [
     {
-      "slug": "Web/CSS/length#relative_length_units_based_on_viewport",
+      "slug": "Web/CSS/Reference/Values/length",
       "title": "<length>",
-      "anchor": "relative_length_units_based_on_viewport",
-      "url": "https://developer.mozilla.org/docs/Web/CSS/length#relative_length_units_based_on_viewport"
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
     }
   ],
   "virtual-keyboard": [
@@ -10145,10 +10145,10 @@
   ],
   "if": [
     {
-      "slug": "Web/CSS/if",
+      "slug": "Web/CSS/Reference/Values/if",
       "title": "if()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/if"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/if"
     }
   ],
   "imagebitmaprenderingcontext": [
@@ -10229,16 +10229,16 @@
   ],
   "sibling-count": [
     {
-      "slug": "Web/CSS/sibling-count",
+      "slug": "Web/CSS/Reference/Values/sibling-count",
       "title": "sibling-count()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/sibling-count"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/sibling-count"
     },
     {
-      "slug": "Web/CSS/sibling-index",
+      "slug": "Web/CSS/Reference/Values/sibling-index",
       "title": "sibling-index()",
       "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/sibling-index"
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/sibling-index"
     }
   ],
   "transferable-streams": [

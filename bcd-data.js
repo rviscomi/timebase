@@ -14692,6 +14692,26 @@ export const bcdKeys = {
       "https://wicg.github.io/scheduling-apis/"
     ]
   },
+  "css.at-rules.scope": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
   "api.CustomElementRegistry.CustomElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
@@ -15554,6 +15574,21 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/secure-payment-confirmation/"
+    ]
+  },
+  "html.elements.select.hr_in_select": {
+    "parent_feature": "select",
+    "parent_feature_name": "<select>",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox_android": "145"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"
     ]
   },
   "api.PerformanceResourceTiming.serverTiming": {
@@ -19106,15 +19141,13 @@ export const bcdKeys = {
       "https://gpuweb.github.io/gpuweb/"
     ]
   },
-  "api.GPUAdapter.requestDevice.lost_device_on_duplicate": {
+  "api.GPUAdapter.requestDevice.handles_duplicate_calls": {
     "parent_feature": "webgpu",
     "parent_feature_name": "WebGPU",
     "status": {
       "baseline": false,
       "support": {
-        "chrome_android": "121",
-        "safari": "26",
-        "safari_ios": "26"
+        "chrome_android": "140"
       }
     },
     "spec": [
