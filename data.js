@@ -1975,6 +1975,10 @@ export const browsers = {
         "version": "147"
       },
       {
+        "date": "2026-02-24",
+        "version": "148"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2506,6 +2510,10 @@ export const browsers = {
       {
         "date": "2026-01-13",
         "version": "147"
+      },
+      {
+        "date": "2026-02-24",
+        "version": "148"
       }
     ]
   },
@@ -21940,11 +21948,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#color-function"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.color": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -21957,7 +21967,8 @@ export const features = {
           }
         },
         "css.types.color.color.mixed_type_parameters": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -22026,11 +22037,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-5/#color-mix"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.color-mix": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -22794,11 +22807,13 @@ export const features = {
       "https://compression.spec.whatwg.org/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "api.CompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22811,7 +22826,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22831,7 +22847,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.deflate": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22844,7 +22861,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.deflate-raw": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "103",
@@ -22857,7 +22875,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.gzip": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22870,7 +22889,8 @@ export const features = {
           }
         },
         "api.CompressionStream.readable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22883,7 +22903,8 @@ export const features = {
           }
         },
         "api.CompressionStream.writable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22896,7 +22917,8 @@ export const features = {
           }
         },
         "api.DecompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22909,7 +22931,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22929,7 +22952,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.deflate": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22942,7 +22966,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.deflate-raw": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "103",
@@ -22955,7 +22980,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.gzip": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22968,7 +22994,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.readable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22981,7 +23008,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.writable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -25851,12 +25879,16 @@ export const features = {
         "css.types.color.contrast-color": {
           "baseline": false,
           "support": {
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "26",
             "safari_ios": "26"
           }
         }
       },
       "support": {
+        "firefox": "146",
+        "firefox_android": "146",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -76712,11 +76744,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#cie-lab"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.lab": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -76742,7 +76776,8 @@ export const features = {
           }
         },
         "css.types.color.lch": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -91002,7 +91037,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.NavigateEvent": {
@@ -91010,7 +91046,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.canIntercept": {
@@ -91018,7 +91055,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.destination": {
@@ -91026,7 +91064,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.downloadRequest": {
@@ -91034,7 +91073,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.formData": {
@@ -91042,7 +91082,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.hasUAVisualTransition": {
@@ -91050,7 +91091,8 @@ export const features = {
           "support": {
             "chrome": "118",
             "chrome_android": "118",
-            "edge": "118"
+            "edge": "118",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.hashChange": {
@@ -91058,7 +91100,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.info": {
@@ -91066,7 +91109,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.intercept": {
@@ -91074,7 +91118,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.navigationType": {
@@ -91082,7 +91127,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.scroll": {
@@ -91090,7 +91136,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.signal": {
@@ -91098,7 +91145,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.userInitiated": {
@@ -91106,7 +91154,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation": {
@@ -91114,7 +91163,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.activation": {
@@ -91122,7 +91172,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.Navigation.back": {
@@ -91130,7 +91181,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.canGoBack": {
@@ -91138,7 +91190,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.canGoForward": {
@@ -91146,7 +91199,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.currentEntry": {
@@ -91154,7 +91208,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.currententrychange_event": {
@@ -91162,7 +91217,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.entries": {
@@ -91170,7 +91226,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.forward": {
@@ -91178,7 +91235,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigate": {
@@ -91186,7 +91244,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigate_event": {
@@ -91194,7 +91253,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigateerror_event": {
@@ -91202,7 +91262,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigatesuccess_event": {
@@ -91210,7 +91271,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.reload": {
@@ -91218,7 +91280,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.transition": {
@@ -91226,7 +91289,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.traverseTo": {
@@ -91234,7 +91298,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.updateCurrentEntry": {
@@ -91242,7 +91307,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation": {
@@ -91250,7 +91316,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.entry": {
@@ -91258,7 +91325,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.from": {
@@ -91266,7 +91334,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.navigationType": {
@@ -91274,7 +91343,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent": {
@@ -91282,7 +91352,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent": {
@@ -91290,7 +91361,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.from": {
@@ -91298,7 +91370,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.navigationType": {
@@ -91306,7 +91379,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination": {
@@ -91314,7 +91388,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.getState": {
@@ -91322,7 +91397,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.id": {
@@ -91330,7 +91406,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.index": {
@@ -91338,7 +91415,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.key": {
@@ -91346,7 +91424,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.sameDocument": {
@@ -91354,7 +91433,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.url": {
@@ -91362,7 +91442,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry": {
@@ -91370,7 +91451,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.dispose_event": {
@@ -91378,7 +91460,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.getState": {
@@ -91386,7 +91469,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.id": {
@@ -91394,7 +91478,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.index": {
@@ -91402,7 +91487,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.key": {
@@ -91410,7 +91496,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.sameDocument": {
@@ -91418,7 +91505,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.url": {
@@ -91426,7 +91514,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition": {
@@ -91434,7 +91523,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.finished": {
@@ -91442,7 +91532,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.from": {
@@ -91450,7 +91541,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.navigationType": {
@@ -91458,7 +91550,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Window.navigation": {
@@ -91473,7 +91566,8 @@ export const features = {
       "support": {
         "chrome": "102",
         "chrome_android": "102",
-        "edge": "102"
+        "edge": "102",
+        "firefox": "preview"
       }
     }
   },
@@ -92828,11 +92922,13 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#the-nth-last-child-pseudo"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.selectors.nth-child.of_syntax": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -92845,7 +92941,8 @@ export const features = {
           }
         },
         "css.selectors.nth-last-child.of_syntax": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -97718,11 +97815,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#ok-lab"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.oklab": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -97748,7 +97847,8 @@ export const features = {
           }
         },
         "css.types.color.oklch": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -118057,7 +118157,12 @@ export const features = {
         "html.elements.select.hr_in_select": {
           "baseline": false,
           "support": {
-            "firefox_android": "145"
+            "chrome": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "145",
+            "safari": "17",
+            "safari_ios": "17.4"
           }
         },
         "html.elements.select.multiple": {
@@ -181058,7 +181163,8 @@ export const features = {
           }
         },
         "api.RTCPeerConnection.connectionState": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "72",
@@ -181071,7 +181177,8 @@ export const features = {
           }
         },
         "api.RTCPeerConnection.connectionstatechange_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "72",
@@ -181755,7 +181862,8 @@ export const features = {
           }
         },
         "api.RTCRtpReceiver.getCapabilities_static": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "59",
@@ -182024,7 +182132,8 @@ export const features = {
           }
         },
         "api.RTCRtpSender.getCapabilities_static": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "69",
@@ -182249,7 +182358,8 @@ export const features = {
           }
         },
         "api.RTCRtpSender.setStreams": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182905,11 +183015,13 @@ export const features = {
       "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "api.RTCPeerConnection.sctp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182922,7 +183034,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182935,7 +183048,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.maxChannels": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182948,7 +183062,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.maxMessageSize": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182961,7 +183076,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.state": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182974,7 +183090,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.statechange_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182987,7 +183104,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.transport": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -184667,7 +184785,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184718,7 +184837,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.id": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184731,7 +184851,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.kind": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184744,7 +184865,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.timestamp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184773,7 +184895,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.trackIdentifier": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184786,7 +184909,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.type": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185175,7 +185299,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185188,7 +185313,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.dataChannelsClosed": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185201,7 +185327,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.dataChannelsOpened": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185214,7 +185341,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.id": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185227,7 +185355,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.timestamp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -185240,7 +185369,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.type": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
