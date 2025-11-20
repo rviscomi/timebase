@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const dataPath = join(__dirname, 'node_modules', 'web-futures', 'data.json');
+const dataPath = join(__dirname, '../node_modules', 'web-futures', 'data.json');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 
 // Helper to parse YYYY-MM-DD as a local date
@@ -27,14 +27,14 @@ console.log(`Filtering BCD keys between ${startDate.toISOString().split('T')[0]}
 // Check if a BCD key has any relevant dates in range
 function isInDateRange(status, browsers) {
   if (!status?.support) return false;
-  
+
   // For baseline features, check baseline_low_date and baseline_high_date
   if (status.baseline !== false) {
     const baselineLowDate = parseLocalDate(status.baseline_low_date);
     if (baselineLowDate && baselineLowDate >= startDate && baselineLowDate <= endDate) {
       return true;
     }
-    
+
     // Calculate baseline_high_date if not present
     let baselineHighDate = parseLocalDate(status.baseline_high_date);
     if (!baselineHighDate && baselineLowDate) {
@@ -59,7 +59,7 @@ function isInDateRange(status, browsers) {
         shipDates.push(releaseDate);
       }
     }
-    
+
     if (shipDates.length > 0) {
       // Use the latest ship date for limited availability features
       const latestDate = new Date(Math.max(...shipDates));
@@ -68,7 +68,7 @@ function isInDateRange(status, browsers) {
       }
     }
   }
-  
+
   return false;
 }
 

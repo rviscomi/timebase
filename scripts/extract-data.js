@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const dataPath = join(__dirname, 'node_modules', 'web-futures', 'data.json');
+const dataPath = join(__dirname, '../node_modules', 'web-futures', 'data.json');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 
 // Extract both browsers and features data

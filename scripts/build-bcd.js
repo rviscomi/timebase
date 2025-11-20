@@ -1,18 +1,18 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { generateTimelineHTML } from './src/renderer/renderer-bcd.js';
-import { browsers, bcdKeys as rawBcdKeys } from './bcd-data.js';
-import { processBcdKeys } from './src/data-processor.js';
-import developerSignalsData from './developer-signals.json' with { type: "json" };
-import interopData from './interop.json' with { type: "json" };
-import mdnDocsData from './mdn.json' with { type: "json" };
+import { generateTimelineHTML } from '../src/renderer/renderer-bcd.js';
+import { browsers, bcdKeys as rawBcdKeys } from '../bcd-data.js';
+import { processBcdKeys } from '../src/data-processor.js';
+import developerSignalsData from '../developer-signals.json' with { type: "json" };
+import interopData from '../interop.json' with { type: "json" };
+import mdnDocsData from '../mdn.json' with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DIST_DIR = path.resolve(__dirname, 'docs', 'bcd');
-const TEMPLATE_PATH = path.resolve(__dirname, 'index.html');
+const DIST_DIR = path.resolve(__dirname, '../docs', 'bcd');
+const TEMPLATE_PATH = path.resolve(__dirname, '../index.html');
 
 async function build() {
   try {
@@ -25,7 +25,7 @@ async function build() {
   // We also need to copy src for the modules to work
   const assets = ['bcd-data.js', 'src'];
   for (const asset of assets) {
-    const source = path.resolve(__dirname, asset);
+    const source = path.resolve(__dirname, '../', asset);
     const dest = path.resolve(DIST_DIR, asset);
     await fs.cp(source, dest, { recursive: true });
   }
@@ -55,7 +55,7 @@ async function build() {
     .replace(/src="images\//g, 'src="../images/');
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);
-  await fs.copyFile(path.resolve(__dirname, 'client-bcd.js'), path.resolve(DIST_DIR, 'client-bcd.js'));
+  await fs.copyFile(path.resolve(__dirname, '../client-bcd.js'), path.resolve(DIST_DIR, 'client-bcd.js'));
 
   console.log(`BCD static HTML generated successfully with ${bcdKeys.length} BCD keys!`);
 }

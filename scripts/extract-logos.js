@@ -5,7 +5,7 @@ import { dirname, join } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Create images directory if it doesn't exist
-const imagesDir = join(__dirname, 'images');
+const imagesDir = join(__dirname, '../images');
 try {
   mkdirSync(imagesDir, { recursive: true });
 } catch (err) {
@@ -22,9 +22,9 @@ const logos = {
 
 // Copy each logo
 for (const [browser, path] of Object.entries(logos)) {
-  const sourcePath = join(__dirname, 'node_modules', path);
+  const sourcePath = join(__dirname, '../node_modules', path);
   const destPath = join(imagesDir, `${browser}.svg`);
-  
+
   try {
     const logo = readFileSync(sourcePath);
     writeFileSync(destPath, logo);
