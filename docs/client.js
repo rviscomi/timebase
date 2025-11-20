@@ -1,5 +1,6 @@
 import { browsers, features } from './data.js';
 import { downloadICal } from './ical-generator.js';
+import { parseLocalDate } from './src/utils.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
 import mdnDocsData from './mdn.json' with { type: "json" };
@@ -1097,13 +1098,7 @@ class TimelineApp {
   }
 }
 
-// Helper to parse YYYY-MM-DD as a local date (not UTC)
-function parseLocalDate(dateString) {
-  if (!dateString) return;
-  if (dateString instanceof Date) return new Date(dateString);
-  const [year, month, day] = dateString.split('-').map(Number);
-  return new Date(year, month - 1, day);
-}
+
 
 // Initialize the app
 const app = new TimelineApp();

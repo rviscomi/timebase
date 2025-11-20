@@ -1354,7 +1354,7 @@ export const browsers = {
         "version": "141"
       },
       {
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "version": "142"
       },
       {
@@ -1364,6 +1364,10 @@ export const browsers = {
       {
         "date": "2026-01-15",
         "version": "144"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "145"
       }
     ]
   },
@@ -1971,6 +1975,10 @@ export const browsers = {
         "version": "147"
       },
       {
+        "date": "2026-02-24",
+        "version": "148"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2502,6 +2510,10 @@ export const browsers = {
       {
         "date": "2026-01-13",
         "version": "147"
+      },
+      {
+        "date": "2026-02-24",
+        "version": "148"
       }
     ]
   },
@@ -2725,8 +2737,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       },
       {
         "date": "null",
@@ -2942,8 +2958,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       }
     ]
   }
@@ -6659,9 +6679,9 @@ export const bcdKeys = {
       "baseline": "low",
       "baseline_low_date": "2025-11-11",
       "support": {
-        "chrome": "87",
-        "chrome_android": "89",
-        "edge": "87",
+        "chrome": "90",
+        "chrome_android": "90",
+        "edge": "90",
         "firefox": "145",
         "firefox_android": "145",
         "safari": "16.4",
@@ -7029,7 +7049,8 @@ export const bcdKeys = {
     "parent_feature": "color-function",
     "parent_feature_name": "color()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -7049,7 +7070,8 @@ export const bcdKeys = {
     "parent_feature": "color-function",
     "parent_feature_name": "color()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -7090,7 +7112,8 @@ export const bcdKeys = {
     "parent_feature": "color-mix",
     "parent_feature_name": "color-mix()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -7130,7 +7153,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7150,7 +7174,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7170,7 +7195,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7190,7 +7216,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "103",
@@ -7210,7 +7237,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7230,7 +7258,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7250,7 +7279,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7270,7 +7300,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7290,7 +7321,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7310,7 +7342,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7330,7 +7363,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "103",
@@ -7350,7 +7384,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7370,7 +7405,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7390,7 +7426,8 @@ export const bcdKeys = {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -7752,6 +7789,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "146",
+        "firefox_android": "146",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -10254,7 +10293,8 @@ export const bcdKeys = {
     "parent_feature": "input",
     "parent_feature_name": "<input>",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-05",
       "baseline_low_date": "2023-05-05",
       "support": {
         "chrome": "113",
@@ -10289,6 +10329,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/uievents/#event-type-input"
+    ]
+  },
+  "api.File.webkitRelativePath": {
+    "parent_feature": "input-file-webkitdirectory",
+    "parent_feature_name": "<input type=\"file\" webkitdirectory>",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "support": {
+        "chrome": "13",
+        "chrome_android": "18",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "11.3"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
+    ]
+  },
+  "api.HTMLInputElement.webkitdirectory": {
+    "parent_feature": "input-file-webkitdirectory",
+    "parent_feature_name": "<input type=\"file\" webkitdirectory>",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "support": {
+        "chrome": "7",
+        "chrome_android": "132",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
     ]
   },
   "api.IntersectionObserver.scrollMargin": {
@@ -10840,7 +10920,8 @@ export const bcdKeys = {
     "parent_feature": "lab",
     "parent_feature_name": "Lab and LCH",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -10880,7 +10961,8 @@ export const bcdKeys = {
     "parent_feature": "lab",
     "parent_feature_name": "Lab and LCH",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -11451,7 +11533,8 @@ export const bcdKeys = {
     "parent_feature": "nth-child-of",
     "parent_feature_name": ":nth-child() of <selector>",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -11472,7 +11555,8 @@ export const bcdKeys = {
     "parent_feature": "nth-child-of",
     "parent_feature_name": ":nth-child() of <selector>",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -12919,9 +13003,10 @@ export const bcdKeys = {
   },
   "css.types.color.oklab": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -12939,7 +13024,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklab.mixed_type_parameters": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-08-21",
@@ -12959,9 +13044,10 @@ export const bcdKeys = {
   },
   "css.types.color.oklch": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "111",
@@ -12979,7 +13065,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklch.mixed_type_parameters": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-08-21",
@@ -14659,6 +14745,26 @@ export const bcdKeys = {
       "https://wicg.github.io/scheduling-apis/"
     ]
   },
+  "css.at-rules.scope": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
   "api.CustomElementRegistry.CustomElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
@@ -15521,6 +15627,26 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/secure-payment-confirmation/"
+    ]
+  },
+  "html.elements.select.hr_in_select": {
+    "parent_feature": "select",
+    "parent_feature_name": "<select>",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "119",
+        "edge": "119",
+        "firefox": "122",
+        "firefox_android": "145",
+        "safari": "17",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+      "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"
     ]
   },
   "api.PerformanceResourceTiming.serverTiming": {
@@ -17267,14 +17393,12 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-11-11",
+      "baseline": false,
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "145",
-        "firefox_android": "145",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -19073,15 +19197,13 @@ export const bcdKeys = {
       "https://gpuweb.github.io/gpuweb/"
     ]
   },
-  "api.GPUAdapter.requestDevice.lost_device_on_duplicate": {
+  "api.GPUAdapter.requestDevice.handles_duplicate_calls": {
     "parent_feature": "webgpu",
     "parent_feature_name": "WebGPU",
     "status": {
       "baseline": false,
       "support": {
-        "chrome_android": "121",
-        "safari": "26",
-        "safari_ios": "26"
+        "chrome_android": "140"
       }
     },
     "spec": [
@@ -19409,6 +19531,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome_android": "131",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22454,6 +22577,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22469,6 +22593,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22484,6 +22609,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22499,6 +22625,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22514,6 +22641,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22529,6 +22657,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22544,6 +22673,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22559,6 +22689,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22574,6 +22705,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22647,7 +22779,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "72",
@@ -22667,7 +22800,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "72",
@@ -22687,7 +22821,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "59",
@@ -22707,7 +22842,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "69",
@@ -22748,7 +22884,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23028,7 +23165,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23048,7 +23186,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23068,7 +23207,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23088,7 +23228,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23108,7 +23249,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23128,7 +23270,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23148,7 +23291,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-sctp",
     "parent_feature_name": "WebRTC SCTP information",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "76",
@@ -23395,7 +23539,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23415,7 +23560,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23435,7 +23581,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23455,7 +23602,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23475,7 +23623,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23495,7 +23644,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23515,7 +23665,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23535,7 +23686,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23555,7 +23707,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23575,7 +23728,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23595,7 +23749,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",
@@ -23615,7 +23770,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "support": {
         "chrome": "80",

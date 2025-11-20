@@ -146,7 +146,6 @@ async function build() {
 
   const outputHTML = template
     .replace('<!-- TIMELINE_CONTENT -->', timelineHTML)
-    .replace('<script type="module" src="app.js"></script>', '<script type="module" src="client-bcd.js"></script>')
     .replace('<script type="module" src="client.js"></script>', '<script type="module" src="client-bcd.js"></script>')
     .replace('<title>Baseline timeline</title>', '<title>Baseline timeline - BCD Keys</title>')
     .replace('<h1>Baseline Timeline</h1>', '<h1>Baseline Timeline - BCD Keys</h1>')
