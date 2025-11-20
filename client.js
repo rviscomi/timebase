@@ -3,6 +3,7 @@ import { downloadICal } from './ical-generator.js';
 import { parseLocalDate } from './src/utils.js';
 import { shouldDisplayFeature } from './src/filters.js';
 import { getFiltersFromURL, createURLFromFilters } from './src/url.js';
+import { processFeatures } from './src/data-processor.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
 import mdnDocsData from './mdn.json' with { type: "json" };
@@ -14,7 +15,11 @@ class TimelineApp {
     this.developerSignals = developerSignalsData; // Load directly from JSON import
     this.interopData = interopData; // Load directly from JSON import
     this.mdnDocs = mdnDocsData; // Load directly from JSON import
-    this.features = this.processFeatures();;
+    this.features = processFeatures(features, browsers, {
+      developerSignals: this.developerSignals,
+      interop: this.interopData,
+      mdn: this.mdnDocs
+    });
     this.selectedFeatures = new Set(); // Track selected features
     this.allFeatures = [...this.features]; // Store all processed features for filtering
     this.currentStatusFilter = null; // Track the current status filter
@@ -26,127 +31,7 @@ class TimelineApp {
     this.initializeFiltersFromURL();
   }
 
-  processFeatures() {
-    const processedFeatures = [];
-    const now = new Date();
-    now.setHours(0, 0, 0, 0);
-    this.now = now;
-    const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-    lastDay.setHours(23, 59, 59, 999);
 
-    Object.entries(features).forEach(([id, data]) => {
-      // Skip non-feature kinds (moved or split)
-      if (data.kind && data.kind !== 'feature') {
-        return;
-      }
-
-      // Get all ship dates from browsers
-      const shipDates = Object.entries(data.status?.support || {}).map(([browser, version]) => {
-        // Skip if version is not a string (some might be objects with more complex support info)
-        if (typeof version !== 'string') {
-          return null;
-        }
-        // Handle preview versions specially
-        if (version === 'preview') {
-          // For preview versions, we create an entry with null date
-          return {
-            date: lastDay,
-            browser,
-            version: 'preview',
-            isPreview: true
-          };
-        }
-        // Clean up the version number
-        const cleanVersion = version.replace('≤', '');
-        // Find the release date from browsers data
-        const browserData = browsers[browser];
-        if (!browserData?.releases) {
-          return null;
-        }
-        // Find the matching release
-        const release = browserData.releases.find(r => r.version === cleanVersion);
-        if (!release) {
-          return null;
-        }
-        return {
-          date: release.date ? parseLocalDate(release.date) : null,
-          browser,
-          version: cleanVersion,
-          isPreview: false
-        };
-      }).filter(item => item !== null);
-
-      if (!shipDates.length) return;
-      shipDates.sort((a,b) => {
-        return a.date - b.date;
-      });
-
-      // Create the base feature object
-      const baseFeature = {
-        id,
-        name: data.name || id,
-        description: data.description,
-        description_html: data.description_html || data.description,
-        discouraged: data.discouraged,
-        spec: data.spec,
-        status: data.status,
-        shipDates: shipDates,
-        developerSignal: this.developerSignals?.[id],
-        interop: this.interopData?.[id]
-      };
-
-      baseFeature.status.baseline_low_date = parseLocalDate(data.status.baseline_low_date);
-
-      if (data.status.baseline === false) {
-        processedFeatures.push({
-          ...baseFeature,
-          date: shipDates.at(-1).date,
-          prediction: shipDates.at(-1).date > now,
-          displayType: 'limited-availability',
-          displayName: 'Limited availability'
-        });
-        return;
-      }
-
-      if (data.status.baseline === 'high') {
-        baseFeature.status.baseline_high_date = parseLocalDate(data.status.baseline_high_date);
-      } else {
-        baseFeature.status.baseline_high_date = parseLocalDate(data.status.baseline_low_date);
-        baseFeature.status.baseline_high_date.setMonth(baseFeature.status.baseline_low_date.getMonth() + 30);
-      }
-      
-      processedFeatures.push({
-        ...baseFeature,
-        date: baseFeature.status.baseline_low_date,
-        prediction: baseFeature.status.baseline_low_date > now,
-        displayType: 'newly-available',
-        displayName: 'Newly available'
-      });
-
-      processedFeatures.push({
-        ...baseFeature,
-        date: baseFeature.status.baseline_high_date,
-        prediction: data.status.baseline === 'low',
-        displayType: 'widely-available',
-        displayName: 'Widely available'
-      });
-    });
-
-    return processedFeatures
-      .filter(feature => {
-        if (!feature) {
-          return false;
-        }
-        if (!feature.date) {
-          return false;
-        }
-        if (isNaN(feature.date)) {
-          return false;
-        }
-        return true;
-      })
-      .sort((a, b) => b.date - a.date);
-  }
 
   groupFeaturesByDate() {
     const groups = {};

@@ -2,7 +2,7 @@ import { browsers, bcdKeys } from './bcd-data.js';
 import developerSignalsData from '../developer-signals.json' with { type: "json" };
 import interopData from '../interop.json' with { type: "json" };
 import mdnDocsData from '../mdn.json' with { type: "json" };
-
+import { processBcdKeys } from './src/data-processor.js';
 class BcdTimelineApp {
   constructor() {
     this.url = new URL(window.location);
@@ -10,7 +10,11 @@ class BcdTimelineApp {
     this.developerSignals = developerSignalsData;
     this.interopData = interopData;
     this.mdnDocs = mdnDocsData;
-    this.bcdKeys = this.processBcdKeys();
+    this.bcdKeys = processBcdKeys(bcdKeys, browsers, {
+      developerSignals: this.developerSignals,
+      interop: this.interopData,
+      mdn: this.mdnDocs
+    });
     this.allKeys = [...this.bcdKeys];
     this.currentStatusFilter = null;
     this.scrollFAB = null;
@@ -21,108 +25,7 @@ class BcdTimelineApp {
     this.initializeFiltersFromURL();
   }
 
-  processBcdKeys() {
-    const processedKeys = [];
-    const now = new Date();
-    now.setHours(0, 0, 0, 0);
-    this.now = now;
-    const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-    lastDay.setHours(23, 59, 59, 999);
 
-    Object.entries(bcdKeys).forEach(([id, data]) => {
-      const shipDates = Object.entries(data.status?.support || {}).map(([browser, version]) => {
-        if (typeof version !== 'string') {
-          return null;
-        }
-        if (version === 'preview') {
-          return {
-            date: lastDay,
-            browser,
-            version: 'preview',
-            isPreview: true
-          };
-        }
-        const cleanVersion = version.replace('≤', '');
-        const browserData = browsers[browser];
-        if (!browserData?.releases) {
-          return null;
-        }
-        const release = browserData.releases.find(r => r.version === cleanVersion);
-        if (!release) {
-          return null;
-        }
-        return {
-          date: release.date ? parseLocalDate(release.date) : null,
-          browser,
-          version: cleanVersion,
-          isPreview: false
-        };
-      }).filter(item => item !== null);
-
-      if (!shipDates.length) return;
-      shipDates.sort((a, b) => a.date - b.date);
-
-      const baseBcdKey = {
-        id,
-        name: data.name || id,
-        parent_feature: data.parent_feature,
-        parent_feature_name: data.parent_feature_name,
-        description: data.description,
-        description_html: data.description_html || data.description,
-        discouraged: data.discouraged,
-        spec: data.spec,
-        status: data.status,
-        shipDates: shipDates,
-        developerSignal: this.developerSignals?.[data.parent_feature],
-        interop: this.interopData?.[data.parent_feature]
-      };
-
-      baseBcdKey.status.baseline_low_date = parseLocalDate(data.status.baseline_low_date);
-
-      if (data.status.baseline === false) {
-        processedKeys.push({
-          ...baseBcdKey,
-          date: shipDates.at(-1).date,
-          prediction: shipDates.at(-1).date > now,
-          displayType: 'limited-availability',
-          displayName: 'Limited availability'
-        });
-        return;
-      }
-
-      if (data.status.baseline === 'high') {
-        baseBcdKey.status.baseline_high_date = parseLocalDate(data.status.baseline_high_date);
-      } else {
-        baseBcdKey.status.baseline_high_date = parseLocalDate(data.status.baseline_low_date);
-        baseBcdKey.status.baseline_high_date.setMonth(baseBcdKey.status.baseline_low_date.getMonth() + 30);
-      }
-
-      processedKeys.push({
-        ...baseBcdKey,
-        date: baseBcdKey.status.baseline_low_date,
-        prediction: baseBcdKey.status.baseline_low_date > now,
-        displayType: 'newly-available',
-        displayName: 'Newly available'
-      });
-
-      processedKeys.push({
-        ...baseBcdKey,
-        date: baseBcdKey.status.baseline_high_date,
-        prediction: data.status.baseline === 'low',
-        displayType: 'widely-available',
-        displayName: 'Widely available'
-      });
-    });
-
-    return processedKeys
-      .filter(key => {
-        if (!key || !key.date || isNaN(key.date)) {
-          return false;
-        }
-        return true;
-      })
-      .sort((a, b) => b.date - a.date);
-  }
 
   attachInteractivityToStaticHTML() {
     // Attach click handlers to browser tags for filtering

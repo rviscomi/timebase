@@ -13,118 +13,7 @@ const __dirname = path.dirname(__filename);
 const DIST_DIR = path.resolve(__dirname, 'docs');
 const TEMPLATE_PATH = path.resolve(__dirname, 'index.html');
 
-// Helper to parse YYYY-MM-DD as a local date (not UTC)
-function parseLocalDate(dateString) {
-  if (!dateString) return;
-  if (dateString instanceof Date) return new Date(dateString);
-  const [year, month, day] = dateString.split('-').map(Number);
-  return new Date(year, month - 1, day);
-}
-
-function processFeatures() {
-  const processedFeatures = [];
-  const now = new Date();
-  now.setHours(0, 0, 0, 0);
-  const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-  lastDay.setHours(23, 59, 59, 999);
-
-  Object.entries(rawFeatures).forEach(([id, data]) => {
-    if (data.kind && data.kind !== 'feature') {
-      return;
-    }
-
-    const shipDates = Object.entries(data.status?.support || {}).map(([browser, version]) => {
-      if (typeof version !== 'string') {
-        return null;
-      }
-      if (version === 'preview') {
-        return {
-          date: lastDay,
-          browser,
-          version: 'preview',
-          isPreview: true
-        };
-      }
-      const cleanVersion = version.replace('≤', '');
-      const browserData = browsers[browser];
-      if (!browserData?.releases) {
-        return null;
-      }
-      const release = browserData.releases.find(r => r.version === cleanVersion);
-      if (!release) {
-        return null;
-      }
-      return {
-        date: release.date ? parseLocalDate(release.date) : null,
-        browser,
-        version: cleanVersion,
-        isPreview: false
-      };
-    }).filter(item => item !== null);
-
-    if (!shipDates.length) return;
-    shipDates.sort((a, b) => a.date - b.date);
-
-    const baseFeature = {
-      id,
-      name: data.name || id,
-      description: data.description,
-      description_html: data.description_html || data.description,
-      discouraged: data.discouraged,
-      spec: data.spec,
-      status: data.status,
-      shipDates: shipDates,
-      developerSignal: developerSignalsData?.[id],
-      interop: interopData?.[id],
-      mdn: mdnDocsData?.[id]
-    };
-
-    baseFeature.status.baseline_low_date = parseLocalDate(data.status.baseline_low_date);
-
-    if (data.status.baseline === false) {
-      processedFeatures.push({
-        ...baseFeature,
-        date: shipDates.at(-1).date,
-        prediction: shipDates.at(-1).date > now,
-        displayType: 'limited-availability',
-        displayName: 'Limited availability'
-      });
-      return;
-    }
-
-    if (data.status.baseline === 'high') {
-      baseFeature.status.baseline_high_date = parseLocalDate(data.status.baseline_high_date);
-    } else {
-      baseFeature.status.baseline_high_date = parseLocalDate(data.status.baseline_low_date);
-      baseFeature.status.baseline_high_date.setMonth(baseFeature.status.baseline_low_date.getMonth() + 30);
-    }
-
-    processedFeatures.push({
-      ...baseFeature,
-      date: baseFeature.status.baseline_low_date,
-      prediction: baseFeature.status.baseline_low_date > now,
-      displayType: 'newly-available',
-      displayName: 'Newly available'
-    });
-
-    processedFeatures.push({
-      ...baseFeature,
-      date: baseFeature.status.baseline_high_date,
-      prediction: data.status.baseline === 'low',
-      displayType: 'widely-available',
-      displayName: 'Widely available'
-    });
-  });
-
-  return processedFeatures
-    .filter(feature => {
-      if (!feature || !feature.date || isNaN(feature.date)) {
-        return false;
-      }
-      return true;
-    })
-    .sort((a, b) => b.date - a.date);
-}
+import { processFeatures } from './src/data-processor.js';
 
 
 async function build() {
@@ -144,7 +33,11 @@ async function build() {
 
 
   const template = await fs.readFile(TEMPLATE_PATH, 'utf-8');
-  const features = processFeatures();
+  const features = processFeatures(rawFeatures, browsers, {
+    developerSignals: developerSignalsData,
+    interop: interopData,
+    mdn: mdnDocsData
+  });
 
   const timelineHTML = generateTimelineHTML(features);
 
