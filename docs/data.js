@@ -1354,7 +1354,7 @@ export const browsers = {
         "version": "141"
       },
       {
-        "date": "2025-10-30",
+        "date": "2025-10-31",
         "version": "142"
       },
       {
@@ -1364,6 +1364,10 @@ export const browsers = {
       {
         "date": "2026-01-15",
         "version": "144"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "145"
       }
     ]
   },
@@ -1971,6 +1975,10 @@ export const browsers = {
         "version": "147"
       },
       {
+        "date": "2026-02-24",
+        "version": "148"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2502,6 +2510,10 @@ export const browsers = {
       {
         "date": "2026-01-13",
         "version": "147"
+      },
+      {
+        "date": "2026-02-24",
+        "version": "148"
       }
     ]
   },
@@ -2725,8 +2737,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       },
       {
         "date": "null",
@@ -2942,8 +2958,12 @@ export const browsers = {
         "version": "26"
       },
       {
-        "date": "null",
+        "date": "2025-11-03",
         "version": "26.1"
+      },
+      {
+        "date": "null",
+        "version": "26.2"
       }
     ]
   }
@@ -11573,42 +11593,66 @@ export const features = {
         },
         "css.types.attr.type-or-unit.angle": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.color": {
           "baseline": false,
-          "support": {}
-        },
-        "css.types.attr.type-or-unit.frequency": {
-          "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.integer": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.length": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.number": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.percentage": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         },
         "css.types.attr.type-or-unit.time": {
           "baseline": false,
-          "support": {}
-        },
-        "css.types.attr.type-or-unit.url": {
-          "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
+          }
         }
       },
-      "support": {}
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133"
+      }
     }
   },
   "attr-contents": {
@@ -20067,7 +20111,7 @@ export const features = {
     }
   },
   "caret-shape": {
-    "description_html": "The <code>caret-shape</code> CSS property controls the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
+    "description_html": "The <code>caret-shape</code> CSS property sets the shape of the insertion caret, the symbol that shows where the next character is to be inserted or deleted.",
     "kind": "feature",
     "name": "caret-shape",
     "spec": [
@@ -21904,11 +21948,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#color-function"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.color": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -21921,7 +21967,8 @@ export const features = {
           }
         },
         "css.types.color.color.mixed_type_parameters": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -21990,11 +22037,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-5/#color-mix"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.color-mix": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -22673,7 +22722,7 @@ export const features = {
     "kind": "feature",
     "name": "Compression Dictionary Transport",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc9842"
+      "https://httpwg.org/specs/rfc9842.html"
     ],
     "status": {
       "baseline": false,
@@ -22758,11 +22807,13 @@ export const features = {
       "https://compression.spec.whatwg.org/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "api.CompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22775,7 +22826,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22795,7 +22847,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.deflate": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22808,7 +22861,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.deflate-raw": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "103",
@@ -22821,7 +22875,8 @@ export const features = {
           }
         },
         "api.CompressionStream.CompressionStream.gzip": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22834,7 +22889,8 @@ export const features = {
           }
         },
         "api.CompressionStream.readable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22847,7 +22903,8 @@ export const features = {
           }
         },
         "api.CompressionStream.writable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22860,7 +22917,8 @@ export const features = {
           }
         },
         "api.DecompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22873,7 +22931,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22893,7 +22952,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.deflate": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22906,7 +22966,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.deflate-raw": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "103",
@@ -22919,7 +22980,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.DecompressionStream.gzip": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22932,7 +22994,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.readable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -22945,7 +23008,8 @@ export const features = {
           }
         },
         "api.DecompressionStream.writable": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -25815,12 +25879,16 @@ export const features = {
         "css.types.color.contrast-color": {
           "baseline": false,
           "support": {
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "26",
             "safari_ios": "26"
           }
         }
       },
       "support": {
+        "firefox": "146",
+        "firefox_android": "146",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -31895,6 +31963,18 @@ export const features = {
       }
     }
   },
+  "custom-media-queries": {
+    "description_html": "The <code>@custom-media</code> CSS at-rule names a media query, which you can reuse in multiple <code>@media</code> rules.",
+    "kind": "feature",
+    "name": "Custom media queries",
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#custom-mq"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "custom-properties": {
     "description_html": "Custom properties are CSS properties prefixed with <code>--</code> that set values you can reuse with the <code>var()</code> function. For example, you can set a <code>--key-color</code> property to reuse as <code>border-color: var(--key-color)</code>. Also known as CSS variables.",
     "kind": "feature",
@@ -31968,9 +32048,9 @@ export const features = {
         "css.selectors.checkmark": {
           "baseline": false,
           "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135"
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
           }
         },
         "css.selectors.picker": {
@@ -31984,9 +32064,9 @@ export const features = {
         "css.selectors.picker-icon": {
           "baseline": false,
           "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135"
+            "chrome": "133",
+            "chrome_android": "133",
+            "edge": "133"
           }
         },
         "html.elements.selectedcontent": {
@@ -68150,7 +68230,8 @@ export const features = {
           }
         },
         "api.HTMLInputElement.cancel_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-05",
           "baseline_low_date": "2023-05-05",
           "support": {
             "chrome": "113",
@@ -68370,20 +68451,6 @@ export const features = {
             "firefox_android": "51",
             "safari": "10.1",
             "safari_ios": "10.3"
-          }
-        },
-        "api.HTMLInputElement.multiple": {
-          "baseline": "high",
-          "baseline_high_date": "2018-01-29",
-          "baseline_low_date": "2015-07-29",
-          "support": {
-            "chrome": "2",
-            "chrome_android": "18",
-            "edge": "12",
-            "firefox": "3.6",
-            "firefox_android": "4",
-            "safari": "4",
-            "safari_ios": "3.2"
           }
         },
         "api.HTMLInputElement.name": {
@@ -68804,20 +68871,6 @@ export const features = {
             "firefox_android": "51",
             "safari": "10.1",
             "safari_ios": "10.3"
-          }
-        },
-        "html.elements.input.multiple": {
-          "baseline": "high",
-          "baseline_high_date": "2018-01-29",
-          "baseline_low_date": "2015-07-29",
-          "support": {
-            "chrome": "2",
-            "chrome_android": "18",
-            "edge": "12",
-            "firefox": "3.6",
-            "firefox_android": "4",
-            "safari": "4",
-            "safari_ios": "3.2"
           }
         },
         "html.elements.input.name": {
@@ -69499,6 +69552,118 @@ export const features = {
         "firefox_android": "4",
         "safari": "4",
         "safari_ios": "3"
+      }
+    }
+  },
+  "input-file-multiple": {
+    "description_html": "The <code>&#x3C;input type=\"file\" multiple></code> HTML element shows a file picker from which users can choose one or more files to upload with a form.",
+    "kind": "feature",
+    "name": "<input type=\"file\" multiple>",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "by_compat_key": {
+        "api.HTMLInputElement.multiple": {
+          "baseline": "high",
+          "baseline_high_date": "2018-01-29",
+          "baseline_low_date": "2015-07-29",
+          "support": {
+            "chrome": "2",
+            "chrome_android": "18",
+            "edge": "12",
+            "firefox": "3.6",
+            "firefox_android": "4",
+            "safari": "4",
+            "safari_ios": "3.2"
+          }
+        },
+        "api.HTMLInputElement.webkitEntries": {
+          "baseline": false,
+          "support": {
+            "chrome": "22",
+            "chrome_android": "25",
+            "edge": "79",
+            "firefox": "50",
+            "safari": "11.1",
+            "safari_ios": "11.3"
+          }
+        },
+        "html.elements.input.multiple": {
+          "baseline": "high",
+          "baseline_high_date": "2018-01-29",
+          "baseline_low_date": "2015-07-29",
+          "support": {
+            "chrome": "2",
+            "chrome_android": "18",
+            "edge": "12",
+            "firefox": "3.6",
+            "firefox_android": "4",
+            "safari": "4",
+            "safari_ios": "3.2"
+          }
+        }
+      },
+      "support": {
+        "chrome": "2",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "3.6",
+        "firefox_android": "4",
+        "safari": "4",
+        "safari_ios": "3.2"
+      }
+    }
+  },
+  "input-file-webkitdirectory": {
+    "description_html": "The <code>&#x3C;input type=\"file\" webkitdirectory></code> HTML element shows a file picker from which users can choose a folder to upload with the form.",
+    "kind": "feature",
+    "name": "<input type=\"file\" webkitdirectory>",
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "by_compat_key": {
+        "api.File.webkitRelativePath": {
+          "baseline": "low",
+          "baseline_low_date": "2025-08-19",
+          "support": {
+            "chrome": "13",
+            "chrome_android": "18",
+            "edge": "13",
+            "firefox": "50",
+            "firefox_android": "142",
+            "safari": "11.1",
+            "safari_ios": "11.3"
+          }
+        },
+        "html.elements.input.webkitdirectory": {
+          "baseline": "low",
+          "baseline_low_date": "2025-07-22",
+          "support": {
+            "chrome": "7",
+            "chrome_android": "132",
+            "edge": "13",
+            "firefox": "50",
+            "firefox_android": "141",
+            "safari": "11.1",
+            "safari_ios": "18.4"
+          }
+        }
+      },
+      "support": {
+        "chrome": "13",
+        "chrome_android": "132",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -75942,6 +76107,40 @@ export const features = {
       }
     }
   },
+  "justify-self-block": {
+    "description_html": "The <code>justify-self</code> CSS property aligns an item along a container's inline axis in block layouts, like it does in grid layouts. Likewise, the <code>justify-items</code> property sets a default <code>justify-self</code> value for all items in a container in a block layout.",
+    "kind": "feature",
+    "name": "justify-self in block layouts",
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#justify-block"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.properties.justify-items.block_context": {
+          "baseline": false,
+          "support": {
+            "chrome": "130",
+            "chrome_android": "130",
+            "edge": "130"
+          }
+        },
+        "css.properties.justify-self.block_context": {
+          "baseline": false,
+          "support": {
+            "chrome": "130",
+            "chrome_android": "130",
+            "edge": "130"
+          }
+        }
+      },
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130"
+      }
+    }
+  },
   "kbd": {
     "description_html": "The <code>&#x3C;kbd></code> element represents textual user input, such as keyboard or voice input, styling text in monospaced type by default.",
     "kind": "feature",
@@ -76545,11 +76744,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#cie-lab"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.lab": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -76575,7 +76776,8 @@ export const features = {
           }
         },
         "css.types.color.lch": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -90835,7 +91037,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.NavigateEvent": {
@@ -90843,7 +91046,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.canIntercept": {
@@ -90851,7 +91055,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.destination": {
@@ -90859,7 +91064,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.downloadRequest": {
@@ -90867,7 +91073,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.formData": {
@@ -90875,7 +91082,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.hasUAVisualTransition": {
@@ -90883,7 +91091,8 @@ export const features = {
           "support": {
             "chrome": "118",
             "chrome_android": "118",
-            "edge": "118"
+            "edge": "118",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.hashChange": {
@@ -90891,7 +91100,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.info": {
@@ -90899,7 +91109,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.intercept": {
@@ -90907,7 +91118,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.navigationType": {
@@ -90915,7 +91127,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.scroll": {
@@ -90923,7 +91136,8 @@ export const features = {
           "support": {
             "chrome": "105",
             "chrome_android": "105",
-            "edge": "105"
+            "edge": "105",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.signal": {
@@ -90931,7 +91145,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigateEvent.userInitiated": {
@@ -90939,7 +91154,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation": {
@@ -90947,7 +91163,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.activation": {
@@ -90955,7 +91172,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.Navigation.back": {
@@ -90963,7 +91181,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.canGoBack": {
@@ -90971,7 +91190,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.canGoForward": {
@@ -90979,7 +91199,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.currentEntry": {
@@ -90987,7 +91208,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.currententrychange_event": {
@@ -90995,7 +91217,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.entries": {
@@ -91003,7 +91226,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.forward": {
@@ -91011,7 +91235,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigate": {
@@ -91019,7 +91244,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigate_event": {
@@ -91027,7 +91253,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigateerror_event": {
@@ -91035,7 +91262,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.navigatesuccess_event": {
@@ -91043,7 +91271,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.reload": {
@@ -91051,7 +91280,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.transition": {
@@ -91059,7 +91289,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.traverseTo": {
@@ -91067,7 +91298,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Navigation.updateCurrentEntry": {
@@ -91075,7 +91307,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation": {
@@ -91083,7 +91316,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.entry": {
@@ -91091,7 +91325,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.from": {
@@ -91099,7 +91334,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationActivation.navigationType": {
@@ -91107,7 +91343,8 @@ export const features = {
           "support": {
             "chrome": "123",
             "chrome_android": "123",
-            "edge": "123"
+            "edge": "123",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent": {
@@ -91115,7 +91352,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent": {
@@ -91123,7 +91361,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.from": {
@@ -91131,7 +91370,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationCurrentEntryChangeEvent.navigationType": {
@@ -91139,7 +91379,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination": {
@@ -91147,7 +91388,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.getState": {
@@ -91155,7 +91397,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.id": {
@@ -91163,7 +91406,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.index": {
@@ -91171,7 +91415,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.key": {
@@ -91179,7 +91424,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.sameDocument": {
@@ -91187,7 +91433,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationDestination.url": {
@@ -91195,7 +91442,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry": {
@@ -91203,7 +91451,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.dispose_event": {
@@ -91211,7 +91460,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.getState": {
@@ -91219,7 +91469,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.id": {
@@ -91227,7 +91478,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.index": {
@@ -91235,7 +91487,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.key": {
@@ -91243,7 +91496,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.sameDocument": {
@@ -91251,7 +91505,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationHistoryEntry.url": {
@@ -91259,7 +91514,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition": {
@@ -91267,7 +91523,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.finished": {
@@ -91275,7 +91532,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.from": {
@@ -91283,7 +91541,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.NavigationTransition.navigationType": {
@@ -91291,7 +91550,8 @@ export const features = {
           "support": {
             "chrome": "102",
             "chrome_android": "102",
-            "edge": "102"
+            "edge": "102",
+            "firefox": "preview"
           }
         },
         "api.Window.navigation": {
@@ -91306,7 +91566,8 @@ export const features = {
       "support": {
         "chrome": "102",
         "chrome_android": "102",
-        "edge": "102"
+        "edge": "102",
+        "firefox": "preview"
       }
     }
   },
@@ -92661,11 +92922,13 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#the-nth-last-child-pseudo"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.selectors.nth-child.of_syntax": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -92678,7 +92941,8 @@ export const features = {
           }
         },
         "css.selectors.nth-last-child.of_syntax": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -97551,11 +97815,13 @@ export const features = {
       "https://drafts.csswg.org/css-color-4/#ok-lab"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "css.types.color.oklab": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -97581,7 +97847,8 @@ export const features = {
           }
         },
         "css.types.color.oklch": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "111",
@@ -97892,6 +98159,10 @@ export const features = {
     }
   },
   "open-closed": {
+    "kind": "moved",
+    "redirect_target": "open-pseudo"
+  },
+  "open-pseudo": {
     "description_html": "The <code>:open</code> CSS pseudo-class matches elements that have open states, like <code>&#x3C;details></code>, <code>&#x3C;dialog></code>, or <code>&#x3C;select></code>, based on their state.",
     "kind": "feature",
     "name": ":open",
@@ -106797,6 +107068,32 @@ export const features = {
       }
     }
   },
+  "progress-function": {
+    "description_html": "The <code>progress()</code> CSS function returns a ratio for the relative position of one value between two other values, clamped between 0 and 1. You can use it to interpolate a value for other calculations.",
+    "kind": "feature",
+    "name": "progress()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#progress"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.types.progress": {
+          "baseline": false,
+          "support": {
+            "chrome": "138",
+            "chrome_android": "138",
+            "edge": "138"
+          }
+        }
+      },
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138"
+      }
+    }
+  },
   "promise": {
     "description_html": "A promise represents an asynchronous operation which eventually succeeds or fails.",
     "kind": "feature",
@@ -108794,6 +109091,69 @@ export const features = {
         "chrome_android": "137",
         "edge": "137"
       }
+    }
+  },
+  "rect-xywx": {
+    "description_html": "The <code>rect()</code> CSS function creates a rectangle shape with insets from the edges of an element. The <code>xywh()</code> CSS function creates a rectangle shifted by an <code>x</code> and <code>y</code> distance. They can be used with <code>clip-path</code> and <code>shape-outside</code>.",
+    "kind": "feature",
+    "name": "rect() and xywh()",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-xywh",
+      "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-01-23",
+      "by_compat_key": {
+        "css.types.basic-shape.rect": {
+          "baseline": "low",
+          "baseline_low_date": "2024-01-23",
+          "support": {
+            "chrome": "119",
+            "chrome_android": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "122",
+            "safari": "17.2",
+            "safari_ios": "17.2"
+          }
+        },
+        "css.types.basic-shape.xywh": {
+          "baseline": "low",
+          "baseline_low_date": "2024-01-23",
+          "support": {
+            "chrome": "119",
+            "chrome_android": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "122",
+            "safari": "17.2",
+            "safari_ios": "17.2"
+          }
+        }
+      },
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    }
+  },
+  "referencetarget": {
+    "description_html": "The <code>referenceTarget</code> property of a <code>ShadowRoot</code> object forwards attributes such as <code>for</code> and <code>aria-labelledby</code> to elements inside a shadow DOM. You can use this to, for example, link a <code>&#x3C;label></code> to its <code>&#x3C;input></code> even if the <code>&#x3C;input></code> is in the shadow DOM of a web component.",
+    "kind": "feature",
+    "name": "Reference target",
+    "spec": [
+      "https://github.com/whatwg/dom/pull/1353",
+      "https://github.com/whatwg/html/pull/10995"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "referrer-policy": {
@@ -113786,11 +114146,14 @@ export const features = {
           }
         },
         "css.at-rules.scope": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-09",
           "support": {
             "chrome": "118",
             "chrome_android": "118",
             "edge": "118",
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "17.4",
             "safari_ios": "17.4"
           }
@@ -117793,7 +118156,14 @@ export const features = {
         },
         "html.elements.select.hr_in_select": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome": "119",
+            "edge": "119",
+            "firefox": "122",
+            "firefox_android": "145",
+            "safari": "17",
+            "safari_ios": "17.4"
+          }
         },
         "html.elements.select.multiple": {
           "baseline": "high",
@@ -122032,6 +122402,38 @@ export const features = {
       }
     }
   },
+  "shape-function": {
+    "description_html": "The <code>shape()</code> CSS function creates shapes with a series of commands like <code>line</code>, <code>move</code>, and <code>curve</code>. It can be used with <code>clip-path</code> and <code>shape-outside</code>.",
+    "kind": "feature",
+    "name": "shape()",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#shape-function"
+    ],
+    "status": {
+      "baseline": false,
+      "by_compat_key": {
+        "css.types.basic-shape.shape": {
+          "baseline": false,
+          "support": {
+            "chrome": "135",
+            "chrome_android": "135",
+            "edge": "135",
+            "firefox": "preview",
+            "safari": "18.4",
+            "safari_ios": "18.4"
+          }
+        }
+      },
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "preview",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    }
+  },
   "shape-outside": {
     "description_html": "The <code>shape-outside</code> CSS property, along with <code>shape-margin</code> and <code>shape-image-threshold</code>, sets the shape around which adjacent content will wrap.",
     "kind": "feature",
@@ -122197,7 +122599,7 @@ export const features = {
     }
   },
   "shapes": {
-    "description_html": "The <code>circle()</code>, <code>ellipse()</code>, <code>inset()</code>, <code>polygon()</code>, <code>rect()</code>, and <code>xywh()</code> CSS shape functions create shapes for use with <code>clip-path</code> and <code>shape-outside</code>.",
+    "description_html": "The <code>circle()</code>, <code>ellipse()</code>, <code>inset()</code>, and <code>polygon()</code> CSS shape functions create shapes for use with <code>clip-path</code> and <code>shape-outside</code>.",
     "kind": "feature",
     "name": "shapes",
     "spec": [
@@ -122290,43 +122692,6 @@ export const features = {
             "firefox_android": "54",
             "safari": "10.1",
             "safari_ios": "10.3"
-          }
-        },
-        "css.types.basic-shape.rect": {
-          "baseline": "low",
-          "baseline_low_date": "2024-01-23",
-          "support": {
-            "chrome": "119",
-            "chrome_android": "119",
-            "edge": "119",
-            "firefox": "122",
-            "firefox_android": "122",
-            "safari": "17.2",
-            "safari_ios": "17.2"
-          }
-        },
-        "css.types.basic-shape.shape": {
-          "baseline": false,
-          "support": {
-            "chrome": "135",
-            "chrome_android": "135",
-            "edge": "135",
-            "firefox": "preview",
-            "safari": "18.4",
-            "safari_ios": "18.4"
-          }
-        },
-        "css.types.basic-shape.xywh": {
-          "baseline": "low",
-          "baseline_low_date": "2024-01-23",
-          "support": {
-            "chrome": "119",
-            "chrome_android": "119",
-            "edge": "119",
-            "firefox": "122",
-            "firefox_android": "122",
-            "safari": "17.2",
-            "safari_ios": "17.2"
           }
         }
       },
@@ -123292,7 +123657,7 @@ export const features = {
     ]
   },
   "sizes-auto": {
-    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element determines the layout size for the image based on computed layout size when choosing a source from the <code>srcset</code>. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
+    "description_html": "The <code>sizes=\"auto\"</code> attribute for the <code>&#x3C;img></code> HTML element sets the layout size for the image based on the computed layout size when choosing a source from the <code>srcset</code>. This attribute only applies to images with the <code>loading=\"lazy\"</code> attribute.",
     "kind": "feature",
     "name": "<img sizes=\"auto\" loading=\"lazy\">",
     "spec": [
@@ -125147,7 +125512,7 @@ export const features = {
     "kind": "feature",
     "name": "Speculation rules",
     "spec": [
-      "https://github.com/whatwg/html/pull/11426",
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
       "https://wicg.github.io/nav-speculation/prerendering.html"
     ],
     "status": {
@@ -129757,6 +130122,18 @@ export const features = {
         "safari": "9",
         "safari_ios": "9"
       }
+    }
+  },
+  "supports-at-rule": {
+    "description_html": "The <code>at-rule()</code> function, when used with <code>@supports</code>, checks if a CSS at-rule is supported. For example <code>@supports at-rule(@starting-style)</code> checks if the <code>@starting-style</code> at-rule is supported.",
+    "kind": "feature",
+    "name": "at-rule()",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "supports-compat": {
@@ -151609,9 +151986,7 @@ export const features = {
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2024-03-20",
-      "baseline_low_date": "2021-09-20",
+      "baseline": false,
       "by_compat_key": {
         "javascript.operators.await.top_level": {
           "baseline": false,
@@ -151629,9 +152004,7 @@ export const features = {
         "chrome_android": "89",
         "edge": "89",
         "firefox": "89",
-        "firefox_android": "89",
-        "safari": "15",
-        "safari_ios": "15"
+        "firefox_android": "89"
       }
     }
   },
@@ -176569,12 +176942,10 @@ export const features = {
             "safari_ios": "26"
           }
         },
-        "api.GPUAdapter.requestDevice.lost_device_on_duplicate": {
+        "api.GPUAdapter.requestDevice.handles_duplicate_calls": {
           "baseline": false,
           "support": {
-            "chrome_android": "121",
-            "safari": "26",
-            "safari_ios": "26"
+            "chrome_android": "140"
           }
         },
         "api.GPUAdapterInfo": {
@@ -180792,7 +181163,8 @@ export const features = {
           }
         },
         "api.RTCPeerConnection.connectionState": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "72",
@@ -180805,7 +181177,8 @@ export const features = {
           }
         },
         "api.RTCPeerConnection.connectionstatechange_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "72",
@@ -181489,7 +181862,8 @@ export const features = {
           }
         },
         "api.RTCRtpReceiver.getCapabilities_static": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "59",
@@ -181758,7 +182132,8 @@ export const features = {
           }
         },
         "api.RTCRtpSender.getCapabilities_static": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "69",
@@ -181983,7 +182358,8 @@ export const features = {
           }
         },
         "api.RTCRtpSender.setStreams": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182639,11 +183015,13 @@ export const features = {
       "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-11-09",
       "baseline_low_date": "2023-05-09",
       "by_compat_key": {
         "api.RTCPeerConnection.sctp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182656,7 +183034,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182669,7 +183048,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.maxChannels": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182682,7 +183062,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.maxMessageSize": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182695,7 +183076,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.state": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182708,7 +183090,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.statechange_event": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -182721,7 +183104,8 @@ export const features = {
           }
         },
         "api.RTCSctpTransport.transport": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "76",
@@ -184401,7 +184785,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184452,7 +184837,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.id": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184465,7 +184851,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.kind": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184478,7 +184865,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.timestamp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184507,7 +184895,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.trackIdentifier": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184520,7 +184909,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_media-source.type": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184909,7 +185299,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184922,7 +185313,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.dataChannelsClosed": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184935,7 +185327,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.dataChannelsOpened": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184948,7 +185341,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.id": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184961,7 +185355,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.timestamp": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
@@ -184974,7 +185369,8 @@ export const features = {
           }
         },
         "api.RTCStatsReport.type_peer-connection.type": {
-          "baseline": "low",
+          "baseline": "high",
+          "baseline_high_date": "2025-11-09",
           "baseline_low_date": "2023-05-09",
           "support": {
             "chrome": "80",
