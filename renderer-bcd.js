@@ -1,6 +1,5 @@
-import { escapeHtml } from './src/utils.js';
+import { escapeHtml, groupItemsByDate } from './src/utils.js';
 import {
-  groupItemsByDate,
   createDateHeader,
   addBrowserTagsInOrder,
   processBrowserSupport,

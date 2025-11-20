@@ -16,3 +16,24 @@ export function escapeHtml(text) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 }
+
+// Helper to group items by date (YYYY-MM)
+export function groupItemsByDate(items) {
+  const groups = {};
+  items.forEach(item => {
+    if (!item.date || !(item.date instanceof Date)) {
+      return;
+    }
+    const year = item.date.getFullYear();
+    const month = item.date.getMonth();
+    const key = `${year}-${month}`;
+    if (!groups[key]) {
+      groups[key] = {
+        date: new Date(year, month, 1),
+        items: []
+      };
+    }
+    groups[key].items.push(item);
+  });
+  return Object.values(groups).sort((a, b) => b.date - a.date);
+}

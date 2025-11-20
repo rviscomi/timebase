@@ -21,7 +21,7 @@
     "dev": "npm run build && npm run start",
     "dev:bcd": "npm run build:bcd && npm run start:bcd",
     "dev:all": "npm run build:all && npm run start & npm run start:bcd",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",

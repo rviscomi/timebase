@@ -1,5 +1,5 @@
 import { browsers, features } from './data.js';
-import { downloadICal } from './ical-generator.js';
+import { downloadICal } from './src/ical-generator.js';
 import { parseLocalDate } from './src/utils.js';
 import { shouldDisplayFeature } from './src/filters.js';
 import { getFiltersFromURL, createURLFromFilters } from './src/url.js';
@@ -35,26 +35,7 @@ class TimelineApp {
 
 
 
-  groupFeaturesByDate() {
-    const groups = {};
-    this.features.forEach(feature => {
-      // Skip features without a valid date
-      if (!feature.date || !(feature.date instanceof Date)) {
-        return;
-      }
-      const year = feature.date.getFullYear();
-      const month = feature.date.getMonth();
-      const key = `${year}-${month}`;
-      if (!groups[key]) {
-        groups[key] = {
-          date: new Date(year, month, 1),
-          features: []
-        };
-      }
-      groups[key].features.push(feature);
-    });
-    return Object.values(groups).sort((a, b) => b.date - a.date);
-  }
+
 
   attachInteractivityToStaticHTML() {
     // Attach click handlers to browser tags for filtering

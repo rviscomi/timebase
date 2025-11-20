@@ -1,26 +1,8 @@
 // Shared rendering utilities for both features and BCD keys
 
-import { parseLocalDate, escapeHtml } from './src/utils.js';
+import { parseLocalDate, escapeHtml, groupItemsByDate } from './src/utils.js';
 
-export function groupItemsByDate(items) {
-  const groups = {};
-  items.forEach(item => {
-    if (!item.date || !(item.date instanceof Date)) {
-      return;
-    }
-    const year = item.date.getFullYear();
-    const month = item.date.getMonth();
-    const key = `${year}-${month}`;
-    if (!groups[key]) {
-      groups[key] = {
-        date: new Date(year, month, 1),
-        items: []
-      };
-    }
-    groups[key].items.push(item);
-  });
-  return Object.values(groups).sort((a, b) => b.date - a.date);
-}
+export { groupItemsByDate };
 
 export function createDateHeader(date) {
   const monthText = date.toLocaleString('en-US', {

@@ -1,23 +1,4 @@
-import { escapeHtml } from './src/utils.js';
-function groupFeaturesByDate(features) {
-  const groups = {};
-  features.forEach(feature => {
-    if (!feature.date || !(feature.date instanceof Date)) {
-      return;
-    }
-    const year = feature.date.getFullYear();
-    const month = feature.date.getMonth();
-    const key = `${year}-${month}`;
-    if (!groups[key]) {
-      groups[key] = {
-        date: new Date(year, month, 1),
-        features: []
-      };
-    }
-    groups[key].features.push(feature);
-  });
-  return Object.values(groups).sort((a, b) => b.date - a.date);
-}
+import { escapeHtml, groupItemsByDate } from './src/utils.js';
 
 function createDateHeader(date) {
   const monthText = date.toLocaleString('en-US', {
@@ -426,7 +407,7 @@ function createFeatureCard(feature) {
 }
 
 export function generateTimelineHTML(features) {
-  const groups = groupFeaturesByDate(features);
+  const groups = groupItemsByDate(features);
   let html = '<div id="timeline-content">';
 
   groups.forEach(group => {
@@ -435,7 +416,7 @@ export function generateTimelineHTML(features) {
     const anchorId = `${monthName}-${group.date.getFullYear()}`;
 
     let featuresHTML = '';
-    group.features
+    group.items
       .sort((a, b) => b.date - a.date)
       .forEach(feature => {
         featuresHTML += createFeatureCard(feature);
