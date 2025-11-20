@@ -4,6 +4,7 @@ import { parseLocalDate } from './src/utils.js';
 import { shouldDisplayFeature } from './src/filters.js';
 import { getFiltersFromURL, createURLFromFilters } from './src/url.js';
 import { processFeatures } from './src/data-processor.js';
+import { setupShortcuts, setupShortcutsDialog } from './src/shortcuts.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
 import mdnDocsData from './mdn.json' with { type: "json" };
@@ -227,51 +228,51 @@ class TimelineApp {
   updateScrollTarget() {
     const now = new Date();
     now.setHours(0, 0, 0, 0);
-    
+
     const visibleMonths = Array.from(document.querySelectorAll('.date-group:not([style*="display: none"])'));
-    
+
     // Month names to indices
     const monthMap = {
       'january': 0, 'february': 1, 'march': 2, 'april': 3,
       'may': 4, 'june': 5, 'july': 6, 'august': 7,
       'september': 8, 'october': 9, 'november': 10, 'december': 11
     };
-    
+
     let targetMonth = null;
-    
+
     // Find the first visible month that's on or before today
     for (const month of visibleMonths) {
       const [monthName, yearStr] = month.id.split('-');
       const monthIndex = monthMap[monthName];
       const year = parseInt(yearStr, 10);
-      
+
       if (monthIndex !== undefined && !isNaN(year)) {
         const monthDate = new Date(year, monthIndex, 1);
         monthDate.setHours(0, 0, 0, 0);
-        
+
         if (monthDate <= now) {
           targetMonth = month;
           break;
         }
       }
     }
-    
+
     // Fallback to first visible month
     if (!targetMonth && visibleMonths.length > 0) {
       targetMonth = visibleMonths[0];
     }
-    
+
     // Remove old FAB and observer if they exist
     if (this.scrollFAB) {
       this.scrollFAB.remove();
       this.scrollFAB = null;
     }
-    
+
     if (this.scrollObserver) {
       this.scrollObserver.disconnect();
       this.scrollObserver = null;
     }
-    
+
     // Create new FAB with the target month
     if (targetMonth) {
       this.createScrollToCurrentMonthFAB(targetMonth);
@@ -295,80 +296,26 @@ class TimelineApp {
       });
     }
 
-    // Set up keyboard shortcuts dialog
-    this.initShortcutsDialog();
+    // Initialize shortcuts dialog
+    this.shortcutsDialogManager = setupShortcutsDialog();
 
-    // Add keyboard shortcuts
-    document.addEventListener('keydown', (e) => {
-      // Only handle keypresses if no input element is focused
-      const activeElement = document.activeElement;
-      const isInputFocused = activeElement.tagName === 'INPUT' ||
-        activeElement.tagName === 'TEXTAREA' ||
-        activeElement.isContentEditable;
-
-      // Skip if an input is focused or if Cmd/Ctrl/Alt keys are pressed
-      // (but allow Shift modifier for potential alternative shortcuts)
-      if (isInputFocused || e.metaKey || e.ctrlKey || e.altKey) {
-        return;
-      }
-
-      switch (e.key.toLowerCase()) {
-        case 'w': // Filter widely available features
-          this.filterFeaturesByType('widely-available');
-          break;
-        case 'n': // Filter newly available features
-          this.filterFeaturesByType('newly-available');
-          break;
-        case 'l': // Filter limited availability features
-          this.filterFeaturesByType('limited-availability');
-          break;
-        case 'd': // Filter deprecated (discouraged) features
-          this.filterDeprecatedFeatures();
-          break;
-        case 'c': // Scroll to current month
-          this.scrollToCurrentMonth();
-          break;
-        case 'r': // Reset filters
-          this.resetFilters();
-          break;
-        case 'i': // Filter features with interop tags
-          this.filterInteropFeatures();
-          break;
-        case 'p': // Toggle predictions
-          this.filterPredictedFeatures();
-          break;
-        case '?': // Show keyboard shortcuts dialog
-          this.showShortcutsDialog();
-          break;
-      }
+    // Set up keyboard shortcuts
+    setupShortcuts({
+      'w': () => this.filterFeaturesByType('widely-available'),
+      'n': () => this.filterFeaturesByType('newly-available'),
+      'l': () => this.filterFeaturesByType('limited-availability'),
+      'd': () => this.filterDeprecatedFeatures(),
+      'c': () => this.scrollToCurrentMonth(),
+      'r': () => this.resetFilters(),
+      'i': () => this.filterInteropFeatures(),
+      'p': () => this.filterPredictedFeatures(),
+      '?': () => this.showShortcutsDialog()
     });
-  }
-
-  // Initialize the keyboard shortcuts dialog
-  initShortcutsDialog() {
-    this.shortcutsDialog = document.getElementById('shortcuts-dialog');
-    const closeShortcutsButton = document.getElementById('close-shortcuts');
-
-    if (this.shortcutsDialog && closeShortcutsButton) {
-      // Add click event to close button
-      closeShortcutsButton.addEventListener('click', () => {
-        this.shortcutsDialog.close();
-      });
-
-      // Close dialog when clicking on the backdrop (outside the dialog)
-      this.shortcutsDialog.addEventListener('click', (e) => {
-        if (e.target === this.shortcutsDialog) {
-          this.shortcutsDialog.close();
-        }
-      });
-    }
   }
 
   // Show the keyboard shortcuts dialog
   showShortcutsDialog() {
-    if (this.shortcutsDialog && !this.shortcutsDialog.open) {
-      this.shortcutsDialog.showModal();
-    }
+    this.shortcutsDialogManager.show();
   }
 
   // Helper to get active filters from the DOM
@@ -600,7 +547,7 @@ class TimelineApp {
     // Create the FAB element
     const fab = document.createElement('button');
     fab.className = 'scroll-to-current-month-fab';
-    
+
     // Store reference to the FAB
     this.scrollFAB = fab;
 
@@ -626,7 +573,7 @@ class TimelineApp {
     // Check if target is already in view to set initial state
     const rect = currentMonthElement.getBoundingClientRect();
     const isInView = rect.top >= 80 && rect.top <= window.innerHeight;
-    
+
     // Initially hide the FAB if target is in view, otherwise show it
     if (isInView) {
       fab.classList.add('hidden');
@@ -650,7 +597,7 @@ class TimelineApp {
           fab.classList.remove('hidden');
         }
       });
-    }, { 
+    }, {
       // Create a more generous threshold area for mobile
       rootMargin: '-80px 0px',
       // Use multiple thresholds for better detection of visibility
@@ -659,7 +606,7 @@ class TimelineApp {
 
     // Store reference to the observer
     this.scrollObserver = observer;
-    
+
     // Start observing the current month element
     observer.observe(currentMonthElement);
   }
@@ -835,32 +782,32 @@ class TimelineApp {
   scrollToCurrentMonth() {
     const now = new Date();
     now.setHours(0, 0, 0, 0);
-    
+
     const visibleMonths = Array.from(document.querySelectorAll('.date-group:not([style*="display: none"])'));
-    
+
     const monthMap = {
       'january': 0, 'february': 1, 'march': 2, 'april': 3,
       'may': 4, 'june': 5, 'july': 6, 'august': 7,
       'september': 8, 'october': 9, 'november': 10, 'december': 11
     };
-    
+
     // Find the first visible month that's on or before today
     for (const month of visibleMonths) {
       const [monthName, yearStr] = month.id.split('-');
       const monthIndex = monthMap[monthName];
       const year = parseInt(yearStr, 10);
-      
+
       if (monthIndex !== undefined && !isNaN(year)) {
         const monthDate = new Date(year, monthIndex, 1);
         monthDate.setHours(0, 0, 0, 0);
-        
+
         if (monthDate <= now) {
           month.scrollIntoView({ behavior: 'smooth', block: 'start' });
           return;
         }
       }
     }
-    
+
     // Fallback to first visible month
     if (visibleMonths.length > 0) {
       visibleMonths[0].scrollIntoView({ behavior: 'smooth', block: 'start' });

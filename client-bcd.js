@@ -3,6 +3,7 @@ import developerSignalsData from '../developer-signals.json' with { type: "json"
 import interopData from '../interop.json' with { type: "json" };
 import mdnDocsData from '../mdn.json' with { type: "json" };
 import { processBcdKeys } from './src/data-processor.js';
+import { setupShortcuts, setupShortcutsDialog } from './src/shortcuts.js';
 class BcdTimelineApp {
   constructor() {
     this.url = new URL(window.location);
@@ -239,72 +240,29 @@ class BcdTimelineApp {
     }
   }
 
+
+
   initEventListeners() {
-    this.initShortcutsDialog();
+    // Initialize shortcuts dialog
+    this.shortcutsDialogManager = setupShortcutsDialog();
 
-    document.addEventListener('keydown', (e) => {
-      const activeElement = document.activeElement;
-      const isInputFocused = activeElement.tagName === 'INPUT' ||
-        activeElement.tagName === 'TEXTAREA' ||
-        activeElement.isContentEditable;
-
-      if (isInputFocused || e.metaKey || e.ctrlKey || e.altKey) {
-        return;
-      }
-
-      switch (e.key.toLowerCase()) {
-        case 'w':
-          this.filterFeaturesByType('widely-available');
-          break;
-        case 'n':
-          this.filterFeaturesByType('newly-available');
-          break;
-        case 'l':
-          this.filterFeaturesByType('limited-availability');
-          break;
-        case 'd':
-          this.filterDeprecatedFeatures();
-          break;
-        case 'c':
-          this.scrollToCurrentMonth();
-          break;
-        case 'r':
-          this.resetFilters();
-          break;
-        case 'i':
-          this.filterInteropFeatures();
-          break;
-        case 'p':
-          this.filterPredictedFeatures();
-          break;
-        case '?':
-          this.showShortcutsDialog();
-          break;
-      }
-    });
+  // Set up keyboard shortcuts
+  setupShortcuts({
+    'w': () => this.filterFeaturesByType('widely-available'),
+    'n': () => this.filterFeaturesByType('newly-available'),
+    'l': () => this.filterFeaturesByType('limited-availability'),
+    'd': () => this.filterDeprecatedFeatures(),
+    'c': () => this.scrollToCurrentMonth(),
+    'r': () => this.resetFilters(),
+    'i': () => this.filterInteropFeatures(),
+    'p': () => this.filterPredictedFeatures(),
+    '?': () => this.showShortcutsDialog()
+  });
   }
 
-  initShortcutsDialog() {
-    this.shortcutsDialog = document.getElementById('shortcuts-dialog');
-    const closeShortcutsButton = document.getElementById('close-shortcuts');
-
-    if (this.shortcutsDialog && closeShortcutsButton) {
-      closeShortcutsButton.addEventListener('click', () => {
-        this.shortcutsDialog.close();
-      });
-
-      this.shortcutsDialog.addEventListener('click', (e) => {
-        if (e.target === this.shortcutsDialog) {
-          this.shortcutsDialog.close();
-        }
-      });
-    }
-  }
-
+  // Show the keyboard shortcuts dialog
   showShortcutsDialog() {
-    if (this.shortcutsDialog && !this.shortcutsDialog.open) {
-      this.shortcutsDialog.showModal();
-    }
+    this.shortcutsDialogManager.show();
   }
 
   updateFeatureVisibility() {
