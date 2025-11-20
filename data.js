@@ -11539,9 +11539,9 @@ export const features = {
           "baseline": "low",
           "baseline_low_date": "2025-11-11",
           "support": {
-            "chrome": "87",
-            "chrome_android": "89",
-            "edge": "87",
+            "chrome": "90",
+            "chrome_android": "90",
+            "edge": "90",
             "firefox": "145",
             "firefox_android": "145",
             "safari": "16.4",
@@ -11550,9 +11550,9 @@ export const features = {
         }
       },
       "support": {
-        "chrome": "87",
-        "chrome_android": "89",
-        "edge": "87",
+        "chrome": "90",
+        "chrome_android": "90",
+        "edge": "90",
         "firefox": "145",
         "firefox_android": "145",
         "safari": "16.4",
@@ -31972,6 +31972,16 @@ export const features = {
     ],
     "status": {
       "baseline": false,
+      "by_compat_key": {
+        "api.CSSCustomMediaRule": {
+          "baseline": false,
+          "support": {}
+        },
+        "css.at-rules.custom-media": {
+          "baseline": false,
+          "support": {}
+        }
+      },
       "support": {}
     }
   },
@@ -50798,6 +50808,20 @@ export const features = {
             "chrome": "52",
             "chrome_android": "52",
             "edge": "12",
+            "firefox": "20",
+            "firefox_android": "20",
+            "safari": "9",
+            "safari_ios": "9"
+          }
+        },
+        "css.properties.justify-items.center": {
+          "baseline": "high",
+          "baseline_high_date": "2022-07-15",
+          "baseline_low_date": "2020-01-15",
+          "support": {
+            "chrome": "52",
+            "chrome_android": "52",
+            "edge": "79",
             "firefox": "20",
             "firefox_android": "20",
             "safari": "9",
@@ -69640,6 +69664,19 @@ export const features = {
             "firefox_android": "142",
             "safari": "11.1",
             "safari_ios": "11.3"
+          }
+        },
+        "api.HTMLInputElement.webkitdirectory": {
+          "baseline": "low",
+          "baseline_low_date": "2025-08-19",
+          "support": {
+            "chrome": "7",
+            "chrome_android": "132",
+            "edge": "13",
+            "firefox": "50",
+            "firefox_android": "142",
+            "safari": "11.1",
+            "safari_ios": "18.4"
           }
         },
         "html.elements.input.webkitdirectory": {
@@ -97808,9 +97845,9 @@ export const features = {
     }
   },
   "oklab": {
-    "description_html": "The Oklab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is, aiming to match how humans perceive colors. Oklch is a variant of Oklab with polar coordinates. These color spaces can be used with the CSS <code>color()</code>, <code>oklab()</code>, and <code>oklch()</code> functions.",
+    "description_html": "The Oklab color space expresses colors in terms of lightness and how red/green and blue/yellow a color is, aiming to match how humans perceive colors. OkLCh is a variant of Oklab with polar coordinates. These color spaces can be used with the CSS <code>oklab()</code> and <code>oklch()</code> functions.",
     "kind": "feature",
-    "name": "Oklab and Oklch",
+    "name": "Oklab and OkLCh",
     "spec": [
       "https://drafts.csswg.org/css-color-4/#ok-lab"
     ],
@@ -154471,14 +154508,12 @@ export const features = {
           }
         },
         "http.headers.Content-Security-Policy.require-trusted-types-for": {
-          "baseline": "low",
-          "baseline_low_date": "2025-11-11",
+          "baseline": false,
           "support": {
             "chrome": "83",
             "chrome_android": "83",
             "edge": "83",
-            "firefox": "145",
-            "firefox_android": "145",
+            "firefox": "preview",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -176982,11 +177017,15 @@ export const features = {
         },
         "api.GPUAdapterInfo.subgroupMaxSize": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "134"
+          }
         },
         "api.GPUAdapterInfo.subgroupMinSize": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "134"
+          }
         },
         "api.GPUAdapterInfo.vendor": {
           "baseline": false,
@@ -177126,11 +177165,14 @@ export const features = {
         },
         "api.GPUCanvasContext.configure.toneMapping": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "129"
+          }
         },
         "api.GPUCanvasContext.getConfiguration": {
           "baseline": false,
           "support": {
+            "chrome_android": "131",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -177495,7 +177537,9 @@ export const features = {
         },
         "api.GPUDevice.adapterInfo": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "132"
+          }
         },
         "api.GPUDevice.createBindGroup": {
           "baseline": false,
@@ -177515,7 +177559,9 @@ export const features = {
         },
         "api.GPUDevice.createBindGroupLayout.storageTexture_access_read-write_read-only": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "124"
+          }
         },
         "api.GPUDevice.createBindGroupLayout.texture_rgb10a2uint": {
           "baseline": false,
@@ -177549,7 +177595,9 @@ export const features = {
         },
         "api.GPUDevice.createComputePipeline.optional_entryPoint": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "121"
+          }
         },
         "api.GPUDevice.createComputePipelineAsync": {
           "baseline": false,
@@ -177561,7 +177609,9 @@ export const features = {
         },
         "api.GPUDevice.createComputePipelineAsync.optional_entryPoint": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "121"
+          }
         },
         "api.GPUDevice.createPipelineLayout": {
           "baseline": false,
@@ -177615,7 +177665,9 @@ export const features = {
         },
         "api.GPUDevice.createRenderPipeline.optional_entryPoint": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "121"
+          }
         },
         "api.GPUDevice.createRenderPipeline.texture_rgb10a2uint": {
           "baseline": false,
@@ -177625,7 +177677,9 @@ export const features = {
         },
         "api.GPUDevice.createRenderPipeline.validates_depth_bias_for_line_and_point_topologies": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "131"
+          }
         },
         "api.GPUDevice.createRenderPipeline.vertex_unorm10-10-10-2": {
           "baseline": false,
@@ -177655,7 +177709,9 @@ export const features = {
         },
         "api.GPUDevice.createRenderPipelineAsync.optional_entryPoint": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "121"
+          }
         },
         "api.GPUDevice.createRenderPipelineAsync.texture_rgb10a2uint": {
           "baseline": false,
@@ -177665,7 +177721,9 @@ export const features = {
         },
         "api.GPUDevice.createRenderPipelineAsync.validates_depth_bias_for_line_and_point_topologies": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "131"
+          }
         },
         "api.GPUDevice.createRenderPipelineAsync.vertex_unorm10-10-10-2": {
           "baseline": false,
@@ -178029,7 +178087,9 @@ export const features = {
         },
         "api.GPUQueue.submit.validates_command_buffer_uniqueness": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "126"
+          }
         },
         "api.GPUQueue.writeBuffer": {
           "baseline": false,
@@ -178467,7 +178527,9 @@ export const features = {
         },
         "api.GPUSupportedFeatures.feature_clip-distances": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "131"
+          }
         },
         "api.GPUSupportedFeatures.feature_depth-clip-control": {
           "baseline": false,
@@ -178483,11 +178545,15 @@ export const features = {
         },
         "api.GPUSupportedFeatures.feature_dual-source-blending": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "130"
+          }
         },
         "api.GPUSupportedFeatures.feature_float32-blendable": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "132"
+          }
         },
         "api.GPUSupportedFeatures.feature_float32-filterable": {
           "baseline": false,
@@ -179031,6 +179097,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179039,6 +179106,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179047,26 +179115,34 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
         },
         "api.WGSLLanguageFeatures.extension_packed_4x8_integer_dot_product": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "123"
+          }
         },
         "api.WGSLLanguageFeatures.extension_readonly_and_readwrite_storage_textures": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "124"
+          }
         },
         "api.WGSLLanguageFeatures.extension_unrestricted_pointer_parameters": {
           "baseline": false,
-          "support": {}
+          "support": {
+            "chrome_android": "123"
+          }
         },
         "api.WGSLLanguageFeatures.forEach": {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179075,6 +179151,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179083,6 +179160,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179091,6 +179169,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179099,6 +179178,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }
@@ -179107,6 +179187,7 @@ export const features = {
           "baseline": false,
           "support": {
             "chrome_android": "121",
+            "firefox_android": "141",
             "safari": "26",
             "safari_ios": "26"
           }

@@ -6679,9 +6679,9 @@ export const bcdKeys = {
       "baseline": "low",
       "baseline_low_date": "2025-11-11",
       "support": {
-        "chrome": "87",
-        "chrome_android": "89",
-        "edge": "87",
+        "chrome": "90",
+        "chrome_android": "90",
+        "edge": "90",
         "firefox": "145",
         "firefox_android": "145",
         "safari": "16.4",
@@ -10351,6 +10351,26 @@ export const bcdKeys = {
       "https://wicg.github.io/entries-api/#html-forms"
     ]
   },
+  "api.HTMLInputElement.webkitdirectory": {
+    "parent_feature": "input-file-webkitdirectory",
+    "parent_feature_name": "<input type=\"file\" webkitdirectory>",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-08-19",
+      "support": {
+        "chrome": "7",
+        "chrome_android": "132",
+        "edge": "13",
+        "firefox": "50",
+        "firefox_android": "142",
+        "safari": "11.1",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/entries-api/#html-forms"
+    ]
+  },
   "api.IntersectionObserver.scrollMargin": {
     "parent_feature": "intersection-observer",
     "parent_feature_name": "Intersection observer",
@@ -12983,7 +13003,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklab": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-11-09",
@@ -13004,7 +13024,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklab.mixed_type_parameters": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-08-21",
@@ -13024,7 +13044,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklch": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-11-09",
@@ -13045,7 +13065,7 @@ export const bcdKeys = {
   },
   "css.types.color.oklch.mixed_type_parameters": {
     "parent_feature": "oklab",
-    "parent_feature_name": "Oklab and Oklch",
+    "parent_feature_name": "Oklab and OkLCh",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-08-21",
@@ -17373,14 +17393,12 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-11-11",
+      "baseline": false,
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "145",
-        "firefox_android": "145",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -19513,6 +19531,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome_android": "131",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22558,6 +22577,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22573,6 +22593,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22588,6 +22609,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22603,6 +22625,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22618,6 +22641,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22633,6 +22657,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22648,6 +22673,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22663,6 +22689,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22678,6 +22705,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome_android": "121",
+        "firefox_android": "141",
         "safari": "26",
         "safari_ios": "26"
       }
