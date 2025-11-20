@@ -4,6 +4,8 @@ import interopData from '../interop.json' with { type: "json" };
 import mdnDocsData from '../mdn.json' with { type: "json" };
 import { processBcdKeys } from './src/data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './src/shortcuts.js';
+import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './src/router.js';
+import { getFiltersFromURL, createURLFromFilters } from './src/url.js';
 class BcdTimelineApp {
   constructor() {
     this.url = new URL(window.location);
@@ -266,12 +268,12 @@ class BcdTimelineApp {
   }
 
   updateFeatureVisibility() {
-    const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'));
-
-    const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'))
-      .map(filter => filter.split(':')[1]);
+    const activeFilters = getFiltersFromDOM(
+      this.currentStatusFilter,
+      this.url.searchParams.get('predictions') !== 'false'
+    );
+    const activeBrowserFilters = activeFilters.browsers;
+    const activeInteropFilters = activeFilters.interop;
 
     const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
 
@@ -350,7 +352,12 @@ class BcdTimelineApp {
 
     if (currentInteropFilter === 'any') {
       this.url.searchParams.delete('interop');
-      window.history.replaceState({}, '', this.url);
+
+      document.querySelectorAll('[data-interop-any]').forEach(card => {
+        card.removeAttribute('data-interop-any');
+      });
+
+      updateHistory(this.url);
       this.updateFeatureVisibility();
       return;
     }
@@ -360,6 +367,7 @@ class BcdTimelineApp {
       tag.setAttribute('aria-pressed', 'false');
     });
 
+    // Create a special "any" interop filter data attribute on all feature cards
     const allCards = document.querySelectorAll('.feature-card');
     allCards.forEach(card => {
       const hasInterop = Array.from(card.attributes)
@@ -374,7 +382,7 @@ class BcdTimelineApp {
 
     this.url.searchParams.delete('interop');
     this.url.searchParams.set('interop', 'any');
-    window.history.replaceState({}, '', this.url);
+    updateHistory(this.url);
     this.updateFeatureVisibility();
   }
 
@@ -390,73 +398,19 @@ class BcdTimelineApp {
   }
 
   updateURLWithFilters() {
-    this.url.searchParams.delete('browser');
-    this.url.searchParams.delete('status');
-    this.url.searchParams.delete('interop');
-
-    const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'));
-
-    const uniqueBrowserFilters = [...new Set(activeBrowserFilters)];
-
-    if (uniqueBrowserFilters.length > 0) {
-      uniqueBrowserFilters.forEach(filter => {
-        this.url.searchParams.append('browser', filter);
-      });
-    }
-
-    const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'))
-      .map(filter => filter.split(':')[1]);
-
-    if (activeInteropFilters.length > 0) {
-      const uniqueInteropFilters = [...new Set(activeInteropFilters)];
-
-      uniqueInteropFilters.forEach(year => {
-        this.url.searchParams.append('interop', year);
-      });
-    } else {
-      const allCards = document.querySelectorAll('.feature-card');
-      const anyInteropFilterActive = Array.from(allCards).some(card => {
-        return card.hasAttribute('data-interop-any');
-      });
-
-      if (anyInteropFilterActive) {
-        this.url.searchParams.set('interop', 'any');
-      }
-    }
-
-    if (this.currentStatusFilter) {
-      this.url.searchParams.set('status', this.currentStatusFilter);
-    } else {
-      this.url.searchParams.delete('status');
-    }
-
-    window.history.replaceState({}, '', this.url);
+    const activeFilters = getFiltersFromDOM(
+      this.currentStatusFilter,
+      this.url.searchParams.get('predictions') !== 'false'
+    );
+    this.url = createURLFromFilters(this.url, activeFilters);
+    updateHistory(this.url);
   }
 
   initializeFiltersFromURL() {
-    const browserFilters = this.url.searchParams.getAll('browser');
-    if (browserFilters.length > 0) {
-      browserFilters.forEach(filter => {
-        document.querySelectorAll(`.browser-tag[data-filter="${filter}"]`).forEach(tag => {
-          tag.classList.add('active-filter');
-          tag.setAttribute('aria-pressed', 'true');
-        });
-      });
-    }
+    const filters = getFiltersFromURL(this.url);
 
-    const interopFilters = this.url.searchParams.getAll('interop');
-    if (interopFilters.length > 0) {
-      interopFilters.forEach(year => {
-        if (year !== 'any') {
-          document.querySelectorAll(`.interop-tag[data-filter="interop:${year}"]`).forEach(tag => {
-            tag.classList.add('active-filter');
-            tag.setAttribute('aria-pressed', 'true');
-          });
-        }
-      });
-    }
+    // Apply filters to DOM
+    applyFiltersToDOM(filters);
 
     const predictionsFilter = this.url.searchParams.get('predictions');
     const statusFilter = this.url.searchParams.get('status');
@@ -464,7 +418,7 @@ class BcdTimelineApp {
       this.currentStatusFilter = statusFilter;
     }
 
-    if (browserFilters.length > 0 || interopFilters.length > 0 || statusFilter || predictionsFilter) {
+    if (filters.browsers.length > 0 || filters.interop.length > 0 || statusFilter || predictionsFilter) {
       this.updateFeatureVisibility();
       this.updateScrollTarget();
     }
@@ -611,7 +565,8 @@ class BcdTimelineApp {
       card.style.display = 'block';
     });
 
-    window.history.replaceState({}, '', this.url);
+    // Update the URL without reloading the page
+    updateHistory(this.url);
     this.updateDateHeadersVisibility();
     this.updateURLWithFilters();
   }

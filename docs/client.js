@@ -5,6 +5,7 @@ import { shouldDisplayFeature } from './src/filters.js';
 import { getFiltersFromURL, createURLFromFilters } from './src/url.js';
 import { processFeatures } from './src/data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './src/shortcuts.js';
+import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './src/router.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };
 import mdnDocsData from './mdn.json' with { type: "json" };
@@ -318,35 +319,14 @@ class TimelineApp {
     this.shortcutsDialogManager.show();
   }
 
-  // Helper to get active filters from the DOM
-  getActiveFilters() {
-    const activeBrowserFilters = Array.from(document.querySelectorAll('.browser-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'));
 
-    const activeInteropFilters = Array.from(document.querySelectorAll('.interop-tag.active-filter'))
-      .map(tag => tag.getAttribute('data-filter'))
-      .map(filter => filter.split(':')[1]);
-
-    // Check for 'any' interop filter in URL (special case)
-    // We still need to check URL for 'any' because it might not have a specific tag if it came from 'i' shortcut
-    // But wait, 'i' shortcut sets 'any' in URL.
-    // The original code checked URL for 'any'.
-    const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
-    if (hasAnyInteropFilter) {
-      activeInteropFilters.push('any');
-    }
-
-    return {
-      browsers: activeBrowserFilters,
-      interop: activeInteropFilters,
-      status: this.currentStatusFilter,
-      showPredictions: this.url.searchParams.get('predictions') !== 'false'
-    };
-  }
 
   // Method to update the visibility of feature cards based on active filters and prediction visibility
   updateFeatureVisibility() {
-    const activeFilters = this.getActiveFilters();
+    const activeFilters = getFiltersFromDOM(
+      this.currentStatusFilter,
+      this.url.searchParams.get('predictions') !== 'false'
+    );
 
     this.allFeatures.forEach(feature => {
       const isVisible = shouldDisplayFeature(feature, activeFilters);
@@ -377,7 +357,7 @@ class TimelineApp {
       url.searchParams.delete('interop');
 
       // Update the URL without reloading the page
-      window.history.replaceState({}, '', this.url);
+      updateHistory(this.url);
 
       // Update feature visibility with all active filters
       this.updateFeatureVisibility();
@@ -416,7 +396,7 @@ class TimelineApp {
     this.url.searchParams.set('interop', 'any'); // Add the "any" filter
 
     // Update the URL without reloading the page
-    window.history.replaceState({}, '', this.url);
+    updateHistory(this.url);
 
     // Update feature visibility with all active filters
     this.updateFeatureVisibility();
@@ -436,36 +416,20 @@ class TimelineApp {
 
   // Update URL with current filter state
   updateURLWithFilters() {
-    const activeFilters = this.getActiveFilters();
+    const activeFilters = getFiltersFromDOM(
+      this.currentStatusFilter,
+      this.url.searchParams.get('predictions') !== 'false'
+    );
     this.url = createURLFromFilters(this.url, activeFilters);
-    window.history.replaceState({}, '', this.url);
+    updateHistory(this.url);
   }
 
   // Initialize filters from URL parameters
   initializeFiltersFromURL() {
     const filters = getFiltersFromURL(this.url);
 
-    // Apply browser filters
-    if (filters.browsers.length > 0) {
-      filters.browsers.forEach(filter => {
-        document.querySelectorAll(`.browser-tag[data-filter="${filter}"]`).forEach(tag => {
-          tag.classList.add('active-filter');
-          tag.setAttribute('aria-pressed', 'true');
-        });
-      });
-    }
-
-    // Apply interop filters
-    if (filters.interop.length > 0) {
-      filters.interop.forEach(year => {
-        if (year !== 'any') {
-          document.querySelectorAll(`.interop-tag[data-filter="interop:${year}"]`).forEach(tag => {
-            tag.classList.add('active-filter');
-            tag.setAttribute('aria-pressed', 'true');
-          });
-        }
-      });
-    }
+    // Apply filters to DOM
+    applyFiltersToDOM(filters);
 
     // Apply status filter
     if (filters.status) {

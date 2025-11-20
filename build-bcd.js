@@ -22,11 +22,12 @@ async function build() {
   }
 
   // Only copy BCD-specific files (shared assets are in parent dir)
-  const assets = ['bcd-data.js'];
+  // We also need to copy src for the modules to work
+  const assets = ['bcd-data.js', 'src'];
   for (const asset of assets) {
     const source = path.resolve(__dirname, asset);
     const dest = path.resolve(DIST_DIR, asset);
-    await fs.cp(source, dest, { recursive: false });
+    await fs.cp(source, dest, { recursive: true });
   }
 
   const template = await fs.readFile(TEMPLATE_PATH, 'utf-8');
