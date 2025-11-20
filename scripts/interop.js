@@ -9,7 +9,7 @@ import fs from 'fs/promises';
 
 // URL to the raw JSON file on GitHub
 const INTEROP_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/interop.json';
-const OUTPUT_FILE = './interop.json';
+const OUTPUT_FILE = './data/interop.json';
 
 async function run() {
   try {

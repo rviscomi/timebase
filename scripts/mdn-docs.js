@@ -9,7 +9,7 @@ import fs from 'fs/promises';
 
 // URL to the raw JSON file on GitHub
 const MDN_DOCS_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/mdn-docs.json';
-const OUTPUT_FILE = './mdn.json';
+const OUTPUT_FILE = './data/mdn.json';
 
 async function run() {
   try {

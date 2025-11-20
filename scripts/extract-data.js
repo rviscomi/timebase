@@ -21,5 +21,5 @@ export const features = ${JSON.stringify(Object.fromEntries(Object.entries(data.
 })), null, 2)};
 `;
 
-writeFileSync('data.js', moduleContent);
+writeFileSync('data/data.js', moduleContent);
 console.log('Data extracted successfully!'); 

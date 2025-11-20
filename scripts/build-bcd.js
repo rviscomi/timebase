@@ -2,11 +2,11 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { generateTimelineHTML } from '../src/renderer/renderer-bcd.js';
-import { browsers, bcdKeys as rawBcdKeys } from '../bcd-data.js';
+import { browsers, bcdKeys as rawBcdKeys } from '../data/bcd-data.js';
 import { processBcdKeys } from '../src/data-processor.js';
-import developerSignalsData from '../developer-signals.json' with { type: "json" };
-import interopData from '../interop.json' with { type: "json" };
-import mdnDocsData from '../mdn.json' with { type: "json" };
+import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
+import interopData from '../data/interop.json' with { type: "json" };
+import mdnDocsData from '../data/mdn.json' with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,7 +23,7 @@ async function build() {
 
   // Only copy BCD-specific files (shared assets are in parent dir)
   // We also need to copy src for the modules to work
-  const assets = ['bcd-data.js', 'src'];
+  const assets = ['data', 'src'];
   for (const asset of assets) {
     const source = path.resolve(__dirname, '../', asset);
     const dest = path.resolve(DIST_DIR, asset);

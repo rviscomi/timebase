@@ -2,10 +2,10 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { generateTimelineHTML } from '../src/renderer/renderer.js';
-import { browsers, features as rawFeatures } from '../data.js';
-import developerSignalsData from '../developer-signals.json' with { type: "json" };
-import interopData from '../interop.json' with { type: "json" };
-import mdnDocsData from '../mdn.json' with { type: "json" };
+import { browsers, features as rawFeatures } from '../data/data.js';
+import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
+import interopData from '../data/interop.json' with { type: "json" };
+import mdnDocsData from '../data/mdn.json' with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,7 +24,7 @@ async function build() {
   }
 
   // Copy static assets
-  const assets = ['styles.css', 'images', 'data.js', 'developer-signals.json', 'interop.json', 'mdn.json', 'src'];
+  const assets = ['styles.css', 'images', 'data', 'src'];
   for (const asset of assets) {
     const source = path.resolve(__dirname, '../', asset);
     const dest = path.resolve(DIST_DIR, asset);

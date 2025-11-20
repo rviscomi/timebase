@@ -122,5 +122,5 @@ export const browsers = ${JSON.stringify(data.browsers, null, 2)};
 export const bcdKeys = ${JSON.stringify(bcdKeys, null, 2)};
 `;
 
-writeFileSync('bcd-data.js', moduleContent);
+writeFileSync('data/bcd-data.js', moduleContent);
 console.log(`Extracted ${filteredKeys} BCD keys (filtered from ${totalKeys} total) within date range!`);

@@ -9,7 +9,7 @@ import fs from 'fs/promises';
 
 // URL to the raw JSON file on GitHub
 const DEVELOPER_SIGNALS_URL = 'https://web-platform-dx.github.io/developer-signals/web-features-signals.json';
-const OUTPUT_FILE = './developer-signals.json';
+const OUTPUT_FILE = './data/developer-signals.json';
 
 async function run() {
   try {
