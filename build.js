@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { generateTimelineHTML } from './renderer.js';
+import { generateTimelineHTML } from './src/renderer/renderer.js';
 import { browsers, features as rawFeatures } from './data.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };
 import interopData from './interop.json' with { type: "json" };

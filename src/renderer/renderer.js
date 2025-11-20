@@ -1,4 +1,4 @@
-import { escapeHtml, groupItemsByDate } from './src/utils.js';
+import { escapeHtml, groupItemsByDate } from '../utils.js';
 
 function createDateHeader(date) {
   const monthText = date.toLocaleString('en-US', {
@@ -194,7 +194,7 @@ function createFeatureHeader(feature, uniqueCardId) {
   if (!featureDate && feature.shipDates && feature.shipDates.length > 0) {
     featureDate = feature.shipDates[0].date;
   }
-  
+
   if (featureDate) {
     const now = new Date();
     const formattedDate = featureDate.toLocaleDateString('en-US', {
@@ -227,7 +227,7 @@ function createFeatureHeader(feature, uniqueCardId) {
         day: 'numeric'
       });
       const widelyAvailableId = `feature-${feature.id}-widely-available`;
-      
+
       if (feature.status.baseline === 'high') {
         availabilityText = `Newly available since ${formattedDate}.<br>Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
       } else if (feature.prediction) {
@@ -254,25 +254,25 @@ function createFeatureHeader(feature, uniqueCardId) {
     const sortedShipDates = [...feature.shipDates].sort((a, b) => {
       const baseA = a.browser.replace('_android', '').replace('_ios', '');
       const baseB = b.browser.replace('_android', '').replace('_ios', '');
-      
+
       if (baseA !== baseB) {
         const browserOrder = ['chrome', 'edge', 'safari', 'firefox'];
         return browserOrder.indexOf(baseA) - browserOrder.indexOf(baseB);
       }
-      
+
       const isPlatformA = a.browser.includes('_');
       const isPlatformB = b.browser.includes('_');
-      
+
       if (isPlatformA !== isPlatformB) {
         return isPlatformA ? 1 : -1;
       }
-      
+
       if (isPlatformA && isPlatformB) {
         const platformA = a.browser.split('_')[1];
         const platformB = b.browser.split('_')[1];
         return platformA.localeCompare(platformB);
       }
-      
+
       return 0;
     });
 
@@ -281,7 +281,7 @@ function createFeatureHeader(feature, uniqueCardId) {
       const baseBrowser = shipDate.browser.replace('_android', '').replace('_ios', '');
       let displayName = baseBrowser.charAt(0).toUpperCase() + baseBrowser.slice(1);
       let fullText = displayName + ' ' + shipDate.version;
-      
+
       if (shipDate.browser.includes('_')) {
         const platform = shipDate.browser.split('_')[1];
         if (platform.toLowerCase() === 'ios') {
@@ -290,14 +290,14 @@ function createFeatureHeader(feature, uniqueCardId) {
           fullText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
         }
       }
-      
-      const dateText = (shipDate.date && !shipDate.isPreview) ? 
+
+      const dateText = (shipDate.date && !shipDate.isPreview) ?
         shipDate.date.toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'short',
           day: 'numeric'
         }) : 'TBD';
-      
+
       tableRows += `
         <tr>
           <td>
@@ -342,8 +342,8 @@ function createFeatureHeader(feature, uniqueCardId) {
   linksHTML += `<a href="https://webstatus.dev/features/${feature.id}" class="webstatus-link" target="_blank">Web Status</a>`;
   linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${feature.id}/" class="web-platform-dx-link" target="_blank">Web Features Explorer</a>`;
   if (feature.mdn) {
-      const mdnEntry = feature.mdn[0];
-      linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;
+    const mdnEntry = feature.mdn[0];
+    linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;
   }
 
 
@@ -390,10 +390,10 @@ function createFeatureCard(feature) {
     });
   }
   if (feature.interop) {
-      const interopYears = feature.interop.map(entry => entry.year).sort((a, b) => b - a);
-      if (interopYears.length > 0) {
-          dataAttrs += ` data-interop-${interopYears[0]}="true"`;
-      }
+    const interopYears = feature.interop.map(entry => entry.year).sort((a, b) => b - a);
+    if (interopYears.length > 0) {
+      dataAttrs += ` data-interop-${interopYears[0]}="true"`;
+    }
   }
 
 
@@ -423,10 +423,10 @@ export function generateTimelineHTML(features) {
       });
 
     if (featuresHTML) {
-        html += `<div class="date-group" id="${anchorId}">`;
-        html += dateHeader;
-        html += featuresHTML;
-        html += '</div>';
+      html += `<div class="date-group" id="${anchorId}">`;
+      html += dateHeader;
+      html += featuresHTML;
+      html += '</div>';
     }
   });
 

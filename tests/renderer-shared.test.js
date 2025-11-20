@@ -2,9 +2,8 @@ import { describe, it, expect } from 'vitest';
 import {
   createDateHeader,
   createBrowserTag,
-  createInteropTag,
-  groupItemsByDate
-} from '../renderer-shared.js';
+  createInteropTag
+} from '../src/renderer/renderer-shared.js';
 
 describe('Renderer Shared', () => {
   // Helper to parse HTML string into a DOM element
@@ -67,34 +66,5 @@ describe('Renderer Shared', () => {
     });
   });
 
-  describe('groupItemsByDate', () => {
-    it('should group items by month and sort descending', () => {
-      const items = [
-        { date: new Date(2023, 0, 15), id: 1 }, // Jan
-        { date: new Date(2023, 1, 10), id: 2 }, // Feb
-        { date: new Date(2023, 0, 20), id: 3 }, // Jan
-      ];
-      const groups = groupItemsByDate(items);
 
-      expect(groups).toHaveLength(2);
-      // Feb should be first (descending)
-      expect(groups[0].date.getMonth()).toBe(1);
-      expect(groups[0].items).toHaveLength(1);
-
-      // Jan should be second
-      expect(groups[1].date.getMonth()).toBe(0);
-      expect(groups[1].items).toHaveLength(2);
-    });
-
-    it('should ignore items without valid dates', () => {
-      const items = [
-        { date: null, id: 1 },
-        { date: 'invalid', id: 2 },
-        { date: new Date(2023, 0, 1), id: 3 }
-      ];
-      const groups = groupItemsByDate(items);
-      expect(groups).toHaveLength(1);
-      expect(groups[0].items).toHaveLength(1);
-    });
-  });
 });

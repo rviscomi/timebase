@@ -1,4 +1,4 @@
-import { escapeHtml, groupItemsByDate } from './src/utils.js';
+import { escapeHtml, groupItemsByDate } from '../utils.js';
 import {
   createDateHeader,
   addBrowserTagsInOrder,
@@ -75,7 +75,7 @@ function createBcdKeyHeader(bcdKey, uniqueCardId) {
   if (!itemDate && bcdKey.shipDates && bcdKey.shipDates.length > 0) {
     itemDate = bcdKey.shipDates[0].date;
   }
-  
+
   if (itemDate) {
     const now = new Date();
     const formattedDate = itemDate.toLocaleDateString('en-US', {
@@ -108,7 +108,7 @@ function createBcdKeyHeader(bcdKey, uniqueCardId) {
         day: 'numeric'
       });
       const widelyAvailableId = `bcd-${bcdKey.id}-widely-available`;
-      
+
       if (bcdKey.status.baseline === 'high') {
         availabilityText = `Newly available since ${formattedDate}.<br>Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
       } else if (bcdKey.prediction) {

@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { generateTimelineHTML } from './renderer-bcd.js';
+import { generateTimelineHTML } from './src/renderer/renderer-bcd.js';
 import { browsers, bcdKeys as rawBcdKeys } from './bcd-data.js';
 import { processBcdKeys } from './src/data-processor.js';
 import developerSignalsData from './developer-signals.json' with { type: "json" };

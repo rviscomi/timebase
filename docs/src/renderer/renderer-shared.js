@@ -1,6 +1,6 @@
 // Shared rendering utilities for both features and BCD keys
 
-import { parseLocalDate, escapeHtml, groupItemsByDate } from './src/utils.js';
+import { escapeHtml, groupItemsByDate } from '../utils.js';
 
 export { groupItemsByDate };
 
@@ -134,25 +134,25 @@ export function createBrowserSupportTable(item) {
     const sortedShipDates = [...item.shipDates].sort((a, b) => {
       const baseA = a.browser.replace('_android', '').replace('_ios', '');
       const baseB = b.browser.replace('_android', '').replace('_ios', '');
-      
+
       if (baseA !== baseB) {
         const browserOrder = ['chrome', 'edge', 'safari', 'firefox'];
         return browserOrder.indexOf(baseA) - browserOrder.indexOf(baseB);
       }
-      
+
       const isPlatformA = a.browser.includes('_');
       const isPlatformB = b.browser.includes('_');
-      
+
       if (isPlatformA !== isPlatformB) {
         return isPlatformA ? 1 : -1;
       }
-      
+
       if (isPlatformA && isPlatformB) {
         const platformA = a.browser.split('_')[1];
         const platformB = b.browser.split('_')[1];
         return platformA.localeCompare(platformB);
       }
-      
+
       return 0;
     });
 
@@ -161,7 +161,7 @@ export function createBrowserSupportTable(item) {
       const baseBrowser = shipDate.browser.replace('_android', '').replace('_ios', '');
       let displayName = baseBrowser.charAt(0).toUpperCase() + baseBrowser.slice(1);
       let fullText = displayName + ' ' + shipDate.version;
-      
+
       if (shipDate.browser.includes('_')) {
         const platform = shipDate.browser.split('_')[1];
         if (platform.toLowerCase() === 'ios') {
@@ -170,14 +170,14 @@ export function createBrowserSupportTable(item) {
           fullText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
         }
       }
-      
-      const dateText = (shipDate.date && !shipDate.isPreview) ? 
+
+      const dateText = (shipDate.date && !shipDate.isPreview) ?
         shipDate.date.toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'short',
           day: 'numeric'
         }) : 'TBD';
-      
+
       tableRows += `
         <tr>
           <td>
