@@ -2,7 +2,7 @@
   "name": "timebase",
   "version": "1.0.0",
   "type": "module",
-  "main": "client.js",
+  "main": "src/client.js",
   "scripts": {
     "update": "npm update web-futures --save && npm run update:meta",
     "update:meta": "node scripts/extract-data.js && node scripts/extract-bcd-data.js && node scripts/developer-signals.js && node scripts/interop.js && node scripts/mdn-docs.js",

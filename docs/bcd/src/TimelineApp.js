@@ -1,4 +1,5 @@
-import { browsers, features } from '../data.js';
+import { browserIcons } from './browser-icons.js';
+import { browsers, features } from '../data/data.js';
 import { downloadICal } from './ical-generator.js';
 import { parseLocalDate } from './utils.js';
 import { shouldDisplayFeature } from './filters.js';
@@ -6,9 +7,9 @@ import { getFiltersFromURL, createURLFromFilters } from './url.js';
 import { processFeatures } from './data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './shortcuts.js';
 import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './router.js';
-import developerSignalsData from '../developer-signals.json' with { type: "json" };
-import interopData from '../interop.json' with { type: "json" };
-import mdnDocsData from '../mdn.json' with { type: "json" };
+import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
+import interopData from '../data/interop.json' with { type: "json" };
+import mdnDocsData from '../data/mdn.json' with { type: "json" };
 
 export class TimelineApp {
   constructor() {

@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../docs', 'bcd');
-const TEMPLATE_PATH = path.resolve(__dirname, '../index.html');
+const TEMPLATE_PATH = path.resolve(__dirname, '../src/index.html');
 
 async function build() {
   try {
@@ -55,7 +55,7 @@ async function build() {
     .replace(/src="images\//g, 'src="../images/');
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);
-  await fs.copyFile(path.resolve(__dirname, '../client-bcd.js'), path.resolve(DIST_DIR, 'client-bcd.js'));
+  await fs.copyFile(path.resolve(__dirname, '../src/client-bcd.js'), path.resolve(DIST_DIR, 'client-bcd.js'));
 
   console.log(`BCD static HTML generated successfully with ${bcdKeys.length} BCD keys!`);
 }

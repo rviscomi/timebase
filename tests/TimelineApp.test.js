@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { TimelineApp } from '../src/TimelineApp.js';
 
 // Mock dependencies
-vi.mock('../data.js', () => ({
+vi.mock('/data/data.js', () => ({
   browsers: {
     chrome: {
       releases: [
@@ -38,15 +38,15 @@ vi.mock('../data.js', () => ({
   }
 }));
 
-vi.mock('../developer-signals.json', () => ({
+vi.mock('/data/developer-signals.json', () => ({
   default: {}
 }));
 
-vi.mock('../interop.json', () => ({
+vi.mock('/data/interop.json', () => ({
   default: {}
 }));
 
-vi.mock('../mdn.json', () => ({
+vi.mock('/data/mdn.json', () => ({
   default: {}
 }));
 

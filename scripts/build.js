@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DIST_DIR = path.resolve(__dirname, '../docs');
-const TEMPLATE_PATH = path.resolve(__dirname, '../index.html');
+const TEMPLATE_PATH = path.resolve(__dirname, '../src/index.html');
 
 import { processFeatures } from '../src/data-processor.js';
 
@@ -24,7 +24,7 @@ async function build() {
   }
 
   // Copy static assets
-  const assets = ['styles.css', 'images', 'data', 'src'];
+  const assets = ['images', 'data', 'src'];
   for (const asset of assets) {
     const source = path.resolve(__dirname, '../', asset);
     const dest = path.resolve(DIST_DIR, asset);
@@ -45,7 +45,7 @@ async function build() {
     ;
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);
-  await fs.copyFile(path.resolve(__dirname, '../client.js'), path.resolve(DIST_DIR, 'client.js'));
+  await fs.copyFile(path.resolve(__dirname, '../src/client.js'), path.resolve(DIST_DIR, 'client.js'));
 
   console.log('Static HTML generated successfully!');
 }
