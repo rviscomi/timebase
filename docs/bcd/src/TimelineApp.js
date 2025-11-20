@@ -1,4 +1,4 @@
-import { browserIcons } from './browser-icons.js';
+
 import { browsers, features } from '../data/data.js';
 import { downloadICal } from './ical-generator.js';
 import { parseLocalDate } from './utils.js';
