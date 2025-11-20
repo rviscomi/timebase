@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timeline of web features and browser support">
+    <title>Baseline timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔮</text></svg>">
+
+</head>
+<body>
+    <header class="download-header">
+        <div class="download-container">
+            <h1>Baseline Timeline</h1>
+            <p>Timeline of web features and browser support</p>
+            <button id="download-ical-top" class="download-btn" type="button">
+                📅 Download ICS Calendar
+            </button>
+        </div>
+    </header>
+
+    <main class="timeline-container">
+      <!-- TIMELINE_CONTENT -->
+    </main>
+
+    <footer class="download-footer">
+        <div class="download-container">
+            <button id="download-ical-bottom" class="download-btn">
+                📅 Download ICS Calendar
+            </button>
+            <p>Add web features timeline to your calendar</p>
+        </div>
+    </footer>
+
+    <!-- Keyboard shortcuts help dialog -->
+    <dialog id="shortcuts-dialog" class="shortcuts-dialog">
+        <div class="dialog-content">
+            <h2>Keyboard Shortcuts</h2>
+            <table class="shortcuts-table">
+                <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Show this help dialog</td>
+                </tr>
+                <tr>
+                    <td><kbd>w</kbd></td>
+                    <td>Filter widely available features</td>
+                </tr>
+                <tr>
+                    <td><kbd>n</kbd></td>
+                    <td>Filter newly available features</td>
+                </tr>
+                <tr>
+                    <td><kbd>l</kbd></td>
+                    <td>Filter limited availability features</td>
+                </tr>
+                <tr>
+                    <td><kbd>d</kbd></td>
+                    <td>Filter deprecated features</td>
+                </tr>
+                <tr>
+                    <td><kbd>i</kbd></td>
+                    <td>Filter features with Interop tags</td>
+                </tr>
+                <tr>
+                    <td><kbd>c</kbd></td>
+                    <td>Scroll to current month</td>
+                </tr>
+                <tr>
+                    <td><kbd>r</kbd></td>
+                    <td>Reset all filters</td>
+                </tr>
+                <tr>
+                    <td><kbd>p</kbd></td>
+                    <td>Toggle feature predictions</td>
+                </tr>
+                <tr>
+                    <td><kbd>Esc</kbd></td>
+                    <td>Close this dialog</td>
+                </tr>
+            </table>
+            <button id="close-shortcuts" class="dialog-close-btn">Close</button>
+        </div>
+    </dialog>
+
+    <script type="module" src="client.js"></script>
+</body>
+</html>

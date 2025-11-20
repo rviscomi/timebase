@@ -2,25 +2,26 @@
   "name": "timebase",
   "version": "1.0.0",
   "type": "module",
-  "main": "app.js",
+  "main": "src/client.js",
   "scripts": {
     "update": "npm update web-futures --save && npm run update:meta",
-    "update:meta": "node extract-data.js && node extract-bcd-data.js && node developer-signals.js && node interop.js && node mdn-docs.js",
-    "extract-logos": "node extract-logos.js",
-    "update-signals": "node developer-signals.js",
-    "update-interop": "node interop.js",
-    "update-mdn": "node mdn-docs.js",
+    "update:meta": "node scripts/extract-data.js && node scripts/extract-bcd-data.js && node scripts/developer-signals.js && node scripts/interop.js && node scripts/mdn-docs.js",
+    "extract-logos": "node scripts/extract-logos.js",
+    "update-signals": "node scripts/developer-signals.js",
+    "update-interop": "node scripts/interop.js",
+    "update-mdn": "node scripts/mdn-docs.js",
     "start": "npx http-server ./docs -p 8080 -c-1 --cors -o -a localhost -d false -i docs/index.html",
     "start:bcd": "npx http-server ./docs/bcd -p 8081 -c-1 --cors -o -a localhost -d false -i docs/bcd/index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
     "stop:bcd": "kill $(lsof -t -i:8081) || echo 'No server running on port 8081'",
-    "build": "node build.js",
-    "build:bcd": "node build-bcd.js",
+    "build": "node scripts/build.js",
+    "build:bcd": "node scripts/build-bcd.js",
     "build:all": "npm run build && npm run build:bcd",
     "clear-cache": "echo 'Clearing browser cache...' && rm -rf ~/.cache/Cursor/Cache/*",
     "dev": "npm run build && npm run start",
     "dev:bcd": "npm run build:bcd && npm run start:bcd",
-    "dev:all": "npm run build:all && npm run start & npm run start:bcd"
+    "dev:all": "npm run build:all && npm run start & npm run start:bcd",
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",
@@ -33,7 +34,9 @@
     "web-futures": "^3.9.2"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "happy-dom": "^20.0.10",
+    "http-server": "^14.1.1",
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">=14.0.0"
