@@ -1196,3 +1196,127 @@ body {
     outline: 2px solid #4299e1;
     outline-offset: 2px;
 }
+
+/* Developer Signals/Upvotes Styling */
+.developer-signal-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(247, 250, 252, 0.6);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid #e2e8f0;
+}
+
+.upvote-info {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    height: auto;
+    white-space: nowrap;
+}
+
+/* Styling for upvote when placed next to the title */
+.title-upvote {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.upvote-count {
+    display: flex;
+    align-items: center;
+    color: #718096;
+    font-weight: normal;
+    background-color: rgba(247, 250, 252, 0.5);
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.75rem;
+    line-height: 1;
+    height: 20px;
+}
+
+.upvote-icon {
+    margin-right: 3px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.upvote-count:hover {
+    background-color: #f7fafc;
+    color: #2d3748;
+    text-decoration: none;
+    border-color: #cbd5e0;
+}
+
+.upvote-count:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+/* Make room for the developer signals section */
+.feature-card.newly-available .feature-content,
+.feature-card.widely-available .feature-content,
+.feature-card.limited-availability .feature-content {
+    border-radius: 0;
+}
+
+/* Style adjustments for different card types */
+.feature-card.widely-available .developer-signal-container {
+    border-top-color: rgba(0, 128, 0, 0.1);
+}
+
+.feature-card.newly-available .developer-signal-container {
+    border-top-color: rgba(0, 0, 255, 0.1);
+}
+
+.feature-card.limited-availability .developer-signal-container {
+    border-top-color: rgba(255, 165, 0, 0.1);
+}
+
+/* Style for cards in expanded state */
+.feature-card.expanded .developer-signal-container {
+    border-top-width: 2px;
+}
+
+/* Interop Styles */
+.interop-tag {
+    display: flex;
+    align-items: center;
+    background: #ffffff !important; /* Force white background in all contexts */
+    border: 1px solid #edf2f7;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    height: 24px; /* Fixed height for consistency */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.interop-tag:hover {
+    border-color: #a0aec0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.interop-tag.active-filter {
+    background-color: #ebf4ff !important;
+    border-color: #4299e1;
+    color: #2b6cb0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .interop-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+}

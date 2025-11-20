@@ -52,8 +52,6 @@ async function build() {
     .replace(/<p>Add web features timeline to your calendar<\/p>/g, '')
     // Update paths to reference parent directory for shared assets
     .replace(/href="styles\.css"/g, 'href="../styles.css"')
-    .replace(/href="developer-signals\.css"/g, 'href="../developer-signals.css"')
-    .replace(/href="interop\.css"/g, 'href="../interop.css"')
     .replace(/src="images\//g, 'src="../images/');
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);

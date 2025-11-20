@@ -2,7 +2,7 @@
 
 import { escapeHtml, groupItemsByDate } from '../utils.js';
 
-export { groupItemsByDate };
+
 
 export function createDateHeader(date) {
   const monthText = date.toLocaleString('en-US', {

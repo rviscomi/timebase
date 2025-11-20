@@ -24,7 +24,7 @@ async function build() {
   }
 
   // Copy static assets
-  const assets = ['styles.css', 'developer-signals.css', 'interop.css', 'images', 'data.js', 'developer-signals.json', 'interop.json', 'mdn.json', 'src'];
+  const assets = ['styles.css', 'images', 'data.js', 'developer-signals.json', 'interop.json', 'mdn.json', 'src'];
   for (const asset of assets) {
     const source = path.resolve(__dirname, asset);
     const dest = path.resolve(DIST_DIR, asset);
