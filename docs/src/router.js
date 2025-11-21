@@ -23,7 +23,12 @@ export function applyFiltersToDOM(filters) {
   if (filters.interop && filters.interop.length > 0) {
     filters.interop.forEach(year => {
       if (year !== 'any') {
-        document.querySelectorAll(`.interop-tag[data-filter="${year}"]`).forEach(tag => {
+        // Handle both "2023" and "interop:2023" formats
+        const selector = year.startsWith('interop:')
+          ? `.interop-tag[data-filter="${year}"]`
+          : `.interop-tag[data-filter="interop:${year}"]`;
+
+        document.querySelectorAll(selector).forEach(tag => {
           tag.classList.add('active-filter');
           tag.setAttribute('aria-pressed', 'true');
         });

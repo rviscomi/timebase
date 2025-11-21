@@ -20,9 +20,19 @@ export function shouldDisplayFeature(feature, filters) {
   if (browsers.length > 0) {
     const matchesAllBrowsers = browsers.every(filter => {
       const [browser, version] = filter.split(':');
-      return feature.shipDates.some(shipDate => 
-        shipDate.browser === browser && shipDate.version === version
-      );
+      return feature.shipDates.some(shipDate => {
+        if (shipDate.version !== version) return false;
+
+        // Exact match
+        if (shipDate.browser === browser) return true;
+
+        // Loose match: if filter is base browser (e.g. firefox), match mobile variant (e.g. firefox_android)
+        if (browser === 'firefox' && shipDate.browser === 'firefox_android') return true;
+        if (browser === 'chrome' && shipDate.browser === 'chrome_android') return true;
+        if (browser === 'safari' && shipDate.browser === 'safari_ios') return true;
+
+        return false;
+      });
     });
     if (!matchesAllBrowsers) return false;
   }
