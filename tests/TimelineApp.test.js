@@ -81,7 +81,7 @@ describe('TimelineApp', () => {
 
     // Mock window.location
     Object.defineProperty(window, 'location', {
-      value: new URL('http://localhost/'),
+      value: new URL('http://localhost:3000/'),
       writable: true
     });
 
@@ -115,8 +115,8 @@ describe('TimelineApp', () => {
     const browserTag = document.querySelector('.browser-tag');
     browserTag.click();
 
-    // Check if URL was updated (we mocked updateHistory but we can check app.url)
-    expect(app.url.searchParams.get('browser')).toBe('chrome:100');
+    // Check if URL was updated
+    expect(app.filterManager.url.searchParams.get('browser')).toBe('chrome:100');
 
     // Check if feature is still visible (it matches)
     const card = document.getElementById('feature-feature-1-widely-available');
