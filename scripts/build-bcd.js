@@ -1,8 +1,9 @@
+
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { generateTimelineHTML } from '../src/renderer/renderer-bcd.js';
-import { browsers, bcdKeys as rawBcdKeys } from '../data/bcd-data.js';
-import { processBcdKeys } from '../src/data-processor.js';
+import { browsers, bcdKeys as rawBcdKeys } from '../data/bcd.js';
+import { processBcdKeys } from '../src/core/data-processor.js';
 import { buildTimeline } from './build-shared.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -25,7 +26,7 @@ async function build() {
       [new RegExp('<button id="download-ical-bottom"[^>]*>[\\s\\S]*?<\\/button>', 'g'), ''],
       [new RegExp('<p>Add web features timeline to your calendar<\\/p>', 'g'), ''],
       // Update paths to reference parent directory for shared assets
-      [new RegExp('href="styles\\.css"', 'g'), 'href="../src/styles.css"'],
+      [new RegExp('href="styles\\.css"', 'g'), 'href="../src/styles/styles.css"'],
       [new RegExp('src="images\\/', 'g'), 'src="../images/']
     ],
     clientScript: 'client-bcd.js',

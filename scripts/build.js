@@ -1,8 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { generateTimelineHTML } from '../src/renderer/renderer.js';
-import { browsers, features as rawFeatures } from '../data/data.js';
-import { processFeatures } from '../src/data-processor.js';
+import { browsers, features as rawFeatures } from '../data/web-features.js';
+import { processFeatures } from '../src/core/data-processor.js';
 import { buildTimeline } from './build-shared.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -15,7 +15,7 @@ async function build() {
     distDir: DIST_DIR,
     renderer: generateTimelineHTML,
     templateReplacements: [
-      ['href="styles.css"', 'href="src/styles.css"']
+      ['href="styles.css"', 'href="src/styles/styles.css"']
     ],
     clientScript: 'client.js',
     dataProcessor: processFeatures,

@@ -75,14 +75,16 @@ export async function buildTimeline({
     outputHTML = outputHTML.replace(pattern, replacement);
   }
 
-  await fs.writeFile(path.resolve(distDir, 'index.html'), outputHTML);
-  
+  // Update script src to point to the file in src/ directory
+  // We assume the client script is in the src directory and has been copied there
   if (clientScript) {
-    await fs.copyFile(
-      path.resolve(__dirname, `../src/${clientScript}`), 
-      path.resolve(distDir, clientScript)
+    outputHTML = outputHTML.replace(
+      `src="${clientScript}"`,
+      `src="src/${clientScript}"`
     );
   }
+
+  await fs.writeFile(path.resolve(distDir, 'index.html'), outputHTML);
 
   console.log(`Static HTML generated successfully at ${distDir}!`);
 }

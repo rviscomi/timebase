@@ -1,4 +1,4 @@
-import { TimelineApp } from './src/TimelineApp.js';
+import { TimelineApp } from './core/TimelineApp.js';
 
 // Initialize the app
 const app = new TimelineApp();

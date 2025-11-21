@@ -1,6 +1,6 @@
-import { TimelineApp } from './src/TimelineApp.js';
-import { browsers, bcdKeys } from './data/bcd-data.js';
-import { processBcdKeys } from './src/data-processor.js';
+import { TimelineApp } from './core/TimelineApp.js';
+import { features } from '../data/bcd.js';
+import { processBcdKeys } from './core/data-processor.js';
 
 // Initialize the app
 const app = new TimelineApp({

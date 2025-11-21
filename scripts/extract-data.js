@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataPath = join(__dirname, '../node_modules', 'web-futures', 'data.json');
+const OUTPUT_FILE = join(__dirname, '..', 'data', 'web-features.js');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 
 // Extract both browsers and features data

@@ -1,6 +1,10 @@
-import { escapeHtml, groupItemsByDate } from '../utils.js';
+// Shared rendering utilities for both features and BCD keys
 
-function createDateHeader(date) {
+import { escapeHtml, groupItemsByDate, getToday } from '../utils/utils.js';
+
+
+
+export function createDateHeader(date) {
   const monthText = date.toLocaleString('en-US', {
     year: 'numeric',
     month: 'long'
@@ -17,7 +21,7 @@ function createDateHeader(date) {
   `;
 }
 
-function createBrowserTag(browser, version) {
+export function createBrowserTag(browser, version) {
   const baseBrowser = browser.replace('_android', '').replace('_ios', '');
   let displayText = version;
   if (browser.includes('_')) {
@@ -33,7 +37,7 @@ function createBrowserTag(browser, version) {
   `;
 }
 
-function createInteropTag(year) {
+export function createInteropTag(year) {
   return `
     <button class="interop-tag" type="button" data-interop-year="${year}" data-filter="${year}" aria-pressed="false">
       <span>Interop ${year}</span>
@@ -41,7 +45,7 @@ function createInteropTag(year) {
   `;
 }
 
-function addBrowserTagsInOrder(browserReleases) {
+export function addBrowserTagsInOrder(browserReleases) {
   const browserOrder = ['chrome', 'edge', 'safari', 'firefox'];
   const browserMap = {};
   browserReleases.forEach(release => {
@@ -58,13 +62,13 @@ function addBrowserTagsInOrder(browserReleases) {
   return tagsHTML;
 }
 
-function processBrowserSupport(feature) {
+export function processBrowserSupport(item) {
   const browserReleases = [];
   const processedBrowsers = new Set();
   const browserVersionMap = new Map();
 
-  if (feature.shipDates) {
-    feature.shipDates.forEach(shipDate => {
+  if (item.shipDates) {
+    item.shipDates.forEach(shipDate => {
       const browser = shipDate.browser;
       const cleanVersion = shipDate.version;
       const baseBrowser = browser.replace('_android', '').replace('_ios', '');
@@ -87,16 +91,16 @@ function processBrowserSupport(feature) {
     });
   }
 
-  if (feature.shipDates) {
-    [...feature.shipDates].sort((a, b) => b.date - a.date).forEach(shipDate => {
+  if (item.shipDates) {
+    [...item.shipDates].sort((a, b) => b.date - a.date).forEach(shipDate => {
       const browser = shipDate.browser;
       const cleanVersion = shipDate.version;
       const releaseDate = shipDate.date;
       const isInCurrentMonth =
-        feature.displayType === 'widely-available' ||
+        item.displayType === 'widely-available' ||
         !releaseDate ||
-        (releaseDate.getMonth() === feature.date.getMonth() &&
-          releaseDate.getFullYear() === feature.date.getFullYear());
+        (releaseDate.getMonth() === item.date.getMonth() &&
+          releaseDate.getFullYear() === item.date.getFullYear());
       const baseBrowser = browser.replace('_android', '').replace('_ios', '');
 
       if (processedBrowsers.has(baseBrowser)) {
@@ -124,134 +128,10 @@ function processBrowserSupport(feature) {
   return browserReleases;
 }
 
-function createFeatureHeader(feature, uniqueCardId) {
-  let baselineIconHTML = '';
-  const baseline = feature.status?.baseline;
-  if (baseline !== undefined) {
-    let iconName;
-    let titleText;
-    if (baseline === false) {
-      iconName = 'baseline-limited-icon.svg';
-      titleText = feature.discouraged ? 'This feature is discouraged' : 'Limited availability across browsers';
-    } else if (feature.displayType === 'widely-available') {
-      iconName = 'baseline-widely-icon.svg';
-      titleText = `Baseline ${feature.displayName}`;
-    } else if (feature.displayType === 'newly-available') {
-      iconName = 'baseline-newly-icon.svg';
-      titleText = `Baseline ${feature.displayName}`;
-    }
-    if (iconName) {
-      baselineIconHTML = `<img src="images/${iconName}" alt="${iconName.replace('baseline-', '').replace('-icon.svg', '')} support" class="baseline-icon" title="${titleText}">`;
-    }
-  }
-
-  let featureName = feature.name;
-  if (feature.prediction) {
-    featureName = '🔮 ' + featureName;
-  }
-
-  // Escape the feature name for safe HTML insertion
-  const escapedFeatureName = escapeHtml(featureName);
-  const escapedOriginalName = escapeHtml(feature.name);
-
-  let upvoteHTML = '';
-  if (feature.developerSignal) {
-    upvoteHTML = `
-      <div class="upvote-info title-upvote">
-        <a href="${feature.developerSignal.url}" class="upvote-count" target="_blank" rel="noopener noreferrer">
-          <span class="upvote-icon">👍</span> ${feature.developerSignal.votes}
-        </a>
-      </div>
-    `;
-  }
-
-  let displayTypeForTooltip = feature.displayName;
-  if (feature.discouraged) {
-    displayTypeForTooltip = 'discouraged';
-  } else if (feature.status?.baseline === false) {
-    displayTypeForTooltip = 'Limited availability';
-  }
-
-  const browserReleases = processBrowserSupport(feature);
-  const browserTagsHTML = addBrowserTagsInOrder(browserReleases);
-
-  let interopHTML = '';
-  if (feature.interop) {
-    const interopYears = feature.interop.map(entry => entry.year).sort((a, b) => b - a);
-    if (interopYears.length > 0) {
-      const mostRecentYear = interopYears[0];
-      interopHTML = createInteropTag(mostRecentYear);
-    }
-  }
-
-  // Create availability info text
-  let availabilityHTML = '';
-  let featureDate = feature.date;
-  if (feature.displayType === 'limited-availability') {
-    // For limited availability, use the earliest ship date (which is shipDates[0] since it's sorted ascending in build.js)
-    featureDate = feature.shipDates[0].date;
-  }
-  if (!featureDate && feature.shipDates && feature.shipDates.length > 0) {
-    featureDate = feature.shipDates[0].date;
-  }
-
-  if (featureDate) {
-    const now = new Date();
-    const formattedDate = featureDate.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-
-    let availabilityText = '';
-    if (feature.displayType === 'limited-availability') {
-      if (feature.discouraged) {
-        const authority = feature.discouraged.according_to.map(url => {
-          const hostname = new URL(url).hostname;
-          if (hostname == 'github.com') {
-            const repo = url.split('/').slice(-2).join('/');
-            return `<a href="${url}" target="_blank">${repo}</a>`;
-          }
-          return `<a href="${url}" target="_blank">${hostname}</a>`;
-        }).join(', ');
-        availabilityText = `This feature is discouraged by ${authority}.`;
-      } else if (featureDate > now) {
-        availabilityText = `🔮 Expected to become Limited availability across browsers on ${formattedDate}.`;
-      } else {
-        availabilityText = `Limited availability across browsers since ${formattedDate}.`;
-      }
-    } else if (feature.displayType === 'newly-available' && feature.status?.baseline_high_date) {
-      const widelyFormattedDate = feature.status.baseline_high_date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-      const widelyAvailableId = `feature-${feature.id}-widely-available`;
-
-      if (feature.status.baseline === 'high') {
-        availabilityText = `Newly available since ${formattedDate}.<br>Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
-      } else if (feature.prediction) {
-        availabilityText = `🔮 Expected to become newly available on ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
-      } else {
-        availabilityText = `Newly available since ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
-      }
-    } else if (feature.displayType === 'widely-available') {
-      if (feature.prediction) {
-        availabilityText = `🔮 Expected to become widely available on ${formattedDate}.`;
-      } else {
-        availabilityText = `Widely available since ${formattedDate}.`;
-      }
-    }
-
-    if (availabilityText) {
-      availabilityHTML = `<div class="availability-info-text">${availabilityText}</div>`;
-    }
-  }
-
-  // Create browser support table
+export function createBrowserSupportTable(item) {
   let browserTableHTML = '';
-  if (feature.shipDates && feature.shipDates.length > 0) {
-    const sortedShipDates = [...feature.shipDates].sort((a, b) => {
+  if (item.shipDates && item.shipDates.length > 0) {
+    const sortedShipDates = [...item.shipDates].sort((a, b) => {
       const baseA = a.browser.replace('_android', '').replace('_ios', '');
       const baseB = b.browser.replace('_android', '').replace('_ios', '');
 
@@ -327,87 +207,219 @@ function createFeatureHeader(feature, uniqueCardId) {
       </div>
     `;
   }
+  return browserTableHTML;
+}
+
+export function createCard(item, options = {}) {
+  const {
+    idPrefix = 'feature',
+    renderParentFeature = false,
+    getWebStatusId = (item) => item.id,
+    getWebFeaturesId = (item) => item.id
+  } = options;
+
+  let baselineIconHTML = '';
+  const baseline = item.status?.baseline;
+  if (baseline !== undefined) {
+    let iconName;
+    let titleText;
+    if (baseline === false) {
+      iconName = 'baseline-limited-icon.svg';
+      titleText = item.discouraged ? 'This feature is discouraged' : 'Limited availability across browsers';
+    } else if (item.displayType === 'widely-available') {
+      iconName = 'baseline-widely-icon.svg';
+      titleText = `Baseline ${item.displayName}`;
+    } else if (item.displayType === 'newly-available') {
+      iconName = 'baseline-newly-icon.svg';
+      titleText = `Baseline ${item.displayName}`;
+    }
+    if (iconName) {
+      baselineIconHTML = `<img src="images/${iconName}" alt="${iconName.replace('baseline-', '').replace('-icon.svg', '')} support" class="baseline-icon" title="${titleText}">`;
+    }
+  }
+
+  let itemName = item.name;
+  if (item.prediction) {
+    itemName = '🔮 ' + itemName;
+  }
+
+  const escapedName = escapeHtml(itemName);
+  const escapedOriginalName = escapeHtml(item.name);
+
+  let upvoteHTML = '';
+  if (item.developerSignal) {
+    upvoteHTML = `
+      <div class="upvote-info title-upvote">
+        <a href="${item.developerSignal.url}" class="upvote-count" target="_blank" rel="noopener noreferrer">
+          <span class="upvote-icon">👍</span> ${item.developerSignal.votes}
+        </a>
+      </div>
+    `;
+  }
+
+  let displayTypeForTooltip = item.displayName;
+  if (item.discouraged) {
+    displayTypeForTooltip = 'discouraged';
+  } else if (item.status?.baseline === false) {
+    displayTypeForTooltip = 'Limited availability';
+  }
+
+  const browserReleases = processBrowserSupport(item);
+  const browserTagsHTML = addBrowserTagsInOrder(browserReleases);
+
+  let interopHTML = '';
+  if (item.interop) {
+    const interopYears = item.interop.map(entry => entry.year).sort((a, b) => b - a);
+    if (interopYears.length > 0) {
+      const mostRecentYear = interopYears[0];
+      interopHTML = createInteropTag(mostRecentYear);
+    }
+  }
+
+  // Create availability info text
+  let availabilityHTML = '';
+  let itemDate = item.date;
+  if (item.displayType === 'limited-availability') {
+    // For limited availability, use the earliest ship date
+    if (item.shipDates && item.shipDates.length > 0) {
+      itemDate = item.shipDates[0].date;
+    }
+  }
+  if (!itemDate && item.shipDates && item.shipDates.length > 0) {
+    itemDate = item.shipDates[0].date;
+  }
+
+  if (itemDate) {
+    const now = getToday();
+    const formattedDate = itemDate.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    let availabilityText = '';
+    if (item.displayType === 'limited-availability') {
+      if (item.discouraged) {
+        const authority = item.discouraged.according_to.map(url => {
+          const hostname = new URL(url).hostname;
+          if (hostname == 'github.com') {
+            const repo = url.split('/').slice(-2).join('/');
+            return `<a href="${url}" target="_blank">${repo}</a>`;
+          }
+          return `<a href="${url}" target="_blank">${hostname}</a>`;
+        }).join(', ');
+        availabilityText = `This feature is discouraged by ${authority}.`;
+      } else if (itemDate > now) {
+        availabilityText = `🔮 Expected to become Limited availability across browsers on ${formattedDate}.`;
+      } else {
+        availabilityText = `Limited availability across browsers since ${formattedDate}.`;
+      }
+    } else if (item.displayType === 'newly-available' && item.status?.baseline_high_date) {
+      const widelyFormattedDate = item.status.baseline_high_date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      const widelyAvailableId = `${idPrefix}-${item.id}-widely-available`;
+
+      if (item.status.baseline === 'high') {
+        availabilityText = `Newly available since ${formattedDate}.<br>Became widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      } else if (item.prediction) {
+        availabilityText = `🔮 Expected to become newly available on ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      } else {
+        availabilityText = `Newly available since ${formattedDate}.<br>🔮 Expected to become widely available on <a href="#${widelyAvailableId}" class="widely-available-link">${widelyFormattedDate}</a>.`;
+      }
+    } else if (item.displayType === 'widely-available') {
+      if (item.prediction) {
+        availabilityText = `🔮 Expected to become widely available on ${formattedDate}.`;
+      } else {
+        availabilityText = `Widely available since ${formattedDate}.`;
+      }
+    }
+
+    if (availabilityText) {
+      availabilityHTML = `<div class="availability-info-text">${availabilityText}</div>`;
+    }
+  }
+
+  const browserTableHTML = createBrowserSupportTable(item);
 
   let descriptionHTML = '';
-  if (feature.description_html) {
-    descriptionHTML = `<div class="feature-description">${feature.description_html}</div>`;
-  } else if (feature.description) {
-    descriptionHTML = `<div class="feature-description">${escapeHtml(feature.description)}</div>`;
+  if (item.description_html) {
+    descriptionHTML = `<div class="feature-description">${item.description_html}</div>`;
+  } else if (item.description) {
+    descriptionHTML = `<div class="feature-description">${escapeHtml(item.description)}</div>`;
+  }
+
+  let parentFeatureHTML = '';
+  if (renderParentFeature && item.parent_feature && item.parent_feature !== item.id) {
+    parentFeatureHTML = `<div class="parent-feature-info">Part of: <a href="../index.html#feature-${item.parent_feature}" target="_blank">${escapeHtml(item.parent_feature_name || item.parent_feature)}</a></div>`;
   }
 
   let linksHTML = '';
-  if (feature.spec) {
-    linksHTML += `<a href="${feature.spec}" class="spec-link" target="_blank">Specification</a>`;
+  if (item.spec) {
+    linksHTML += `<a href="${item.spec}" class="spec-link" target="_blank">Specification</a>`;
   }
-  linksHTML += `<a href="https://webstatus.dev/features/${feature.id}" class="webstatus-link" target="_blank">Web Status</a>`;
-  linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${feature.id}/" class="web-platform-dx-link" target="_blank">Web Features Explorer</a>`;
-  if (feature.mdn) {
-    const mdnEntry = feature.mdn[0];
+  linksHTML += `<a href="https://webstatus.dev/features/${getWebStatusId(item)}" class="webstatus-link" target="_blank">Web Status</a>`;
+  linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${getWebFeaturesId(item)}/" class="web-platform-dx-link" target="_blank">Web Features Explorer</a>`;
+  if (item.mdn) {
+    const mdnEntry = item.mdn[0];
     linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;
   }
 
-
-  return `
-    <div class="feature-card-header">
-      <div class="feature-top-row" style="cursor: pointer;" aria-expanded="false" aria-controls="details-${uniqueCardId}">
-        <div class="title-container">
-          <h2 class="feature-title">
-            ${baselineIconHTML}
-            <span>${escapedFeatureName}</span>
-            ${upvoteHTML}
-            <a href="#${uniqueCardId}" class="feature-link-icon" title="Link to ${escapedOriginalName} (${displayTypeForTooltip})">🔗</a>
-          </h2>
-        </div>
-        <div class="browser-support">${browserTagsHTML}${interopHTML}</div>
-      </div>
-      <div class="feature-details" id="details-${uniqueCardId}" style="display: none;">
-        ${descriptionHTML}
-        ${availabilityHTML}
-        ${browserTableHTML}
-        <div class="feature-links">${linksHTML}</div>
-      </div>
-    </div>
-  `;
-}
-
-function createFeatureCard(feature) {
-  let cardType = feature.displayType;
-  if (feature.status?.baseline === false) {
+  let cardType = item.displayType;
+  if (item.status?.baseline === false) {
     cardType = 'limited-availability';
   }
-  const uniqueCardId = `feature-${feature.id}-${cardType}`;
+  const uniqueCardId = `${idPrefix}-${item.id}-${cardType}`;
 
   const classes = ['feature-card'];
-  if (feature.prediction) classes.push('prediction');
-  if (feature.discouraged) classes.push('discouraged');
-  else if (feature.status?.baseline === false) classes.push('limited-availability');
-  else classes.push(feature.displayType);
+  if (item.prediction) classes.push('prediction');
+  if (item.discouraged) classes.push('discouraged');
+  else if (item.status?.baseline === false) classes.push('limited-availability');
+  else classes.push(item.displayType);
 
   let dataAttrs = '';
-  if (feature.shipDates) {
-    feature.shipDates.forEach(shipDate => {
+  if (item.shipDates) {
+    item.shipDates.forEach(shipDate => {
       dataAttrs += ` data-browser-${shipDate.browser}-${shipDate.version}="true"`;
     });
   }
-  if (feature.interop) {
-    const interopYears = feature.interop.map(entry => entry.year).sort((a, b) => b - a);
+  if (item.interop) {
+    const interopYears = item.interop.map(entry => entry.year).sort((a, b) => b - a);
     if (interopYears.length > 0) {
       dataAttrs += ` data-interop-${interopYears[0]}="true"`;
     }
   }
 
-
-  const headerHTML = createFeatureHeader(feature, uniqueCardId);
-
   return `
     <div id="${uniqueCardId}" class="${classes.join(' ')}"${dataAttrs}>
-      ${headerHTML}
+      <div class="feature-card-header">
+        <div class="feature-top-row" style="cursor: pointer;" aria-expanded="false" aria-controls="details-${uniqueCardId}">
+          <div class="title-container">
+            <h2 class="feature-title">
+              ${baselineIconHTML}
+              <span>${escapedName}</span>
+              ${upvoteHTML}
+              <a href="#${uniqueCardId}" class="feature-link-icon" title="Link to ${escapedOriginalName} (${displayTypeForTooltip})">🔗</a>
+            </h2>
+          </div>
+          <div class="browser-support">${browserTagsHTML}${interopHTML}</div>
+        </div>
+        <div class="feature-details" id="details-${uniqueCardId}" style="display: none;">
+          ${parentFeatureHTML}
+          ${descriptionHTML}
+          ${availabilityHTML}
+          ${browserTableHTML}
+          <div class="feature-links">${linksHTML}</div>
+        </div>
+      </div>
     </div>
   `;
 }
 
-export function generateTimelineHTML(features) {
-  const groups = groupItemsByDate(features);
+export function generateTimelineHTML(items, options = {}) {
+  const groups = groupItemsByDate(items);
   let html = '<div id="timeline-content">';
 
   groups.forEach(group => {
@@ -415,17 +427,17 @@ export function generateTimelineHTML(features) {
     const monthName = group.date.toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
     const anchorId = `${monthName}-${group.date.getFullYear()}`;
 
-    let featuresHTML = '';
+    let itemsHTML = '';
     group.items
       .sort((a, b) => b.date - a.date)
-      .forEach(feature => {
-        featuresHTML += createFeatureCard(feature);
+      .forEach(item => {
+        itemsHTML += createCard(item, options);
       });
 
-    if (featuresHTML) {
+    if (itemsHTML) {
       html += `<div class="date-group" id="${anchorId}">`;
       html += dateHeader;
-      html += featuresHTML;
+      html += itemsHTML;
       html += '</div>';
     }
   });

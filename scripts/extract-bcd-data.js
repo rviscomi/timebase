@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataPath = join(__dirname, '../node_modules', 'web-futures', 'data.json');
+const OUTPUT_FILE = join(__dirname, '..', 'data', 'bcd.js');
 const data = JSON.parse(readFileSync(dataPath, 'utf8'));
 
 // Helper to parse YYYY-MM-DD as a local date
