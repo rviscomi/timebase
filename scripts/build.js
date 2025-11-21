@@ -28,7 +28,7 @@ async function build() {
   for (const asset of assets) {
     const source = path.resolve(__dirname, '../', asset);
     const dest = path.resolve(DIST_DIR, asset);
-    await fs.cp(source, dest, { recursive: true });
+    await fs.cp(source, dest, { recursive: true, force: true });
   }
 
 

@@ -1,10 +1,11 @@
 import { getFiltersFromURL, createURLFromFilters } from './url.js';
 
-export class FilterManager {
+export class StateManager {
   constructor(initialURL = window.location) {
     this.url = new URL(initialURL);
     this.subscribers = [];
     this.filters = getFiltersFromURL(this.url);
+    this.selectedFeatures = new Set();
   }
 
   subscribe(callback) {
@@ -15,13 +16,17 @@ export class FilterManager {
   }
 
   notify() {
-    this.subscribers.forEach(callback => callback(this.filters));
+    this.subscribers.forEach(callback => callback(this.getState()));
   }
 
-  getFilters() {
-    return { ...this.filters };
+  getState() {
+    return {
+      filters: { ...this.filters },
+      selectedFeatures: new Set(this.selectedFeatures)
+    };
   }
 
+  // Filter Methods
   setFilters(newFilters) {
     this.filters = { ...this.filters, ...newFilters };
     this.updateURL();
@@ -40,7 +45,7 @@ export class FilterManager {
 
   toggleInteropFilter(interopKey) {
     let interop = new Set(this.filters.interop);
-    
+
     if (interopKey === 'any') {
       if (interop.has('any')) {
         interop.delete('any');
@@ -72,7 +77,7 @@ export class FilterManager {
     });
   }
 
-  reset(resetBrowserFilters = true) {
+  resetFilters(resetBrowserFilters = true) {
     const newFilters = {
       interop: [],
       status: null,
@@ -86,6 +91,30 @@ export class FilterManager {
     this.setFilters(newFilters);
   }
 
+  // Selection Methods
+  toggleFeatureSelection(featureId) {
+    if (this.selectedFeatures.has(featureId)) {
+      this.selectedFeatures.delete(featureId);
+    } else {
+      this.selectedFeatures.add(featureId);
+    }
+    this.notify();
+  }
+
+  isFeatureSelected(featureId) {
+    return this.selectedFeatures.has(featureId);
+  }
+
+  getSelectedFeatures() {
+    return new Set(this.selectedFeatures);
+  }
+
+  clearSelection() {
+    this.selectedFeatures.clear();
+    this.notify();
+  }
+
+  // URL Management
   updateURL() {
     this.url = createURLFromFilters(this.url, this.filters);
     if (typeof window !== 'undefined' && window.history) {

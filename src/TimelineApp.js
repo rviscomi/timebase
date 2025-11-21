@@ -7,7 +7,7 @@ import { getFiltersFromURL, createURLFromFilters } from './url.js';
 import { processFeatures } from './data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './shortcuts.js';
 import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './router.js';
-import { FilterManager } from './FilterManager.js';
+import { StateManager } from './StateManager.js';
 import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
 import interopData from '../data/interop.json' with { type: "json" };
 import mdnDocsData from '../data/mdn.json' with { type: "json" };
@@ -25,11 +25,10 @@ export class TimelineApp {
     this.developerSignals = developerSignalsData;
     this.interopData = interopData;
     this.mdnDocs = mdnDocsData;
-    this.selectedFeatures = new Set();
     this.scrollFAB = null;
     this.scrollObserver = null;
-    this.filterManager = new FilterManager(this.url);
-    this.filterManager.subscribe(this.handleFilterChange.bind(this));
+    this.stateManager = new StateManager(this.url);
+    this.stateManager.subscribe(this.handleStateChange.bind(this));
   }
 
   loadData() {
@@ -48,7 +47,7 @@ export class TimelineApp {
   init() {
     this.initEventListeners();
     this.attachInteractivityToStaticHTML();
-    this.filterManager.initializeFromURL();
+    this.stateManager.initializeFromURL();
   }
 
   attachInteractivityToStaticHTML() {
@@ -104,12 +103,12 @@ export class TimelineApp {
 
   handleBrowserTagClick(tag) {
     const filterKey = tag.getAttribute('data-filter');
-    this.filterManager.toggleBrowserFilter(filterKey);
+    this.stateManager.toggleBrowserFilter(filterKey);
   }
 
   handleInteropTagClick(tag) {
     const filterKey = tag.getAttribute('data-filter');
-    this.filterManager.toggleInteropFilter(filterKey);
+    this.stateManager.toggleInteropFilter(filterKey);
   }
 
   handleFeatureCardExpansion(topRow, target) {
@@ -138,12 +137,12 @@ export class TimelineApp {
   }
 
   handleWidelyAvailableLinkClick(link) {
-    const filters = this.filterManager.getFilters();
-    if (filters.status) {
-      this.filterManager.toggleStatusFilter(filters.status);
+    const state = this.stateManager.getState();
+    if (state.filters.status) {
+      this.stateManager.toggleStatusFilter(state.filters.status);
     }
-    if (filters.showPredictions === false) {
-      this.filterManager.togglePredictions();
+    if (state.filters.showPredictions === false) {
+      this.stateManager.togglePredictions();
     }
 
     const targetId = link.dataset.targetId;
@@ -294,7 +293,9 @@ export class TimelineApp {
     this.shortcutsDialogManager.show();
   }
 
-  handleFilterChange(filters) {
+  handleStateChange(state) {
+    const { filters, selectedFeatures } = state;
+
     // Update DOM tags
     applyFiltersToDOM(filters);
 
@@ -306,6 +307,13 @@ export class TimelineApp {
 
       if (card) {
         card.style.display = isVisible ? '' : 'none';
+
+        // Update selection state
+        if (selectedFeatures.has(cardId)) {
+          card.classList.add('selected');
+        } else {
+          card.classList.remove('selected');
+        }
       }
     });
 
@@ -327,18 +335,42 @@ export class TimelineApp {
       });
     }
 
+    // Update download button text to show selection count
+    const selectedCount = selectedFeatures.size;
+    const downloadButtons = document.querySelectorAll('.download-btn');
+    downloadButtons.forEach(btn => {
+      if (selectedCount === 0) {
+        btn.innerHTML = '📅 Download ICS Calendar';
+      } else {
+        btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
+      }
+    });
+
+    // Update "Add to Calendar" button text based on selection state
+    document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
+      const card = btn.closest('.feature-card');
+      if (card) {
+        const cardId = card.id;
+        if (selectedFeatures.has(cardId)) {
+          btn.innerHTML = '✅ Remove from Calendar';
+        } else {
+          btn.innerHTML = '📅 Add to Calendar';
+        }
+      }
+    });
+
     this.updateDateHeadersVisibility();
     this.updateScrollTarget();
   }
 
-  // Keep for backward compatibility or if needed elsewhere, but mostly handled by handleFilterChange
+  // Keep for backward compatibility or if needed elsewhere, but mostly handled by handleStateChange
   updateFeatureVisibility() {
-    this.handleFilterChange(this.filterManager.getFilters());
+    this.handleStateChange(this.stateManager.getState());
   }
 
   // Method to filter features by interop
   filterInteropFeatures() {
-    this.filterManager.toggleInteropFilter('any');
+    this.stateManager.toggleInteropFilter('any');
   }
 
   // Helper method to hide date headers with no visible feature cards
@@ -355,12 +387,12 @@ export class TimelineApp {
 
   // Update URL with current filter state
   updateURLWithFilters() {
-    // Handled by FilterManager
+    // Handled by StateManager
   }
 
   // Initialize filters from URL parameters
   initializeFiltersFromURL() {
-    // Handled by FilterManager
+    // Handled by StateManager
   }
 
   // Helper method to scroll to and expand a feature card
@@ -497,87 +529,49 @@ export class TimelineApp {
 
   // Add selection methods
   toggleFeatureSelection(feature) {
-    const featureId = `${feature.id}-${feature.displayType}`;
-    if (this.selectedFeatures.has(featureId)) {
-      this.selectedFeatures.delete(featureId);
-    } else {
-      this.selectedFeatures.add(featureId);
-    }
-    this.updateSelectionUI();
+    const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+    this.stateManager.toggleFeatureSelection(featureId);
   }
 
   isFeatureSelected(feature) {
-    const featureId = `${feature.id}-${feature.displayType}`;
-    return this.selectedFeatures.has(featureId);
+    const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+    return this.stateManager.isFeatureSelected(featureId);
   }
 
   updateSelectionUI() {
-    // Update all feature cards to show selection state
-    document.querySelectorAll('.feature-card').forEach(card => {
-      const feature = card.featureData;
-      if (feature) {
-        if (this.isFeatureSelected(feature)) {
-          card.classList.add('selected');
-        } else {
-          card.classList.remove('selected');
-        }
-      }
-    });
-
-    // Update download button text to show selection count
-    const selectedCount = this.selectedFeatures.size;
-    const downloadButtons = document.querySelectorAll('.download-btn');
-    downloadButtons.forEach(btn => {
-      if (selectedCount === 0) {
-        btn.innerHTML = '📅 Download ICS Calendar';
-      } else {
-        btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
-      }
-    });
-
-    // Update "Add to Calendar" button text based on selection state
-    document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
-      const card = btn.closest('.feature-card');
-      if (card && card.featureData) {
-        const feature = card.featureData;
-        if (this.isFeatureSelected(feature)) {
-          btn.innerHTML = '✅ Remove from Calendar';
-        } else {
-          btn.innerHTML = '📅 Add to Calendar';
-        }
-      }
-    });
+    // Handled by handleStateChange
   }
 
   getSelectedFeatures() {
-    if (this.selectedFeatures.size === 0) {
+    const selectedIds = this.stateManager.getSelectedFeatures();
+    if (selectedIds.size === 0) {
       return this.features; // Return all features if none selected
     }
 
     return this.features.filter(feature => {
-      const featureId = `${feature.id}-${feature.displayType}`;
-      return this.selectedFeatures.has(featureId);
+      const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+      return selectedIds.has(featureId);
     });
   }
 
   // Filter features by type (widely-available, newly-available, limited-availability)
   filterFeaturesByType(type) {
-    this.filterManager.toggleStatusFilter(type);
+    this.stateManager.toggleStatusFilter(type);
   }
 
   // Reset all filters and show all features
   resetFilters(resetBrowserFilters = true) {
-    this.filterManager.reset(resetBrowserFilters);
+    this.stateManager.resetFilters(resetBrowserFilters);
   }
 
   // Toggle prediction visibility
   filterPredictedFeatures() {
-    this.filterManager.togglePredictions();
+    this.stateManager.togglePredictions();
   }
 
   // Filter to show only deprecated (discouraged) features
   filterDeprecatedFeatures() {
-    this.filterManager.toggleStatusFilter('discouraged');
+    this.stateManager.toggleStatusFilter('discouraged');
   }
 
   // Scroll to the current month in the timeline

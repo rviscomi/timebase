@@ -35,7 +35,7 @@ function createBrowserTag(browser, version) {
 
 function createInteropTag(year) {
   return `
-    <button class="interop-tag" type="button" data-interop-year="${year}" data-filter="interop:${year}" aria-pressed="false">
+    <button class="interop-tag" type="button" data-interop-year="${year}" data-filter="${year}" aria-pressed="false">
       <span>Interop ${year}</span>
     </button>
   `;

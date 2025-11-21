@@ -116,7 +116,7 @@ describe('TimelineApp', () => {
     browserTag.click();
 
     // Check if URL was updated
-    expect(app.filterManager.url.searchParams.get('browser')).toBe('chrome:100');
+    expect(app.stateManager.url.searchParams.get('browser')).toBe('chrome:100');
 
     // Check if feature is still visible (it matches)
     const card = document.getElementById('feature-feature-1-widely-available');

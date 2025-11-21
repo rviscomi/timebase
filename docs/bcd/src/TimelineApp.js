@@ -7,6 +7,7 @@ import { getFiltersFromURL, createURLFromFilters } from './url.js';
 import { processFeatures } from './data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './shortcuts.js';
 import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './router.js';
+import { StateManager } from './StateManager.js';
 import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
 import interopData from '../data/interop.json' with { type: "json" };
 import mdnDocsData from '../data/mdn.json' with { type: "json" };
@@ -24,10 +25,10 @@ export class TimelineApp {
     this.developerSignals = developerSignalsData;
     this.interopData = interopData;
     this.mdnDocs = mdnDocsData;
-    this.selectedFeatures = new Set();
-    this.currentStatusFilter = null;
     this.scrollFAB = null;
     this.scrollObserver = null;
+    this.stateManager = new StateManager(this.url);
+    this.stateManager.subscribe(this.handleStateChange.bind(this));
   }
 
   loadData() {
@@ -46,7 +47,7 @@ export class TimelineApp {
   init() {
     this.initEventListeners();
     this.attachInteractivityToStaticHTML();
-    this.initializeFiltersFromURL();
+    this.stateManager.initializeFromURL();
   }
 
   attachInteractivityToStaticHTML() {
@@ -101,48 +102,13 @@ export class TimelineApp {
   }
 
   handleBrowserTagClick(tag) {
-    const isActive = tag.classList.contains('active-filter');
     const filterKey = tag.getAttribute('data-filter');
-
-    if (isActive) {
-      document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-        matchingTag.classList.remove('active-filter');
-        matchingTag.setAttribute('aria-pressed', 'false');
-      });
-    } else {
-      document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-        matchingTag.classList.add('active-filter');
-        matchingTag.setAttribute('aria-pressed', 'true');
-      });
-    }
-    this.updateFeatureVisibility();
+    this.stateManager.toggleBrowserFilter(filterKey);
   }
 
   handleInteropTagClick(tag) {
-    const isActive = tag.classList.contains('active-filter');
     const filterKey = tag.getAttribute('data-filter');
-    const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
-
-    if (isActive) {
-      document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-        matchingTag.classList.remove('active-filter');
-        matchingTag.setAttribute('aria-pressed', 'false');
-      });
-    } else {
-      if (hasAnyInteropFilter) {
-        this.url.searchParams.delete('interop');
-        document.querySelectorAll('[data-interop-any]').forEach(card => {
-          card.removeAttribute('data-interop-any');
-        });
-        window.history.replaceState({}, '', this.url);
-      }
-      document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-        matchingTag.classList.add('active-filter');
-        matchingTag.setAttribute('aria-pressed', 'true');
-      });
-    }
-    this.updateURLWithFilters();
-    this.updateFeatureVisibility();
+    this.stateManager.toggleInteropFilter(filterKey);
   }
 
   handleFeatureCardExpansion(topRow, target) {
@@ -171,11 +137,12 @@ export class TimelineApp {
   }
 
   handleWidelyAvailableLinkClick(link) {
-    if (this.currentStatusFilter) {
-      this.filterFeaturesByType(this.currentStatusFilter);
+    const state = this.stateManager.getState();
+    if (state.filters.status) {
+      this.stateManager.toggleStatusFilter(state.filters.status);
     }
-    if (this.url.searchParams.get('predictions') === 'false') {
-      this.filterPredictedFeatures();
+    if (state.filters.showPredictions === false) {
+      this.stateManager.togglePredictions();
     }
 
     const targetId = link.dataset.targetId;
@@ -326,84 +293,84 @@ export class TimelineApp {
     this.shortcutsDialogManager.show();
   }
 
-  // Method to update the visibility of feature cards based on active filters and prediction visibility
-  updateFeatureVisibility() {
-    const activeFilters = getFiltersFromDOM(
-      this.currentStatusFilter,
-      this.url.searchParams.get('predictions') !== 'false'
-    );
+  handleStateChange(state) {
+    const { filters, selectedFeatures } = state;
 
+    // Update DOM tags
+    applyFiltersToDOM(filters);
+
+    // Update feature card visibility
     this.allFeatures.forEach(feature => {
-      const isVisible = shouldDisplayFeature(feature, activeFilters);
-      // Construct ID: {idPrefix}-{id}-{displayType}
+      const isVisible = shouldDisplayFeature(feature, filters);
       const cardId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
       const card = document.getElementById(cardId);
 
       if (card) {
         card.style.display = isVisible ? '' : 'none';
+
+        // Update selection state
+        if (selectedFeatures.has(cardId)) {
+          card.classList.add('selected');
+        } else {
+          card.classList.remove('selected');
+        }
       }
     });
 
-    // Hide date headers with no visible cards
-    this.updateDateHeadersVisibility();
+    // Update special interop-any attribute if needed
+    if (filters.interop.includes('any')) {
+      const allCards = document.querySelectorAll('.feature-card');
+      allCards.forEach(card => {
+        const hasInterop = Array.from(card.attributes)
+          .some(attr => attr.name.startsWith('data-interop-'));
+        if (hasInterop) {
+          card.setAttribute('data-interop-any', 'true');
+        } else {
+          card.removeAttribute('data-interop-any');
+        }
+      });
+    } else {
+      document.querySelectorAll('[data-interop-any]').forEach(card => {
+        card.removeAttribute('data-interop-any');
+      });
+    }
 
-    // Update URL parameters to reflect current filter state
-    this.updateURLWithFilters();
+    // Update download button text to show selection count
+    const selectedCount = selectedFeatures.size;
+    const downloadButtons = document.querySelectorAll('.download-btn');
+    downloadButtons.forEach(btn => {
+      if (selectedCount === 0) {
+        btn.innerHTML = '📅 Download ICS Calendar';
+      } else {
+        btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
+      }
+    });
+
+    // Update "Add to Calendar" button text based on selection state
+    document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
+      const card = btn.closest('.feature-card');
+      if (card) {
+        const cardId = card.id;
+        if (selectedFeatures.has(cardId)) {
+          btn.innerHTML = '✅ Remove from Calendar';
+        } else {
+          btn.innerHTML = '📅 Add to Calendar';
+        }
+      }
+    });
+
+    this.updateDateHeadersVisibility();
+    this.updateScrollTarget();
+  }
+
+  // Keep for backward compatibility or if needed elsewhere, but mostly handled by handleStateChange
+  updateFeatureVisibility() {
+    this.handleStateChange(this.stateManager.getState());
   }
 
   // Method to filter features by interop
   filterInteropFeatures() {
-    const currentInteropFilter = this.url.searchParams.get('interop');
-
-    // If 'any' is already active, toggle it off
-    if (currentInteropFilter === 'any') {
-      // Remove the "any" interop filter
-      this.url.searchParams.delete('interop');
-
-      // Update the URL without reloading the page
-      updateHistory(this.url);
-
-      // Update feature visibility with all active filters
-      this.updateFeatureVisibility();
-      return;
-    }
-
-    // Don't reset any active status filters - preserve them
-
-    // Don't reset any active browser filters - preserve them
-
-    // Reset any active interop filters first
-    // (to prevent conflicts with the "any" interop filter)
-    document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
-      tag.classList.remove('active-filter');
-      tag.setAttribute('aria-pressed', 'false');
-    });
-
-    // Create a special "any" interop filter data attribute on all feature cards
-    const allCards = document.querySelectorAll('.feature-card');
-    allCards.forEach(card => {
-      // Check if this card has any interop data attribute
-      const hasInterop = Array.from(card.attributes)
-        .some(attr => attr.name.startsWith('data-interop-'));
-
-      if (hasInterop) {
-        // Set a special data attribute for filtering
-        card.setAttribute('data-interop-any', 'true');
-      } else {
-        // Remove the attribute if it exists
-        card.removeAttribute('data-interop-any');
-      }
-    });
-
-    // Add the "any" interop filter
-    this.url.searchParams.delete('interop'); // Remove any specific interop year filters
-    this.url.searchParams.set('interop', 'any'); // Add the "any" filter
-
-    // Update the URL without reloading the page
-    updateHistory(this.url);
-
-    // Update feature visibility with all active filters
-    this.updateFeatureVisibility();
+    this.stateManager.toggleInteropFilter('any');
   }
 
   // Helper method to hide date headers with no visible feature cards
@@ -420,31 +387,12 @@ export class TimelineApp {
 
   // Update URL with current filter state
   updateURLWithFilters() {
-    const activeFilters = getFiltersFromDOM(
-      this.currentStatusFilter,
-      this.url.searchParams.get('predictions') !== 'false'
-    );
-    this.url = createURLFromFilters(this.url, activeFilters);
-    updateHistory(this.url);
+    // Handled by StateManager
   }
 
   // Initialize filters from URL parameters
   initializeFiltersFromURL() {
-    const filters = getFiltersFromURL(this.url);
-
-    // Apply filters to DOM
-    applyFiltersToDOM(filters);
-
-    // Apply status filter
-    if (filters.status) {
-      this.currentStatusFilter = filters.status;
-    }
-
-    // Update visibility if any filters are applied
-    if (filters.browsers.length > 0 || filters.interop.length > 0 || filters.status || filters.showPredictions === false) {
-      this.updateFeatureVisibility();
-      this.updateScrollTarget();
-    }
+    // Handled by StateManager
   }
 
   // Helper method to scroll to and expand a feature card
@@ -581,169 +529,49 @@ export class TimelineApp {
 
   // Add selection methods
   toggleFeatureSelection(feature) {
-    const featureId = `${feature.id}-${feature.displayType}`;
-    if (this.selectedFeatures.has(featureId)) {
-      this.selectedFeatures.delete(featureId);
-    } else {
-      this.selectedFeatures.add(featureId);
-    }
-    this.updateSelectionUI();
+    const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+    this.stateManager.toggleFeatureSelection(featureId);
   }
 
   isFeatureSelected(feature) {
-    const featureId = `${feature.id}-${feature.displayType}`;
-    return this.selectedFeatures.has(featureId);
+    const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+    return this.stateManager.isFeatureSelected(featureId);
   }
 
   updateSelectionUI() {
-    // Update all feature cards to show selection state
-    document.querySelectorAll('.feature-card').forEach(card => {
-      const feature = card.featureData;
-      if (feature) {
-        if (this.isFeatureSelected(feature)) {
-          card.classList.add('selected');
-        } else {
-          card.classList.remove('selected');
-        }
-      }
-    });
-
-    // Update download button text to show selection count
-    const selectedCount = this.selectedFeatures.size;
-    const downloadButtons = document.querySelectorAll('.download-btn');
-    downloadButtons.forEach(btn => {
-      if (selectedCount === 0) {
-        btn.innerHTML = '📅 Download ICS Calendar';
-      } else {
-        btn.innerHTML = `📅 Download ICS Calendar <span class="selection-count">(${selectedCount} selected)</span>`;
-      }
-    });
-
-    // Update "Add to Calendar" button text based on selection state
-    document.querySelectorAll('.add-to-calendar-btn').forEach(btn => {
-      const card = btn.closest('.feature-card');
-      if (card && card.featureData) {
-        const feature = card.featureData;
-        if (this.isFeatureSelected(feature)) {
-          btn.innerHTML = '✅ Remove from Calendar';
-        } else {
-          btn.innerHTML = '📅 Add to Calendar';
-        }
-      }
-    });
+    // Handled by handleStateChange
   }
 
   getSelectedFeatures() {
-    if (this.selectedFeatures.size === 0) {
+    const selectedIds = this.stateManager.getSelectedFeatures();
+    if (selectedIds.size === 0) {
       return this.features; // Return all features if none selected
     }
 
     return this.features.filter(feature => {
-      const featureId = `${feature.id}-${feature.displayType}`;
-      return this.selectedFeatures.has(featureId);
+      const featureId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
+      return selectedIds.has(featureId);
     });
   }
 
   // Filter features by type (widely-available, newly-available, limited-availability)
   filterFeaturesByType(type) {
-    // Check if we're toggling the same filter
-    if (this.currentStatusFilter === type) {
-      // Toggle off the filter
-      this.currentStatusFilter = null;
-    } else {
-      // Set the new filter
-      this.currentStatusFilter = type;
-    }
-
-    window.history.replaceState({}, '', this.url);
-    this.updateFeatureVisibility();
+    this.stateManager.toggleStatusFilter(type);
   }
 
   // Reset all filters and show all features
   resetFilters(resetBrowserFilters = true) {
-    // Reset status filter
-    this.currentStatusFilter = null;
-
-    // If requested, also reset browser filters
-    if (resetBrowserFilters) {
-      document.querySelectorAll('.browser-tag.active-filter').forEach(tag => {
-        tag.classList.remove('active-filter');
-        tag.setAttribute('aria-pressed', 'false');
-      });
-    }
-
-    // Always reset interop filters
-    document.querySelectorAll('.interop-tag.active-filter').forEach(tag => {
-      tag.classList.remove('active-filter');
-      tag.setAttribute('aria-pressed', 'false');
-    });
-
-    // Clear the 'any' interop filter from URL if present
-    if (this.url.searchParams.has('interop')) {
-      this.url.searchParams.delete('interop');
-
-      // Also clean up the special 'any' interop data attribute
-      document.querySelectorAll('[data-interop-any]').forEach(card => {
-        card.removeAttribute('data-interop-any');
-      });
-    }
-
-    this.url.searchParams.delete('predictions');
-
-    // Show all feature cards
-    document.querySelectorAll('.feature-card').forEach(card => {
-      card.style.display = 'block';
-    });
-
-    window.history.replaceState({}, '', this.url);
-
-    // Update date headers visibility
-    this.updateDateHeadersVisibility();
-
-    // Update URL to remove filters
-    this.updateURLWithFilters();
+    this.stateManager.resetFilters(resetBrowserFilters);
   }
 
   // Toggle prediction visibility
   filterPredictedFeatures() {
-    if (this.url.searchParams.get('predictions') === 'false') {
-      this.url.searchParams.delete('predictions');
-    } else {
-      this.url.searchParams.set('predictions', 'false');
-    }
-
-    // Update the URL without reloading the page
-    window.history.replaceState({}, '', this.url);
-    this.updateFeatureVisibility();
+    this.stateManager.togglePredictions();
   }
 
   // Filter to show only deprecated (discouraged) features
   filterDeprecatedFeatures() {
-    // Check if we're toggling the same filter
-    if (this.currentStatusFilter === 'discouraged') {
-      // Toggle off the filter
-      this.currentStatusFilter = null;
-      this.resetFilters(false); // Don't reset browser filters
-    } else {
-      // Set the new filter
-      this.currentStatusFilter = 'discouraged';
-
-      // Get all feature cards
-      const allCards = document.querySelectorAll('.feature-card');
-
-      allCards.forEach(card => {
-        let shouldDisplay = card.classList.contains('discouraged');
-
-        // Apply visibility
-        card.style.display = shouldDisplay ? '' : 'none';
-      });
-
-      // Hide date headers with no visible cards
-      this.updateDateHeadersVisibility();
-
-      // Update URL parameters to reflect current filter state
-      this.updateURLWithFilters();
-    }
+    this.stateManager.toggleStatusFilter('discouraged');
   }
 
   // Scroll to the current month in the timeline
