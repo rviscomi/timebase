@@ -1,7 +1,7 @@
 import { browsers, bcdKeys } from '../bcd-data.js';
-import developerSignalsData from '../developer-signals.json' with { type: "json" };
-import interopData from '../interop.json' with { type: "json" };
-import mdnDocsData from '../mdn.json' with { type: "json" };
+import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
+import interopData from '../data/interop.json' with { type: "json" };
+import mdnDocsData from '../data/mdn.json' with { type: "json" };
 import { processBcdKeys } from './data-processor.js';
 import { setupShortcuts, setupShortcutsDialog } from './shortcuts.js';
 import { applyFiltersToDOM, getFiltersFromDOM, updateHistory } from './router.js';
@@ -30,104 +30,145 @@ export class BcdTimelineApp {
   }
 
   attachInteractivityToStaticHTML() {
-    // Attach click handlers to browser tags for filtering
-    document.querySelectorAll('.browser-tag').forEach(tag => {
-      tag.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isActive = tag.classList.contains('active-filter');
-        const filterKey = tag.getAttribute('data-filter');
-
-        if (isActive) {
-          document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-            matchingTag.classList.remove('active-filter');
-            matchingTag.setAttribute('aria-pressed', 'false');
-          });
-        } else {
-          document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-            matchingTag.classList.add('active-filter');
-            matchingTag.setAttribute('aria-pressed', 'true');
-          });
-        }
-        this.updateFeatureVisibility();
-      });
-
-      tag.addEventListener('keydown', (e) => {
-        if (e.key === ' ' || e.key === 'Enter') {
-          e.preventDefault();
+    // Use event delegation for browser tags, interop tags, feature card expansion, and widely-available links
+    if (this.timelineContent) {
+      this.timelineContent.addEventListener('click', (e) => {
+        // Handle browser tag clicks
+        const browserTag = e.target.closest('.browser-tag');
+        if (browserTag) {
           e.stopPropagation();
-          tag.click();
-        }
-      });
-    });
-
-    // Attach click handlers to interop tags
-    document.querySelectorAll('.interop-tag').forEach(tag => {
-      tag.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isActive = tag.classList.contains('active-filter');
-        const filterKey = tag.getAttribute('data-filter');
-        const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
-
-        if (isActive) {
-          document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-            matchingTag.classList.remove('active-filter');
-            matchingTag.setAttribute('aria-pressed', 'false');
-          });
-        } else {
-          if (hasAnyInteropFilter) {
-            this.url.searchParams.delete('interop');
-            document.querySelectorAll('[data-interop-any]').forEach(card => {
-              card.removeAttribute('data-interop-any');
-            });
-            window.history.replaceState({}, '', this.url);
-          }
-          document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
-            matchingTag.classList.add('active-filter');
-            matchingTag.setAttribute('aria-pressed', 'true');
-          });
-        }
-        this.updateURLWithFilters();
-        this.updateFeatureVisibility();
-      });
-
-      tag.addEventListener('keydown', (e) => {
-        if (e.key === ' ' || e.key === 'Enter') {
-          e.preventDefault();
-          e.stopPropagation();
-          tag.click();
-        }
-      });
-    });
-
-    // Attach expand/collapse handlers to feature cards
-    document.querySelectorAll('.feature-top-row').forEach(topRow => {
-      topRow.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A' ||
-          event.target.closest('a') ||
-          (event.target.tagName === 'IMG' && event.target.closest('a'))) {
+          this.handleBrowserTagClick(browserTag);
           return;
         }
 
-        const detailsId = topRow.getAttribute('aria-controls');
-        const details = document.getElementById(detailsId);
-        if (!details) return;
+        // Handle interop tag clicks
+        const interopTag = e.target.closest('.interop-tag');
+        if (interopTag) {
+          e.stopPropagation();
+          this.handleInteropTagClick(interopTag);
+          return;
+        }
 
-        const isExpanded = details.style.display !== 'none';
-        details.style.display = isExpanded ? 'none' : 'block';
-        topRow.setAttribute('aria-expanded', !isExpanded);
+        // Handle widely-available link clicks
+        const widelyAvailableLink = e.target.closest('.widely-available-link');
+        if (widelyAvailableLink) {
+          this.handleWidelyAvailableLinkClick(widelyAvailableLink);
+          return;
+        }
 
-        const card = topRow.closest('.feature-card');
-        if (card) {
-          if (isExpanded) {
-            card.classList.remove('expanded');
-          } else {
-            card.classList.add('expanded');
+        // Handle feature card expansion
+        const topRow = e.target.closest('.feature-top-row');
+        if (topRow) {
+          this.handleFeatureCardExpansion(topRow, e.target);
+        }
+      });
+
+      // Handle keyboard interaction for browser and interop tags using delegation on keydown
+      this.timelineContent.addEventListener('keydown', (e) => {
+        if (e.key === ' ' || e.key === 'Enter') {
+          const tag = e.target.closest('.browser-tag, .interop-tag');
+          if (tag) {
+            e.preventDefault();
+            e.stopPropagation();
+            tag.click();
           }
         }
       });
-    });
+    }
 
-    // Handle hash navigation for deep linking
+    this.handleHashNavigation();
+
+    this.updateScrollTarget();
+  }
+
+  handleBrowserTagClick(tag) {
+    const isActive = tag.classList.contains('active-filter');
+    const filterKey = tag.getAttribute('data-filter');
+
+    if (isActive) {
+      document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+        matchingTag.classList.remove('active-filter');
+        matchingTag.setAttribute('aria-pressed', 'false');
+      });
+    } else {
+      document.querySelectorAll(`.browser-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+        matchingTag.classList.add('active-filter');
+        matchingTag.setAttribute('aria-pressed', 'true');
+      });
+    }
+    this.updateFeatureVisibility();
+  }
+
+  handleInteropTagClick(tag) {
+    const isActive = tag.classList.contains('active-filter');
+    const filterKey = tag.getAttribute('data-filter');
+    const hasAnyInteropFilter = this.url.searchParams.getAll('interop').includes('any');
+
+    if (isActive) {
+      document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+        matchingTag.classList.remove('active-filter');
+        matchingTag.setAttribute('aria-pressed', 'false');
+      });
+    } else {
+      if (hasAnyInteropFilter) {
+        this.url.searchParams.delete('interop');
+        document.querySelectorAll('[data-interop-any]').forEach(card => {
+          card.removeAttribute('data-interop-any');
+        });
+        window.history.replaceState({}, '', this.url);
+      }
+      document.querySelectorAll(`.interop-tag[data-filter="${filterKey}"]`).forEach(matchingTag => {
+        matchingTag.classList.add('active-filter');
+        matchingTag.setAttribute('aria-pressed', 'true');
+      });
+    }
+    this.updateURLWithFilters();
+    this.updateFeatureVisibility();
+  }
+
+  handleFeatureCardExpansion(topRow, target) {
+    if (target.tagName === 'A' ||
+      target.closest('a') ||
+      (target.tagName === 'IMG' && target.closest('a'))) {
+      return;
+    }
+
+    const detailsId = topRow.getAttribute('aria-controls');
+    const details = document.getElementById(detailsId);
+    if (!details) return;
+
+    const isExpanded = details.style.display !== 'none';
+    details.style.display = isExpanded ? 'none' : 'block';
+    topRow.setAttribute('aria-expanded', !isExpanded);
+
+    const card = topRow.closest('.feature-card');
+    if (card) {
+      if (isExpanded) {
+        card.classList.remove('expanded');
+      } else {
+        card.classList.add('expanded');
+      }
+    }
+  }
+
+  handleWidelyAvailableLinkClick(link) {
+    if (this.currentStatusFilter) {
+      this.filterFeaturesByType(this.currentStatusFilter);
+    }
+    if (this.url.searchParams.get('predictions') === 'false') {
+      this.filterPredictedFeatures();
+    }
+
+    const targetId = link.dataset.targetId || link.getAttribute('href').substring(1);
+    if (targetId) {
+      const targetCard = document.getElementById(targetId);
+      if (targetCard) {
+        this.scrollToAndExpandCard(targetCard);
+      }
+    }
+  }
+
+  handleHashNavigation() {
     if (window.location.hash) {
       const targetId = window.location.hash.substring(1);
       const hasNewlyAvailable = targetId.includes('-newly-available');
@@ -164,32 +205,6 @@ export class BcdTimelineApp {
         }
       }
     }
-
-    // Add click handler for widely-available links
-    document.addEventListener('click', (event) => {
-      if (event.target.classList.contains('widely-available-link') ||
-        event.target.closest('.widely-available-link')) {
-        const link = event.target.classList.contains('widely-available-link') ?
-          event.target : event.target.closest('.widely-available-link');
-
-        if (this.currentStatusFilter) {
-          this.filterFeaturesByType(this.currentStatusFilter);
-        }
-        if (this.url.searchParams.get('predictions') === 'false') {
-          this.filterPredictedFeatures();
-        }
-
-        const targetId = link.dataset.targetId || link.getAttribute('href').substring(1);
-        if (targetId) {
-          const targetCard = document.getElementById(targetId);
-          if (targetCard) {
-            this.scrollToAndExpandCard(targetCard);
-          }
-        }
-      }
-    });
-
-    this.updateScrollTarget();
   }
 
   updateScrollTarget() {
