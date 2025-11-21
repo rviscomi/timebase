@@ -51,7 +51,7 @@ async function build() {
     .replace(/<button id="download-ical-bottom"[^>]*>[\s\S]*?<\/button>/g, '')
     .replace(/<p>Add web features timeline to your calendar<\/p>/g, '')
     // Update paths to reference parent directory for shared assets
-    .replace(/href="styles\.css"/g, 'href="../styles.css"')
+    .replace(/href="styles\.css"/g, 'href="../src/styles.css"')
     .replace(/src="images\//g, 'src="../images/');
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);

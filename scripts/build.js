@@ -42,7 +42,7 @@ async function build() {
   const timelineHTML = generateTimelineHTML(features);
 
   const outputHTML = template.replace('<!-- TIMELINE_CONTENT -->', timelineHTML)
-    ;
+    .replace('href="styles.css"', 'href="src/styles.css"');
 
   await fs.writeFile(path.resolve(DIST_DIR, 'index.html'), outputHTML);
   await fs.copyFile(path.resolve(__dirname, '../src/client.js'), path.resolve(DIST_DIR, 'client.js'));

@@ -11,24 +11,39 @@ import developerSignalsData from '../data/developer-signals.json' with { type: "
 import interopData from '../data/interop.json' with { type: "json" };
 import mdnDocsData from '../data/mdn.json' with { type: "json" };
 
+
 export class TimelineApp {
-  constructor() {
+  constructor(options = {}) {
+    this.options = {
+      idPrefix: 'feature',
+      dataLoader: null,
+      ...options
+    };
     this.url = new URL(window.location);
     this.timelineContent = document.querySelector('#timeline-content');
-    this.developerSignals = developerSignalsData; // Load directly from JSON import
-    this.interopData = interopData; // Load directly from JSON import
-    this.mdnDocs = mdnDocsData; // Load directly from JSON import
-    this.features = processFeatures(features, browsers, {
-      developerSignals: this.developerSignals,
-      interop: this.interopData,
-      mdn: this.mdnDocs
-    });
-    this.selectedFeatures = new Set(); // Track selected features
-    this.allFeatures = [...this.features]; // Store all processed features for filtering
-    this.currentStatusFilter = null; // Track the current status filter
-    this.scrollFAB = null; // Track the scroll FAB element
-    this.scrollObserver = null; // Track the intersection observer
+    this.developerSignals = developerSignalsData;
+    this.interopData = interopData;
+    this.mdnDocs = mdnDocsData;
+    this.selectedFeatures = new Set();
+    this.currentStatusFilter = null;
+    this.scrollFAB = null;
+    this.scrollObserver = null;
+  }
 
+  loadData() {
+    if (this.options.dataLoader) {
+      this.options.dataLoader.call(this);
+    } else {
+      this.features = processFeatures(features, browsers, {
+        developerSignals: this.developerSignals,
+        interop: this.interopData,
+        mdn: this.mdnDocs
+      });
+      this.allFeatures = [...this.features];
+    }
+  }
+
+  init() {
     this.initEventListeners();
     this.attachInteractivityToStaticHTML();
     this.initializeFiltersFromURL();
@@ -188,7 +203,7 @@ export class TimelineApp {
         if (element) {
           this.scrollToAndExpandCard(element);
         }
-      } else if (targetId.startsWith('feature-')) {
+      } else if (targetId.startsWith(`${this.options.idPrefix}-`)) {
         const baseFeatureId = targetId.split('-newly-available')[0].split('-widely-available')[0];
         const newlyAvailableId = `${baseFeatureId}-newly-available`;
         const newlyAvailableElement = document.getElementById(newlyAvailableId);
@@ -320,9 +335,8 @@ export class TimelineApp {
 
     this.allFeatures.forEach(feature => {
       const isVisible = shouldDisplayFeature(feature, activeFilters);
-      // Construct ID: feature-{id}-{displayType}
-      // Note: displayType is set in processFeatures (e.g. 'newly-available', 'widely-available', 'limited-availability')
-      const cardId = `feature-${feature.id}-${feature.displayType}`;
+      // Construct ID: {idPrefix}-{id}-{displayType}
+      const cardId = `${this.options.idPrefix}-${feature.id}-${feature.displayType}`;
       const card = document.getElementById(cardId);
 
       if (card) {

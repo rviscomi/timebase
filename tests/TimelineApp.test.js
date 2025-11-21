@@ -99,6 +99,8 @@ describe('TimelineApp', () => {
 
   it('should initialize correctly', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
     expect(app).toBeDefined();
     // processFeatures creates 2 entries for baseline high: newly-available and widely-available
     expect(app.features).toHaveLength(2);
@@ -106,6 +108,8 @@ describe('TimelineApp', () => {
 
   it('should filter features by browser', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
 
     // Simulate clicking a browser tag
     const browserTag = document.querySelector('.browser-tag');
@@ -121,6 +125,8 @@ describe('TimelineApp', () => {
 
   it('should toggle feature selection', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
     const feature = app.features[0];
 
     app.toggleFeatureSelection(feature);
