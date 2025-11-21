@@ -1,136 +1,54 @@
-# Timebase
+# [Timebase](https://rviscomi.github.io/timebase/)
 
-Timeline of web features and browser support.
+- **Timeline view**: Visualize web features chronologically by their availability dates
+- **Browser support**: See which browsers support each feature and their version numbers
+- **Developer signals**: See the number of pro-interoperability upvotes for each feature (applies to Limited Availability features only)
+- **Deep linking**: Link directly to specific months or features
+- **Filtering**: Filter features by browser, status, interop, and predicted support
 
-## Features
+## [BCD Timeline](https://rviscomi.github.io/timebase/bcd/)
 
-- **Timeline View**: Visualize web features chronologically by their availability dates
-- **Browser Support**: See which browsers support each feature and their version numbers
-- **Deep Linking**: Link directly to specific months or features
-- **Responsive Design**: Works on desktop and mobile devices
-- **Accessibility**: Keyboard navigation, screen reader support, and high contrast mode
-- **Performance Optimized**: Local storage caching and virtual scrolling for large datasets
+You can also view the [BCD Timeline](https://rviscomi.github.io/timebase/bcd/), which shows similar information grouped at the BCD key level.
 
-## Setup
+Given the higher volume of BCD keys, to keep the app performant, the BCD timeline is limited to the range of 3 calendar months before and after the current date.
 
-```bash
-# Install dependencies
-npm install
+Developer signals shown here correspond to the BCD key's _parent feature_, which you can see by expanding the key's details.
 
-# Build the application (extract data and logos)
-npm run build
-```
+## Usage
 
-## Development
+### Filters
 
-To start a local development server:
+You can filter features by:
+- **Browser**: Click on browser tags (e.g., "Chrome 120") to see features available in that version.
+- **Status**: Use keyboard shortcuts to filter by Widely Available, Newly Available, Limited Availability, or discouraged features.
+- **Interop**: Use keyboard shortcuts to filter by Interop status, or click on Interop tags (e.g., "Interop 2023") to filter by specific years.
+- **Predicted**: Use keyboard shortcuts to filter features with upcoming browser support or status changes not yet published in `web-features`. For example, features predicted to become Newly Available based on future browser versions.
 
-```bash
-# Start the development server
-npm run dev
+Toggle the filter on and off by clicking the tag or pressing the keyboard shortcut again.
 
-# Or run individual commands
-npm run update        # Update web features data
-npm run extract-logos # Extract browser logos
-npm run start         # Start the server
-```
+### Keyboard Shortcuts
 
-This will start a Node.js server on http://localhost:8080.
+| Key | Action |
+| --- | --- |
+| `?` | Show shortcuts dialog |
+| `w` | Filter Widely Available features |
+| `n` | Filter Newly Available features |
+| `l` | Filter Limited Availability features |
+| `d` | Filter discouraged features |
+| `i` | Filter Interop features |
+| `p` | Filter predicted features |
+| `c` | Scroll to current month |
+| `r` | Reset all filters |
 
-To stop the server when you're done:
-
-```bash
-# Option 1: If the terminal is still open, press Ctrl+C
-
-# Option 2: Run the stop script
-npm run stop
-```
-
-## Deep Linking
+### Deep Linking
 
 You can link directly to specific content in the timeline:
 
-### Link to a Month
+- **Link to a Month**: `https://rviscomi.github.io/timebase/#[month]-[year]`
+  - Example: [March 2025](https://rviscomi.github.io/timebase/#march-2025)
+- **Link to a Feature**: `https://rviscomi.github.io/timebase/#feature-[feature-id]-[status]`
+  - Example: [Container Queries](https://rviscomi.github.io/timebase/#feature-container-queries-widely-available)
 
-```
-http://localhost:8080/#[month]-[year]
-```
+## Development
 
-For example:
-- http://localhost:8080/#march-2025
-- http://localhost:8080/#january-2024
-
-### Link to a Feature
-
-```
-http://localhost:8080/#feature-[feature-id]
-```
-
-For example:
-- http://localhost:8080/#feature-css-container-queries
-
-Each month header and feature includes a clickable link that you can use to copy the URL.
-
-## Updating Data
-
-To update the web features data to the latest version:
-
-```bash
-npm run update
-```
-
-This command will:
-1. Update the `web-futures` dependency to the latest version
-2. Run the `extract-data.js` script to generate a fresh `data.js` file
-
-## Project Structure
-
-```
-timebase/
-├── app.js                # Main application
-├── browser-icons.js      # Browser icon configuration
-├── data.js               # Generated data from web-futures
-├── extract-data.js       # Data extraction script
-├── extract-logos.js      # Logo extraction script
-├── images/               # Browser logos
-├── index.html            # Main HTML file
-├── styles.css            # CSS styles
-└── package.json          # Project configuration
-```
-
-## Data Structure
-
-The application uses two main data structures:
-
-1. `browsers` - Information about browser versions and release dates
-2. `features` - Web platform features and their support across browsers
-
-These are extracted from the `web-futures` package and processed to create the timeline visualization.
-
-## Browser Support
-
-The application supports all modern browsers:
-- Chrome/Edge (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-
-## Accessibility
-
-The application includes several accessibility features:
-- Keyboard navigation for all interactive elements
-- ARIA attributes for screen readers
-- Skip-to-content link
-- High contrast mode support
-- Focus indicators
-
-## Performance Optimizations
-
-- Local storage caching of processed feature data
-- Error handling and fallbacks
-- Virtual scrolling for large datasets
-- Debounced event handlers
-- Lazy loading of images
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. 
+For instructions on how to build, test, and contribute to this project, please see [DEVELOPMENT.md](DEVELOPMENT.md).
