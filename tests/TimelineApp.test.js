@@ -81,7 +81,7 @@ describe('TimelineApp', () => {
 
     // Mock window.location
     Object.defineProperty(window, 'location', {
-      value: new URL('http://localhost/'),
+      value: new URL('http://localhost:3000/'),
       writable: true
     });
 
@@ -99,6 +99,8 @@ describe('TimelineApp', () => {
 
   it('should initialize correctly', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
     expect(app).toBeDefined();
     // processFeatures creates 2 entries for baseline high: newly-available and widely-available
     expect(app.features).toHaveLength(2);
@@ -106,13 +108,15 @@ describe('TimelineApp', () => {
 
   it('should filter features by browser', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
 
     // Simulate clicking a browser tag
     const browserTag = document.querySelector('.browser-tag');
     browserTag.click();
 
-    // Check if URL was updated (we mocked updateHistory but we can check app.url)
-    expect(app.url.searchParams.get('browser')).toBe('chrome:100');
+    // Check if URL was updated
+    expect(app.stateManager.url.searchParams.get('browser')).toBe('chrome:100');
 
     // Check if feature is still visible (it matches)
     const card = document.getElementById('feature-feature-1-widely-available');
@@ -121,6 +125,8 @@ describe('TimelineApp', () => {
 
   it('should toggle feature selection', () => {
     app = new TimelineApp();
+    app.loadData();
+    app.init();
     const feature = app.features[0];
 
     app.toggleFeatureSelection(feature);

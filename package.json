@@ -11,16 +11,9 @@
     "update-interop": "node scripts/interop.js",
     "update-mdn": "node scripts/mdn-docs.js",
     "start": "npx http-server ./docs -p 8080 -c-1 --cors -o -a localhost -d false -i docs/index.html",
-    "start:bcd": "npx http-server ./docs/bcd -p 8081 -c-1 --cors -o -a localhost -d false -i docs/bcd/index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
-    "stop:bcd": "kill $(lsof -t -i:8081) || echo 'No server running on port 8081'",
-    "build": "node scripts/build.js",
-    "build:bcd": "node scripts/build-bcd.js",
-    "build:all": "npm run build && npm run build:bcd",
-    "clear-cache": "echo 'Clearing browser cache...' && rm -rf ~/.cache/Cursor/Cache/*",
+    "build": "node scripts/build.js && node scripts/build-bcd.js",
     "dev": "npm run build && npm run start",
-    "dev:bcd": "npm run build:bcd && npm run start:bcd",
-    "dev:all": "npm run build:all && npm run start & npm run start:bcd",
     "test": "vitest run"
   },
   "author": "",
@@ -36,7 +29,7 @@
   "devDependencies": {
     "happy-dom": "^20.0.10",
     "http-server": "^14.1.1",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.12"
   },
   "engines": {
     "node": ">=14.0.0"

@@ -5,6 +5,12 @@ import { createURLFromFilters } from './url.js';
  * @param {Object} filters - The filters object (browsers, interop, etc.).
  */
 export function applyFiltersToDOM(filters) {
+  // Clear existing active filters
+  document.querySelectorAll('.browser-tag, .interop-tag').forEach(tag => {
+    tag.classList.remove('active-filter');
+    tag.setAttribute('aria-pressed', 'false');
+  });
+
   if (filters.browsers && filters.browsers.length > 0) {
     filters.browsers.forEach(filter => {
       document.querySelectorAll(`.browser-tag[data-filter="${filter}"]`).forEach(tag => {
@@ -17,7 +23,12 @@ export function applyFiltersToDOM(filters) {
   if (filters.interop && filters.interop.length > 0) {
     filters.interop.forEach(year => {
       if (year !== 'any') {
-        document.querySelectorAll(`.interop-tag[data-filter="interop:${year}"]`).forEach(tag => {
+        // Handle both "2023" and "interop:2023" formats
+        const selector = year.startsWith('interop:')
+          ? `.interop-tag[data-filter="${year}"]`
+          : `.interop-tag[data-filter="interop:${year}"]`;
+
+        document.querySelectorAll(selector).forEach(tag => {
           tag.classList.add('active-filter');
           tag.setAttribute('aria-pressed', 'true');
         });

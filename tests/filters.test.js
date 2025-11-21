@@ -36,6 +36,17 @@ describe('shouldDisplayFeature', () => {
     it('should fail if one of multiple browsers does not match', () => {
       expect(shouldDisplayFeature(mockFeature, { browsers: ['chrome:110', 'firefox:110'] })).toBe(false);
     });
+
+    it('should match firefox_android when filtering by firefox (loose match)', () => {
+      const mobileFeature = {
+        ...mockFeature,
+        shipDates: [
+          { browser: 'firefox_android', version: '79' }
+        ]
+      };
+      // This should now pass because 'firefox:79' matches 'firefox_android:79'
+      expect(shouldDisplayFeature(mobileFeature, { browsers: ['firefox:79'] })).toBe(true);
+    });
   });
 
   describe('Interop Filters', () => {
