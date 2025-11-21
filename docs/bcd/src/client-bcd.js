@@ -12,6 +12,7 @@ const app = new TimelineApp({
       mdn: this.mdnDocs
     });
     this.allFeatures = [...this.bcdKeys];
+    this.features = this.allFeatures;
   }
 });
 app.loadData();
