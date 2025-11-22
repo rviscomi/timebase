@@ -26,8 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run update:meta
-        run: npm run update:meta
+      - name: Run update:meta, build and test
+        run: |
+          npm run update:meta
+          npm run build
+          npm test
 
       - name: Check for changes
         id: changes
