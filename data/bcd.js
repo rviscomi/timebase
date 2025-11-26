@@ -4321,6 +4321,22 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
+  "api.HTMLButtonElement.popoverTargetElement.implicit_anchor_reference": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
   "api.HTMLElement.showPopover.options_source_parameter.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -4350,6 +4366,22 @@ export const bcdKeys = {
         "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "api.HTMLInputElement.popoverTargetElement.implicit_anchor_reference": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview"
       }
     },
     "spec": [
@@ -5585,6 +5617,58 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
+  "css.properties.position-area.self-x-end": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-area.self-x-start": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-area.self-y-end": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-area.self-y-start": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
   "css.properties.position-area.span-all": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -6309,6 +6393,54 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
+  "css.properties.position-visibility": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-visibility.always": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-visibility.no-overflow": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
   "css.properties.right.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -6447,6 +6579,38 @@ export const bcdKeys = {
         "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "html.elements.button.popovertarget.implicit_anchor_reference": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "html.elements.input.popovertarget.implicit_anchor_reference": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview"
       }
     },
     "spec": [
@@ -7079,6 +7243,118 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions"
+    ]
+  },
+  "api.CloseWatcher": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.CloseWatcher": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.cancel_event": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.close": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.close_event": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.destroy": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "api.CloseWatcher.requestClose": {
+    "parent_feature": "closewatcher",
+    "parent_feature_name": "CloseWatcher",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
     ]
   },
   "css.types.color.color": {
@@ -8636,6 +8912,22 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
     ]
   },
+  "api.Document.caretPositionFromPoint.options_parameter": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
   "api.Document.write.enforces_trusted_types": {
     "parent_feature": "document-write",
     "parent_feature_name": "document.write()",
@@ -8783,6 +9075,54 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webappsec-fetch-metadata/"
+    ]
+  },
+  "css.properties.field-sizing": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
+  "css.properties.field-sizing.content": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
+  "css.properties.field-sizing.fixed": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
     ]
   },
   "api.FileSystemDirectoryHandle.@@asyncIterator": {
@@ -10247,6 +10587,25 @@ export const bcdKeys = {
       "https://tc39.es/proposal-upsert/"
     ]
   },
+  "html.global_attributes.hidden.until-found": {
+    "parent_feature": "hidden-until-found",
+    "parent_feature_name": "hidden=\"until-found\"",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
+    ]
+  },
   "api.HighlightRegistry.highlightsFromPoint": {
     "parent_feature": "highlightsfrompoint",
     "parent_feature_name": "Custom highlights from point",
@@ -10667,6 +11026,120 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#pluralrules-objects"
     ]
   },
+  "api.CommandEvent": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "api.CommandEvent.CommandEvent": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "api.CommandEvent.command": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "api.CommandEvent.source": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "api.HTMLButtonElement.command": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "api.HTMLButtonElement.commandForElement": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
   "api.HTMLElement.command_event": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
@@ -10679,6 +11152,44 @@ export const bcdKeys = {
         "firefox": "144",
         "firefox_android": "144",
         "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "html.elements.button.command": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+    ]
+  },
+  "html.elements.button.commandfor": {
+    "parent_feature": "invoker-commands",
+    "parent_feature_name": "Invoker commands",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -10948,6 +11459,48 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-logical-1/"
+    ]
+  },
+  "css.properties.grid-template-columns.masonry": {
+    "parent_feature": "masonry",
+    "parent_feature_name": "Masonry",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "css.properties.grid-template-rows.masonry": {
+    "parent_feature": "masonry",
+    "parent_feature_name": "Masonry",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "javascript.builtins.Math.sumPrecise": {
+    "parent_feature": "math-sum-precise",
+    "parent_feature_name": "Math.sumPrecise()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-math-sum/"
     ]
   },
   "css.properties.math-shift": {
@@ -11330,6 +11883,964 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
     ]
   },
+  "api.NavigateEvent": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.NavigateEvent": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.canIntercept": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.destination": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.downloadRequest": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.formData": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.hasUAVisualTransition": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.hashChange": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.info": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.intercept": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.navigationType": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.scroll": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.signal": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigateEvent.userInitiated": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.activation": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.back": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.canGoBack": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.canGoForward": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.currentEntry": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.currententrychange_event": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.entries": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.forward": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.navigate": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.navigate_event": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.navigateerror_event": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.navigatesuccess_event": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.reload": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.transition": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.traverseTo": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Navigation.updateCurrentEntry": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationActivation": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationActivation.entry": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationActivation.from": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationActivation.navigationType": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationCurrentEntryChangeEvent": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationCurrentEntryChangeEvent.from": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationCurrentEntryChangeEvent.navigationType": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.getState": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.id": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.index": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.key": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.sameDocument": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationDestination.url": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.dispose_event": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.getState": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.id": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.index": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.key": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.sameDocument": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationHistoryEntry.url": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationTransition": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationTransition.finished": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationTransition.from": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.NavigationTransition.navigationType": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Notification.actions": {
+    "parent_feature": "notifications",
+    "parent_feature_name": "Notifications",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "53",
+        "edge": "18",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://notifications.spec.whatwg.org/"
+    ]
+  },
+  "api.Notification.maxActions_static": {
+    "parent_feature": "notifications",
+    "parent_feature_name": "Notifications",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "48",
+        "edge": "18",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://notifications.spec.whatwg.org/"
+    ]
+  },
   "api.NotificationEvent": {
     "parent_feature": "notifications",
     "parent_feature_name": "Notifications",
@@ -11433,28 +12944,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://notifications.spec.whatwg.org/"
-    ]
-  },
-  "notifications-apps": {
-    "name": "Notifications from service workers and installed apps",
-    "parent_feature": "notifications-apps",
-    "parent_feature_name": "Notifications from service workers and installed apps",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-09-27",
-      "baseline_low_date": "2023-03-27",
-      "support": {
-        "chrome": "20",
-        "chrome_android": "42",
-        "edge": "14",
-        "firefox": "22",
-        "firefox_android": "22",
-        "safari": "7",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://notifications.spec.whatwg.org/#service-worker-api"
     ]
   },
   "css.selectors.nth-child.of_syntax": {
@@ -13599,6 +15088,24 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-ui-4/#outline"
     ]
   },
+  "css.properties.overflow-anchor": {
+    "parent_feature": "overflow-anchor",
+    "parent_feature_name": "overflow-anchor",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "56",
+        "chrome_android": "56",
+        "edge": "79",
+        "firefox": "66",
+        "firefox_android": "66",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api"
+    ]
+  },
   "css.properties.page": {
     "parent_feature": "page-selectors",
     "parent_feature_name": "Page selectors",
@@ -13698,6 +15205,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods"
+    ]
+  },
+  "http.headers.Set-Cookie.Partitioned": {
+    "parent_feature": "partitioned-cookies",
+    "parent_feature_name": "Partitioned cookies",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://cookiestore.spec.whatwg.org/"
     ]
   },
   "api.Navigator.pdfViewerEnabled": {
@@ -14433,6 +15959,188 @@ export const bcdKeys = {
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-decodedbodysize",
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-encodedbodysize",
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize"
+    ]
+  },
+  "api.Document.parseHTML_static": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Element.setHTML": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.Sanitizer": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.allowAttribute": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.allowElement": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.get": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.removeAttribute": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.removeElement": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.removeUnsafe": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.replaceElementWithChildren": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.setComments": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.Sanitizer.setDataAttributes": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
+    ]
+  },
+  "api.ShadowRoot.setHTML": {
+    "parent_feature": "sanitizer",
+    "parent_feature_name": "Sanitizer API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/sanitizer-api/"
     ]
   },
   "api.Scheduler": {
@@ -15542,6 +17250,42 @@ export const bcdKeys = {
       "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview"
     ]
   },
+  "api.Document.scrollend_event": {
+    "parent_feature": "scrollend",
+    "parent_feature_name": "scrollend",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "109",
+        "firefox_android": "109",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
+    ]
+  },
+  "api.Element.scrollend_event": {
+    "parent_feature": "scrollend",
+    "parent_feature_name": "scrollend",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "109",
+        "firefox_android": "109",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
+    ]
+  },
   "api.PaymentRequest.securePaymentConfirmationAvailability_static": {
     "parent_feature": "secure-payment-confirmation",
     "parent_feature_name": "Secure payment confirmation",
@@ -15722,6 +17466,74 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/server-timing/"
+    ]
+  },
+  "http.headers.Service-Worker-Navigation-Preload": {
+    "parent_feature": "service-workers",
+    "parent_feature_name": "Service workers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "59",
+        "chrome_android": "59",
+        "edge": "18",
+        "firefox": "preview",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/"
+    ]
+  },
+  "css.types.basic-shape.shape": {
+    "parent_feature": "shape-function",
+    "parent_feature_name": "shape()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "firefox": "preview",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#shape-function"
+    ]
+  },
+  "css.types.sibling-count": {
+    "parent_feature": "sibling-count",
+    "parent_feature_name": "sibling-count() and sibling-index()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#tree-counting"
+    ]
+  },
+  "css.types.sibling-index": {
+    "parent_feature": "sibling-count",
+    "parent_feature_name": "sibling-count() and sibling-index()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#tree-counting"
     ]
   },
   "api.HTMLSlotElement.assign": {
@@ -16400,6 +18212,47 @@ export const bcdKeys = {
       "https://svgwg.org/svg2-draft/"
     ]
   },
+  "css.properties.caption-side.bottom-outside": {
+    "parent_feature": "table",
+    "parent_feature_name": "Tables",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/tables.html"
+    ]
+  },
+  "css.properties.caption-side.top-outside": {
+    "parent_feature": "table",
+    "parent_feature_name": "Tables",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/tables.html"
+    ]
+  },
+  "javascript.builtins.Date.toTemporalInstant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
   "css.properties.text-autospace": {
     "parent_feature": "text-autospace",
     "parent_feature_name": "text-autospace",
@@ -16522,6 +18375,42 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#text-autospace-property"
     ]
   },
+  "css.properties.text-decoration.includes_color-and-style": {
+    "parent_feature": "text-decoration",
+    "parent_feature_name": "text-decoration",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "57",
+        "chrome_android": "57",
+        "edge": "79",
+        "firefox": "6",
+        "firefox_android": "6",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ]
+  },
+  "css.properties.text-decoration.includes_thickness": {
+    "parent_feature": "text-decoration",
+    "parent_feature_name": "text-decoration",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "70",
+        "firefox_android": "79",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ]
+  },
   "css.properties.text-wrap.pretty": {
     "parent_feature": "text-wrap-pretty",
     "parent_feature_name": "text-wrap: pretty",
@@ -16554,6 +18443,19 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#text-wrap-style"
+    ]
+  },
+  "css.properties.transition.gradients_can_animate": {
+    "parent_feature": "transitions",
+    "parent_feature_name": "Transitions (CSS)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-transitions-2/"
     ]
   },
   "api.HTMLElement.translate": {
@@ -17833,6 +19735,24 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-view-transitions-1/"
     ]
   },
+  "api.Document.startViewTransition.updateCallback_parameter": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "preview",
+        "safari": "18",
+        "safari_ios": "18"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
   "api.ViewTransition": {
     "parent_feature": "view-transitions",
     "parent_feature_name": "View transitions",
@@ -18112,6 +20032,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://webassembly.github.io/spec/core/bikeshed/#vector-instructions"
+    ]
+  },
+  "webassembly.relaxed-SIMD": {
+    "parent_feature": "wasm-simd-relaxed",
+    "parent_feature_name": "Relaxed-width SIMD (WebAssembly)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md"
     ]
   },
   "javascript.builtins.WeakMap.symbol_as_keys": {
@@ -23770,6 +25706,24 @@ export const bcdKeys = {
         "firefox_android": "111",
         "safari": "16.4",
         "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://xhr.spec.whatwg.org/"
+    ]
+  },
+  "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {
+    "parent_feature": "xhr",
+    "parent_feature_name": "XMLHttpRequest",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
+        "firefox": "138",
+        "firefox_android": "138",
+        "safari": "preview"
       }
     },
     "spec": [

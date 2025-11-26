@@ -17,7 +17,7 @@ export const features = ${JSON.stringify(Object.fromEntries(Object.entries(data.
   delete feature.group;
   delete feature.caniuse;
   delete feature.snapshot;
-  delete feature.by_compat_key;
+  delete feature.status?.by_compat_key;
   return [key, feature];
 })), null, 2)};
 `;

@@ -30,6 +30,15 @@ function getShipDates(support, browsers) {
     const release = browserData.releases.find(r => r.version === cleanVersion);
     if (!release) return null;
 
+    if (!release.date || release.date === 'null') {
+      return {
+        date: lastDay,
+        browser,
+        version: cleanVersion,
+        isPreview: true
+      };
+    }
+
     return {
       date: release.date ? parseLocalDate(release.date) : null,
       browser,

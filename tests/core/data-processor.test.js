@@ -68,6 +68,34 @@ describe('Data Processor', () => {
       expect(result[0].browser).toBeUndefined(); // The top level object doesn't have browser, shipDates does
     });
 
+    it('should handle numeric versions with null dates', () => {
+      const browsersWithNull = {
+        ...mockBrowsers,
+        safari: {
+          releases: [
+            { version: '26.2', date: null }
+          ]
+        }
+      };
+      const features = {
+        f_null: {
+          status: {
+            support: { safari: '26.2' },
+            baseline: false
+          }
+        }
+      };
+      const result = processFeatures(features, browsersWithNull);
+      expect(result).toHaveLength(1);
+      expect(result[0].shipDates[0].version).toBe('26.2');
+      expect(result[0].shipDates[0].isPreview).toBe(true);
+      // Check date is end of current month
+      const now = new Date();
+      const expectedDate = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+      expectedDate.setHours(23, 59, 59, 999);
+      expect(result[0].shipDates[0].date.getTime()).toBe(expectedDate.getTime());
+    });
+
     it('should sort by date descending', () => {
       const features = {
         f1: {

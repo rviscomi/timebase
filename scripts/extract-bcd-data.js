@@ -49,15 +49,21 @@ function isInDateRange(status, browsers) {
     // For limited availability (baseline: false), check the latest ship date
     const shipDates = [];
     for (const [browser, version] of Object.entries(status.support)) {
-      if (typeof version !== 'string' || version === 'preview') continue;
+      if (typeof version !== 'string') continue;
       const cleanVersion = version.replace('≤', '');
       const browserData = browsers[browser];
       if (!browserData?.releases) continue;
       const release = browserData.releases.find(r => r.version === cleanVersion);
       if (!release?.date) continue;
+      if (release.date === 'null') {
+        // Null release dates will be handled as EOM, so they will always be in range.
+        return true;
+      }
       const releaseDate = parseLocalDate(release.date);
       if (releaseDate) {
         shipDates.push(releaseDate);
+      } else {
+        throw new Error(`Invalid release date for ${browser} ${version}: ${release.date}`);
       }
     }
 
@@ -84,37 +90,26 @@ Object.entries(data.features).forEach(([featureId, feature]) => {
     return;
   }
 
-  // If there's by_compat_key data, extract each BCD key
-  if (feature.status?.by_compat_key) {
-    Object.entries(feature.status.by_compat_key).forEach(([bcdKey, bcdStatus]) => {
-      totalKeys++;
-      // Only include if dates are in range
-      if (isInDateRange(bcdStatus, data.browsers)) {
-        bcdKeys[bcdKey] = {
-          parent_feature: featureId,
-          parent_feature_name: feature.name,
-          status: bcdStatus,
-          spec: feature.spec,
-          discouraged: feature.discouraged
-        };
-        filteredKeys++;
-      }
-    });
-  } else {
-    // If no by_compat_key data, create a single entry from the feature
+  // Skip if there's no by_compat_key data
+  if (!feature.status?.by_compat_key) {
+    return;
+  }
+
+  // Extract each BCD key
+  Object.entries(feature.status.by_compat_key).forEach(([bcdKey, bcdStatus]) => {
     totalKeys++;
-    if (isInDateRange(feature.status, data.browsers)) {
-      bcdKeys[featureId] = {
-        name: feature.name || featureId,
+    // Only include if dates are in range
+    if (isInDateRange(bcdStatus, data.browsers)) {
+      bcdKeys[bcdKey] = {
         parent_feature: featureId,
         parent_feature_name: feature.name,
-        status: feature.status,
+        status: bcdStatus,
         spec: feature.spec,
         discouraged: feature.discouraged
       };
       filteredKeys++;
     }
-  }
+  });
 });
 
 // Create the module content
