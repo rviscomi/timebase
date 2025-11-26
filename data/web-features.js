@@ -13894,6 +13894,8 @@ export const features = {
         "css.properties.background-position-x.side-relative_values": {
           "baseline": false,
           "support": {
+            "chrome": "143",
+            "chrome_android": "143",
             "firefox": "49",
             "firefox_android": "49",
             "safari": "15.4",
@@ -13917,6 +13919,8 @@ export const features = {
         "css.properties.background-position-y.side-relative_values": {
           "baseline": false,
           "support": {
+            "chrome": "143",
+            "chrome_android": "143",
             "firefox": "49",
             "firefox_android": "49",
             "safari": "15.4",
@@ -61120,7 +61124,8 @@ export const features = {
             "edge": "102",
             "firefox": "139",
             "firefox_android": "139",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         }
       },
@@ -73507,7 +73512,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.CommandEvent.CommandEvent": {
@@ -73518,7 +73524,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.CommandEvent.command": {
@@ -73529,7 +73536,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.CommandEvent.source": {
@@ -73540,7 +73548,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.HTMLButtonElement.command": {
@@ -73551,7 +73560,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.HTMLButtonElement.commandForElement": {
@@ -73562,7 +73572,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "api.HTMLElement.command_event": {
@@ -73584,7 +73595,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         },
         "html.elements.button.commandfor": {
@@ -73595,7 +73607,8 @@ export const features = {
             "edge": "135",
             "firefox": "144",
             "firefox_android": "144",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         }
       },
@@ -83660,14 +83673,16 @@ export const features = {
           "support": {
             "firefox": "137",
             "firefox_android": "137",
-            "safari": "preview"
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         }
       },
       "support": {
         "firefox": "137",
         "firefox_android": "137",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -83806,7 +83821,10 @@ export const features = {
           "support": {
             "chrome": "109",
             "chrome_android": "109",
-            "edge": "109"
+            "edge": "109",
+            "firefox": "146",
+            "firefox_android": "146",
+            "safari": "preview"
           }
         },
         "css.properties.math-style": {
@@ -90292,7 +90310,9 @@ export const features = {
           "support": {
             "chrome": "133",
             "chrome_android": "133",
-            "edge": "133"
+            "edge": "133",
+            "firefox": "144",
+            "firefox_android": "144"
           }
         },
         "api.Document.moveBefore": {
@@ -90329,7 +90349,9 @@ export const features = {
       "support": {
         "chrome": "133",
         "chrome_android": "133",
-        "edge": "133"
+        "edge": "133",
+        "firefox": "144",
+        "firefox_android": "144"
       }
     }
   },
@@ -102234,7 +102256,9 @@ export const features = {
             "chrome_android": "114",
             "edge": "114",
             "firefox": "141",
-            "firefox_android": "141"
+            "firefox_android": "141",
+            "safari": "26.2",
+            "safari_ios": "26.2"
           }
         }
       },
@@ -122780,6 +122804,7 @@ export const features = {
             "chrome": "128",
             "chrome_android": "76",
             "edge": "93",
+            "firefox_android": "96",
             "safari": "14",
             "safari_ios": "14"
           }
@@ -122811,6 +122836,7 @@ export const features = {
             "chrome": "128",
             "chrome_android": "76",
             "edge": "93",
+            "firefox_android": "79",
             "safari": "14",
             "safari_ios": "14"
           }
@@ -161838,11 +161864,14 @@ export const features = {
           }
         },
         "javascript.builtins.WeakMap.symbol_as_keys": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-09",
           "support": {
             "chrome": "109",
             "chrome_android": "109",
             "edge": "109",
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "16.4",
             "safari_ios": "16.4"
           }
@@ -161970,11 +161999,14 @@ export const features = {
           }
         },
         "javascript.builtins.WeakSet.symbol_as_keys": {
-          "baseline": false,
+          "baseline": "low",
+          "baseline_low_date": "2025-12-09",
           "support": {
             "chrome": "109",
             "chrome_android": "109",
             "edge": "109",
+            "firefox": "146",
+            "firefox_android": "146",
             "safari": "16.4",
             "safari_ios": "16.4"
           }

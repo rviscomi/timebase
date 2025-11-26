@@ -24,7 +24,7 @@
     "@browser-logos/edge": "^2.0.0",
     "@browser-logos/firefox": "^3.0.0",
     "@browser-logos/safari": "^2.0.0",
-    "web-futures": "^3.9.2"
+    "web-futures": "^3.9.3"
   },
   "devDependencies": {
     "happy-dom": "^20.0.10",

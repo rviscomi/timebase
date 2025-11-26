@@ -6818,6 +6818,42 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute"
     ]
   },
+  "css.properties.background-position-x.side-relative_values": {
+    "parent_feature": "background-position",
+    "parent_feature_name": "background-position",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "firefox": "49",
+        "firefox_android": "49",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-position"
+    ]
+  },
+  "css.properties.background-position-y.side-relative_values": {
+    "parent_feature": "background-position",
+    "parent_feature_name": "background-position",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "firefox": "49",
+        "firefox_android": "49",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-3/#background-position"
+    ]
+  },
   "css.types.calc-keyword.NaN": {
     "parent_feature": "calc-constants",
     "parent_feature_name": "calc() keywords",
@@ -10631,151 +10667,7 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#pluralrules-objects"
     ]
   },
-  "api.CommandEvent": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "api.CommandEvent.CommandEvent": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "api.CommandEvent.command": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "api.CommandEvent.source": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "api.HTMLButtonElement.command": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "api.HTMLButtonElement.commandForElement": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
   "api.HTMLElement.command_event": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "html.elements.button.command": {
-    "parent_feature": "invoker-commands",
-    "parent_feature_name": "Invoker commands",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "135",
-        "chrome_android": "135",
-        "edge": "135",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
-    ]
-  },
-  "html.elements.button.commandfor": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
     "status": {
@@ -11056,6 +10948,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-logical-1/"
+    ]
+  },
+  "css.properties.math-shift": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
     ]
   },
   "api.MediaDevices.enumerateDevices": {
@@ -11346,6 +11256,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.fxtf.org/motion-1/"
+    ]
+  },
+  "api.CustomElementRegistry.define.connectedMoveCallback_lifecycle_callback": {
+    "parent_feature": "move-before",
+    "parent_feature_name": "moveBefore()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "144",
+        "firefox_android": "144"
+      }
+    },
+    "spec": [
+      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
     ]
   },
   "api.Document.moveBefore": {
@@ -18184,6 +18112,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://webassembly.github.io/spec/core/bikeshed/#vector-instructions"
+    ]
+  },
+  "javascript.builtins.WeakMap.symbol_as_keys": {
+    "parent_feature": "weakmap",
+    "parent_feature_name": "WeakMap",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakmap-objects"
+    ]
+  },
+  "javascript.builtins.WeakSet.symbol_as_keys": {
+    "parent_feature": "weakset",
+    "parent_feature_name": "WeakSet",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects"
     ]
   },
   "api.AnimationTimeline.duration": {
