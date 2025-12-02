@@ -308,7 +308,8 @@ export function createCard(item, options = {}) {
           }
           return `<a href="${url}" target="_blank">${hostname}</a>`;
         }).join(', ');
-        availabilityText = `This feature is discouraged by ${authority}.`;
+        const reason = item.discouraged.reason_html ? ` <span class="discouraged-reason">${item.discouraged.reason_html}</span>` : '';
+        availabilityText = `This feature is discouraged by ${authority}.${reason}`;
       } else if (itemDate > now) {
         availabilityText = `🔮 Expected to become Limited availability across browsers on ${formattedDate}.`;
       } else {
