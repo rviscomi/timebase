@@ -9223,7 +9223,9 @@ export const bcdKeys = {
       ],
       "alternatives": [
         "dom"
-      ]
+      ],
+      "reason": "The dynamic markup insertion API, which includes document.write(), has \"very idiosyncratic behavior\" which can be difficult to debug.",
+      "reason_html": "The dynamic markup insertion API, which includes <code>document.write()</code>, has \"very idiosyncratic behavior\" which can be difficult to debug."
     }
   },
   "api.Document.writeln.enforces_trusted_types": {
@@ -9249,7 +9251,9 @@ export const bcdKeys = {
       ],
       "alternatives": [
         "dom"
-      ]
+      ],
+      "reason": "The dynamic markup insertion API, which includes document.write(), has \"very idiosyncratic behavior\" which can be difficult to debug.",
+      "reason_html": "The dynamic markup insertion API, which includes <code>document.write()</code>, has \"very idiosyncratic behavior\" which can be difficult to debug."
     }
   },
   "api.SVGAElement.download": {

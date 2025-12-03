@@ -3181,7 +3181,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+      ],
+      "reason": "TC39 included accessor methods in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\"",
+      "reason_html": "TC39 included accessor methods in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\""
     },
     "kind": "feature",
     "name": "Accessor methods",
@@ -3561,7 +3563,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects"
-      ]
+      ],
+      "reason": "JavaScript strict mode prohibits accessing arguments.callee.",
+      "reason_html": "JavaScript strict mode prohibits accessing <code>arguments.callee</code>."
     },
     "kind": "feature",
     "name": "arguments.callee",
@@ -6048,7 +6052,9 @@ export const features = {
       ],
       "alternatives": [
         "clip-path"
-      ]
+      ],
+      "reason": "The CSS Masking specification deprecated the clip property.",
+      "reason_html": "The CSS Masking specification deprecated the <code>clip</code> property."
     },
     "kind": "feature",
     "name": "clip",
@@ -6305,7 +6311,9 @@ export const features = {
       ],
       "alternatives": [
         "print-color-adjust"
-      ]
+      ],
+      "reason": "The CSS Color Adjustment specification described the color-adjust as deprecated, to prevent authors from accidentally resetting color adjustments in unexpected contexts.",
+      "reason_html": "The CSS Color Adjustment specification described the <code>color-adjust</code> as deprecated, to prevent authors from accidentally resetting color adjustments in unexpected contexts."
     },
     "kind": "feature",
     "name": "color-adjust",
@@ -6331,7 +6339,10 @@ export const features = {
       ],
       "alternatives": [
         "contrast-color"
-      ]
+      ],
+      "reason": "The CSS Color specification renamed color-contrast() to contrast-color().",
+      "reason_html": "The CSS Color specification renamed <code>color-contrast()</code> to <code>contrast-color()</code>.",
+      "removal_date": "2022-10-19"
     },
     "kind": "feature",
     "name": "color-contrast()",
@@ -6896,6 +6907,18 @@ export const features = {
         "safari": "15.4",
         "safari_ios": "15.4"
       }
+    }
+  },
+  "container-anchor-position-queries": {
+    "description_html": "Anchor position container queries with the <code>@container anchored(fallback: …)</code> at-rule apply styles to an element based on the element's anchor position.",
+    "kind": "feature",
+    "name": "Anchor position container queries",
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-2/#anchored-container-queries"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "container-queries": {
@@ -7464,7 +7487,9 @@ export const features = {
       ],
       "alternatives": [
         "css-object-model"
-      ]
+      ],
+      "reason": "The DOM level 2 CSS object model was excluded from the later CSS object model (CSSOM) specification.",
+      "reason_html": "The DOM level 2 CSS object model was excluded from the later CSS object model (CSSOM) specification."
     },
     "kind": "feature",
     "name": "CSS object model (DOM level 2)",
@@ -7777,7 +7802,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+      ],
+      "reason": "The getYear() and setYear() methods use a truncated number instead of the actual year number, known as a year 2000 problem.",
+      "reason_html": "The <code>getYear()</code> and <code>setYear()</code> methods use a truncated number instead of the actual year number, known as a year 2000 problem."
     },
     "kind": "feature",
     "name": "getYear() and setYear()",
@@ -7801,8 +7828,11 @@ export const features = {
     "description_html": "The <code>toGMTString()</code> method of <code>Date</code> objects is an alias to the <code>toUTCString()</code> method.",
     "discouraged": {
       "according_to": [
-        "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+        "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers",
+        "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-date.prototype.togmtstring"
+      ],
+      "reason": "The method exists \"principally for compatibility with old code.\"",
+      "reason_html": "The method exists \"principally for compatibility with old code.\""
     },
     "kind": "feature",
     "name": "toGMTString()",
@@ -8081,7 +8111,9 @@ export const features = {
       ],
       "alternatives": [
         "media-queries"
-      ]
+      ],
+      "reason": "Device media queries do not reflect available layout, only the physical size of the device.",
+      "reason_html": "Device media queries do not reflect available layout, only the physical size of the device."
     },
     "kind": "feature",
     "name": "Device media queries",
@@ -8438,7 +8470,9 @@ export const features = {
         "color",
         "css-object-model",
         "get-computed-style"
-      ]
+      ],
+      "reason": "Document color attributes are superseded by CSS.",
+      "reason_html": "Document color attributes are superseded by CSS."
     },
     "kind": "feature",
     "name": "Document colors",
@@ -8481,7 +8515,9 @@ export const features = {
       ],
       "alternatives": [
         "dom"
-      ]
+      ],
+      "reason": "The dynamic markup insertion API, which includes document.write(), has \"very idiosyncratic behavior\" which can be difficult to debug.",
+      "reason_html": "The dynamic markup insertion API, which includes <code>document.write()</code>, has \"very idiosyncratic behavior\" which can be difficult to debug."
     },
     "kind": "feature",
     "name": "document.write()",
@@ -8912,7 +8948,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+      ],
+      "reason": "TC39 included the escape() and unescape() methods in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\"",
+      "reason_html": "TC39 included the <code>escape()</code> and <code>unescape()</code> methods in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\""
     },
     "kind": "feature",
     "name": "escape() and unescape()",
@@ -9005,7 +9043,9 @@ export const features = {
       "alternatives": [
         "async-clipboard",
         "contenteditable"
-      ]
+      ],
+      "reason": "The execCommand() method is \"not implemented consistently or fully by user agents, and it is not expected that this will change in the foreseeable future.\"",
+      "reason_html": "The <code>execCommand()</code> method is \"not implemented consistently or fully by user agents, and it is not expected that this will change in the foreseeable future.\""
     },
     "kind": "feature",
     "name": "execCommand()",
@@ -9323,7 +9363,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://html.spec.whatwg.org/multipage/obsolete.html#external"
-      ]
+      ],
+      "reason": "The window.external.AddSearchProvider() and window.external.IsSearchProviderInstalled() methods do nothing, by specification.",
+      "reason_html": "The <code>window.external.AddSearchProvider()</code> and <code>window.external.IsSearchProviderInstalled()</code> methods do nothing, by specification."
     },
     "kind": "feature",
     "name": "window.external",
@@ -10273,7 +10315,9 @@ export const features = {
       ],
       "alternatives": [
         "font-width"
-      ]
+      ],
+      "reason": "The font-stretch CSS property is superseded by font-width.",
+      "reason_html": "The <code>font-stretch</code> CSS property is superseded by <code>font-width</code>."
     },
     "kind": "feature",
     "name": "font-stretch",
@@ -10795,7 +10839,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html#sec-forbidden-extensions"
-      ]
+      ],
+      "reason": "JavaScript strict mode prohibits accessing the caller and arguments properties of a Function object.",
+      "reason_html": "JavaScript strict mode prohibits accessing the <code>caller</code> and <code>arguments</code> properties of a <code>Function</code> object."
     },
     "kind": "feature",
     "name": "Function caller and arguments",
@@ -11061,7 +11107,9 @@ export const features = {
       ],
       "alternatives": [
         "text-orientation"
-      ]
+      ],
+      "reason": "The glyph-orientation-vertical property was defined by SVG 1.1 and formally obsoleted by SVG 2.",
+      "reason_html": "The <code>glyph-orientation-vertical</code> property was defined by SVG 1.1 and formally obsoleted by SVG 2."
     },
     "kind": "feature",
     "name": "glyph-orientation-vertical",
@@ -11513,7 +11561,9 @@ export const features = {
       ],
       "alternatives": [
         "container-style-queries"
-      ]
+      ],
+      "reason": "The CSS Working Group removed :host-context() from the specification, due to opposition from vendors, performance considerations, and interest in alternatives.",
+      "reason_html": "The CSS Working Group removed <code>:host-context()</code> from the specification, due to opposition from vendors, performance considerations, and interest in alternatives."
     },
     "kind": "feature",
     "name": ":host-context()",
@@ -11641,7 +11691,9 @@ export const features = {
       ],
       "alternatives": [
         "dom"
-      ]
+      ],
+      "reason": "HTML wrapper methods exist only for backwards compatibility. Use DOM APIs to create elements instead.",
+      "reason_html": "HTML wrapper methods exist only for backwards compatibility. Use DOM APIs to create elements instead."
     },
     "kind": "feature",
     "name": "HTML wrapper methods",
@@ -12117,7 +12169,13 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://drafts.csswg.org/css-ui-3/#input-method-editor"
-      ]
+      ],
+      "alternatives": [
+        "inputmode",
+        "lang-attr"
+      ],
+      "reason": "You should not modify the state of input method editor. Instead, you should use hints (such as a lang or inputmode attribute) to help the browser select the right user interface for text input.",
+      "reason_html": "You should not modify the state of input method editor. Instead, you should use hints (such as a <code>lang</code> or <code>inputmode</code> attribute) to help the browser select the right user interface for text input."
     },
     "kind": "feature",
     "name": "ime-mode",
@@ -12185,7 +12243,10 @@ export const features = {
       "alternatives": [
         "css-modules",
         "json-modules"
-      ]
+      ],
+      "reason": "Import assertions are superseded by import attributes.",
+      "reason_html": "Import assertions are superseded by import attributes.",
+      "removal_date": "2024-06-13"
     },
     "kind": "feature",
     "name": "Import assertions",
@@ -13240,7 +13301,9 @@ export const features = {
       ],
       "alternatives": [
         "scheduler"
-      ]
+      ],
+      "reason": "The navigator.scheduling.isInputPending() method may incorrectly return false and is not the only case where you might expect to yield.",
+      "reason_html": "The <code>navigator.scheduling.isInputPending()</code> method may incorrectly return <code>false</code> and is not the only case where you might expect to yield."
     },
     "kind": "feature",
     "name": "isInputPending()",
@@ -14818,7 +14881,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://github.com/w3c/html/issues/246"
-      ]
+      ],
+      "reason": "The MediaController API was dropped from the specification due to lack of implementations.",
+      "reason_html": "The <code>MediaController</code> API was dropped from the specification due to lack of implementations."
     },
     "kind": "feature",
     "name": "MediaController",
@@ -15220,11 +15285,15 @@ export const features = {
     "description_html": "Mutation events like <code>DOMSubtreeModified</code>, <code>DOMNodeInserted</code>, or <code>DOMNodeRemoved</code> fire when DOM changes occur.",
     "discouraged": {
       "according_to": [
-        "https://www.w3.org/TR/2024/WD-uievents-20240906/#legacy-mutationevent-events"
+        "https://www.w3.org/TR/2024/WD-uievents-20240906/#legacy-mutationevent-events",
+        "https://github.com/web-platform-tests/interop/issues/784"
       ],
       "alternatives": [
         "mutationobserver"
-      ]
+      ],
+      "reason": "Mutation events negatively impact performance and they were selected for removal from the web as part of Interop 2025.",
+      "reason_html": "Mutation events negatively impact performance and they were selected for removal from the web as part of Interop 2025.",
+      "removal_date": "2025-09-15"
     },
     "kind": "feature",
     "name": "Mutation events",
@@ -16332,7 +16401,9 @@ export const features = {
       ],
       "alternatives": [
         "overflow-shorthand"
-      ]
+      ],
+      "reason": "Some old browsers may implement non-standard behavior for overflow: overlay.",
+      "reason_html": "Some old browsers may implement non-standard behavior for <code>overflow: overlay</code>."
     },
     "kind": "feature",
     "name": "overflow: overlay",
@@ -16500,7 +16571,9 @@ export const features = {
       ],
       "alternatives": [
         "page-breaks"
-      ]
+      ],
+      "reason": "The page-break- alias properties exist only for backwards compatibility with pages that predate the break- properties.",
+      "reason_html": "The <code>page-break-</code> alias properties exist only for backwards compatibility with pages that predate the <code>break-</code> properties."
     },
     "kind": "feature",
     "name": "Page break aliases",
@@ -16882,7 +16955,9 @@ export const features = {
       "alternatives": [
         "performance",
         "navigation-timing"
-      ]
+      ],
+      "reason": "This feature is supserseded by the PerformanceNavigationTiming API.",
+      "reason_html": "This feature is supserseded by the <code>PerformanceNavigationTiming</code> API."
     },
     "kind": "feature",
     "name": "PerformanceTiming and PerformanceNavigation",
@@ -17175,7 +17250,10 @@ export const features = {
         "link-rel-prefetch",
         "speculation-rules",
         "view-transitions"
-      ]
+      ],
+      "reason": "The <portal> element was removed from browsers in favor of other proposals.",
+      "reason_html": "The <code>&#x3C;portal></code> element was removed from browsers in favor of other proposals.",
+      "removal_date": "2023-07-23"
     },
     "kind": "feature",
     "name": "Portals",
@@ -17494,7 +17572,10 @@ export const features = {
       ],
       "alternatives": [
         "local-network-access"
-      ]
+      ],
+      "reason": "Private network access caused compatibility problems and is superseded by local network access.",
+      "reason_html": "Private network access caused compatibility problems and is superseded by local network access.",
+      "removal_date": "2025-06-26"
     },
     "kind": "feature",
     "name": "Private network access",
@@ -17703,7 +17784,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+      ],
+      "reason": "Changing __proto__ is slow and can cause surprising bugs.",
+      "reason_html": "Changing <code>__proto__</code> is slow and can cause surprising bugs."
     },
     "kind": "feature",
     "name": "__proto__",
@@ -18047,7 +18130,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
-      ]
+      ],
+      "reason": "The compile() method duplicates behavior of the RegExp() constructor and it exists only for backwards compatibility.",
+      "reason_html": "The <code>compile()</code> method duplicates behavior of the <code>RegExp()</code> constructor and it exists only for backwards compatibility."
     },
     "kind": "feature",
     "name": "RegExp compile()",
@@ -18093,7 +18178,9 @@ export const features = {
     "discouraged": {
       "according_to": [
         "https://github.com/tc39/proposal-regexp-legacy-features"
-      ]
+      ],
+      "reason": "The RegExp static properties may have unintended side effects.",
+      "reason_html": "The <code>RegExp</code> static properties may have unintended side effects."
     },
     "kind": "feature",
     "name": "RegExp static properties",
@@ -20200,11 +20287,13 @@ export const features = {
     }
   },
   "speech-recognition-grammar": {
-    "description_html": "The <code>SpeechRecognition.grammars</code> property of the Web Speech API represents a set of words or patterns of words that the recognition service should recognize, used for when the recognition service's accuracy is low. This feature has been removed due to advancements in speech recognition.",
+    "description_html": "The <code>SpeechRecognition.grammars</code> property of the Web Speech API represents a set of words or patterns of words that the recognition service should recognize, used for when the recognition service's accuracy is low.",
     "discouraged": {
       "according_to": [
         "https://github.com/WebAudio/web-speech-api/pull/117"
-      ]
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
     },
     "kind": "feature",
     "name": "Speech recognition grammar",
@@ -21067,10 +21156,12 @@ export const features = {
       "alternatives": [
         "svg",
         "font-face"
-      ]
+      ],
+      "reason": "SVG 2 omittted some parts of SVG 1.1 to \"improv[e] the usability and precision of the language.\"",
+      "reason_html": "SVG 2 omittted some parts of SVG 1.1 to \"improv[e] the usability and precision of the language.\""
     },
     "kind": "feature",
-    "name": "SVG 1.1 (discouraged)",
+    "name": "SVG 1.1",
     "spec": [
       "https://www.w3.org/TR/SVG11/"
     ],
@@ -21212,11 +21303,13 @@ export const features = {
     }
   },
   "table-discouraged": {
-    "description_html": "Attributes and properties of table elements, such as <code>align</code>, <code>vAlign</code>, <code>noWrap</code>, <code>bgcolor</code>, or <code>char</code> set various visual presentation properties of the table and its sections and cells. These are obsolete, and some of them have no effect. Use CSS instead.",
+    "description_html": "Attributes and properties of table elements, such as <code>align</code>, <code>vAlign</code>, <code>noWrap</code>, <code>bgcolor</code>, or <code>char</code> set various visual presentation properties of the table and its sections and cells.",
     "discouraged": {
       "according_to": [
         "https://html.spec.whatwg.org/multipage/obsolete.html"
-      ]
+      ],
+      "reason": "Some table styling attributes have no effect. They are superseded by CSS.",
+      "reason_html": "Some table styling attributes have no effect. They are superseded by CSS."
     },
     "kind": "feature",
     "name": "Table styling",
@@ -21281,7 +21374,10 @@ export const features = {
       "alternatives": [
         "has",
         "target"
-      ]
+      ],
+      "reason": "The :target-within pseudo-class was dropped from the specification in favor of :has(:target).",
+      "reason_html": "The <code>:target-within</code> pseudo-class was dropped from the specification in favor of <code>:has(:target)</code>.",
+      "removal_date": "2023-08-16"
     },
     "kind": "feature",
     "name": ":target-within",
@@ -21478,7 +21574,9 @@ export const features = {
       ],
       "alternatives": [
         "animations-css"
-      ]
+      ],
+      "reason": "Browsers may ignore the blink value.",
+      "reason_html": "Browsers may ignore the <code>blink</code> value."
     },
     "kind": "feature",
     "name": "text-decoration-line: blink",
@@ -24530,7 +24628,9 @@ export const features = {
       ],
       "alternatives": [
         "webxr-device"
-      ]
+      ],
+      "reason": "Development of the WebVR API halted in favor of WebXR.",
+      "reason_html": "Development of the WebVR API halted in favor of WebXR."
     },
     "kind": "feature",
     "name": "WebVR",
@@ -24961,7 +25061,7 @@ export const features = {
     }
   },
   "window-controls-overlay": {
-    "description_html": "The <code>display_override:\\ [\"window-controls-overlay\"]</code> web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
+    "description_html": "The <code>display_override: [\"window-controls-overlay\"]</code> web application manifest member shows content in the title bar area of a progressive web app that is installed on a desktop device.",
     "kind": "feature",
     "name": "Window Controls Overlay",
     "spec": [
@@ -24998,7 +25098,9 @@ export const features = {
       ],
       "alternatives": [
         "destructuring"
-      ]
+      ],
+      "reason": "JavaScript strict mode prohibits the with statement.",
+      "reason_html": "JavaScript strict mode prohibits the <code>with</code> statement."
     },
     "kind": "feature",
     "name": "with",
@@ -25057,14 +25159,16 @@ export const features = {
     }
   },
   "word-break-break-word": {
-    "description_html": "The <code>word-break: break-word</code> CSS declaration sets word breaks to occur according to their customary rules. Superseded by <code>overflow-wrap: anywhere</code>.",
+    "description_html": "The <code>word-break: break-word</code> CSS declaration sets word breaks to occur according to their customary rules.",
     "discouraged": {
       "according_to": [
         "https://drafts.csswg.org/css-text/#valdef-word-break-break-word"
       ],
       "alternatives": [
         "overflow-wrap"
-      ]
+      ],
+      "reason": "The overflow-wrap: anywhere CSS declaration supersedes word-break: break-word.",
+      "reason_html": "The <code>overflow-wrap: anywhere</code> CSS declaration supersedes <code>word-break: break-word</code>."
     },
     "kind": "feature",
     "name": "word-break: break-word",
@@ -25136,7 +25240,9 @@ export const features = {
       ],
       "alternatives": [
         "writing-mode"
-      ]
+      ],
+      "reason": "SVG 1.1 writing modes are superseded by CSS writing-mode values.",
+      "reason_html": "SVG 1.1 writing modes are superseded by CSS <code>writing-mode</code> values."
     },
     "kind": "feature",
     "name": "writing-mode SVG 1.1 values",
