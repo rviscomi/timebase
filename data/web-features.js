@@ -576,8 +576,12 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "null",
+        "date": "2026-02-10",
         "version": "145"
+      },
+      {
+        "date": "null",
+        "version": "146"
       },
       {
         "date": "null",
@@ -1069,8 +1073,12 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "null",
+        "date": "2026-02-10",
         "version": "145"
+      },
+      {
+        "date": "null",
+        "version": "146"
       }
     ]
   },
@@ -1368,6 +1376,10 @@ export const browsers = {
       {
         "date": "2026-02-12",
         "version": "145"
+      },
+      {
+        "date": "2026-03-12",
+        "version": "146"
       }
     ]
   },
@@ -3383,14 +3395,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "125",
-        "chrome_android": "125",
-        "edge": "125",
-        "firefox": "preview",
-        "safari": "26",
-        "safari_ios": "26"
-      }
+      "support": {}
     }
   },
   "angle-instanced-arrays": {
@@ -5807,7 +5812,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
     }
   },
   "cascade-layers": {
@@ -8455,7 +8464,9 @@ export const features = {
         "chrome_android": "128",
         "edge": "128",
         "firefox": "20",
-        "firefox_android": "20"
+        "firefox_android": "20",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -8984,7 +8995,9 @@ export const features = {
         "chrome_android": "76",
         "edge": "79",
         "firefox": "89",
-        "firefox_android": "89"
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -9572,7 +9585,8 @@ export const features = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -11073,7 +11087,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -11471,7 +11487,9 @@ export const features = {
         "chrome_android": "102",
         "edge": "102",
         "firefox": "139",
-        "firefox_android": "139"
+        "firefox_android": "139",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -12973,6 +12991,22 @@ export const features = {
       }
     }
   },
+  "interest-invokers": {
+    "description_html": "Interest invokers, registered by the <code>interestfor</code> HTML attribute, trigger events and actions on a target element when a user shows interest in the element, through behaviors such as hover, focus, or long-press. Pseudo-elements apply styles to sources and targets of interest.",
+    "kind": "feature",
+    "name": "Interest invokers",
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    }
+  },
   "interpolate-size": {
     "description_html": "The <code>interpolate-size</code> CSS property sets whether animations and transitions interpolate between a numeric value and a keyword value, such as from a fixed length to <code>auto</code> or <code>fit-content</code>.",
     "kind": "feature",
@@ -13820,7 +13854,9 @@ export const features = {
         "chrome_android": "77",
         "edge": "79",
         "firefox": "122",
-        "firefox_android": "122"
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -15406,7 +15442,9 @@ export const features = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -18972,11 +19010,14 @@ export const features = {
       "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
         "safari": "17.4",
         "safari_ios": "17.4"
       }
@@ -19273,6 +19314,22 @@ export const features = {
       }
     }
   },
+  "scroll-into-view-container": {
+    "description_html": "The <code>container</code> option of the <code>scrollIntoView()</code> method sets which ancestor scroll container to scroll. The <code>\"nearest\"</code> value scrolls only the nearest ancestor, instead of the default <code>\"all\"</code>.",
+    "kind": "feature",
+    "name": "scrollIntoView() container",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-container"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140"
+      }
+    }
+  },
   "scroll-markers": {
     "description_html": "A scroll container can be navigated by activating <code>::scroll-marker</code> pseudo-elements which appear in a generated <code>::scroll-marker-group</code> pseudo-element, either before or after the scroll container.",
     "kind": "feature",
@@ -19361,7 +19418,9 @@ export const features = {
         "chrome_android": "121",
         "edge": "121",
         "firefox": "64",
-        "firefox_android": "64"
+        "firefox_android": "64",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -20030,7 +20089,8 @@ export const features = {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -21011,6 +21071,22 @@ export const features = {
       }
     }
   },
+  "style-query-range-syntax": {
+    "description_html": "The <code>@container style()</code> CSS at-rule and <code>if(style())</code> CSS function queries accept a range syntax, such as <code>></code>, <code>&#x3C;</code>, <code>>=</code>, <code>&#x3C;=</code>, to query for inexact values.",
+    "kind": "feature",
+    "name": "Range syntax for style queries",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    }
+  },
   "sub-sup": {
     "description_html": "The <code>&#x3C;sub></code> and <code>&#x3C;sup></code> elements sets inline text to be displayed as subscript or superscript for solely typographical reasons.",
     "kind": "feature",
@@ -21443,6 +21519,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
         "firefox": "139",
         "firefox_android": "139"
       }
@@ -22179,6 +22258,24 @@ export const features = {
         "firefox_android": "4",
         "safari": "≤4",
         "safari_ios": "≤3.2"
+      }
+    }
+  },
+  "toggleevent-source": {
+    "description_html": "The <code>source</code> property of a <code>ToggleEvent</code> object is the element which triggered the <code>toggle</code> event to fire for a popover, <code>&#x3C;dialog></code>, or <code>&#x3C;details></code> element, if applicable.",
+    "kind": "feature",
+    "name": "ToggleEvent source",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140",
+        "firefox": "145",
+        "firefox_android": "145"
       }
     }
   },
@@ -23556,7 +23653,8 @@ export const features = {
         "chrome": "114",
         "chrome_android": "114",
         "edge": "114",
-        "firefox": "preview"
+        "firefox": "146",
+        "firefox_android": "146"
       }
     }
   },
@@ -23811,6 +23909,18 @@ export const features = {
         "safari": "11",
         "safari_ios": "11"
       }
+    }
+  },
+  "web-install": {
+    "description_html": "The <code>navigator.install()</code> method triggers a request to install a progressive web app.",
+    "kind": "feature",
+    "name": "navigator.install()",
+    "spec": [
+      "https://github.com/w3c/manifest/pull/1175"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "web-locks": {

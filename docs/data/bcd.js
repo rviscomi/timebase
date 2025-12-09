@@ -576,8 +576,12 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "null",
+        "date": "2026-02-10",
         "version": "145"
+      },
+      {
+        "date": "null",
+        "version": "146"
       },
       {
         "date": "null",
@@ -1069,8 +1073,12 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "null",
+        "date": "2026-02-10",
         "version": "145"
+      },
+      {
+        "date": "null",
+        "version": "146"
       }
     ]
   },
@@ -1368,6 +1376,10 @@ export const browsers = {
       {
         "date": "2026-02-12",
         "version": "145"
+      },
+      {
+        "date": "2026-03-12",
+        "version": "146"
       }
     ]
   },
@@ -5623,7 +5635,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5636,7 +5650,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5649,7 +5665,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5662,7 +5680,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5909,7 +5929,9 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5925,7 +5947,9 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5941,7 +5965,9 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -5957,7 +5983,9 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -6402,7 +6430,9 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -6418,7 +6448,26 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-visibility.anchors-visible": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -6434,7 +6483,9 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -6652,6 +6703,44 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-animations-2/"
+    ]
+  },
+  "api.Element.ariaColIndexText": {
+    "parent_feature": "aria-attribute-reflection",
+    "parent_feature_name": "ARIA attribute reflection",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "119",
+        "firefox_android": "119",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
+    ]
+  },
+  "api.Element.ariaRowIndexText": {
+    "parent_feature": "aria-attribute-reflection",
+    "parent_feature_name": "ARIA attribute reflection",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "119",
+        "firefox_android": "119",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
     ]
   },
   "javascript.builtins.Array.toReversed": {
@@ -7116,6 +7205,81 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect"
+    ]
+  },
+  "css.properties.caret-shape": {
+    "parent_feature": "caret-shape",
+    "parent_feature_name": "caret-shape",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
+    ]
+  },
+  "css.properties.caret-shape.auto": {
+    "parent_feature": "caret-shape",
+    "parent_feature_name": "caret-shape",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
+    ]
+  },
+  "css.properties.caret-shape.bar": {
+    "parent_feature": "caret-shape",
+    "parent_feature_name": "caret-shape",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
+    ]
+  },
+  "css.properties.caret-shape.block": {
+    "parent_feature": "caret-shape",
+    "parent_feature_name": "caret-shape",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
+    ]
+  },
+  "css.properties.caret-shape.underscore": {
+    "parent_feature": "caret-shape",
+    "parent_feature_name": "caret-shape",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape"
     ]
   },
   "javascript.classes.static.initialization_blocks": {
@@ -9184,6 +9348,121 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
     ]
   },
+  "css.at-rules.media.display-mode": {
+    "parent_feature": "display-mode",
+    "parent_feature_name": "display-mode media query",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-08-01",
+      "support": {
+        "chrome": "42",
+        "chrome_android": "42",
+        "edge": "79",
+        "firefox": "47",
+        "firefox_android": "116",
+        "safari": "13",
+        "safari_ios": "12.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#display-modes"
+    ]
+  },
+  "api.CaretPosition": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "20",
+        "firefox_android": "20",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
+  "api.CaretPosition.getClientRect": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "23",
+        "firefox_android": "23",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
+  "api.CaretPosition.offset": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "20",
+        "firefox_android": "20",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
+  "api.CaretPosition.offsetNode": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "20",
+        "firefox_android": "20",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
+  "api.Document.caretPositionFromPoint": {
+    "parent_feature": "document-caretpositionfrompoint",
+    "parent_feature_name": "document.caretPositionFromPoint()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "20",
+        "firefox_android": "20",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
   "api.Document.caretPositionFromPoint.options_parameter": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
@@ -9193,7 +9472,9 @@ export const bcdKeys = {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -9273,6 +9554,234 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download"
     ]
   },
+  "api.EventCounts": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.@@iterator": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.entries": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.forEach": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.get": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.has": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.keys": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.size": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.EventCounts.values": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.Performance.eventCounts": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming.cancelable": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
   "api.PerformanceEventTiming.interactionId": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
@@ -9283,7 +9792,85 @@ export const bcdKeys = {
         "chrome_android": "96",
         "edge": "96",
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming.processingEnd": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming.processingStart": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming.target": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/event-timing/"
+    ]
+  },
+  "api.PerformanceEventTiming.toJSON": {
+    "parent_feature": "event-timing",
+    "parent_feature_name": "Event timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -9402,7 +9989,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -9418,7 +10006,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -9434,11 +10023,32 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
       "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
+  "api.Blob.bytes": {
+    "parent_feature": "file",
+    "parent_feature_name": "File API",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-15",
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "18",
+        "safari_ios": "18"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/FileAPI/"
     ]
   },
   "api.FileSystemDirectoryHandle.@@asyncIterator": {
@@ -10693,7 +11303,9 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -10707,7 +11319,9 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -10721,7 +11335,9 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -10735,11 +11351,32 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "144",
-        "firefox_android": "144"
+        "firefox_android": "144",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
       "https://tc39.es/proposal-upsert/"
+    ]
+  },
+  "api.Element.beforematch_event": {
+    "parent_feature": "hidden-until-found",
+    "parent_feature_name": "hidden=\"until-found\"",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
     ]
   },
   "html.global_attributes.hidden.until-found": {
@@ -11320,6 +11957,201 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/uievents/#event-type-input"
+    ]
+  },
+  "api.HTMLAnchorElement.interestForElement": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.HTMLAreaElement.interestForElement": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.HTMLButtonElement.interestForElement": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.HTMLElement.interest_event": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.HTMLElement.loseinterest_event": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.InterestEvent": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.InterestEvent.InterestEvent": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.InterestEvent.source": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "api.SVGAElement.interestForElement": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "html.elements.a.interestfor": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "html.elements.area.interestfor": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "html.elements.button.interestfor": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
+    ]
+  },
+  "svg.elements.a.interestfor": {
+    "parent_feature": "interest-invokers",
+    "parent_feature_name": "Interest invokers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11006"
     ]
   },
   "api.IntersectionObserver.scrollMargin": {
@@ -11957,6 +12789,158 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-color-4/#cie-lab"
     ]
   },
+  "api.LargestContentfulPaint": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.element": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.id": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.loadTime": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.renderTime": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.size": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.toJSON": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
+  "api.LargestContentfulPaint.url": {
+    "parent_feature": "largest-contentful-paint",
+    "parent_feature_name": "Largest contentful paint (LCP)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "122",
+        "firefox_android": "122",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/largest-contentful-paint/"
+    ]
+  },
   "html.elements.link.rel.dns-prefetch": {
     "parent_feature": "link-rel-dns-prefetch",
     "parent_feature_name": "<link rel=\"dns-prefetch\">",
@@ -12070,7 +13054,8 @@ export const bcdKeys = {
         "edge": "109",
         "firefox": "146",
         "firefox_android": "146",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12528,7 +13513,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12544,7 +13531,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12560,7 +13549,9 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12576,7 +13567,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12592,7 +13585,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12608,7 +13603,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12624,7 +13621,9 @@ export const bcdKeys = {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12640,7 +13639,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12656,7 +13657,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12672,7 +13675,9 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12688,7 +13693,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12704,7 +13711,9 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12720,7 +13729,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12736,7 +13747,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12752,7 +13765,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12768,7 +13783,9 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12784,7 +13801,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12800,7 +13819,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12816,7 +13837,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12832,7 +13855,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12864,7 +13889,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12880,7 +13907,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12896,7 +13925,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12960,7 +13991,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12976,7 +14009,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -12992,7 +14027,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13008,7 +14045,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13024,7 +14063,9 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13040,7 +14081,9 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13056,7 +14099,9 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13072,7 +14117,9 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13088,7 +14135,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13104,7 +14153,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13120,7 +14171,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13136,7 +14189,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13152,7 +14207,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13168,7 +14225,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13184,7 +14243,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13200,7 +14261,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13216,7 +14279,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13232,7 +14297,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13248,7 +14315,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13264,7 +14333,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13296,7 +14367,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13312,7 +14385,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13328,7 +14403,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13344,7 +14421,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13360,7 +14439,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13376,7 +14457,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13392,7 +14475,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13408,7 +14493,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13424,7 +14511,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13440,7 +14529,26 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
+    ]
+  },
+  "api.Window.navigation": {
+    "parent_feature": "navigation",
+    "parent_feature_name": "Navigation API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -15824,6 +16932,279 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-ui-4/#outline"
     ]
   },
+  "css.properties.outline.dashed": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.dotted": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.double": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.groove": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.inset": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.medium": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.none": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.outset": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.ridge": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.solid": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.thick": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.thin": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
+  "css.properties.outline.transparent": {
+    "parent_feature": "outline",
+    "parent_feature_name": "outline",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2025-09-27",
+      "baseline_low_date": "2023-03-27",
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#outline"
+    ]
+  },
   "css.at-rules.media.overflow-block": {
     "parent_feature": "overflow",
     "parent_feature_name": "Overflow media queries",
@@ -16024,6 +17405,21 @@ export const bcdKeys = {
     "spec": [
       "https://w3c.github.io/permissions/",
       "https://wicg.github.io/permissions-request/#dom-permissions-request"
+    ]
+  },
+  "api.SVGAElement.ping": {
+    "parent_feature": "ping",
+    "parent_feature_name": "ping",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#ping"
     ]
   },
   "api.HTMLElement.showPopover.options_source_parameter": {
@@ -16960,6 +18356,66 @@ export const bcdKeys = {
       "https://wicg.github.io/sanitizer-api/"
     ]
   },
+  "api.CSSScopeRule": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
+  "api.CSSScopeRule.end": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
+  "api.CSSScopeRule.start": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
   "css.at-rules.scope": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
@@ -17815,8 +19271,8 @@ export const bcdKeys = {
     ]
   },
   "api.Element.scrollIntoView.options_parameter.container_option": {
-    "parent_feature": "scroll-into-view",
-    "parent_feature_name": "scrollIntoView()",
+    "parent_feature": "scroll-into-view-container",
+    "parent_feature_name": "scrollIntoView() container",
     "status": {
       "baseline": false,
       "support": {
@@ -17826,7 +19282,45 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview"
+      "https://drafts.csswg.org/cssom-view-1/#dom-scrollintoviewoptions-container"
+    ]
+  },
+  "css.properties.scrollbar-color": {
+    "parent_feature": "scrollbar-color",
+    "parent_feature_name": "scrollbar-color",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "64",
+        "firefox_android": "64",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color"
+    ]
+  },
+  "css.properties.scrollbar-color.auto": {
+    "parent_feature": "scrollbar-color",
+    "parent_feature_name": "scrollbar-color",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "64",
+        "firefox_android": "64",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color"
     ]
   },
   "api.Document.scrollend_event": {
@@ -18097,7 +19591,8 @@ export const bcdKeys = {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -18113,7 +19608,8 @@ export const bcdKeys = {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -18160,6 +19656,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/scripting.html#dom-slot-assign"
+    ]
+  },
+  "api.Permissions.permission_storage-access": {
+    "parent_feature": "storage-access",
+    "parent_feature_name": "Storage access",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "119",
+        "chrome_android": "120",
+        "edge": "85",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://privacycg.github.io/storage-access/"
     ]
   },
   "api.StorageManager.estimate": {
@@ -18221,6 +19736,36 @@ export const bcdKeys = {
     },
     "spec": [
       "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "css.at-rules.container.style_queries_for_custom_properties.range_syntax": {
+    "parent_feature": "style-query-range-syntax",
+    "parent_feature_name": "Range syntax for style queries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
+    ]
+  },
+  "css.types.if.style.range_syntax": {
+    "parent_feature": "style-query-range-syntax",
+    "parent_feature_name": "Range syntax for style queries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
     ]
   },
   "css.properties.grid-template-columns.subgrid": {
@@ -18323,6 +19868,61 @@ export const bcdKeys = {
       "https://svgwg.org/svg2-draft/"
     ]
   },
+  "api.SVGAElement.hreflang": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "61",
+        "firefox_android": "61",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/svg2-draft/"
+    ]
+  },
+  "api.SVGAElement.referrerPolicy": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "61",
+        "firefox_android": "61"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/svg2-draft/"
+    ]
+  },
+  "api.SVGAElement.type": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "61",
+        "firefox_android": "61",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/svg2-draft/"
+    ]
+  },
   "api.SVGScriptElement.async": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
@@ -18333,7 +19933,9 @@ export const bcdKeys = {
         "chrome_android": "142",
         "edge": "142",
         "firefox": "117",
-        "firefox_android": "117"
+        "firefox_android": "117",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -18393,9 +19995,4018 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
         "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.Duration": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.abs": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.blank": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.days": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.hours": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.microseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.milliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.minutes": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.months": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.nanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.negated": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.seconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.sign": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.total": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.weeks": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.years": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.epochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.epochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.fromEpochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.fromEpochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toZonedDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.instant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainDateISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.timeZoneId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.zonedDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainMonthDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainYearMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.withPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.PlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.epochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.epochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.getTimeZoneTransition": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.hoursInDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.offset": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.offsetNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.startOfDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.timeZoneId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toInstant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withTimeZone": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139"
       }
     },
     "spec": [
@@ -18524,6 +24135,44 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#text-autospace-property"
     ]
   },
+  "css.properties.text-decoration-line.grammar-error": {
+    "parent_feature": "text-decoration",
+    "parent_feature_name": "text-decoration",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ]
+  },
+  "css.properties.text-decoration-line.spelling-error": {
+    "parent_feature": "text-decoration",
+    "parent_feature_name": "text-decoration",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ]
+  },
   "css.properties.text-decoration.includes_color-and-style": {
     "parent_feature": "text-decoration",
     "parent_feature_name": "text-decoration",
@@ -18553,7 +24202,8 @@ export const bcdKeys = {
         "edge": "87",
         "firefox": "70",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -18592,6 +24242,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#text-wrap-style"
+    ]
+  },
+  "api.ToggleEvent.source": {
+    "parent_feature": "toggleevent-source",
+    "parent_feature_name": "ToggleEvent source",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140",
+        "firefox": "145",
+        "firefox_android": "145"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
     ]
   },
   "css.properties.transition.gradients_can_animate": {
@@ -20272,11 +25939,71 @@ export const bcdKeys = {
         "chrome": "114",
         "chrome_android": "114",
         "edge": "114",
-        "firefox": "preview"
+        "firefox": "146",
+        "firefox_android": "146"
       }
     },
     "spec": [
       "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md"
+    ]
+  },
+  "webassembly.jsStringBuiltins": {
+    "parent_feature": "wasm-string-builtins",
+    "parent_feature_name": "String builtins (WebAssembly)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "134",
+        "firefox_android": "134",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/js-string-builtins/blob/main/proposals/js-string-builtins/Overview.md"
+    ]
+  },
+  "javascript.builtins.FinalizationRegistry.register.symbol_as_target": {
+    "parent_feature": "weak-references",
+    "parent_feature_name": "Weak references",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/managing-memory.html#sec-managing-memory"
+    ]
+  },
+  "javascript.builtins.WeakRef.WeakRef.symbol_as_target": {
+    "parent_feature": "weak-references",
+    "parent_feature_name": "Weak references",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-09",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/managing-memory.html#sec-managing-memory"
     ]
   },
   "javascript.builtins.WeakMap.symbol_as_keys": {
