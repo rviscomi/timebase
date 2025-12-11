@@ -1366,7 +1366,7 @@ export const browsers = {
         "version": "142"
       },
       {
-        "date": "2025-12-04",
+        "date": "2025-12-05",
         "version": "143"
       },
       {
@@ -1991,6 +1991,10 @@ export const browsers = {
         "version": "148"
       },
       {
+        "date": "2026-03-24",
+        "version": "149"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2526,6 +2530,10 @@ export const browsers = {
       {
         "date": "2026-02-24",
         "version": "148"
+      },
+      {
+        "date": "2026-03-24",
+        "version": "149"
       }
     ]
   },
@@ -2981,6 +2989,246 @@ export const browsers = {
   }
 };
 export const bcdKeys = {
+  "api.ViewTransition.types": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.@@iterator": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.add": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.clear": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.delete": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.entries": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.forEach": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.has": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.keys": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.size": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.ViewTransitionTypeSet.values": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
   "css.selectors.active-view-transition": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
@@ -3001,16 +3249,38 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
     ]
   },
-  "api.CSSPositionTryDescriptors": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
+  "css.selectors.active-view-transition-type": {
+    "parent_feature": "active-view-transition",
+    "parent_feature_name": "Active view transition",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
+    ]
+  },
+  "api.CSSPositionTryDescriptors": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3023,12 +3293,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3041,12 +3313,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3059,12 +3333,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3077,12 +3353,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3095,12 +3373,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3113,12 +3393,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3131,12 +3413,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3149,12 +3433,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3167,12 +3453,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3185,12 +3473,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3203,12 +3493,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3221,12 +3513,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3239,12 +3533,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3257,12 +3553,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3275,12 +3573,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3293,12 +3593,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3311,12 +3613,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3329,12 +3633,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3347,12 +3653,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3365,12 +3673,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3383,12 +3693,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3401,12 +3713,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3419,12 +3733,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3437,12 +3753,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3455,12 +3773,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3473,12 +3793,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3491,12 +3813,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3509,12 +3833,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3527,12 +3853,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3545,12 +3873,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3563,12 +3893,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3581,12 +3913,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3599,12 +3933,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3617,12 +3953,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3635,12 +3973,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3653,12 +3993,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3671,12 +4013,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3689,12 +4033,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3707,12 +4053,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3725,12 +4073,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3743,12 +4093,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3761,12 +4113,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3779,12 +4133,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3797,12 +4153,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3815,12 +4173,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3833,12 +4193,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3851,12 +4213,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3869,12 +4233,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3887,12 +4253,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3905,12 +4273,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3923,12 +4293,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3941,12 +4313,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3959,12 +4333,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3977,12 +4353,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -3995,12 +4373,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4013,12 +4393,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4031,12 +4413,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4049,12 +4433,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4067,12 +4453,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4085,12 +4473,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4103,12 +4493,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4121,12 +4513,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4139,12 +4533,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4157,12 +4553,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4175,12 +4573,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4193,12 +4593,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4211,12 +4613,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4229,12 +4633,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4247,12 +4653,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4265,12 +4673,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4283,12 +4693,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4301,12 +4713,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4319,12 +4733,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4422,11 +4838,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4439,11 +4858,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4456,12 +4878,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4474,12 +4898,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4492,12 +4918,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "131",
         "chrome_android": "131",
         "edge": "131",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4510,12 +4938,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "131",
         "chrome_android": "131",
         "edge": "131",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4528,12 +4958,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "131",
         "chrome_android": "131",
         "edge": "131",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4546,12 +4978,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4564,12 +4998,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4582,12 +5018,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4600,12 +5038,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4618,12 +5058,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4636,12 +5078,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4654,12 +5098,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4672,12 +5118,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4690,12 +5138,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4708,12 +5158,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4726,12 +5178,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4744,12 +5198,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4762,12 +5218,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4780,12 +5238,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4798,12 +5258,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4816,12 +5278,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4834,12 +5298,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4852,12 +5318,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4870,12 +5338,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4888,11 +5358,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4905,11 +5378,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4922,12 +5398,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4940,12 +5418,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4958,12 +5438,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4976,12 +5458,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -4994,12 +5478,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5012,12 +5498,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5030,12 +5518,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5048,12 +5538,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5066,12 +5558,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5084,12 +5578,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5102,12 +5598,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5120,12 +5618,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5138,12 +5638,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5156,12 +5658,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5174,12 +5678,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5192,12 +5698,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5210,12 +5718,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5228,12 +5738,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5246,12 +5758,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5264,12 +5778,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5282,12 +5798,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5300,12 +5818,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5318,12 +5838,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5336,12 +5858,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5356,7 +5880,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5369,12 +5894,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5389,7 +5916,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5404,7 +5932,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5419,7 +5948,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5432,12 +5962,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5452,7 +5984,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5467,7 +6000,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5482,7 +6016,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5497,7 +6032,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5510,12 +6046,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5530,7 +6068,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5545,7 +6084,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5560,7 +6100,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5575,7 +6116,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5590,7 +6132,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5605,7 +6148,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5620,7 +6164,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5635,7 +6180,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5650,7 +6196,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5665,7 +6212,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5680,7 +6228,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5695,7 +6244,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5708,12 +6258,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5726,12 +6278,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5744,12 +6298,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5762,12 +6318,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5780,12 +6338,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5798,12 +6358,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5816,12 +6378,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5834,12 +6398,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5852,12 +6418,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5870,12 +6438,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5888,12 +6458,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5906,12 +6478,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -5929,7 +6503,8 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5947,7 +6522,8 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5965,7 +6541,8 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5983,7 +6560,8 @@ export const bcdKeys = {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -5996,12 +6574,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6014,12 +6594,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6032,12 +6614,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6050,12 +6634,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6068,12 +6654,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6086,12 +6674,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6104,12 +6694,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6124,7 +6716,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6139,7 +6732,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6154,7 +6748,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6169,7 +6764,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6184,7 +6780,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6197,12 +6794,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6215,12 +6814,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6233,12 +6834,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6251,12 +6854,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6269,12 +6874,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6287,12 +6894,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6305,12 +6914,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6430,7 +7041,8 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -6448,7 +7060,8 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -6466,6 +7079,8 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -6483,7 +7098,8 @@ export const bcdKeys = {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -6496,12 +7112,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6514,12 +7132,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6532,12 +7152,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6550,12 +7172,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "132",
         "chrome_android": "132",
         "edge": "132",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6568,12 +7192,14 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -6970,10 +7596,12 @@ export const bcdKeys = {
     "parent_feature": "background-position",
     "parent_feature_name": "background-position",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-15",
       "support": {
-        "chrome": "143",
-        "chrome_android": "143",
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
         "firefox": "49",
         "firefox_android": "49",
         "safari": "15.4",
@@ -6988,10 +7616,12 @@ export const bcdKeys = {
     "parent_feature": "background-position",
     "parent_feature_name": "background-position",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-15",
       "support": {
-        "chrome": "143",
-        "chrome_android": "143",
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
         "firefox": "49",
         "firefox_android": "49",
         "safari": "15.4",
@@ -7006,7 +7636,8 @@ export const bcdKeys = {
     "parent_feature": "calc-constants",
     "parent_feature_name": "calc() keywords",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "99",
@@ -7026,7 +7657,8 @@ export const bcdKeys = {
     "parent_feature": "calc-constants",
     "parent_feature_name": "calc() keywords",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "99",
@@ -7403,6 +8035,66 @@ export const bcdKeys = {
       "https://w3c.github.io/webappsec-clear-site-data/"
     ]
   },
+  "api.ClipboardChangeEvent": {
+    "parent_feature": "clipboardchange",
+    "parent_feature_name": "clipboardchange",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange"
+    ]
+  },
+  "api.ClipboardChangeEvent.ClipboardChangeEvent": {
+    "parent_feature": "clipboardchange",
+    "parent_feature_name": "clipboardchange",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange"
+    ]
+  },
+  "api.ClipboardChangeEvent.changeId": {
+    "parent_feature": "clipboardchange",
+    "parent_feature_name": "clipboardchange",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange"
+    ]
+  },
+  "api.ClipboardChangeEvent.types": {
+    "parent_feature": "clipboardchange",
+    "parent_feature_name": "clipboardchange",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#clipboard-event-clipboardchange"
+    ]
+  },
   "api.CloseWatcher": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
@@ -7620,6 +8312,22 @@ export const bcdKeys = {
       "https://compression.spec.whatwg.org/"
     ]
   },
+  "api.CompressionStream.CompressionStream.brotli": {
+    "parent_feature": "compression-streams",
+    "parent_feature_name": "Compression streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://compression.spec.whatwg.org/"
+    ]
+  },
   "api.CompressionStream.CompressionStream.deflate": {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
@@ -7761,6 +8469,22 @@ export const bcdKeys = {
         "firefox_android": "113",
         "safari": "16.4",
         "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://compression.spec.whatwg.org/"
+    ]
+  },
+  "api.DecompressionStream.DecompressionStream.brotli": {
+    "parent_feature": "compression-streams",
+    "parent_feature_name": "Compression streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     },
     "spec": [
@@ -8794,6 +9518,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webappsec-csp/"
+    ]
+  },
+  "javascript.statements.import.import_attributes.type_css": {
+    "parent_feature": "css-modules",
+    "parent_feature_name": "CSS import attributes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "147",
+        "firefox_android": "147"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#css-module-script"
     ]
   },
   "api.CSSPageDescriptors": {
@@ -11229,7 +11970,7 @@ export const bcdKeys = {
     "parent_feature_name": "Gamepad",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-04",
+      "baseline_low_date": "2025-12-05",
       "support": {
         "chrome": "143",
         "chrome_android": "143",
@@ -11249,7 +11990,7 @@ export const bcdKeys = {
     "parent_feature_name": "Gamepad",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-04",
+      "baseline_low_date": "2025-12-05",
       "support": {
         "chrome": "143",
         "chrome_android": "143",
@@ -12588,7 +13329,8 @@ export const bcdKeys = {
     "parent_feature": "js-modules",
     "parent_feature_name": "JavaScript modules",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -12627,11 +13369,52 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-modules"
     ]
   },
+  "api.ServiceWorker.ecmascript_modules": {
+    "parent_feature": "js-modules-service-workers",
+    "parent_feature_name": "JavaScript modules in service workers",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "91",
+        "chrome_android": "91",
+        "edge": "91",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "15",
+        "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
+    ]
+  },
+  "javascript.statements.import.service_worker_support": {
+    "parent_feature": "js-modules-service-workers",
+    "parent_feature_name": "JavaScript modules in service workers",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "91",
+        "chrome_android": "91",
+        "edge": "91",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "15",
+        "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
+    ]
+  },
   "api.Worker.Worker.ecmascript_modules": {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -12651,7 +13434,8 @@ export const bcdKeys = {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -12671,7 +13455,8 @@ export const bcdKeys = {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -12691,7 +13476,8 @@ export const bcdKeys = {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -13513,7 +14299,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13531,7 +14318,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13549,7 +14337,8 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13567,7 +14356,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13585,7 +14375,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13603,7 +14394,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13621,7 +14413,8 @@ export const bcdKeys = {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13639,7 +14432,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13657,7 +14451,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13675,7 +14470,8 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13693,7 +14489,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13711,7 +14508,8 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13729,7 +14527,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13747,7 +14546,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13765,7 +14565,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13783,7 +14584,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13801,7 +14603,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13819,7 +14622,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13837,7 +14641,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13855,7 +14660,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13889,7 +14695,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13907,7 +14714,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13925,7 +14733,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13991,7 +14800,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14009,7 +14819,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14027,7 +14838,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14045,7 +14857,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14063,7 +14876,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14081,7 +14895,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14099,7 +14914,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14117,7 +14933,8 @@ export const bcdKeys = {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14135,7 +14952,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14153,7 +14971,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14171,7 +14990,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14189,7 +15009,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14207,7 +15028,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14225,7 +15047,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14243,7 +15066,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14261,7 +15085,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14279,7 +15104,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14297,7 +15123,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14315,7 +15142,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14333,7 +15161,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14351,7 +15180,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -14367,7 +15197,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14385,7 +15216,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14403,7 +15235,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14421,7 +15254,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14439,7 +15273,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14457,7 +15292,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14475,7 +15311,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14493,7 +15330,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14511,7 +15349,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14529,7 +15368,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14547,6 +15387,8 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -17466,7 +18308,8 @@ export const bcdKeys = {
     "parent_feature": "print",
     "parent_feature_name": "window.print()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "1",
@@ -18005,6 +18848,46 @@ export const bcdKeys = {
       "https://w3c.github.io/push-api/"
     ]
   },
+  "css.types.length.rcap": {
+    "parent_feature": "rcap",
+    "parent_feature_name": "rcap unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ]
+  },
+  "css.types.length.rch": {
+    "parent_feature": "rch",
+    "parent_feature_name": "rch unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ]
+  },
   "api.ReadableStreamBYOBReader.read.options_min_parameter": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
@@ -18057,6 +18940,26 @@ export const bcdKeys = {
         "firefox_android": "79",
         "safari": "16.4",
         "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects"
+    ]
+  },
+  "javascript.regular_expressions.modifier": {
+    "parent_feature": "regexp",
+    "parent_feature_name": "Regular expressions",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-09-15",
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "132",
+        "firefox_android": "132",
+        "safari": "26",
+        "safari_ios": "26"
       }
     },
     "spec": [
@@ -18174,6 +19077,46 @@ export const bcdKeys = {
       "https://w3c.github.io/resource-timing/#dom-performanceresourcetiming-transfersize"
     ]
   },
+  "css.types.length.rex": {
+    "parent_feature": "rex",
+    "parent_feature_name": "rex unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ]
+  },
+  "css.types.length.ric": {
+    "parent_feature": "ric",
+    "parent_feature_name": "ric unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ]
+  },
   "api.Document.parseHTML_static": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
@@ -18193,7 +19136,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18206,7 +19150,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18219,7 +19164,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18232,7 +19178,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18245,7 +19192,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18258,7 +19206,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18271,7 +19220,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18284,7 +19234,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18297,7 +19248,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18310,7 +19262,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18323,7 +19276,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -18336,7 +19290,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "147",
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -24574,11 +25529,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24591,11 +25549,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "90",
         "chrome_android": "90",
         "edge": "90",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24608,11 +25569,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24625,11 +25589,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24642,11 +25609,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "90",
         "chrome_android": "90",
         "edge": "90",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24659,11 +25629,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24676,11 +25649,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24693,11 +25669,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "90",
         "chrome_android": "90",
         "edge": "90",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24710,11 +25689,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24727,11 +25709,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24744,11 +25729,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24761,11 +25749,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24778,11 +25769,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24795,11 +25789,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24812,12 +25809,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24830,11 +25829,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24847,11 +25849,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24864,11 +25869,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24881,11 +25889,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24898,12 +25909,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24916,12 +25929,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24934,11 +25949,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24951,11 +25969,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24968,11 +25989,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -25021,12 +26045,14 @@ export const bcdKeys = {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }

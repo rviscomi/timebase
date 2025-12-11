@@ -1366,7 +1366,7 @@ export const browsers = {
         "version": "142"
       },
       {
-        "date": "2025-12-04",
+        "date": "2025-12-05",
         "version": "143"
       },
       {
@@ -1991,6 +1991,10 @@ export const browsers = {
         "version": "148"
       },
       {
+        "date": "2026-03-24",
+        "version": "149"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2526,6 +2530,10 @@ export const browsers = {
       {
         "date": "2026-02-24",
         "version": "148"
+      },
+      {
+        "date": "2026-03-24",
+        "version": "149"
       }
     ]
   },
@@ -3223,11 +3231,14 @@ export const features = {
       "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "125",
         "chrome_android": "125",
         "edge": "125",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4260,11 +4271,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133"
-      }
+      "support": {}
     }
   },
   "attr-contents": {
@@ -5491,7 +5498,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#calc-keywords"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "110",
@@ -6248,7 +6256,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
     }
   },
   "closewatcher": {
@@ -7462,7 +7474,9 @@ export const features = {
       "support": {
         "chrome": "123",
         "chrome_android": "123",
-        "edge": "123"
+        "edge": "123",
+        "firefox": "147",
+        "firefox_android": "147"
       }
     }
   },
@@ -13509,11 +13523,14 @@ export const features = {
       "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "91",
         "chrome_android": "91",
         "edge": "91",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "15",
         "safari_ios": "15"
       }
@@ -13546,7 +13563,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/workers.html#dom-worker-dev"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "80",
@@ -15442,7 +15460,8 @@ export const features = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -17529,7 +17548,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-12-06",
       "baseline_low_date": "2023-06-06",
       "support": {
         "chrome": "1",
@@ -17984,11 +18004,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -18002,11 +18025,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -18681,11 +18707,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -18733,11 +18762,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -22566,12 +22598,14 @@ export const features = {
       "https://w3c.github.io/trusted-types/dist/spec/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
         "safari": "26",
         "safari_ios": "26"
       }
