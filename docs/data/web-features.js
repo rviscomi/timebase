@@ -2761,8 +2761,12 @@ export const browsers = {
         "version": "26.1"
       },
       {
-        "date": "null",
+        "date": "2025-12-12",
         "version": "26.2"
+      },
+      {
+        "date": "2025-12-15",
+        "version": "26.3"
       },
       {
         "date": "null",
@@ -2982,8 +2986,12 @@ export const browsers = {
         "version": "26.1"
       },
       {
-        "date": "null",
+        "date": "2025-12-12",
         "version": "26.2"
+      },
+      {
+        "date": "2025-12-15",
+        "version": "26.3"
       }
     ]
   }
@@ -4271,7 +4279,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133"
+      }
     }
   },
   "attr-contents": {
@@ -4297,7 +4309,16 @@ export const features = {
     }
   },
   "attribution-reporting": {
-    "description_html": "The Attribution Reporting API measures when an ad click or view leads to a conversion, such as a purchase on an advertiser site.",
+    "description_html": "The attribution reporting API measures when an ad click or view leads to a conversion, such as a purchase on an advertiser site.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/4K2RRt6VYCQ",
+        "https://chromestatus.com/feature/6320639375966208"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the attribution reporting API.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the attribution reporting API.",
+      "removal_date": "2026-06-01"
+    },
     "kind": "feature",
     "name": "Attribution reporting",
     "spec": [
@@ -6939,7 +6960,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143"
+      }
     }
   },
   "container-queries": {
@@ -8083,9 +8108,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "65",
-        "chrome_android": "65",
-        "edge": "79"
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97"
       }
     }
   },
@@ -8472,7 +8497,8 @@ export const features = {
       "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
@@ -9003,7 +9029,8 @@ export const features = {
       "https://w3c.github.io/event-timing/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "76",
         "chrome_android": "76",
@@ -11499,11 +11526,7 @@ export const features = {
       "support": {
         "chrome": "102",
         "chrome_android": "102",
-        "edge": "102",
-        "firefox": "139",
-        "firefox_android": "139",
-        "safari": "26.2",
-        "safari_ios": "26.2"
+        "edge": "102"
       }
     }
   },
@@ -13001,6 +13024,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "135",
+        "chrome_android": "135",
         "edge": "135"
       }
     }
@@ -13866,7 +13890,8 @@ export const features = {
       "https://w3c.github.io/largest-contentful-paint/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "77",
         "chrome_android": "77",
@@ -15455,7 +15480,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-01-13",
       "support": {
         "chrome": "102",
         "chrome_android": "102",
@@ -15509,6 +15535,18 @@ export const features = {
         "safari": "1",
         "safari_ios": "1"
       }
+    }
+  },
+  "navigator-install": {
+    "description_html": "The <code>navigator.install()</code> method triggers a request to install a progressive web app.",
+    "kind": "feature",
+    "name": "navigator.install()",
+    "spec": [
+      "https://github.com/w3c/manifest/pull/1175"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "nesting": {
@@ -17695,7 +17733,9 @@ export const features = {
       "support": {
         "chrome": "138",
         "chrome_android": "138",
-        "edge": "138"
+        "edge": "138",
+        "safari": "26",
+        "safari_ios": "26"
       }
     }
   },
@@ -18314,6 +18354,33 @@ export const features = {
         "edge": "79",
         "firefox": "2",
         "firefox_android": "4"
+      }
+    }
+  },
+  "related-website-sets": {
+    "description_html": "Related website sets declares relationships between sites so the browser allows cookie and storage access between them through methods such as <code>document.requestStorageAccessFor()</code>.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/V-wPXyoruac",
+        "https://chromestatus.com/feature/5162221567082496",
+        "https://chromestatus.com/feature/5194473869017088"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the related website sets.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the related website sets.",
+      "removal_date": "2026-06-01"
+    },
+    "kind": "feature",
+    "name": "Related website sets",
+    "spec": [
+      "https://wicg.github.io/first-party-sets/",
+      "https://privacycg.github.io/requestStorageAccessFor/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "119",
+        "chrome_android": "120",
+        "edge": "119"
       }
     }
   },
@@ -19362,8 +19429,24 @@ export const features = {
       }
     }
   },
+  "scroll-marker-targets": {
+    "description_html": "The <code>:target-current</code> CSS pseudo-class selects the active scroll marker (as in <code>::scroll-marker</code>), while the <code>:target-after</code> and <code>:target-before</code> pseudo-classes select the inactive markers preceding and following the active scroll marker.",
+    "kind": "feature",
+    "name": "Scroll marker target pseudo-classes",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#active-before-after-scroll-markers"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
+    }
+  },
   "scroll-markers": {
-    "description_html": "A scroll container can be navigated by activating <code>::scroll-marker</code> pseudo-elements which appear in a generated <code>::scroll-marker-group</code> pseudo-element, either before or after the scroll container.",
+    "description_html": "A scroll marker scrolls a container to a scroll target. The <code>::scroll-marker</code> CSS pseudo-element selects a scroll marker in a <code>::scroll-marker-group</code> pseudo-element, generated before or after the scroll container. You can use them to navigate and style tables of contents, tab panels, and carousels.",
     "kind": "feature",
     "name": "Scroll markers",
     "spec": [
@@ -19373,6 +19456,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "135",
+        "chrome_android": "135",
         "edge": "135"
       }
     }
@@ -19415,6 +19499,22 @@ export const features = {
       }
     }
   },
+  "scroll-target-group": {
+    "description_html": "The <code>scroll-target-group</code> CSS property sets the container where anchor links act as scroll markers. Using selectors such as <code>:target-current</code>, you can style elements when a target has scrolled into view. It's an alternative to the <code>::scroll-marker-group</code> pseudo-element, which generates scroll markers.",
+    "kind": "feature",
+    "name": "scroll-target-group",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-target-group"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140"
+      }
+    }
+  },
   "scroll-to-text-fragment": {
     "description_html": "Text fragments are URL fragments on the form <code>#:~:text=snippet</code> and link to a snippet of text within a page. The browser may scroll, highlight, or otherwise bring that text to the reader's attention.",
     "kind": "feature",
@@ -19444,7 +19544,8 @@ export const features = {
       "https://drafts.csswg.org/css-scrollbars-1/#scrollbar-color"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "121",
         "chrome_android": "121",
@@ -19506,14 +19607,16 @@ export const features = {
       "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "114",
         "chrome_android": "114",
         "edge": "114",
         "firefox": "109",
         "firefox_android": "109",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -20021,7 +20124,16 @@ export const features = {
     }
   },
   "shared-storage": {
-    "description_html": "The <code>sharedStorage</code> API stores data to a shared space where the data can then be processed without the ability to track users across the different sites they visit. A common use case is measuring the reach of third-party ads without using user-tracking cookies.\"",
+    "description_html": "The <code>sharedStorage</code> API stores data to a shared space where the data can then be processed without the ability to track users across the different sites they visit. A common use case is measuring the reach of third-party ads without using user-tracking cookies.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/uh5Ke6qyegc",
+        "https://chromestatus.com/feature/5076349064708096"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the shared storage.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the shared storage.",
+      "removal_date": "2026-06-01"
+    },
     "kind": "feature",
     "name": "Shared storage",
     "spec": [
@@ -20038,6 +20150,15 @@ export const features = {
   },
   "shared-storage-locks": {
     "description_html": "The <code>withLock</code> option to <code>set()</code>, <code>append()</code>, <code>delete()</code>, <code>clear()</code>, and <code>batchUpdate()</code> methods of the <code>sharedStorage</code> API prevents duplicate reporting from cross-site race conditions.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/uh5Ke6qyegc",
+        "https://chromestatus.com/feature/5076349064708096"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including shared storage locks.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including shared storage locks.",
+      "removal_date": "2026-06-01"
+    },
     "kind": "feature",
     "name": "Shared storage locks",
     "spec": [
@@ -22330,7 +22451,16 @@ export const features = {
     }
   },
   "topics": {
-    "description_html": "The Topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
+    "description_html": "The topics API reports a user's likely subject-matter interests (as determined by the browser, known as topics) to iframes. This allows for interest-based advertising that does not rely on user's exact browsing history, third-party cookies, or fingerprinting.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/_R85yctz4Rs",
+        "https://chromestatus.com/feature/5135370673061888"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the topics API.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the topics API.",
+      "removal_date": "2026-06-01"
+    },
     "kind": "feature",
     "name": "Topics",
     "spec": [
@@ -22598,14 +22728,12 @@ export const features = {
       "https://w3c.github.io/trusted-types/dist/spec/"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-01-13",
+      "baseline": false,
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "147",
-        "firefox_android": "147",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -23401,6 +23529,25 @@ export const features = {
       }
     }
   },
+  "wasm-branch-hinting": {
+    "description_html": "Branch hints in WebAssembly allows a browser to optimize performance when a branch is a likely to take a specific path.",
+    "kind": "feature",
+    "name": "Branch hinting (WebAssembly)",
+    "spec": [
+      "https://github.com/WebAssembly/branch-hinting/blob/main/proposals/branch-hinting/Overview.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "137",
+        "chrome_android": "137",
+        "edge": "137",
+        "firefox": "preview",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    }
+  },
   "wasm-bulk-memory": {
     "description_html": "Bulk memory operations, such as <code>copy</code> and <code>init</code>, mirror the efficiency of native <code>memcpy</code> and <code>memmove</code> operations.",
     "kind": "feature",
@@ -23946,16 +24093,8 @@ export const features = {
     }
   },
   "web-install": {
-    "description_html": "The <code>navigator.install()</code> method triggers a request to install a progressive web app.",
-    "kind": "feature",
-    "name": "navigator.install()",
-    "spec": [
-      "https://github.com/w3c/manifest/pull/1175"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
+    "kind": "moved",
+    "redirect_target": "navigator-install"
   },
   "web-locks": {
     "description_html": "The <code>navigator.locks</code> API coordinates work with shared resources through mutually exclusive ownership of a resource's name. Also known as web locks.",
