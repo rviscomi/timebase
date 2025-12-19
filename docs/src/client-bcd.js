@@ -9,7 +9,8 @@ const app = new TimelineApp({
     this.bcdKeys = processBcdKeys(bcdKeys, browsers, {
       developerSignals: this.developerSignals,
       interop: this.interopData,
-      mdn: this.mdnDocs
+      mdn: this.mdnDocs,
+      chromeContent: this.chromeContent
     });
     this.allFeatures = [...this.bcdKeys];
     this.features = this.allFeatures;

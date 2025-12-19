@@ -367,6 +367,18 @@ export function createCard(item, options = {}) {
     const mdnEntry = item.mdn[0];
     linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;
   }
+  if (item.chromeContent) {
+    // Show one link from web.dev if available
+    if (item.chromeContent['web.dev'] && item.chromeContent['web.dev'].length > 0) {
+      const webDevUrl = item.chromeContent['web.dev'][0];
+      linksHTML += `<a href="${webDevUrl}" class="webdev-link" target="_blank">web.dev</a>`;
+    }
+    // Show one link from developer.chrome.com if available
+    if (item.chromeContent['developer.chrome.com'] && item.chromeContent['developer.chrome.com'].length > 0) {
+      const chromeDevUrl = item.chromeContent['developer.chrome.com'][0];
+      linksHTML += `<a href="${chromeDevUrl}" class="chromedev-link" target="_blank">developer.chrome.com</a>`;
+    }
+  }
 
   let cardType = item.displayType;
   if (item.status?.baseline === false) {

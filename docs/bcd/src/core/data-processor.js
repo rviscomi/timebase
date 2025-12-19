@@ -113,7 +113,7 @@ function createTimelineEntries(baseItem, shipDates) {
  * Processes raw feature data into a flat array of features with calculated dates and display types.
  * @param {Object} features - Raw features object.
  * @param {Object} browsers - Browsers data object.
- * @param {Object} metadata - Optional metadata (developerSignals, interop, mdn).
+ * @param {Object} metadata - Optional metadata (developerSignals, interop, mdn, chromeContent).
  * @returns {Array} Processed features array.
  */
 export function processFeatures(features, browsers, metadata = {}) {
@@ -136,7 +136,11 @@ export function processFeatures(features, browsers, metadata = {}) {
       shipDates: shipDates,
       developerSignal: metadata.developerSignals?.[id],
       interop: metadata.interop?.[id],
-      mdn: metadata.mdn?.[id]
+      mdn: metadata.mdn?.[id],
+      chromeContent: {
+        'web.dev': metadata.chromeContent?.['web-features']?.['web.dev']?.[id],
+        'developer.chrome.com': metadata.chromeContent?.['web-features']?.['developer.chrome.com']?.[id]
+      }
     };
 
     processedFeatures.push(...createTimelineEntries(baseFeature, shipDates));
@@ -174,7 +178,11 @@ export function processBcdKeys(bcdKeys, browsers, metadata = {}) {
       shipDates: shipDates,
       developerSignal: metadata.developerSignals?.[data.parent_feature],
       interop: metadata.interop?.[data.parent_feature],
-      mdn: metadata.mdn?.[data.parent_feature]
+      mdn: metadata.mdn?.[data.parent_feature],
+      chromeContent: {
+        'web.dev': metadata.chromeContent?.['bcd']?.['web.dev']?.[id],
+        'developer.chrome.com': metadata.chromeContent?.['bcd']?.['developer.chrome.com']?.[id]
+      }
     };
 
     processedKeys.push(...createTimelineEntries(baseBcdKey, shipDates));

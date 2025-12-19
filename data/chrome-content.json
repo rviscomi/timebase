@@ -1,0 +1,2130 @@
+{
+  "web-features": {
+    "web.dev": {
+      "accent-color": [
+        "https://web.dev/articles/accent-color"
+      ],
+      "anchor-positioning": [
+        "https://web.dev/learn/css/anchor-positioning",
+        "https://web.dev/learn/css/popover-and-dialog"
+      ],
+      "aspect-ratio": [
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "autofill": [
+        "https://web.dev/articles/autofill-measure"
+      ],
+      "avif": [
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "backdrop": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "backdrop-filter": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "cascade-layers": [
+        "https://web.dev/learn/css/inheritance"
+      ],
+      "clipboard-supports": [
+        "https://web.dev/blog/baseline-clipboard-item-supports"
+      ],
+      "color-function": [
+        "https://web.dev/learn/css/color"
+      ],
+      "color-mix": [
+        "https://web.dev/articles/baseline-in-action-color-theme",
+        "https://web.dev/learn/css/color"
+      ],
+      "color-scheme": [
+        "https://web.dev/articles/baseline-in-action-color-theme"
+      ],
+      "container-queries": [
+        "https://web.dev/articles/baseline-in-action-container-queries",
+        "https://web.dev/learn/css/container-queries"
+      ],
+      "content-visibility": [
+        "https://web.dev/articles/content-visibility",
+        "https://web.dev/blog/css-content-visibility-baseline"
+      ],
+      "custom-properties": [
+        "https://web.dev/learn/css/custom-properties"
+      ],
+      "declarative-shadow-dom": [
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "dialog": [
+        "https://web.dev/articles/baseline-features",
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "dialog-closedby": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover"
+      ],
+      "event-timing": [
+        "https://web.dev/articles/inp",
+        "https://web.dev/blog/lcp-and-inp-are-now-baseline-newly-available"
+      ],
+      "exp-functions": [
+        "https://web.dev/articles/baseline-in-action-fluid-type"
+      ],
+      "focus-visible": [
+        "https://web.dev/articles/baseline-features",
+        "https://web.dev/articles/style-focus"
+      ],
+      "focus-within": [
+        "https://web.dev/articles/style-focus"
+      ],
+      "font-size-adjust": [
+        "https://web.dev/blog/font-size-adjust",
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "function": [
+        "https://web.dev/articles/baseline-in-action-fluid-type"
+      ],
+      "has": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "image-set": [
+        "https://web.dev/articles/high-dpi"
+      ],
+      "individual-transforms": [
+        "https://web.dev/articles/baseline-features",
+        "https://web.dev/learn/css/functions",
+        "https://web.dev/learn/css/transitions"
+      ],
+      "intl-duration-format": [
+        "https://web.dev/blog/intl-durationformat-baseline"
+      ],
+      "invoker-commands": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover"
+      ],
+      "iterator-methods": [
+        "https://web.dev/blog/baseline-iterator-helpers"
+      ],
+      "json-modules": [
+        "https://web.dev/blog/json-imports-baseline-newly-available"
+      ],
+      "largest-contentful-paint": [
+        "https://web.dev/articles/lcp",
+        "https://web.dev/blog/lcp-and-inp-are-now-baseline-newly-available"
+      ],
+      "layout-instability": [
+        "https://web.dev/articles/cls",
+        "https://web.dev/blog/lcp-and-inp-are-now-baseline-newly-available"
+      ],
+      "light-dark": [
+        "https://web.dev/articles/baseline-in-action-color-theme",
+        "https://web.dev/learn/design/media-features"
+      ],
+      "loading-lazy": [
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "longtasks": [
+        "https://web.dev/articles/tbt"
+      ],
+      "masks": [
+        "https://web.dev/articles/css-masking",
+        "https://web.dev/learn/css/paths-shapes-clipping-masking"
+      ],
+      "modulepreload": [
+        "https://web.dev/articles/modulepreload"
+      ],
+      "navigation-timing": [
+        "https://web.dev/articles/ttfb"
+      ],
+      "nesting": [
+        "https://web.dev/blog/interop-2024-wrapup",
+        "https://web.dev/learn/css/nesting"
+      ],
+      "nth-child-of": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "oklab": [
+        "https://web.dev/articles/baseline-in-action-color-theme",
+        "https://web.dev/learn/css/color"
+      ],
+      "overlay": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover"
+      ],
+      "page-setup": [
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "paint-timing": [
+        "https://web.dev/articles/fcp"
+      ],
+      "popover": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/blog/interop-2024-wrapup",
+        "https://web.dev/blog/popover-baseline",
+        "https://web.dev/learn/css/popover-and-dialog"
+      ],
+      "popover-hint": [
+        "https://web.dev/learn/css/popover-and-dialog"
+      ],
+      "progress-function": [
+        "https://web.dev/articles/baseline-in-action-fluid-type"
+      ],
+      "promise-try": [
+        "https://web.dev/blog/promise-try-baseline",
+        "https://web.dev/blog/web-platform-01-2025"
+      ],
+      "registered-custom-properties": [
+        "https://web.dev/articles/baseline-in-action-color-theme",
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/blog/at-property-baseline",
+        "https://web.dev/blog/at-property-performance",
+        "https://web.dev/blog/interop-2024-wrapup",
+        "https://web.dev/learn/css/custom-properties"
+      ],
+      "relative-color": [
+        "https://web.dev/articles/baseline-in-action-color-theme",
+        "https://web.dev/learn/css/color"
+      ],
+      "request-video-frame-callback": [
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "resolution": [
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "revert-value": [
+        "https://web.dev/learn/css/inheritance"
+      ],
+      "round-mod-rem": [
+        "https://web.dev/articles/baseline-in-action-container-queries",
+        "https://web.dev/blog/css-stepped-value-functions"
+      ],
+      "ruby-align": [
+        "https://web.dev/blog/baseline-ruby-align",
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "screen-wake-lock": [
+        "https://web.dev/blog/screen-wake-lock-supported-in-all-browsers"
+      ],
+      "scroll-snap": [
+        "https://web.dev/learn/css/overflow"
+      ],
+      "scrollbar-gutter": [
+        "https://web.dev/blog/baseline-scrollbar-props",
+        "https://web.dev/blog/interop-2024-wrapup",
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "scrollbar-width": [
+        "https://web.dev/blog/baseline-scrollbar-props",
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "set-methods": [
+        "https://web.dev/blog/set-methods"
+      ],
+      "shape-outside": [
+        "https://web.dev/learn/css/paths-shapes-clipping-masking"
+      ],
+      "shapes": [
+        "https://web.dev/learn/css/paths-shapes-clipping-masking"
+      ],
+      "srcset": [
+        "https://web.dev/articles/high-dpi"
+      ],
+      "starting-style": [
+        "https://web.dev/articles/baseline-in-action-dialog-popover",
+        "https://web.dev/articles/baseline-in-action-image-gallery"
+      ],
+      "streams": [
+        "https://web.dev/articles/baseline-features"
+      ],
+      "structured-clone": [
+        "https://web.dev/articles/baseline-features"
+      ],
+      "subgrid": [
+        "https://web.dev/articles/css-subgrid"
+      ],
+      "target-text": [
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "text-wrap": [
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "touch-action": [
+        "https://web.dev/learn/css/cursors-and-pointers"
+      ],
+      "transition-behavior": [
+        "https://web.dev/articles/baseline-in-action-image-gallery",
+        "https://web.dev/blog/interop-2024-wrapup"
+      ],
+      "urlpattern": [
+        "https://web.dev/blog/baseline-urlpattern"
+      ],
+      "user-pseudos": [
+        "https://web.dev/articles/user-valid-and-user-invalid-pseudo-classes"
+      ],
+      "view-transitions": [
+        "https://web.dev/learn/css/view-transitions-spas"
+      ],
+      "viewport-unit-variants": [
+        "https://web.dev/articles/baseline-features"
+      ],
+      "wasm-garbage-collection": [
+        "https://web.dev/blog/wasmgc-wasm-tail-call-optimizations-baseline",
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "wasm-tail-call-optimization": [
+        "https://web.dev/blog/wasmgc-wasm-tail-call-optimizations-baseline"
+      ],
+      "webp": [
+        "https://web.dev/articles/high-dpi"
+      ]
+    },
+    "developer.chrome.com": {}
+  },
+  "bcd": {
+    "web.dev": {
+      "api.AudioContext": [
+        "https://web.dev/patterns/media/audio-effects",
+        "https://web.dev/patterns/media/microphone-process"
+      ],
+      "api.AudioContext.outputLatency": [
+        "https://web.dev/articles/audio-output-latency"
+      ],
+      "api.AudioContext.setSinkId": [
+        "https://web.dev/blog/web-platform-02-2023"
+      ],
+      "api.AudioWorklet": [
+        "https://web.dev/patterns/media/microphone-process"
+      ],
+      "api.BackgroundFetchManager": [
+        "https://web.dev/articles/two-way-communication-guide"
+      ],
+      "api.BiquadNodeFilter": [
+        "https://web.dev/patterns/media/audio-effects"
+      ],
+      "api.BroadcastChannel": [
+        "https://web.dev/articles/two-way-communication-guide"
+      ],
+      "api.CSS.registerProperty": [
+        "https://web.dev/articles/at-property"
+      ],
+      "api.CSSNestedDeclarations": [
+        "https://web.dev/blog/css-nesting-cssnesteddeclarations",
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "api.CSSStyleSheet.CSSStyleSheet": [
+        "https://web.dev/articles/constructable-stylesheets",
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-05-2022"
+      ],
+      "api.CSSStyleValue": [
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "api.Cache": [
+        "https://web.dev/articles/cache-api-quick-guide"
+      ],
+      "api.CacheStorage": [
+        "https://web.dev/articles/service-workers-cache-storage",
+        "https://web.dev/learn/pwa/caching"
+      ],
+      "api.Client": [
+        "https://web.dev/articles/two-way-communication-guide"
+      ],
+      "api.Clients.matchAll": [
+        "https://web.dev/articles/push-notifications-common-notification-patterns"
+      ],
+      "api.Clients.openWindow": [
+        "https://web.dev/articles/push-notifications-common-notification-patterns"
+      ],
+      "api.Clipboard": [
+        "https://web.dev/patterns/clipboard/paste-files",
+        "https://web.dev/patterns/clipboard/paste-images"
+      ],
+      "api.Clipboard.read": [
+        "https://web.dev/articles/async-clipboard",
+        "https://web.dev/patterns/clipboard/paste-images"
+      ],
+      "api.Clipboard.readText": [
+        "https://web.dev/articles/async-clipboard",
+        "https://web.dev/patterns/clipboard/paste-text"
+      ],
+      "api.Clipboard.write": [
+        "https://web.dev/articles/async-clipboard",
+        "https://web.dev/patterns/clipboard/copy-images"
+      ],
+      "api.Clipboard.writeText": [
+        "https://web.dev/articles/async-clipboard",
+        "https://web.dev/patterns/clipboard/copy-images",
+        "https://web.dev/patterns/clipboard/copy-text"
+      ],
+      "api.ClipboardItem": [
+        "https://web.dev/articles/async-clipboard",
+        "https://web.dev/blog/web-platform-06-2024"
+      ],
+      "api.CloseWatcher": [
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "api.CompressionStream": [
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "api.ContactsManager": [
+        "https://web.dev/learn/pwa/os-integration",
+        "https://web.dev/patterns/web-apps/contacts"
+      ],
+      "api.Credential": [
+        "https://web.dev/articles/security-credential-management"
+      ],
+      "api.CredentialsContainer.get": [
+        "https://web.dev/articles/security-credential-management-retrieve-credentials"
+      ],
+      "api.CredentialsContainer.store": [
+        "https://web.dev/articles/security-credential-management-save-forms"
+      ],
+      "api.DataTransfer": [
+        "https://web.dev/articles/datatransfer"
+      ],
+      "api.DataTransfer.files": [
+        "https://web.dev/articles/async-clipboard"
+      ],
+      "api.DataTransferItem.getAsFile": [
+        "https://web.dev/patterns/files/drag-and-drop-files",
+        "https://web.dev/patterns/files/handle-files-opened-from-the-file-explorer"
+      ],
+      "api.DataTransferItem.getAsFileSystemHandle": [
+        "https://web.dev/patterns/files/drag-and-drop-directories",
+        "https://web.dev/patterns/files/drag-and-drop-files"
+      ],
+      "api.DataTransferItem.webkitGetAsEntry": [
+        "https://web.dev/patterns/files/drag-and-drop-directories"
+      ],
+      "api.DigitalCredential": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "api.Document.ariaNotify": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "api.Document.execCommand": [
+        "https://web.dev/patterns/clipboard/copy-text",
+        "https://web.dev/patterns/clipboard/paste-text"
+      ],
+      "api.Document.fullscreenElement": [
+        "https://web.dev/blog/baseline2023"
+      ],
+      "api.Document.visibilityState": [
+        "https://web.dev/articles/camera-pan-tilt-zoom",
+        "https://web.dev/articles/pagevisibility-intro"
+      ],
+      "api.Element.copy_event": [
+        "https://web.dev/articles/async-clipboard"
+      ],
+      "api.Element.requestPointerLock": [
+        "https://web.dev/articles/disable-mouse-acceleration",
+        "https://web.dev/articles/pointerlock-intro"
+      ],
+      "api.Element.scrollend_event": [
+        "https://web.dev/blog/web-platform-01-2023"
+      ],
+      "api.Element.setHTMLUnsafe": [
+        "https://web.dev/blog/web-platform-04-2024"
+      ],
+      "api.FederatedCredential": [
+        "https://web.dev/articles/security-credential-management-retrieve-credentials"
+      ],
+      "api.FetchEvent": [
+        "https://web.dev/learn/pwa/serving"
+      ],
+      "api.FileSystemHandle": [
+        "https://web.dev/learn/pwa/offline-data"
+      ],
+      "api.FontFace": [
+        "https://web.dev/articles/optimize-webfont-loading"
+      ],
+      "api.FormData": [
+        "https://web.dev/articles/more-capable-form-controls"
+      ],
+      "api.GPU": [
+        "https://web.dev/blog/web-platform-05-2023",
+        "https://web.dev/blog/web-platform-07-2025"
+      ],
+      "api.Gamepad": [
+        "https://web.dev/articles/doodles-gamepad"
+      ],
+      "api.Geolocation": [
+        "https://web.dev/articles/trip-meter"
+      ],
+      "api.GeolocationPosition.toJSON": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "api.HID.worker_support": [
+        "https://web.dev/blog/web-platform-11-2024"
+      ],
+      "api.HTMLAnchorElement.download": [
+        "https://web.dev/patterns/files/save-a-file",
+        "https://web.dev/patterns/files/share-files"
+      ],
+      "api.HTMLAudioElement": [
+        "https://web.dev/patterns/media/audio-effects"
+      ],
+      "api.HTMLElement.inert": [
+        "https://web.dev/articles/building/a-dialog-component",
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "api.HTMLImageElement.fetchPriority": [
+        "https://web.dev/articles/fetch-priority",
+        "https://web.dev/articles/top-cwv",
+        "https://web.dev/blog/web-platform-04-2022"
+      ],
+      "api.HTMLInputElement.showPicker": [
+        "https://web.dev/blog/web-platform-06-2022"
+      ],
+      "api.HTMLInputElement.webkitdirectory": [
+        "https://web.dev/patterns/files/open-a-directory"
+      ],
+      "api.HTMLLinkElement.fetchPriority": [
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "api.HTMLLinkElement.imageSrcset": [
+        "https://web.dev/articles/preload-responsive-images"
+      ],
+      "api.HTMLMetaElement.media": [
+        "https://web.dev/articles/add-manifest"
+      ],
+      "api.HTMLSelectElement.showPicker": [
+        "https://web.dev/blog/web-platform-01-2024"
+      ],
+      "api.HTMLVideoElement.requestVideoFrameCallback": [
+        "https://web.dev/articles/requestvideoframecallback-rvfc",
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "api.Highlight": [
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "api.IDBIndex.getAllRecords": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "api.ImageDecoder": [
+        "https://web.dev/blog/web-platform-11-2024"
+      ],
+      "api.IntersectionObserver": [
+        "https://web.dev/articles/intersectionobserver"
+      ],
+      "api.IntersectionObserver.scrollMargin": [
+        "https://web.dev/blog/web-platform-07-2025"
+      ],
+      "api.LargestContentfulPaint": [
+        "https://web.dev/blog/web-platform-01-2024"
+      ],
+      "api.LaunchQueue": [
+        "https://web.dev/patterns/files/handle-files-opened-from-the-file-explorer"
+      ],
+      "api.MediaDevices.getDisplayMedia": [
+        "https://web.dev/patterns/media/screen-record"
+      ],
+      "api.MediaDevices.getSupportedConstraints": [
+        "https://web.dev/articles/camera-pan-tilt-zoom"
+      ],
+      "api.MediaDevices.getUserMedia": [
+        "https://web.dev/articles/camera-pan-tilt-zoom",
+        "https://web.dev/patterns/media/microphone-process",
+        "https://web.dev/patterns/media/microphone-record"
+      ],
+      "api.MediaRecorder": [
+        "https://web.dev/patterns/media/microphone-record",
+        "https://web.dev/patterns/media/screen-record"
+      ],
+      "api.MediaSession": [
+        "https://web.dev/articles/media-session",
+        "https://web.dev/patterns/media/media-session"
+      ],
+      "api.MediaSession.setActionHandler.nextslide_type": [
+        "https://web.dev/articles/media-session",
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "api.MediaSession.setActionHandler.previousslide_type": [
+        "https://web.dev/articles/media-session"
+      ],
+      "api.MediaStream": [
+        "https://web.dev/articles/camera-pan-tilt-zoom"
+      ],
+      "api.MediaStreamTrack.applyConstraints": [
+        "https://web.dev/articles/camera-pan-tilt-zoom"
+      ],
+      "api.MediaStreamTrack.getCapabilities": [
+        "https://web.dev/articles/camera-pan-tilt-zoom",
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "api.MediaStreamTrack.getSettings": [
+        "https://web.dev/articles/camera-pan-tilt-zoom"
+      ],
+      "api.MessageChannel": [
+        "https://web.dev/articles/two-way-communication-guide"
+      ],
+      "api.Navigation": [
+        "https://web.dev/blog/web-platform-05-2022"
+      ],
+      "api.NavigationPreloadManager": [
+        "https://web.dev/blog/navigation-preload"
+      ],
+      "api.Navigator.canShare": [
+        "https://web.dev/articles/web-share"
+      ],
+      "api.Navigator.deviceMemory": [
+        "https://web.dev/articles/adaptive-loading-cds-2019"
+      ],
+      "api.Navigator.hardwareConcurrency": [
+        "https://web.dev/articles/adaptive-loading-cds-2019"
+      ],
+      "api.Navigator.pdfViewerEnabled": [
+        "https://web.dev/blog/web-platform-03-2022",
+        "https://web.dev/blog/web-platform-04-2022"
+      ],
+      "api.Navigator.setAppBadge": [
+        "https://web.dev/patterns/web-apps/badges"
+      ],
+      "api.Navigator.share": [
+        "https://web.dev/articles/web-share",
+        "https://web.dev/learn/pwa/os-integration",
+        "https://web.dev/patterns/files/share-files",
+        "https://web.dev/patterns/web-apps/share"
+      ],
+      "api.NetworkInformation": [
+        "https://web.dev/articles/adaptive-serving-based-on-network-quality",
+        "https://web.dev/articles/codelab-adapt-video-to-image-serving-based-on-network-quality"
+      ],
+      "api.NetworkInformation.effectiveType": [
+        "https://web.dev/articles/adaptive-loading-cds-2019"
+      ],
+      "api.Notification": [
+        "https://web.dev/articles/codelab-notifications-get-started"
+      ],
+      "api.OffscreenCanvas": [
+        "https://web.dev/articles/offscreen-canvas",
+        "https://web.dev/blog/baseline2023"
+      ],
+      "api.PageRevealEvent": [
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "api.PasswordCredential": [
+        "https://web.dev/articles/security-credential-management-save-forms"
+      ],
+      "api.PaymentRequest": [
+        "https://web.dev/articles/android-payment-apps-developers-guide"
+      ],
+      "api.Performance.measureUserAgentSpecificMemory": [
+        "https://web.dev/articles/monitor-total-page-memory-usage"
+      ],
+      "api.PerformanceElementTiming": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceEventTiming": [
+        "https://web.dev/articles/custom-metrics",
+        "https://web.dev/articles/fid"
+      ],
+      "api.PerformanceEventTiming.interactionId": [
+        "https://web.dev/articles/find-slow-interactions-in-the-field"
+      ],
+      "api.PerformanceLongAnimationFrameTiming": [
+        "https://web.dev/articles/custom-metrics",
+        "https://web.dev/articles/find-slow-interactions-in-the-field",
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "api.PerformanceLongTaskTiming": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceMark": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceNavigationTiming": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceObserver": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceResourceTiming": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PerformanceResourceTiming.contentType": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "api.PerformanceResourceTiming.responseStatus": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "api.PerformanceServerTiming": [
+        "https://web.dev/articles/custom-metrics"
+      ],
+      "api.PeriodicSyncManager": [
+        "https://web.dev/patterns/web-apps/periodic-background-sync"
+      ],
+      "api.Permissions": [
+        "https://web.dev/articles/camera-pan-tilt-zoom"
+      ],
+      "api.Picture-in-Picture_API": [
+        "https://web.dev/patterns/media/picture-in-picture"
+      ],
+      "api.PointerEvent.deviceProperties": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "api.PushEvent": [
+        "https://web.dev/articles/push-notifications-how-push-works"
+      ],
+      "api.PushEvent.PushEvent": [
+        "https://web.dev/blog/push-notifications-in-all-modern-browsers",
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "api.PushManager": [
+        "https://web.dev/articles/push-notifications-subscribing-a-user"
+      ],
+      "api.ReadableStream": [
+        "https://web.dev/articles/streams"
+      ],
+      "api.ReadableStream.async_iterable": [
+        "https://web.dev/blog/web-platform-02-2023"
+      ],
+      "api.ReadableStreamBYOBReader": [
+        "https://web.dev/blog/web-platform-06-2022"
+      ],
+      "api.ResizeObserver": [
+        "https://web.dev/articles/resize-observer"
+      ],
+      "api.ResizeObserverEntry.devicePixelContentBoxSize": [
+        "https://web.dev/articles/device-pixel-content-box"
+      ],
+      "api.SVGImageElement.crossOrigin": [
+        "https://web.dev/blog/web-platform-06-2023"
+      ],
+      "api.Sanitizer": [
+        "https://web.dev/articles/sanitizer",
+        "https://web.dev/blog/web-platform-08-2022"
+      ],
+      "api.Scheduler": [
+        "https://web.dev/blog/web-platform-08-2025"
+      ],
+      "api.Scheduler.yield": [
+        "https://web.dev/articles/optimize-long-tasks",
+        "https://web.dev/articles/top-cwv"
+      ],
+      "api.Scheduling.isInputPending": [
+        "https://web.dev/articles/optimize-long-tasks"
+      ],
+      "api.SerialPort.connected": [
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "api.ServiceWorkerGlobalScope.notificationclose_event": [
+        "https://web.dev/articles/push-notifications-common-notification-patterns"
+      ],
+      "api.ServiceWorkerRegistration.getNotifications": [
+        "https://web.dev/articles/push-notifications-common-notification-patterns"
+      ],
+      "api.StorageBucket": [
+        "https://web.dev/blog/web-platform-02-2024"
+      ],
+      "api.StorageManager": [
+        "https://web.dev/learn/pwa/offline-data"
+      ],
+      "api.StorageManager.getDirectory": [
+        "https://web.dev/articles/origin-private-file-system"
+      ],
+      "api.StorageManager.persisted": [
+        "https://web.dev/articles/persistent-storage"
+      ],
+      "api.SyncManager": [
+        "https://web.dev/articles/two-way-communication-guide"
+      ],
+      "api.TextEncoderStream": [
+        "https://web.dev/blog/web-platform-09-2022"
+      ],
+      "api.ToggleEvent": [
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "api.TransformStream": [
+        "https://web.dev/articles/streams",
+        "https://web.dev/blog/transformstream",
+        "https://web.dev/blog/web-platform-06-2022"
+      ],
+      "api.URLPattern": [
+        "https://web.dev/blog/web-platform-08-2025",
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "api.VideoEncoder": [
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "api.ViewTransition": [
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "api.WebSocketStream": [
+        "https://web.dev/blog/web-platform-04-2024"
+      ],
+      "api.WebTransport": [
+        "https://web.dev/blog/web-platform-06-2023"
+      ],
+      "api.Window.getScreenDetails": [
+        "https://web.dev/patterns/web-apps/multiple-screens"
+      ],
+      "api.Window.localStorage": [
+        "https://web.dev/learn/pwa/offline-data"
+      ],
+      "api.Window.screen": [
+        "https://web.dev/patterns/web-apps/multiple-screens"
+      ],
+      "api.Window.showDirectoryPicker": [
+        "https://web.dev/patterns/files/open-a-directory"
+      ],
+      "api.Window.showOpenFilePicker": [
+        "https://web.dev/patterns/files/open-one-or-multiple-files",
+        "https://web.dev/patterns/media/microphone-record",
+        "https://web.dev/patterns/media/screen-record"
+      ],
+      "api.Window.showSaveFilePicker": [
+        "https://web.dev/patterns/files/save-a-file"
+      ],
+      "api.WorkerNavigator.permissions": [
+        "https://web.dev/blog/web-platform-11-2024"
+      ],
+      "api.fetch": [
+        "https://web.dev/articles/introduction-to-fetch",
+        "https://web.dev/learn/forms/javascript"
+      ],
+      "api.linkIconSVG": [
+        "https://web.dev/articles/building/an-adaptive-favicon"
+      ],
+      "api.structuredClone": [
+        "https://web.dev/articles/structured-clone",
+        "https://web.dev/blog/web-platform-02-2022"
+      ],
+      "css.at-rules.container": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/blog/cq-stable",
+        "https://web.dev/blog/interop-2023-wrapup",
+        "https://web.dev/blog/interop2023-update",
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-02-2023",
+        "https://web.dev/blog/web-platform-08-2022",
+        "https://web.dev/blog/web-platform-09-2022"
+      ],
+      "css.at-rules.container.style_queries_for_custom_properties": [
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "css.at-rules.font-face.ascent-override": [
+        "https://web.dev/articles/css-size-adjust"
+      ],
+      "css.at-rules.font-face.descent-override": [
+        "https://web.dev/articles/css-size-adjust"
+      ],
+      "css.at-rules.font-face.font-display": [
+        "https://web.dev/articles/optimize-webfont-loading"
+      ],
+      "css.at-rules.font-face.line-gap-override": [
+        "https://web.dev/articles/css-size-adjust"
+      ],
+      "css.at-rules.font-face.size-adjust": [
+        "https://web.dev/articles/css-size-adjust"
+      ],
+      "css.at-rules.function": [
+        "https://web.dev/blog/web-platform-08-2025"
+      ],
+      "css.at-rules.keyframes": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.at-rules.layer": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/blog/interop-2022-wrapup",
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-02-2022",
+        "https://web.dev/blog/web-platform-03-2022"
+      ],
+      "css.at-rules.media": [
+        "https://web.dev/learn/design/media-features"
+      ],
+      "css.at-rules.media.-webkit-transform-3d": [
+        "https://web.dev/articles/3d-css"
+      ],
+      "css.at-rules.media.custom": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.at-rules.media.overflow-inline": [
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "css.at-rules.media.picture-in-picture": [
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.at-rules.media.prefers-color-scheme": [
+        "https://web.dev/articles/color-scheme",
+        "https://web.dev/case-studies/terra-dark-mode",
+        "https://web.dev/learn/accessibility/color-contrast"
+      ],
+      "css.at-rules.media.prefers-contrast": [
+        "https://web.dev/blog/web-platform-05-2022",
+        "https://web.dev/learn/accessibility/color-contrast",
+        "https://web.dev/learn/design/accessibility"
+      ],
+      "css.at-rules.media.prefers-reduced-data": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.at-rules.media.prefers-reduced-motion": [
+        "https://web.dev/articles/prefers-reduced-motion",
+        "https://web.dev/learn/accessibility/motion",
+        "https://web.dev/learn/design/accessibility"
+      ],
+      "css.at-rules.media.range_syntax": [
+        "https://web.dev/articles/media-query-range-syntax",
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-06-2022",
+        "https://web.dev/blog/web-platform-08-2022"
+      ],
+      "css.at-rules.media.ranges": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.at-rules.media.update": [
+        "https://web.dev/blog/web-platform-05-2022",
+        "https://web.dev/blog/web-platform-05-2023",
+        "https://web.dev/blog/web-platform-06-2022"
+      ],
+      "css.at-rules.nest": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.at-rules.page.top-left-corner": [
+        "https://web.dev/blog/web-platform-11-2024"
+      ],
+      "css.at-rules.property": [
+        "https://web.dev/articles/css-border-animations",
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "css.at-rules.scope": [
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.at-rules.starting-style": [
+        "https://web.dev/blog/baseline-entry-animations",
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "css.at-rules.view-transition": [
+        "https://web.dev/blog/web-platform-06-2024"
+      ],
+      "css.properties.accent-color": [
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-03-2022",
+        "https://web.dev/learn/forms/fields"
+      ],
+      "css.properties.align-content.block_context": [
+        "https://web.dev/blog/align-content-block",
+        "https://web.dev/blog/web-platform-04-2024"
+      ],
+      "css.properties.align-items.flex_context.last_baseline": [
+        "https://web.dev/blog/last-baseline"
+      ],
+      "css.properties.align-self.position_absolute_context": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.animation": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-composition": [
+        "https://web.dev/blog/web-platform-04-2023"
+      ],
+      "css.properties.animation-delay": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-direction": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-duration": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-fill-mode": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-iteration-count": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-play-state": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.animation-timeline": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.animation-timing-function": [
+        "https://web.dev/learn/css/animations"
+      ],
+      "css.properties.aspect-ratio": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/articles/aspect-ratio",
+        "https://web.dev/articles/top-cwv"
+      ],
+      "css.properties.backdrop-filter": [
+        "https://web.dev/articles/backdrop-filter",
+        "https://web.dev/articles/building/a-dialog-component",
+        "https://web.dev/blog/web-platform-07-2022",
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.properties.background-attachment": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-blend-mode": [
+        "https://web.dev/learn/css/blend-modes"
+      ],
+      "css.properties.background-clip": [
+        "https://web.dev/articles/css-border-animations",
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-color": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-image": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-origin": [
+        "https://web.dev/articles/css-border-animations",
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-position": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-repeat": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.background-size": [
+        "https://web.dev/learn/css/backgrounds"
+      ],
+      "css.properties.border": [
+        "https://web.dev/learn/css/borders"
+      ],
+      "css.properties.border-image": [
+        "https://web.dev/articles/css-border-animations"
+      ],
+      "css.properties.border-image-source": [
+        "https://web.dev/articles/conic-gradient-border"
+      ],
+      "css.properties.box-decoration-break": [
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "css.properties.box-shadow": [
+        "https://web.dev/learn/css/shadows"
+      ],
+      "css.properties.caret-animation": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.clip-path": [
+        "https://web.dev/articles/css-clipping"
+      ],
+      "css.properties.color-scheme": [
+        "https://web.dev/articles/color-scheme",
+        "https://web.dev/blog/web-platform-01-2022"
+      ],
+      "css.properties.contain": [
+        "https://web.dev/blog/web-platform-03-2022"
+      ],
+      "css.properties.contain-intrinsic-size": [
+        "https://web.dev/blog/web-platform-11-2022"
+      ],
+      "css.properties.container": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.container-type": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/blog/baseline2023"
+      ],
+      "css.properties.content-visibility": [
+        "https://web.dev/articles/content-visibility",
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.properties.content.alt_text": [
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "css.properties.corner-shape": [
+        "https://web.dev/blog/web-platform-08-2025"
+      ],
+      "css.properties.direction": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.drop-shadow": [
+        "https://web.dev/learn/css/shadows"
+      ],
+      "css.properties.field-sizing": [
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.properties.filter": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.properties.font-family": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.font-size": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.font-size-adjust": [
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "css.properties.font-style": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.font-variant": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.font-variant-alternates": [
+        "https://web.dev/blog/web-platform-12-2022"
+      ],
+      "css.properties.font-variant-emoji": [
+        "https://web.dev/blog/web-platform-07-2025"
+      ],
+      "css.properties.font-variation-settings": [
+        "https://web.dev/articles/variable-fonts-in-real-life"
+      ],
+      "css.properties.font-weight": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.gap": [
+        "https://web.dev/blog/flexbox-gap"
+      ],
+      "css.properties.gap.flex_context": [
+        "https://web.dev/articles/bridging-the-gap"
+      ],
+      "css.properties.grid": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/learn/css/grid"
+      ],
+      "css.properties.grid-template": [
+        "https://web.dev/learn/css/grid"
+      ],
+      "css.properties.grid-template-columns.animation": [
+        "https://web.dev/articles/css-animated-grid-layouts",
+        "https://web.dev/blog/web-platform-06-2022",
+        "https://web.dev/blog/web-platform-09-2022",
+        "https://web.dev/blog/web-platform-10-2022"
+      ],
+      "css.properties.grid-template-columns.minmax": [
+        "https://web.dev/learn/css/grid"
+      ],
+      "css.properties.grid-template-columns.repeat": [
+        "https://web.dev/learn/css/grid"
+      ],
+      "css.properties.grid-template-columns.subgrid": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/interop-2022-wrapup",
+        "https://web.dev/blog/interop2023-update",
+        "https://web.dev/blog/web-platform-06-2022",
+        "https://web.dev/blog/web-platform-09-2022"
+      ],
+      "css.properties.grid-template-rows.subgrid": [
+        "https://web.dev/blog/interop-2023-wrapup",
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.properties.hyphenate-limit-chars": [
+        "https://web.dev/blog/web-platform-01-2023"
+      ],
+      "css.properties.initial-letter": [
+        "https://web.dev/blog/web-platform-02-2023"
+      ],
+      "css.properties.inset-inline": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.interpolate-size": [
+        "https://web.dev/articles/baseline-in-action-container-queries",
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "css.properties.isolation": [
+        "https://web.dev/learn/css/blend-modes"
+      ],
+      "css.properties.justify-content.flex_context.safe_unsafe": [
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "css.properties.letter-spacing": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.line-height": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.list-style-position": [
+        "https://web.dev/learn/css/lists"
+      ],
+      "css.properties.margin-block": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.margin-trim": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.max-inline-size": [
+        "https://web.dev/learn/design/responsive-images"
+      ],
+      "css.properties.mix-blend-mode": [
+        "https://web.dev/learn/css/blend-modes"
+      ],
+      "css.properties.mix-blend-mode.plus-lighter": [
+        "https://web.dev/blog/web-platform-03-2022"
+      ],
+      "css.properties.object-fit": [
+        "https://web.dev/learn/design/responsive-images"
+      ],
+      "css.properties.object-position": [
+        "https://web.dev/learn/design/responsive-images"
+      ],
+      "css.properties.overflow-block": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.overflow-inline": [
+        "https://web.dev/learn/css/overflow"
+      ],
+      "css.properties.overflow-wrap": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.overscroll-behavior": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/learn/css/overflow"
+      ],
+      "css.properties.padding-inline": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.perspective": [
+        "https://web.dev/articles/3d-css",
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.properties.position-anchor": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.rotate": [
+        "https://web.dev/articles/css-individual-transform-properties"
+      ],
+      "css.properties.ruby-align": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "css.properties.scale": [
+        "https://web.dev/articles/css-individual-transform-properties",
+        "https://web.dev/blog/web-platform-08-2022"
+      ],
+      "css.properties.scroll-behavior": [
+        "https://web.dev/learn/css/overflow"
+      ],
+      "css.properties.scroll-snap-align": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.scroll-snap-stop": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023",
+        "https://web.dev/blog/web-platform-07-2022"
+      ],
+      "css.properties.scroll-snap-type": [
+        "https://web.dev/articles/6-css-snippets-every-front-end-developer-should-know-in-2023"
+      ],
+      "css.properties.scrollbar-color": [
+        "https://web.dev/blog/web-platform-01-2024"
+      ],
+      "css.properties.scrollbar-gutter": [
+        "https://web.dev/blog/web-platform-02-2022"
+      ],
+      "css.properties.text-align": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-decoration": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-indent": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-orientation": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-overflow": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-shadow": [
+        "https://web.dev/learn/css/shadows",
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-spacing-trim": [
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.properties.text-transform": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-wrap": [
+        "https://web.dev/blog/web-platform-05-2023",
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.text-wrap.balance": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "css.properties.text-wrap.pretty": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.properties.text-wrap.stable": [
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "css.properties.transform": [
+        "https://web.dev/learn/css/transitions"
+      ],
+      "css.properties.transform-box.content-box": [
+        "https://web.dev/blog/web-platform-04-2024"
+      ],
+      "css.properties.transition-behavior": [
+        "https://web.dev/blog/baseline-entry-animations",
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "css.properties.transition-behavior.transitionable_display": [
+        "https://web.dev/articles/baseline-in-action-container-queries"
+      ],
+      "css.properties.transition-property": [
+        "https://web.dev/learn/css/transitions"
+      ],
+      "css.properties.white-space": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.will-change": [
+        "https://web.dev/articles/animations-and-performance"
+      ],
+      "css.properties.word-break": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.word-spacing": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.properties.writing-mode": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.selectors.active": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.attribute": [
+        "https://web.dev/learn/css/selectors"
+      ],
+      "css.selectors.before.nested_marker": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.selectors.checked": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.class": [
+        "https://web.dev/learn/css/selectors"
+      ],
+      "css.selectors.cue": [
+        "https://web.dev/learn/css/pseudo-elements"
+      ],
+      "css.selectors.details-content": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.selectors.disabled": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.empty": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.first-child": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.first-letter": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.selectors.first-of-type": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.focus": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.focus-visible": [
+        "https://web.dev/articles/website-navigation",
+        "https://web.dev/blog/web-platform-03-2022"
+      ],
+      "css.selectors.has": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/articles/building/a-dialog-component",
+        "https://web.dev/articles/building/a-tooltip-component",
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/interop-2023-wrapup",
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-08-2022",
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "css.selectors.hover": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.id": [
+        "https://web.dev/learn/css/selectors"
+      ],
+      "css.selectors.is": [
+        "https://web.dev/articles/css-is-and-where",
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.link": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.marker": [
+        "https://web.dev/articles/css-marker-pseudo-element"
+      ],
+      "css.selectors.modal": [
+        "https://web.dev/articles/is-it-modal",
+        "https://web.dev/blog/web-platform-07-2022",
+        "https://web.dev/blog/web-platform-08-2022"
+      ],
+      "css.selectors.nesting": [
+        "https://web.dev/articles/5-css-snippets-every-front-end-developer-should-know-in-2024",
+        "https://web.dev/blog/baseline-entry-animations",
+        "https://web.dev/blog/web-platform-04-2023",
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "css.selectors.not": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.nth-child": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.nth-child.of_syntax": [
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "css.selectors.only-child": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.only-of-type": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.placeholder": [
+        "https://web.dev/learn/css/pseudo-elements"
+      ],
+      "css.selectors.placeholder-shown": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.selection": [
+        "https://web.dev/learn/css/typography"
+      ],
+      "css.selectors.target": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.target-text": [
+        "https://web.dev/articles/text-fragments",
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "css.selectors.type": [
+        "https://web.dev/learn/css/selectors"
+      ],
+      "css.selectors.universal": [
+        "https://web.dev/learn/css/selectors"
+      ],
+      "css.selectors.valid": [
+        "https://web.dev/learn/css/pseudo-classes"
+      ],
+      "css.selectors.where": [
+        "https://web.dev/articles/css-is-and-where"
+      ],
+      "css.types.angle": [
+        "https://web.dev/learn/css/color"
+      ],
+      "css.types.calc": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.calc-size": [
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "css.types.clamp": [
+        "https://web.dev/articles/min-max-clamp",
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.color.color": [
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/color-spaces-and-functions",
+        "https://web.dev/blog/interop-2023-wrapup",
+        "https://web.dev/blog/interop2023-update",
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.types.color.color-contrast": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.types.color.color-mix": [
+        "https://web.dev/blog/color-spaces-and-functions",
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-03-2023",
+        "https://web.dev/blog/web-platform-05-2023"
+      ],
+      "css.types.color.color.relative_syntax": [
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "css.types.color.contrast-color": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.types.color.hwb": [
+        "https://web.dev/blog/state-of-css-2022",
+        "https://web.dev/blog/web-platform-01-2022",
+        "https://web.dev/blog/web-platform-03-2022",
+        "https://web.dev/blog/web-platform-04-2022"
+      ],
+      "css.types.color.lch": [
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/color-spaces-and-functions"
+      ],
+      "css.types.color.light-dark": [
+        "https://web.dev/articles/light-dark",
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "css.types.cos": [
+        "https://web.dev/articles/css-trig-functions"
+      ],
+      "css.types.easing-function.linear-function": [
+        "https://web.dev/blog/web-platform-04-2023",
+        "https://web.dev/blog/web-platform-05-2023",
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "css.types.filter-function.brightness": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.contrast": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.drop-shadow": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.grayscale": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.hue-rotate": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.invert": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.opacity": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.saturate": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.filter-function.sepia": [
+        "https://web.dev/learn/css/filters"
+      ],
+      "css.types.image.gradient.conic-gradient": [
+        "https://web.dev/articles/conic-gradient-border",
+        "https://web.dev/learn/css/gradients"
+      ],
+      "css.types.image.gradient.linear-gradient": [
+        "https://web.dev/articles/css-gradient-generator",
+        "https://web.dev/learn/css/gradients"
+      ],
+      "css.types.image.gradient.linear-gradient.interpolation_color_space": [
+        "https://web.dev/blog/web-platform-06-2024"
+      ],
+      "css.types.image.gradient.radial-gradient": [
+        "https://web.dev/learn/css/gradients"
+      ],
+      "css.types.length.container_query_length_units": [
+        "https://web.dev/blog/interop2023-update"
+      ],
+      "css.types.length.dvb": [
+        "https://web.dev/articles/building/a-dialog-component"
+      ],
+      "css.types.length.dvh": [
+        "https://web.dev/blog/state-of-css-2022"
+      ],
+      "css.types.length.lh": [
+        "https://web.dev/blog/web-platform-01-2023"
+      ],
+      "css.types.length.viewport_percentage_units_large": [
+        "https://web.dev/blog/interop-2022-wrapup",
+        "https://web.dev/blog/viewport-units",
+        "https://web.dev/blog/web-platform-11-2022"
+      ],
+      "css.types.length.vw": [
+        "https://web.dev/blog/viewport-units"
+      ],
+      "css.types.max": [
+        "https://web.dev/articles/min-max-clamp"
+      ],
+      "css.types.min": [
+        "https://web.dev/articles/min-max-clamp",
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.progress": [
+        "https://web.dev/blog/web-platform-09-2025"
+      ],
+      "css.types.sin": [
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/web-platform-12-2022"
+      ],
+      "css.types.transform-function.rotate": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.transform-function.rotate3d": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.transform-function.scale": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.transform-function.skew": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.types.transform-function.translate": [
+        "https://web.dev/learn/css/functions"
+      ],
+      "css.will-change": [
+        "https://web.dev/articles/simplify-paint-complexity-and-reduce-paint-areas"
+      ],
+      "html.elements.button": [
+        "https://web.dev/articles/building/a-button-component"
+      ],
+      "html.elements.button.command.request-close": [
+        "https://web.dev/blog/web-platform-08-2025"
+      ],
+      "html.elements.details.name": [
+        "https://web.dev/blog/web-platform-09-2024",
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "html.elements.dialog": [
+        "https://web.dev/articles/building/a-dialog-component",
+        "https://web.dev/blog/interop-2022-wrapup",
+        "https://web.dev/blog/web-platform-03-2022"
+      ],
+      "html.elements.dialog.closedby": [
+        "https://web.dev/blog/web-platform-07-2025"
+      ],
+      "html.elements.form": [
+        "https://web.dev/patterns/web-apps/contacts"
+      ],
+      "html.elements.iframe.credentialless": [
+        "https://web.dev/blog/web-platform-02-2023"
+      ],
+      "html.elements.iframe.loading": [
+        "https://web.dev/articles/browser-level-image-lazy-loading",
+        "https://web.dev/articles/iframe-lazy-loading",
+        "https://web.dev/blog/web-platform-12-2023"
+      ],
+      "html.elements.img.loading": [
+        "https://web.dev/articles/browser-level-image-lazy-loading"
+      ],
+      "html.elements.input": [
+        "https://web.dev/learn/forms/form",
+        "https://web.dev/patterns/files/open-one-or-multiple-files"
+      ],
+      "html.elements.link.rel.modulepreload": [
+        "https://web.dev/articles/modulepreload",
+        "https://web.dev/blog/baseline2023"
+      ],
+      "html.elements.link.rel.preload": [
+        "https://web.dev/articles/preload-critical-assets",
+        "https://web.dev/articles/preload-responsive-images"
+      ],
+      "html.elements.script.type.importmap": [
+        "https://web.dev/blog/import-maps-in-all-modern-browsers",
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "html.elements.script.type.speculationrules": [
+        "https://web.dev/articles/top-cwv"
+      ],
+      "html.elements.select.hr_in_select": [
+        "https://web.dev/blog/web-platform-01-2024"
+      ],
+      "html.elements.source.height": [
+        "https://web.dev/blog/web-platform-12-2022"
+      ],
+      "html.elements.template.shadowrootmode": [
+        "https://web.dev/blog/web-platform-02-2024"
+      ],
+      "html.global_attributes.autocapitalize": [
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "html.global_attributes.autocomplete": [
+        "https://web.dev/learn/design/interaction",
+        "https://web.dev/learn/forms/auto"
+      ],
+      "html.global_attributes.hidden.until-found_value": [
+        "https://web.dev/blog/web-platform-04-2022",
+        "https://web.dev/blog/web-platform-05-2022"
+      ],
+      "html.global_attributes.inert": [
+        "https://web.dev/articles/inert",
+        "https://web.dev/blog/baseline2023",
+        "https://web.dev/blog/interop2023-update",
+        "https://web.dev/blog/web-platform-04-2023",
+        "https://web.dev/blog/web-platform-05-2022"
+      ],
+      "html.global_attributes.inputmode": [
+        "https://web.dev/learn/design/interaction"
+      ],
+      "html.global_attributes.tabindex": [
+        "https://web.dev/articles/control-focus-with-tabindex",
+        "https://web.dev/articles/using-tabindex"
+      ],
+      "html.global_attributes.translate": [
+        "https://web.dev/blog/web-platform-03-2023"
+      ],
+      "html.manifest.name": [
+        "https://web.dev/articles/add-manifest"
+      ],
+      "html.manifest.related_applications": [
+        "https://web.dev/learn/pwa/detection"
+      ],
+      "html.manifest.share_target": [
+        "https://web.dev/patterns/files/receive-shared-files"
+      ],
+      "html.manifest.shortcuts": [
+        "https://web.dev/articles/app-shortcuts",
+        "https://web.dev/patterns/web-apps/shortcuts"
+      ],
+      "http.headers.Access-Control-Allow-Origin": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.Content-Security-Policy": [
+        "https://web.dev/articles/csp"
+      ],
+      "http.headers.Content-Security-Policy.prefetch-src": [
+        "https://web.dev/blog/web-platform-01-2023"
+      ],
+      "http.headers.Content-Security-Policy.report-to": [
+        "https://web.dev/articles/fixing-mixed-content"
+      ],
+      "http.headers.Content-Security-Policy.strict-dynamic": [
+        "https://web.dev/articles/strict-csp"
+      ],
+      "http.headers.Content-Security-Policy.trusted-types": [
+        "https://web.dev/articles/trusted-types"
+      ],
+      "http.headers.Cross-Origin-Embedder-Policy": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.Cross-Origin-Opener-Policy": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.Cross-Origin-Resource-Policy": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.Save-Data": [
+        "https://web.dev/articles/adaptive-loading-cds-2019"
+      ],
+      "http.headers.Sec-Fetch-Dest": [
+        "https://web.dev/articles/fetch-metadata"
+      ],
+      "http.headers.Sec-Fetch-Mode": [
+        "https://web.dev/articles/fetch-metadata"
+      ],
+      "http.headers.Sec-Fetch-Site": [
+        "https://web.dev/articles/fetch-metadata"
+      ],
+      "http.headers.Set-Cookie.Partitioned": [
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "http.headers.Set-Cookie.SameSite": [
+        "https://web.dev/articles/samesite-cookie-recipes",
+        "https://web.dev/articles/samesite-cookies-explained"
+      ],
+      "http.headers.Set-Cookie.SameSite.Lax_default": [
+        "https://web.dev/articles/samesite-cookies-explained"
+      ],
+      "http.headers.Strict-Transport-Security": [
+        "https://web.dev/articles/security-headers",
+        "https://web.dev/blog/bbc-hsts"
+      ],
+      "http.headers.Upgrade-Insecure-Requests": [
+        "https://web.dev/articles/fixing-mixed-content"
+      ],
+      "http.headers.X-Content-Type-Options": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.X-Frame-Options": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.csp.Content-Security-Policy": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.headers.csp.Content-Security-Policy.trusted-types": [
+        "https://web.dev/articles/security-headers"
+      ],
+      "http.status.103.preload": [
+        "https://web.dev/blog/web-platform-02-2024"
+      ],
+      "javascript.builtins.Array.findLast": [
+        "https://web.dev/blog/web-platform-08-2022"
+      ],
+      "javascript.builtins.Array.with": [
+        "https://web.dev/blog/array-with"
+      ],
+      "javascript.builtins.ArrayBuffer.detached": [
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "javascript.builtins.ArrayBuffer.resizable": [
+        "https://web.dev/blog/web-platform-07-2024"
+      ],
+      "javascript.builtins.ArrayBuffer.transfer": [
+        "https://web.dev/blog/web-platform-01-2024"
+      ],
+      "javascript.builtins.Intl.DurationFormat": [
+        "https://web.dev/blog/web-platform-09-2024"
+      ],
+      "javascript.builtins.Intl.NumberFormat.formatRange": [
+        "https://web.dev/blog/baseline2023"
+      ],
+      "javascript.builtins.Intl.Segmenter.Segmenter": [
+        "https://web.dev/blog/intl-segmenter",
+        "https://web.dev/blog/web-platform-04-2024"
+      ],
+      "javascript.builtins.Iterator.forEach": [
+        "https://web.dev/blog/web-platform-10-2024"
+      ],
+      "javascript.builtins.Object.groupBy": [
+        "https://web.dev/blog/web-platform-03-2024"
+      ],
+      "javascript.builtins.Promise": [
+        "https://web.dev/articles/promises"
+      ],
+      "javascript.builtins.Promise.try": [
+        "https://web.dev/blog/web-platform-08-2024"
+      ],
+      "javascript.builtins.Set.difference": [
+        "https://web.dev/blog/web-platform-02-2024"
+      ],
+      "javascript.builtins.Set.intersection": [
+        "https://web.dev/blog/web-platform-06-2024"
+      ],
+      "javascript.builtins.Uint8Array.fromBase64": [
+        "https://web.dev/blog/web-platform-09-2025",
+        "https://web.dev/blog/web-platform-11-2024",
+        "https://web.dev/blog/web-platform-12-2024"
+      ],
+      "javascript.builtins.WebAssembly": [
+        "https://web.dev/articles/what-is-webassembly"
+      ],
+      "javascript.statements.async_function": [
+        "https://web.dev/articles/async-functions"
+      ],
+      "javascript.statements.worker_support": [
+        "https://web.dev/articles/es-modules-in-sw"
+      ],
+      "svg.elements.filter": [
+        "https://web.dev/learn/css/filters"
+      ]
+    },
+    "developer.chrome.com": {
+      "api.CSS.supports": [
+        "https://developer.chrome.com/docs/css-ui/migrate-hd-color"
+      ],
+      "api.CaptureController.setFocusBehavior": [
+        "https://developer.chrome.com/docs/web-platform/conditional-focus"
+      ],
+      "api.CropTarget": [
+        "https://developer.chrome.com/docs/web-platform/region-capture"
+      ],
+      "api.Document.activeViewTransition": [
+        "https://developer.chrome.com/blog/view-transitions-in-2025"
+      ],
+      "api.Document.freeze_event": [
+        "https://developer.chrome.com/docs/web-platform/page-lifecycle-api"
+      ],
+      "api.Document.scrollend_event": [
+        "https://developer.chrome.com/blog/scrollend-a-new-javascript-event"
+      ],
+      "api.Document.startViewTransition": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/view-transitions-in-2025",
+        "https://developer.chrome.com/docs/web-platform/view-transitions"
+      ],
+      "api.DocumentPictureInPicture": [
+        "https://developer.chrome.com/docs/web-platform/document-picture-in-picture"
+      ],
+      "api.Element.startViewTransition": [
+        "https://developer.chrome.com/blog/view-transitions-in-2025"
+      ],
+      "api.EyeDropper.EyeDropper": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/eyedropper"
+      ],
+      "api.Keyboard.lock": [
+        "https://developer.chrome.com/blog/better-full-screen-mode"
+      ],
+      "api.MediaDevices.getDisplayMedia.monitorTypeSurfaces_option": [
+        "https://developer.chrome.com/docs/web-platform/screen-sharing-controls"
+      ],
+      "api.MediaDevices.getDisplayMedia.systemAudio_option": [
+        "https://developer.chrome.com/docs/web-platform/screen-sharing-controls"
+      ],
+      "api.MediaDevices.setCaptureHandleConfig": [
+        "https://developer.chrome.com/docs/web-platform/capture-handle"
+      ],
+      "api.MediaTrackConstraints.displaySurface": [
+        "https://developer.chrome.com/docs/web-platform/screen-sharing-controls"
+      ],
+      "api.Navigation": [
+        "https://developer.chrome.com/docs/web-platform/navigation-api"
+      ],
+      "api.NavigationActivation": [
+        "https://developer.chrome.com/docs/web-platform/view-transitions/cross-document"
+      ],
+      "api.PageSwapEvent": [
+        "https://developer.chrome.com/docs/web-platform/view-transitions/cross-document"
+      ],
+      "api.PerformanceLongAnimationFrameTiming": [
+        "https://developer.chrome.com/blog/loaf-has-shipped",
+        "https://developer.chrome.com/docs/web-platform/long-animation-frames"
+      ],
+      "api.PerformanceLongTaskTiming": [
+        "https://developer.chrome.com/docs/web-platform/long-animation-frames"
+      ],
+      "api.PublicKeyCredential.signalAllAcceptedCredentials_static": [
+        "https://developer.chrome.com/docs/identity/webauthn-signal-api"
+      ],
+      "api.PublicKeyCredential.signalCurrentUserDetails_static": [
+        "https://developer.chrome.com/docs/identity/webauthn-signal-api"
+      ],
+      "api.PublicKeyCredential.signalUnknownCredential_static": [
+        "https://developer.chrome.com/docs/identity/webauthn-signal-api"
+      ],
+      "api.RestrictionTarget": [
+        "https://developer.chrome.com/docs/web-platform/element-capture"
+      ],
+      "api.Scheduler.yield": [
+        "https://developer.chrome.com/blog/use-scheduler-yield"
+      ],
+      "api.Scheduling.isInputPending": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/isinputpending"
+      ],
+      "api.StorageManager.getDirectory": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/file-system-access"
+      ],
+      "api.Viewport.segments": [
+        "https://developer.chrome.com/blog/viewport-segments-api-shipped"
+      ],
+      "api.VirtualKeyboard": [
+        "https://developer.chrome.com/docs/web-platform/virtual-keyboard"
+      ],
+      "api.WebTransport": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/webtransport"
+      ],
+      "api.Window.launchQueue": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/file-handling"
+      ],
+      "api.Window.matchMedia": [
+        "https://developer.chrome.com/docs/css-ui/migrate-hd-color"
+      ],
+      "api.Window.queryLocalFonts": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/local-fonts"
+      ],
+      "api.Window.showOpenFilePicker": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/file-system-access"
+      ],
+      "api.viewTransition.waitUntil": [
+        "https://developer.chrome.com/blog/view-transitions-in-2025"
+      ],
+      "css.??": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.at-rules.color-profile": [
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.at-rules.container": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/style-queries"
+      ],
+      "css.at-rules.container.style_queries_for_custom_properties": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/style-queries"
+      ],
+      "css.at-rules.layer": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.at-rules.media.color-gamut": [
+        "https://developer.chrome.com/docs/css-ui/migrate-hd-color"
+      ],
+      "css.at-rules.media.dynamic-range": [
+        "https://developer.chrome.com/docs/css-ui/migrate-hd-color"
+      ],
+      "css.at-rules.media.prefers-reduced-transparency": [
+        "https://developer.chrome.com/blog/css-prefers-reduced-transparency"
+      ],
+      "css.at-rules.media.update": [
+        "https://developer.chrome.com/blog/css-update-media-query"
+      ],
+      "css.at-rules.scope": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/at-scope"
+      ],
+      "css.at-rules.supports": [
+        "https://developer.chrome.com/docs/css-ui/migrate-hd-color"
+      ],
+      "css.at-rules.view-transition": [
+        "https://developer.chrome.com/blog/google-ai-mode-view-transitions-case-study",
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2024",
+        "https://developer.chrome.com/blog/view-transitions-update-io24",
+        "https://developer.chrome.com/docs/web-platform/view-transitions",
+        "https://developer.chrome.com/docs/web-platform/view-transitions/cross-document"
+      ],
+      "css.properties.align-content.block_context": [
+        "https://developer.chrome.com/blog/align-content"
+      ],
+      "css.properties.animation-composition": [
+        "https://developer.chrome.com/docs/css-ui/css-animation-composition"
+      ],
+      "css.properties.animation-timeline": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/scroll-animation-performance-case-study",
+        "https://developer.chrome.com/blog/scroll-driven-animations-video-course",
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/scroll-driven-animations"
+      ],
+      "css.properties.custom-property.env.safe-area-inset-bottom": [
+        "https://developer.chrome.com/docs/css-ui/edge-to-edge"
+      ],
+      "css.properties.field-sizing": [
+        "https://developer.chrome.com/docs/css-ui/css-field-sizing"
+      ],
+      "css.properties.grid-template-columns.subgrid": [
+        "https://developer.chrome.com/blog/css-wrapped-2023"
+      ],
+      "css.properties.initial-letter": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.properties.interpolate-size": [
+        "https://developer.chrome.com/docs/css-ui/animate-to-height-auto"
+      ],
+      "css.properties.scrollbar-color": [
+        "https://developer.chrome.com/docs/css-ui/scrollbar-styling"
+      ],
+      "css.properties.text-wrap.balance": [
+        "https://developer.chrome.com/docs/css-ui/css-text-wrap-balance"
+      ],
+      "css.properties.translate": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.properties.view-transition-class": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2024",
+        "https://developer.chrome.com/blog/view-transitions-update-io24",
+        "https://developer.chrome.com/docs/web-platform/view-transitions/same-document"
+      ],
+      "css.properties.view-transition-group": [
+        "https://developer.chrome.com/blog/view-transitions-in-2025",
+        "https://developer.chrome.com/docs/css-ui/view-transitions/nested-view-transition-groups"
+      ],
+      "css.properties.view-transition-name": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2024",
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.properties.view-transition-name.match-element": [
+        "https://developer.chrome.com/blog/view-transitions-in-2025"
+      ],
+      "css.selectors.active-view-transition": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2024",
+        "https://developer.chrome.com/blog/view-transitions-update-io24",
+        "https://developer.chrome.com/docs/web-platform/view-transitions/same-document"
+      ],
+      "css.selectors.backdrop.inherit_from_originating_element": [
+        "https://developer.chrome.com/blog/css-backdrop-inheritance"
+      ],
+      "css.selectors.details-content": [
+        "https://developer.chrome.com/blog/styling-details"
+      ],
+      "css.selectors.has": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.selectors.nesting": [
+        "https://developer.chrome.com/blog/css-nesting-relaxed-syntax-update",
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/css-nesting"
+      ],
+      "css.selectors.nth-child.of_syntax": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/css-nth-child-of-s"
+      ],
+      "css.selectors.scroll-button": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2025-recap"
+      ],
+      "css.selectors.scroll-marker": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2025-recap"
+      ],
+      "css.types.calc-size": [
+        "https://developer.chrome.com/docs/css-ui/animate-to-height-auto"
+      ],
+      "css.types.color.color": [
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.types.color.color-mix": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/css-color-mix"
+      ],
+      "css.types.color.hsl": [
+        "https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide"
+      ],
+      "css.types.color.hwb": [
+        "https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide"
+      ],
+      "css.types.color.lab": [
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.types.color.lch": [
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.types.color.oklab": [
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.types.color.oklch": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023",
+        "https://developer.chrome.com/docs/css-ui/access-colors-spaces"
+      ],
+      "css.types.color.rgb": [
+        "https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide"
+      ],
+      "css.types.color.rgb_hexadecimal_notation": [
+        "https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide"
+      ],
+      "css.types.cos": [
+        "https://developer.chrome.com/blog/css-wrapped-2023"
+      ],
+      "css.types.easing-function.linear-function": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/docs/css-ui/css-linear-easing-function"
+      ],
+      "css.types.length.viewport_percentage_units_large": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "css.types.sin": [
+        "https://developer.chrome.com/blog/whats-new-css-ui-2023"
+      ],
+      "html.elements.details.name": [
+        "https://developer.chrome.com/blog/css-wrapped-2023",
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2024",
+        "https://developer.chrome.com/docs/css-ui/exclusive-accordion"
+      ],
+      "html.elements.link.rel.expect": [
+        "https://developer.chrome.com/docs/web-platform/view-transitions/cross-document"
+      ],
+      "html.elements.script.type.speculationrules": [
+        "https://developer.chrome.com/blog/search-speculation-rules",
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "html.elements.script.type.speculationrules.eagerness": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "html.elements.script.type.speculationrules.tag": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "html.elements.script.type.speculationrules.target_hint": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "html.global_attributes.popover": [
+        "https://developer.chrome.com/blog/introducing-popover-api"
+      ],
+      "html.global_attributes.popover.hint": [
+        "https://developer.chrome.com/blog/new-in-web-ui-io-2025-recap"
+      ],
+      "html.manifest.launch_handler": [
+        "https://developer.chrome.com/docs/web-platform/launch-handler"
+      ],
+      "http.headers.Clear-Site-Data.prefetchCache": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "http.headers.No-Vary-Search": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "http.headers.Speculation-Rules": [
+        "https://developer.chrome.com/docs/web-platform/prerender-pages"
+      ],
+      "http.headers.Use-As-Dictionary": [
+        "https://developer.chrome.com/blog/search-compression-dictionaries"
+      ],
+      "http.status.103.preconnect": [
+        "https://developer.chrome.com/docs/web-platform/early-hints"
+      ],
+      "http.status.103.preload": [
+        "https://developer.chrome.com/docs/web-platform/early-hints"
+      ],
+      "webassembly.garbage-collection": [
+        "https://developer.chrome.com/blog/wasmgc"
+      ]
+    }
+  }
+}

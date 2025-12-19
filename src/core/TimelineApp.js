@@ -12,6 +12,7 @@ import { ScrollManager } from './ScrollManager.js';
 import developerSignalsData from '../../data/developer-signals.json' with { type: "json" };
 import interopData from '../../data/interop.json' with { type: "json" };
 import mdnDocsData from '../../data/mdn.json' with { type: "json" };
+import chromeContentData from '../../data/chrome-content.json' with { type: "json" };
 
 
 export class TimelineApp {
@@ -26,6 +27,7 @@ export class TimelineApp {
     this.developerSignals = developerSignalsData;
     this.interopData = interopData;
     this.mdnDocs = mdnDocsData;
+    this.chromeContent = chromeContentData;
     this.scrollFAB = null;
     this.scrollObserver = null;
     this.stateManager = new StateManager(this.url);
@@ -40,7 +42,8 @@ export class TimelineApp {
       this.features = processFeatures(features, browsers, {
         developerSignals: this.developerSignals,
         interop: this.interopData,
-        mdn: this.mdnDocs
+        mdn: this.mdnDocs,
+        chromeContent: this.chromeContent
       });
       this.allFeatures = [...this.features];
     }

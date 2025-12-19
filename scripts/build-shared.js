@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import developerSignalsData from '../data/developer-signals.json' with { type: "json" };
 import interopData from '../data/interop.json' with { type: "json" };
 import mdnDocsData from '../data/mdn.json' with { type: "json" };
+import chromeContentData from '../data/chrome-content.json' with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -61,7 +62,8 @@ export async function buildTimeline({
     processedData = dataProcessor(rawArgs.data, rawArgs.browsers, {
       developerSignals: developerSignalsData,
       interop: interopData,
-      mdn: mdnDocsData
+      mdn: mdnDocsData,
+      chromeContent: chromeContentData
     });
   } else {
     throw new Error('dataProcessor and rawArgs are required');
