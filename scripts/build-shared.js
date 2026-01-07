@@ -21,6 +21,7 @@ const TEMPLATE_PATH = path.resolve(__dirname, '../src/index.html');
  * @param {string} options.clientScript - Name of the client script to copy (e.g., 'client.js')
  * @param {Function} options.dataProcessor - Function to process data before rendering (optional)
  * @param {Object} options.rawArgs - Raw arguments for data processor (optional)
+ * @param {Object} options.rendererOptions - Additional options to pass to the renderer (optional)
  */
 export async function buildTimeline({
   distDir,
@@ -28,7 +29,8 @@ export async function buildTimeline({
   templateReplacements = [],
   clientScript,
   dataProcessor,
-  rawArgs
+  rawArgs,
+  rendererOptions = {}
 }) {
   try {
     await fs.access(distDir);
@@ -69,7 +71,7 @@ export async function buildTimeline({
     throw new Error('dataProcessor and rawArgs are required');
   }
 
-  const timelineHTML = renderer(processedData);
+  const timelineHTML = renderer(processedData, rendererOptions);
 
   let outputHTML = template.replace('<!-- TIMELINE_CONTENT -->', timelineHTML);
 

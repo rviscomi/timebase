@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { generateTimelineHTML } from '../src/renderer/renderer.js';
 import { browsers, features as rawFeatures } from '../data/web-features.js';
+import { bcdKeys as rawBcdKeys } from '../data/bcd.js';
 import { processFeatures } from '../src/core/data-processor.js';
 import { buildTimeline } from './build-shared.js';
 
@@ -22,6 +23,9 @@ async function build() {
     rawArgs: {
       data: rawFeatures,
       browsers: browsers
+    },
+    rendererOptions: {
+      bcdKeys: rawBcdKeys
     }
   });
 }

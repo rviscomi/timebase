@@ -7563,7 +7563,8 @@ export const bcdKeys = {
     "parent_feature": "animation-composition",
     "parent_feature_name": "animation-composition",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "112",
@@ -9163,7 +9164,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9189,7 +9191,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9215,7 +9218,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9241,7 +9245,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9267,7 +9272,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9293,7 +9299,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -9319,7 +9326,8 @@ export const bcdKeys = {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -12223,13 +12231,16 @@ export const bcdKeys = {
     "parent_feature": "font-family-math",
     "parent_feature_name": "Math font family",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
         "edge": "109",
         "firefox": "145",
-        "firefox_android": "145"
+        "firefox_android": "145",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -13513,14 +13524,16 @@ export const bcdKeys = {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135",
         "firefox": "144",
         "firefox_android": "144",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -14214,7 +14227,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.auto": {
@@ -14234,7 +14247,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.bottom": {
@@ -14254,7 +14267,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.center": {
@@ -14274,7 +14287,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.left": {
@@ -14294,7 +14307,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.right": {
@@ -14314,7 +14327,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "css.properties.offset-anchor.top": {
@@ -14334,7 +14347,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ]
   },
   "api.CustomElementRegistry.define.connectedMoveCallback_lifecycle_callback": {
@@ -14818,7 +14831,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -14894,7 +14909,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -14910,7 +14927,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -14926,7 +14945,9 @@ export const bcdKeys = {
         "chrome": "102",
         "chrome_android": "102",
         "edge": "102",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
@@ -15941,6 +15962,22 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/links.html#ping"
     ]
   },
+  "api.PointerEvent.pointerType.fractional_coordinates": {
+    "parent_feature": "pointer-events-api",
+    "parent_feature_name": "Pointer Events",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "135",
+        "firefox_android": "135",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/pointerevents/"
+    ]
+  },
   "api.HTMLElement.showPopover.options_source_parameter": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
@@ -16684,6 +16721,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#tree-counting"
+    ]
+  },
+  "api.SVGAnimationElement.beginEvent_event": {
+    "parent_feature": "smil-svg-animations",
+    "parent_feature_name": "SMIL SVG animations",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "35",
+        "chrome_android": "35",
+        "edge": "79",
+        "firefox": "93",
+        "firefox_android": "93",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/specs/animations/"
+    ]
+  },
+  "api.SVGAnimationElement.repeatEvent_event": {
+    "parent_feature": "smil-svg-animations",
+    "parent_feature_name": "SMIL SVG animations",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "35",
+        "chrome_android": "35",
+        "edge": "79",
+        "firefox": "93",
+        "firefox_android": "93",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/specs/animations/"
     ]
   },
   "api.Permissions.permission_storage-access": {
@@ -21209,14 +21286,16 @@ export const bcdKeys = {
     "parent_feature": "text-decoration",
     "parent_feature_name": "text-decoration",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "57",
         "chrome_android": "57",
         "edge": "79",
         "firefox": "6",
         "firefox_android": "6",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [

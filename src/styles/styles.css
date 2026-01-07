@@ -623,6 +623,98 @@ body {
     color: #718096;
 }
 
+/* BCD Keys List Styles */
+.bcd-keys-section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.bcd-keys-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bcd-keys-color-bar {
+    display: flex;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 0.75rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.bcd-keys-color-bar .color-segment {
+    flex: 1;
+    height: 100%;
+    transition: opacity 0.2s ease;
+}
+
+.bcd-keys-color-bar .color-segment:hover {
+    opacity: 0.8;
+}
+
+.bcd-keys-color-bar .color-segment.widely-available {
+    background-color: #66bb6a;
+}
+
+.bcd-keys-color-bar .color-segment.newly-available {
+    background-color: #5c6bc0;
+}
+
+.bcd-keys-color-bar .color-segment.limited-availability {
+    background-color: #bdbdbd;
+}
+
+.bcd-keys-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bcd-key-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.bcd-key-item:hover {
+    background-color: #f9fafb;
+    border-color: #cbd5e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.bcd-key-item .baseline-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.bcd-key-item code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
+    color: #2d3748;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    word-break: break-all;
+}
+
 /* Additional styling for HTML elements in feature descriptions */
 .feature-description a {
     color: #4299e1;

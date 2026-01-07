@@ -44,3 +44,38 @@ export function getToday() {
   now.setHours(0, 0, 0, 0);
   return now;
 }
+
+// Helper to get BCD keys for a specific feature, sorted by baseline status
+export function getBcdKeysForFeature(featureId, bcdKeys) {
+  if (!bcdKeys || !featureId) return [];
+  
+  const keys = Object.entries(bcdKeys)
+    .filter(([_, data]) => data.parent_feature === featureId)
+    .map(([id, data]) => ({
+      id,
+      name: data.name || id,
+      baseline: data.status?.baseline,
+      baseline_low_date: data.status?.baseline_low_date,
+      baseline_high_date: data.status?.baseline_high_date
+    }));
+  
+  // Sort by baseline status: limited-availability (false) > newly-available (low) > widely-available (high)
+  return keys.sort((a, b) => {
+    // Map baseline values to sort priority
+    const getPriority = (baseline) => {
+      if (baseline === false || baseline === undefined) return 3; // Limited availability first
+      if (baseline === 'low' || baseline === true) return 2; // Newly available second
+      return 1; // Widely available (high) last
+    };
+    
+    const priorityA = getPriority(a.baseline);
+    const priorityB = getPriority(b.baseline);
+    
+    if (priorityA !== priorityB) {
+      return priorityB - priorityA; // Higher priority first
+    }
+    
+    // If same priority, sort alphabetically by name
+    return a.name.localeCompare(b.name);
+  });
+}

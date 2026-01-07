@@ -3447,7 +3447,8 @@ export const features = {
       "https://drafts.csswg.org/css-animations-2/#animation-composition"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "112",
@@ -3714,7 +3715,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.with"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-04",
       "baseline_low_date": "2023-07-04",
       "support": {
         "chrome": "110",
@@ -4578,7 +4580,7 @@ export const features = {
     "kind": "feature",
     "name": "backdrop-filter",
     "spec": [
-      "https://drafts.fxtf.org/filter-effects-2/#BackdropFilterProperty"
+      "https://drafts.csswg.org/filter-effects-2/#BackdropFilterProperty"
     ],
     "status": {
       "baseline": "low",
@@ -4643,7 +4645,7 @@ export const features = {
     "kind": "feature",
     "name": "background-blend-mode",
     "spec": [
-      "https://drafts.fxtf.org/compositing-2/#background-blend-mode"
+      "https://drafts.csswg.org/compositing-2/#background-blend-mode"
     ],
     "status": {
       "baseline": "high",
@@ -6086,7 +6088,7 @@ export const features = {
     "description_html": "The <code>clip</code> CSS property sets the visible area of an absolutely positioned element.",
     "discouraged": {
       "according_to": [
-        "https://drafts.fxtf.org/css-masking-1/#clip-property"
+        "https://drafts.csswg.org/css-masking-1/#clip-property"
       ],
       "alternatives": [
         "clip-path"
@@ -6097,7 +6099,7 @@ export const features = {
     "kind": "feature",
     "name": "clip",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#clip-property"
+      "https://drafts.csswg.org/css-masking-1/#clip-property"
     ],
     "status": {
       "baseline": false,
@@ -6117,7 +6119,7 @@ export const features = {
     "kind": "feature",
     "name": "clip-path",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ],
     "status": {
       "baseline": "high",
@@ -6139,7 +6141,7 @@ export const features = {
     "kind": "feature",
     "name": "Animatable clipping paths",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ],
     "status": {
       "baseline": "high",
@@ -6161,7 +6163,7 @@ export const features = {
     "kind": "feature",
     "name": "Clip path boxes",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#the-clip-path"
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ],
     "status": {
       "baseline": "low",
@@ -8416,17 +8418,23 @@ export const features = {
     }
   },
   "display-mode": {
-    "description_html": "The <code>display-mode</code> CSS media query sets styles based on whether the web page is in <code>fullscreen</code>, <code>standalone</code>, <code>minimal-ui,</code> <code>browser</code>, or <code>picture-in-picture</code> mode.",
+    "description_html": "The <code>display-mode</code> CSS media query sets styles based on whether the web page is in an ordinary <code>browser</code> tab mode or another mode, such as <code>fullscreen</code>, <code>standalone</code>, or <code>minimal-ui</code>.",
     "kind": "feature",
     "name": "display-mode media query",
     "spec": [
       "https://drafts.csswg.org/mediaqueries-5/#display-modes"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2023-08-01",
       "support": {
-        "chrome": "123",
-        "edge": "123"
+        "chrome": "42",
+        "chrome_android": "42",
+        "edge": "79",
+        "firefox": "47",
+        "firefox_android": "116",
+        "safari": "13",
+        "safari_ios": "12.2"
       }
     }
   },
@@ -8615,7 +8623,7 @@ export const features = {
     "kind": "feature",
     "name": "DOM Geometry",
     "spec": [
-      "https://drafts.fxtf.org/geometry-1/"
+      "https://drafts.csswg.org/geometry-1/"
     ],
     "status": {
       "baseline": "high",
@@ -9469,6 +9477,32 @@ export const features = {
       }
     }
   },
+  "feature-policy": {
+    "description_html": "The <code>Feature-Policy</code> response header sets whether a policy-controlled feature, such as an API, may be used in a document. Not to be confused with permissions policy.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/w3c/webappsec-permissions-policy/pull/379"
+      ],
+      "alternatives": [
+        "permissions-policy"
+      ],
+      "reason": "Feature policy is superseded by permissions policy.",
+      "reason_html": "Feature policy is superseded by permissions policy."
+    },
+    "kind": "feature",
+    "name": "Feature policy",
+    "spec": [
+      "https://www.w3.org/TR/2019/WD-feature-policy-1-20190416/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79"
+      }
+    }
+  },
   "fedcm": {
     "description_html": "The <code>IdentityCredential</code> API delegates authentication to a third-party identity provider, instead of using third-party cookies. Also known as FedCM.",
     "kind": "feature",
@@ -9742,7 +9776,7 @@ export const features = {
     "kind": "feature",
     "name": "filter",
     "spec": [
-      "https://drafts.fxtf.org/filter-effects-1/#propdef-filter"
+      "https://drafts.csswg.org/filter-effects-1/#propdef-filter"
     ],
     "status": {
       "baseline": "high",
@@ -10087,13 +10121,16 @@ export const features = {
       "https://drafts.csswg.org/css-fonts-4/#math-def"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
         "edge": "109",
         "firefox": "145",
-        "firefox_android": "145"
+        "firefox_android": "145",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -13314,14 +13351,16 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
       "support": {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135",
         "firefox": "144",
         "firefox_android": "144",
-        "safari": "preview"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -13418,7 +13457,7 @@ export const features = {
     "kind": "feature",
     "name": "isolation",
     "spec": [
-      "https://drafts.fxtf.org/compositing-2/#isolation"
+      "https://drafts.csswg.org/compositing-2/#isolation"
     ],
     "status": {
       "baseline": "high",
@@ -14647,7 +14686,7 @@ export const features = {
     "kind": "feature",
     "name": "mask-border",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#mask-borders"
+      "https://drafts.csswg.org/css-masking-1/#mask-borders"
     ],
     "status": {
       "baseline": false,
@@ -14662,7 +14701,7 @@ export const features = {
     "kind": "feature",
     "name": "mask-type",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#the-mask-type"
+      "https://drafts.csswg.org/css-masking-1/#the-mask-type"
     ],
     "status": {
       "baseline": "high",
@@ -14684,7 +14723,7 @@ export const features = {
     "kind": "feature",
     "name": "Masks",
     "spec": [
-      "https://drafts.fxtf.org/css-masking-1/#positioned-masks"
+      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
     ],
     "status": {
       "baseline": "low",
@@ -15193,7 +15232,7 @@ export const features = {
     "kind": "feature",
     "name": "mix-blend-mode",
     "spec": [
-      "https://drafts.fxtf.org/compositing-2/#mix-blend-mode"
+      "https://drafts.csswg.org/compositing-2/#mix-blend-mode"
     ],
     "status": {
       "baseline": "high",
@@ -15280,7 +15319,7 @@ export const features = {
     "kind": "feature",
     "name": "Motion path",
     "spec": [
-      "https://drafts.fxtf.org/motion-1/"
+      "https://drafts.csswg.org/motion-1/"
     ],
     "status": {
       "baseline": "high",
@@ -16741,7 +16780,7 @@ export const features = {
     }
   },
   "page-selectors": {
-    "description_html": "The <code>:first</code>, <code>:left</code>, and <code>:right</code> pseudo-classes select pages based on their position in sequence after pagination. They're often used with the <code>page</code> CSS property, to choose a print layout defined by the <code>@page</code> rule.",
+    "description_html": "The <code>:first</code>, <code>:left</code>, and <code>:right</code> pseudo-classes select pages based on their position in sequence after pagination.",
     "kind": "feature",
     "name": "Page selectors",
     "spec": [
@@ -16750,9 +16789,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "85",
-        "chrome_android": "85",
-        "edge": "85",
+        "chrome": "18",
+        "chrome_android": "18",
+        "edge": "12",
         "safari": "6",
         "safari_ios": "6"
       }
@@ -17108,6 +17147,22 @@ export const features = {
         "firefox_android": "46",
         "safari": "16",
         "safari_ios": "16"
+      }
+    }
+  },
+  "permissions-policy": {
+    "description_html": "The <code>Permissions-Policy</code> response header and the <code>allow</code> attribute for <code>&#x3C;iframe></code> elements sets whether a policy-controlled feature, such as an API, may be used in a document.",
+    "kind": "feature",
+    "name": "Permissions policy",
+    "spec": [
+      "https://w3c.github.io/webappsec-permissions-policy/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108"
       }
     }
   },
@@ -21404,7 +21459,7 @@ export const features = {
     "kind": "feature",
     "name": "SVG filters",
     "spec": [
-      "https://drafts.fxtf.org/filter-effects-1/"
+      "https://drafts.csswg.org/filter-effects-1/"
     ],
     "status": {
       "baseline": "high",

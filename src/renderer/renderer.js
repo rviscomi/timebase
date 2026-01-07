@@ -1,6 +1,6 @@
 // Shared rendering utilities for both features and BCD keys
 
-import { escapeHtml, groupItemsByDate, getToday } from '../utils/utils.js';
+import { escapeHtml, groupItemsByDate, getToday, getBcdKeysForFeature } from '../utils/utils.js';
 
 
 
@@ -210,12 +210,68 @@ export function createBrowserSupportTable(item) {
   return browserTableHTML;
 }
 
+export function createBcdKeysList(item, bcdKeys) {
+  if (!bcdKeys) return '';
+  
+  const keys = getBcdKeysForFeature(item.id, bcdKeys);
+  if (keys.length === 0) return '';
+  
+  const getBaselineLabel = (baseline) => {
+    if (baseline === 'high') return 'Widely available';
+    if (baseline === 'low' || baseline === true) return 'Newly available';
+    return 'Limited availability';
+  };
+  
+  const getBaselineIcon = (baseline) => {
+    if (baseline === 'high') return 'baseline-widely-icon.svg';
+    if (baseline === 'low' || baseline === true) return 'baseline-newly-icon.svg';
+    return 'baseline-limited-icon.svg';
+  };
+  
+  const getBaselineColor = (baseline) => {
+    if (baseline === 'high') return 'widely-available';
+    if (baseline === 'low' || baseline === true) return 'newly-available';
+    return 'limited-availability';
+  };
+  
+  // Create color bar segments
+  let colorBarHTML = '<div class="bcd-keys-color-bar">';
+  keys.forEach(key => {
+    const colorClass = getBaselineColor(key.baseline);
+    const label = getBaselineLabel(key.baseline);
+    colorBarHTML += `<div class="color-segment ${colorClass}"></div>`;
+  });
+  colorBarHTML += '</div>';
+  
+  let keysHTML = '<ul class="bcd-keys-list">';
+  keys.forEach(key => {
+    const iconSrc = getBaselineIcon(key.baseline);
+    const label = getBaselineLabel(key.baseline);
+    keysHTML += `
+      <li class="bcd-key-item">
+        <img src="images/${iconSrc}" alt="${label}" class="baseline-icon" title="${label}">
+        <code>${escapeHtml(key.name)}</code>
+      </li>
+    `;
+  });
+  keysHTML += '</ul>';
+  
+  return `
+    <div class="bcd-keys-section">
+      <h3>BCD Keys (${keys.length})</h3>
+      ${colorBarHTML}
+      ${keysHTML}
+    </div>
+  `;
+}
+
 export function createCard(item, options = {}) {
   const {
     idPrefix = 'feature',
     renderParentFeature = false,
     getWebStatusId = (item) => item.id,
-    getWebFeaturesId = (item) => item.id
+    getWebFeaturesId = (item) => item.id,
+    bcdKeys = null
   } = options;
 
   let baselineIconHTML = '';
@@ -345,6 +401,12 @@ export function createCard(item, options = {}) {
 
   const browserTableHTML = createBrowserSupportTable(item);
 
+  let bcdKeysHTML = '';
+  // Only show BCD keys for web features (not for BCD keys themselves)
+  if (bcdKeys && !item.parent_feature) {
+    bcdKeysHTML = createBcdKeysList(item, bcdKeys);
+  }
+
   let descriptionHTML = '';
   if (item.description_html) {
     descriptionHTML = `<div class="feature-description">${item.description_html}</div>`;
@@ -424,6 +486,7 @@ export function createCard(item, options = {}) {
           ${descriptionHTML}
           ${availabilityHTML}
           ${browserTableHTML}
+          ${bcdKeysHTML}
           <div class="feature-links">${linksHTML}</div>
         </div>
       </div>
