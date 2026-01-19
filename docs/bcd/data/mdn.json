@@ -1201,10 +1201,10 @@
   ],
   "cap": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#cap",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "cap",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#cap"
     }
   ],
   "capture-stream-audio-video": [
@@ -1257,10 +1257,10 @@
   ],
   "ch": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#ch",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "ch",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#ch"
     }
   ],
   "change-event": [
@@ -2521,10 +2521,10 @@
   ],
   "em-unit": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#em",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "em",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#em"
     }
   ],
   "embed": [
@@ -2585,10 +2585,10 @@
   ],
   "ex": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#ex",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "ex",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#ex"
     }
   ],
   "execcommand": [
@@ -3953,10 +3953,10 @@
   ],
   "ic": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#ic",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "ic",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#ic"
     }
   ],
   "idle-detection": [
@@ -4751,10 +4751,10 @@
   ],
   "lh": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#lh",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "lh",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#lh"
     }
   ],
   "light-dark": [
@@ -6461,10 +6461,10 @@
   ],
   "q-unit": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#q",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "q",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#q"
     }
   ],
   "quotes": [
@@ -6477,18 +6477,18 @@
   ],
   "rcap": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#rcap",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "rcap",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#rcap"
     }
   ],
   "rch": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#rch",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "rch",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#rch"
     }
   ],
   "read-write-pseudos": [
@@ -6615,10 +6615,10 @@
   ],
   "rem": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#rem",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "rem",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#rem"
     }
   ],
   "remote-playback": [
@@ -6791,10 +6791,10 @@
   ],
   "rex": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#rex",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "rex",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#rex"
     }
   ],
   "rgb": [
@@ -6821,18 +6821,18 @@
   ],
   "ric": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#ric",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "ric",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#ric"
     }
   ],
   "rlh": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#rlh",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "rlh",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#rlh"
     }
   ],
   "root": [
@@ -8771,10 +8771,10 @@
   ],
   "viewport-units": [
     {
-      "slug": "Web/CSS/Reference/Values/length",
+      "slug": "Web/CSS/Reference/Values/length#relative_length_units_based_on_viewport",
       "title": "<length>",
-      "anchor": null,
-      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length"
+      "anchor": "relative_length_units_based_on_viewport",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Values/length#relative_length_units_based_on_viewport"
     }
   ],
   "virtual-keyboard": [
