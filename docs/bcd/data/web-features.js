@@ -580,8 +580,12 @@ export const browsers = {
         "version": "145"
       },
       {
-        "date": "null",
+        "date": "2026-03-10",
         "version": "146"
+      },
+      {
+        "date": "null",
+        "version": "147"
       },
       {
         "date": "null",
@@ -1077,8 +1081,12 @@ export const browsers = {
         "version": "145"
       },
       {
-        "date": "null",
+        "date": "2026-03-10",
         "version": "146"
+      },
+      {
+        "date": "null",
+        "version": "147"
       }
     ]
   },
@@ -1995,6 +2003,10 @@ export const browsers = {
         "version": "149"
       },
       {
+        "date": "2026-04-21",
+        "version": "150"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2534,6 +2546,10 @@ export const browsers = {
       {
         "date": "2026-03-24",
         "version": "149"
+      },
+      {
+        "date": "2026-04-21",
+        "version": "150"
       }
     ]
   },
@@ -4254,7 +4270,7 @@ export const features = {
   "atomics-wait-async": {
     "description_html": "The <code>Atomics.waitAsync()</code> static method waits for a value in a shared memory location, providing a promise when the expected value is not yet in memory. The <code>waitAsync()</code> method is a non-blocking alternative to <code>Atomics.wait()</code>.",
     "kind": "feature",
-    "name": "Atomics.waitAsync",
+    "name": "Atomics.waitAsync()",
     "spec": [
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync"
     ],
@@ -8395,6 +8411,10 @@ export const features = {
       }
     }
   },
+  "display-grid-lanes": {
+    "kind": "moved",
+    "redirect_target": "masonry"
+  },
   "display-list-item": {
     "description_html": "The <code>display: list-item</code> CSS declaration renders an element with the box layout of a <code>&#x3C;li></code> HTML element.",
     "kind": "feature",
@@ -10401,31 +10421,23 @@ export const features = {
   },
   "font-stretch": {
     "description_html": "The <code>font-stretch</code> CSS property selects a font face from a font family based on width, either by a keyword such as <code>condensed</code> or a percentage.",
-    "discouraged": {
-      "according_to": [
-        "https://drafts.csswg.org/css-fonts-4/#font-stretch-prop"
-      ],
-      "alternatives": [
-        "font-width"
-      ],
-      "reason": "The font-stretch CSS property is superseded by font-width.",
-      "reason_html": "The <code>font-stretch</code> CSS property is superseded by <code>font-width</code>."
-    },
     "kind": "feature",
     "name": "font-stretch",
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-stretch-prop"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
       "support": {
-        "chrome": "60",
-        "chrome_android": "60",
-        "edge": "12",
-        "firefox": "9",
-        "firefox_android": "9",
-        "safari": "11",
-        "safari_ios": "11"
+        "chrome": "62",
+        "chrome_android": "62",
+        "edge": "79",
+        "firefox": "62",
+        "firefox_android": "62",
+        "safari": "11.1",
+        "safari_ios": "11.3"
       }
     }
   },
@@ -11061,7 +11073,7 @@ export const features = {
     }
   },
   "geolocation": {
-    "description_html": "The <code>navigator.gelocation</code> API requests the user's latitude, longitude, heading, and speed.",
+    "description_html": "The <code>navigator.geolocation</code> API requests the user's latitude, longitude, heading, and speed.",
     "kind": "feature",
     "name": "Geolocation",
     "spec": [
@@ -11162,8 +11174,12 @@ export const features = {
       "https://tc39.es/proposal-upsert/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-12",
       "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145",
         "firefox": "144",
         "firefox_android": "144",
         "safari": "26.2",
@@ -11320,6 +11336,10 @@ export const features = {
       }
     }
   },
+  "grid-lanes": {
+    "kind": "moved",
+    "redirect_target": "masonry"
+  },
   "gyroscope": {
     "description_html": "The <code>Gyroscope</code> API reads the angular velocity of a device in three dimensions.",
     "kind": "feature",
@@ -11396,7 +11416,7 @@ export const features = {
     "kind": "feature",
     "name": ":has-slotted",
     "spec": [
-      "https://drafts.csswg.org/css-scoping-1/#the-has-slotted-pseudo"
+      "https://drafts.csswg.org/css-shadow-1/#the-has-slotted-pseudo"
     ],
     "status": {
       "baseline": false,
@@ -11628,7 +11648,7 @@ export const features = {
     "kind": "feature",
     "name": "Host",
     "spec": [
-      "https://drafts.csswg.org/css-scoping-1/#host-selector"
+      "https://drafts.csswg.org/css-shadow-1/#host-selector"
     ],
     "status": {
       "baseline": "high",
@@ -11660,7 +11680,7 @@ export const features = {
     "kind": "feature",
     "name": ":host-context()",
     "spec": [
-      "https://drafts.csswg.org/css-scoping-1/#host-selector"
+      "https://drafts.csswg.org/css-shadow-1/#host-selector"
     ],
     "status": {
       "baseline": false,
@@ -13474,6 +13494,21 @@ export const features = {
       }
     }
   },
+  "iterator-concat": {
+    "description_html": "The <code>Iterator.concat()</code> JavaScript method returns an iterator that yields values from a sequence of iterators, exhausting each iterator before moving on to the next.",
+    "kind": "feature",
+    "name": "Iterator.concat()",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.concat"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "147",
+        "firefox_android": "147"
+      }
+    }
+  },
   "iterator-methods": {
     "description_html": "The <code>Iterator</code> object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as <code>filter()</code>, <code>find()</code>, <code>map()</code>, and <code>reduce()</code>. You can also use the static method <code>Iterator.from()</code> to convert an existing iterable into an <code>Iterator</code>.",
     "kind": "feature",
@@ -14740,7 +14775,7 @@ export const features = {
     }
   },
   "masonry": {
-    "description_html": "Masonry is a type of CSS grid layout where the items on one of the axes are tightly packed together, like brickwork, instead of leaving gaps to align across the other axis.",
+    "description_html": "The <code>display: grid-lanes</code> or <code>display: inline-grid-lanes</code> CSS declaration creates a layout where items are tightly packed, like brickwork, in parallel lanes. Items are placed one by one in the lane that has the most available space.",
     "kind": "feature",
     "name": "Masonry",
     "spec": [
@@ -16365,6 +16400,22 @@ export const features = {
       }
     }
   },
+  "origin": {
+    "description_html": "An <code>Origin</code> object represents an origin, as in a scheme, hostname, and port. You can use it to make same-site and same-origin comparisons.",
+    "kind": "feature",
+    "name": "Origin",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    }
+  },
   "origin-private-file-system": {
     "description_html": "The <code>navigator.storage.getDirectory()</code> method returns a <code>FileSystemDirectoryHandle</code> that is restricted to a specific origin and invisible to the user's actual file system for faster file-based applications, such as SQLite databases.",
     "kind": "feature",
@@ -16902,14 +16953,16 @@ export const features = {
       "https://svgwg.org/svg2-draft/painting.html#PaintOrder"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-03-22",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
         "firefox": "≤66",
         "firefox_android": "≤66",
-        "safari": "≤12"
+        "safari": "≤12",
+        "safari_ios": "≤12"
       }
     }
   },
@@ -17287,6 +17340,28 @@ export const features = {
         "firefox_android": "51",
         "safari": "9",
         "safari_ios": "9"
+      }
+    }
+  },
+  "png": {
+    "description_html": "The PNG (Portable Network Graphics) image format is a raster graphics file format with animation, alpha transparency, and lossless compression.",
+    "kind": "feature",
+    "name": "PNG",
+    "spec": [
+      "https://w3c.github.io/png/#Introduction"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2022-07-15",
+      "baseline_low_date": "2020-01-15",
+      "support": {
+        "chrome": "59",
+        "chrome_android": "59",
+        "edge": "79",
+        "firefox": "3",
+        "firefox_android": "4",
+        "safari": "8",
+        "safari_ios": "8"
       }
     }
   },
@@ -18409,6 +18484,21 @@ export const features = {
         "edge": "79",
         "firefox": "2",
         "firefox_android": "4"
+      }
+    }
+  },
+  "related-apps": {
+    "description_html": "The <code>related_applications</code> web app manifest member lists operating system-specific applications that are related to the current web app, such as an Android app that provides similar functionality. The <code>getInstalledRelatedApps()</code> method lists which of those are installed on the current device.",
+    "kind": "feature",
+    "name": "Related apps",
+    "spec": [
+      "https://wicg.github.io/get-installed-related-apps/spec/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome_android": "84",
+        "edge": "85"
       }
     }
   },
@@ -20056,7 +20146,7 @@ export const features = {
     "kind": "feature",
     "name": "Shadow parts",
     "spec": [
-      "https://drafts.csswg.org/css-shadow-parts-1/"
+      "https://drafts.csswg.org/css-shadow-1/#exposing"
     ],
     "status": {
       "baseline": "high",
@@ -22009,6 +22099,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145",
         "firefox": "55",
         "firefox_android": "55"
       }
@@ -22783,12 +22876,14 @@ export const features = {
       "https://w3c.github.io/trusted-types/dist/spec/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-24",
       "support": {
         "chrome": "83",
         "chrome_android": "83",
         "edge": "83",
-        "firefox": "preview",
+        "firefox": "148",
+        "firefox_android": "148",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -23382,6 +23477,18 @@ export const features = {
         "safari": "18",
         "safari_ios": "18"
       }
+    }
+  },
+  "view-transitions-element-scoped": {
+    "description_html": "The <code>startViewTransition()</code> method of an <code>Element</code> object starts a view transition that affects only that element's DOM tree. The <code>contain: view-transition</code> CSS declaration contains the layout of the tree to be transitioned. You can use this to run separate elements' transitions concurrently.",
+    "kind": "feature",
+    "name": "Element-scoped view transitions",
+    "spec": [
+      "https://github.com/WICG/view-transitions/blob/main/scoped-transitions.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "viewport-segments": {
