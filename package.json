@@ -30,7 +30,7 @@
   "devDependencies": {
     "happy-dom": "^20.3.0",
     "http-server": "^14.1.1",
-    "vitest": "^4.0.15"
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": ">=14.0.0"
