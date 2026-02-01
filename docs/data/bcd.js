@@ -3253,26 +3253,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
     ]
   },
-  "css.selectors.active-view-transition": {
-    "parent_feature": "active-view-transition",
-    "parent_feature_name": "Active view transition",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "125",
-        "chrome_android": "125",
-        "edge": "125",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo"
-    ]
-  },
   "css.selectors.active-view-transition-type": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
@@ -4783,23 +4763,6 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "preview"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
-    ]
-  },
-  "api.HTMLElement.showPopover.options_source_parameter.implicit_anchor_reference": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "137",
-        "chrome_android": "137",
-        "edge": "137",
-        "firefox": "144",
-        "firefox_android": "144"
       }
     },
     "spec": [
@@ -9732,27 +9695,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
     ]
   },
-  "api.Path2D.roundRect": {
-    "parent_feature": "canvas-2d",
-    "parent_feature_name": "2D canvas",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
-    ]
-  },
   "api.TextMetrics.alphabeticBaseline": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
@@ -9851,69 +9793,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
-    ]
-  },
-  "api.CanvasRenderingContext2D.createConicGradient": {
-    "parent_feature": "canvas-createconicgradient",
-    "parent_feature_name": "Canvas createConicGradient()",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "16.1",
-        "safari_ios": "16.1"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createconicgradient-dev"
-    ]
-  },
-  "api.CanvasRenderingContext2D.roundRect": {
-    "parent_feature": "canvas-roundrect",
-    "parent_feature_name": "Canvas roundRect()",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect"
-    ]
-  },
-  "api.OffscreenCanvasRenderingContext2D.roundRect": {
-    "parent_feature": "canvas-roundrect",
-    "parent_feature_name": "Canvas roundRect()",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-roundrect"
     ]
   },
   "css.properties.caret-shape": {
@@ -10089,6 +9968,66 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webappsec-clear-site-data/"
+    ]
+  },
+  "css.properties.clip-path.fill-box": {
+    "parent_feature": "clip-path-boxes",
+    "parent_feature_name": "Clip path boxes",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-02",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "51",
+        "firefox_android": "51",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
+    ]
+  },
+  "css.properties.clip-path.stroke-box": {
+    "parent_feature": "clip-path-boxes",
+    "parent_feature_name": "Clip path boxes",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-02",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "51",
+        "firefox_android": "51",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
+    ]
+  },
+  "css.properties.clip-path.view-box": {
+    "parent_feature": "clip-path-boxes",
+    "parent_feature_name": "Clip path boxes",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-02",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "54",
+        "firefox_android": "54",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ]
   },
   "api.ClipboardChangeEvent": {
@@ -11408,27 +11347,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-counter-styles-3/"
     ]
   },
-  "api.createImageBitmap.options_imageOrientation_parameter.from-image": {
-    "parent_feature": "createimagebitmap",
-    "parent_feature_name": "createImageBitmap",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-06",
-      "baseline_low_date": "2023-04-06",
-      "support": {
-        "chrome": "112",
-        "chrome_android": "112",
-        "edge": "112",
-        "firefox": "111",
-        "firefox_android": "111",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
-    ]
-  },
   "api.createImageBitmap.options_premultiplyAlpha_parameter": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
@@ -12019,23 +11937,6 @@ export const bcdKeys = {
       "reason": "The dynamic markup insertion API, which includes document.write(), has \"very idiosyncratic behavior\" which can be difficult to debug.",
       "reason_html": "The dynamic markup insertion API, which includes <code>document.write()</code>, has \"very idiosyncratic behavior\" which can be difficult to debug."
     }
-  },
-  "api.SVGAElement.download": {
-    "parent_feature": "download",
-    "parent_feature_name": "download",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142",
-        "firefox": "20",
-        "firefox_android": "20"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download"
-    ]
   },
   "api.EventCounts": {
     "parent_feature": "event-timing",
@@ -12646,38 +12547,6 @@ export const bcdKeys = {
       "https://w3c.github.io/gamepad/"
     ]
   },
-  "api.IDBIndex.getAllRecords": {
-    "parent_feature": "getallrecords",
-    "parent_feature_name": "IndexedDB getAllRecords()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
-      "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
-    ]
-  },
-  "api.IDBObjectStore.getAllRecords": {
-    "parent_feature": "getallrecords",
-    "parent_feature_name": "IndexedDB getAllRecords()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
-      "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
-    ]
-  },
   "javascript.builtins.Map.getOrInsert": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
@@ -13219,48 +13088,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-images-4/#image-set-notation"
     ]
   },
-  "api.HTMLElement.inert": {
-    "parent_feature": "inert",
-    "parent_feature_name": "inert",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "102",
-        "chrome_android": "102",
-        "edge": "102",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "15.5",
-        "safari_ios": "15.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees"
-    ]
-  },
-  "html.global_attributes.inert": {
-    "parent_feature": "inert",
-    "parent_feature_name": "inert",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-11",
-      "baseline_low_date": "2023-04-11",
-      "support": {
-        "chrome": "102",
-        "chrome_android": "102",
-        "edge": "102",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "15.5",
-        "safari_ios": "15.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees"
-    ]
-  },
   "api.HTMLInputElement.cancel_event": {
     "parent_feature": "input",
     "parent_feature_name": "<input>",
@@ -13280,201 +13107,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/input.html#the-input-element"
-    ]
-  },
-  "api.HTMLAnchorElement.interestForElement": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.HTMLAreaElement.interestForElement": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.HTMLButtonElement.interestForElement": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.HTMLElement.interest_event": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.HTMLElement.loseinterest_event": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.InterestEvent": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.InterestEvent.InterestEvent": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.InterestEvent.source": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "api.SVGAElement.interestForElement": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "html.elements.a.interestfor": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "html.elements.area.interestfor": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "html.elements.button.interestfor": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
-    ]
-  },
-  "svg.elements.a.interestfor": {
-    "parent_feature": "interest-invokers",
-    "parent_feature_name": "Interest invokers",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://github.com/whatwg/html/pull/11006"
     ]
   },
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingIncrement_parameter": {
@@ -14299,6 +13931,26 @@ export const bcdKeys = {
       "https://w3c.github.io/largest-contentful-paint/"
     ]
   },
+  "css.types.length.lh": {
+    "parent_feature": "lh",
+    "parent_feature_name": "lh unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#lh"
+    ]
+  },
   "api.Location.ancestorOrigins": {
     "parent_feature": "location",
     "parent_feature_name": "Location",
@@ -14699,78 +14351,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/motion-1/"
-    ]
-  },
-  "api.CustomElementRegistry.define.connectedMoveCallback_lifecycle_callback": {
-    "parent_feature": "move-before",
-    "parent_feature_name": "moveBefore()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
-      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
-    ]
-  },
-  "api.Document.moveBefore": {
-    "parent_feature": "move-before",
-    "parent_feature_name": "moveBefore()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
-      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
-    ]
-  },
-  "api.DocumentFragment.moveBefore": {
-    "parent_feature": "move-before",
-    "parent_feature_name": "moveBefore()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
-      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
-    ]
-  },
-  "api.Element.moveBefore": {
-    "parent_feature": "move-before",
-    "parent_feature_name": "moveBefore()",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://dom.spec.whatwg.org/#dom-parentnode-movebefore",
-      "https://html.spec.whatwg.org/multipage/custom-elements.html#preserving-custom-element-state-when-moved"
     ]
   },
   "api.NavigateEvent": {
@@ -16430,40 +16010,80 @@ export const bcdKeys = {
       "https://w3c.github.io/pointerevents/"
     ]
   },
-  "api.HTMLElement.showPopover.options_source_parameter": {
+  "api.ToggleEvent": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-14",
+      "baseline_low_date": "2023-11-21",
       "support": {
-        "chrome": "137",
-        "chrome_android": "137",
-        "edge": "137",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "26",
-        "safari_ios": "26"
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "17",
+        "safari_ios": "17"
       }
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/popover.html"
     ]
   },
-  "api.HTMLElement.togglePopover.options_source_parameter": {
+  "api.ToggleEvent.ToggleEvent": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-14",
+      "baseline_low_date": "2023-11-21",
       "support": {
-        "chrome": "137",
-        "chrome_android": "137",
-        "edge": "137",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "26",
-        "safari_ios": "26"
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html"
+    ]
+  },
+  "api.ToggleEvent.newState": {
+    "parent_feature": "popover",
+    "parent_feature_name": "Popover",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html"
+    ]
+  },
+  "api.ToggleEvent.oldState": {
+    "parent_feature": "popover",
+    "parent_feature_name": "Popover",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "17",
+        "safari_ios": "17"
       }
     },
     "spec": [
@@ -16625,6 +16245,26 @@ export const bcdKeys = {
         "firefox_android": "147",
         "safari": "17.2",
         "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
+    ]
+  },
+  "css.types.length.rlh": {
+    "parent_feature": "rlh",
+    "parent_feature_name": "rlh unit",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     },
     "spec": [
@@ -16939,66 +16579,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
-    ]
-  },
-  "api.ScreenOrientation.lock": {
-    "parent_feature": "screen-orientation-lock",
-    "parent_feature_name": "Screen orientation lock",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome_android": "38",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/screen-orientation/#lock-method"
-    ]
-  },
-  "api.ScreenOrientation.unlock": {
-    "parent_feature": "screen-orientation-lock",
-    "parent_feature_name": "Screen orientation lock",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome_android": "38",
-        "firefox": "144",
-        "firefox_android": "144"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/screen-orientation/#lock-method"
-    ]
-  },
-  "css.selectors.target-after": {
-    "parent_feature": "scroll-marker-targets",
-    "parent_feature_name": "Scroll marker target pseudo-classes",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-overflow-5/#active-before-after-scroll-markers"
-    ]
-  },
-  "css.selectors.target-before": {
-    "parent_feature": "scroll-marker-targets",
-    "parent_feature_name": "Scroll marker target pseudo-classes",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-overflow-5/#active-before-after-scroll-markers"
     ]
   },
   "css.properties.scrollbar-color": {
@@ -17349,36 +16929,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
-    ]
-  },
-  "css.at-rules.container.style_queries_for_custom_properties.range_syntax": {
-    "parent_feature": "style-query-range-syntax",
-    "parent_feature_name": "Range syntax for style queries",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
-    ]
-  },
-  "css.types.if.style.range_syntax": {
-    "parent_feature": "style-query-range-syntax",
-    "parent_feature_name": "Range syntax for style queries",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
     ]
   },
   "css.properties.grid-template-columns.subgrid": {
@@ -22724,64 +22274,124 @@ export const bcdKeys = {
       "https://url.spec.whatwg.org/"
     ]
   },
-  "css.properties.view-transition-class": {
-    "parent_feature": "view-transition-class",
-    "parent_feature_name": "view-transition-class",
+  "api.Navigator.userActivation": {
+    "parent_feature": "user-activation",
+    "parent_feature_name": "User activation",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-14",
+      "baseline_low_date": "2023-11-21",
       "support": {
-        "chrome": "125",
-        "chrome_android": "125",
-        "edge": "125",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18.2",
-        "safari_ios": "18.2"
+        "chrome": "72",
+        "chrome_android": "72",
+        "edge": "79",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class"
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
     ]
   },
-  "css.properties.view-transition-class.none": {
-    "parent_feature": "view-transition-class",
-    "parent_feature_name": "view-transition-class",
+  "api.UserActivation": {
+    "parent_feature": "user-activation",
+    "parent_feature_name": "User activation",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-14",
+      "baseline_low_date": "2023-11-21",
       "support": {
-        "chrome": "125",
-        "chrome_android": "125",
-        "edge": "125",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18.2",
-        "safari_ios": "18.2"
+        "chrome": "72",
+        "chrome_android": "72",
+        "edge": "79",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class"
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
     ]
   },
-  "api.Document.startViewTransition": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
+  "api.UserActivation.hasBeenActive": {
+    "parent_feature": "user-activation",
+    "parent_feature_name": "User activation",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-10-14",
+      "baseline_low_date": "2023-11-21",
       "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
+        "chrome": "72",
+        "chrome_android": "72",
+        "edge": "79",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
+    ]
+  },
+  "api.UserActivation.isActive": {
+    "parent_feature": "user-activation",
+    "parent_feature_name": "User activation",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "72",
+        "chrome_android": "72",
+        "edge": "79",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
+    ]
+  },
+  "css.selectors.user-invalid": {
+    "parent_feature": "user-pseudos",
+    "parent_feature_name": ":user-valid and :user-invalid",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-02",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.5",
+        "safari_ios": "16.5"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#user-pseudos"
+    ]
+  },
+  "css.selectors.user-valid": {
+    "parent_feature": "user-pseudos",
+    "parent_feature_name": ":user-valid and :user-invalid",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-02",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "88",
+        "firefox_android": "88",
+        "safari": "16.5",
+        "safari_ios": "16.5"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#user-pseudos"
     ]
   },
   "api.Document.startViewTransition.options_parameter": {
@@ -22854,266 +22464,6 @@ export const bcdKeys = {
         "chrome_android": "111",
         "edge": "111",
         "firefox": "preview",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "api.ViewTransition": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "api.ViewTransition.finished": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "api.ViewTransition.ready": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "api.ViewTransition.skipTransition": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "api.ViewTransition.updateCallbackDone": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.properties.view-transition-name": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.properties.view-transition-name.match-element": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "137",
-        "chrome_android": "137",
-        "edge": "137",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18.4",
-        "safari_ios": "18.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.properties.view-transition-name.none": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.selectors.view-transition": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.selectors.view-transition-group": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.selectors.view-transition-image-pair": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.selectors.view-transition-new": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
-  "css.selectors.view-transition-old": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "144",
-        "firefox_android": "144",
         "safari": "18",
         "safari_ios": "18"
       }
@@ -23319,6 +22669,26 @@ export const bcdKeys = {
       "https://w3c.github.io/webauthn/"
     ]
   },
+  "api.PublicKeyCredential.authenticatorAttachment": {
+    "parent_feature": "webauthn",
+    "parent_feature_name": "Web authentication",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-11-21",
+      "support": {
+        "chrome": "98",
+        "chrome_android": "98",
+        "edge": "98",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "15.5",
+        "safari_ios": "15.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webauthn/"
+    ]
+  },
   "api.PublicKeyCredential.isConditionalMediationAvailable_static": {
     "parent_feature": "webauthn",
     "parent_feature_name": "Web authentication",
@@ -23397,46 +22767,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webauthn/#sctn-public-key-easy"
-    ]
-  },
-  "api.RTCDataChannel.closing_event": {
-    "parent_feature": "webrtc",
-    "parent_feature_name": "WebRTC",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "81",
-        "chrome_android": "81",
-        "edge": "81",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-pc/"
-    ]
-  },
-  "api.RTCDataChannel.transferable": {
-    "parent_feature": "webrtc",
-    "parent_feature_name": "WebRTC",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-14",
-      "support": {
-        "chrome": "130",
-        "chrome_android": "130",
-        "edge": "130",
-        "firefox": "144",
-        "firefox_android": "144",
-        "safari": "15",
-        "safari_ios": "15"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-pc/"
     ]
   },
   "api.RTCPeerConnection.connectionState": {
@@ -23542,26 +22872,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webrtc-pc/"
-    ]
-  },
-  "api.DedicatedWorkerGlobalScope.rtctransform_event": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
     ]
   },
   "api.RTCEncodedAudioFrame": {
@@ -23734,226 +23044,6 @@ export const bcdKeys = {
         "chrome": "86",
         "chrome_android": "86",
         "edge": "86",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpReceiver.transform": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransform": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransform.RTCRtpScriptTransform": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransformer": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransformer.options": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransformer.readable": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransformer.sendKeyFrameRequest": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpScriptTransformer.writable": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCRtpSender.transform": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCTransformEvent": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webrtc-encoded-transform/"
-    ]
-  },
-  "api.RTCTransformEvent.transformer": {
-    "parent_feature": "webrtc-encoded-transform",
-    "parent_feature_name": "WebRTC encoded transform",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-10-03",
-      "support": {
-        "chrome": "141",
-        "chrome_android": "141",
-        "edge": "141",
         "firefox": "117",
         "firefox_android": "117",
         "safari": "15.4",
@@ -24361,27 +23451,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webrtc-stats/"
-    ]
-  },
-  "api.FormData.FormData.submitter": {
-    "parent_feature": "xhr",
-    "parent_feature_name": "XMLHttpRequest",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-10-06",
-      "baseline_low_date": "2023-04-06",
-      "support": {
-        "chrome": "112",
-        "chrome_android": "112",
-        "edge": "112",
-        "firefox": "111",
-        "firefox_android": "111",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://xhr.spec.whatwg.org/"
     ]
   },
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {
