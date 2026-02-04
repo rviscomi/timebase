@@ -3,10 +3,6 @@
     "url": "https://github.com/web-platform-dx/developer-signals/issues/146",
     "votes": 13
   },
-  "active-view-transition": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/243",
-    "votes": 1
-  },
   "alignment-baseline": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/15",
     "votes": 0
@@ -21,7 +17,7 @@
   },
   "anchor-positioning": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/245",
-    "votes": 147
+    "votes": 150
   },
   "app-file-handlers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/173",
@@ -201,7 +197,7 @@
   },
   "container-scroll-state-queries": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/272",
-    "votes": 40
+    "votes": 41
   },
   "container-style-queries": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/196",
@@ -217,7 +213,7 @@
   },
   "contrast-color": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/295",
-    "votes": 22
+    "votes": 23
   },
   "controls-list": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/68",
@@ -229,7 +225,7 @@
   },
   "corner-shape": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/398",
-    "votes": 56
+    "votes": 57
   },
   "counter-reset-reversed": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/160",
@@ -369,7 +365,7 @@
   },
   "fedcm": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/208",
-    "votes": 32
+    "votes": 33
   },
   "federated-credentials": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/56",
@@ -473,7 +469,7 @@
   },
   "has-slotted": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/276",
-    "votes": 37
+    "votes": 38
   },
   "heading-selectors": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/384",
@@ -513,7 +509,7 @@
   },
   "initial-letter": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/189",
-    "votes": 7
+    "votes": 8
   },
   "ink": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/148",
@@ -559,13 +555,13 @@
     "url": "https://github.com/web-platform-dx/developer-signals/issues/277",
     "votes": 11
   },
+  "iterator-concat": {
+    "url": "https://github.com/web-platform-dx/developer-signals/issues/494",
+    "votes": 0
+  },
   "jpegxl": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/215",
-    "votes": 366
-  },
-  "js-modules-service-workers": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/143",
-    "votes": 8
+    "votes": 369
   },
   "js-modules-shared-workers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/113",
@@ -679,10 +675,6 @@
     "url": "https://github.com/web-platform-dx/developer-signals/issues/273",
     "votes": 17
   },
-  "navigation": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/172",
-    "votes": 43
-  },
   "navigator-install": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/467",
     "votes": 15
@@ -714,6 +706,10 @@
   "open-pseudo": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/310",
     "votes": 14
+  },
+  "origin": {
+    "url": "https://github.com/web-platform-dx/developer-signals/issues/495",
+    "votes": 0
   },
   "overflow-anchor": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/63",
@@ -750,10 +746,6 @@
   "paint": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/80",
     "votes": 3
-  },
-  "paint-order": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/91",
-    "votes": 2
   },
   "partitioned-cookies": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/204",
@@ -801,11 +793,11 @@
   },
   "prefers-reduced-data": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/314",
-    "votes": 5
+    "votes": 6
   },
   "prefers-reduced-transparency": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/220",
-    "votes": 1
+    "votes": 2
   },
   "presentation-api": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/53",
@@ -822,14 +814,6 @@
   "progress-function": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/444",
     "votes": 10
-  },
-  "rcap": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/218",
-    "votes": 1
-  },
-  "rch": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/193",
-    "votes": 1
   },
   "readable-byte-streams": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/137",
@@ -855,6 +839,10 @@
     "url": "https://github.com/web-platform-dx/developer-signals/issues/12",
     "votes": 1
   },
+  "related-apps": {
+    "url": "https://github.com/web-platform-dx/developer-signals/issues/493",
+    "votes": 0
+  },
   "remote-playback": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/64",
     "votes": 1
@@ -871,17 +859,9 @@
     "url": "https://github.com/web-platform-dx/developer-signals/issues/17",
     "votes": 2
   },
-  "rex": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/194",
-    "votes": 0
-  },
   "rhythmic-sizing": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/315",
     "votes": 1
-  },
-  "ric": {
-    "url": "https://github.com/web-platform-dx/developer-signals/issues/195",
-    "votes": 0
   },
   "ruby-overhang": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/268",
@@ -897,7 +877,7 @@
   },
   "scheduler": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/254",
-    "votes": 12
+    "votes": 14
   },
   "scoped-custom-element-registries": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/364",
@@ -933,7 +913,7 @@
   },
   "scroll-markers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/289",
-    "votes": 11
+    "votes": 12
   },
   "scroll-snap-events": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/255",
@@ -969,7 +949,7 @@
   },
   "shared-workers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/19",
-    "votes": 4
+    "votes": 5
   },
   "show-picker-input": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/162",
@@ -1109,6 +1089,10 @@
   },
   "video-dynamic-range": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/169",
+    "votes": 0
+  },
+  "view-transitions-element-scoped": {
+    "url": "https://github.com/web-platform-dx/developer-signals/issues/496",
     "votes": 0
   },
   "viewport-segments": {

@@ -1378,7 +1378,7 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "2026-01-15",
+        "date": "2026-01-21",
         "version": "144"
       },
       {
@@ -1388,6 +1388,10 @@ export const browsers = {
       {
         "date": "2026-03-12",
         "version": "146"
+      },
+      {
+        "date": "2026-04-09",
+        "version": "147"
       }
     ]
   },
@@ -9598,7 +9602,7 @@ export const bcdKeys = {
     "parent_feature_name": "background-position",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-01-15",
+      "baseline_low_date": "2026-01-21",
       "support": {
         "chrome": "144",
         "chrome_android": "144",
@@ -9618,7 +9622,7 @@ export const bcdKeys = {
     "parent_feature_name": "background-position",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-01-15",
+      "baseline_low_date": "2026-01-21",
       "support": {
         "chrome": "144",
         "chrome_android": "144",
@@ -11744,26 +11748,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
     ]
   },
-  "css.at-rules.media.display-mode": {
-    "parent_feature": "display-mode",
-    "parent_feature_name": "display-mode media query",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-08-01",
-      "support": {
-        "chrome": "42",
-        "chrome_android": "42",
-        "edge": "79",
-        "firefox": "47",
-        "firefox_android": "116",
-        "safari": "13",
-        "safari_ios": "12.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/mediaqueries-5/#display-modes"
-    ]
-  },
   "api.CaretPosition": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
@@ -11880,6 +11864,141 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/cssom-view-1/#dom-document-caretpositionfrompoint"
+    ]
+  },
+  "api.DocumentPictureInPicture": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPicture.enter_event": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPicture.requestWindow": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPicture.requestWindow.option_preferInitialWindowPlacement": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPicture.window": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPictureEvent": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPictureEvent.DocumentPictureInPictureEvent": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPictureEvent.window": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.Window.documentPictureInPicture": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "edge": "116",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
     ]
   },
   "api.Document.write.enforces_trusted_types": {
@@ -12374,7 +12493,7 @@ export const bcdKeys = {
     "parent_feature_name": "File API",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-01-15",
+      "baseline_low_date": "2026-01-21",
       "support": {
         "chrome": "144",
         "chrome_android": "144",
@@ -12486,6 +12605,46 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
     ]
   },
+  "css.properties.font-variant-position": {
+    "parent_feature": "font-variant-position",
+    "parent_feature_name": "font-variant-position",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-09-15",
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "34",
+        "firefox_android": "34",
+        "safari": "9.1",
+        "safari_ios": "9.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-position-prop"
+    ]
+  },
+  "css.properties.font-variant-position.normal": {
+    "parent_feature": "font-variant-position",
+    "parent_feature_name": "font-variant-position",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2023-09-15",
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "34",
+        "firefox_android": "34",
+        "safari": "9.1",
+        "safari_ios": "9.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-position-prop"
+    ]
+  },
   "javascript.builtins.Function.toString.toString_revision": {
     "parent_feature": "functions",
     "parent_feature_name": "Functions",
@@ -12564,7 +12723,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-upsert/"
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
     ]
   },
   "javascript.builtins.Map.getOrInsertComputed": {
@@ -12584,7 +12743,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-upsert/"
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
     ]
   },
   "javascript.builtins.WeakMap.getOrInsert": {
@@ -12604,7 +12763,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-upsert/"
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
     ]
   },
   "javascript.builtins.WeakMap.getOrInsertComputed": {
@@ -12624,7 +12783,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-upsert/"
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
     ]
   },
   "api.Element.beforematch_event": {
@@ -14090,7 +14249,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-math-sum/"
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
     ]
   },
   "css.properties.math-shift": {
@@ -15979,6 +16138,21 @@ export const bcdKeys = {
       "https://cookiestore.spec.whatwg.org/"
     ]
   },
+  "css.at-rules.media.display-mode.picture-in-picture": {
+    "parent_feature": "picture-in-picture",
+    "parent_feature_name": "Picture-in-picture (video)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "edge": "123",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/picture-in-picture/"
+    ]
+  },
   "api.SVGAElement.ping": {
     "parent_feature": "ping",
     "parent_feature_name": "ping",
@@ -16581,6 +16755,26 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
     ]
   },
+  "css.selectors.nesting.at-scope": {
+    "parent_feature": "scope",
+    "parent_feature_name": "@scope",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "142",
+        "firefox_android": "142",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
   "css.properties.scrollbar-color": {
     "parent_feature": "scrollbar-color",
     "parent_feature_name": "scrollbar-color",
@@ -17036,7 +17230,7 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-01-15",
+      "baseline_low_date": "2026-01-21",
       "support": {
         "chrome": "144",
         "chrome_android": "144",
@@ -17073,7 +17267,7 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-01-15",
+      "baseline_low_date": "2026-01-21",
       "support": {
         "chrome": "144",
         "chrome_android": "144",
@@ -22178,7 +22372,8 @@ export const bcdKeys = {
     "parent_feature": "two-value-display",
     "parent_feature_name": "Two-value display property",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-21",
       "baseline_low_date": "2023-07-21",
       "support": {
         "chrome": "115",
