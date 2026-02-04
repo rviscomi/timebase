@@ -1378,7 +1378,7 @@ export const browsers = {
         "version": "143"
       },
       {
-        "date": "2026-01-15",
+        "date": "2026-01-21",
         "version": "144"
       },
       {
@@ -1388,6 +1388,10 @@ export const browsers = {
       {
         "date": "2026-03-12",
         "version": "146"
+      },
+      {
+        "date": "2026-04-09",
+        "version": "147"
       }
     ]
   },
@@ -3891,7 +3895,7 @@ export const features = {
     "kind": "feature",
     "name": "Array.fromAsync()",
     "spec": [
-      "https://tc39.es/proposal-array-from-async/#sec-array.fromAsync"
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.fromasync"
     ],
     "status": {
       "baseline": "low",
@@ -4425,6 +4429,55 @@ export const features = {
       }
     }
   },
+  "audiolistener": {
+    "description_html": "An <code>AudioListener</code> object represents the virtual position and orientation of a person relative to sound sources, to spatialize audio in a Web Audio context.",
+    "kind": "feature",
+    "name": "AudioListener",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#AudioListener"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "52",
+        "chrome_android": "52",
+        "edge": "79",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    }
+  },
+  "audiolistener-setposition-setorientation": {
+    "description_html": "The <code>setPosition()</code> and <code>setOrientation()</code> methods of the <code>AudioListener</code> API set the virtual position and orientation of a person relative to sound sources, to spatialize audio in a Web Audio context.",
+    "discouraged": {
+      "according_to": [
+        "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setposition",
+        "https://webaudio.github.io/web-audio-api/#dom-audiolistener-setorientation"
+      ],
+      "alternatives": [
+        "audiolistener"
+      ],
+      "reason": "The setPosition() and setOrientation() methods are equivalent to using an AudioListener instances's positionX, positionY, positionZ, forwardX, forwardY, forwardZ, upX, upY, and upZ properties.",
+      "reason_html": "The <code>setPosition()</code> and <code>setOrientation()</code> methods are equivalent to using an <code>AudioListener</code> instances's <code>positionX</code>, <code>positionY</code>, <code>positionZ</code>, <code>forwardX</code>, <code>forwardY</code>, <code>forwardZ</code>, <code>upX</code>, <code>upY</code>, and <code>upZ</code> properties."
+    },
+    "kind": "feature",
+    "name": "AudioListener setPosition() and setOrientation()",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#AudioListener"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "14",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "25",
+        "firefox_android": "25",
+        "safari": "6",
+        "safari_ios": "6"
+      }
+    }
+  },
   "autocapitalize": {
     "description_html": "The <code>autocapitalize</code> global HTML attribute sets the virtual keyboard capitalization behavior for user input on an element, such as the first letter of sentences or all words.",
     "kind": "feature",
@@ -4469,14 +4522,11 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/semantics-other.html#selector-autofill"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-02-09",
+      "baseline": false,
       "support": {
         "chrome": "110",
         "chrome_android": "110",
         "edge": "110",
-        "firefox": "86",
-        "firefox_android": "86",
         "safari": "15",
         "safari_ios": "15"
       }
@@ -4642,17 +4692,14 @@ export const features = {
       "https://drafts.csswg.org/css-backgrounds-3/#the-background-attachment"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2024-09-14",
-      "baseline_low_date": "2022-03-14",
+      "baseline": false,
       "support": {
         "chrome": "1",
         "chrome_android": "18",
         "edge": "12",
         "firefox": "25",
         "firefox_android": "25",
-        "safari": "15.4",
-        "safari_ios": "15.4"
+        "safari": "15.4"
       }
     }
   },
@@ -6444,7 +6491,8 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-5/#color-gamut"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2025-08-14",
       "baseline_low_date": "2023-02-14",
       "support": {
         "chrome": "58",
@@ -8452,7 +8500,7 @@ export const features = {
         "chrome_android": "42",
         "edge": "79",
         "firefox": "47",
-        "firefox_android": "116",
+        "firefox_android": "47",
         "safari": "13",
         "safari_ios": "12.2"
       }
@@ -10727,9 +10775,7 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "34",
-        "firefox_android": "34",
-        "safari": "9.1",
-        "safari_ios": "9.3"
+        "firefox_android": "34"
       }
     }
   },
@@ -11171,7 +11217,7 @@ export const features = {
     "kind": "feature",
     "name": "Map getOrInsert()",
     "spec": [
-      "https://tc39.es/proposal-upsert/"
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
     ],
     "status": {
       "baseline": "low",
@@ -14815,7 +14861,7 @@ export const features = {
     "kind": "feature",
     "name": "Math.sumPrecise()",
     "spec": [
-      "https://tc39.es/proposal-math-sum/"
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
     ],
     "status": {
       "baseline": false,
@@ -19255,15 +19301,15 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-09",
+      "baseline_low_date": "2025-12-12",
       "support": {
-        "chrome": "118",
-        "chrome_android": "118",
-        "edge": "118",
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
         "firefox": "146",
         "firefox_android": "146",
-        "safari": "17.4",
-        "safari_ios": "17.4"
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -22897,7 +22943,8 @@ export const features = {
       "https://drafts.csswg.org/css-display-3/#the-display-properties"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-01-21",
       "baseline_low_date": "2023-07-21",
       "support": {
         "chrome": "115",
@@ -23046,7 +23093,8 @@ export const features = {
     "kind": "feature",
     "name": "Uint8Array base64 and hex conversion",
     "spec": [
-      "https://tc39.es/proposal-arraybuffer-base64/spec/"
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-constructor",
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-prototype-object"
     ],
     "status": {
       "baseline": "low",
@@ -24871,6 +24919,19 @@ export const features = {
         "safari": "26",
         "safari_ios": "26"
       }
+    }
+  },
+  "webgpu-subgroups": {
+    "description_html": "The subgroups extension for the WebGPU Shading Language (WGSL) enables SIMD parallelism. Using subgroups, threads in a workgroup can efficiently communicate and perform collective operations.",
+    "kind": "feature",
+    "name": "WebGPU subgroups",
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/#subgroups",
+      "https://gpuweb.github.io/gpuweb/wgsl/#extension-subgroups"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "webhid": {
