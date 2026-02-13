@@ -9723,7 +9723,8 @@ export const bcdKeys = {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "87",
@@ -9743,7 +9744,8 @@ export const bcdKeys = {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "87",
@@ -11395,7 +11397,8 @@ export const bcdKeys = {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "59",
@@ -11672,7 +11675,8 @@ export const bcdKeys = {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "17",
@@ -11692,7 +11696,8 @@ export const bcdKeys = {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "17",
@@ -11712,7 +11717,8 @@ export const bcdKeys = {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "17",
@@ -11732,7 +11738,8 @@ export const bcdKeys = {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "17",
@@ -11746,6 +11753,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
+    ]
+  },
+  "css.at-rules.media.display-mode.browser": {
+    "parent_feature": "display-mode",
+    "parent_feature_name": "display-mode media query",
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
+      "baseline_low_date": "2023-08-01",
+      "support": {
+        "chrome": "42",
+        "chrome_android": "42",
+        "edge": "79",
+        "firefox": "47",
+        "firefox_android": "116",
+        "safari": "13",
+        "safari_ios": "12.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/mediaqueries-5/#display-modes"
     ]
   },
   "api.CaretPosition": {
@@ -13272,7 +13300,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13292,7 +13321,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13312,7 +13342,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13332,7 +13363,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13352,7 +13384,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13372,7 +13405,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13392,7 +13426,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13412,7 +13447,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13432,7 +13468,8 @@ export const bcdKeys = {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13452,7 +13489,8 @@ export const bcdKeys = {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13472,7 +13510,8 @@ export const bcdKeys = {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -13492,7 +13531,8 @@ export const bcdKeys = {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "106",
@@ -14336,7 +14376,8 @@ export const bcdKeys = {
     "parent_feature": "media-capture",
     "parent_feature_name": "Media capture",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "47",
@@ -16102,7 +16143,8 @@ export const bcdKeys = {
     "parent_feature": "page-selectors",
     "parent_feature_name": "Page selectors",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "18",
@@ -16166,6 +16208,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/links.html#ping"
+    ]
+  },
+  "api.Element.pointerrawupdate_event": {
+    "parent_feature": "pointer-events-api",
+    "parent_feature_name": "Pointer Events",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/pointerevents/"
     ]
   },
   "api.PointerEvent.pointerType.fractional_coordinates": {

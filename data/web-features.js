@@ -5837,6 +5837,21 @@ export const features = {
       }
     }
   },
+  "capture-handle": {
+    "description_html": "The capture handle API allows you to share a custom handle (a string) from a web application being captured by <code>getDisplayMedia()</code> to the capturing web application.",
+    "kind": "feature",
+    "name": "Capture Handle",
+    "spec": [
+      "https://w3c.github.io/mediacapture-handle/identity/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "edge": "102"
+      }
+    }
+  },
   "capture-stream-audio-video": {
     "description_html": "The <code>captureStream()</code> method for <code>&#x3C;audio></code> and <code>&#x3C;video></code> elements returns a <code>MediaStream</code> for the media element's content. You can use this to record media or send it elsewhere, such as a canvas or WebRTC connection.",
     "kind": "feature",
@@ -8327,6 +8342,24 @@ export const features = {
       }
     }
   },
+  "digital-credentials": {
+    "description_html": "The digital credentials API issues and requests digital credentials, such as driver's licenses or ID cards, with the browser or operating system. Digital credentials extend the <code>navigator.credentials</code> credential management API.",
+    "kind": "feature",
+    "name": "Digital credentials",
+    "spec": [
+      "https://w3c-fedid.github.io/digital-credentials/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    }
+  },
   "digital-goods": {
     "description_html": "The <code>window.getDigitalGoodsService</code> API connects to stores or billing services for in-app products and subscriptions.",
     "kind": "feature",
@@ -8371,7 +8404,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-01",
       "baseline_low_date": "2023-08-01",
       "support": {
         "chrome": "17",
@@ -8493,16 +8527,11 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-5/#display-modes"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-08-01",
+      "baseline": false,
       "support": {
-        "chrome": "42",
-        "chrome_android": "42",
+        "chrome": "47",
         "edge": "79",
-        "firefox": "47",
-        "firefox_android": "47",
-        "safari": "13",
-        "safari_ios": "12.2"
+        "firefox_android": "116"
       }
     }
   },
@@ -9840,7 +9869,7 @@ export const features = {
     }
   },
   "filter": {
-    "description_html": "The <code>filter</code> CSS property applies one or more graphic effects to an element. You can use filter functions, such as <code>blur()</code> and <code>drop-shadow()</code>, alone or combined to produce different effects.",
+    "description_html": "The <code>filter</code> CSS property applies one or more graphic effects to an element. You can use filter functions, such as <code>blur()</code> and <code>drop-shadow()</code>, alone or combined to produce different effects. For instance, <code>filter: blur(2px)</code>.",
     "kind": "feature",
     "name": "filter",
     "spec": [
@@ -9856,6 +9885,21 @@ export const features = {
         "edge": "12",
         "firefox": "35",
         "firefox_android": "35",
+        "safari": "9.1",
+        "safari_ios": "9.3"
+      }
+    }
+  },
+  "filter-function": {
+    "description_html": "The <code>filter()</code> CSS function applies one or more graphic effects to a CSS image, such as a background image. You can use functions, such as <code>blur()</code> and <code>drop-shadow()</code>, alone or combined to produce different effects. For instance, <code>background: filter(url(image.png), blur(2px))</code>.",
+    "kind": "feature",
+    "name": "filter()",
+    "spec": [
+      "https://drafts.csswg.org/filter-effects-1/#FilterCSSImageValue"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
         "safari": "9.1",
         "safari_ios": "9.3"
       }
@@ -11121,7 +11165,7 @@ export const features = {
   "geolocation": {
     "description_html": "The <code>navigator.geolocation</code> API requests the user's latitude, longitude, heading, and speed.",
     "kind": "feature",
-    "name": "Geolocation",
+    "name": "Geolocation API",
     "spec": [
       "https://w3c.github.io/geolocation/"
     ],
@@ -11138,6 +11182,18 @@ export const features = {
         "safari": "5",
         "safari_ios": "≤3"
       }
+    }
+  },
+  "geolocation-element": {
+    "description_html": "The <code>&#x3C;geolocation></code> HTML element represents a button that, upon activation, prompts the user to choose whether to grant the page access to geolocation data.",
+    "kind": "feature",
+    "name": "<geolocation>",
+    "spec": [
+      "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "get-computed-style": {
@@ -15422,7 +15478,7 @@ export const features = {
     "kind": "feature",
     "name": "Mouse events",
     "spec": [
-      "https://w3c.github.io/uievents/#events-mouse-types"
+      "https://w3c.github.io/pointerevents/#mouse-event-types"
     ],
     "status": {
       "baseline": "high",
@@ -22370,15 +22426,15 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2024-03-19",
+      "baseline_low_date": "2024-10-17",
       "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
         "firefox": "124",
         "firefox_android": "124",
-        "safari": "17.4",
-        "safari_ios": "17.4"
+        "safari": "17.5",
+        "safari_ios": "17.5"
       }
     }
   },
@@ -22404,46 +22460,12 @@ export const features = {
     }
   },
   "text-wrap-mode": {
-    "description_html": "The <code>text-wrap-mode</code> CSS property sets whether lines may wrap with the values <code>wrap</code> and <code>nowrap</code>. It is a longhand property for both <code>white-space</code> and <code>text-wrap</code>.",
-    "kind": "feature",
-    "name": "text-wrap-mode",
-    "spec": [
-      "https://drafts.csswg.org/css-text-4/#text-wrap-mode"
-    ],
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2024-10-17",
-      "support": {
-        "chrome": "130",
-        "chrome_android": "130",
-        "edge": "130",
-        "firefox": "124",
-        "firefox_android": "124",
-        "safari": "17.4",
-        "safari_ios": "17.4"
-      }
-    }
+    "kind": "moved",
+    "redirect_target": "text-wrap"
   },
   "text-wrap-nowrap": {
-    "description_html": "The <code>text-wrap: nowrap</code> CSS declaration prevents text breaking into multiple lines. Text that doesn't fit overflows instead.",
-    "kind": "feature",
-    "name": "text-wrap: nowrap",
-    "spec": [
-      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-mode-nowrap"
-    ],
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2024-03-19",
-      "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
-        "firefox": "124",
-        "firefox_android": "124",
-        "safari": "17.4",
-        "safari_ios": "17.4"
-      }
-    }
+    "kind": "moved",
+    "redirect_target": "text-wrap"
   },
   "text-wrap-pretty": {
     "description_html": "The <code>text-wrap: pretty</code> CSS declaration prioritizes better layout over speed when text is broken into multiple lines.",
@@ -22464,43 +22486,16 @@ export const features = {
     }
   },
   "text-wrap-stable": {
-    "description_html": "The <code>text-wrap: stable</code> CSS declaration wraps text using the default algorithm, but does not change wrapping on earlier lines while the text is being edited.",
-    "kind": "feature",
-    "name": "text-wrap: stable",
-    "spec": [
-      "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-stable"
-    ],
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2024-10-17",
-      "support": {
-        "chrome": "130",
-        "chrome_android": "130",
-        "edge": "130",
-        "firefox": "121",
-        "firefox_android": "121",
-        "safari": "17.5",
-        "safari_ios": "17.5"
-      }
-    }
+    "kind": "moved",
+    "redirect_target": "text-wrap"
   },
   "text-wrap-style": {
-    "description_html": "The <code>text-wrap-style</code> CSS property sets how lines break in text that overflows the container. It can also be set with the <code>text-wrap</code> shorthand.",
-    "kind": "feature",
-    "name": "text-wrap-style",
-    "spec": [
-      "https://drafts.csswg.org/css-text-4/#text-wrap-style"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "130",
-        "chrome_android": "130",
-        "edge": "130",
-        "safari": "26",
-        "safari_ios": "26"
-      }
-    }
+    "kind": "split",
+    "redirect_targets": [
+      "text-wrap",
+      "text-wrap-balance",
+      "text-wrap-pretty"
+    ]
   },
   "textarea": {
     "description_html": "The <code>&#x3C;textarea></code> element represents an editing control that allows users to enter multi-line, free-form, plain text.",
@@ -25403,7 +25398,7 @@ export const features = {
     "kind": "feature",
     "name": "Wheel events",
     "spec": [
-      "https://w3c.github.io/uievents/#events-wheelevents"
+      "https://w3c.github.io/pointerevents/#events-wheelevents"
     ],
     "status": {
       "baseline": false,
