@@ -584,8 +584,12 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "null",
+        "date": "2026-04-07",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       },
       {
         "date": "null",
@@ -1085,8 +1089,12 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "null",
+        "date": "2026-04-07",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       }
     ]
   },
@@ -2785,7 +2793,7 @@ export const browsers = {
         "version": "26.2"
       },
       {
-        "date": "2025-12-15",
+        "date": "2026-02-11",
         "version": "26.3"
       },
       {
@@ -3010,7 +3018,7 @@ export const browsers = {
         "version": "26.2"
       },
       {
-        "date": "2025-12-15",
+        "date": "2026-02-11",
         "version": "26.3"
       }
     ]
@@ -12834,6 +12842,23 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
     ]
   },
+  "html.global_attributes.hidden.until-found": {
+    "parent_feature": "hidden-until-found",
+    "parent_feature_name": "hidden=\"until-found\"",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "102",
+        "chrome_android": "102",
+        "edge": "102",
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
+    ]
+  },
   "css.properties.hyphenate-character": {
     "parent_feature": "hyphenate-character",
     "parent_feature_name": "Hyphenate character",
@@ -13734,6 +13759,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "147",
         "firefox_android": "147"
       }
@@ -16384,6 +16412,20 @@ export const bcdKeys = {
       "https://w3c.github.io/push-api/"
     ]
   },
+  "css.types.random": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
   "css.types.length.rcap": {
     "parent_feature": "rcap",
     "parent_feature_name": "rcap unit",
@@ -16523,9 +16565,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16540,9 +16582,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16557,9 +16599,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16574,9 +16616,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16591,9 +16633,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16608,9 +16650,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16625,9 +16667,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16642,9 +16684,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16659,9 +16701,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16676,9 +16718,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16693,9 +16735,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16710,9 +16752,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -16832,6 +16874,114 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-cascade-6/#scope-atrule"
+    ]
+  },
+  "api.CustomElementRegistry.CustomElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.CustomElementRegistry.initialize": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.Document.customElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.Element.customElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.HTMLTemplateElement.shadowRootCustomElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.ShadowRoot.customElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
     ]
   },
   "css.properties.scrollbar-color": {
@@ -16996,12 +17146,14 @@ export const bcdKeys = {
     "parent_feature": "shape-function",
     "parent_feature_name": "shape()",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-24",
       "support": {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135",
-        "firefox": "preview",
+        "firefox": "148",
+        "firefox_android": "148",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -21613,6 +21765,46 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
     ]
   },
+  "css.properties.text-indent.each-line": {
+    "parent_feature": "text-indent-each-line",
+    "parent_feature_name": "text-indent: each-line",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-12",
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "121",
+        "firefox_android": "121",
+        "safari": "15",
+        "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-indent-property"
+    ]
+  },
+  "css.properties.text-indent.hanging": {
+    "parent_feature": "text-indent-hanging",
+    "parent_feature_name": "text-indent: hanging",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-12",
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "121",
+        "firefox_android": "121",
+        "safari": "15",
+        "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#text-indent-property"
+    ]
+  },
   "css.properties.text-justify": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
@@ -23723,6 +23915,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://xhr.spec.whatwg.org/"
+    ]
+  },
+  "http.headers.Accept-Encoding.zstd": {
+    "parent_feature": "zstd",
+    "parent_feature_name": "Zstandard compression",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-02-11",
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "126",
+        "firefox_android": "126",
+        "safari": "26.3",
+        "safari_ios": "26.3"
+      }
+    },
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc8878"
+    ]
+  },
+  "http.headers.Content-Encoding.zstd": {
+    "parent_feature": "zstd",
+    "parent_feature_name": "Zstandard compression",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-02-11",
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "126",
+        "firefox_android": "126",
+        "safari": "26.3",
+        "safari_ios": "26.3"
+      }
+    },
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc8878"
     ]
   }
 };

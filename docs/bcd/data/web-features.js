@@ -584,8 +584,12 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "null",
+        "date": "2026-04-07",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       },
       {
         "date": "null",
@@ -1085,8 +1089,12 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "null",
+        "date": "2026-04-07",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       }
     ]
   },
@@ -2785,7 +2793,7 @@ export const browsers = {
         "version": "26.2"
       },
       {
-        "date": "2025-12-15",
+        "date": "2026-02-11",
         "version": "26.3"
       },
       {
@@ -3010,7 +3018,7 @@ export const browsers = {
         "version": "26.2"
       },
       {
-        "date": "2025-12-15",
+        "date": "2026-02-11",
         "version": "26.3"
       }
     ]
@@ -4585,15 +4593,15 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2024-01-26",
+      "baseline_low_date": "2024-01-25",
       "support": {
         "chrome": "85",
         "chrome_android": "85",
         "edge": "121",
-        "firefox": "93",
-        "firefox_android": "93",
-        "safari": "16",
-        "safari_ios": "16"
+        "firefox": "113",
+        "firefox_android": "113",
+        "safari": "16.4",
+        "safari_ios": "16.1"
       }
     }
   },
@@ -11685,7 +11693,9 @@ export const features = {
       "support": {
         "chrome": "102",
         "chrome_android": "102",
-        "edge": "102"
+        "edge": "102",
+        "firefox": "148",
+        "firefox_android": "148"
       }
     }
   },
@@ -13606,6 +13616,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "147",
         "firefox_android": "147"
       }
@@ -14055,6 +14068,20 @@ export const features = {
         "firefox_android": "4",
         "safari": "1",
         "safari_ios": "1"
+      }
+    }
+  },
+  "languagedetector": {
+    "description_html": "The <code>LanguageDetector</code> API identifies the likely natural language that some text is written in. You can use this API to supplement machine translation when the source source language is not known.",
+    "kind": "feature",
+    "name": "Language detector",
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138"
       }
     }
   },
@@ -14706,6 +14733,18 @@ export const features = {
       }
     }
   },
+  "manifest-localization": {
+    "description_html": "The <code>_localized</code> suffixed members of the web app manifest set translated names, descriptions, icons, and shortcuts. The browser automatically selects resources based on the user's language and region settings.",
+    "kind": "feature",
+    "name": "Web app manifest localization",
+    "spec": [
+      "https://w3c.github.io/manifest/#localized-members"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "map": {
     "description_html": "Map objects hold key-value pairs and remember the original insertion order of the keys.",
     "kind": "feature",
@@ -15256,6 +15295,18 @@ export const features = {
         "chrome_android": "134",
         "edge": "134"
       }
+    }
+  },
+  "meta-text-scale": {
+    "description_html": "The <code>&#x3C;meta name=\"text-scale\" content=\"scale\" /></code> HTML element allows the browser's initial font size to be affected by the operating system text scale settings. The <code>&#x3C;meta name=\"text-scale\" content=\"legacy\" /></code> element is the default behavior that respects only browser font-size settings.",
+    "kind": "feature",
+    "name": "<meta name=\"text-scale\">",
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#text-scale-meta"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "meta-theme-color": {
@@ -18268,6 +18319,21 @@ export const features = {
       }
     }
   },
+  "random-function": {
+    "description_html": "The <code>random()</code> CSS function chooses a random numeric value within a specified range. This allows for dynamic, randomized styling using CSS.",
+    "kind": "feature",
+    "name": "random()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    }
+  },
   "rcap": {
     "description_html": "The <code>rcap</code> CSS length unit is a font-relative length equal to the value of the <code>cap</code> unit on the root element. Cap-height is approximately equal to the height of a capital Latin letter.",
     "kind": "feature",
@@ -19402,6 +19468,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -20273,12 +20342,14 @@ export const features = {
       "https://drafts.csswg.org/css-shapes-1/#shape-function"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-24",
       "support": {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135",
-        "firefox": "preview",
+        "firefox": "148",
+        "firefox_android": "148",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -22165,8 +22236,12 @@ export const features = {
       "https://drafts.csswg.org/css-text-4/#text-indent-property"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-12",
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "121",
         "firefox_android": "121",
         "safari": "15",
@@ -22182,8 +22257,12 @@ export const features = {
       "https://drafts.csswg.org/css-text-4/#text-indent-property"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-12",
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "121",
         "firefox_android": "121",
         "safari": "15",
@@ -22884,6 +22963,20 @@ export const features = {
         "firefox_android": "111",
         "safari": "6",
         "safari_ios": "6"
+      }
+    }
+  },
+  "translator": {
+    "description_html": "The <code>Translator</code> API translates some text from one natural language to another, using machine translation.",
+    "kind": "feature",
+    "name": "Translator",
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138"
       }
     }
   },
@@ -24968,8 +25061,8 @@ export const features = {
       "baseline_high_date": "2023-03-16",
       "baseline_low_date": "2020-09-16",
       "support": {
-        "chrome": "9",
-        "chrome_android": "18",
+        "chrome": "32",
+        "chrome_android": "32",
         "edge": "18",
         "firefox": "65",
         "firefox_android": "65",
@@ -25920,13 +26013,16 @@ export const features = {
       "https://www.rfc-editor.org/rfc/rfc8878"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-11",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
         "firefox": "126",
-        "firefox_android": "126"
+        "firefox_android": "126",
+        "safari": "26.3",
+        "safari_ios": "26.3"
       }
     }
   }
