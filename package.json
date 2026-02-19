@@ -13,7 +13,7 @@
     "update-chrome-content": "node scripts/chrome-content.js",
     "start": "npx http-server ./docs -p 8080 -c-1 --cors -o -a localhost -d false -i docs/index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
-    "build": "npm run update:meta &&node scripts/build.js && node scripts/build-bcd.js",
+    "build": "npm run update:meta && node scripts/build.js && node scripts/build-bcd.js",
     "dev": "npm run stop && npm run build && npm run start",
     "test": "vitest run"
   },
