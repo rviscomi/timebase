@@ -558,6 +558,7 @@
         "https://web.dev/articles/two-way-communication-guide"
       ],
       "api.Navigation": [
+        "https://web.dev/blog/baseline-navigation-api",
         "https://web.dev/blog/web-platform-05-2022"
       ],
       "api.NavigationPreloadManager": [
