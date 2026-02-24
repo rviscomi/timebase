@@ -1390,7 +1390,7 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "2026-02-12",
+        "date": "2026-02-14",
         "version": "145"
       },
       {
@@ -1400,6 +1400,10 @@ export const browsers = {
       {
         "date": "2026-04-09",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       }
     ]
   },
@@ -2798,6 +2802,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "26.4"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3020,6 +3028,10 @@ export const browsers = {
       {
         "date": "2026-02-11",
         "version": "26.3"
+      },
+      {
+        "date": "null",
+        "version": "26.4"
       }
     ]
   }
@@ -9585,6 +9597,25 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.with"
     ]
   },
+  "api.ReadableStream.@@asyncIterator": {
+    "parent_feature": "async-iterable-streams",
+    "parent_feature_name": "Asynchronously iterable streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "110",
+        "firefox_android": "110",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/#rs-asynciterator"
+    ]
+  },
   "javascript.builtins.Atomics.waitAsync": {
     "parent_feature": "atomics-wait-async",
     "parent_feature_name": "Atomics.waitAsync()",
@@ -12093,6 +12124,25 @@ export const bcdKeys = {
       "reason_html": "The dynamic markup insertion API, which includes <code>document.write()</code>, has \"very idiosyncratic behavior\" which can be difficult to debug."
     }
   },
+  "api.Element.currentCSSZoom": {
+    "parent_feature": "dom",
+    "parent_feature_name": "DOM",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "126",
+        "firefox_android": "126",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://dom.spec.whatwg.org/"
+    ]
+  },
   "api.EventCounts": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
@@ -12453,6 +12503,25 @@ export const bcdKeys = {
       "https://fetch.spec.whatwg.org/"
     ]
   },
+  "api.Response.body.readable_byte_stream": {
+    "parent_feature": "fetch",
+    "parent_feature_name": "Fetch",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "116",
+        "chrome_android": "116",
+        "edge": "116",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://fetch.spec.whatwg.org/"
+    ]
+  },
   "api.Response.json_static": {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
@@ -12549,7 +12618,7 @@ export const bcdKeys = {
     "parent_feature_name": "Focus events",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -12747,7 +12816,7 @@ export const bcdKeys = {
     "parent_feature_name": "Map getOrInsert()",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -12767,7 +12836,7 @@ export const bcdKeys = {
     "parent_feature_name": "Map getOrInsert()",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -12787,7 +12856,7 @@ export const bcdKeys = {
     "parent_feature_name": "Map getOrInsert()",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -12807,7 +12876,7 @@ export const bcdKeys = {
     "parent_feature_name": "Map getOrInsert()",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -13763,7 +13832,9 @@ export const bcdKeys = {
         "chrome_android": "146",
         "edge": "146",
         "firefox": "147",
-        "firefox_android": "147"
+        "firefox_android": "147",
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     },
     "spec": [
@@ -14318,6 +14389,44 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
+    ]
+  },
+  "css.properties.font-size.math": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
+    ]
+  },
+  "css.properties.math-depth": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
     ]
   },
   "css.properties.math-shift": {
@@ -15761,6 +15870,74 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api"
     ]
   },
+  "api.NavigateEvent.intercept.precommitHandler_option": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "firefox": "147",
+        "firefox_android": "147"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
+  "api.NavigationPrecommitController": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "firefox": "147",
+        "firefox_android": "147"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
+  "api.NavigationPrecommitController.addHandler": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
+  "api.NavigationPrecommitController.redirect": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "firefox": "147",
+        "firefox_android": "147"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
   "api.CSSStyleRule.cssRules": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
@@ -16466,6 +16643,310 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ]
   },
+  "api.ReadableByteStreamController": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableByteStreamController.byobRequest": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableByteStreamController.close": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableByteStreamController.desiredSize": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableByteStreamController.enqueue": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableByteStreamController.error": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader.ReadableStreamBYOBReader": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader.cancel": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader.closed": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader.read": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBReader.releaseLock": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBRequest": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBRequest.respond": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBRequest.respondWithNewView": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
+  "api.ReadableStreamBYOBRequest.view": {
+    "parent_feature": "readable-byte-streams",
+    "parent_feature_name": "Readable byte streams",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "102",
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/"
+    ]
+  },
   "javascript.builtins.RegExp.unicodeSets": {
     "parent_feature": "regexp",
     "parent_feature_name": "Regular expressions",
@@ -16484,6 +16965,40 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects"
+    ]
+  },
+  "api.PerformanceResourceTiming.deliveryType": {
+    "parent_feature": "resource-timing",
+    "parent_feature_name": "Resource timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
+    ]
+  },
+  "api.PerformanceResourceTiming.firstInterimResponseStart": {
+    "parent_feature": "resource-timing",
+    "parent_feature_name": "Resource timing",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
     ]
   },
   "css.types.length.rex": {
@@ -23897,6 +24412,784 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.WebTransport": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.WebTransport": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.WebTransport.options_allowPooling_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.WebTransport.options_congestionControl_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.WebTransport.options_requireUnreliable_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.WebTransport.options_serverCertificateHashes_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "125",
+        "firefox_android": "125",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.byob_readers": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.close": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.closed": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.congestionControl": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.createBidirectionalStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.createBidirectionalStream.options_sendOrder_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "119",
+        "firefox_android": "119",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.createUnidirectionalStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.createUnidirectionalStream.byob_readers": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.createUnidirectionalStream.options_sendOrder_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.datagrams": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.incomingBidirectionalStreams": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.incomingUnidirectionalStreams": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.ready": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.reliability": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportBidirectionalStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportBidirectionalStream.readable": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportBidirectionalStream.readable.returns_WebTransportReceiveStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportBidirectionalStream.writable": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportBidirectionalStream.writable.returns_WebTransportSendStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.byob_readers": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.incomingHighWaterMark": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.incomingMaxAge": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.maxDatagramSize": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.outgoingHighWaterMark": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.outgoingMaxAge": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.readable": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportError": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportError.WebTransportError": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportError.source": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportError.streamErrorCode": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "97",
+        "chrome_android": "97",
+        "edge": "97",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportReceiveStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportReceiveStream.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.getWriter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.sendOrder": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "121",
+        "firefox_android": "121",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
     ]
   },
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {

@@ -1390,7 +1390,7 @@ export const browsers = {
         "version": "144"
       },
       {
-        "date": "2026-02-12",
+        "date": "2026-02-14",
         "version": "145"
       },
       {
@@ -1400,6 +1400,10 @@ export const browsers = {
       {
         "date": "2026-04-09",
         "version": "147"
+      },
+      {
+        "date": "null",
+        "version": "148"
       }
     ]
   },
@@ -2798,6 +2802,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "26.4"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3020,6 +3028,10 @@ export const browsers = {
       {
         "date": "2026-02-11",
         "version": "26.3"
+      },
+      {
+        "date": "null",
+        "version": "26.4"
       }
     ]
   }
@@ -11285,7 +11297,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-02-12",
+      "baseline_low_date": "2026-02-14",
       "support": {
         "chrome": "145",
         "chrome_android": "145",
@@ -13160,6 +13172,18 @@ export const features = {
       }
     }
   },
+  "install": {
+    "description_html": "The <code>&#x3C;install></code> HTML element represents a button that, upon activation, prompts the user to choose whether to install a progressive web app.",
+    "kind": "feature",
+    "name": "<install>",
+    "spec": [
+      "https://github.com/WICG/install-element"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "interaction": {
     "description_html": "The <code>pointer</code>, <code>any-pointer</code>, <code>hover</code>, and <code>any-hover</code> CSS media queries set styles based on the presence of pointing devices and their ability to hover over elements. For example, most smartphones match the <code>(hover: none) and (pointer: coarse)</code> media query.",
     "kind": "feature",
@@ -13620,7 +13644,9 @@ export const features = {
         "chrome_android": "146",
         "edge": "146",
         "firefox": "147",
-        "firefox_android": "147"
+        "firefox_android": "147",
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     }
   },
@@ -15720,6 +15746,24 @@ export const features = {
       }
     }
   },
+  "navigation-precommit-handlers": {
+    "description_html": "The <code>precommitHandler</code> callback option to <code>NavigateEvent</code>'s <code>intercept()</code> method returns a promise that defers navigation until the promise resolves. You can use this to change the navigation's URL, state, and history before navigation occurs.",
+    "kind": "feature",
+    "name": "Navigation precommit handlers",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    }
+  },
   "navigation-timing": {
     "description_html": "The <code>navigation</code> performance entry and the <code>PerformanceNavigationTiming</code> API measures navigation events, such as loading time or the number of redirects.",
     "kind": "feature",
@@ -17211,7 +17255,7 @@ export const features = {
     "kind": "feature",
     "name": "Payment handler",
     "spec": [
-      "https://w3c.github.io/payment-handler/"
+      "https://w3c.github.io/web-based-payment-handler/"
     ],
     "status": {
       "baseline": false,
@@ -18413,7 +18457,9 @@ export const features = {
         "chrome_android": "89",
         "edge": "89",
         "firefox": "102",
-        "firefox_android": "102"
+        "firefox_android": "102",
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     }
   },
@@ -23951,6 +23997,21 @@ export const features = {
       }
     }
   },
+  "wasm-jspi": {
+    "description_html": "The JavaScript promise integration (JSPI) suspends a WebAssembly module when it calls a JavaScript method that returns a promise. The module resumes when the promise is resolved. You can use this to call asynchronous Web APIs from synchronous WebAssembly.",
+    "kind": "feature",
+    "name": "JavaScript promise integration (WebAssembly)",
+    "spec": [
+      "https://github.com/WebAssembly/js-promise-integration/blob/main/proposals/js-promise-integration/Overview.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "137",
+        "edge": "137"
+      }
+    }
+  },
   "wasm-memory64": {
     "description_html": "Instructions accept 64-bit memory indexes.",
     "kind": "feature",
@@ -25194,7 +25255,9 @@ export const features = {
         "chrome_android": "97",
         "edge": "97",
         "firefox": "114",
-        "firefox_android": "114"
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     }
   },
