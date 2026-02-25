@@ -6951,6 +6951,20 @@
       "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Selectors/:scope"
     }
   ],
+  "scoped-custom-element-registries": [
+    {
+      "slug": "Web/API/CustomElementRegistry/CustomElementRegistry",
+      "title": "CustomElementRegistry: CustomElementRegistry() constructor",
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/CustomElementRegistry"
+    },
+    {
+      "slug": "Web/API/CustomElementRegistry/initialize",
+      "title": "CustomElementRegistry: initialize() method",
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/initialize"
+    }
+  ],
   "screen": [
     {
       "slug": "Web/API/Window/screen",
@@ -10691,6 +10705,26 @@
       "title": "baseline-shift",
       "anchor": null,
       "url": "https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/baseline-shift"
+    }
+  ],
+  "navigation-precommit-handlers": [
+    {
+      "slug": "Web/API/NavigationPrecommitController",
+      "title": "NavigationPrecommitController",
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController"
+    },
+    {
+      "slug": "Web/API/NavigationPrecommitController/addHandler",
+      "title": "NavigationPrecommitController: addHandler() method",
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/addHandler"
+    },
+    {
+      "slug": "Web/API/NavigationPrecommitController/redirect",
+      "title": "NavigationPrecommitController: redirect() method",
+      "anchor": null,
+      "url": "https://developer.mozilla.org/docs/Web/API/NavigationPrecommitController/redirect"
     }
   ]
 }
