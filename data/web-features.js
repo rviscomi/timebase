@@ -2023,6 +2023,10 @@ export const browsers = {
         "version": "150"
       },
       {
+        "date": "2026-05-19",
+        "version": "151"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2566,6 +2570,10 @@ export const browsers = {
       {
         "date": "2026-04-21",
         "version": "150"
+      },
+      {
+        "date": "2026-05-19",
+        "version": "151"
       }
     ]
   },
@@ -3143,6 +3151,27 @@ export const features = {
         "firefox_android": "124",
         "safari": "17.4",
         "safari_ios": "17.4"
+      }
+    }
+  },
+  "abortsignal-timeout": {
+    "description_html": "The <code>AbortSignal.timeout()</code> static method returns an abort signal that automatically aborts after a specified duration.",
+    "kind": "feature",
+    "name": "AbortSignal.timeout()",
+    "spec": [
+      "https://dom.spec.whatwg.org/#dom-abortsignal-timeout"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-04-18",
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "100",
+        "firefox_android": "100",
+        "safari": "16",
+        "safari_ios": "16"
       }
     }
   },
@@ -5884,7 +5913,9 @@ export const features = {
       "support": {
         "chrome": "62",
         "chrome_android": "62",
-        "edge": "79"
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149"
       }
     }
   },
@@ -6397,7 +6428,7 @@ export const features = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview"
+        "firefox": "149"
       }
     }
   },
@@ -19422,7 +19453,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "148",
+        "firefox_android": "148"
       }
     }
   },
@@ -26069,7 +26101,7 @@ export const features = {
     }
   },
   "zstd": {
-    "description_html": "Zstandard or <code>zstd</code> is fast lossless compression algorithm. When used as a content encoding, it is often faster and offers better compression than brotli.",
+    "description_html": "Zstandard or <code>zstd</code> is a fast lossless compression algorithm. When used as a content encoding, it is often faster and offers better compression than brotli.",
     "kind": "feature",
     "name": "Zstandard compression",
     "spec": [
