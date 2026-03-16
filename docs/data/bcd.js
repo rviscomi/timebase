@@ -1402,7 +1402,7 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-07",
         "version": "148"
       }
     ]
@@ -9868,7 +9868,8 @@ export const bcdKeys = {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "73",
@@ -10367,7 +10368,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10383,7 +10385,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10399,7 +10402,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10415,7 +10419,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10431,7 +10436,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10447,7 +10453,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -10463,7 +10470,8 @@ export const bcdKeys = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     },
     "spec": [
@@ -11454,6 +11462,54 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/webappapis.html#css-module-script"
+    ]
+  },
+  "css.properties.appearance.base-select": {
+    "parent_feature": "customizable-select",
+    "parent_feature_name": "Customizable <select>",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://open-ui.org/components/customizableselect/"
+    ]
+  },
+  "css.selectors.picker": {
+    "parent_feature": "customizable-select",
+    "parent_feature_name": "Customizable <select>",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://open-ui.org/components/customizableselect/"
+    ]
+  },
+  "css.selectors.picker-icon": {
+    "parent_feature": "customizable-select",
+    "parent_feature_name": "Customizable <select>",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://open-ui.org/components/customizableselect/"
     ]
   },
   "api.DeviceMotionEvent": {
@@ -14996,7 +15052,8 @@ export const bcdKeys = {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "109",
@@ -15046,6 +15103,23 @@ export const bcdKeys = {
         "firefox_android": "4",
         "safari": "5.1",
         "safari_ios": "5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
+    ]
+  },
+  "mathml.global_attributes.dir.rtl_operator_mirroring": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "146",
+        "firefox_android": "146"
       }
     },
     "spec": [
@@ -16492,7 +16566,8 @@ export const bcdKeys = {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "112",
@@ -16512,7 +16587,8 @@ export const bcdKeys = {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "112",
@@ -16532,7 +16608,8 @@ export const bcdKeys = {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "112",
@@ -16699,6 +16776,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-color-4/#ok-lab"
+    ]
+  },
+  "css.selectors.open": {
+    "parent_feature": "open-pseudo",
+    "parent_feature_name": ":open",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "136",
+        "firefox_android": "136",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#open-state"
     ]
   },
   "api.Origin": {
@@ -17033,6 +17128,40 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/popover.html"
+    ]
+  },
+  "api.HTMLElement.popover.hint": {
+    "parent_feature": "popover-hint",
+    "parent_feature_name": "popover=\"hint\"",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "149",
+        "firefox_android": "149"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
+    ]
+  },
+  "html.global_attributes.popover.hint": {
+    "parent_feature": "popover-hint",
+    "parent_feature_name": "popover=\"hint\"",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "149",
+        "firefox_android": "149"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
     ]
   },
   "api.HTMLLinkElement.imageSizes": {
@@ -22922,46 +23051,6 @@ export const bcdKeys = {
       "https://tc39.es/proposal-temporal/"
     ]
   },
-  "css.properties.text-decoration-line.grammar-error": {
-    "parent_feature": "text-decoration",
-    "parent_feature_name": "text-decoration",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-12-12",
-      "support": {
-        "chrome": "121",
-        "chrome_android": "121",
-        "edge": "121",
-        "firefox": "137",
-        "firefox_android": "137",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
-    ]
-  },
-  "css.properties.text-decoration-line.spelling-error": {
-    "parent_feature": "text-decoration",
-    "parent_feature_name": "text-decoration",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2025-12-12",
-      "support": {
-        "chrome": "121",
-        "chrome_android": "121",
-        "edge": "121",
-        "firefox": "137",
-        "firefox_android": "137",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
-    ]
-  },
   "css.properties.text-decoration.includes_color-and-style": {
     "parent_feature": "text-decoration",
     "parent_feature_name": "text-decoration",
@@ -23000,6 +23089,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
+    ]
+  },
+  "css.properties.text-decoration-line.grammar-error": {
+    "parent_feature": "text-decoration-spelling-grammar",
+    "parent_feature_name": "Spelling and grammar text decorations",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-spelling-error"
+    ]
+  },
+  "css.properties.text-decoration-line.spelling-error": {
+    "parent_feature": "text-decoration-spelling-grammar",
+    "parent_feature_name": "Spelling and grammar text decorations",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-spelling-error"
     ]
   },
   "css.properties.text-indent.each-line": {
@@ -24480,7 +24609,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24500,7 +24630,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24520,7 +24651,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24540,7 +24672,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24560,7 +24693,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24580,7 +24714,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",
@@ -24600,7 +24735,8 @@ export const bcdKeys = {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-02-28",
       "baseline_low_date": "2023-08-29",
       "support": {
         "chrome": "86",

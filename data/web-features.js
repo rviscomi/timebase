@@ -1402,7 +1402,7 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-07",
         "version": "148"
       }
     ]
@@ -6428,7 +6428,8 @@ export const features = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "149"
+        "firefox": "149",
+        "firefox_android": "149"
       }
     }
   },
@@ -11240,7 +11241,7 @@ export const features = {
     "kind": "feature",
     "name": "<geolocation>",
     "spec": [
-      "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element"
+      "https://wicg.github.io/PEPC/geolocation-element.html"
     ],
     "status": {
       "baseline": false,
@@ -13898,13 +13899,16 @@ export const features = {
       "https://tc39.es/proposal-json-parse-with-source/#sec-json-object"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-03-31",
       "support": {
         "chrome": "114",
         "chrome_android": "114",
         "edge": "114",
         "firefox": "135",
-        "firefox_android": "135"
+        "firefox_android": "135",
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -14575,6 +14579,18 @@ export const features = {
       }
     }
   },
+  "loading-lazy-media": {
+    "description_html": "The <code>loading=\"lazy\"</code> attribute for <code>&#x3C;video></code> and <code>&#x3C;audio></code> elements defers loading the media resource until the element is near the viewport. This matches the lazy-loading behavior for <code>&#x3C;img></code> and <code>&#x3C;iframe></code> elements.",
+    "kind": "feature",
+    "name": "Lazy-loading media",
+    "spec": [
+      "https://github.com/whatwg/html/pull/11980"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "local-fonts": {
     "description_html": "The <code>window.queryLocalFonts()</code> method returns an array of locally-installed fonts, each represented by a <code>FontData</code> object.",
     "kind": "feature",
@@ -15045,6 +15061,28 @@ export const features = {
         "safari": "5.1",
         "safari_ios": "5"
       }
+    }
+  },
+  "mathml-full": {
+    "description_html": "MathML specifies several elements and attributes that are not included in MathML Core. Math applications outside of browsers may implement these features, but they are discouraged for web use.",
+    "discouraged": {
+      "according_to": [
+        "https://w3c.github.io/mathml-core/#introduction"
+      ],
+      "alternatives": [
+        "mathml"
+      ],
+      "reason": "Only MathML Core (a subset of MathML Full) is designed to work with web technologies, such as CSS.",
+      "reason_html": "Only MathML Core (a subset of MathML Full) is designed to work with web technologies, such as CSS."
+    },
+    "kind": "feature",
+    "name": "MathML Full",
+    "spec": [
+      "https://w3c.github.io/mathml/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "measure-memory": {
@@ -16585,7 +16623,8 @@ export const features = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "136",
-        "firefox_android": "136"
+        "firefox_android": "136",
+        "safari": "preview"
       }
     }
   },
@@ -17688,7 +17727,9 @@ export const features = {
       "support": {
         "chrome": "133",
         "chrome_android": "133",
-        "edge": "133"
+        "edge": "133",
+        "firefox": "149",
+        "firefox_android": "149"
       }
     }
   },
@@ -20643,6 +20684,22 @@ export const features = {
       }
     }
   },
+  "signature-based-resource-integrity": {
+    "description_html": "Signature-based resource integrity verifies a script's provenance by checking that the resource has been signed with a trusted key given by the <code>&#x3C;script></code> element's <code>integrity</code> attribute.",
+    "kind": "feature",
+    "name": "Signature-based resource integrity",
+    "spec": [
+      "https://wicg.github.io/signature-based-sri/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141"
+      }
+    }
+  },
   "single-color-gradients": {
     "kind": "split",
     "redirect_targets": [
@@ -22237,6 +22294,66 @@ export const features = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105"
+      }
+    }
+  },
+  "text-decoration-skip-ink": {
+    "description_html": "The <code>text-decoration-skip-ink</code> CSS property sets whether underlines and overlines may be interrupted where the line would cross a glyph.",
+    "kind": "feature",
+    "name": "text-decoration-skip-ink",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-ink-property"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2024-09-14",
+      "baseline_low_date": "2022-03-14",
+      "support": {
+        "chrome": "64",
+        "chrome_android": "64",
+        "edge": "79",
+        "firefox": "70",
+        "firefox_android": "79",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    }
+  },
+  "text-decoration-skip-ink-all": {
+    "description_html": "The <code>text-decoration-skip-ink: all</code> CSS declaration forces interruptions in underlines and overlines where the line would cross a glyph. This contrasts with <code>auto</code>, which does not skip for CJK glyphs.",
+    "kind": "feature",
+    "name": "text-decoration-skip-ink: all",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-ink-all"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "75",
+        "firefox_android": "79",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    }
+  },
+  "text-decoration-spelling-grammar": {
+    "description_html": "The <code>text-decoration-line: spelling-error</code> and <code>text-decoration-line: grammar-error</code> CSS declarations apply the browser's marking for spelling and grammatical mistakes. This is typically a wavy underline in red or green.",
+    "kind": "feature",
+    "name": "Spelling and grammar text decorations",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-spelling-error"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
