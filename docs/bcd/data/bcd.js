@@ -588,8 +588,12 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-05",
         "version": "148"
+      },
+      {
+        "date": "null",
+        "version": "149"
       },
       {
         "date": "null",
@@ -1093,8 +1097,12 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-05",
         "version": "148"
+      },
+      {
+        "date": "null",
+        "version": "149"
       }
     ]
   },
@@ -11406,6 +11414,26 @@ export const bcdKeys = {
       "https://w3c.github.io/webappsec-credential-management/"
     ]
   },
+  "http.headers.Content-Security-Policy.report-to": {
+    "parent_feature": "csp",
+    "parent_feature_name": "Content Security Policy (CSP)",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "70",
+        "chrome_android": "70",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webappsec-csp/"
+    ]
+  },
   "http.headers.Content-Security-Policy.script-src.external_scripts": {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
@@ -11462,6 +11490,51 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/webappapis.html#css-module-script"
+    ]
+  },
+  "api.CSSPseudoElement": {
+    "parent_feature": "css-object-model",
+    "parent_feature_name": "CSS object model",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#css-object-model"
+    ]
+  },
+  "api.CSSPseudoElement.element": {
+    "parent_feature": "css-object-model",
+    "parent_feature_name": "CSS object model",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#css-object-model"
+    ]
+  },
+  "api.CSSPseudoElement.type": {
+    "parent_feature": "css-object-model",
+    "parent_feature_name": "CSS object model",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-1/#css-object-model"
     ]
   },
   "css.properties.appearance.base-select": {
@@ -12802,13 +12875,13 @@ export const bcdKeys = {
     "parent_feature_name": "Math font family",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-12",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
         "edge": "109",
-        "firefox": "145",
-        "firefox_android": "145",
+        "firefox": "149",
+        "firefox_android": "149",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13581,6 +13654,36 @@ export const bcdKeys = {
       "support": {
         "firefox": "149",
         "firefox_android": "149",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
+    ]
+  },
+  "html.elements.input.alpha": {
+    "parent_feature": "input-color-alpha",
+    "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
+    ]
+  },
+  "html.elements.input.colorspace": {
+    "parent_feature": "input-color-alpha",
+    "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -14978,8 +15081,12 @@ export const bcdKeys = {
     "parent_feature": "math-sum-precise",
     "parent_feature_name": "Math.sumPrecise()",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-04-09",
       "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147",
         "firefox": "137",
         "firefox_android": "137",
         "safari": "26.2",
@@ -17749,6 +17856,95 @@ export const bcdKeys = {
       "https://w3c.github.io/webappsec-csp/#reporting"
     ]
   },
+  "api.ReportingObserver.ReportingObserver.options_parameter": {
+    "parent_feature": "reporting",
+    "parent_feature_name": "Reporting API",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "api.ReportingObserver.ReportingObserver.options_parameter.types_property": {
+    "parent_feature": "reporting",
+    "parent_feature_name": "Reporting API",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation": {
+    "parent_feature": "reporting",
+    "parent_feature_name": "Reporting API",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.integrity-violation": {
+    "parent_feature": "reporting",
+    "parent_feature_name": "Reporting API",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "firefox": "149",
+        "firefox_android": "149"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
   "api.ReportingObserver.disconnect": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
@@ -17829,6 +18025,29 @@ export const bcdKeys = {
         "edge": "84",
         "firefox": "149",
         "firefox_android": "149"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "http.headers.Reporting-Endpoints": {
+    "parent_feature": "reporting",
+    "parent_feature_name": "Reporting API",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "96",
+        "chrome_android": "96",
+        "edge": "96",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     },
     "spec": [
@@ -25528,6 +25747,861 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.XRCompositionLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCompositionLayer.blendTextureSourceAlpha": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCompositionLayer.destroy": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCompositionLayer.layout": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCompositionLayer.mipLevels": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCompositionLayer.needsRedraw": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCubeLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCubeLayer.orientation": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCubeLayer.redraw_event": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCubeLayer.space": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.aspectRatio": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.centralAngle": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.radius": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.redraw_event": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.space": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRCylinderLayer.transform": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.centralHorizontalAngle": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.lowerVerticalAngle": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.radius": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.redraw_event": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.space": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.transform": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XREquirectLayer.upperVerticalAngle": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRLayerEvent": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRLayerEvent.XRLayerEvent": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRLayerEvent.layer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer.fixedFoveation": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer.ignoreDepthValues": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer.textureArrayLength": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer.textureHeight": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRProjectionLayer.textureWidth": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer.height": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer.redraw_event": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer.space": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer.transform": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRQuadLayer.width": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRRenderState.layers": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRSubImage": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRSubImage.viewport": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.createCubeLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.createCylinderLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.createEquirectLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.createProjectionLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.createQuadLayer": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.getSubImage": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.getViewSubImage": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLBinding.nativeProjectionScaleFactor": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage.colorTexture": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage.colorTextureHeight": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage.colorTextureWidth": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage.depthStencilTexture": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
+    ]
+  },
+  "api.XRWebGLSubImage.imageIndex": {
+    "parent_feature": "webxr-layers",
+    "parent_feature_name": "Layers (WebXR)",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://immersive-web.github.io/layers/"
     ]
   },
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {

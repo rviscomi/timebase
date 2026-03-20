@@ -588,8 +588,12 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-05",
         "version": "148"
+      },
+      {
+        "date": "null",
+        "version": "149"
       },
       {
         "date": "null",
@@ -1093,8 +1097,12 @@ export const browsers = {
         "version": "147"
       },
       {
-        "date": "null",
+        "date": "2026-05-05",
         "version": "148"
+      },
+      {
+        "date": "null",
+        "version": "149"
       }
     ]
   },
@@ -4350,11 +4358,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133"
-      }
+      "support": {}
     }
   },
   "attr-contents": {
@@ -8054,6 +8058,18 @@ export const features = {
       }
     }
   },
+  "declarative-webmcp": {
+    "description_html": "The <code>toolname</code>, <code>tooldescription</code>, and <code>toolautosubmit</code> HTML form element attributes register actions that can be called by in-browser AI agents or browser extensions. Also known as declarative WebMCP.",
+    "kind": "feature",
+    "name": "Form-associated WebMCP attributes",
+    "spec": [
+      "https://webmachinelearning.github.io/webmcp/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "dedicated-workers": {
     "description_html": "The <code>Worker()</code> constructor runs a script in its own thread, which can send and receive messages with the script that created it. Also known as web workers.",
     "kind": "feature",
@@ -9722,6 +9738,23 @@ export const features = {
       }
     }
   },
+  "fetch-formdata": {
+    "description_html": "The <code>Request.formData()</code> and <code>Response.formData()</code> methods read a request or response body and return a <code>FormData</code> promise. You can use it to access the fields of a form submission.",
+    "kind": "feature",
+    "name": "Fetch form data",
+    "spec": [
+      "https://fetch.spec.whatwg.org/#body-mixin"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "39",
+        "firefox_android": "39",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    }
+  },
   "fetch-metadata": {
     "description_html": "The <code>Sec-Fetch-Dest</code>, <code>Sec-Fetch-Mode</code>, <code>Sec-Fetch-Site</code>, and <code>Sec-Fetch-User</code> HTTP headers provide extra information about the way a request was made, to help servers reject certain kinds of malicious requests.",
     "kind": "feature",
@@ -10211,6 +10244,18 @@ export const features = {
       }
     }
   },
+  "focusgroup": {
+    "description_html": "The <code>focusgroup</code> global HTML attribute combines descendant elements into a single tab stop, with arrow-key navigation between them, for toolbars, tabs, menus, radio groups, and other composite controls. It's an alternative to the sequential navigation of <code>tabindex</code>.",
+    "kind": "feature",
+    "name": "focusgroup",
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "font-display": {
     "description_html": "The <code>font-display</code> CSS descriptor sets whether to show a substitute font or nothing while a font face loads. The property manages what's known as a flash of unstyled text or flash of invisible text.",
     "kind": "feature",
@@ -10286,13 +10331,13 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-12",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
         "edge": "109",
-        "firefox": "145",
-        "firefox_android": "145",
+        "firefox": "149",
+        "firefox_android": "149",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -15032,8 +15077,12 @@ export const features = {
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-04-09",
       "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147",
         "firefox": "137",
         "firefox_android": "137",
         "safari": "26.2",
@@ -15883,6 +15932,18 @@ export const features = {
     "name": "navigator.install()",
     "spec": [
       "https://github.com/w3c/manifest/pull/1175"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
+  "navigator-modelcontext": {
+    "description_html": "The <code>navigator.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
+    "kind": "feature",
+    "name": "navigator.modelContext",
+    "spec": [
+      "https://webmachinelearning.github.io/webmcp/"
     ],
     "status": {
       "baseline": false,
@@ -18909,11 +18970,14 @@ export const features = {
       "https://w3c.github.io/webappsec-csp/#reporting"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "96",
         "chrome_android": "96",
         "edge": "96",
+        "firefox": "149",
+        "firefox_android": "149",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -25679,7 +25743,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
     }
   },
   "webxr-lighting-estimation": {
@@ -26160,12 +26228,8 @@ export const features = {
       "https://dom.spec.whatwg.org/#xslt"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline": false,
       "support": {
-        "chrome": "1",
-        "chrome_android": "18",
         "edge": "12",
         "firefox": "1",
         "firefox_android": "4",
