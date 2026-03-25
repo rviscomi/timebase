@@ -15,6 +15,7 @@ async function build() {
   await buildTimeline({
     distDir: DIST_DIR,
     renderer: generateTimelineHTML,
+    clientScriptDir: '../src',
     templateReplacements: [
       ['<script type="module" src="client.js"></script>', '<script type="module" src="client-bcd.js"></script>'],
       ['<title>Baseline timeline</title>', '<title>Baseline timeline - BCD Keys</title>'],

@@ -416,7 +416,8 @@ export function createCard(item, options = {}) {
 
   let parentFeatureHTML = '';
   if (renderParentFeature && item.parent_feature && item.parent_feature !== item.id) {
-    parentFeatureHTML = `<div class="parent-feature-info">Part of: <a href="../index.html#feature-${item.parent_feature}" target="_blank">${escapeHtml(item.parent_feature_name || item.parent_feature)}</a></div>`;
+    const parentCardType = item.parent_feature_baseline === false ? 'limited-availability' : 'newly-available';
+    parentFeatureHTML = `<div class="parent-feature-info">Part of: <a href="../index.html#feature-${item.parent_feature}-${parentCardType}" target="_blank">${escapeHtml(item.parent_feature_name || item.parent_feature)}</a></div>`;
   }
 
   let linksHTML = '';

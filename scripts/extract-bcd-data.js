@@ -103,6 +103,7 @@ Object.entries(data.features).forEach(([featureId, feature]) => {
       bcdKeys[bcdKey] = {
         parent_feature: featureId,
         parent_feature_name: feature.name,
+        parent_feature_baseline: feature.status?.baseline,
         status: bcdStatus,
         spec: feature.spec,
         discouraged: feature.discouraged

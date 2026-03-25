@@ -28,6 +28,7 @@ export async function buildTimeline({
   renderer,
   templateReplacements = [],
   clientScript,
+  clientScriptDir = 'src',
   dataProcessor,
   rawArgs,
   rendererOptions = {}
@@ -38,23 +39,15 @@ export async function buildTimeline({
     await fs.mkdir(distDir, { recursive: true });
   }
 
-  // Copy static assets
-  // If distDir is a subdirectory (like docs/bcd), we need to handle assets differently
-  // But for now, let's assume we copy 'data' and 'src' to the output directory
-  // or ensure they are accessible.
-  // The original scripts copied 'images', 'data', 'src' to docs/
-  // and 'data', 'src' to docs/bcd/
-  
-  const assets = ['data', 'src'];
-  // Add images if we are in the root docs dir (heuristic: distDir ends with 'docs')
+  // Only copy assets for the root docs directory; subdirectories (e.g. docs/bcd)
+  // reference shared assets via relative paths like ../src/ and ../images/.
   if (distDir.endsWith('docs')) {
-    assets.push('images');
-  }
-
-  for (const asset of assets) {
-    const source = path.resolve(__dirname, '../', asset);
-    const dest = path.resolve(distDir, asset);
-    await fs.cp(source, dest, { recursive: true, force: true });
+    const assets = ['data', 'src', 'images'];
+    for (const asset of assets) {
+      const source = path.resolve(__dirname, '../', asset);
+      const dest = path.resolve(distDir, asset);
+      await fs.cp(source, dest, { recursive: true, force: true });
+    }
   }
 
   const template = await fs.readFile(TEMPLATE_PATH, 'utf-8');
@@ -84,7 +77,7 @@ export async function buildTimeline({
   if (clientScript) {
     outputHTML = outputHTML.replace(
       `src="${clientScript}"`,
-      `src="src/${clientScript}"`
+      `src="${clientScriptDir}/${clientScript}"`
     );
   }
 

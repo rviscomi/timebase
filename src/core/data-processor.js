@@ -170,6 +170,7 @@ export function processBcdKeys(bcdKeys, browsers, metadata = {}) {
       name: data.name || id,
       parent_feature: data.parent_feature,
       parent_feature_name: data.parent_feature_name,
+      parent_feature_baseline: data.parent_feature_baseline,
       description: data.description,
       description_html: data.description_html || data.description,
       discouraged: data.discouraged,
