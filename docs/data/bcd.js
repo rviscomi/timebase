@@ -1402,7 +1402,7 @@ export const browsers = {
         "version": "145"
       },
       {
-        "date": "2026-03-12",
+        "date": "2026-03-13",
         "version": "146"
       },
       {
@@ -1412,6 +1412,10 @@ export const browsers = {
       {
         "date": "2026-05-07",
         "version": "148"
+      },
+      {
+        "date": "2026-06-04",
+        "version": "149"
       }
     ]
   },
@@ -5977,16 +5981,13 @@ export const bcdKeys = {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-01-13",
+      "baseline": false,
       "support": {
-        "chrome": "125",
-        "chrome_android": "125",
-        "edge": "125",
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
         "firefox": "147",
-        "firefox_android": "147",
-        "safari": "26",
-        "safari_ios": "26"
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -6000,9 +6001,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "147",
-        "firefox_android": "147",
-        "safari": "26",
-        "safari_ios": "26"
+        "firefox_android": "147"
       }
     },
     "spec": [
@@ -10151,7 +10150,8 @@ export const bcdKeys = {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -10171,7 +10171,8 @@ export const bcdKeys = {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -10191,7 +10192,8 @@ export const bcdKeys = {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -10211,7 +10213,8 @@ export const bcdKeys = {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -10231,7 +10234,8 @@ export const bcdKeys = {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "117",
@@ -10522,7 +10526,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "95",
@@ -10542,7 +10547,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -10562,7 +10568,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "95",
@@ -10582,7 +10589,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -10602,7 +10610,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "95",
@@ -10622,7 +10631,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -10642,7 +10652,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "83",
@@ -10662,7 +10673,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "117",
@@ -10682,7 +10694,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -10702,7 +10715,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "95",
@@ -10722,7 +10736,8 @@ export const bcdKeys = {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -10802,7 +10817,8 @@ export const bcdKeys = {
     "parent_feature": "container-queries",
     "parent_feature_name": "Container queries",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "111",
@@ -10822,7 +10838,8 @@ export const bcdKeys = {
     "parent_feature": "container-queries",
     "parent_feature_name": "Container queries",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "111",
@@ -10918,7 +10935,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -10938,7 +10956,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -10958,7 +10977,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -10978,7 +10998,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -10998,7 +11019,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11018,7 +11040,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11038,7 +11061,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11058,7 +11082,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11078,7 +11103,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11098,7 +11124,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11118,7 +11145,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11138,7 +11166,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11158,7 +11187,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11178,7 +11208,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11198,7 +11229,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11218,7 +11250,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11238,7 +11271,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11258,7 +11292,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11278,7 +11313,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11298,7 +11334,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11318,7 +11355,8 @@ export const bcdKeys = {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -11338,7 +11376,8 @@ export const bcdKeys = {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "52",
@@ -11398,7 +11437,8 @@ export const bcdKeys = {
     "parent_feature": "credential-management",
     "parent_feature_name": "Credential management",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "60",
@@ -11589,7 +11629,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11609,7 +11650,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11629,7 +11671,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11649,7 +11692,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11669,7 +11713,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11689,7 +11734,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "7",
@@ -11709,7 +11755,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "7",
@@ -11729,7 +11776,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "7",
@@ -11749,7 +11797,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "7",
@@ -11769,7 +11818,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -11789,7 +11839,8 @@ export const bcdKeys = {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "7",
@@ -12704,7 +12755,8 @@ export const bcdKeys = {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -12743,7 +12795,8 @@ export const bcdKeys = {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "105",
@@ -12854,7 +12907,8 @@ export const bcdKeys = {
     "parent_feature": "font-face",
     "parent_feature_name": "@font-face",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "108",
@@ -12927,11 +12981,32 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-font-loading-3/"
     ]
   },
+  "api.FontFaceSet.loading_event": {
+    "parent_feature": "font-loading",
+    "parent_feature_name": "Font loading",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2025-12-12",
+      "support": {
+        "chrome": "35",
+        "chrome_android": "35",
+        "edge": "79",
+        "firefox": "41",
+        "firefox_android": "41",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-font-loading-3/"
+    ]
+  },
   "css.at-rules.font-face.size-adjust": {
     "parent_feature": "font-size-adjust",
     "parent_feature_name": "font-size-adjust",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "92",
@@ -12951,7 +13026,8 @@ export const bcdKeys = {
     "parent_feature": "font-variant-position",
     "parent_feature_name": "font-variant-position",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -12971,7 +13047,8 @@ export const bcdKeys = {
     "parent_feature": "font-variant-position",
     "parent_feature_name": "font-variant-position",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -12991,7 +13068,8 @@ export const bcdKeys = {
     "parent_feature": "functions",
     "parent_feature_name": "Functions",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "66",
@@ -13209,7 +13287,8 @@ export const bcdKeys = {
     "parent_feature": "hyphenate-character",
     "parent_feature_name": "Hyphenate character",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "106",
@@ -13229,7 +13308,8 @@ export const bcdKeys = {
     "parent_feature": "hyphenate-character",
     "parent_feature_name": "Hyphenate character",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "106",
@@ -13249,7 +13329,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "55",
@@ -13269,7 +13350,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "88",
@@ -13289,7 +13371,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13309,7 +13392,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13329,7 +13413,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -13349,7 +13434,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "55",
@@ -13369,7 +13455,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13389,7 +13476,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13409,7 +13497,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13429,7 +13518,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -13449,7 +13539,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13469,7 +13560,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13489,7 +13581,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -13509,7 +13602,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "87",
@@ -13529,7 +13623,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -13549,7 +13644,8 @@ export const bcdKeys = {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -13569,7 +13665,8 @@ export const bcdKeys = {
     "parent_feature": "iframe-sandbox",
     "parent_feature_name": "Sandboxed iframes",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "83",
@@ -13590,7 +13687,8 @@ export const bcdKeys = {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -13610,7 +13708,8 @@ export const bcdKeys = {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -13630,7 +13729,8 @@ export const bcdKeys = {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -15180,7 +15280,8 @@ export const bcdKeys = {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -15200,7 +15301,8 @@ export const bcdKeys = {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -15254,11 +15356,131 @@ export const bcdKeys = {
       "https://w3c.github.io/mediacapture-main/"
     ]
   },
+  "css.selectors.buffering": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.muted": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.paused": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.playing": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.seeking": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.stalled": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.volume-locked": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
   "html.elements.link.rel.modulepreload": {
     "parent_feature": "modulepreload",
     "parent_feature_name": "<link rel=\"modulepreload\">",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "66",
@@ -16786,7 +17008,8 @@ export const bcdKeys = {
     "parent_feature": "nth-child",
     "parent_feature_name": ":nth-child()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "57",
@@ -16807,7 +17030,8 @@ export const bcdKeys = {
     "parent_feature": "offscreen-canvas",
     "parent_feature_name": "Offscreen canvas",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "69",
@@ -16827,7 +17051,8 @@ export const bcdKeys = {
     "parent_feature": "offscreen-canvas",
     "parent_feature_name": "Offscreen canvas",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "69",
@@ -16997,7 +17222,8 @@ export const bcdKeys = {
     "parent_feature": "overflow",
     "parent_feature_name": "Overflow media queries",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -17018,7 +17244,8 @@ export const bcdKeys = {
     "parent_feature": "overflow",
     "parent_feature_name": "Overflow media queries",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -17396,7 +17623,8 @@ export const bcdKeys = {
     "parent_feature": "promise-any",
     "parent_feature_name": "Promise.any()",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "98",
@@ -17416,7 +17644,8 @@ export const bcdKeys = {
     "parent_feature": "push",
     "parent_feature_name": "Push messages",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "43",
@@ -17794,7 +18023,8 @@ export const bcdKeys = {
     "parent_feature": "regexp",
     "parent_feature_name": "Regular expressions",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "112",
@@ -18715,7 +18945,8 @@ export const bcdKeys = {
     "parent_feature": "selection-api",
     "parent_feature_name": "Selection",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "58",
@@ -18907,7 +19138,8 @@ export const bcdKeys = {
     "parent_feature": "storage-manager",
     "parent_feature_name": "Storage manager",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -18927,7 +19159,8 @@ export const bcdKeys = {
     "parent_feature": "streams",
     "parent_feature_name": "Streams",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "105",
@@ -18987,7 +19220,8 @@ export const bcdKeys = {
     "parent_feature": "subgrid",
     "parent_feature_name": "Subgrid",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -19007,7 +19241,8 @@ export const bcdKeys = {
     "parent_feature": "subgrid",
     "parent_feature_name": "Subgrid",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -19027,7 +19262,8 @@ export const bcdKeys = {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "108",
@@ -19047,7 +19283,8 @@ export const bcdKeys = {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "108",
@@ -19067,7 +19304,8 @@ export const bcdKeys = {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "59",
@@ -23355,7 +23593,7 @@ export const bcdKeys = {
     "parent_feature_name": "text-indent: each-line",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-03-12",
+      "baseline_low_date": "2026-03-13",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -23375,7 +23613,7 @@ export const bcdKeys = {
     "parent_feature_name": "text-indent: hanging",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-03-12",
+      "baseline_low_date": "2026-03-13",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -24233,7 +24471,8 @@ export const bcdKeys = {
     "parent_feature": "update",
     "parent_feature_name": "Update frequency media query",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -24253,7 +24492,8 @@ export const bcdKeys = {
     "parent_feature": "url",
     "parent_feature_name": "URL",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "117",
@@ -24273,7 +24513,8 @@ export const bcdKeys = {
     "parent_feature": "url",
     "parent_feature_name": "URL",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "117",
@@ -24293,7 +24534,8 @@ export const bcdKeys = {
     "parent_feature": "url",
     "parent_feature_name": "URL",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",

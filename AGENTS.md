@@ -11,6 +11,12 @@ The project relies on [web-futures](https://github.com/rviscomi/web-futures) as 
 To synchronize Timebase with the latest version of `web-futures` and browser support data, follow these steps:
 
 ### 1. Update Dependencies
+Pull down any upstream changes to this repo:
+
+```bash
+git pull
+```
+
 Run the update script to pull the latest version of `web-futures` and synchronize the project's metadata.
 
 ```bash

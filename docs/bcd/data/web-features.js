@@ -1402,7 +1402,7 @@ export const browsers = {
         "version": "145"
       },
       {
-        "date": "2026-03-12",
+        "date": "2026-03-13",
         "version": "146"
       },
       {
@@ -1412,6 +1412,10 @@ export const browsers = {
       {
         "date": "2026-05-07",
         "version": "148"
+      },
+      {
+        "date": "2026-06-04",
+        "version": "149"
       }
     ]
   },
@@ -6987,7 +6991,8 @@ export const features = {
       "https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "83",
@@ -7452,7 +7457,8 @@ export const features = {
       "https://drafts.csswg.org/css-counter-styles-3/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "91",
@@ -8271,7 +8277,8 @@ export const features = {
       "https://w3c.github.io/deviceorientation/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "31",
@@ -12145,7 +12152,8 @@ export const features = {
       "https://drafts.csswg.org/css-text-4/#hyphenate-character"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "106",
@@ -12184,7 +12192,8 @@ export const features = {
       "https://drafts.csswg.org/css-text-3/#hyphens-property"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "88",
@@ -12442,7 +12451,8 @@ export const features = {
       "https://drafts.csswg.org/css-images-4/#image-set-notation"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -15227,6 +15237,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "150",
+        "firefox_android": "150",
         "safari": "15.4",
         "safari_ios": "15.4"
       }
@@ -15633,7 +15645,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "66",
@@ -16841,7 +16854,8 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-5/#mf-overflow-inline"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
@@ -21317,7 +21331,8 @@ export const features = {
       "https://storage.spec.whatwg.org/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "61",
@@ -21788,7 +21803,8 @@ export const features = {
       "https://drafts.csswg.org/css-grid-2/#subgrids"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-15",
       "baseline_low_date": "2023-09-15",
       "support": {
         "chrome": "117",
@@ -22496,7 +22512,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-03-12",
+      "baseline_low_date": "2026-03-13",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -22517,7 +22533,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-03-12",
+      "baseline_low_date": "2026-03-13",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -23509,7 +23525,8 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-5/#update"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-03-18",
       "baseline_low_date": "2023-09-18",
       "support": {
         "chrome": "113",
