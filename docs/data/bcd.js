@@ -3060,6 +3060,7 @@ export const bcdKeys = {
   "api.ViewTransition.types": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3080,6 +3081,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3100,6 +3102,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.@@iterator": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3120,6 +3123,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.add": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3140,6 +3144,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.clear": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3160,6 +3165,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.delete": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3180,6 +3186,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.entries": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3200,6 +3207,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.forEach": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3220,6 +3228,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.has": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3240,6 +3249,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.keys": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3260,6 +3270,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.size": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3280,6 +3291,7 @@ export const bcdKeys = {
   "api.ViewTransitionTypeSet.values": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3300,6 +3312,7 @@ export const bcdKeys = {
   "css.selectors.active-view-transition-type": {
     "parent_feature": "active-view-transition",
     "parent_feature_name": "Active view transition",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3320,6 +3333,7 @@ export const bcdKeys = {
   "css.properties.alignment-baseline": {
     "parent_feature": "alignment-baseline",
     "parent_feature_name": "alignment-baseline",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -3340,6 +3354,7 @@ export const bcdKeys = {
   "css.properties.alignment-baseline.baseline": {
     "parent_feature": "alignment-baseline",
     "parent_feature_name": "alignment-baseline",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -3360,6 +3375,7 @@ export const bcdKeys = {
   "css.properties.alignment-baseline.middle": {
     "parent_feature": "alignment-baseline",
     "parent_feature_name": "alignment-baseline",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -3380,6 +3396,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3400,6 +3417,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.align-self": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3420,6 +3438,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.alignSelf": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3440,6 +3459,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.block-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3460,6 +3480,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.blockSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3480,6 +3501,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.bottom": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3500,6 +3522,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.height": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3520,6 +3543,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inline-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3540,6 +3564,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inlineSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3560,6 +3585,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3580,6 +3606,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-block": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3600,6 +3627,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3620,6 +3648,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3640,6 +3669,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-inline": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3660,6 +3690,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3680,6 +3711,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.inset-inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3700,6 +3732,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetBlock": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3720,6 +3753,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetBlockEnd": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3740,6 +3774,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetBlockStart": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3760,6 +3795,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetInline": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3780,6 +3816,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetInlineEnd": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3800,6 +3837,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.insetInlineStart": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3820,6 +3858,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.justify-self": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3840,6 +3879,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.justifySelf": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3860,6 +3900,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.left": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3880,6 +3921,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3900,6 +3942,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-block": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3920,6 +3963,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3940,6 +3984,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3960,6 +4005,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-bottom": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -3980,6 +4026,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-inline": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4000,6 +4047,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4020,6 +4068,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4040,6 +4089,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-left": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4060,6 +4110,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-right": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4080,6 +4131,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.margin-top": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4100,6 +4152,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginBlock": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4120,6 +4173,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginBlockEnd": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4140,6 +4194,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginBlockStart": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4160,6 +4215,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginBottom": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4180,6 +4236,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginInline": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4200,6 +4257,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginInlineEnd": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4220,6 +4278,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginInlineStart": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4240,6 +4299,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginLeft": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4260,6 +4320,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginRight": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4280,6 +4341,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.marginTop": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4300,6 +4362,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.max-block-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4320,6 +4383,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.max-height": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4340,6 +4404,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.max-inline-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4360,6 +4425,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.max-width": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4380,6 +4446,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.maxBlockSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4400,6 +4467,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.maxHeight": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4420,6 +4488,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.maxInlineSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4440,6 +4509,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.maxWidth": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4460,6 +4530,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.min-block-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4480,6 +4551,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.min-height": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4500,6 +4572,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.min-inline-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4520,6 +4593,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.min-width": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4540,6 +4614,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.minBlockSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4560,6 +4635,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.minHeight": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4580,6 +4656,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.minInlineSize": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4600,6 +4677,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.minWidth": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4620,6 +4698,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.place-self": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4640,6 +4719,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.placeSelf": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4660,6 +4740,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.position-anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4680,6 +4761,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.position-area": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4700,6 +4782,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.positionAnchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4720,6 +4803,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.positionArea": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4740,6 +4824,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.right": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4760,6 +4845,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.top": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4780,6 +4866,7 @@ export const bcdKeys = {
   "api.CSSPositionTryDescriptors.width": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4800,6 +4887,7 @@ export const bcdKeys = {
   "api.CSSPositionTryRule": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4820,6 +4908,7 @@ export const bcdKeys = {
   "api.CSSPositionTryRule.name": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4840,6 +4929,7 @@ export const bcdKeys = {
   "api.CSSPositionTryRule.style": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4860,6 +4950,7 @@ export const bcdKeys = {
   "api.HTMLButtonElement.popoverTargetElement.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4880,6 +4971,7 @@ export const bcdKeys = {
   "api.HTMLElement.showPopover.options_source_parameter.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4900,6 +4992,7 @@ export const bcdKeys = {
   "api.HTMLElement.togglePopover.options_source_parameter.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4920,6 +5013,7 @@ export const bcdKeys = {
   "api.HTMLInputElement.popoverTargetElement.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4940,6 +5034,7 @@ export const bcdKeys = {
   "css.at-rules.position-try": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4960,6 +5055,7 @@ export const bcdKeys = {
   "css.properties.align-items.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -4980,6 +5076,7 @@ export const bcdKeys = {
   "css.properties.align-self.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5000,6 +5097,7 @@ export const bcdKeys = {
   "css.properties.anchor-name": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5020,6 +5118,7 @@ export const bcdKeys = {
   "css.properties.anchor-name.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5040,6 +5139,7 @@ export const bcdKeys = {
   "css.properties.anchor-scope": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5060,6 +5160,7 @@ export const bcdKeys = {
   "css.properties.anchor-scope.all": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5080,6 +5181,7 @@ export const bcdKeys = {
   "css.properties.anchor-scope.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5100,6 +5202,7 @@ export const bcdKeys = {
   "css.properties.block-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5120,6 +5223,7 @@ export const bcdKeys = {
   "css.properties.bottom.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5140,6 +5244,7 @@ export const bcdKeys = {
   "css.properties.bottom.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5160,6 +5265,7 @@ export const bcdKeys = {
   "css.properties.height.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5180,6 +5286,7 @@ export const bcdKeys = {
   "css.properties.inline-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5200,6 +5307,7 @@ export const bcdKeys = {
   "css.properties.inset-block-end.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5220,6 +5328,7 @@ export const bcdKeys = {
   "css.properties.inset-block-end.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5240,6 +5349,7 @@ export const bcdKeys = {
   "css.properties.inset-block-start.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5260,6 +5370,7 @@ export const bcdKeys = {
   "css.properties.inset-block-start.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5280,6 +5391,7 @@ export const bcdKeys = {
   "css.properties.inset-block.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5300,6 +5412,7 @@ export const bcdKeys = {
   "css.properties.inset-block.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5320,6 +5433,7 @@ export const bcdKeys = {
   "css.properties.inset-inline-end.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5340,6 +5454,7 @@ export const bcdKeys = {
   "css.properties.inset-inline-end.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5360,6 +5475,7 @@ export const bcdKeys = {
   "css.properties.inset-inline-start.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5380,6 +5496,7 @@ export const bcdKeys = {
   "css.properties.inset-inline-start.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5400,6 +5517,7 @@ export const bcdKeys = {
   "css.properties.inset-inline.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5420,6 +5538,7 @@ export const bcdKeys = {
   "css.properties.inset-inline.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5440,6 +5559,7 @@ export const bcdKeys = {
   "css.properties.inset.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5460,6 +5580,7 @@ export const bcdKeys = {
   "css.properties.inset.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5480,6 +5601,7 @@ export const bcdKeys = {
   "css.properties.justify-items.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5500,6 +5622,7 @@ export const bcdKeys = {
   "css.properties.justify-self.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5520,6 +5643,7 @@ export const bcdKeys = {
   "css.properties.left.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5540,6 +5664,7 @@ export const bcdKeys = {
   "css.properties.left.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5560,6 +5685,7 @@ export const bcdKeys = {
   "css.properties.margin-block-end.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5580,6 +5706,7 @@ export const bcdKeys = {
   "css.properties.margin-block-start.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5600,6 +5727,7 @@ export const bcdKeys = {
   "css.properties.margin-block.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5620,6 +5748,7 @@ export const bcdKeys = {
   "css.properties.margin-bottom.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5640,6 +5769,7 @@ export const bcdKeys = {
   "css.properties.margin-inline-end.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5660,6 +5790,7 @@ export const bcdKeys = {
   "css.properties.margin-inline-start.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5680,6 +5811,7 @@ export const bcdKeys = {
   "css.properties.margin-inline.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5700,6 +5832,7 @@ export const bcdKeys = {
   "css.properties.margin-left.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5720,6 +5853,7 @@ export const bcdKeys = {
   "css.properties.margin-right.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5740,6 +5874,7 @@ export const bcdKeys = {
   "css.properties.margin-top.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5760,6 +5895,7 @@ export const bcdKeys = {
   "css.properties.margin.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5780,6 +5916,7 @@ export const bcdKeys = {
   "css.properties.max-block-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5800,6 +5937,7 @@ export const bcdKeys = {
   "css.properties.max-height.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5820,6 +5958,7 @@ export const bcdKeys = {
   "css.properties.max-inline-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5840,6 +5979,7 @@ export const bcdKeys = {
   "css.properties.max-width.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5860,6 +6000,7 @@ export const bcdKeys = {
   "css.properties.min-block-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5880,6 +6021,7 @@ export const bcdKeys = {
   "css.properties.min-height.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5900,6 +6042,7 @@ export const bcdKeys = {
   "css.properties.min-inline-size.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5920,6 +6063,7 @@ export const bcdKeys = {
   "css.properties.min-width.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5940,6 +6084,7 @@ export const bcdKeys = {
   "css.properties.place-items.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5960,6 +6105,7 @@ export const bcdKeys = {
   "css.properties.place-self.anchor-center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -5980,6 +6126,7 @@ export const bcdKeys = {
   "css.properties.position-anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -5997,6 +6144,7 @@ export const bcdKeys = {
   "css.properties.position-anchor.auto": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -6011,6 +6159,7 @@ export const bcdKeys = {
   "css.properties.position-anchor.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -6028,6 +6177,7 @@ export const bcdKeys = {
   "css.properties.position-area": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6048,6 +6198,7 @@ export const bcdKeys = {
   "css.properties.position-area.block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6068,6 +6219,7 @@ export const bcdKeys = {
   "css.properties.position-area.block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6088,6 +6240,7 @@ export const bcdKeys = {
   "css.properties.position-area.bottom": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6108,6 +6261,7 @@ export const bcdKeys = {
   "css.properties.position-area.center": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6128,6 +6282,7 @@ export const bcdKeys = {
   "css.properties.position-area.end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6148,6 +6303,7 @@ export const bcdKeys = {
   "css.properties.position-area.inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6168,6 +6324,7 @@ export const bcdKeys = {
   "css.properties.position-area.inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6188,6 +6345,7 @@ export const bcdKeys = {
   "css.properties.position-area.left": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6208,6 +6366,7 @@ export const bcdKeys = {
   "css.properties.position-area.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6228,6 +6387,7 @@ export const bcdKeys = {
   "css.properties.position-area.right": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6248,6 +6408,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6268,6 +6429,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6288,6 +6450,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6308,6 +6471,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6328,6 +6492,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6348,6 +6513,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6368,6 +6534,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6388,6 +6555,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6408,6 +6576,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6428,6 +6597,7 @@ export const bcdKeys = {
   "css.properties.position-area.self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6448,6 +6618,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-all": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -6465,6 +6636,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6485,6 +6657,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6505,6 +6678,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-bottom": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6525,6 +6699,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6545,6 +6720,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6565,6 +6741,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6585,6 +6762,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-left": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6605,6 +6783,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-right": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6625,6 +6804,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6645,6 +6825,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-block-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6665,6 +6846,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6685,6 +6867,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-inline-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6705,6 +6888,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-inline-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6725,6 +6909,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6745,6 +6930,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6765,6 +6951,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6785,6 +6972,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6805,6 +6993,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6825,6 +7014,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6845,6 +7035,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-top": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6865,6 +7056,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6885,6 +7077,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6905,6 +7098,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6925,6 +7119,7 @@ export const bcdKeys = {
   "css.properties.position-area.span-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6945,6 +7140,7 @@ export const bcdKeys = {
   "css.properties.position-area.start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -6965,6 +7161,7 @@ export const bcdKeys = {
   "css.properties.position-area.top": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -6985,6 +7182,7 @@ export const bcdKeys = {
   "css.properties.position-area.x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7005,6 +7203,7 @@ export const bcdKeys = {
   "css.properties.position-area.x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7025,6 +7224,7 @@ export const bcdKeys = {
   "css.properties.position-area.y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7045,6 +7245,7 @@ export const bcdKeys = {
   "css.properties.position-area.y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7065,6 +7266,7 @@ export const bcdKeys = {
   "css.properties.position-try": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7085,6 +7287,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7105,6 +7308,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.flip-block": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7125,6 +7329,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.flip-inline": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7145,6 +7350,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.flip-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7165,6 +7371,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7185,6 +7392,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.position-area": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7205,6 +7413,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7225,6 +7434,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7245,6 +7455,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7265,6 +7476,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7285,6 +7497,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.span-self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7305,6 +7518,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.span-self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7325,6 +7539,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.span-self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7345,6 +7560,7 @@ export const bcdKeys = {
   "css.properties.position-try-fallbacks.span-self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7365,6 +7581,7 @@ export const bcdKeys = {
   "css.properties.position-try-order": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7385,6 +7602,7 @@ export const bcdKeys = {
   "css.properties.position-try-order.most-block-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7405,6 +7623,7 @@ export const bcdKeys = {
   "css.properties.position-try-order.most-height": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7425,6 +7644,7 @@ export const bcdKeys = {
   "css.properties.position-try-order.most-inline-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7445,6 +7665,7 @@ export const bcdKeys = {
   "css.properties.position-try-order.most-width": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7465,6 +7686,7 @@ export const bcdKeys = {
   "css.properties.position-try-order.normal": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7485,6 +7707,7 @@ export const bcdKeys = {
   "css.properties.position-try.self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7505,6 +7728,7 @@ export const bcdKeys = {
   "css.properties.position-try.self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7525,6 +7749,7 @@ export const bcdKeys = {
   "css.properties.position-try.self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7545,6 +7770,7 @@ export const bcdKeys = {
   "css.properties.position-try.self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -7565,6 +7791,7 @@ export const bcdKeys = {
   "css.properties.position-try.span-self-x-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7585,6 +7812,7 @@ export const bcdKeys = {
   "css.properties.position-try.span-self-x-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7605,6 +7833,7 @@ export const bcdKeys = {
   "css.properties.position-try.span-self-y-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7625,6 +7854,7 @@ export const bcdKeys = {
   "css.properties.position-try.span-self-y-start": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7645,6 +7875,7 @@ export const bcdKeys = {
   "css.properties.position-visibility": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7665,6 +7896,7 @@ export const bcdKeys = {
   "css.properties.position-visibility.always": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7685,6 +7917,7 @@ export const bcdKeys = {
   "css.properties.position-visibility.anchors-visible": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7705,6 +7938,7 @@ export const bcdKeys = {
   "css.properties.position-visibility.no-overflow": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7725,6 +7959,7 @@ export const bcdKeys = {
   "css.properties.right.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7745,6 +7980,7 @@ export const bcdKeys = {
   "css.properties.right.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7765,6 +8001,7 @@ export const bcdKeys = {
   "css.properties.top.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7785,6 +8022,7 @@ export const bcdKeys = {
   "css.properties.top.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7805,6 +8043,7 @@ export const bcdKeys = {
   "css.properties.width.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7825,6 +8064,7 @@ export const bcdKeys = {
   "css.types.anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7845,6 +8085,7 @@ export const bcdKeys = {
   "css.types.anchor-size": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7865,6 +8106,7 @@ export const bcdKeys = {
   "css.types.anchor-size.inset_margin": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -7883,6 +8125,7 @@ export const bcdKeys = {
   "html.elements.button.popovertarget.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7903,6 +8146,7 @@ export const bcdKeys = {
   "html.elements.input.popovertarget.implicit_anchor_reference": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -7923,6 +8167,7 @@ export const bcdKeys = {
   "css.properties.animation-composition": {
     "parent_feature": "animation-composition",
     "parent_feature_name": "animation-composition",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -7944,6 +8189,7 @@ export const bcdKeys = {
   "api.Element.ariaAtomic": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -7964,6 +8210,7 @@ export const bcdKeys = {
   "api.Element.ariaAutoComplete": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -7984,6 +8231,7 @@ export const bcdKeys = {
   "api.Element.ariaBusy": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8004,6 +8252,7 @@ export const bcdKeys = {
   "api.Element.ariaChecked": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8024,6 +8273,7 @@ export const bcdKeys = {
   "api.Element.ariaColCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8044,6 +8294,7 @@ export const bcdKeys = {
   "api.Element.ariaColIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8064,6 +8315,7 @@ export const bcdKeys = {
   "api.Element.ariaColIndexText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -8084,6 +8336,7 @@ export const bcdKeys = {
   "api.Element.ariaColSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8104,6 +8357,7 @@ export const bcdKeys = {
   "api.Element.ariaCurrent": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8124,6 +8378,7 @@ export const bcdKeys = {
   "api.Element.ariaDisabled": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8144,6 +8399,7 @@ export const bcdKeys = {
   "api.Element.ariaExpanded": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8164,6 +8420,7 @@ export const bcdKeys = {
   "api.Element.ariaHasPopup": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8184,6 +8441,7 @@ export const bcdKeys = {
   "api.Element.ariaHidden": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8204,6 +8462,7 @@ export const bcdKeys = {
   "api.Element.ariaInvalid": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8224,6 +8483,7 @@ export const bcdKeys = {
   "api.Element.ariaKeyShortcuts": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8244,6 +8504,7 @@ export const bcdKeys = {
   "api.Element.ariaLabel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8264,6 +8525,7 @@ export const bcdKeys = {
   "api.Element.ariaLevel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8284,6 +8546,7 @@ export const bcdKeys = {
   "api.Element.ariaLive": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8304,6 +8567,7 @@ export const bcdKeys = {
   "api.Element.ariaModal": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8324,6 +8588,7 @@ export const bcdKeys = {
   "api.Element.ariaMultiLine": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8344,6 +8609,7 @@ export const bcdKeys = {
   "api.Element.ariaMultiSelectable": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8364,6 +8630,7 @@ export const bcdKeys = {
   "api.Element.ariaOrientation": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8384,6 +8651,7 @@ export const bcdKeys = {
   "api.Element.ariaPlaceholder": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8404,6 +8672,7 @@ export const bcdKeys = {
   "api.Element.ariaPosInSet": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8424,6 +8693,7 @@ export const bcdKeys = {
   "api.Element.ariaPressed": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8444,6 +8714,7 @@ export const bcdKeys = {
   "api.Element.ariaReadOnly": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8464,6 +8735,7 @@ export const bcdKeys = {
   "api.Element.ariaRelevant": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8484,6 +8756,7 @@ export const bcdKeys = {
   "api.Element.ariaRequired": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8504,6 +8777,7 @@ export const bcdKeys = {
   "api.Element.ariaRoleDescription": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8524,6 +8798,7 @@ export const bcdKeys = {
   "api.Element.ariaRowCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8544,6 +8819,7 @@ export const bcdKeys = {
   "api.Element.ariaRowIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8564,6 +8840,7 @@ export const bcdKeys = {
   "api.Element.ariaRowIndexText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -8584,6 +8861,7 @@ export const bcdKeys = {
   "api.Element.ariaRowSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8604,6 +8882,7 @@ export const bcdKeys = {
   "api.Element.ariaSelected": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8624,6 +8903,7 @@ export const bcdKeys = {
   "api.Element.ariaSetSize": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8644,6 +8924,7 @@ export const bcdKeys = {
   "api.Element.ariaSort": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8664,6 +8945,7 @@ export const bcdKeys = {
   "api.Element.ariaValueMax": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8684,6 +8966,7 @@ export const bcdKeys = {
   "api.Element.ariaValueMin": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8704,6 +8987,7 @@ export const bcdKeys = {
   "api.Element.ariaValueNow": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8724,6 +9008,7 @@ export const bcdKeys = {
   "api.Element.ariaValueText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8744,6 +9029,7 @@ export const bcdKeys = {
   "api.Element.role": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8764,6 +9050,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaAtomic": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8784,6 +9071,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaAutoComplete": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8804,6 +9092,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaBusy": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8824,6 +9113,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaChecked": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8844,6 +9134,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8864,6 +9155,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8884,6 +9176,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8904,6 +9197,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaCurrent": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8924,6 +9218,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaDisabled": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8944,6 +9239,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaExpanded": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8964,6 +9260,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaHasPopup": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -8984,6 +9281,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaHidden": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9004,6 +9302,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaInvalid": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9024,6 +9323,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaKeyShortcuts": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9044,6 +9344,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLabel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9064,6 +9365,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLevel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9084,6 +9386,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLive": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9104,6 +9407,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaModal": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9124,6 +9428,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaMultiLine": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9144,6 +9449,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaMultiSelectable": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9164,6 +9470,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaOrientation": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9184,6 +9491,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPlaceholder": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9204,6 +9512,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPosInSet": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9224,6 +9533,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPressed": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9244,6 +9554,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaReadOnly": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9264,6 +9575,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRequired": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9284,6 +9596,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRoleDescription": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9304,6 +9617,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9324,6 +9638,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9344,6 +9659,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9364,6 +9680,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSelected": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9384,6 +9701,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSetSize": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9404,6 +9722,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSort": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9424,6 +9743,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueMax": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9444,6 +9764,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueMin": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9464,6 +9785,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueNow": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9484,6 +9806,7 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9504,6 +9827,7 @@ export const bcdKeys = {
   "api.ElementInternals.role": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -9524,6 +9848,7 @@ export const bcdKeys = {
   "javascript.builtins.Array.toReversed": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9551,6 +9876,7 @@ export const bcdKeys = {
   "javascript.builtins.Array.toSorted": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9578,6 +9904,7 @@ export const bcdKeys = {
   "javascript.builtins.Array.toSpliced": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9605,6 +9932,7 @@ export const bcdKeys = {
   "javascript.builtins.Array.with": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9632,6 +9960,7 @@ export const bcdKeys = {
   "javascript.builtins.TypedArray.toReversed": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9659,6 +9988,7 @@ export const bcdKeys = {
   "javascript.builtins.TypedArray.toSorted": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9686,6 +10016,7 @@ export const bcdKeys = {
   "javascript.builtins.TypedArray.with": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-04",
@@ -9713,6 +10044,7 @@ export const bcdKeys = {
   "api.ReadableStream.@@asyncIterator": {
     "parent_feature": "async-iterable-streams",
     "parent_feature_name": "Asynchronously iterable streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -9732,6 +10064,7 @@ export const bcdKeys = {
   "css.properties.background-position-x.side-relative_values": {
     "parent_feature": "background-position",
     "parent_feature_name": "background-position",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-21",
@@ -9752,6 +10085,7 @@ export const bcdKeys = {
   "css.properties.background-position-y.side-relative_values": {
     "parent_feature": "background-position",
     "parent_feature_name": "background-position",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-21",
@@ -9772,6 +10106,7 @@ export const bcdKeys = {
   "css.properties.baseline-shift": {
     "parent_feature": "baseline-shift",
     "parent_feature_name": "baseline-shift",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -9792,6 +10127,7 @@ export const bcdKeys = {
   "css.properties.baseline-shift.sub": {
     "parent_feature": "baseline-shift",
     "parent_feature_name": "baseline-shift",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -9812,6 +10148,7 @@ export const bcdKeys = {
   "css.properties.baseline-shift.super": {
     "parent_feature": "baseline-shift",
     "parent_feature_name": "baseline-shift",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -9832,6 +10169,7 @@ export const bcdKeys = {
   "css.types.calc-keyword.NaN": {
     "parent_feature": "calc-constants",
     "parent_feature_name": "calc() keywords",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -9853,6 +10191,7 @@ export const bcdKeys = {
   "css.types.calc-keyword.infinity": {
     "parent_feature": "calc-constants",
     "parent_feature_name": "calc() keywords",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -9874,6 +10213,7 @@ export const bcdKeys = {
   "api.CanvasRenderingContext2D.getContextAttributes": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -9895,6 +10235,7 @@ export const bcdKeys = {
   "api.TextMetrics.alphabeticBaseline": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -9915,6 +10256,7 @@ export const bcdKeys = {
   "api.TextMetrics.fontBoundingBoxAscent": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -9936,6 +10278,7 @@ export const bcdKeys = {
   "api.TextMetrics.fontBoundingBoxDescent": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -9957,6 +10300,7 @@ export const bcdKeys = {
   "api.TextMetrics.hangingBaseline": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -9977,6 +10321,7 @@ export const bcdKeys = {
   "api.TextMetrics.ideographicBaseline": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -9997,6 +10342,7 @@ export const bcdKeys = {
   "api.CanvasRenderingContext2D.reset": {
     "parent_feature": "canvas-reset",
     "parent_feature_name": "Canvas reset()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10017,6 +10363,7 @@ export const bcdKeys = {
   "api.OffscreenCanvasRenderingContext2D.reset": {
     "parent_feature": "canvas-reset",
     "parent_feature_name": "Canvas reset()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10037,6 +10384,7 @@ export const bcdKeys = {
   "css.types.length.cap": {
     "parent_feature": "cap",
     "parent_feature_name": "cap unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10057,6 +10405,7 @@ export const bcdKeys = {
   "api.HTMLMediaElement.captureStream": {
     "parent_feature": "capture-stream-audio-video",
     "parent_feature_name": "captureStream() for <audio> and <video>",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10074,6 +10423,7 @@ export const bcdKeys = {
   "css.properties.caret-shape": {
     "parent_feature": "caret-shape",
     "parent_feature_name": "caret-shape",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10089,6 +10439,7 @@ export const bcdKeys = {
   "css.properties.caret-shape.auto": {
     "parent_feature": "caret-shape",
     "parent_feature_name": "caret-shape",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10104,6 +10455,7 @@ export const bcdKeys = {
   "css.properties.caret-shape.bar": {
     "parent_feature": "caret-shape",
     "parent_feature_name": "caret-shape",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10119,6 +10471,7 @@ export const bcdKeys = {
   "css.properties.caret-shape.block": {
     "parent_feature": "caret-shape",
     "parent_feature_name": "caret-shape",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10134,6 +10487,7 @@ export const bcdKeys = {
   "css.properties.caret-shape.underscore": {
     "parent_feature": "caret-shape",
     "parent_feature_name": "caret-shape",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10149,6 +10503,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10170,6 +10525,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.cookies": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10191,6 +10547,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.secure_context_required": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10212,6 +10569,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.storage": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10233,6 +10591,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.wildcard": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10254,6 +10613,7 @@ export const bcdKeys = {
   "css.properties.clip-path.fill-box": {
     "parent_feature": "clip-path-boxes",
     "parent_feature_name": "Clip path boxes",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -10274,6 +10634,7 @@ export const bcdKeys = {
   "css.properties.clip-path.stroke-box": {
     "parent_feature": "clip-path-boxes",
     "parent_feature_name": "Clip path boxes",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -10294,6 +10655,7 @@ export const bcdKeys = {
   "css.properties.clip-path.view-box": {
     "parent_feature": "clip-path-boxes",
     "parent_feature_name": "Clip path boxes",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -10314,6 +10676,7 @@ export const bcdKeys = {
   "api.ClipboardChangeEvent": {
     "parent_feature": "clipboardchange",
     "parent_feature_name": "clipboardchange",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10329,6 +10692,7 @@ export const bcdKeys = {
   "api.ClipboardChangeEvent.ClipboardChangeEvent": {
     "parent_feature": "clipboardchange",
     "parent_feature_name": "clipboardchange",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10344,6 +10708,7 @@ export const bcdKeys = {
   "api.ClipboardChangeEvent.changeId": {
     "parent_feature": "clipboardchange",
     "parent_feature_name": "clipboardchange",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10359,6 +10724,7 @@ export const bcdKeys = {
   "api.ClipboardChangeEvent.types": {
     "parent_feature": "clipboardchange",
     "parent_feature_name": "clipboardchange",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10374,6 +10740,7 @@ export const bcdKeys = {
   "api.CloseWatcher": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10391,6 +10758,7 @@ export const bcdKeys = {
   "api.CloseWatcher.CloseWatcher": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10408,6 +10776,7 @@ export const bcdKeys = {
   "api.CloseWatcher.cancel_event": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10425,6 +10794,7 @@ export const bcdKeys = {
   "api.CloseWatcher.close": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10442,6 +10812,7 @@ export const bcdKeys = {
   "api.CloseWatcher.close_event": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10459,6 +10830,7 @@ export const bcdKeys = {
   "api.CloseWatcher.destroy": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10476,6 +10848,7 @@ export const bcdKeys = {
   "api.CloseWatcher.requestClose": {
     "parent_feature": "closewatcher",
     "parent_feature_name": "CloseWatcher",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10493,6 +10866,7 @@ export const bcdKeys = {
   "api.CompressionStream.CompressionStream.brotli": {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -10509,6 +10883,7 @@ export const bcdKeys = {
   "api.DecompressionStream.DecompressionStream.brotli": {
     "parent_feature": "compression-streams",
     "parent_feature_name": "Compression streams",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -10525,6 +10900,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-block-size": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10546,6 +10922,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-block-size.none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10567,6 +10944,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-height": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10588,6 +10966,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-height.none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10609,6 +10988,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-inline-size": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10630,6 +11010,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-inline-size.none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10651,6 +11032,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-size": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10672,6 +11054,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-size.auto_none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10693,6 +11076,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-size.none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10714,6 +11098,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-width": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10735,6 +11120,7 @@ export const bcdKeys = {
   "css.properties.contain-intrinsic-width.none": {
     "parent_feature": "contain-intrinsic-size",
     "parent_feature_name": "contain-intrinsic-size",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10756,6 +11142,7 @@ export const bcdKeys = {
   "css.at-rules.container.anchor_position_queries": {
     "parent_feature": "container-anchor-position-queries",
     "parent_feature_name": "Anchor position container queries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10771,6 +11158,7 @@ export const bcdKeys = {
   "css.at-rules.container.anchor_position_queries.fallback": {
     "parent_feature": "container-anchor-position-queries",
     "parent_feature_name": "Anchor position container queries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10786,6 +11174,7 @@ export const bcdKeys = {
   "css.at-rules.container.anchor_position_queries.fallback.any_value": {
     "parent_feature": "container-anchor-position-queries",
     "parent_feature_name": "Anchor position container queries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10801,6 +11190,7 @@ export const bcdKeys = {
   "css.properties.container-type.anchored": {
     "parent_feature": "container-anchor-position-queries",
     "parent_feature_name": "Anchor position container queries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10816,6 +11206,7 @@ export const bcdKeys = {
   "api.CSSContainerRule.containerName": {
     "parent_feature": "container-queries",
     "parent_feature_name": "Container queries",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10837,6 +11228,7 @@ export const bcdKeys = {
   "api.CSSContainerRule.containerQuery": {
     "parent_feature": "container-queries",
     "parent_feature_name": "Container queries",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10858,6 +11250,7 @@ export const bcdKeys = {
   "css.types.color.contrast-color": {
     "parent_feature": "contrast-color",
     "parent_feature_name": "contrast-color()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -10874,6 +11267,7 @@ export const bcdKeys = {
   "css.properties.counter-set": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10894,6 +11288,7 @@ export const bcdKeys = {
   "css.properties.counter-set.list-item": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10914,6 +11309,7 @@ export const bcdKeys = {
   "css.properties.counter-set.none": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -10934,6 +11330,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10955,6 +11352,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.additiveSymbols": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10976,6 +11374,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.fallback": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10997,6 +11396,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.name": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11018,6 +11418,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.negative": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11039,6 +11440,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.pad": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11060,6 +11462,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.prefix": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11081,6 +11484,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.range": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11102,6 +11506,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.speakAs": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11123,6 +11528,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.suffix": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11144,6 +11550,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.symbols": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11165,6 +11572,7 @@ export const bcdKeys = {
   "api.CSSCounterStyleRule.system": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11186,6 +11594,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11207,6 +11616,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.additive-symbols": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11228,6 +11638,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.fallback": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11249,6 +11660,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.negative": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11270,6 +11682,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.pad": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11291,6 +11704,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.prefix": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11312,6 +11726,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.range": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11333,6 +11748,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.suffix": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11354,6 +11770,7 @@ export const bcdKeys = {
   "css.at-rules.counter-style.system": {
     "parent_feature": "counter-style",
     "parent_feature_name": "@counter-style",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11375,6 +11792,7 @@ export const bcdKeys = {
   "api.createImageBitmap.options_premultiplyAlpha_parameter": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11396,6 +11814,7 @@ export const bcdKeys = {
   "api.createImageBitmap.options_resizeQuality_parameter": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -11416,6 +11835,7 @@ export const bcdKeys = {
   "api.createImageBitmap.svgimageelement_as_source_image": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -11436,6 +11856,7 @@ export const bcdKeys = {
   "api.CredentialsContainer.preventSilentAccess": {
     "parent_feature": "credential-management",
     "parent_feature_name": "Credential management",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11457,6 +11878,7 @@ export const bcdKeys = {
   "http.headers.Content-Security-Policy.report-to": {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -11477,6 +11899,7 @@ export const bcdKeys = {
   "http.headers.Content-Security-Policy.script-src.external_scripts": {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11498,6 +11921,7 @@ export const bcdKeys = {
   "http.headers.Content-Security-Policy.style-src-elem": {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -11518,6 +11942,7 @@ export const bcdKeys = {
   "javascript.statements.import.import_attributes.type_css": {
     "parent_feature": "css-modules",
     "parent_feature_name": "CSS import attributes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -11535,6 +11960,7 @@ export const bcdKeys = {
   "api.CSSPseudoElement": {
     "parent_feature": "css-object-model",
     "parent_feature_name": "CSS object model",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -11550,6 +11976,7 @@ export const bcdKeys = {
   "api.CSSPseudoElement.element": {
     "parent_feature": "css-object-model",
     "parent_feature_name": "CSS object model",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -11565,6 +11992,7 @@ export const bcdKeys = {
   "api.CSSPseudoElement.type": {
     "parent_feature": "css-object-model",
     "parent_feature_name": "CSS object model",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -11580,6 +12008,7 @@ export const bcdKeys = {
   "css.properties.appearance.base-select": {
     "parent_feature": "customizable-select",
     "parent_feature_name": "Customizable <select>",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -11596,6 +12025,7 @@ export const bcdKeys = {
   "css.selectors.picker": {
     "parent_feature": "customizable-select",
     "parent_feature_name": "Customizable <select>",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -11612,6 +12042,7 @@ export const bcdKeys = {
   "css.selectors.picker-icon": {
     "parent_feature": "customizable-select",
     "parent_feature_name": "Customizable <select>",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -11628,6 +12059,7 @@ export const bcdKeys = {
   "api.DeviceMotionEvent": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11649,6 +12081,7 @@ export const bcdKeys = {
   "api.DeviceMotionEvent.acceleration": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11670,6 +12103,7 @@ export const bcdKeys = {
   "api.DeviceMotionEvent.accelerationIncludingGravity": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11691,6 +12125,7 @@ export const bcdKeys = {
   "api.DeviceMotionEvent.interval": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11712,6 +12147,7 @@ export const bcdKeys = {
   "api.DeviceMotionEvent.rotationRate": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11733,6 +12169,7 @@ export const bcdKeys = {
   "api.DeviceOrientationEvent": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11754,6 +12191,7 @@ export const bcdKeys = {
   "api.DeviceOrientationEvent.alpha": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11775,6 +12213,7 @@ export const bcdKeys = {
   "api.DeviceOrientationEvent.beta": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11796,6 +12235,7 @@ export const bcdKeys = {
   "api.DeviceOrientationEvent.gamma": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11817,6 +12257,7 @@ export const bcdKeys = {
   "api.Window.devicemotion_event": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11838,6 +12279,7 @@ export const bcdKeys = {
   "api.Window.deviceorientation_event": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -11859,6 +12301,7 @@ export const bcdKeys = {
   "css.selectors.dir": {
     "parent_feature": "dir-pseudo",
     "parent_feature_name": ":dir()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -11879,6 +12322,7 @@ export const bcdKeys = {
   "api.HTMLInputElement.dirName": {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11900,6 +12344,7 @@ export const bcdKeys = {
   "api.HTMLTextAreaElement.dirName": {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11921,6 +12366,7 @@ export const bcdKeys = {
   "html.elements.input.dirname": {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11942,6 +12388,7 @@ export const bcdKeys = {
   "html.elements.textarea.dirname": {
     "parent_feature": "dirname",
     "parent_feature_name": "dirname",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11963,6 +12410,7 @@ export const bcdKeys = {
   "css.at-rules.media.display-mode.browser": {
     "parent_feature": "display-mode",
     "parent_feature_name": "display-mode media query",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -11984,6 +12432,7 @@ export const bcdKeys = {
   "api.CaretPosition": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12004,6 +12453,7 @@ export const bcdKeys = {
   "api.CaretPosition.getClientRect": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12024,6 +12474,7 @@ export const bcdKeys = {
   "api.CaretPosition.offset": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12044,6 +12495,7 @@ export const bcdKeys = {
   "api.CaretPosition.offsetNode": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12064,6 +12516,7 @@ export const bcdKeys = {
   "api.Document.caretPositionFromPoint": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12084,6 +12537,7 @@ export const bcdKeys = {
   "api.Document.caretPositionFromPoint.options_parameter": {
     "parent_feature": "document-caretpositionfrompoint",
     "parent_feature_name": "document.caretPositionFromPoint()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -12102,6 +12556,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPicture": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12117,6 +12572,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPicture.enter_event": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12132,6 +12588,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPicture.requestWindow": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12147,6 +12604,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPicture.requestWindow.option_preferInitialWindowPlacement": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12162,6 +12620,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPicture.window": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12177,6 +12636,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPictureEvent": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12192,6 +12652,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPictureEvent.DocumentPictureInPictureEvent": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12207,6 +12668,7 @@ export const bcdKeys = {
   "api.DocumentPictureInPictureEvent.window": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12222,6 +12684,7 @@ export const bcdKeys = {
   "api.Window.documentPictureInPicture": {
     "parent_feature": "document-picture-in-picture",
     "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12237,6 +12700,7 @@ export const bcdKeys = {
   "api.Document.write.enforces_trusted_types": {
     "parent_feature": "document-write",
     "parent_feature_name": "document.write()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12266,6 +12730,7 @@ export const bcdKeys = {
   "api.Document.writeln.enforces_trusted_types": {
     "parent_feature": "document-write",
     "parent_feature_name": "document.write()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12295,6 +12760,7 @@ export const bcdKeys = {
   "api.Element.currentCSSZoom": {
     "parent_feature": "dom",
     "parent_feature_name": "DOM",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -12314,6 +12780,7 @@ export const bcdKeys = {
   "api.EventCounts": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12334,6 +12801,7 @@ export const bcdKeys = {
   "api.EventCounts.@@iterator": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12354,6 +12822,7 @@ export const bcdKeys = {
   "api.EventCounts.entries": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12374,6 +12843,7 @@ export const bcdKeys = {
   "api.EventCounts.forEach": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12394,6 +12864,7 @@ export const bcdKeys = {
   "api.EventCounts.get": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12414,6 +12885,7 @@ export const bcdKeys = {
   "api.EventCounts.has": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12434,6 +12906,7 @@ export const bcdKeys = {
   "api.EventCounts.keys": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12454,6 +12927,7 @@ export const bcdKeys = {
   "api.EventCounts.size": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12474,6 +12948,7 @@ export const bcdKeys = {
   "api.EventCounts.values": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12494,6 +12969,7 @@ export const bcdKeys = {
   "api.Performance.eventCounts": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12514,6 +12990,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12534,6 +13011,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.cancelable": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12554,6 +13032,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.interactionId": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12574,6 +13053,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.processingEnd": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12594,6 +13074,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.processingStart": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12614,6 +13095,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.target": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12634,6 +13116,7 @@ export const bcdKeys = {
   "api.PerformanceEventTiming.toJSON": {
     "parent_feature": "event-timing",
     "parent_feature_name": "Event timing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -12654,6 +13137,7 @@ export const bcdKeys = {
   "css.types.exp": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12674,6 +13158,7 @@ export const bcdKeys = {
   "css.types.hypot": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12694,6 +13179,7 @@ export const bcdKeys = {
   "css.types.log": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12714,6 +13200,7 @@ export const bcdKeys = {
   "css.types.pow": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12734,6 +13221,7 @@ export const bcdKeys = {
   "css.types.sqrt": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12754,6 +13242,7 @@ export const bcdKeys = {
   "api.Headers.getSetCookie": {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -12775,6 +13264,7 @@ export const bcdKeys = {
   "api.Response.body.readable_byte_stream": {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -12794,6 +13284,7 @@ export const bcdKeys = {
   "api.Response.json_static": {
     "parent_feature": "fetch",
     "parent_feature_name": "Fetch",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -12815,6 +13306,7 @@ export const bcdKeys = {
   "css.properties.field-sizing": {
     "parent_feature": "field-sizing",
     "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12832,6 +13324,7 @@ export const bcdKeys = {
   "css.properties.field-sizing.content": {
     "parent_feature": "field-sizing",
     "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12849,6 +13342,7 @@ export const bcdKeys = {
   "css.properties.field-sizing.fixed": {
     "parent_feature": "field-sizing",
     "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12866,6 +13360,7 @@ export const bcdKeys = {
   "api.Blob.bytes": {
     "parent_feature": "file",
     "parent_feature_name": "File API",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-21",
@@ -12886,6 +13381,7 @@ export const bcdKeys = {
   "api.HTMLElement.focus.options_focusVisible_parameter": {
     "parent_feature": "focus-events",
     "parent_feature_name": "Focus events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-14",
@@ -12906,6 +13402,7 @@ export const bcdKeys = {
   "css.at-rules.font-face.src.tech_keyword": {
     "parent_feature": "font-face",
     "parent_feature_name": "@font-face",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -12927,6 +13424,7 @@ export const bcdKeys = {
   "css.properties.font-family.math": {
     "parent_feature": "font-family-math",
     "parent_feature_name": "Math font family",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -12947,6 +13445,7 @@ export const bcdKeys = {
   "css.properties.font-language-override": {
     "parent_feature": "font-language-override",
     "parent_feature_name": "font-language-override",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -12964,6 +13463,7 @@ export const bcdKeys = {
   "api.FontFaceSet.check": {
     "parent_feature": "font-loading",
     "parent_feature_name": "Font loading",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -12984,6 +13484,7 @@ export const bcdKeys = {
   "api.FontFaceSet.loading_event": {
     "parent_feature": "font-loading",
     "parent_feature_name": "Font loading",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -13004,6 +13505,7 @@ export const bcdKeys = {
   "css.at-rules.font-face.size-adjust": {
     "parent_feature": "font-size-adjust",
     "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13025,6 +13527,7 @@ export const bcdKeys = {
   "css.properties.font-variant-position": {
     "parent_feature": "font-variant-position",
     "parent_feature_name": "font-variant-position",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -13046,6 +13549,7 @@ export const bcdKeys = {
   "css.properties.font-variant-position.normal": {
     "parent_feature": "font-variant-position",
     "parent_feature_name": "font-variant-position",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -13067,6 +13571,7 @@ export const bcdKeys = {
   "javascript.builtins.Function.toString.toString_revision": {
     "parent_feature": "functions",
     "parent_feature_name": "Functions",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13089,6 +13594,7 @@ export const bcdKeys = {
   "api.Window.gamepadconnected_event": {
     "parent_feature": "gamepad",
     "parent_feature_name": "Gamepad",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-05",
@@ -13109,6 +13615,7 @@ export const bcdKeys = {
   "api.Window.gamepaddisconnected_event": {
     "parent_feature": "gamepad",
     "parent_feature_name": "Gamepad",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-05",
@@ -13129,6 +13636,7 @@ export const bcdKeys = {
   "javascript.builtins.Map.getOrInsert": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-14",
@@ -13149,6 +13657,7 @@ export const bcdKeys = {
   "javascript.builtins.Map.getOrInsertComputed": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-14",
@@ -13169,6 +13678,7 @@ export const bcdKeys = {
   "javascript.builtins.WeakMap.getOrInsert": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-14",
@@ -13189,6 +13699,7 @@ export const bcdKeys = {
   "javascript.builtins.WeakMap.getOrInsertComputed": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-14",
@@ -13209,6 +13720,7 @@ export const bcdKeys = {
   "css.selectors.has": {
     "parent_feature": "has",
     "parent_feature_name": ":has()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-19",
@@ -13229,6 +13741,7 @@ export const bcdKeys = {
   "api.Element.beforematch_event": {
     "parent_feature": "hidden-until-found",
     "parent_feature_name": "hidden=\"until-found\"",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -13249,6 +13762,7 @@ export const bcdKeys = {
   "html.global_attributes.hidden.until-found": {
     "parent_feature": "hidden-until-found",
     "parent_feature_name": "hidden=\"until-found\"",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -13266,6 +13780,7 @@ export const bcdKeys = {
   "api.PopStateEvent.hasUAVisualTransition": {
     "parent_feature": "history",
     "parent_feature_name": "History",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -13286,6 +13801,7 @@ export const bcdKeys = {
   "css.properties.hyphenate-character": {
     "parent_feature": "hyphenate-character",
     "parent_feature_name": "Hyphenate character",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13307,6 +13823,7 @@ export const bcdKeys = {
   "css.properties.hyphenate-character.auto": {
     "parent_feature": "hyphenate-character",
     "parent_feature_name": "Hyphenate character",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13328,6 +13845,7 @@ export const bcdKeys = {
   "css.properties.hyphens": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13349,6 +13867,7 @@ export const bcdKeys = {
   "css.properties.hyphens.auto": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13370,6 +13889,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_croatian": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13391,6 +13911,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_danish": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13412,6 +13933,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_dutch": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13433,6 +13955,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_english": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13454,6 +13977,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_french": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13475,6 +13999,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_german_reformed_orthography": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13496,6 +14021,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_hungarian": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13517,6 +14043,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_italian": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13538,6 +14065,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_norwegian_no": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13559,6 +14087,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_portuguese": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13580,6 +14109,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_russian": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13601,6 +14131,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_spanish": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13622,6 +14153,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_swedish": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13643,6 +14175,7 @@ export const bcdKeys = {
   "css.properties.hyphens.language_ukrainian": {
     "parent_feature": "hyphens",
     "parent_feature_name": "Hyphenation",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13664,6 +14197,7 @@ export const bcdKeys = {
   "html.elements.iframe.sandbox.allow-downloads": {
     "parent_feature": "iframe-sandbox",
     "parent_feature_name": "Sandboxed iframes",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13686,6 +14220,7 @@ export const bcdKeys = {
   "css.properties.background-image.image-set": {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13707,6 +14242,7 @@ export const bcdKeys = {
   "css.properties.content.image-set": {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13728,6 +14264,7 @@ export const bcdKeys = {
   "css.types.image.image-set": {
     "parent_feature": "image-set",
     "parent_feature_name": "image-set()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -13749,6 +14286,7 @@ export const bcdKeys = {
   "api.HTMLInputElement.colorSpace": {
     "parent_feature": "input-color-alpha",
     "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -13765,6 +14303,7 @@ export const bcdKeys = {
   "html.elements.input.alpha": {
     "parent_feature": "input-color-alpha",
     "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -13780,6 +14319,7 @@ export const bcdKeys = {
   "html.elements.input.colorspace": {
     "parent_feature": "input-color-alpha",
     "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -13795,6 +14335,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingIncrement_parameter": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13816,6 +14357,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingMode_parameter": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13837,6 +14379,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_roundingPriority_parameter": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13858,6 +14401,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_signDisplay_parameter.negative": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13879,6 +14423,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_trailingZeroDisplay_parameter": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13900,6 +14445,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.NumberFormat.options_parameter.options_useGrouping_parameter.string_values": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13921,6 +14467,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.format.number_parameter-string_decimal": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13942,6 +14489,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.formatRange": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13963,6 +14511,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.NumberFormat.formatRangeToParts": {
     "parent_feature": "intl",
     "parent_feature_name": "Intl",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -13984,6 +14533,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter": {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -14005,6 +14555,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingMode_parameter": {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -14025,6 +14576,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingPriority_parameter": {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -14046,6 +14598,7 @@ export const bcdKeys = {
   "javascript.builtins.Intl.PluralRules.selectRange": {
     "parent_feature": "intl-plural-rules",
     "parent_feature_name": "Intl.PluralRules",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -14067,6 +14620,7 @@ export const bcdKeys = {
   "api.CommandEvent": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14087,6 +14641,7 @@ export const bcdKeys = {
   "api.CommandEvent.CommandEvent": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14107,6 +14662,7 @@ export const bcdKeys = {
   "api.CommandEvent.command": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14127,6 +14683,7 @@ export const bcdKeys = {
   "api.CommandEvent.source": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14147,6 +14704,7 @@ export const bcdKeys = {
   "api.HTMLButtonElement.command": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14167,6 +14725,7 @@ export const bcdKeys = {
   "api.HTMLButtonElement.commandForElement": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14187,6 +14746,7 @@ export const bcdKeys = {
   "api.HTMLElement.command_event": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14207,6 +14767,7 @@ export const bcdKeys = {
   "html.elements.button.command": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14227,6 +14788,7 @@ export const bcdKeys = {
   "html.elements.button.commandfor": {
     "parent_feature": "invoker-commands",
     "parent_feature_name": "Invoker commands",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14247,6 +14809,7 @@ export const bcdKeys = {
   "javascript.builtins.Iterator.concat": {
     "parent_feature": "iterator-concat",
     "parent_feature_name": "Iterator.concat()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -14266,6 +14829,7 @@ export const bcdKeys = {
   "api.Worklet.ecmascript_modules": {
     "parent_feature": "js-modules",
     "parent_feature_name": "JavaScript modules",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -14288,6 +14852,7 @@ export const bcdKeys = {
   "api.ServiceWorker.ecmascript_modules": {
     "parent_feature": "js-modules-service-workers",
     "parent_feature_name": "JavaScript modules in service workers",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -14308,6 +14873,7 @@ export const bcdKeys = {
   "javascript.statements.import.service_worker_support": {
     "parent_feature": "js-modules-service-workers",
     "parent_feature_name": "JavaScript modules in service workers",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -14328,6 +14894,7 @@ export const bcdKeys = {
   "api.Worker.Worker.ecmascript_modules": {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -14349,6 +14916,7 @@ export const bcdKeys = {
   "api.Worker.Worker.options_type_parameter": {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -14370,6 +14938,7 @@ export const bcdKeys = {
   "javascript.operators.import.worker_support": {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -14391,6 +14960,7 @@ export const bcdKeys = {
   "javascript.statements.import.worker_support": {
     "parent_feature": "js-modules-workers",
     "parent_feature_name": "JavaScript modules in workers",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -14412,6 +14982,7 @@ export const bcdKeys = {
   "css.types.color.lab.mixed_type_parameters": {
     "parent_feature": "lab",
     "parent_feature_name": "Lab and LCH",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -14433,6 +15004,7 @@ export const bcdKeys = {
   "css.types.color.lch.mixed_type_parameters": {
     "parent_feature": "lab",
     "parent_feature_name": "Lab and LCH",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -14454,6 +15026,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14474,6 +15047,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.element": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14494,6 +15068,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.id": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14514,6 +15089,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.loadTime": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14534,6 +15110,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.renderTime": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14554,6 +15131,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.size": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14574,6 +15152,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.toJSON": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14594,6 +15173,7 @@ export const bcdKeys = {
   "api.LargestContentfulPaint.url": {
     "parent_feature": "largest-contentful-paint",
     "parent_feature_name": "Largest contentful paint (LCP)",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -14614,6 +15194,7 @@ export const bcdKeys = {
   "css.types.length.lh": {
     "parent_feature": "lh",
     "parent_feature_name": "lh unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -14634,6 +15215,7 @@ export const bcdKeys = {
   "css.types.easing-function.linear-function": {
     "parent_feature": "linear-easing",
     "parent_feature_name": "linear() easing",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -14654,6 +15236,7 @@ export const bcdKeys = {
   "api.HTMLIFrameElement.loading": {
     "parent_feature": "loading-lazy",
     "parent_feature_name": "Lazy-loading images and iframes",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-19",
@@ -14674,6 +15257,7 @@ export const bcdKeys = {
   "html.elements.iframe.loading": {
     "parent_feature": "loading-lazy",
     "parent_feature_name": "Lazy-loading images and iframes",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-19",
@@ -14694,6 +15278,7 @@ export const bcdKeys = {
   "api.Location.ancestorOrigins": {
     "parent_feature": "location",
     "parent_feature_name": "Location",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -14714,6 +15299,7 @@ export const bcdKeys = {
   "css.properties.clear.inline-end": {
     "parent_feature": "logical-properties",
     "parent_feature_name": "Logical properties",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -14734,6 +15320,7 @@ export const bcdKeys = {
   "css.properties.clear.inline-start": {
     "parent_feature": "logical-properties",
     "parent_feature_name": "Logical properties",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -14754,6 +15341,7 @@ export const bcdKeys = {
   "css.properties.float.inline-end": {
     "parent_feature": "logical-properties",
     "parent_feature_name": "Logical properties",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -14774,6 +15362,7 @@ export const bcdKeys = {
   "css.properties.float.inline-start": {
     "parent_feature": "logical-properties",
     "parent_feature_name": "Logical properties",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -14794,6 +15383,7 @@ export const bcdKeys = {
   "css.properties.mask": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14814,6 +15404,7 @@ export const bcdKeys = {
   "css.properties.mask-clip": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14834,6 +15425,7 @@ export const bcdKeys = {
   "css.properties.mask-composite": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14854,6 +15446,7 @@ export const bcdKeys = {
   "css.properties.mask-composite.add": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14874,6 +15467,7 @@ export const bcdKeys = {
   "css.properties.mask-composite.exclude": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14894,6 +15488,7 @@ export const bcdKeys = {
   "css.properties.mask-composite.intersect": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14914,6 +15509,7 @@ export const bcdKeys = {
   "css.properties.mask-composite.subtract": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14934,6 +15530,7 @@ export const bcdKeys = {
   "css.properties.mask-image": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14954,6 +15551,7 @@ export const bcdKeys = {
   "css.properties.mask-image.multiple_mask_images": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14974,6 +15572,7 @@ export const bcdKeys = {
   "css.properties.mask-image.svg_masks": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -14994,6 +15593,7 @@ export const bcdKeys = {
   "css.properties.mask-mode": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15014,6 +15614,7 @@ export const bcdKeys = {
   "css.properties.mask-mode.alpha": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15034,6 +15635,7 @@ export const bcdKeys = {
   "css.properties.mask-mode.luminance": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15054,6 +15656,7 @@ export const bcdKeys = {
   "css.properties.mask-mode.match-source": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15074,6 +15677,7 @@ export const bcdKeys = {
   "css.properties.mask-origin": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15094,6 +15698,7 @@ export const bcdKeys = {
   "css.properties.mask-position": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15114,6 +15719,7 @@ export const bcdKeys = {
   "css.properties.mask-repeat": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15134,6 +15740,7 @@ export const bcdKeys = {
   "css.properties.mask-size": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -15154,6 +15761,7 @@ export const bcdKeys = {
   "css.properties.grid-template-columns.masonry": {
     "parent_feature": "masonry",
     "parent_feature_name": "Masonry",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15167,6 +15775,7 @@ export const bcdKeys = {
   "css.properties.grid-template-rows.masonry": {
     "parent_feature": "masonry",
     "parent_feature_name": "Masonry",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15180,6 +15789,7 @@ export const bcdKeys = {
   "javascript.builtins.Math.sumPrecise": {
     "parent_feature": "math-sum-precise",
     "parent_feature_name": "Math.sumPrecise()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-04-09",
@@ -15200,6 +15810,7 @@ export const bcdKeys = {
   "css.properties.font-size.math": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -15219,6 +15830,7 @@ export const bcdKeys = {
   "css.properties.math-depth": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -15238,6 +15850,7 @@ export const bcdKeys = {
   "css.properties.math-shift": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -15258,6 +15871,7 @@ export const bcdKeys = {
   "css.properties.math-style": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -15279,6 +15893,7 @@ export const bcdKeys = {
   "mathml.elements.mtd.columnspan": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -15300,6 +15915,7 @@ export const bcdKeys = {
   "mathml.elements.mtd.rowspan": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -15321,6 +15937,7 @@ export const bcdKeys = {
   "mathml.global_attributes.dir.rtl_operator_mirroring": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -15338,6 +15955,7 @@ export const bcdKeys = {
   "api.MediaDevices.enumerateDevices": {
     "parent_feature": "media-capture",
     "parent_feature_name": "Media capture",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -15359,6 +15977,7 @@ export const bcdKeys = {
   "css.selectors.buffering": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15376,6 +15995,7 @@ export const bcdKeys = {
   "css.selectors.muted": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15393,6 +16013,7 @@ export const bcdKeys = {
   "css.selectors.paused": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15410,6 +16031,7 @@ export const bcdKeys = {
   "css.selectors.playing": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15427,6 +16049,7 @@ export const bcdKeys = {
   "css.selectors.seeking": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15444,6 +16067,7 @@ export const bcdKeys = {
   "css.selectors.stalled": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15461,6 +16085,7 @@ export const bcdKeys = {
   "css.selectors.volume-locked": {
     "parent_feature": "media-pseudos",
     "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -15478,6 +16103,7 @@ export const bcdKeys = {
   "html.elements.link.rel.modulepreload": {
     "parent_feature": "modulepreload",
     "parent_feature_name": "<link rel=\"modulepreload\">",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -15499,6 +16125,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15520,6 +16147,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.auto": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15541,6 +16169,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.bottom": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15562,6 +16191,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.center": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15583,6 +16213,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.left": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15604,6 +16235,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.right": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15625,6 +16257,7 @@ export const bcdKeys = {
   "css.properties.offset-anchor.top": {
     "parent_feature": "motion-path",
     "parent_feature_name": "Motion path",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -15646,6 +16279,7 @@ export const bcdKeys = {
   "api.NavigateEvent": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15666,6 +16300,7 @@ export const bcdKeys = {
   "api.NavigateEvent.NavigateEvent": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15686,6 +16321,7 @@ export const bcdKeys = {
   "api.NavigateEvent.canIntercept": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15706,6 +16342,7 @@ export const bcdKeys = {
   "api.NavigateEvent.destination": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15726,6 +16363,7 @@ export const bcdKeys = {
   "api.NavigateEvent.downloadRequest": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15746,6 +16384,7 @@ export const bcdKeys = {
   "api.NavigateEvent.formData": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15766,6 +16405,7 @@ export const bcdKeys = {
   "api.NavigateEvent.hasUAVisualTransition": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15786,6 +16426,7 @@ export const bcdKeys = {
   "api.NavigateEvent.hashChange": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15806,6 +16447,7 @@ export const bcdKeys = {
   "api.NavigateEvent.info": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15826,6 +16468,7 @@ export const bcdKeys = {
   "api.NavigateEvent.intercept": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15846,6 +16489,7 @@ export const bcdKeys = {
   "api.NavigateEvent.navigationType": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15866,6 +16510,7 @@ export const bcdKeys = {
   "api.NavigateEvent.scroll": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15886,6 +16531,7 @@ export const bcdKeys = {
   "api.NavigateEvent.signal": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15906,6 +16552,7 @@ export const bcdKeys = {
   "api.NavigateEvent.userInitiated": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15926,6 +16573,7 @@ export const bcdKeys = {
   "api.Navigation": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15946,6 +16594,7 @@ export const bcdKeys = {
   "api.Navigation.activation": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15966,6 +16615,7 @@ export const bcdKeys = {
   "api.Navigation.back": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -15986,6 +16636,7 @@ export const bcdKeys = {
   "api.Navigation.canGoBack": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16006,6 +16657,7 @@ export const bcdKeys = {
   "api.Navigation.canGoForward": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16026,6 +16678,7 @@ export const bcdKeys = {
   "api.Navigation.currentEntry": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16046,6 +16699,7 @@ export const bcdKeys = {
   "api.Navigation.currententrychange_event": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16066,6 +16720,7 @@ export const bcdKeys = {
   "api.Navigation.entries": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16086,6 +16741,7 @@ export const bcdKeys = {
   "api.Navigation.forward": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16106,6 +16762,7 @@ export const bcdKeys = {
   "api.Navigation.navigate": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16126,6 +16783,7 @@ export const bcdKeys = {
   "api.Navigation.navigate_event": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16146,6 +16804,7 @@ export const bcdKeys = {
   "api.Navigation.navigateerror_event": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16166,6 +16825,7 @@ export const bcdKeys = {
   "api.Navigation.navigatesuccess_event": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16186,6 +16846,7 @@ export const bcdKeys = {
   "api.Navigation.reload": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16206,6 +16867,7 @@ export const bcdKeys = {
   "api.Navigation.transition": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16226,6 +16888,7 @@ export const bcdKeys = {
   "api.Navigation.traverseTo": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16246,6 +16909,7 @@ export const bcdKeys = {
   "api.Navigation.updateCurrentEntry": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16266,6 +16930,7 @@ export const bcdKeys = {
   "api.NavigationActivation": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16286,6 +16951,7 @@ export const bcdKeys = {
   "api.NavigationActivation.entry": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16306,6 +16972,7 @@ export const bcdKeys = {
   "api.NavigationActivation.from": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16326,6 +16993,7 @@ export const bcdKeys = {
   "api.NavigationActivation.navigationType": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16346,6 +17014,7 @@ export const bcdKeys = {
   "api.NavigationCurrentEntryChangeEvent": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16366,6 +17035,7 @@ export const bcdKeys = {
   "api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16386,6 +17056,7 @@ export const bcdKeys = {
   "api.NavigationCurrentEntryChangeEvent.from": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16406,6 +17077,7 @@ export const bcdKeys = {
   "api.NavigationCurrentEntryChangeEvent.navigationType": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16426,6 +17098,7 @@ export const bcdKeys = {
   "api.NavigationDestination": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16446,6 +17119,7 @@ export const bcdKeys = {
   "api.NavigationDestination.getState": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16466,6 +17140,7 @@ export const bcdKeys = {
   "api.NavigationDestination.id": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16486,6 +17161,7 @@ export const bcdKeys = {
   "api.NavigationDestination.index": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16506,6 +17182,7 @@ export const bcdKeys = {
   "api.NavigationDestination.key": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16526,6 +17203,7 @@ export const bcdKeys = {
   "api.NavigationDestination.sameDocument": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16546,6 +17224,7 @@ export const bcdKeys = {
   "api.NavigationDestination.url": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16566,6 +17245,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16586,6 +17266,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.dispose_event": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16606,6 +17287,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.getState": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16626,6 +17308,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.id": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16646,6 +17329,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.index": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16666,6 +17350,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.key": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16686,6 +17371,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.sameDocument": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16706,6 +17392,7 @@ export const bcdKeys = {
   "api.NavigationHistoryEntry.url": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16726,6 +17413,7 @@ export const bcdKeys = {
   "api.NavigationTransition": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16746,6 +17434,7 @@ export const bcdKeys = {
   "api.NavigationTransition.finished": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16766,6 +17455,7 @@ export const bcdKeys = {
   "api.NavigationTransition.from": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16786,6 +17476,7 @@ export const bcdKeys = {
   "api.NavigationTransition.navigationType": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16806,6 +17497,7 @@ export const bcdKeys = {
   "api.Window.navigation": {
     "parent_feature": "navigation",
     "parent_feature_name": "Navigation API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -16826,6 +17518,7 @@ export const bcdKeys = {
   "api.NavigateEvent.intercept.precommitHandler_option": {
     "parent_feature": "navigation-precommit-handlers",
     "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -16843,6 +17536,7 @@ export const bcdKeys = {
   "api.NavigationPrecommitController": {
     "parent_feature": "navigation-precommit-handlers",
     "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -16860,6 +17554,7 @@ export const bcdKeys = {
   "api.NavigationPrecommitController.addHandler": {
     "parent_feature": "navigation-precommit-handlers",
     "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -16877,6 +17572,7 @@ export const bcdKeys = {
   "api.NavigationPrecommitController.redirect": {
     "parent_feature": "navigation-precommit-handlers",
     "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -16894,6 +17590,7 @@ export const bcdKeys = {
   "api.CSSStyleRule.cssRules": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -16915,6 +17612,7 @@ export const bcdKeys = {
   "api.CSSStyleRule.deleteRule": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -16936,6 +17634,7 @@ export const bcdKeys = {
   "api.CSSStyleRule.insertRule": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -16957,6 +17656,7 @@ export const bcdKeys = {
   "css.selectors.nesting": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -16977,6 +17677,7 @@ export const bcdKeys = {
   "api.Notification.actions": {
     "parent_feature": "notifications",
     "parent_feature_name": "Notifications",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -16992,6 +17693,7 @@ export const bcdKeys = {
   "api.Notification.maxActions_static": {
     "parent_feature": "notifications",
     "parent_feature_name": "Notifications",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17007,6 +17709,7 @@ export const bcdKeys = {
   "css.selectors.only-child.no_parent_required": {
     "parent_feature": "nth-child",
     "parent_feature_name": ":nth-child()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17029,6 +17732,7 @@ export const bcdKeys = {
   "api.OffscreenCanvas.getContext.webgl2_context": {
     "parent_feature": "offscreen-canvas",
     "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17050,6 +17754,7 @@ export const bcdKeys = {
   "api.OffscreenCanvas.getContext.webgl_context": {
     "parent_feature": "offscreen-canvas",
     "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17071,6 +17776,7 @@ export const bcdKeys = {
   "css.types.color.oklab.mixed_type_parameters": {
     "parent_feature": "oklab",
     "parent_feature_name": "Oklab and OkLCh",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -17092,6 +17798,7 @@ export const bcdKeys = {
   "css.types.color.oklch.mixed_type_parameters": {
     "parent_feature": "oklab",
     "parent_feature_name": "Oklab and OkLCh",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-21",
@@ -17113,6 +17820,7 @@ export const bcdKeys = {
   "css.selectors.open": {
     "parent_feature": "open-pseudo",
     "parent_feature_name": ":open",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17131,6 +17839,7 @@ export const bcdKeys = {
   "api.Origin": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17146,6 +17855,7 @@ export const bcdKeys = {
   "api.Origin.Origin": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17161,6 +17871,7 @@ export const bcdKeys = {
   "api.Origin.from_static": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17176,6 +17887,7 @@ export const bcdKeys = {
   "api.Origin.isSameOrigin": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17191,6 +17903,7 @@ export const bcdKeys = {
   "api.Origin.isSameSite": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17206,6 +17919,7 @@ export const bcdKeys = {
   "api.Origin.opaque": {
     "parent_feature": "origin",
     "parent_feature_name": "Origin",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17221,6 +17935,7 @@ export const bcdKeys = {
   "css.at-rules.media.overflow-block": {
     "parent_feature": "overflow",
     "parent_feature_name": "Overflow media queries",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17243,6 +17958,7 @@ export const bcdKeys = {
   "css.at-rules.media.overflow-inline": {
     "parent_feature": "overflow",
     "parent_feature_name": "Overflow media queries",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17265,6 +17981,7 @@ export const bcdKeys = {
   "css.properties.overflow-anchor": {
     "parent_feature": "overflow-anchor",
     "parent_feature_name": "overflow-anchor",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17283,6 +18000,7 @@ export const bcdKeys = {
   "css.selectors.first": {
     "parent_feature": "page-selectors",
     "parent_feature_name": "Page selectors",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-01",
@@ -17304,6 +18022,7 @@ export const bcdKeys = {
   "http.headers.Set-Cookie.Partitioned": {
     "parent_feature": "partitioned-cookies",
     "parent_feature_name": "Partitioned cookies",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -17324,6 +18043,7 @@ export const bcdKeys = {
   "css.at-rules.media.display-mode.picture-in-picture": {
     "parent_feature": "picture-in-picture",
     "parent_feature_name": "Picture-in-picture (video)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17339,6 +18059,7 @@ export const bcdKeys = {
   "api.SVGAElement.ping": {
     "parent_feature": "ping",
     "parent_feature_name": "ping",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17354,6 +18075,7 @@ export const bcdKeys = {
   "api.Element.pointerrawupdate_event": {
     "parent_feature": "pointer-events-api",
     "parent_feature_name": "Pointer Events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -17371,6 +18093,7 @@ export const bcdKeys = {
   "api.PointerEvent.pointerType.fractional_coordinates": {
     "parent_feature": "pointer-events-api",
     "parent_feature_name": "Pointer Events",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -17387,6 +18110,7 @@ export const bcdKeys = {
   "api.ToggleEvent": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -17407,6 +18131,7 @@ export const bcdKeys = {
   "api.ToggleEvent.ToggleEvent": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -17427,6 +18152,7 @@ export const bcdKeys = {
   "api.ToggleEvent.newState": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -17447,6 +18173,7 @@ export const bcdKeys = {
   "api.ToggleEvent.oldState": {
     "parent_feature": "popover",
     "parent_feature_name": "Popover",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -17467,6 +18194,7 @@ export const bcdKeys = {
   "api.HTMLElement.popover.hint": {
     "parent_feature": "popover-hint",
     "parent_feature_name": "popover=\"hint\"",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17484,6 +18212,7 @@ export const bcdKeys = {
   "html.global_attributes.popover.hint": {
     "parent_feature": "popover-hint",
     "parent_feature_name": "popover=\"hint\"",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17501,6 +18230,7 @@ export const bcdKeys = {
   "api.HTMLLinkElement.imageSizes": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -17521,6 +18251,7 @@ export const bcdKeys = {
   "api.HTMLLinkElement.imageSrcset": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -17541,6 +18272,7 @@ export const bcdKeys = {
   "html.elements.link.imagesizes": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -17561,6 +18293,7 @@ export const bcdKeys = {
   "html.elements.link.imagesrcset": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -17581,6 +18314,7 @@ export const bcdKeys = {
   "api.HTMLMediaElement.preservesPitch": {
     "parent_feature": "preserves-pitch",
     "parent_feature_name": "preservesPitch",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -17601,6 +18335,7 @@ export const bcdKeys = {
   "api.Window.print": {
     "parent_feature": "print",
     "parent_feature_name": "window.print()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2025-12-06",
@@ -17622,6 +18357,7 @@ export const bcdKeys = {
   "javascript.builtins.AggregateError.serializable_object": {
     "parent_feature": "promise-any",
     "parent_feature_name": "Promise.any()",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17643,6 +18379,7 @@ export const bcdKeys = {
   "api.Permissions.permission_push": {
     "parent_feature": "push",
     "parent_feature_name": "Push messages",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -17664,6 +18401,7 @@ export const bcdKeys = {
   "css.types.random": {
     "parent_feature": "random-function",
     "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17678,6 +18416,7 @@ export const bcdKeys = {
   "css.types.length.rcap": {
     "parent_feature": "rcap",
     "parent_feature_name": "rcap unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -17698,6 +18437,7 @@ export const bcdKeys = {
   "css.types.length.rch": {
     "parent_feature": "rch",
     "parent_feature_name": "rch unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -17718,6 +18458,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17737,6 +18478,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.byobRequest": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17756,6 +18498,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.close": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17775,6 +18518,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.desiredSize": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17794,6 +18538,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.enqueue": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17813,6 +18558,7 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.error": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17832,6 +18578,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17851,6 +18598,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.ReadableStreamBYOBReader": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17870,6 +18618,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.cancel": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17889,6 +18638,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.closed": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17908,6 +18658,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.read": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17927,6 +18678,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.releaseLock": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17946,6 +18698,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17965,6 +18718,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.respond": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -17984,6 +18738,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.respondWithNewView": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18003,6 +18758,7 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.view": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18022,6 +18778,7 @@ export const bcdKeys = {
   "javascript.builtins.RegExp.unicodeSets": {
     "parent_feature": "regexp",
     "parent_feature_name": "Regular expressions",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -18043,6 +18800,7 @@ export const bcdKeys = {
   "api.ReportingObserver": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18066,6 +18824,7 @@ export const bcdKeys = {
   "api.ReportingObserver.ReportingObserver": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18089,6 +18848,7 @@ export const bcdKeys = {
   "api.ReportingObserver.ReportingObserver.options_parameter": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18112,6 +18872,7 @@ export const bcdKeys = {
   "api.ReportingObserver.ReportingObserver.options_parameter.types_property": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18135,6 +18896,7 @@ export const bcdKeys = {
   "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18158,6 +18920,7 @@ export const bcdKeys = {
   "api.ReportingObserver.ReportingObserver.options_parameter.types_property.integrity-violation": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -18178,6 +18941,7 @@ export const bcdKeys = {
   "api.ReportingObserver.disconnect": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18201,6 +18965,7 @@ export const bcdKeys = {
   "api.ReportingObserver.observe": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18224,6 +18989,7 @@ export const bcdKeys = {
   "api.ReportingObserver.takeRecords": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18247,6 +19013,7 @@ export const bcdKeys = {
   "api.ReportingObserver.worker_support": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -18267,6 +19034,7 @@ export const bcdKeys = {
   "http.headers.Reporting-Endpoints": {
     "parent_feature": "reporting",
     "parent_feature_name": "Reporting API",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -18290,6 +19058,7 @@ export const bcdKeys = {
   "api.PerformanceResourceTiming.deliveryType": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -18307,6 +19076,7 @@ export const bcdKeys = {
   "api.PerformanceResourceTiming.firstInterimResponseStart": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -18324,6 +19094,7 @@ export const bcdKeys = {
   "css.types.length.rex": {
     "parent_feature": "rex",
     "parent_feature_name": "rex unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -18344,6 +19115,7 @@ export const bcdKeys = {
   "css.types.length.ric": {
     "parent_feature": "ric",
     "parent_feature_name": "ric unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -18364,6 +19136,7 @@ export const bcdKeys = {
   "css.types.length.rlh": {
     "parent_feature": "rlh",
     "parent_feature_name": "rlh unit",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -18384,6 +19157,7 @@ export const bcdKeys = {
   "api.Document.parseHTML_static": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18398,6 +19172,7 @@ export const bcdKeys = {
   "api.Element.setHTML": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18415,6 +19190,7 @@ export const bcdKeys = {
   "api.Sanitizer": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18432,6 +19208,7 @@ export const bcdKeys = {
   "api.Sanitizer.Sanitizer": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18449,6 +19226,7 @@ export const bcdKeys = {
   "api.Sanitizer.allowAttribute": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18466,6 +19244,7 @@ export const bcdKeys = {
   "api.Sanitizer.allowElement": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18483,6 +19262,7 @@ export const bcdKeys = {
   "api.Sanitizer.get": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18500,6 +19280,7 @@ export const bcdKeys = {
   "api.Sanitizer.removeAttribute": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18517,6 +19298,7 @@ export const bcdKeys = {
   "api.Sanitizer.removeElement": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18534,6 +19316,7 @@ export const bcdKeys = {
   "api.Sanitizer.removeUnsafe": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18551,6 +19334,7 @@ export const bcdKeys = {
   "api.Sanitizer.replaceElementWithChildren": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18568,6 +19352,7 @@ export const bcdKeys = {
   "api.Sanitizer.setComments": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18585,6 +19370,7 @@ export const bcdKeys = {
   "api.Sanitizer.setDataAttributes": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18602,6 +19388,7 @@ export const bcdKeys = {
   "api.ShadowRoot.setHTML": {
     "parent_feature": "sanitizer",
     "parent_feature_name": "Sanitizer API",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18616,6 +19403,7 @@ export const bcdKeys = {
   "api.CSSScopeRule": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -18636,6 +19424,7 @@ export const bcdKeys = {
   "api.CSSScopeRule.end": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -18656,6 +19445,7 @@ export const bcdKeys = {
   "api.CSSScopeRule.start": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -18676,6 +19466,7 @@ export const bcdKeys = {
   "css.at-rules.scope": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -18696,6 +19487,7 @@ export const bcdKeys = {
   "css.selectors.nesting.at-scope": {
     "parent_feature": "scope",
     "parent_feature_name": "@scope",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -18716,6 +19508,7 @@ export const bcdKeys = {
   "api.CustomElementRegistry.CustomElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18734,6 +19527,7 @@ export const bcdKeys = {
   "api.CustomElementRegistry.initialize": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18752,6 +19546,7 @@ export const bcdKeys = {
   "api.Document.customElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18770,6 +19565,7 @@ export const bcdKeys = {
   "api.Element.customElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18788,6 +19584,7 @@ export const bcdKeys = {
   "api.HTMLTemplateElement.shadowRootCustomElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18806,6 +19603,7 @@ export const bcdKeys = {
   "api.ShadowRoot.customElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -18824,6 +19622,7 @@ export const bcdKeys = {
   "css.at-rules.media.scripting": {
     "parent_feature": "scripting",
     "parent_feature_name": "scripting media query",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -18844,6 +19643,7 @@ export const bcdKeys = {
   "css.properties.scrollbar-color": {
     "parent_feature": "scrollbar-color",
     "parent_feature_name": "scrollbar-color",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -18864,6 +19664,7 @@ export const bcdKeys = {
   "css.properties.scrollbar-color.auto": {
     "parent_feature": "scrollbar-color",
     "parent_feature_name": "scrollbar-color",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -18884,6 +19685,7 @@ export const bcdKeys = {
   "api.Document.scrollend_event": {
     "parent_feature": "scrollend",
     "parent_feature_name": "scrollend",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -18904,6 +19706,7 @@ export const bcdKeys = {
   "api.Element.scrollend_event": {
     "parent_feature": "scrollend",
     "parent_feature_name": "scrollend",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -18924,6 +19727,7 @@ export const bcdKeys = {
   "html.elements.search": {
     "parent_feature": "search",
     "parent_feature_name": "<search>",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -18944,6 +19748,7 @@ export const bcdKeys = {
   "api.Selection.removeRange": {
     "parent_feature": "selection-api",
     "parent_feature_name": "Selection",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -18965,6 +19770,7 @@ export const bcdKeys = {
   "http.headers.Service-Worker-Navigation-Preload": {
     "parent_feature": "service-workers",
     "parent_feature_name": "Service workers",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -18983,6 +19789,7 @@ export const bcdKeys = {
   "css.types.basic-shape.shape": {
     "parent_feature": "shape-function",
     "parent_feature_name": "shape()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -19003,6 +19810,7 @@ export const bcdKeys = {
   "css.types.sibling-count": {
     "parent_feature": "sibling-count",
     "parent_feature_name": "sibling-count() and sibling-index()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19020,6 +19828,7 @@ export const bcdKeys = {
   "css.types.sibling-index": {
     "parent_feature": "sibling-count",
     "parent_feature_name": "sibling-count() and sibling-index()",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19037,6 +19846,7 @@ export const bcdKeys = {
   "api.SVGAnimationElement.beginEvent_event": {
     "parent_feature": "smil-svg-animations",
     "parent_feature_name": "SMIL SVG animations",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -19057,6 +19867,7 @@ export const bcdKeys = {
   "api.SVGAnimationElement.repeatEvent_event": {
     "parent_feature": "smil-svg-animations",
     "parent_feature_name": "SMIL SVG animations",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -19077,6 +19888,7 @@ export const bcdKeys = {
   "api.Document.hasStorageAccess": {
     "parent_feature": "storage-access",
     "parent_feature_name": "Storage access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-05",
@@ -19097,6 +19909,7 @@ export const bcdKeys = {
   "api.Document.requestStorageAccess": {
     "parent_feature": "storage-access",
     "parent_feature_name": "Storage access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-05",
@@ -19117,6 +19930,7 @@ export const bcdKeys = {
   "api.Permissions.permission_storage-access": {
     "parent_feature": "storage-access",
     "parent_feature_name": "Storage access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -19137,6 +19951,7 @@ export const bcdKeys = {
   "api.StorageManager.estimate": {
     "parent_feature": "storage-manager",
     "parent_feature_name": "Storage manager",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -19158,6 +19973,7 @@ export const bcdKeys = {
   "api.ReadableStreamDefaultReader.releaseLock.reject_pending_read_request": {
     "parent_feature": "streams",
     "parent_feature_name": "Streams",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -19179,6 +19995,7 @@ export const bcdKeys = {
   "javascript.builtins.String.isWellFormed": {
     "parent_feature": "string-wellformed",
     "parent_feature_name": "String isWellFormed() and toWellFormed()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -19199,6 +20016,7 @@ export const bcdKeys = {
   "javascript.builtins.String.toWellFormed": {
     "parent_feature": "string-wellformed",
     "parent_feature_name": "String isWellFormed() and toWellFormed()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -19219,6 +20037,7 @@ export const bcdKeys = {
   "css.properties.grid-template-columns.subgrid": {
     "parent_feature": "subgrid",
     "parent_feature_name": "Subgrid",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -19240,6 +20059,7 @@ export const bcdKeys = {
   "css.properties.grid-template-rows.subgrid": {
     "parent_feature": "subgrid",
     "parent_feature_name": "Subgrid",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-15",
@@ -19261,6 +20081,7 @@ export const bcdKeys = {
   "css.at-rules.supports.font-format": {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -19282,6 +20103,7 @@ export const bcdKeys = {
   "css.at-rules.supports.font-tech": {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -19303,6 +20125,7 @@ export const bcdKeys = {
   "api.CanvasRenderingContext2D.drawImage.SVGImageElement_source_image": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -19324,6 +20147,7 @@ export const bcdKeys = {
   "api.SVGAElement.hreflang": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-21",
@@ -19344,6 +20168,7 @@ export const bcdKeys = {
   "api.SVGAElement.referrerPolicy": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -19361,6 +20186,7 @@ export const bcdKeys = {
   "api.SVGAElement.type": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-21",
@@ -19381,6 +20207,7 @@ export const bcdKeys = {
   "api.SVGImageElement.crossOrigin": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -19401,6 +20228,7 @@ export const bcdKeys = {
   "api.SVGScriptElement.async": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -19421,6 +20249,7 @@ export const bcdKeys = {
   "svg.elements.image.crossorigin": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-11",
@@ -19441,6 +20270,7 @@ export const bcdKeys = {
   "svg.global_attributes.mask": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -19461,6 +20291,7 @@ export const bcdKeys = {
   "css.properties.caption-side.bottom-outside": {
     "parent_feature": "table",
     "parent_feature_name": "Tables",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -19474,6 +20305,7 @@ export const bcdKeys = {
   "css.properties.caption-side.top-outside": {
     "parent_feature": "table",
     "parent_feature_name": "Tables",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -19487,6 +20319,7 @@ export const bcdKeys = {
   "javascript.builtins.Date.toTemporalInstant": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19505,6 +20338,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19522,6 +20356,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19539,6 +20374,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.Duration": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19556,6 +20392,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.abs": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19573,6 +20410,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19590,6 +20428,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.blank": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19607,6 +20446,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19624,6 +20464,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.days": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19641,6 +20482,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19658,6 +20500,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.hours": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19675,6 +20518,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.microseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19692,6 +20536,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.milliseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19709,6 +20554,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.minutes": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19726,6 +20572,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.months": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19743,6 +20590,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.nanoseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19760,6 +20608,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.negated": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19777,6 +20626,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.round": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19794,6 +20644,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.seconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19811,6 +20662,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.sign": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19828,6 +20680,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19845,6 +20698,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19862,6 +20716,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19879,6 +20734,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19896,6 +20752,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.total": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19913,6 +20770,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19930,6 +20788,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.weeks": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19947,6 +20806,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19964,6 +20824,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Duration.years": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19981,6 +20842,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -19998,6 +20860,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20015,6 +20878,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20032,6 +20896,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.epochMilliseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20049,6 +20914,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.epochNanoseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20066,6 +20932,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20083,6 +20950,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20100,6 +20968,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.fromEpochMilliseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20117,6 +20986,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.fromEpochNanoseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20134,6 +21004,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.round": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20151,6 +21022,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20168,6 +21040,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20185,6 +21058,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20202,6 +21076,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20219,6 +21094,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20236,6 +21112,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.toZonedDateTimeISO": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20253,6 +21130,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20270,6 +21148,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Instant.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20287,6 +21166,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20304,6 +21184,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.instant": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20321,6 +21202,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.plainDateISO": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20338,6 +21220,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.plainDateTimeISO": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20355,6 +21238,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.plainTimeISO": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20372,6 +21256,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.timeZoneId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20389,6 +21274,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.Now.zonedDateTimeISO": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20406,6 +21292,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20423,6 +21310,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20440,6 +21328,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.calendarId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20457,6 +21346,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20474,6 +21364,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.day": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20491,6 +21382,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.dayOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20508,6 +21400,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.dayOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20525,6 +21418,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.daysInMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20542,6 +21436,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.daysInWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20559,6 +21454,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.daysInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20576,6 +21472,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20593,6 +21490,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.era": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20610,6 +21508,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.eraYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20627,6 +21526,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20644,6 +21544,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.inLeapYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20661,6 +21562,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.month": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20678,6 +21580,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.monthCode": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20695,6 +21598,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.monthsInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20712,6 +21616,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20729,6 +21634,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20746,6 +21652,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20763,6 +21670,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20780,6 +21688,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toPlainDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20797,6 +21706,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toPlainMonthDay": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20814,6 +21724,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toPlainYearMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20831,6 +21742,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20848,6 +21760,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.toZonedDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20865,6 +21778,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20882,6 +21796,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20899,6 +21814,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.weekOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20916,6 +21832,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20933,6 +21850,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.withCalendar": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20948,6 +21866,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.year": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20965,6 +21884,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDate.yearOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20982,6 +21902,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -20999,6 +21920,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21016,6 +21938,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.calendarId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21033,6 +21956,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21050,6 +21974,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.day": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21067,6 +21992,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.dayOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21084,6 +22010,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.dayOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21101,6 +22028,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.daysInMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21118,6 +22046,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.daysInWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21135,6 +22064,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.daysInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21152,6 +22082,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21169,6 +22100,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.era": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21186,6 +22118,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.eraYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21203,6 +22136,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21220,6 +22154,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.hour": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21237,6 +22172,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.inLeapYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21254,6 +22190,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.microsecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21271,6 +22208,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.millisecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21288,6 +22226,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.minute": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21305,6 +22244,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.month": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21322,6 +22262,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.monthCode": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21339,6 +22280,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.monthsInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21356,6 +22298,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.nanosecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21373,6 +22316,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.round": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21390,6 +22334,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.second": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21407,6 +22352,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21424,6 +22370,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21441,6 +22388,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21458,6 +22406,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21475,6 +22424,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toPlainDate": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21492,6 +22442,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toPlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21509,6 +22460,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21526,6 +22478,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.toZonedDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21543,6 +22496,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21560,6 +22514,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21577,6 +22532,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.weekOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21594,6 +22550,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21611,6 +22568,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.withCalendar": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21626,6 +22584,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.withPlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21643,6 +22602,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.year": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21660,6 +22620,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainDateTime.yearOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21677,6 +22638,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21694,6 +22656,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.calendarId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21711,6 +22674,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.day": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21728,6 +22692,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21745,6 +22710,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21762,6 +22728,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.monthCode": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21779,6 +22746,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21796,6 +22764,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21813,6 +22782,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.toPlainDate": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21830,6 +22800,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21847,6 +22818,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21864,6 +22836,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainMonthDay.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21881,6 +22854,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21898,6 +22872,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.PlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21915,6 +22890,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21932,6 +22908,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21949,6 +22926,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21966,6 +22944,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -21983,6 +22962,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.hour": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22000,6 +22980,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.microsecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22017,6 +22998,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.millisecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22034,6 +23016,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.minute": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22051,6 +23034,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.nanosecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22068,6 +23052,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.round": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22085,6 +23070,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.second": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22102,6 +23088,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22119,6 +23106,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22136,6 +23124,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22153,6 +23142,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22170,6 +23160,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22187,6 +23178,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22204,6 +23196,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22221,6 +23214,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainTime.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22238,6 +23232,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22255,6 +23250,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22272,6 +23268,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.calendarId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22289,6 +23286,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22306,6 +23304,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.daysInMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22323,6 +23322,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.daysInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22340,6 +23340,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22357,6 +23358,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.era": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22374,6 +23376,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.eraYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22391,6 +23394,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22408,6 +23412,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.inLeapYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22425,6 +23430,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.month": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22442,6 +23448,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.monthCode": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22459,6 +23466,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.monthsInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22476,6 +23484,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22493,6 +23502,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22510,6 +23520,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22527,6 +23538,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22544,6 +23556,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.toPlainDate": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22561,6 +23574,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22578,6 +23592,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22595,6 +23610,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22612,6 +23628,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22629,6 +23646,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.PlainYearMonth.year": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22646,6 +23664,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22663,6 +23682,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.add": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22680,6 +23700,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.calendarId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22697,6 +23718,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.compare": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22714,6 +23736,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.day": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22731,6 +23754,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.dayOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22748,6 +23772,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.dayOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22765,6 +23790,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.daysInMonth": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22782,6 +23808,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.daysInWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22799,6 +23826,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.daysInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22816,6 +23844,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.epochMilliseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22833,6 +23862,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.epochNanoseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22850,6 +23880,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.equals": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22867,6 +23898,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.era": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22884,6 +23916,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.eraYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22901,6 +23934,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.from": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22918,6 +23952,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.getTimeZoneTransition": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22935,6 +23970,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.hour": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22952,6 +23988,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.hoursInDay": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22969,6 +24006,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.inLeapYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -22986,6 +24024,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.microsecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23003,6 +24042,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.millisecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23020,6 +24060,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.minute": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23037,6 +24078,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.month": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23054,6 +24096,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.monthCode": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23071,6 +24114,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.monthsInYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23088,6 +24132,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.nanosecond": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23105,6 +24150,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.offset": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23122,6 +24168,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.offsetNanoseconds": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23139,6 +24186,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.round": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23156,6 +24204,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.second": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23173,6 +24222,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.since": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23190,6 +24240,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.startOfDay": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23207,6 +24258,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.subtract": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23224,6 +24276,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.timeZoneId": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23241,6 +24294,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toInstant": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23258,6 +24312,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toJSON": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23275,6 +24330,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toLocaleString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23292,6 +24348,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toPlainDate": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23309,6 +24366,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toPlainDateTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23326,6 +24384,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toPlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23343,6 +24402,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.toString": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23360,6 +24420,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.until": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23377,6 +24438,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.valueOf": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23394,6 +24456,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.weekOfYear": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23411,6 +24474,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.with": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23428,6 +24492,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.withCalendar": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23443,6 +24508,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.withPlainTime": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23460,6 +24526,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.withTimeZone": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23477,6 +24544,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.year": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23494,6 +24562,7 @@ export const bcdKeys = {
   "javascript.builtins.Temporal.ZonedDateTime.yearOfWeek": {
     "parent_feature": "temporal",
     "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23511,6 +24580,7 @@ export const bcdKeys = {
   "css.properties.text-decoration.includes_color-and-style": {
     "parent_feature": "text-decoration",
     "parent_feature_name": "text-decoration",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -23531,6 +24601,7 @@ export const bcdKeys = {
   "css.properties.text-decoration.includes_thickness": {
     "parent_feature": "text-decoration",
     "parent_feature_name": "text-decoration",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -23551,6 +24622,7 @@ export const bcdKeys = {
   "css.properties.text-decoration-line.grammar-error": {
     "parent_feature": "text-decoration-spelling-grammar",
     "parent_feature_name": "Spelling and grammar text decorations",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -23571,6 +24643,7 @@ export const bcdKeys = {
   "css.properties.text-decoration-line.spelling-error": {
     "parent_feature": "text-decoration-spelling-grammar",
     "parent_feature_name": "Spelling and grammar text decorations",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -23591,6 +24664,7 @@ export const bcdKeys = {
   "css.properties.text-indent.each-line": {
     "parent_feature": "text-indent-each-line",
     "parent_feature_name": "text-indent: each-line",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-13",
@@ -23611,6 +24685,7 @@ export const bcdKeys = {
   "css.properties.text-indent.hanging": {
     "parent_feature": "text-indent-hanging",
     "parent_feature_name": "text-indent: hanging",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-13",
@@ -23631,6 +24706,7 @@ export const bcdKeys = {
   "css.properties.text-justify": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23648,6 +24724,7 @@ export const bcdKeys = {
   "css.properties.text-justify.auto": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23665,6 +24742,7 @@ export const bcdKeys = {
   "css.properties.text-justify.inter-character": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23682,6 +24760,7 @@ export const bcdKeys = {
   "css.properties.text-justify.inter-word": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23699,6 +24778,7 @@ export const bcdKeys = {
   "css.properties.text-justify.none": {
     "parent_feature": "text-justify",
     "parent_feature_name": "text-justify",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -23716,6 +24796,7 @@ export const bcdKeys = {
   "css.properties.transform-box.border-box": {
     "parent_feature": "transform-box",
     "parent_feature_name": "transform-box",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-13",
@@ -23736,6 +24817,7 @@ export const bcdKeys = {
   "css.properties.transition.gradients_can_animate": {
     "parent_feature": "transitions",
     "parent_feature_name": "Transitions (CSS)",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -23749,6 +24831,7 @@ export const bcdKeys = {
   "api.Element.innerHTML.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23769,6 +24852,7 @@ export const bcdKeys = {
   "api.HTMLScriptElement.innerText.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23789,6 +24873,7 @@ export const bcdKeys = {
   "api.HTMLScriptElement.src.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23809,6 +24894,7 @@ export const bcdKeys = {
   "api.HTMLScriptElement.text.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23829,6 +24915,7 @@ export const bcdKeys = {
   "api.HTMLScriptElement.textContent.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23849,6 +24936,7 @@ export const bcdKeys = {
   "api.ShadowRoot.innerHTML.enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23869,6 +24957,7 @@ export const bcdKeys = {
   "api.TrustedHTML": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23889,6 +24978,7 @@ export const bcdKeys = {
   "api.TrustedHTML.toJSON": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23909,6 +24999,7 @@ export const bcdKeys = {
   "api.TrustedHTML.toString": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23929,6 +25020,7 @@ export const bcdKeys = {
   "api.TrustedScript": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23949,6 +25041,7 @@ export const bcdKeys = {
   "api.TrustedScript.toJSON": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23969,6 +25062,7 @@ export const bcdKeys = {
   "api.TrustedScript.toString": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -23989,6 +25083,7 @@ export const bcdKeys = {
   "api.TrustedScriptURL": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24009,6 +25104,7 @@ export const bcdKeys = {
   "api.TrustedScriptURL.toJSON": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24029,6 +25125,7 @@ export const bcdKeys = {
   "api.TrustedScriptURL.toString": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24049,6 +25146,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicy": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24069,6 +25167,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicy.createHTML": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24089,6 +25188,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicy.createScript": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24109,6 +25209,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicy.createScriptURL": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24129,6 +25230,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicy.name": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24149,6 +25251,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24169,6 +25272,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.createPolicy": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24189,6 +25293,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.defaultPolicy": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24209,6 +25314,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.emptyHTML": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24229,6 +25335,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.emptyScript": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24249,6 +25356,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.getAttributeType": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24269,6 +25377,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.getPropertyType": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24289,6 +25398,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.isHTML": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24309,6 +25419,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.isScript": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24329,6 +25440,7 @@ export const bcdKeys = {
   "api.TrustedTypePolicyFactory.isScriptURL": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24349,6 +25461,7 @@ export const bcdKeys = {
   "api.setInterval.code_param_enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24369,6 +25482,7 @@ export const bcdKeys = {
   "api.setTimeout.code_param_enforces_trusted_types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24389,6 +25503,7 @@ export const bcdKeys = {
   "api.trustedTypes": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24409,6 +25524,7 @@ export const bcdKeys = {
   "http.headers.Content-Security-Policy.require-trusted-types-for": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24429,6 +25545,7 @@ export const bcdKeys = {
   "http.headers.Content-Security-Policy.trusted-types": {
     "parent_feature": "trusted-types",
     "parent_feature_name": "Trusted types",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-24",
@@ -24449,6 +25566,7 @@ export const bcdKeys = {
   "css.properties.display.multi-keyword_values": {
     "parent_feature": "two-value-display",
     "parent_feature_name": "Two-value display property",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-01-21",
@@ -24470,6 +25588,7 @@ export const bcdKeys = {
   "css.at-rules.media.update": {
     "parent_feature": "update",
     "parent_feature_name": "Update frequency media query",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -24491,6 +25610,7 @@ export const bcdKeys = {
   "api.URLSearchParams.delete.value_parameter": {
     "parent_feature": "url",
     "parent_feature_name": "URL",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -24512,6 +25632,7 @@ export const bcdKeys = {
   "api.URLSearchParams.has.value_parameter": {
     "parent_feature": "url",
     "parent_feature_name": "URL",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -24533,6 +25654,7 @@ export const bcdKeys = {
   "api.URLSearchParams.size": {
     "parent_feature": "url",
     "parent_feature_name": "URL",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -24554,6 +25676,7 @@ export const bcdKeys = {
   "api.URL.canParse_static": {
     "parent_feature": "url-canparse",
     "parent_feature_name": "URL.canParse()",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-12-07",
@@ -24574,6 +25697,7 @@ export const bcdKeys = {
   "api.Navigator.userActivation": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -24594,6 +25718,7 @@ export const bcdKeys = {
   "api.UserActivation": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -24614,6 +25739,7 @@ export const bcdKeys = {
   "api.UserActivation.hasBeenActive": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -24634,6 +25760,7 @@ export const bcdKeys = {
   "api.UserActivation.isActive": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -24654,6 +25781,7 @@ export const bcdKeys = {
   "css.selectors.user-invalid": {
     "parent_feature": "user-pseudos",
     "parent_feature_name": ":user-valid and :user-invalid",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -24674,6 +25802,7 @@ export const bcdKeys = {
   "css.selectors.user-valid": {
     "parent_feature": "user-pseudos",
     "parent_feature_name": ":user-valid and :user-invalid",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-02",
@@ -24694,6 +25823,7 @@ export const bcdKeys = {
   "api.Document.startViewTransition.options_parameter": {
     "parent_feature": "view-transitions",
     "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -24714,6 +25844,7 @@ export const bcdKeys = {
   "api.Document.startViewTransition.options_parameter.types_parameter": {
     "parent_feature": "view-transitions",
     "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -24734,6 +25865,7 @@ export const bcdKeys = {
   "api.Document.startViewTransition.options_parameter.update_parameter": {
     "parent_feature": "view-transitions",
     "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-01-13",
@@ -24754,6 +25886,7 @@ export const bcdKeys = {
   "api.Document.startViewTransition.updateCallback_parameter": {
     "parent_feature": "view-transitions",
     "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -24772,6 +25905,7 @@ export const bcdKeys = {
   "webassembly.branch-hinting": {
     "parent_feature": "wasm-branch-hinting",
     "parent_feature_name": "Branch hinting (WebAssembly)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -24790,6 +25924,7 @@ export const bcdKeys = {
   "webassembly.relaxed-SIMD": {
     "parent_feature": "wasm-simd-relaxed",
     "parent_feature_name": "Relaxed-width SIMD (WebAssembly)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -24807,6 +25942,7 @@ export const bcdKeys = {
   "webassembly.jsStringBuiltins": {
     "parent_feature": "wasm-string-builtins",
     "parent_feature_name": "String builtins (WebAssembly)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-12",
@@ -24827,6 +25963,7 @@ export const bcdKeys = {
   "javascript.builtins.FinalizationRegistry.register.symbol_as_target": {
     "parent_feature": "weak-references",
     "parent_feature_name": "Weak references",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -24847,6 +25984,7 @@ export const bcdKeys = {
   "javascript.builtins.WeakRef.WeakRef.symbol_as_target": {
     "parent_feature": "weak-references",
     "parent_feature_name": "Weak references",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -24867,6 +26005,7 @@ export const bcdKeys = {
   "javascript.builtins.WeakMap.symbol_as_keys": {
     "parent_feature": "weakmap",
     "parent_feature_name": "WeakMap",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -24887,6 +26026,7 @@ export const bcdKeys = {
   "javascript.builtins.WeakSet.symbol_as_keys": {
     "parent_feature": "weakset",
     "parent_feature_name": "WeakSet",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2025-12-09",
@@ -24907,6 +26047,7 @@ export const bcdKeys = {
   "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_hkdf": {
     "parent_feature": "web-cryptography",
     "parent_feature_name": "Web Cryptography",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -24928,6 +26069,7 @@ export const bcdKeys = {
   "api.SubtleCrypto.deriveKey.derivedKeyAlgorithm_option_pbkdf2": {
     "parent_feature": "web-cryptography",
     "parent_feature_name": "Web Cryptography",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -24949,6 +26091,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getTransports": {
     "parent_feature": "webauthn",
     "parent_feature_name": "Web authentication",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -24969,6 +26112,7 @@ export const bcdKeys = {
   "api.PublicKeyCredential.authenticatorAttachment": {
     "parent_feature": "webauthn",
     "parent_feature_name": "Web authentication",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-11-21",
@@ -24989,6 +26133,7 @@ export const bcdKeys = {
   "api.PublicKeyCredential.isConditionalMediationAvailable_static": {
     "parent_feature": "webauthn",
     "parent_feature_name": "Web authentication",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -25009,6 +26154,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getAuthenticatorData": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -25029,6 +26175,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getPublicKey": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -25049,6 +26196,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getPublicKeyAlgorithm": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2023-10-24",
@@ -25069,6 +26217,7 @@ export const bcdKeys = {
   "api.RTCEncodedAudioFrame": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25090,6 +26239,7 @@ export const bcdKeys = {
   "api.RTCEncodedAudioFrame.data": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25111,6 +26261,7 @@ export const bcdKeys = {
   "api.RTCEncodedAudioFrame.getMetadata": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25132,6 +26283,7 @@ export const bcdKeys = {
   "api.RTCEncodedVideoFrame": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25153,6 +26305,7 @@ export const bcdKeys = {
   "api.RTCEncodedVideoFrame.data": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25174,6 +26327,7 @@ export const bcdKeys = {
   "api.RTCEncodedVideoFrame.getMetadata": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25195,6 +26349,7 @@ export const bcdKeys = {
   "api.RTCEncodedVideoFrame.type": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-02-28",
@@ -25216,6 +26371,7 @@ export const bcdKeys = {
   "api.WebTransport": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25235,6 +26391,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25254,6 +26411,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_allowPooling_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25270,6 +26428,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_congestionControl_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25286,6 +26445,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_requireUnreliable_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25302,6 +26462,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_serverCertificateHashes_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25321,6 +26482,7 @@ export const bcdKeys = {
   "api.WebTransport.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25340,6 +26502,7 @@ export const bcdKeys = {
   "api.WebTransport.close": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25359,6 +26522,7 @@ export const bcdKeys = {
   "api.WebTransport.closed": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25378,6 +26542,7 @@ export const bcdKeys = {
   "api.WebTransport.congestionControl": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25394,6 +26559,7 @@ export const bcdKeys = {
   "api.WebTransport.createBidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25413,6 +26579,7 @@ export const bcdKeys = {
   "api.WebTransport.createBidirectionalStream.options_sendOrder_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25429,6 +26596,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25446,6 +26614,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25463,6 +26632,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream.options_sendOrder_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25477,6 +26647,7 @@ export const bcdKeys = {
   "api.WebTransport.datagrams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25496,6 +26667,7 @@ export const bcdKeys = {
   "api.WebTransport.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25510,6 +26682,7 @@ export const bcdKeys = {
   "api.WebTransport.incomingBidirectionalStreams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25529,6 +26702,7 @@ export const bcdKeys = {
   "api.WebTransport.incomingUnidirectionalStreams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25548,6 +26722,7 @@ export const bcdKeys = {
   "api.WebTransport.ready": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25567,6 +26742,7 @@ export const bcdKeys = {
   "api.WebTransport.reliability": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25583,6 +26759,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25602,6 +26779,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.readable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25621,6 +26799,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.readable.returns_WebTransportReceiveStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25637,6 +26816,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.writable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25656,6 +26836,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.writable.returns_WebTransportSendStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25672,6 +26853,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25691,6 +26873,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25708,6 +26891,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.incomingHighWaterMark": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25727,6 +26911,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.incomingMaxAge": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25746,6 +26931,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.maxDatagramSize": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25765,6 +26951,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.outgoingHighWaterMark": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25784,6 +26971,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.outgoingMaxAge": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25803,6 +26991,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.readable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25822,6 +27011,7 @@ export const bcdKeys = {
   "api.WebTransportError": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25841,6 +27031,7 @@ export const bcdKeys = {
   "api.WebTransportError.WebTransportError": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25860,6 +27051,7 @@ export const bcdKeys = {
   "api.WebTransportError.source": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25879,6 +27071,7 @@ export const bcdKeys = {
   "api.WebTransportError.streamErrorCode": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25898,6 +27091,7 @@ export const bcdKeys = {
   "api.WebTransportReceiveStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25914,6 +27108,7 @@ export const bcdKeys = {
   "api.WebTransportReceiveStream.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25930,6 +27125,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25946,6 +27142,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25962,6 +27159,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.getWriter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25978,6 +27176,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.sendOrder": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -25994,6 +27193,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26009,6 +27209,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer.blendTextureSourceAlpha": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26024,6 +27225,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer.destroy": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26039,6 +27241,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer.layout": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26054,6 +27257,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer.mipLevels": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26069,6 +27273,7 @@ export const bcdKeys = {
   "api.XRCompositionLayer.needsRedraw": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26084,6 +27289,7 @@ export const bcdKeys = {
   "api.XRCubeLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26099,6 +27305,7 @@ export const bcdKeys = {
   "api.XRCubeLayer.orientation": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26114,6 +27321,7 @@ export const bcdKeys = {
   "api.XRCubeLayer.redraw_event": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26129,6 +27337,7 @@ export const bcdKeys = {
   "api.XRCubeLayer.space": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26144,6 +27353,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26159,6 +27369,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.aspectRatio": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26174,6 +27385,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.centralAngle": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26189,6 +27401,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.radius": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26204,6 +27417,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.redraw_event": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26219,6 +27433,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.space": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26234,6 +27449,7 @@ export const bcdKeys = {
   "api.XRCylinderLayer.transform": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26249,6 +27465,7 @@ export const bcdKeys = {
   "api.XREquirectLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26264,6 +27481,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.centralHorizontalAngle": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26279,6 +27497,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.lowerVerticalAngle": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26294,6 +27513,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.radius": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26309,6 +27529,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.redraw_event": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26324,6 +27545,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.space": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26339,6 +27561,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.transform": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26354,6 +27577,7 @@ export const bcdKeys = {
   "api.XREquirectLayer.upperVerticalAngle": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26369,6 +27593,7 @@ export const bcdKeys = {
   "api.XRLayerEvent": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26384,6 +27609,7 @@ export const bcdKeys = {
   "api.XRLayerEvent.XRLayerEvent": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26399,6 +27625,7 @@ export const bcdKeys = {
   "api.XRLayerEvent.layer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26414,6 +27641,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26429,6 +27657,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer.fixedFoveation": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26444,6 +27673,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer.ignoreDepthValues": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26459,6 +27689,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer.textureArrayLength": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26474,6 +27705,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer.textureHeight": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26489,6 +27721,7 @@ export const bcdKeys = {
   "api.XRProjectionLayer.textureWidth": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26504,6 +27737,7 @@ export const bcdKeys = {
   "api.XRQuadLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26519,6 +27753,7 @@ export const bcdKeys = {
   "api.XRQuadLayer.height": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26534,6 +27769,7 @@ export const bcdKeys = {
   "api.XRQuadLayer.redraw_event": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26549,6 +27785,7 @@ export const bcdKeys = {
   "api.XRQuadLayer.space": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26564,6 +27801,7 @@ export const bcdKeys = {
   "api.XRQuadLayer.transform": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26579,6 +27817,7 @@ export const bcdKeys = {
   "api.XRQuadLayer.width": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26594,6 +27833,7 @@ export const bcdKeys = {
   "api.XRRenderState.layers": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26609,6 +27849,7 @@ export const bcdKeys = {
   "api.XRSubImage": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26624,6 +27865,7 @@ export const bcdKeys = {
   "api.XRSubImage.viewport": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26639,6 +27881,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.createCubeLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26654,6 +27897,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.createCylinderLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26669,6 +27913,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.createEquirectLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26684,6 +27929,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.createProjectionLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26699,6 +27945,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.createQuadLayer": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26714,6 +27961,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.getSubImage": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26729,6 +27977,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.getViewSubImage": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26744,6 +27993,7 @@ export const bcdKeys = {
   "api.XRWebGLBinding.nativeProjectionScaleFactor": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26759,6 +28009,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26774,6 +28025,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage.colorTexture": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26789,6 +28041,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage.colorTextureHeight": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26804,6 +28057,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage.colorTextureWidth": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26819,6 +28073,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage.depthStencilTexture": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26834,6 +28089,7 @@ export const bcdKeys = {
   "api.XRWebGLSubImage.imageIndex": {
     "parent_feature": "webxr-layers",
     "parent_feature_name": "Layers (WebXR)",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": false,
       "support": {
@@ -26849,6 +28105,7 @@ export const bcdKeys = {
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {
     "parent_feature": "xhr",
     "parent_feature_name": "XMLHttpRequest",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -26867,6 +28124,7 @@ export const bcdKeys = {
   "http.headers.Accept-Encoding.zstd": {
     "parent_feature": "zstd",
     "parent_feature_name": "Zstandard compression",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-11",
@@ -26887,6 +28145,7 @@ export const bcdKeys = {
   "http.headers.Content-Encoding.zstd": {
     "parent_feature": "zstd",
     "parent_feature_name": "Zstandard compression",
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-02-11",
