@@ -6,12 +6,13 @@
  */
 
 import fs from 'fs/promises';
+import { fileURLToPath } from 'node:url';
 
 // URL to the raw JSON file on GitHub
 const MDN_DOCS_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/mdn-docs.json';
 const OUTPUT_FILE = './data/mdn.json';
 
-async function run() {
+export async function updateMDNDocs() {
   try {
     console.log(`Fetching MDN docs from ${MDN_DOCS_URL}...`);
     
@@ -29,9 +30,14 @@ async function run() {
     console.log('MDN docs data updated successfully!');
   } catch (error) {
     console.error(`Error updating MDN docs: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
 }
 
-// Just run the script
-run();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await updateMDNDocs();
+  } catch (error) {
+    process.exit(1);
+  }
+}

@@ -6,13 +6,14 @@
  */
 
 import fs from 'fs/promises';
+import { fileURLToPath } from 'node:url';
 
 // URLs to the content mappings
 const WEBDEV_URL = 'https://web.dev/web-features.json';
 const CHROME_DEVS_URL = 'https://developer.chrome.com/web-features.json';
 const OUTPUT_FILE = './data/chrome-content.json';
 
-async function run() {
+export async function updateChromeContent() {
   try {
     // Fetch web.dev data
     console.log(`Fetching web.dev mappings from ${WEBDEV_URL}...`);
@@ -62,9 +63,14 @@ async function run() {
     console.log('Web.dev and developer.chrome.com mappings updated successfully!');
   } catch (error) {
     console.error(`Error updating mappings: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
 }
 
-// Just run the script
-run();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await updateChromeContent();
+  } catch (error) {
+    process.exit(1);
+  }
+}

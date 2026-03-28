@@ -6,12 +6,13 @@
  */
 
 import fs from 'fs/promises';
+import { fileURLToPath } from 'node:url';
 
 // URL to the raw JSON file on GitHub
 const INTEROP_URL = 'https://raw.githubusercontent.com/web-platform-dx/web-features-mappings/main/mappings/interop.json';
 const OUTPUT_FILE = './data/interop.json';
 
-async function run() {
+export async function updateInteropMappings() {
   try {
     console.log(`Fetching Interop mappings from ${INTEROP_URL}...`);
     
@@ -29,9 +30,14 @@ async function run() {
     console.log('Interop mappings data updated successfully!');
   } catch (error) {
     console.error(`Error updating Interop mappings: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
 }
 
-// Run the script
-run();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await updateInteropMappings();
+  } catch (error) {
+    process.exit(1);
+  }
+}

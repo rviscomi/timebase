@@ -4,8 +4,8 @@
   "type": "module",
   "main": "src/client.js",
   "scripts": {
-    "update": "npm update web-futures --save && npm run update:meta",
-    "update:meta": "node scripts/extract-data.js && node scripts/extract-bcd-data.js && node scripts/developer-signals.js && node scripts/interop.js && node scripts/mdn-docs.js && node scripts/chrome-content.js",
+    "prepare:futures": "node scripts/prepare-futures.js",
+    "update:meta": "node scripts/update-meta.js",
     "extract-logos": "node scripts/extract-logos.js",
     "update-signals": "node scripts/developer-signals.js",
     "update-interop": "node scripts/interop.js",
@@ -13,7 +13,8 @@
     "update-chrome-content": "node scripts/chrome-content.js",
     "start": "npx http-server ./docs -p 8080 -c-1 --cors -o -a localhost -d false -i docs/index.html",
     "stop": "kill $(lsof -t -i:8080) || echo 'No server running on port 8080'",
-    "build": "npm run update:meta && node scripts/build.js && node scripts/build-bcd.js",
+    "build": "npm run prepare:futures && npm run update:meta && node scripts/build.js && node scripts/build-bcd.js",
+
     "dev": "npm run stop && npm run build && npm run start",
     "test": "vitest run"
   },
@@ -25,7 +26,7 @@
     "@browser-logos/edge": "^2.0.0",
     "@browser-logos/firefox": "^3.0.0",
     "@browser-logos/safari": "^2.0.0",
-    "web-futures": "^3.22.0"
+    "web-features": "github:web-platform-dx/web-features"
   },
   "devDependencies": {
     "happy-dom": "^20.3.0",

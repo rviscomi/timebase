@@ -6,12 +6,13 @@
  */
 
 import fs from 'fs/promises';
+import { fileURLToPath } from 'node:url';
 
 // URL to the raw JSON file on GitHub
 const DEVELOPER_SIGNALS_URL = 'https://web-platform-dx.github.io/developer-signals/web-features-signals.json';
 const OUTPUT_FILE = './data/developer-signals.json';
 
-async function run() {
+export async function updateDeveloperSignals() {
   try {
     console.log(`Fetching developer signals from ${DEVELOPER_SIGNALS_URL}...`);
     
@@ -29,9 +30,14 @@ async function run() {
     console.log('Developer signals data updated successfully!');
   } catch (error) {
     console.error(`Error updating developer signals: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
 }
 
-// Just run the script
-run();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  try {
+    await updateDeveloperSignals();
+  } catch (error) {
+    process.exit(1);
+  }
+}

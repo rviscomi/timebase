@@ -12,6 +12,7 @@ jobs:
 
     permissions:
       contents: write
+      issues: write
 
     steps:
       - name: Checkout code
@@ -26,11 +27,25 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run update, build, and test
+      - name: Prepare futures data
+        id: prepare_futures
+        run: npm run prepare:futures
+
+      - name: Extract metadata
+        id: extract_meta
+        run: npm run update:meta
+
+      - name: Build static site
+        id: build_site
         run: |
-          npm run update
-          npm run build
-          npm test
+          node scripts/build.js
+          node scripts/build-bcd.js
+
+      - name: Run unit tests
+        id: run_tests
+        run: npm test
+
+
 
       - name: Commit and push changes
         run: |
@@ -48,4 +63,33 @@ jobs:
           else
             echo "ℹ️ No changes detected, nothing to commit"
           fi
+
+      - name: Open Issue on Failure
+        if: failure()
+        run: |
+          # Check if an open issue already exists for the same title
+          OPEN_ISSUES=$(gh issue list --search "title:\"🔴 Daily Update Pipeline Failed\"" --state open)
+          if [ -n "$OPEN_ISSUES" ]; then
+            echo "ℹ️ An open issue already exists, skipping creation..."
+          else
+            REASON="An unknown error occurred in the daily update pipeline."
+            if [ "${{ steps.prepare_futures.outcome }}" == "failure" ]; then
+              REASON="The web-features preparation / patching failed. This likely means the upstream code has changed and our patcher needs manual update."
+            elif [ "${{ steps.extract_meta.outcome }}" == "failure" ]; then
+              REASON="The metadata extraction (data manipulation) failed."
+            elif [ "${{ steps.build_site.outcome }}" == "failure" ]; then
+              REASON="The static site build (docs generation) failed."
+            elif [ "${{ steps.run_tests.outcome }}" == "failure" ]; then
+              REASON="Unit tests failed."
+            fi
+
+            echo "Creating issue..."
+            gh issue create \
+              --title "🔴 Daily Update Pipeline Failed" \
+              --body "$REASON Check the Actions logs for details." \
+              --label "bug" || echo "❌ Failed to create issue"
+          fi
+
+        env:
+          GH_TOKEN: ${{ github.token }}
 

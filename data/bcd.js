@@ -1,4 +1,4 @@
-// Generated from web-futures package - BCD keys
+// Generated from web-features package - BCD keys
 export const browsers = {
   "chrome": {
     "name": "Chrome",
