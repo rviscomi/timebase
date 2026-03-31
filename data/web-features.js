@@ -2039,6 +2039,10 @@ export const browsers = {
         "version": "151"
       },
       {
+        "date": "2026-06-16",
+        "version": "152"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2586,6 +2590,10 @@ export const browsers = {
       {
         "date": "2026-05-19",
         "version": "151"
+      },
+      {
+        "date": "2026-06-16",
+        "version": "152"
       }
     ]
   },
@@ -2821,7 +2829,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       },
       {
@@ -3050,7 +3058,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       }
     ]
@@ -3721,7 +3729,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
     }
   },
   "array": {
@@ -11825,7 +11836,9 @@ export const features = {
       "support": {
         "chrome": "140",
         "chrome_android": "140",
-        "edge": "140"
+        "edge": "140",
+        "firefox": "150",
+        "firefox_android": "150"
       }
     }
   },
@@ -13725,7 +13738,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.concat"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -16917,7 +16931,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "148",
+        "firefox_android": "148"
+      }
     }
   },
   "overflow-overlay": {
@@ -18598,7 +18615,8 @@ export const features = {
       "https://streams.spec.whatwg.org/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -25479,7 +25497,8 @@ export const features = {
       "https://w3c.github.io/webtransport/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",

@@ -2039,6 +2039,10 @@ export const browsers = {
         "version": "151"
       },
       {
+        "date": "2026-06-16",
+        "version": "152"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2586,6 +2590,10 @@ export const browsers = {
       {
         "date": "2026-05-19",
         "version": "151"
+      },
+      {
+        "date": "2026-06-16",
+        "version": "152"
       }
     ]
   },
@@ -2821,7 +2829,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       },
       {
@@ -3050,7 +3058,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       }
     ]
@@ -9845,6 +9853,36 @@ export const bcdKeys = {
       "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
     ]
   },
+  "api.Document.ariaNotify": {
+    "parent_feature": "arianotify",
+    "parent_feature_name": "ariaNotify()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+    ]
+  },
+  "api.Element.ariaNotify": {
+    "parent_feature": "arianotify",
+    "parent_feature_name": "ariaNotify()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+    ]
+  },
   "javascript.builtins.Array.toReversed": {
     "parent_feature": "array-by-copy",
     "parent_feature_name": "Array by copy",
@@ -10046,7 +10084,8 @@ export const bcdKeys = {
     "parent_feature_name": "Asynchronously iterable streams",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
@@ -10578,28 +10617,6 @@ export const bcdKeys = {
         "chrome": "61",
         "chrome_android": "61",
         "edge": "79",
-        "firefox": "63",
-        "firefox_android": "63",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webappsec-clear-site-data/"
-    ]
-  },
-  "http.headers.Clear-Site-Data.wildcard": {
-    "parent_feature": "clear-site-data",
-    "parent_feature_name": "Clearing site data",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-03-18",
-      "baseline_low_date": "2023-09-18",
-      "support": {
-        "chrome": "117",
-        "chrome_android": "117",
-        "edge": "117",
         "firefox": "63",
         "firefox_android": "63",
         "safari": "17",
@@ -12762,7 +12779,8 @@ export const bcdKeys = {
     "parent_feature_name": "DOM",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
@@ -13266,7 +13284,8 @@ export const bcdKeys = {
     "parent_feature_name": "Fetch",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "116",
         "chrome_android": "116",
@@ -13775,6 +13794,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
+    ]
+  },
+  "api.HighlightRegistry.highlightsFromPoint": {
+    "parent_feature": "highlightsfrompoint",
+    "parent_feature_name": "Custom highlights from point",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-highlight-api-1/#dom-highlightregistry-highlightsfrompoint"
     ]
   },
   "api.PopStateEvent.hasUAVisualTransition": {
@@ -14809,9 +14846,10 @@ export const bcdKeys = {
   "javascript.builtins.Iterator.concat": {
     "parent_feature": "iterator-concat",
     "parent_feature_name": "Iterator.concat()",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -15812,7 +15850,8 @@ export const bcdKeys = {
     "parent_feature_name": "MathML",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
@@ -15832,7 +15871,8 @@ export const bcdKeys = {
     "parent_feature_name": "MathML",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
@@ -17997,6 +18037,51 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api"
     ]
   },
+  "css.properties.overflow-clip-margin.border-box": {
+    "parent_feature": "overflow-clip-margin",
+    "parent_feature_name": "overflow-clip-margin",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin"
+    ]
+  },
+  "css.properties.overflow-clip-margin.content-box": {
+    "parent_feature": "overflow-clip-margin",
+    "parent_feature_name": "overflow-clip-margin",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin"
+    ]
+  },
+  "css.properties.overflow-clip-margin.padding-box": {
+    "parent_feature": "overflow-clip-margin",
+    "parent_feature_name": "overflow-clip-margin",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "148",
+        "firefox_android": "148"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin"
+    ]
+  },
   "css.selectors.first": {
     "parent_feature": "page-selectors",
     "parent_feature_name": "Page selectors",
@@ -18458,9 +18543,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18478,9 +18564,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.byobRequest": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18498,9 +18585,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.close": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18518,9 +18606,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.desiredSize": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18538,9 +18627,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.enqueue": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18558,9 +18648,10 @@ export const bcdKeys = {
   "api.ReadableByteStreamController.error": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18578,9 +18669,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18598,9 +18690,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.ReadableStreamBYOBReader": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18618,9 +18711,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.cancel": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18638,9 +18732,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.closed": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18658,9 +18753,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.read": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18678,9 +18774,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBReader.releaseLock": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18698,9 +18795,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18718,9 +18816,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.respond": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18738,9 +18837,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.respondWithNewView": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -18758,9 +18858,10 @@ export const bcdKeys = {
   "api.ReadableStreamBYOBRequest.view": {
     "parent_feature": "readable-byte-streams",
     "parent_feature_name": "Readable byte streams",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -25902,6 +26003,24 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-view-transitions-1/"
     ]
   },
+  "api.VisualViewport.scrollend_event": {
+    "parent_feature": "visual-viewport",
+    "parent_feature_name": "Visual viewport API",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/#visualViewport"
+    ]
+  },
   "webassembly.branch-hinting": {
     "parent_feature": "wasm-branch-hinting",
     "parent_feature_name": "Branch hinting (WebAssembly)",
@@ -26214,6 +26333,402 @@ export const bcdKeys = {
       "https://w3c.github.io/webauthn/#sctn-public-key-easy"
     ]
   },
+  "api.RTCError": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.RTCError": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.errorDetail": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.receivedAlert": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.sctpCauseCode": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.sdpLineNumber": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCError.sentAlert": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCErrorEvent": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCErrorEvent.RTCErrorEvent": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCErrorEvent.error": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCIceTransport.role": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "75",
+        "chrome_android": "75",
+        "edge": "13",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnection.icecandidateerror_event": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.RTCPeerConnectionIceErrorEvent": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.address": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "81",
+        "chrome_android": "81",
+        "edge": "81",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.errorCode": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.errorText": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.port": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "81",
+        "chrome_android": "81",
+        "edge": "81",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnectionIceErrorEvent.url": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
   "api.RTCEncodedAudioFrame": {
     "parent_feature": "webrtc-encoded-transform",
     "parent_feature_name": "WebRTC encoded transform",
@@ -26371,9 +26886,10 @@ export const bcdKeys = {
   "api.WebTransport": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26391,9 +26907,10 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26411,7 +26928,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_allowPooling_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26428,7 +26945,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_congestionControl_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26445,7 +26962,7 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_requireUnreliable_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26462,9 +26979,10 @@ export const bcdKeys = {
   "api.WebTransport.WebTransport.options_serverCertificateHashes_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
@@ -26482,9 +27000,10 @@ export const bcdKeys = {
   "api.WebTransport.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
@@ -26502,9 +27021,10 @@ export const bcdKeys = {
   "api.WebTransport.close": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26522,9 +27042,10 @@ export const bcdKeys = {
   "api.WebTransport.closed": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26542,7 +27063,7 @@ export const bcdKeys = {
   "api.WebTransport.congestionControl": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26559,9 +27080,10 @@ export const bcdKeys = {
   "api.WebTransport.createBidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26579,7 +27101,7 @@ export const bcdKeys = {
   "api.WebTransport.createBidirectionalStream.options_sendOrder_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26596,7 +27118,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26614,7 +27136,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26632,7 +27154,7 @@ export const bcdKeys = {
   "api.WebTransport.createUnidirectionalStream.options_sendOrder_parameter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26647,9 +27169,10 @@ export const bcdKeys = {
   "api.WebTransport.datagrams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26667,7 +27190,7 @@ export const bcdKeys = {
   "api.WebTransport.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26682,9 +27205,10 @@ export const bcdKeys = {
   "api.WebTransport.incomingBidirectionalStreams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26702,9 +27226,10 @@ export const bcdKeys = {
   "api.WebTransport.incomingUnidirectionalStreams": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26722,9 +27247,10 @@ export const bcdKeys = {
   "api.WebTransport.ready": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26742,7 +27268,7 @@ export const bcdKeys = {
   "api.WebTransport.reliability": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26759,9 +27285,10 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26779,9 +27306,10 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.readable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26799,7 +27327,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.readable.returns_WebTransportReceiveStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26816,9 +27344,10 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.writable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26836,7 +27365,7 @@ export const bcdKeys = {
   "api.WebTransportBidirectionalStream.writable.returns_WebTransportSendStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26853,9 +27382,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26873,7 +27403,7 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.byob_readers": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -26891,9 +27421,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.incomingHighWaterMark": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26911,9 +27442,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.incomingMaxAge": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26931,9 +27463,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.maxDatagramSize": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26951,9 +27484,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.outgoingHighWaterMark": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26971,9 +27505,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.outgoingMaxAge": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -26991,9 +27526,10 @@ export const bcdKeys = {
   "api.WebTransportDatagramDuplexStream.readable": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -27011,9 +27547,10 @@ export const bcdKeys = {
   "api.WebTransportError": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -27031,9 +27568,10 @@ export const bcdKeys = {
   "api.WebTransportError.WebTransportError": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -27051,9 +27589,10 @@ export const bcdKeys = {
   "api.WebTransportError.source": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -27071,9 +27610,10 @@ export const bcdKeys = {
   "api.WebTransportError.streamErrorCode": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
@@ -27091,7 +27631,7 @@ export const bcdKeys = {
   "api.WebTransportReceiveStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -27108,7 +27648,7 @@ export const bcdKeys = {
   "api.WebTransportReceiveStream.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -27125,7 +27665,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -27142,7 +27682,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.getStats": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -27159,7 +27699,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.getWriter": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
@@ -27176,7 +27716,7 @@ export const bcdKeys = {
   "api.WebTransportSendStream.sendOrder": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
