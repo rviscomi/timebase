@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Update web-features
+        run: npm update web-features
+
       - name: Prepare futures data
         id: prepare_futures
         run: npm run prepare:futures
