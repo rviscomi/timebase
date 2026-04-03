@@ -2039,6 +2039,10 @@ export const browsers = {
         "version": "151"
       },
       {
+        "date": "2026-06-16",
+        "version": "152"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2586,6 +2590,10 @@ export const browsers = {
       {
         "date": "2026-05-19",
         "version": "151"
+      },
+      {
+        "date": "2026-06-16",
+        "version": "152"
       }
     ]
   },
@@ -2821,7 +2829,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       },
       {
@@ -3050,7 +3058,7 @@ export const browsers = {
         "version": "26.3"
       },
       {
-        "date": "null",
+        "date": "2026-03-24",
         "version": "26.4"
       }
     ]
@@ -3721,7 +3729,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
     }
   },
   "array": {
@@ -8922,6 +8933,22 @@ export const features = {
       }
     }
   },
+  "dynamic-range-limit": {
+    "description_html": "The <code>dynamic-range-limit</code> CSS property controls the peak luminance of high dynamic range content. You can use this to coordinate the apparent brightness of HDR and SDR content.",
+    "kind": "feature",
+    "name": "dynamic-range-limit",
+    "spec": [
+      "https://drafts.csswg.org/css-color-hdr-1/#controlling-dynamic-range"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136"
+      }
+    }
+  },
   "early-data": {
     "description_html": "TLS 1.3 sessions may be resumed more quickly by sending so-called early data to servers before the TLS handshake has finished. Also known as zero round-trip time resumption or 0-RTT.",
     "kind": "feature",
@@ -11825,7 +11852,9 @@ export const features = {
       "support": {
         "chrome": "140",
         "chrome_android": "140",
-        "edge": "140"
+        "edge": "140",
+        "firefox": "150",
+        "firefox_android": "150"
       }
     }
   },
@@ -13725,7 +13754,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.concat"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
@@ -14199,6 +14229,18 @@ export const features = {
       "support": {
         "chrome": "138"
       }
+    }
+  },
+  "languagemodel": {
+    "description_html": "The <code>LanguageModel</code> API prompts an on-device language model. Also known as the Prompt API.",
+    "kind": "feature",
+    "name": "LanguageModel",
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "largest-contentful-paint": {
@@ -15466,7 +15508,7 @@ export const features = {
     }
   },
   "meta-theme-color": {
-    "description_html": "The <code>name=\"theme-color\"</code> attribute for the <code>&#x3C;meta></code> HTML element sets the preferred color to customize the display of the page or the surrounding browser user interface.",
+    "description_html": "The <code>name=\"theme-color\"</code> attribute for the <code>&#x3C;meta></code> HTML element suggests a color that the browser can use to customize the display of the page or the browser user interface.",
     "kind": "feature",
     "name": "<meta name=\"theme-color\">",
     "spec": [
@@ -15914,6 +15956,22 @@ export const features = {
         "firefox_android": "58",
         "safari": "15",
         "safari_ios": "15.1"
+      }
+    }
+  },
+  "navigation-timing-confidence": {
+    "description_html": "The <code>confidence</code> property of a navigation timing entry describes whether the navigation metric is likely to be representative the page's performance (high confidence) or affected by transient conditions, such as browser startup (low confidence).",
+    "kind": "feature",
+    "name": "Navigation timing confidence",
+    "spec": [
+      "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
       }
     }
   },
@@ -16917,7 +16975,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "148",
+        "firefox_android": "148"
+      }
     }
   },
   "overflow-overlay": {
@@ -18598,7 +18659,8 @@ export const features = {
       "https://streams.spec.whatwg.org/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -24620,6 +24682,21 @@ export const features = {
       }
     }
   },
+  "web-animations-iterationcomposite": {
+    "description_html": "The <code>iterationComposite</code> property of a <code>KeyframeEffect</code> object sets whether an animation's iterations are calculated independently (<code>\"replace\"</code>) or are accumulated with the value of the previous iteration (<code>\"accumulate\"</code>).",
+    "kind": "feature",
+    "name": "iterationComposite",
+    "spec": [
+      "https://drafts.csswg.org/web-animations-2/#the-iterationcompositeoperation-enumeration"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "80",
+        "firefox_android": "80"
+      }
+    }
+  },
   "web-audio": {
     "description_html": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
     "kind": "feature",
@@ -25479,7 +25556,8 @@ export const features = {
       "https://w3c.github.io/webtransport/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "97",
         "chrome_android": "97",
