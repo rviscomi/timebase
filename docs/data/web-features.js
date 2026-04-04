@@ -5450,6 +5450,22 @@ export const features = {
       }
     }
   },
+  "border-shape": {
+    "description_html": "The <code>border-shape</code> CSS property sets the geometry of the border box, changing the shape of any applicable border, border image, focus outline, or shadow.",
+    "kind": "feature",
+    "name": "border-shape",
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#border-shape"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    }
+  },
   "borders": {
     "description_html": "The <code>border</code> CSS property sets the color, style, and width of the line around an element.",
     "kind": "feature",

@@ -10226,6 +10226,38 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-inline-3/#baseline-shift-property"
     ]
   },
+  "css.properties.border-shape": {
+    "parent_feature": "border-shape",
+    "parent_feature_name": "border-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#border-shape"
+    ]
+  },
+  "css.properties.border-shape.none": {
+    "parent_feature": "border-shape",
+    "parent_feature_name": "border-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#border-shape"
+    ]
+  },
   "api.CanvasRenderingContext2D.getContextAttributes": {
     "parent_feature": "canvas-2d",
     "parent_feature_name": "2D canvas",
