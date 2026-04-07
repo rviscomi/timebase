@@ -2834,6 +2834,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "26.5"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3060,6 +3064,10 @@ export const browsers = {
       {
         "date": "2026-03-24",
         "version": "26.4"
+      },
+      {
+        "date": "null",
+        "version": "26.5"
       }
     ]
   }
@@ -12358,12 +12366,14 @@ export const bcdKeys = {
     "parent_feature_name": "document.caretPositionFromPoint()",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "150",
+        "firefox_android": "150",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13044,6 +13054,76 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.getorinsert"
+    ]
+  },
+  "css.properties.hanging-punctuation": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ]
+  },
+  "css.properties.hanging-punctuation.allow-end": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ]
+  },
+  "css.properties.hanging-punctuation.first": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ]
+  },
+  "css.properties.hanging-punctuation.last": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ]
+  },
+  "css.properties.hanging-punctuation.none": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
     ]
   },
   "css.selectors.has": {
@@ -17022,7 +17102,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "136",
         "firefox_android": "136",
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17038,7 +17119,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17054,7 +17137,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17070,7 +17155,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17086,7 +17173,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17102,7 +17191,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -17118,7 +17209,9 @@ export const bcdKeys = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -18278,6 +18371,24 @@ export const bcdKeys = {
       "https://w3c.github.io/webappsec-csp/#reporting"
     ]
   },
+  "api.PerformanceResourceTiming.contentType": {
+    "parent_feature": "resource-timing",
+    "parent_feature_name": "Resource timing",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "129",
+        "firefox_android": "129"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
+    ]
+  },
   "api.PerformanceResourceTiming.deliveryType": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing",
@@ -19076,7 +19187,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "api.SVGAElement.hreflang": {
@@ -19097,7 +19208,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "api.SVGAElement.referrerPolicy": {
@@ -19115,7 +19226,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "api.SVGAElement.type": {
@@ -19136,7 +19247,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "api.SVGImageElement.crossOrigin": {
@@ -19157,7 +19268,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "svg.elements.image.crossorigin": {
@@ -19178,7 +19289,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "svg.global_attributes.mask": {
@@ -19199,7 +19310,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "css.properties.caption-side.bottom-outside": {
@@ -23621,6 +23732,26 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#text-justify-property"
+    ]
+  },
+  "api.ToggleEvent.source": {
+    "parent_feature": "toggleevent-source",
+    "parent_feature_name": "ToggleEvent source",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140",
+        "firefox": "145",
+        "firefox_android": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
     ]
   },
   "css.properties.transform-box.border-box": {

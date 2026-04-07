@@ -2834,6 +2834,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "26.5"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3060,6 +3064,10 @@ export const browsers = {
       {
         "date": "2026-03-24",
         "version": "26.4"
+      },
+      {
+        "date": "null",
+        "version": "26.5"
       }
     ]
   }
@@ -7297,7 +7305,7 @@ export const features = {
     "kind": "feature",
     "name": "context-fill and context-stroke",
     "spec": [
-      "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint"
+      "https://w3c.github.io/svgwg/svg2-draft/painting.html#SpecifyingPaint"
     ],
     "status": {
       "baseline": false,
@@ -11614,7 +11622,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "hardware-concurrency": {
@@ -14728,7 +14738,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142"
+      }
     }
   },
   "localstorage": {
@@ -16736,7 +16750,7 @@ export const features = {
     "kind": "feature",
     "name": "Opacity (SVG)",
     "spec": [
-      "https://svgwg.org/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
+      "https://w3c.github.io/svgwg/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
     ],
     "status": {
       "baseline": "high",
@@ -16772,7 +16786,8 @@ export const features = {
         "edge": "133",
         "firefox": "136",
         "firefox_android": "136",
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     }
   },
@@ -16827,7 +16842,9 @@ export const features = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145"
+        "edge": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     }
   },
@@ -17369,7 +17386,7 @@ export const features = {
     "kind": "feature",
     "name": "paint-order",
     "spec": [
-      "https://svgwg.org/svg2-draft/painting.html#PaintOrder"
+      "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrder"
     ],
     "status": {
       "baseline": "low",
@@ -21970,7 +21987,7 @@ export const features = {
     "kind": "feature",
     "name": "SVG",
     "spec": [
-      "https://svgwg.org/svg2-draft/"
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ],
     "status": {
       "baseline": "high",
@@ -21991,7 +22008,7 @@ export const features = {
     "description_html": "The SVG 1.1 image format has several components that were excluded from SVG 2, such as fonts, alternate glyphs, and the <code>xlink</code> namespace.",
     "discouraged": {
       "according_to": [
-        "https://svgwg.org/svg2-draft/changes.html#substantial"
+        "https://w3c.github.io/svgwg/svg2-draft/changes.html#substantial"
       ],
       "alternatives": [
         "svg",
@@ -23049,7 +23066,9 @@ export const features = {
         "chrome_android": "140",
         "edge": "140",
         "firefox": "145",
-        "firefox_android": "145"
+        "firefox_android": "145",
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     }
   },
@@ -24709,7 +24728,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "80",
-        "firefox_android": "80"
+        "firefox_android": "80",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     }
   },
