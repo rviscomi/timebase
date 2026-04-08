@@ -10559,7 +10559,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10581,7 +10581,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.cookies": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10603,7 +10603,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.secure_context_required": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -10625,7 +10625,7 @@ export const bcdKeys = {
   "http.headers.Clear-Site-Data.storage": {
     "parent_feature": "clear-site-data",
     "parent_feature_name": "Clearing site data",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": false,
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -18048,7 +18048,7 @@ export const bcdKeys = {
     ]
   },
   "css.types.basic-shape.rect": {
-    "parent_feature": "rect-xywx",
+    "parent_feature": "rect-xywh",
     "parent_feature_name": "rect() and xywh()",
     "parent_feature_baseline": "low",
     "status": {
@@ -18070,7 +18070,7 @@ export const bcdKeys = {
     ]
   },
   "css.types.basic-shape.xywh": {
-    "parent_feature": "rect-xywx",
+    "parent_feature": "rect-xywh",
     "parent_feature_name": "rect() and xywh()",
     "parent_feature_baseline": "low",
     "status": {

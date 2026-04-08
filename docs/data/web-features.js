@@ -5392,6 +5392,28 @@ export const features = {
       }
     }
   },
+  "bmp": {
+    "description_html": "The BMP image format is an uncompressed raster graphics file format. Also known as a bitmap.",
+    "kind": "feature",
+    "name": "BMP",
+    "spec": [
+      "https://www.rfc-editor.org/rfc/rfc7903#section-1.2"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "1",
+        "safari_ios": "1"
+      }
+    }
+  },
   "body": {
     "description_html": "The <code>&#x3C;body></code> element represents the content of an HTML document.",
     "kind": "feature",
@@ -6243,14 +6265,10 @@ export const features = {
       "https://w3c.github.io/webappsec-clear-site-data/"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-09-18",
+      "baseline": false,
       "support": {
-        "chrome": "117",
-        "chrome_android": "117",
-        "edge": "117",
-        "firefox": "63",
-        "firefox_android": "63",
+        "firefox": "138",
+        "firefox_android": "138",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -11444,6 +11462,28 @@ export const features = {
       }
     }
   },
+  "gif": {
+    "description_html": "The GIF (Graphics Interchange Format) image format is a raster graphics file format with animation and lossless compression.",
+    "kind": "feature",
+    "name": "GIF",
+    "spec": [
+      "https://www.w3.org/Graphics/GIF/spec-gif89a.txt#top"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "1",
+        "safari_ios": "1"
+      }
+    }
+  },
   "globalthis": {
     "description_html": "The <code>globalThis</code> property accesses the global <code>this</code> value (and hence the global object itself) across environments.",
     "kind": "feature",
@@ -13856,6 +13896,28 @@ export const features = {
         "firefox_android": "4",
         "safari": "5",
         "safari_ios": "4.2"
+      }
+    }
+  },
+  "jpeg": {
+    "description_html": "The JPEG image format is a raster graphics file format with lossy compression.",
+    "kind": "feature",
+    "name": "JPEG",
+    "spec": [
+      "https://jpeg.org/jpeg/#content"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "1",
+        "safari_ios": "1"
       }
     }
   },
@@ -18736,7 +18798,7 @@ export const features = {
       }
     }
   },
-  "rect-xywx": {
+  "rect-xywh": {
     "description_html": "The <code>rect()</code> CSS function creates a rectangle shape with insets from the edges of an element. The <code>xywh()</code> CSS function creates a rectangle shifted by an <code>x</code> and <code>y</code> distance. They can be used with <code>clip-path</code> and <code>shape-outside</code>.",
     "kind": "feature",
     "name": "rect() and xywh()",
@@ -18757,6 +18819,10 @@ export const features = {
         "safari_ios": "17.2"
       }
     }
+  },
+  "rect-xywx": {
+    "kind": "moved",
+    "redirect_target": "rect-xywh"
   },
   "referencetarget": {
     "description_html": "The <code>referenceTarget</code> property of a <code>ShadowRoot</code> object forwards attributes such as <code>for</code> and <code>aria-labelledby</code> to elements inside a shadow DOM. You can use this to, for example, link a <code>&#x3C;label></code> to its <code>&#x3C;input></code> even if the <code>&#x3C;input></code> is in the shadow DOM of a web component.",
