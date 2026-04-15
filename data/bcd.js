@@ -592,8 +592,12 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "null",
+        "date": "2026-06-02",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       },
       {
         "date": "null",
@@ -1101,8 +1105,12 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "null",
+        "date": "2026-06-02",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       }
     ]
   },
@@ -11806,6 +11814,24 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
     ]
   },
+  "api.Credential.isConditionalMediationAvailable_static": {
+    "parent_feature": "credential-management",
+    "parent_feature_name": "Credential management",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webappsec-credential-management/"
+    ]
+  },
   "api.CredentialsContainer.preventSilentAccess": {
     "parent_feature": "credential-management",
     "parent_feature_name": "Credential management",
@@ -11826,6 +11852,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webappsec-credential-management/"
+    ]
+  },
+  "css.properties.image-rendering.crisp-edges": {
+    "parent_feature": "crisp-edges",
+    "parent_feature_name": "crisp-edges",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-07",
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "65",
+        "firefox_android": "65",
+        "safari": "7",
+        "safari_ios": "7"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ]
   },
   "http.headers.Content-Security-Policy.report-to": {
@@ -13063,7 +13110,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -13077,7 +13125,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -13091,7 +13140,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -13105,7 +13155,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -13119,7 +13170,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     },
     "spec": [
@@ -14086,6 +14138,48 @@ export const bcdKeys = {
       "https://w3c.github.io/ServiceWorker/#dom-registrationoptions-type"
     ]
   },
+  "api.SharedWorker.SharedWorker.ecmascript_modules": {
+    "parent_feature": "js-modules-shared-workers",
+    "parent_feature_name": "JavaScript modules in shared workers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "148",
+        "edge": "80",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
+    ]
+  },
+  "api.SharedWorker.SharedWorker.options_type_parameter": {
+    "parent_feature": "js-modules-shared-workers",
+    "parent_feature_name": "JavaScript modules in shared workers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "148",
+        "edge": "80",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
+    ]
+  },
   "css.types.color.lab.mixed_type_parameters": {
     "parent_feature": "lab",
     "parent_feature_name": "Lab and LCH",
@@ -14212,6 +14306,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
+    ]
+  },
+  "api.HTMLMediaElement.loading": {
+    "parent_feature": "loading-lazy-media",
+    "parent_feature_name": "Lazy-loading media",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11980"
     ]
   },
   "api.Location.ancestorOrigins": {
@@ -16947,6 +17057,21 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-nesting-1/"
     ]
   },
+  "api.SharedWorker.SharedWorker.options_sameSiteCookies_parameter": {
+    "parent_feature": "non-cookie-storage-access",
+    "parent_feature_name": "Non-cookie storage access",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "148"
+      }
+    },
+    "spec": [
+      "https://privacycg.github.io/saa-non-cookie-storage/"
+    ]
+  },
   "api.Notification.actions": {
     "parent_feature": "notifications",
     "parent_feature_name": "Notifications",
@@ -18347,30 +18472,6 @@ export const bcdKeys = {
       "https://w3c.github.io/webappsec-csp/#reporting"
     ]
   },
-  "http.headers.Reporting-Endpoints": {
-    "parent_feature": "reporting",
-    "parent_feature_name": "Reporting API",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
-      "support": {
-        "chrome": "96",
-        "chrome_android": "96",
-        "edge": "96",
-        "firefox": "149",
-        "firefox_android": "149",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
-    ]
-  },
   "api.PerformanceResourceTiming.contentType": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing",
@@ -18950,6 +19051,210 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-shapes-1/#shape-function"
+    ]
+  },
+  "api.SharedWorker": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "5",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "33",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorker.SharedWorker": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "5",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "33",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorker.SharedWorker.options_name_parameter": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "70",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "55",
+        "firefox_android": "55"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorker.error_event": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "5",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "33",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorker.port": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "5",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "33",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorkerGlobalScope": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "4",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "29",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorkerGlobalScope.close": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "4",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "29",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorkerGlobalScope.connect_event": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "4",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "29",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "api.SharedWorkerGlobalScope.name": {
+    "parent_feature": "shared-workers",
+    "parent_feature_name": "Shared worker",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
+      "support": {
+        "chrome": "4",
+        "chrome_android": "148",
+        "edge": "79",
+        "firefox": "29",
+        "firefox_android": "29",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
+    ]
+  },
+  "html.elements.img.sizes.auto": {
+    "parent_feature": "sizes-auto",
+    "parent_feature_name": "<img sizes=\"auto\" loading=\"lazy\">",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto"
     ]
   },
   "api.Document.hasStorageAccess": {
@@ -23600,6 +23905,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "css.properties.text-decoration-skip-ink.all": {
+    "parent_feature": "text-decoration-skip-ink-all",
+    "parent_feature_name": "text-decoration-skip-ink: all",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-07",
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "75",
+        "firefox_android": "79",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-ink-all"
     ]
   },
   "css.properties.text-indent.each-line": {

@@ -592,8 +592,12 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "null",
+        "date": "2026-06-02",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       },
       {
         "date": "null",
@@ -1101,8 +1105,12 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "null",
+        "date": "2026-06-02",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       }
     ]
   },
@@ -7597,8 +7605,12 @@ export const features = {
       "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-07",
       "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
         "firefox": "65",
         "firefox_android": "65",
         "safari": "7",
@@ -11663,7 +11675,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "26.5",
+        "safari_ios": "26.5"
       }
     }
   },
@@ -13988,9 +14001,11 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
       "support": {
         "chrome": "80",
+        "chrome_android": "148",
         "edge": "80",
         "firefox": "114",
         "firefox_android": "114",
@@ -20817,11 +20832,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "126",
-        "chrome_android": "126",
-        "edge": "126"
-      }
+      "support": {}
     }
   },
   "shared-storage-locks": {
@@ -20857,9 +20868,11 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-05",
       "support": {
         "chrome": "5",
+        "chrome_android": "148",
         "edge": "79",
         "firefox": "29",
         "firefox_android": "33",
@@ -20958,7 +20971,9 @@ export const features = {
       "support": {
         "chrome": "126",
         "chrome_android": "126",
-        "edge": "126"
+        "edge": "126",
+        "firefox": "150",
+        "firefox_android": "150"
       }
     }
   },
@@ -22568,8 +22583,12 @@ export const features = {
       "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-ink-all"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-07",
       "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
         "firefox": "75",
         "firefox_android": "79",
         "safari": "15.4",
