@@ -1414,7 +1414,7 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "2026-04-09",
+        "date": "2026-04-10",
         "version": "147"
       },
       {
@@ -1424,6 +1424,10 @@ export const browsers = {
       {
         "date": "2026-06-04",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       }
     ]
   },
@@ -10301,7 +10305,8 @@ export const bcdKeys = {
     "parent_feature_name": "2D canvas",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -10366,7 +10371,8 @@ export const bcdKeys = {
     "parent_feature_name": "2D canvas",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -10387,7 +10393,8 @@ export const bcdKeys = {
     "parent_feature_name": "2D canvas",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -13019,6 +13026,278 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-objects"
     ]
   },
+  "api.HTMLGeolocationElement": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.HTMLGeolocationElement": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.autolocate": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.error": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.initialPermissionStatus": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.invalidReason": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.isValid": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.location_event": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.permissionStatus": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.position": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.promptaction_event": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.promptdismiss_event": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.validationstatuschange_event": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "api.HTMLGeolocationElement.watch": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "html.elements.geolocation": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "html.elements.geolocation.autolocate": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
+  "html.elements.geolocation.watch": {
+    "parent_feature": "geolocation-element",
+    "parent_feature_name": "<geolocation>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html"
+    ]
+  },
   "javascript.builtins.Map.getOrInsert": {
     "parent_feature": "getorinsert",
     "parent_feature_name": "Map getOrInsert()",
@@ -13215,6 +13494,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found"
+    ]
+  },
+  "css.selectors.highlight": {
+    "parent_feature": "highlight",
+    "parent_feature_name": "Custom highlights",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-highlight-api-1/"
     ]
   },
   "api.HighlightRegistry.highlightsFromPoint": {
@@ -14350,7 +14650,8 @@ export const bcdKeys = {
     "parent_feature_name": "Logical properties",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -14371,7 +14672,8 @@ export const bcdKeys = {
     "parent_feature_name": "Logical properties",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -14392,7 +14694,8 @@ export const bcdKeys = {
     "parent_feature_name": "Logical properties",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -14413,7 +14716,8 @@ export const bcdKeys = {
     "parent_feature_name": "Logical properties",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -14841,7 +15145,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-04-09",
+      "baseline_low_date": "2026-04-10",
       "support": {
         "chrome": "147",
         "chrome_android": "147",
@@ -18970,12 +19274,118 @@ export const bcdKeys = {
       "https://drafts.csswg.org/mediaqueries-5/#scripting"
     ]
   },
+  "css.properties.animation-range": {
+    "parent_feature": "scroll-driven-animations",
+    "parent_feature_name": "Scroll-driven animations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
+  "css.properties.animation-range-end": {
+    "parent_feature": "scroll-driven-animations",
+    "parent_feature_name": "Scroll-driven animations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
+  "css.properties.animation-range-end.normal": {
+    "parent_feature": "scroll-driven-animations",
+    "parent_feature_name": "Scroll-driven animations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
+  "css.properties.animation-range-start": {
+    "parent_feature": "scroll-driven-animations",
+    "parent_feature_name": "Scroll-driven animations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
+  "css.properties.animation-range-start.normal": {
+    "parent_feature": "scroll-driven-animations",
+    "parent_feature_name": "Scroll-driven animations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-21",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
   "html.elements.search": {
     "parent_feature": "search",
     "parent_feature_name": "<search>",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -24085,7 +24495,8 @@ export const bcdKeys = {
     "parent_feature_name": "transform-box",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",

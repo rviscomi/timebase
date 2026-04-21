@@ -1414,7 +1414,7 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "2026-04-09",
+        "date": "2026-04-10",
         "version": "147"
       },
       {
@@ -1424,6 +1424,10 @@ export const browsers = {
       {
         "date": "2026-06-04",
         "version": "149"
+      },
+      {
+        "date": "null",
+        "version": "150"
       }
     ]
   },
@@ -6378,7 +6382,7 @@ export const features = {
     }
   },
   "clipboard-custom-format": {
-    "description_html": "The <code>web </code> prefix for <code>ClipboardItem</code> data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
+    "description_html": "The <code>web </code> prefix for <code>ClipboardItem</code> data types (also known as MIME types) allows reading and writing unsanitized custom data from the device clipboard.",
     "kind": "feature",
     "name": "Custom formats for clipboard items",
     "spec": [
@@ -8186,7 +8190,7 @@ export const features = {
     }
   },
   "del": {
-    "description_html": "The <code>&#x3C;del></code> element element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
+    "description_html": "The <code>&#x3C;del></code> element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
     "kind": "feature",
     "name": "<del>",
     "spec": [
@@ -8316,6 +8320,18 @@ export const features = {
         "safari": "17.2",
         "safari_ios": "17.2"
       }
+    }
+  },
+  "device-bound-session-credentials": {
+    "description_html": "Device-bound session credentials is a protocol to request proof of possession of a private key. Regularly confirming key possession can help protect against cookie theft.",
+    "kind": "feature",
+    "name": "Device-bound session credentials",
+    "spec": [
+      "https://w3c.github.io/webappsec-dbsc/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "device-memory": {
@@ -11112,7 +11128,7 @@ export const features = {
     }
   },
   "form-associated-custom-elements": {
-    "description_html": "Custom elements may act like built-in form elements, via the the <code>attachInternals()</code> method of <code>HTMLElement</code> and the <code>ElementInternals</code> API.",
+    "description_html": "Custom elements may act like built-in form elements, via the <code>attachInternals()</code> method of <code>HTMLElement</code> and the <code>ElementInternals</code> API.",
     "kind": "feature",
     "name": "Form-associated custom elements",
     "spec": [
@@ -11378,7 +11394,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
     }
   },
   "get-computed-style": {
@@ -11909,11 +11929,14 @@ export const features = {
       "https://drafts.csswg.org/css-highlight-api-1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
+        "firefox": "149",
+        "firefox_android": "149",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -13331,7 +13354,7 @@ export const features = {
     }
   },
   "ins": {
-    "description_html": "The <code>&#x3C;ins></code> element element represents a range of text that has been inserted into a document, styling text as underlined by default.",
+    "description_html": "The <code>&#x3C;ins></code> element represents a range of text that has been inserted into a document, styling text as underlined by default.",
     "kind": "feature",
     "name": "<ins>",
     "spec": [
@@ -15237,7 +15260,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-04-09",
+      "baseline_low_date": "2026-04-10",
       "support": {
         "chrome": "147",
         "chrome_android": "147",
@@ -16869,7 +16892,7 @@ export const features = {
     }
   },
   "optional-catch-binding": {
-    "description_html": "Omit the the binding parameter of a <code>catch</code> clause when you don't need information about the exception in a <code>try ... catch</code> statement.",
+    "description_html": "Omit the binding parameter of a <code>catch</code> clause when you don't need information about the exception in a <code>try ... catch</code> statement.",
     "kind": "feature",
     "name": "Optional catch binding",
     "spec": [
@@ -18267,7 +18290,7 @@ export const features = {
     }
   },
   "print-events": {
-    "description_html": "An alternative to <code>@media print</code> queries, the <code>beforeprint</code> and <code>afterprint</code> events allow you to change the page for printing and and restore the page after printing.",
+    "description_html": "An alternative to <code>@media print</code> queries, the <code>beforeprint</code> and <code>afterprint</code> events allow you to change the page for printing and restore the page after printing.",
     "kind": "feature",
     "name": "Print events",
     "spec": [
@@ -20317,7 +20340,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-13",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -23786,6 +23810,48 @@ export const features = {
       }
     }
   },
+  "url-cross-origin": {
+    "description_html": "The <code>url()</code> CSS function accepts a <code>cross-origin()</code> modifier to control cross-origin resource sharing (CORS) when requesting the URL. For example, <code>url(\"https://example.com\" cross-origin(anonymous))</code>) does not send credentials to the URL.",
+    "kind": "feature",
+    "name": "cross-origin() for url()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    }
+  },
+  "url-integrity": {
+    "description_html": "The <code>url()</code> CSS function accepts an <code>integrity()</code> modifier to use subresource integrity to verify the response from the requested URL.",
+    "kind": "feature",
+    "name": "integrity() for url()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
+  "url-referrer-policy": {
+    "description_html": "The <code>url()</code> CSS function accepts a <code>referrer-policy()</code> modifier to choose which referrer to send when requesting the URL.  For example, `url(\"https://example.com\" referrer-policy(no-referrer)) does not send a referrer to the URL.",
+    "kind": "feature",
+    "name": "referrer-policy() for url()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    }
+  },
   "urlpattern": {
     "description_html": "The <code>URLPattern</code> API creates patterns that can be matched against URLs or URL components.",
     "kind": "feature",
@@ -23853,7 +23919,7 @@ export const features = {
     }
   },
   "user-agent-sniffing": {
-    "description_html": "The <code>navigator.userAgent</code> property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
+    "description_html": "The <code>navigator.userAgent</code> property and several others loosely identify a browser. Selectively showing content based on the user agent string, also known as user agent sniffing, is unreliable. Consider using feature detection or user agent client hints instead.",
     "kind": "feature",
     "name": "User agent sniffing",
     "spec": [
@@ -23861,16 +23927,16 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline_high_date": "2019-03-20",
+      "baseline_low_date": "2016-09-20",
       "support": {
         "chrome": "4",
         "chrome_android": "18",
         "edge": "12",
         "firefox": "3.5",
         "firefox_android": "4",
-        "safari": "4",
-        "safari_ios": "5"
+        "safari": "10",
+        "safari_ios": "10"
       }
     }
   },
@@ -26445,8 +26511,12 @@ export const features = {
       "https://dom.spec.whatwg.org/#xslt"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
       "support": {
+        "chrome": "1",
+        "chrome_android": "18",
         "edge": "12",
         "firefox": "1",
         "firefox_android": "4",
