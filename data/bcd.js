@@ -8214,6 +8214,36 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-animations-2/#animation-composition"
     ]
   },
+  "manifests.webapp.migrate_from": {
+    "parent_feature": "app-migration",
+    "parent_feature_name": "Web app origin migration",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
+    ]
+  },
+  "manifests.webapp.migrate_to": {
+    "parent_feature": "app-migration",
+    "parent_feature_name": "Web app origin migration",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
+    ]
+  },
   "api.Element.ariaAtomic": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
@@ -12042,6 +12072,20 @@ export const bcdKeys = {
       "https://open-ui.org/components/customizableselect/"
     ]
   },
+  "api.HTMLTemplateElement.shadowRootSlotAssignment": {
+    "parent_feature": "declarative-shadow-dom",
+    "parent_feature_name": "Declarative shadow DOM",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode"
+    ]
+  },
   "api.DeviceMotionEvent": {
     "parent_feature": "device-orientation-events",
     "parent_feature_name": "Device orientation events",
@@ -13413,6 +13457,21 @@ export const bcdKeys = {
     ]
   },
   "css.properties.hanging-punctuation.first": {
+    "parent_feature": "hanging-punctuation",
+    "parent_feature_name": "Hanging punctuation",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.5",
+        "safari_ios": "26.5"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+    ]
+  },
+  "css.properties.hanging-punctuation.force-end": {
     "parent_feature": "hanging-punctuation",
     "parent_feature_name": "Hanging punctuation",
     "parent_feature_baseline": false,
@@ -15432,6 +15491,22 @@ export const bcdKeys = {
     "spec": [
       "https://drafts.csswg.org/selectors-4/#resource-pseudos",
       "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "html.elements.meta.name.text-scale": {
+    "parent_feature": "meta-text-scale",
+    "parent_feature_name": "<meta name=\"text-scale\">",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#text-scale-meta"
     ]
   },
   "html.elements.link.rel.modulepreload": {

@@ -3622,6 +3622,21 @@ export const features = {
       }
     }
   },
+  "app-migration": {
+    "description_html": "The <code>migrate_to</code> and <code>migrate_from</code> web app manifest members move an installed app from one origin to another, within the same site. They preserve the user's installation settings on the device, like shortcuts.",
+    "kind": "feature",
+    "name": "Web app origin migration",
+    "spec": [
+      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "edge": "149"
+      }
+    }
+  },
   "app-protocol-handlers": {
     "description_html": "The <code>protocol_handlers</code> web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
     "kind": "feature",
@@ -15634,7 +15649,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146"
+      }
     }
   },
   "meta-theme-color": {
@@ -22014,6 +22033,28 @@ export const features = {
         "firefox_android": "79",
         "safari": "16",
         "safari_ios": "16"
+      }
+    }
+  },
+  "subresource-integrity": {
+    "description_html": "Subresource integrity verifies that a resource, such as script served from a content delivery network, matches a known cryptographic hash. Also known as SRI.",
+    "kind": "feature",
+    "name": "Subresource integrity",
+    "spec": [
+      "https://w3c.github.io/webappsec-subresource-integrity/"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2020-10-30",
+      "baseline_low_date": "2018-04-30",
+      "support": {
+        "chrome": "46",
+        "chrome_android": "46",
+        "edge": "17",
+        "firefox": "51",
+        "firefox_android": "51",
+        "safari": "11.1",
+        "safari_ios": "11.3"
       }
     }
   },
