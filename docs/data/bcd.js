@@ -14604,6 +14604,21 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-values-4/#lh"
     ]
   },
+  "css.types.color.light-dark.image_value": {
+    "parent_feature": "light-dark-image",
+    "parent_feature_name": "light-dark() image values",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image"
+    ]
+  },
   "css.types.easing-function.linear-function": {
     "parent_feature": "linear-easing",
     "parent_feature_name": "linear() easing",

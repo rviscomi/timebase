@@ -14530,6 +14530,21 @@ export const features = {
       }
     }
   },
+  "light-dark-image": {
+    "description_html": "The <code>light-dark()</code> CSS function accepts, in addition to colors, two <code>&#x3C;image></code> values, such as a gradient or URL, and uses one depending on the current color scheme.",
+    "kind": "feature",
+    "name": "light-dark() image values",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    }
+  },
   "line-break": {
     "description_html": "The <code>line-break</code> CSS property sets how strictly to apply rules for wrapping text to new lines, especially for symbols and punctuation.",
     "kind": "feature",
