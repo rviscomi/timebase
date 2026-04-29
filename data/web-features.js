@@ -2055,6 +2055,10 @@ export const browsers = {
         "version": "152"
       },
       {
+        "date": "2026-07-21",
+        "version": "153"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2606,6 +2610,10 @@ export const browsers = {
       {
         "date": "2026-06-16",
         "version": "152"
+      },
+      {
+        "date": "2026-07-21",
+        "version": "153"
       }
     ]
   },
@@ -3742,7 +3750,8 @@ export const features = {
       "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "103",
@@ -5912,6 +5921,18 @@ export const features = {
         "safari": "16.4",
         "safari_ios": "16.4"
       }
+    }
+  },
+  "canvas-html": {
+    "description_html": "A <code>&#x3C;canvas></code> HTML element with the <code>layoutsubtree</code> attribute can draw descendant elements in its rendering context. You can use it to style and layout text in a canvas, expose canvas content to browser features (like accessibility, translate, or find-in-page), and apply 2D and 3D effects to HTML.",
+    "kind": "feature",
+    "name": "HTML in canvas",
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "canvas-reset": {
@@ -8830,7 +8851,9 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "130",
-        "edge": "130"
+        "edge": "130",
+        "firefox": "151",
+        "firefox_android": "151"
       }
     }
   },
@@ -14381,7 +14404,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
     }
   },
   "largest-contentful-paint": {
@@ -17246,17 +17272,13 @@ export const features = {
       "https://drafts.csswg.org/css-overscroll-1/"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2025-03-12",
-      "baseline_low_date": "2022-09-12",
+      "baseline": false,
       "support": {
-        "chrome": "63",
-        "chrome_android": "63",
-        "edge": "18",
-        "firefox": "59",
-        "firefox_android": "59",
-        "safari": "16",
-        "safari_ios": "16"
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
       }
     }
   },
@@ -20546,7 +20568,9 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "89",
-        "edge": "89"
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
       }
     }
   },
@@ -21867,7 +21891,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "111",

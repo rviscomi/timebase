@@ -2055,6 +2055,10 @@ export const browsers = {
         "version": "152"
       },
       {
+        "date": "2026-07-21",
+        "version": "153"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2606,6 +2610,10 @@ export const browsers = {
       {
         "date": "2026-06-16",
         "version": "152"
+      },
+      {
+        "date": "2026-07-21",
+        "version": "153"
       }
     ]
   },
@@ -6151,57 +6159,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
-  "css.properties.position-anchor": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "144",
-        "chrome_android": "144",
-        "edge": "144",
-        "firefox": "147",
-        "firefox_android": "147"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
-    ]
-  },
-  "css.properties.position-anchor.auto": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "firefox": "147",
-        "firefox_android": "147"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
-    ]
-  },
-  "css.properties.position-anchor.none": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "144",
-        "chrome_android": "144",
-        "edge": "144",
-        "firefox": "147",
-        "firefox_android": "147"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
-    ]
-  },
   "css.properties.position-area": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -8247,9 +8204,10 @@ export const bcdKeys = {
   "api.Element.ariaAtomic": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8268,9 +8226,10 @@ export const bcdKeys = {
   "api.Element.ariaAutoComplete": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8289,9 +8248,10 @@ export const bcdKeys = {
   "api.Element.ariaBusy": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8310,9 +8270,10 @@ export const bcdKeys = {
   "api.Element.ariaChecked": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8331,9 +8292,10 @@ export const bcdKeys = {
   "api.Element.ariaColCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8352,9 +8314,10 @@ export const bcdKeys = {
   "api.Element.ariaColIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8373,9 +8336,10 @@ export const bcdKeys = {
   "api.Element.ariaColSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8394,9 +8358,10 @@ export const bcdKeys = {
   "api.Element.ariaCurrent": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8415,9 +8380,10 @@ export const bcdKeys = {
   "api.Element.ariaDisabled": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8436,9 +8402,10 @@ export const bcdKeys = {
   "api.Element.ariaExpanded": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8457,9 +8424,10 @@ export const bcdKeys = {
   "api.Element.ariaHasPopup": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8478,9 +8446,10 @@ export const bcdKeys = {
   "api.Element.ariaHidden": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8499,9 +8468,10 @@ export const bcdKeys = {
   "api.Element.ariaInvalid": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "102",
@@ -8520,9 +8490,10 @@ export const bcdKeys = {
   "api.Element.ariaKeyShortcuts": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8541,9 +8512,10 @@ export const bcdKeys = {
   "api.Element.ariaLabel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8562,9 +8534,10 @@ export const bcdKeys = {
   "api.Element.ariaLevel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8583,9 +8556,10 @@ export const bcdKeys = {
   "api.Element.ariaLive": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8604,9 +8578,10 @@ export const bcdKeys = {
   "api.Element.ariaModal": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8625,9 +8600,10 @@ export const bcdKeys = {
   "api.Element.ariaMultiLine": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8646,9 +8622,10 @@ export const bcdKeys = {
   "api.Element.ariaMultiSelectable": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8667,9 +8644,10 @@ export const bcdKeys = {
   "api.Element.ariaOrientation": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8688,9 +8666,10 @@ export const bcdKeys = {
   "api.Element.ariaPlaceholder": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8709,9 +8688,10 @@ export const bcdKeys = {
   "api.Element.ariaPosInSet": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8730,9 +8710,10 @@ export const bcdKeys = {
   "api.Element.ariaPressed": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8751,9 +8732,10 @@ export const bcdKeys = {
   "api.Element.ariaReadOnly": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8772,9 +8754,10 @@ export const bcdKeys = {
   "api.Element.ariaRelevant": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8793,9 +8776,10 @@ export const bcdKeys = {
   "api.Element.ariaRequired": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8814,9 +8798,10 @@ export const bcdKeys = {
   "api.Element.ariaRoleDescription": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8835,9 +8820,10 @@ export const bcdKeys = {
   "api.Element.ariaRowCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8856,9 +8842,10 @@ export const bcdKeys = {
   "api.Element.ariaRowIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8877,9 +8864,10 @@ export const bcdKeys = {
   "api.Element.ariaRowSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8898,9 +8886,10 @@ export const bcdKeys = {
   "api.Element.ariaSelected": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8919,9 +8908,10 @@ export const bcdKeys = {
   "api.Element.ariaSetSize": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "84",
@@ -8940,9 +8930,10 @@ export const bcdKeys = {
   "api.Element.ariaSort": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8961,9 +8952,10 @@ export const bcdKeys = {
   "api.Element.ariaValueMax": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -8982,9 +8974,10 @@ export const bcdKeys = {
   "api.Element.ariaValueMin": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9003,9 +8996,10 @@ export const bcdKeys = {
   "api.Element.ariaValueNow": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9024,9 +9018,10 @@ export const bcdKeys = {
   "api.Element.ariaValueText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9045,9 +9040,10 @@ export const bcdKeys = {
   "api.Element.role": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "103",
@@ -9066,9 +9062,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaAtomic": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9087,9 +9084,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaAutoComplete": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9108,9 +9106,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaBusy": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9129,9 +9128,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaChecked": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9150,9 +9150,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9171,9 +9172,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9192,9 +9194,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaColSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9213,9 +9216,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaCurrent": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9234,9 +9238,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaDisabled": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9255,9 +9260,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaExpanded": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9276,9 +9282,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaHasPopup": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9297,9 +9304,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaHidden": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9318,9 +9326,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaInvalid": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "102",
@@ -9339,9 +9348,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaKeyShortcuts": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9360,9 +9370,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLabel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9381,9 +9392,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLevel": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9402,9 +9414,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaLive": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9423,9 +9436,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaModal": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9444,9 +9458,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaMultiLine": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9465,9 +9480,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaMultiSelectable": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9486,9 +9502,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaOrientation": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9507,9 +9524,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPlaceholder": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9528,9 +9546,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPosInSet": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9549,9 +9568,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaPressed": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9570,9 +9590,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaReadOnly": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9591,9 +9612,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRequired": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9612,9 +9634,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRoleDescription": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9633,9 +9656,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowCount": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9654,9 +9678,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowIndex": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9675,9 +9700,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaRowSpan": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9696,9 +9722,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSelected": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9717,9 +9744,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSetSize": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "84",
@@ -9738,9 +9766,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaSort": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9759,9 +9788,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueMax": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9780,9 +9810,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueMin": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9801,9 +9832,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueNow": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9822,9 +9854,10 @@ export const bcdKeys = {
   "api.ElementInternals.ariaValueText": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "81",
@@ -9843,9 +9876,10 @@ export const bcdKeys = {
   "api.ElementInternals.role": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "103",
@@ -10324,6 +10358,24 @@ export const bcdKeys = {
         "firefox_android": "117",
         "safari": "15",
         "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ]
+  },
+  "api.CanvasRenderingContext2D.lang": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12079,6 +12131,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "151",
+        "firefox_android": "151",
         "safari": "preview"
       }
     },
@@ -12489,7 +12543,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12505,7 +12560,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12521,7 +12577,25 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/document-picture-in-picture/"
+    ]
+  },
+  "api.DocumentPictureInPicture.requestWindow.option_disallowReturnToOpener": {
+    "parent_feature": "document-picture-in-picture",
+    "parent_feature_name": "Document picture-in-picture",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "edge": "124",
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12537,7 +12611,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "130",
         "edge": "130",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12553,7 +12628,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12569,7 +12645,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12585,7 +12662,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12601,7 +12679,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -12617,7 +12696,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "116",
         "edge": "116",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -14581,6 +14661,156 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-color-4/#cie-lab"
+    ]
+  },
+  "api.LanguageModel": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.append": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.availability_static": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.clone": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.contextUsage": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.contextWindow": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.create_static": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.measureContextUsage": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.prompt": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.promptStreaming": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
     ]
   },
   "css.types.length.lh": {
@@ -17847,6 +18077,366 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-overflow-4/#overflow-clip-margin"
     ]
   },
+  "css.properties.overscroll-behavior": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-block": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-block.auto": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-block.contain": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-block.none": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-inline": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-inline.auto": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-inline.contain": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-inline.none": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-x": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-x.auto": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-x.contain": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-x.none": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-y": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-y.auto": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-y.contain": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "18",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior-y.none": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior.auto": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior.contain": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
+  "css.properties.overscroll-behavior.none": {
+    "parent_feature": "overscroll-behavior",
+    "parent_feature_name": "overscroll-behavior",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "79",
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overscroll-1/"
+    ]
+  },
   "css.selectors.first": {
     "parent_feature": "page-selectors",
     "parent_feature_name": "Page selectors",
@@ -17878,7 +18468,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "123",
         "edge": "123",
-        "firefox": "preview"
+        "firefox": "151",
+        "firefox_android": "151"
       }
     },
     "spec": [
@@ -19513,6 +20104,313 @@ export const bcdKeys = {
       "https://w3c.github.io/selection-api/"
     ]
   },
+  "api.Navigator.serial": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.Serial": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.Serial.getPorts": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.Serial.requestPort": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.close": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.connect_event": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.connected": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "edge": "130",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.disconnect_event": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.forget": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "103",
+        "edge": "103",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.getInfo": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.getSignals": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.open": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.readable": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.setSignals": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.SerialPort.writable": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "api.WorkerNavigator.serial": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
+  "html.elements.iframe.allow.serial": {
+    "parent_feature": "serial",
+    "parent_feature_name": "Web serial",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/serial/"
+    ]
+  },
   "http.headers.Service-Worker-Navigation-Preload": {
     "parent_feature": "service-workers",
     "parent_feature_name": "Service workers",
@@ -19846,9 +20744,10 @@ export const bcdKeys = {
   "javascript.builtins.String.isWellFormed": {
     "parent_feature": "string-wellformed",
     "parent_feature_name": "String isWellFormed() and toWellFormed()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "111",
@@ -19867,9 +20766,10 @@ export const bcdKeys = {
   "javascript.builtins.String.toWellFormed": {
     "parent_feature": "string-wellformed",
     "parent_feature_name": "String isWellFormed() and toWellFormed()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "111",
@@ -25732,7 +26632,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web Cryptography",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "41",
@@ -25754,7 +26655,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web Cryptography",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "41",
@@ -25776,7 +26678,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web authentication",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "74",
@@ -25818,7 +26721,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web authentication",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "108",
@@ -25839,28 +26743,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web authentication easy public key access",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2023-10-24",
-      "support": {
-        "chrome": "85",
-        "chrome_android": "85",
-        "edge": "85",
-        "firefox": "119",
-        "firefox_android": "119",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webauthn/#sctn-public-key-easy"
-    ]
-  },
-  "api.AuthenticatorAttestationResponse.getPublicKey": {
-    "parent_feature": "webauthn-public-key-easy",
-    "parent_feature_name": "Web authentication easy public key access",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "85",
@@ -25881,7 +26765,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web authentication easy public key access",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "85",
