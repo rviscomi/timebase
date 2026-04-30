@@ -16927,6 +16927,18 @@ export const features = {
       }
     }
   },
+  "opaquerange": {
+    "description_html": "The <code>createValueRange()</code> for form elements, such as <code>&#x3C;textarea></code> or <code>&#x3C;input type=\"text\"></code>, gets an <code>OpaqueRange</code> object that represents a live span of text. You can use this for range-based operations on the input text, such as setting custom highlights or placing autocomplete popovers.",
+    "kind": "feature",
+    "name": "OpaqueRange",
+    "spec": [
+      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OpaqueRange/explainer.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "open-closed": {
     "kind": "moved",
     "redirect_target": "open-pseudo"
