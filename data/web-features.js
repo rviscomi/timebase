@@ -7392,8 +7392,12 @@ export const features = {
       "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-04-10",
       "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147",
         "firefox": "146",
         "firefox_android": "146",
         "safari": "26",
@@ -20581,8 +20585,7 @@ export const features = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     }
   },
@@ -24072,6 +24075,18 @@ export const features = {
       }
     }
   },
+  "usermedia": {
+    "description_html": "The <code>&#x3C;usermedia></code> HTML element represents a button that, upon activation, toggles camera or microphone streams. If needed, it may prompt the user to choose whether to grant the page access to the camera and microphone.",
+    "kind": "feature",
+    "name": "<usermedia>",
+    "spec": [
+      "https://github.com/WICG/PEPC/blob/main/usermedia_element.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "var": {
     "description_html": "The <code>&#x3C;var></code> element represents the name of a variable in a mathematical expression or a programming context.",
     "kind": "feature",
@@ -25087,7 +25102,7 @@ export const features = {
     "kind": "feature",
     "name": "Web NFC",
     "spec": [
-      "https://w3c.github.io/web-nfc/"
+      "https://w3c-cg.github.io/web-nfc/"
     ],
     "status": {
       "baseline": false,

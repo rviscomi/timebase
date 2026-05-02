@@ -6679,6 +6679,27 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-conditional-5/#container-queries"
     ]
   },
+  "css.types.color.contrast-color": {
+    "parent_feature": "contrast-color",
+    "parent_feature_name": "contrast-color()",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-04-10",
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color"
+    ]
+  },
   "css.properties.counter-set": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
@@ -8493,6 +8514,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-variant-position-prop"
+    ]
+  },
+  "api.Element.requestFullscreen.options_parameter": {
+    "parent_feature": "fullscreen",
+    "parent_feature_name": "Fullscreen API",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "71",
+        "chrome_android": "71",
+        "edge": "79",
+        "firefox": "151",
+        "firefox_android": "151",
+        "safari": "16.4"
+      }
+    },
+    "spec": [
+      "https://fullscreen.spec.whatwg.org/"
     ]
   },
   "javascript.builtins.Function.toString.toString_revision": {
@@ -13603,14 +13643,12 @@ export const bcdKeys = {
     "parent_feature_name": "Scroll-driven animations",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-21",
+      "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "150",
-        "firefox_android": "150",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -13624,14 +13662,12 @@ export const bcdKeys = {
     "parent_feature_name": "Scroll-driven animations",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-21",
+      "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "150",
-        "firefox_android": "150",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -13645,14 +13681,12 @@ export const bcdKeys = {
     "parent_feature_name": "Scroll-driven animations",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-21",
+      "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "150",
-        "firefox_android": "150",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -13666,14 +13700,12 @@ export const bcdKeys = {
     "parent_feature_name": "Scroll-driven animations",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-21",
+      "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "150",
-        "firefox_android": "150",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -13687,14 +13719,12 @@ export const bcdKeys = {
     "parent_feature_name": "Scroll-driven animations",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-21",
+      "baseline": false,
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "150",
-        "firefox_android": "150",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -13756,8 +13786,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13773,8 +13802,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13790,8 +13818,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13807,8 +13834,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13824,8 +13850,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13841,8 +13866,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13858,8 +13882,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13875,8 +13898,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "130",
         "edge": "130",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13892,8 +13914,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13909,8 +13930,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "103",
         "edge": "103",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13926,8 +13946,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13943,8 +13962,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13960,8 +13978,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13977,8 +13994,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -13994,8 +14010,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -14011,8 +14026,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -14028,8 +14042,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
@@ -14046,8 +14059,7 @@ export const bcdKeys = {
         "chrome": "89",
         "chrome_android": "89",
         "edge": "89",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     },
     "spec": [
