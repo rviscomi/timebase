@@ -15858,6 +15858,102 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-view-transitions-1/"
     ]
   },
+  "api.Element.activeViewTransition": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
+  "api.Element.startViewTransition": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
+  "api.ViewTransition.transitionRoot": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
+  "css.properties.view-transition-scope": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
+  "css.properties.view-transition-scope.all": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
+  "css.properties.view-transition-scope.none": {
+    "parent_feature": "view-transitions-element-scoped",
+    "parent_feature_name": "Element-scoped view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+    ]
+  },
   "api.VisualViewport.scrollend_event": {
     "parent_feature": "visual-viewport",
     "parent_feature_name": "Visual viewport API",

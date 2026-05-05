@@ -24248,15 +24248,19 @@ export const features = {
     }
   },
   "view-transitions-element-scoped": {
-    "description_html": "The <code>startViewTransition()</code> method of an <code>Element</code> object starts a view transition that affects only that element's DOM tree. The <code>contain: view-transition</code> CSS declaration contains the layout of the tree to be transitioned. You can use this to run separate elements' transitions concurrently.",
+    "description_html": "The <code>startViewTransition()</code> method of an <code>Element</code> object starts a view transition that affects only that element's DOM tree. You can use this to run separate elements' transitions concurrently.",
     "kind": "feature",
     "name": "Element-scoped view transitions",
     "spec": [
-      "https://github.com/WICG/view-transitions/blob/main/scoped-transitions.md"
+      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "147",
+        "chrome_android": "147",
+        "edge": "147"
+      }
     }
   },
   "viewport-segments": {
