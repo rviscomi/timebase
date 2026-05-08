@@ -19245,14 +19245,11 @@ export const features = {
     }
   },
   "reporting": {
-    "description_html": "The <code>Reporting-Endpoints</code> HTTP header and <code>ReportingObserver()</code> API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
+    "description_html": "The <code>Reporting-Endpoints</code> HTTP header and <code>ReportingObserver()</code> API send selected reports, such as Content Security Policy (CSP) violation reports or crash reports, to a nominated URL or callback function.",
     "kind": "feature",
     "name": "Reporting API",
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ],
     "status": {
       "baseline": "low",
@@ -19265,6 +19262,128 @@ export const features = {
         "firefox_android": "149",
         "safari": "16.4",
         "safari_ios": "16.4"
+      }
+    }
+  },
+  "reporting-coep-violations": {
+    "description_html": "COEP violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates its <code>Cross-Origin-Embedder-Policy</code> policy.",
+    "kind": "feature",
+    "name": "COEP violation reports",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/browsers.html#coep-report-type"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "96",
+        "chrome_android": "96",
+        "edge": "96"
+      }
+    }
+  },
+  "reporting-crashes": {
+    "description_html": "Crash reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header when a user is unable to continue using the page because the browser or tab crashed.",
+    "kind": "feature",
+    "name": "Crash reporting",
+    "spec": [
+      "https://wicg.github.io/crash-reporting/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "96",
+        "chrome_android": "96",
+        "edge": "96",
+        "firefox": "149",
+        "firefox_android": "149"
+      }
+    }
+  },
+  "reporting-csp-violations": {
+    "description_html": "CSP violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates its content security policy.",
+    "kind": "feature",
+    "name": "CSP violation reports",
+    "spec": [
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    }
+  },
+  "reporting-deprecation": {
+    "description_html": "Deprecation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page uses a deprecated API or other browser feature.",
+    "kind": "feature",
+    "name": "Deprecation reports",
+    "spec": [
+      "https://wicg.github.io/deprecation-reporting/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79"
+      }
+    }
+  },
+  "reporting-integrity-violations": {
+    "description_html": "Subresource integrity violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a resource request violates an integrity check.",
+    "kind": "feature",
+    "name": "Integrity violation reports",
+    "spec": [
+      "https://w3c.github.io/webappsec-subresource-integrity/#report-violations"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
+  "reporting-interventions": {
+    "description_html": "Intervention reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header when the browser has not honored an application's request, contrary to specified behavior, such as for security or privacy reasons.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WICG/interventions/blob/2dc14cf385982835a5dee488e2b5295a9d441bea/README.md"
+      ],
+      "reason": "Specification authors no longer define browser behaviors as \"interventions\" or \"non-interventions.\"",
+      "reason_html": "Specification authors no longer define browser behaviors as \"interventions\" or \"non-interventions.\""
+    },
+    "kind": "feature",
+    "name": "Intervention reports",
+    "spec": [
+      "https://wicg.github.io/intervention-reporting/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79"
+      }
+    }
+  },
+  "reporting-permissions-policy-violations": {
+    "description_html": "Permissions policy violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates a policy. You can also use the <code>Permissions-Policy-Report-Only</code> header to receive reports of what might break under a given policy.",
+    "kind": "feature",
+    "name": "Permissions policy violation reporting",
+    "spec": [
+      "https://w3c.github.io/webappsec-permissions-policy/#reporting"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "120",
+        "chrome_android": "120",
+        "edge": "120"
       }
     }
   },

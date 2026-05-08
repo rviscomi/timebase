@@ -7350,27 +7350,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ]
   },
-  "http.headers.Content-Security-Policy.report-to": {
-    "parent_feature": "csp",
-    "parent_feature_name": "Content Security Policy (CSP)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
-      "support": {
-        "chrome": "70",
-        "chrome_android": "70",
-        "edge": "79",
-        "firefox": "149",
-        "firefox_android": "149",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webappsec-csp/"
-    ]
-  },
   "http.headers.Content-Security-Policy.script-src.external_scripts": {
     "parent_feature": "csp",
     "parent_feature_name": "Content Security Policy (CSP)",
@@ -12966,10 +12945,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.ReportingObserver": {
@@ -12990,10 +12966,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.ReportingObserver.options_parameter": {
@@ -13014,10 +12987,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.ReportingObserver.options_parameter.types_property": {
@@ -13038,55 +13008,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
-    ]
-  },
-  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation": {
-    "parent_feature": "reporting",
-    "parent_feature_name": "Reporting API",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
-      "support": {
-        "chrome": "74",
-        "chrome_android": "74",
-        "edge": "79",
-        "firefox": "149",
-        "firefox_android": "149",
-        "safari": "18.4",
-        "safari_ios": "18.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
-    ]
-  },
-  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.integrity-violation": {
-    "parent_feature": "reporting",
-    "parent_feature_name": "Reporting API",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "chrome_android": "138",
-        "edge": "138",
-        "firefox": "149",
-        "firefox_android": "149"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.disconnect": {
@@ -13107,10 +13029,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.observe": {
@@ -13131,10 +13050,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.takeRecords": {
@@ -13155,10 +13071,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
-      "https://w3c.github.io/webappsec-csp/#reporting"
+      "https://w3c.github.io/reporting/"
     ]
   },
   "api.ReportingObserver.worker_support": {
@@ -13176,10 +13089,67 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://w3c.github.io/reporting/",
-      "https://wicg.github.io/intervention-reporting/",
-      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/reporting/"
+    ]
+  },
+  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation": {
+    "parent_feature": "reporting-csp-violations",
+    "parent_feature_name": "CSP violation reports",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "74",
+        "chrome_android": "74",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    },
+    "spec": [
       "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "http.headers.Content-Security-Policy.report-to": {
+    "parent_feature": "reporting-csp-violations",
+    "parent_feature_name": "CSP violation reports",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
+      "support": {
+        "chrome": "70",
+        "chrome_android": "70",
+        "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webappsec-csp/#reporting"
+    ]
+  },
+  "api.ReportingObserver.ReportingObserver.options_parameter.types_property.integrity-violation": {
+    "parent_feature": "reporting-integrity-violations",
+    "parent_feature_name": "Integrity violation reports",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "firefox": "149",
+        "firefox_android": "149"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webappsec-subresource-integrity/#report-violations"
     ]
   },
   "api.PerformanceResourceTiming.contentType": {
