@@ -596,8 +596,12 @@ export const browsers = {
         "version": "149"
       },
       {
-        "date": "null",
+        "date": "2026-06-30",
         "version": "150"
+      },
+      {
+        "date": "null",
+        "version": "151"
       },
       {
         "date": "null",
@@ -1109,8 +1113,12 @@ export const browsers = {
         "version": "149"
       },
       {
-        "date": "null",
+        "date": "2026-06-30",
         "version": "150"
+      },
+      {
+        "date": "null",
+        "version": "151"
       }
     ]
   },
@@ -1428,6 +1436,10 @@ export const browsers = {
       {
         "date": "null",
         "version": "150"
+      },
+      {
+        "date": "null",
+        "version": "151"
       }
     ]
   },
@@ -3531,7 +3543,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "151",
+        "firefox_android": "151"
+      }
     }
   },
   "angle-instanced-arrays": {
@@ -6404,7 +6419,8 @@ export const features = {
       "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-02",
       "baseline_low_date": "2023-11-02",
       "support": {
         "chrome": "119",
@@ -7256,11 +7272,14 @@ export const features = {
       "https://drafts.csswg.org/css-conditional-5/#style-container"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-19",
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
+        "firefox": "151",
+        "firefox_android": "151",
         "safari": "18",
         "safari_ios": "18"
       }
@@ -16246,7 +16265,6 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "67",
         "chrome_android": "67"
       }
     }
@@ -24163,7 +24181,8 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#user-pseudos"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-02",
       "baseline_low_date": "2023-11-02",
       "support": {
         "chrome": "119",
