@@ -9460,7 +9460,7 @@ export const features = {
   "exp-functions": {
     "description_html": "The <code>pow()</code>, <code>sqrt()</code>, <code>hypot()</code>, <code>log()</code>, and <code>exp()</code> CSS functions compute various exponential functions.",
     "kind": "feature",
-    "name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "name": "Exponential functions (CSS)",
     "spec": [
       "https://drafts.csswg.org/css-values-4/#exponent-funcs"
     ],
@@ -23697,7 +23697,7 @@ export const features = {
   "trig-functions": {
     "description_html": "The <code>sin()</code>, <code>cos()</code>, <code>tan()</code>, <code>asin()</code>, <code>acos()</code>, <code>atan()</code>, and <code>atan2()</code> CSS functions compute various trigonometric functions.",
     "kind": "feature",
-    "name": "sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)",
+    "name": "Trigonometric functions (CSS)",
     "spec": [
       "https://drafts.csswg.org/css-values-4/#trig-funcs"
     ],

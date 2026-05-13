@@ -8259,7 +8259,7 @@ export const bcdKeys = {
   },
   "css.types.exp": {
     "parent_feature": "exp-functions",
-    "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_name": "Exponential functions (CSS)",
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
@@ -8280,7 +8280,7 @@ export const bcdKeys = {
   },
   "css.types.hypot": {
     "parent_feature": "exp-functions",
-    "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_name": "Exponential functions (CSS)",
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
@@ -8301,7 +8301,7 @@ export const bcdKeys = {
   },
   "css.types.log": {
     "parent_feature": "exp-functions",
-    "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_name": "Exponential functions (CSS)",
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
@@ -8322,7 +8322,7 @@ export const bcdKeys = {
   },
   "css.types.pow": {
     "parent_feature": "exp-functions",
-    "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_name": "Exponential functions (CSS)",
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
@@ -8343,7 +8343,7 @@ export const bcdKeys = {
   },
   "css.types.sqrt": {
     "parent_feature": "exp-functions",
-    "parent_feature_name": "pow(), sqrt(), hypot(), log(), and exp()",
+    "parent_feature_name": "Exponential functions (CSS)",
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
