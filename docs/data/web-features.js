@@ -3543,10 +3543,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "firefox": "151",
-        "firefox_android": "151"
-      }
+      "support": {}
     }
   },
   "angle-instanced-arrays": {
@@ -15704,6 +15701,28 @@ export const features = {
       }
     }
   },
+  "meta-refresh": {
+    "description_html": "The <code>&#x3C;meta http-equiv=\"refresh\"></code> HTML element and the equivalent <code>Refresh</code> HTTP header trigger a page reload or redirect. They apply only when the page is fully loaded, after other HTTP redirects or scripted redirects that might execute before the page is fully loaded.",
+    "kind": "feature",
+    "name": "Meta refresh",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "≤4",
+        "safari_ios": "≤3.2"
+      }
+    }
+  },
   "meta-text-scale": {
     "description_html": "The <code>&#x3C;meta name=\"text-scale\" content=\"scale\" /></code> HTML element allows the browser's initial font size to be affected by the operating system text scale settings. The <code>&#x3C;meta name=\"text-scale\" content=\"legacy\" /></code> element is the default behavior that respects only browser font-size settings.",
     "kind": "feature",
@@ -22916,6 +22935,18 @@ export const features = {
         "safari": "10.1",
         "safari_ios": "10.3"
       }
+    }
+  },
+  "text-fit": {
+    "description_html": "The <code>text-fit</code> CSS property scales text to fill the inline size of its container. You can use this to grow or shrink headlines, captions, or pull quotes to fit a container.",
+    "kind": "feature",
+    "name": "text-fit",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#propdef-text-fit"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "text-indent": {

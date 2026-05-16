@@ -3213,6 +3213,21 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
+  "css.properties.position-anchor.normal": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
   "css.properties.position-area.block-end": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -3270,6 +3285,27 @@ export const bcdKeys = {
         "firefox_android": "148",
         "safari": "26",
         "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-area.disables_auto_margins_and_insets": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-02-24",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "148",
+        "firefox_android": "148",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     },
     "spec": [
