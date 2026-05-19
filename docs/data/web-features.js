@@ -2865,7 +2865,7 @@ export const browsers = {
         "version": "26.4"
       },
       {
-        "date": "null",
+        "date": "2026-05-11",
         "version": "26.5"
       },
       {
@@ -3098,7 +3098,7 @@ export const browsers = {
         "version": "26.4"
       },
       {
-        "date": "null",
+        "date": "2026-05-11",
         "version": "26.5"
       }
     ]
@@ -5173,11 +5173,14 @@ export const features = {
       "https://drafts.csswg.org/css-inline-3/#baseline-shift-property"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "1",
         "chrome_android": "18",
         "edge": "79",
+        "firefox": "149",
+        "firefox_android": "149",
         "safari": "4",
         "safari_ios": "3.2"
       }
@@ -8771,12 +8774,12 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2019-10-05",
-      "baseline_low_date": "≤2017-04-05",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
       "support": {
         "chrome": "1",
         "chrome_android": "18",
-        "edge": "≤15",
+        "edge": "12",
         "firefox": "3",
         "firefox_android": "4",
         "safari": "≤4",
@@ -8872,8 +8875,7 @@ export const features = {
       "support": {
         "chrome": "130",
         "edge": "130",
-        "firefox": "151",
-        "firefox_android": "151"
+        "firefox": "151"
       }
     }
   },
@@ -9703,6 +9705,7 @@ export const features = {
         "chrome": "93",
         "chrome_android": "83",
         "edge": "93",
+        "firefox": "65",
         "safari": "14.1"
       }
     }
@@ -15879,11 +15882,11 @@ export const features = {
       "baseline_high_date": "2022-07-15",
       "baseline_low_date": "2020-01-15",
       "support": {
-        "chrome": "≤79",
-        "chrome_android": "≤79",
+        "chrome": "44",
+        "chrome_android": "44",
         "edge": "79",
-        "firefox": "≤23",
-        "firefox_android": "≤23",
+        "firefox": "23",
+        "firefox_android": "23",
         "safari": "≤9.1",
         "safari_ios": "≤9.3"
       }
@@ -16992,7 +16995,8 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#open-state"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-11",
       "support": {
         "chrome": "133",
         "chrome_android": "133",
@@ -23433,7 +23437,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-05-11",
       "support": {
         "chrome": "140",
         "chrome_android": "140",
@@ -24084,6 +24089,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -24111,6 +24117,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -24640,12 +24647,14 @@ export const features = {
       "https://github.com/WebAssembly/branch-hinting/blob/main/proposals/branch-hinting/Overview.md"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-02-24",
       "support": {
         "chrome": "137",
         "chrome_android": "137",
         "edge": "137",
-        "firefox": "preview",
+        "firefox": "148",
+        "firefox_android": "148",
         "safari": "16",
         "safari_ios": "16"
       }
@@ -24841,8 +24850,8 @@ export const features = {
       "baseline_high_date": "2022-09-24",
       "baseline_low_date": "2020-03-24",
       "support": {
-        "chrome": "69",
-        "chrome_android": "69",
+        "chrome": "74",
+        "chrome_android": "74",
         "edge": "79",
         "firefox": "62",
         "firefox_android": "62",
