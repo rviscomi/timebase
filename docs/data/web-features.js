@@ -19340,6 +19340,22 @@ export const features = {
       }
     }
   },
+  "reporting-crashes-storage": {
+    "description_html": "The <code>window.crashReport</code> object is a key-value store to record information about your application's state. If there's a crash, then the data in the key-value store is sent to your crash reporting endpoint, to help you pinpoint the cause of the crash.",
+    "kind": "feature",
+    "name": "Crash report storage",
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    }
+  },
   "reporting-csp-violations": {
     "description_html": "CSP violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates its content security policy.",
     "kind": "feature",

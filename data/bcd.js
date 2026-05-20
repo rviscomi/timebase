@@ -13202,6 +13202,86 @@ export const bcdKeys = {
       "https://w3c.github.io/reporting/"
     ]
   },
+  "api.CrashReportContext": {
+    "parent_feature": "reporting-crashes-storage",
+    "parent_feature_name": "Crash report storage",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ]
+  },
+  "api.CrashReportContext.delete": {
+    "parent_feature": "reporting-crashes-storage",
+    "parent_feature_name": "Crash report storage",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ]
+  },
+  "api.CrashReportContext.initialize": {
+    "parent_feature": "reporting-crashes-storage",
+    "parent_feature_name": "Crash report storage",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ]
+  },
+  "api.CrashReportContext.set": {
+    "parent_feature": "reporting-crashes-storage",
+    "parent_feature_name": "Crash report storage",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ]
+  },
+  "api.Window.crashReport": {
+    "parent_feature": "reporting-crashes-storage",
+    "parent_feature_name": "Crash report storage",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/crash-reporting/#crash-report-storage"
+    ]
+  },
   "api.ReportingObserver.ReportingObserver.options_parameter.types_property.csp-violation": {
     "parent_feature": "reporting-csp-violations",
     "parent_feature_name": "CSP violation reports",
