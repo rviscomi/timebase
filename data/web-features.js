@@ -25355,7 +25355,8 @@ export const features = {
       "https://w3c.github.io/webauthn/#sctn-public-key-easy"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-04-24",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "85",

@@ -16318,7 +16318,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getAuthenticatorData": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-04-24",
@@ -16340,7 +16340,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getPublicKey": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-04-24",
@@ -16362,7 +16362,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getPublicKey.algorithm_es256": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-04-24",
@@ -16384,7 +16384,7 @@ export const bcdKeys = {
   "api.AuthenticatorAttestationResponse.getPublicKeyAlgorithm": {
     "parent_feature": "webauthn-public-key-easy",
     "parent_feature_name": "Web authentication easy public key access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-04-24",
