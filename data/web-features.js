@@ -1434,7 +1434,7 @@ export const browsers = {
         "version": "149"
       },
       {
-        "date": "null",
+        "date": "2026-07-02",
         "version": "150"
       },
       {
@@ -2071,6 +2071,10 @@ export const browsers = {
         "version": "153"
       },
       {
+        "date": "2026-08-18",
+        "version": "154"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2626,6 +2630,10 @@ export const browsers = {
       {
         "date": "2026-07-21",
         "version": "153"
+      },
+      {
+        "date": "2026-08-18",
+        "version": "154"
       }
     ]
   },
@@ -3379,6 +3387,27 @@ export const features = {
         "safari": "18.2",
         "safari_ios": "18.2"
       }
+    }
+  },
+  "ad-selection": {
+    "description_html": "The Ad Selection API facilitates advertisement sales by allowing sites to register users as part of an interest group or to choose which ads appear based on those interest groups, while minimizing the ability of advertisers to track specific members of the interest group.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/k_nubsMb97g/m/aAp_5MTXBQAJ",
+        "https://chromestatus.com/feature/6552486106234880"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
+      "removal_date": "2026-06-01"
+    },
+    "kind": "feature",
+    "name": "Ad selection",
+    "spec": [
+      "https://github.com/WICG/privacy-preserving-ads"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "address": {
@@ -9961,7 +9990,7 @@ export const features = {
     }
   },
   "fetch-request-streams": {
-    "description_html": "A <code>fetch()</code> request uploads a stream of data to the server when a request's <code>body</code> property is a <code>ReadableStream</code> object.",
+    "description_html": "The <code>fetch()</code> method and <code>Request()</code> constructor accept a <code>ReadableStream</code> object as the request's <code>body</code> option, to stream upload data to the server.",
     "kind": "feature",
     "name": "Fetch upload streams",
     "spec": [
@@ -9972,9 +10001,7 @@ export const features = {
       "support": {
         "chrome": "105",
         "chrome_android": "105",
-        "edge": "105",
-        "safari": "11.1",
-        "safari_ios": "11.3"
+        "edge": "105"
       }
     }
   },
@@ -10002,11 +10029,14 @@ export const features = {
       "https://drafts.csswg.org/css-forms-1/#field-sizing"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
+        "firefox": "152",
+        "firefox_android": "152",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -14545,7 +14575,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#lh"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "109",
@@ -18658,6 +18689,30 @@ export const features = {
       }
     }
   },
+  "protected-audience": {
+    "description_html": "The protected audience API facilitates advertisement sales by allowing sites to register users as part of an interest group or to choose which ads appear based on those interest groups, while minimizing the ability of advertisers to track specific members of the interest group. Also known as FLEDGE.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/k_nubsMb97g/m/aAp_5MTXBQAJ",
+        "https://chromestatus.com/feature/6552486106234880"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
+      "removal_date": "2026-06-01"
+    },
+    "kind": "feature",
+    "name": "Protected audience",
+    "spec": [
+      "https://wicg.github.io/turtledove/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134"
+      }
+    }
+  },
   "proto": {
     "description_html": "The <code>__proto__</code> property of objects partially exposes the prototype of an object.",
     "discouraged": {
@@ -19806,7 +19861,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "111",
@@ -22299,7 +22355,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138"
+        "chrome": "138",
+        "edge": "138"
       }
     }
   },
@@ -24192,7 +24249,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",

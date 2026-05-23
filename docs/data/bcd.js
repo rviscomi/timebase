@@ -1434,7 +1434,7 @@ export const browsers = {
         "version": "149"
       },
       {
-        "date": "null",
+        "date": "2026-07-02",
         "version": "150"
       },
       {
@@ -2071,6 +2071,10 @@ export const browsers = {
         "version": "153"
       },
       {
+        "date": "2026-08-18",
+        "version": "154"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2626,6 +2630,10 @@ export const browsers = {
       {
         "date": "2026-07-21",
         "version": "153"
+      },
+      {
+        "date": "2026-08-18",
+        "version": "154"
       }
     ]
   },
@@ -3166,6 +3174,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-inline-3/#alignment-baseline-property"
+    ]
+  },
+  "css.properties.anchor-name.position_after_layout": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
   },
   "css.properties.position-anchor": {
@@ -8453,6 +8478,69 @@ export const bcdKeys = {
       "https://fetch.spec.whatwg.org/"
     ]
   },
+  "css.properties.field-sizing": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
+  "css.properties.field-sizing.content": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
+  "css.properties.field-sizing.fixed": {
+    "parent_feature": "field-sizing",
+    "parent_feature_name": "field-sizing",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#field-sizing"
+    ]
+  },
   "api.HTMLElement.focus.options_focusVisible_parameter": {
     "parent_feature": "focus-events",
     "parent_feature_name": "Focus events",
@@ -9998,9 +10086,10 @@ export const bcdKeys = {
   "css.types.length.lh": {
     "parent_feature": "lh",
     "parent_feature_name": "lh unit",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "109",
@@ -10644,6 +10733,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
+    ]
+  },
+  "api.MathMLElement.nonce": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
     ]
   },
   "css.properties.font-size.math": {
@@ -11576,7 +11686,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "53",
         "edge": "18",
-        "firefox": "preview"
+        "firefox": "152",
+        "firefox_android": "152"
       }
     },
     "spec": [
@@ -11592,7 +11703,26 @@ export const bcdKeys = {
       "support": {
         "chrome": "48",
         "edge": "18",
-        "firefox": "preview"
+        "firefox": "152",
+        "firefox_android": "152"
+      }
+    },
+    "spec": [
+      "https://notifications.spec.whatwg.org/"
+    ]
+  },
+  "api.NotificationEvent.action": {
+    "parent_feature": "notifications",
+    "parent_feature_name": "Notifications",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "48",
+        "chrome_android": "48",
+        "edge": "17",
+        "firefox": "152",
+        "firefox_android": "152"
       }
     },
     "spec": [
@@ -12371,7 +12501,8 @@ export const bcdKeys = {
     "parent_feature_name": "Popover",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "114",
@@ -12392,7 +12523,8 @@ export const bcdKeys = {
     "parent_feature_name": "Popover",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "114",
@@ -12413,7 +12545,8 @@ export const bcdKeys = {
     "parent_feature_name": "Popover",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "114",
@@ -12434,7 +12567,8 @@ export const bcdKeys = {
     "parent_feature_name": "Popover",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "114",
@@ -13383,11 +13517,14 @@ export const bcdKeys = {
     "parent_feature_name": "Resource timing",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
+        "firefox": "152",
+        "firefox_android": "152",
         "safari": "26.4",
         "safari_ios": "26.4"
       }
@@ -13399,9 +13536,10 @@ export const bcdKeys = {
   "css.types.length.rlh": {
     "parent_feature": "rlh",
     "parent_feature_name": "rlh unit",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "111",
@@ -15925,9 +16063,10 @@ export const bcdKeys = {
   "api.Navigator.userActivation": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",
@@ -15946,9 +16085,10 @@ export const bcdKeys = {
   "api.UserActivation": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",
@@ -15967,9 +16107,10 @@ export const bcdKeys = {
   "api.UserActivation.hasBeenActive": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",
@@ -15988,9 +16129,10 @@ export const bcdKeys = {
   "api.UserActivation.isActive": {
     "parent_feature": "user-activation",
     "parent_feature_name": "User activation",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",
@@ -16277,7 +16419,8 @@ export const bcdKeys = {
     "parent_feature_name": "Web authentication",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-05-21",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "98",
@@ -16625,6 +16768,27 @@ export const bcdKeys = {
         "edge": "13",
         "firefox": "150",
         "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCPeerConnection.RTCPeerConnection.configuration_rtcpMuxPolicy_parameter": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-06-16",
+      "support": {
+        "chrome": "57",
+        "chrome_android": "57",
+        "edge": "79",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "12.1",
+        "safari_ios": "12.2"
       }
     },
     "spec": [
