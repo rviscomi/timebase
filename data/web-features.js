@@ -1438,7 +1438,7 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "null",
+        "date": "2026-07-30",
         "version": "151"
       }
     ]
