@@ -13653,6 +13653,20 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier"
     ]
   },
+  "css.types.url.integrity": {
+    "parent_feature": "url-integrity",
+    "parent_feature_name": "integrity() for url()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier"
+    ]
+  },
   "css.types.url.referrer-policy": {
     "parent_feature": "url-referrer-policy",
     "parent_feature_name": "referrer-policy() for url()",

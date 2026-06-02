@@ -8892,6 +8892,18 @@ export const features = {
       }
     }
   },
+  "document-modelcontext": {
+    "description_html": "The <code>document.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
+    "kind": "feature",
+    "name": "document.modelContext",
+    "spec": [
+      "https://webmachinelearning.github.io/webmcp/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "document-picture-in-picture": {
     "description_html": "The document picture-in-picture API creates an always-on-top window from arbitrary HTML content.",
     "kind": "feature",
@@ -16276,16 +16288,8 @@ export const features = {
     }
   },
   "navigator-modelcontext": {
-    "description_html": "The <code>navigator.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
-    "kind": "feature",
-    "name": "navigator.modelContext",
-    "spec": [
-      "https://webmachinelearning.github.io/webmcp/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
+    "kind": "moved",
+    "redirect_target": "document-modelcontext"
   },
   "nesting": {
     "description_html": "CSS nesting allows for shorter selectors, easier reading, and more modularity by nesting rules inside others.",
@@ -24177,7 +24181,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "preview"
+      }
     }
   },
   "url-referrer-policy": {
