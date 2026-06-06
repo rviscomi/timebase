@@ -600,8 +600,12 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "null",
+        "date": "2026-07-28",
         "version": "151"
+      },
+      {
+        "date": "null",
+        "version": "152"
       },
       {
         "date": "null",
@@ -1117,8 +1121,12 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "null",
+        "date": "2026-07-28",
         "version": "151"
+      },
+      {
+        "date": "null",
+        "version": "152"
       }
     ]
   },
@@ -1440,6 +1448,10 @@ export const browsers = {
       {
         "date": "2026-07-30",
         "version": "151"
+      },
+      {
+        "date": "2026-08-27",
+        "version": "152"
       }
     ]
   },
@@ -5138,16 +5150,14 @@ export const bcdKeys = {
     "parent_feature_name": "Asynchronously iterable streams",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
+      "baseline": false,
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
         "firefox": "110",
         "firefox_android": "110",
-        "safari": "26.4",
-        "safari_ios": "26.4"
+        "safari": "preview"
       }
     },
     "spec": [
@@ -5215,6 +5225,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-position-4/#backdrop"
+    ]
+  },
+  "css.properties.background-clip.border-area": {
+    "parent_feature": "background-clip-border-area",
+    "parent_feature_name": "background-clip: border-area",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
     ]
   },
   "css.properties.baseline-shift": {
@@ -5881,6 +5909,21 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/interaction.html#close-requests-and-close-watchers"
+    ]
+  },
+  "css.types.color.color-mix.variadic_color_arguments": {
+    "parent_feature": "color-mix-variadic",
+    "parent_feature_name": "color-mix() with three or more colors",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#color-mix"
     ]
   },
   "css.properties.contain-intrinsic-block-size": {
@@ -8567,7 +8610,7 @@ export const bcdKeys = {
   },
   "api.HTMLInputElement.colorSpace": {
     "parent_feature": "input-color-alpha",
-    "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_name": "alpha and colorspace attributes for <input type=color>",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -8584,7 +8627,7 @@ export const bcdKeys = {
   },
   "html.elements.input.alpha": {
     "parent_feature": "input-color-alpha",
-    "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_name": "alpha and colorspace attributes for <input type=color>",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -8600,7 +8643,7 @@ export const bcdKeys = {
   },
   "html.elements.input.colorspace": {
     "parent_feature": "input-color-alpha",
-    "parent_feature_name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "parent_feature_name": "alpha and colorspace attributes for <input type=color>",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -8698,6 +8741,126 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
     ]
   },
+  "api.LanguageDetector": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.availability_static": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.create_static": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.destroy": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.detect": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.expectedInputLanguages": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.inputQuota": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
+  "api.LanguageDetector.measureInputUsage": {
+    "parent_feature": "languagedetector",
+    "parent_feature_name": "Language detector",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
+    ]
+  },
   "api.LanguageModel": {
     "parent_feature": "languagemodel",
     "parent_feature_name": "LanguageModel",
@@ -8705,8 +8868,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8720,8 +8882,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8735,8 +8896,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8750,8 +8910,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8765,8 +8924,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8780,8 +8938,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8795,8 +8952,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8810,8 +8966,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8825,8 +8980,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8840,8 +8994,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     },
     "spec": [
@@ -8955,9 +9108,41 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148"
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11980"
+    ]
+  },
+  "html.elements.audio.loading": {
+    "parent_feature": "loading-lazy-media",
+    "parent_feature_name": "Lazy-loading media",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11980"
+    ]
+  },
+  "html.elements.video.loading": {
+    "parent_feature": "loading-lazy-media",
+    "parent_feature_name": "Lazy-loading media",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
       }
     },
     "spec": [
@@ -11803,7 +11988,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer": {
@@ -11821,7 +12006,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.Sanitizer": {
@@ -11839,7 +12024,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.allowAttribute": {
@@ -11857,7 +12042,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.allowElement": {
@@ -11875,7 +12060,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.get": {
@@ -11893,7 +12078,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.removeAttribute": {
@@ -11911,7 +12096,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.removeElement": {
@@ -11929,7 +12114,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.removeUnsafe": {
@@ -11947,7 +12132,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.replaceElementWithChildren": {
@@ -11965,7 +12150,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.setComments": {
@@ -11983,7 +12168,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.Sanitizer.setDataAttributes": {
@@ -12001,7 +12186,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ]
   },
   "api.CustomElementRegistry.CustomElementRegistry": {
@@ -12809,9 +12994,10 @@ export const bcdKeys = {
   "api.Document.hasStorageAccess": {
     "parent_feature": "storage-access",
     "parent_feature_name": "Storage access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-05",
       "baseline_low_date": "2023-12-05",
       "support": {
         "chrome": "119",
@@ -12830,9 +13016,10 @@ export const bcdKeys = {
   "api.Document.requestStorageAccess": {
     "parent_feature": "storage-access",
     "parent_feature_name": "Storage access",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-05",
       "baseline_low_date": "2023-12-05",
       "support": {
         "chrome": "119",
@@ -12934,6 +13121,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ]
+  },
+  "css.at-rules.container.style_queries_for_custom_properties.range_syntax": {
+    "parent_feature": "style-query-range-syntax",
+    "parent_feature_name": "Range syntax for style queries",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142",
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
     ]
   },
   "css.properties.grid-template-columns.subgrid": {
@@ -13528,6 +13733,156 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-transitions-2/"
     ]
   },
+  "api.Translator": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.availability_static": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.create_static": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.destroy": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.inputQuota": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.measureInputUsage": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.sourceLanguage": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.targetLanguage": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.translate": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
+  "api.Translator.translateStreaming": {
+    "parent_feature": "translator",
+    "parent_feature_name": "Translator",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://webmachinelearning.github.io/translation-api/#translator-api"
+    ]
+  },
   "css.at-rules.media.update": {
     "parent_feature": "update",
     "parent_feature_name": "Update frequency media query",
@@ -13644,7 +13999,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13660,7 +14017,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview"
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
       }
     },
     "spec": [
@@ -13674,7 +14033,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "safari": "26.2",
         "safari_ios": "26.2"
       }

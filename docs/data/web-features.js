@@ -600,8 +600,12 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "null",
+        "date": "2026-07-28",
         "version": "151"
+      },
+      {
+        "date": "null",
+        "version": "152"
       },
       {
         "date": "null",
@@ -1117,8 +1121,12 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "null",
+        "date": "2026-07-28",
         "version": "151"
+      },
+      {
+        "date": "null",
+        "version": "152"
       }
     ]
   },
@@ -1440,6 +1448,10 @@ export const browsers = {
       {
         "date": "2026-07-30",
         "version": "151"
+      },
+      {
+        "date": "2026-08-27",
+        "version": "152"
       }
     ]
   },
@@ -3315,7 +3327,9 @@ export const features = {
         "chrome": "93",
         "edge": "93",
         "firefox": "92",
-        "firefox_android": "92"
+        "firefox_android": "92",
+        "safari": "26.2",
+        "safari_ios": "26.2"
       }
     }
   },
@@ -4910,6 +4924,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -5477,7 +5494,7 @@ export const features = {
     "kind": "feature",
     "name": "BMP",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc7903#section-1.2"
+      "https://www.rfc-editor.org/info/rfc7903/#section-1.2"
     ],
     "status": {
       "baseline": "high",
@@ -5709,7 +5726,7 @@ export const features = {
     "kind": "feature",
     "name": "Brotli compression",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc7932"
+      "https://www.rfc-editor.org/info/rfc7932/"
     ],
     "status": {
       "baseline": "high",
@@ -6745,6 +6762,21 @@ export const features = {
         "firefox_android": "113",
         "safari": "16.2",
         "safari_ios": "16.2"
+      }
+    }
+  },
+  "color-mix-variadic": {
+    "description_html": "The <code>color-mix()</code> CSS function accepts three or more colors.",
+    "kind": "feature",
+    "name": "color-mix() with three or more colors",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#color-mix"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "150",
+        "firefox_android": "150"
       }
     }
   },
@@ -8065,7 +8097,7 @@ export const features = {
     "kind": "feature",
     "name": "Data URLs",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc2397"
+      "https://www.rfc-editor.org/info/rfc2397/"
     ],
     "status": {
       "baseline": "high",
@@ -12182,7 +12214,7 @@ export const features = {
     "kind": "feature",
     "name": "HTTP Strict Transport Security",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc6797"
+      "https://www.rfc-editor.org/info/rfc6797/"
     ],
     "status": {
       "baseline": "high",
@@ -12274,7 +12306,7 @@ export const features = {
     "spec": [
       "https://httpwg.org/specs/rfc9110.html#authentication",
       "https://httpwg.org/specs/rfc7616.html",
-      "https://www.rfc-editor.org/rfc/rfc4120"
+      "https://www.rfc-editor.org/info/rfc4120/"
     ],
     "status": {
       "baseline": "high",
@@ -13090,7 +13122,7 @@ export const features = {
   "input-color-alpha": {
     "description_html": "The ability to control the opacity of a color picked using <code>&#x3C;input type=\"color\"></code> and determine the colorspace of the selected color.",
     "kind": "feature",
-    "name": "`alpha` and `colorspace` attributes for `<input type=color>`",
+    "name": "alpha and colorspace attributes for <input type=color>",
     "spec": [
       "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
     ],
@@ -14456,7 +14488,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138"
+        "chrome": "138",
+        "edge": "148"
       }
     }
   },
@@ -14470,8 +14503,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "148",
-        "edge": "148"
+        "chrome": "148"
       }
     }
   },
@@ -14933,7 +14965,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
     }
   },
   "local-fonts": {
@@ -20074,7 +20110,7 @@ export const features = {
     "kind": "feature",
     "name": "Sanitizer API",
     "spec": [
-      "https://wicg.github.io/sanitizer-api/"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
     ],
     "status": {
       "baseline": false,
@@ -21803,7 +21839,8 @@ export const features = {
       "https://privacycg.github.io/storage-access/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-05",
       "baseline_low_date": "2023-12-05",
       "support": {
         "chrome": "119",
@@ -23803,7 +23840,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138"
+        "chrome": "138",
+        "edge": "148"
       }
     }
   },
@@ -24166,7 +24204,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -24182,7 +24222,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview"
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
       }
     }
   },
@@ -24196,7 +24238,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -25598,11 +25642,14 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2022-09-24",
+      "baseline_low_date": "2020-03-24",
       "support": {
         "chrome": "63",
         "chrome_android": "63",
         "edge": "79",
+        "firefox": "55",
         "firefox_android": "51",
         "safari": "13.1",
         "safari_ios": "13.4"
@@ -25617,11 +25664,14 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2022-09-24",
+      "baseline_low_date": "2020-03-24",
       "support": {
         "chrome": "49",
         "chrome_android": "49",
         "edge": "79",
+        "firefox": "55",
         "firefox_android": "30",
         "safari": "13.1",
         "safari_ios": "13.4"
@@ -25981,7 +26031,7 @@ export const features = {
     "kind": "feature",
     "name": "WebP",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc9649"
+      "https://www.rfc-editor.org/info/rfc9649/"
     ],
     "status": {
       "baseline": "high",
@@ -26944,7 +26994,7 @@ export const features = {
     "kind": "feature",
     "name": "Zstandard compression",
     "spec": [
-      "https://www.rfc-editor.org/rfc/rfc8878"
+      "https://www.rfc-editor.org/info/rfc8878/"
     ],
     "status": {
       "baseline": "low",
