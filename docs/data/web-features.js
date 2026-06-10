@@ -592,20 +592,8 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "2026-06-02",
-        "version": "149"
-      },
-      {
-        "date": "2026-06-30",
-        "version": "150"
-      },
-      {
-        "date": "2026-07-28",
-        "version": "151"
-      },
-      {
         "date": "null",
-        "version": "152"
+        "version": "149"
       },
       {
         "date": "null",
@@ -1113,20 +1101,8 @@ export const browsers = {
         "version": "148"
       },
       {
-        "date": "2026-06-02",
-        "version": "149"
-      },
-      {
-        "date": "2026-06-30",
-        "version": "150"
-      },
-      {
-        "date": "2026-07-28",
-        "version": "151"
-      },
-      {
         "date": "null",
-        "version": "152"
+        "version": "149"
       }
     ]
   },
@@ -1430,7 +1406,7 @@ export const browsers = {
         "version": "146"
       },
       {
-        "date": "2026-04-10",
+        "date": "2026-04-09",
         "version": "147"
       },
       {
@@ -1440,18 +1416,6 @@ export const browsers = {
       {
         "date": "2026-06-04",
         "version": "149"
-      },
-      {
-        "date": "2026-07-02",
-        "version": "150"
-      },
-      {
-        "date": "2026-07-30",
-        "version": "151"
-      },
-      {
-        "date": "2026-08-27",
-        "version": "152"
       }
     ]
   },
@@ -2079,14 +2043,6 @@ export const browsers = {
         "version": "152"
       },
       {
-        "date": "2026-07-21",
-        "version": "153"
-      },
-      {
-        "date": "2026-08-18",
-        "version": "154"
-      },
-      {
         "date": "null",
         "version": "preview"
       }
@@ -2638,14 +2594,6 @@ export const browsers = {
       {
         "date": "2026-06-16",
         "version": "152"
-      },
-      {
-        "date": "2026-07-21",
-        "version": "153"
-      },
-      {
-        "date": "2026-08-18",
-        "version": "154"
       }
     ]
   },
@@ -2885,10 +2833,6 @@ export const browsers = {
         "version": "26.4"
       },
       {
-        "date": "2026-05-11",
-        "version": "26.5"
-      },
-      {
         "date": "null",
         "version": "preview"
       }
@@ -3116,10 +3060,6 @@ export const browsers = {
       {
         "date": "2026-03-24",
         "version": "26.4"
-      },
-      {
-        "date": "2026-05-11",
-        "version": "26.5"
       }
     ]
   }
@@ -3327,9 +3267,7 @@ export const features = {
         "chrome": "93",
         "edge": "93",
         "firefox": "92",
-        "firefox_android": "92",
-        "safari": "26.2",
-        "safari_ios": "26.2"
+        "firefox_android": "92"
       }
     }
   },
@@ -3401,27 +3339,6 @@ export const features = {
         "safari": "18.2",
         "safari_ios": "18.2"
       }
-    }
-  },
-  "ad-selection": {
-    "description_html": "The Ad Selection API facilitates advertisement sales by allowing sites to register users as part of an interest group or to choose which ads appear based on those interest groups, while minimizing the ability of advertisers to track specific members of the interest group.",
-    "discouraged": {
-      "according_to": [
-        "https://groups.google.com/a/chromium.org/g/blink-dev/c/k_nubsMb97g/m/aAp_5MTXBQAJ",
-        "https://chromestatus.com/feature/6552486106234880"
-      ],
-      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
-      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
-      "removal_date": "2026-06-01"
-    },
-    "kind": "feature",
-    "name": "Ad selection",
-    "spec": [
-      "https://github.com/WICG/privacy-preserving-ads"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
     }
   },
   "address": {
@@ -3685,21 +3602,6 @@ export const features = {
       }
     }
   },
-  "app-migration": {
-    "description_html": "The <code>migrate_to</code> and <code>migrate_from</code> web app manifest members move an installed app from one origin to another, within the same site. They preserve the user's installation settings on the device, like shortcuts.",
-    "kind": "feature",
-    "name": "Web app origin migration",
-    "spec": [
-      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "edge": "149"
-      }
-    }
-  },
   "app-protocol-handlers": {
     "description_html": "The <code>protocol_handlers</code> web app manifest member registers an installed web app as a handler for a specific protocol. When a user follows a link with the specified protocol, the installed app opens the link.",
     "kind": "feature",
@@ -3805,8 +3707,7 @@ export const features = {
       "https://w3c.github.io/aria/#accessibilityroleandproperties-correspondence"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-04-24",
+      "baseline": "low",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "103",
@@ -4924,9 +4825,6 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -5219,14 +5117,11 @@ export const features = {
       "https://drafts.csswg.org/css-inline-3/#baseline-shift-property"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
+      "baseline": false,
       "support": {
         "chrome": "1",
         "chrome_android": "18",
         "edge": "79",
-        "firefox": "149",
-        "firefox_android": "149",
         "safari": "4",
         "safari_ios": "3.2"
       }
@@ -5489,28 +5384,6 @@ export const features = {
       }
     }
   },
-  "bmp": {
-    "description_html": "The BMP image format is an uncompressed raster graphics file format. Also known as a bitmap.",
-    "kind": "feature",
-    "name": "BMP",
-    "spec": [
-      "https://www.rfc-editor.org/info/rfc7903/#section-1.2"
-    ],
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
-      "support": {
-        "chrome": "1",
-        "chrome_android": "18",
-        "edge": "12",
-        "firefox": "1",
-        "firefox_android": "4",
-        "safari": "1",
-        "safari_ios": "1"
-      }
-    }
-  },
   "body": {
     "description_html": "The <code>&#x3C;body></code> element represents the content of an HTML document.",
     "kind": "feature",
@@ -5574,22 +5447,6 @@ export const features = {
         "firefox_android": "4",
         "safari": "5",
         "safari_ios": "4.2"
-      }
-    }
-  },
-  "border-shape": {
-    "description_html": "The <code>border-shape</code> CSS property sets the geometry of the border box, changing the shape of any applicable border, border image, focus outline, or shadow.",
-    "kind": "feature",
-    "name": "border-shape",
-    "spec": [
-      "https://drafts.csswg.org/css-borders-4/#border-shape"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "147",
-        "chrome_android": "147",
-        "edge": "147"
       }
     }
   },
@@ -5726,7 +5583,7 @@ export const features = {
     "kind": "feature",
     "name": "Brotli compression",
     "spec": [
-      "https://www.rfc-editor.org/info/rfc7932/"
+      "https://www.rfc-editor.org/rfc/rfc7932"
     ],
     "status": {
       "baseline": "high",
@@ -5982,18 +5839,6 @@ export const features = {
         "safari": "16.4",
         "safari_ios": "16.4"
       }
-    }
-  },
-  "canvas-html": {
-    "description_html": "A <code>&#x3C;canvas></code> HTML element with the <code>layoutsubtree</code> attribute can draw descendant elements in its rendering context. You can use it to style and layout text in a canvas, expose canvas content to browser features (like accessibility, translate, or find-in-page), and apply 2D and 3D effects to HTML.",
-    "kind": "feature",
-    "name": "HTML in canvas",
-    "spec": [
-      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
     }
   },
   "canvas-reset": {
@@ -6374,10 +6219,14 @@ export const features = {
       "https://w3c.github.io/webappsec-clear-site-data/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2023-09-18",
       "support": {
-        "firefox": "138",
-        "firefox_android": "138",
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "63",
+        "firefox_android": "63",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -6465,8 +6314,7 @@ export const features = {
       "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
+      "baseline": "low",
       "baseline_low_date": "2023-11-02",
       "support": {
         "chrome": "119",
@@ -6480,7 +6328,7 @@ export const features = {
     }
   },
   "clipboard-custom-format": {
-    "description_html": "The <code>web </code> prefix for <code>ClipboardItem</code> data types (also known as MIME types) allows reading and writing unsanitized custom data from the device clipboard.",
+    "description_html": "The <code>web </code> prefix for <code>ClipboardItem</code> data types (also known as MIME types) allows reading and writing ununsanitized custom data from the device clipboard.",
     "kind": "feature",
     "name": "Custom formats for clipboard items",
     "spec": [
@@ -6762,21 +6610,6 @@ export const features = {
         "firefox_android": "113",
         "safari": "16.2",
         "safari_ios": "16.2"
-      }
-    }
-  },
-  "color-mix-variadic": {
-    "description_html": "The <code>color-mix()</code> CSS function accepts three or more colors.",
-    "kind": "feature",
-    "name": "color-mix() with three or more colors",
-    "spec": [
-      "https://drafts.csswg.org/css-color-5/#color-mix"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "firefox": "150",
-        "firefox_android": "150"
       }
     }
   },
@@ -7333,14 +7166,11 @@ export const features = {
       "https://drafts.csswg.org/css-conditional-5/#style-container"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-19",
+      "baseline": false,
       "support": {
         "chrome": "111",
         "chrome_android": "111",
         "edge": "111",
-        "firefox": "151",
-        "firefox_android": "151",
         "safari": "18",
         "safari_ios": "18"
       }
@@ -7451,7 +7281,7 @@ export const features = {
     "kind": "feature",
     "name": "context-fill and context-stroke",
     "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/painting.html#SpecifyingPaint"
+      "https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint"
     ],
     "status": {
       "baseline": false,
@@ -7472,12 +7302,8 @@ export const features = {
       "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-04-10",
+      "baseline": false,
       "support": {
-        "chrome": "147",
-        "chrome_android": "147",
-        "edge": "147",
         "firefox": "146",
         "firefox_android": "146",
         "safari": "26",
@@ -7729,12 +7555,8 @@ export const features = {
       "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-07",
+      "baseline": false,
       "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
         "firefox": "65",
         "firefox_android": "65",
         "safari": "7",
@@ -8097,7 +7919,7 @@ export const features = {
     "kind": "feature",
     "name": "Data URLs",
     "spec": [
-      "https://www.rfc-editor.org/info/rfc2397/"
+      "https://www.rfc-editor.org/rfc/rfc2397"
     ],
     "status": {
       "baseline": "high",
@@ -8310,7 +8132,7 @@ export const features = {
     }
   },
   "del": {
-    "description_html": "The <code>&#x3C;del></code> element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
+    "description_html": "The <code>&#x3C;del></code> element element represents a range of text that has been deleted from a document, styling text as strikethrough by default.",
     "kind": "feature",
     "name": "<del>",
     "spec": [
@@ -8440,18 +8262,6 @@ export const features = {
         "safari": "17.2",
         "safari_ios": "17.2"
       }
-    }
-  },
-  "device-bound-session-credentials": {
-    "description_html": "Device-bound session credentials is a protocol to request proof of possession of a private key. Regularly confirming key possession can help protect against cookie theft.",
-    "kind": "feature",
-    "name": "Device-bound session credentials",
-    "spec": [
-      "https://w3c.github.io/webappsec-dbsc/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
     }
   },
   "device-memory": {
@@ -8835,12 +8645,12 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline_high_date": "≤2019-10-05",
+      "baseline_low_date": "≤2017-04-05",
       "support": {
         "chrome": "1",
         "chrome_android": "18",
-        "edge": "12",
+        "edge": "≤15",
         "firefox": "3",
         "firefox_android": "4",
         "safari": "≤4",
@@ -8924,18 +8734,6 @@ export const features = {
       }
     }
   },
-  "document-modelcontext": {
-    "description_html": "The <code>document.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
-    "kind": "feature",
-    "name": "document.modelContext",
-    "spec": [
-      "https://webmachinelearning.github.io/webmcp/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
-  },
   "document-picture-in-picture": {
     "description_html": "The document picture-in-picture API creates an always-on-top window from arbitrary HTML content.",
     "kind": "feature",
@@ -8947,8 +8745,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "130",
-        "edge": "130",
-        "firefox": "151"
+        "edge": "130"
       }
     }
   },
@@ -9532,7 +9329,7 @@ export const features = {
   "exp-functions": {
     "description_html": "The <code>pow()</code>, <code>sqrt()</code>, <code>hypot()</code>, <code>log()</code>, and <code>exp()</code> CSS functions compute various exponential functions.",
     "kind": "feature",
-    "name": "Exponential functions (CSS)",
+    "name": "pow(), sqrt(), hypot(), log(), and exp()",
     "spec": [
       "https://drafts.csswg.org/css-values-4/#exponent-funcs"
     ],
@@ -9778,7 +9575,6 @@ export const features = {
         "chrome": "93",
         "chrome_android": "83",
         "edge": "93",
-        "firefox": "65",
         "safari": "14.1"
       }
     }
@@ -10034,7 +9830,7 @@ export const features = {
     }
   },
   "fetch-request-streams": {
-    "description_html": "The <code>fetch()</code> method and <code>Request()</code> constructor accept a <code>ReadableStream</code> object as the request's <code>body</code> option, to stream upload data to the server.",
+    "description_html": "A <code>fetch()</code> request uploads a stream of data to the server when a request's <code>body</code> property is a <code>ReadableStream</code> object.",
     "kind": "feature",
     "name": "Fetch upload streams",
     "spec": [
@@ -10045,7 +9841,9 @@ export const features = {
       "support": {
         "chrome": "105",
         "chrome_android": "105",
-        "edge": "105"
+        "edge": "105",
+        "safari": "11.1",
+        "safari_ios": "11.3"
       }
     }
   },
@@ -10073,14 +9871,11 @@ export const features = {
       "https://drafts.csswg.org/css-forms-1/#field-sizing"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
+      "baseline": false,
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "152",
-        "firefox_android": "152",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -11263,7 +11058,7 @@ export const features = {
     }
   },
   "form-associated-custom-elements": {
-    "description_html": "Custom elements may act like built-in form elements, via the <code>attachInternals()</code> method of <code>HTMLElement</code> and the <code>ElementInternals</code> API.",
+    "description_html": "Custom elements may act like built-in form elements, via the the <code>attachInternals()</code> method of <code>HTMLElement</code> and the <code>ElementInternals</code> API.",
     "kind": "feature",
     "name": "Form-associated custom elements",
     "spec": [
@@ -11529,11 +11324,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "144",
-        "chrome_android": "144",
-        "edge": "144"
-      }
+      "support": {}
     }
   },
   "get-computed-style": {
@@ -11626,28 +11417,6 @@ export const features = {
         "firefox_android": "144",
         "safari": "26.2",
         "safari_ios": "26.2"
-      }
-    }
-  },
-  "gif": {
-    "description_html": "The GIF (Graphics Interchange Format) image format is a raster graphics file format with animation and lossless compression.",
-    "kind": "feature",
-    "name": "GIF",
-    "spec": [
-      "https://www.w3.org/Graphics/GIF/spec-gif89a.txt#top"
-    ],
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
-      "support": {
-        "chrome": "1",
-        "chrome_android": "18",
-        "edge": "12",
-        "firefox": "1",
-        "firefox_android": "4",
-        "safari": "1",
-        "safari_ios": "1"
       }
     }
   },
@@ -11829,10 +11598,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
+      "support": {}
     }
   },
   "hardware-concurrency": {
@@ -12064,14 +11830,11 @@ export const features = {
       "https://drafts.csswg.org/css-highlight-api-1/"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
+      "baseline": false,
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "149",
-        "firefox_android": "149",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -12214,7 +11977,7 @@ export const features = {
     "kind": "feature",
     "name": "HTTP Strict Transport Security",
     "spec": [
-      "https://www.rfc-editor.org/info/rfc6797/"
+      "https://www.rfc-editor.org/rfc/rfc6797"
     ],
     "status": {
       "baseline": "high",
@@ -12306,7 +12069,7 @@ export const features = {
     "spec": [
       "https://httpwg.org/specs/rfc9110.html#authentication",
       "https://httpwg.org/specs/rfc7616.html",
-      "https://www.rfc-editor.org/info/rfc4120/"
+      "https://www.rfc-editor.org/rfc/rfc4120"
     ],
     "status": {
       "baseline": "high",
@@ -13122,7 +12885,7 @@ export const features = {
   "input-color-alpha": {
     "description_html": "The ability to control the opacity of a color picked using <code>&#x3C;input type=\"color\"></code> and determine the colorspace of the selected color.",
     "kind": "feature",
-    "name": "alpha and colorspace attributes for <input type=color>",
+    "name": "`alpha` and `colorspace` attributes for `<input type=color>`",
     "spec": [
       "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
     ],
@@ -13489,7 +13252,7 @@ export const features = {
     }
   },
   "ins": {
-    "description_html": "The <code>&#x3C;ins></code> element represents a range of text that has been inserted into a document, styling text as underlined by default.",
+    "description_html": "The <code>&#x3C;ins></code> element element represents a range of text that has been inserted into a document, styling text as underlined by default.",
     "kind": "feature",
     "name": "<ins>",
     "spec": [
@@ -14070,28 +13833,6 @@ export const features = {
       }
     }
   },
-  "jpeg": {
-    "description_html": "The JPEG image format is a raster graphics file format with lossy compression.",
-    "kind": "feature",
-    "name": "JPEG",
-    "spec": [
-      "https://jpeg.org/jpeg/#content"
-    ],
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
-      "support": {
-        "chrome": "1",
-        "chrome_android": "18",
-        "edge": "12",
-        "firefox": "1",
-        "firefox_android": "4",
-        "safari": "1",
-        "safari_ios": "1"
-      }
-    }
-  },
   "jpegxl": {
     "description_html": "The JPEG XL image format is a raster graphics file format that supports animation, alpha transparency, and lossy as well as lossless compression.",
     "kind": "feature",
@@ -14159,11 +13900,9 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
+      "baseline": false,
       "support": {
         "chrome": "80",
-        "chrome_android": "148",
         "edge": "80",
         "firefox": "114",
         "firefox_android": "114",
@@ -14488,8 +14227,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138",
-        "edge": "148"
+        "chrome": "138"
       }
     }
   },
@@ -14502,9 +14240,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
+      "support": {}
     }
   },
   "largest-contentful-paint": {
@@ -14619,8 +14355,7 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#lh"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
+      "baseline": "low",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "109",
@@ -14651,21 +14386,6 @@ export const features = {
         "firefox_android": "120",
         "safari": "17.5",
         "safari_ios": "17.5"
-      }
-    }
-  },
-  "light-dark-image": {
-    "description_html": "The <code>light-dark()</code> CSS function accepts, in addition to colors, two <code>&#x3C;image></code> values, such as a gradient or URL, and uses one depending on the current color scheme.",
-    "kind": "feature",
-    "name": "light-dark() image values",
-    "spec": [
-      "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "firefox": "150",
-        "firefox_android": "150"
       }
     }
   },
@@ -14965,11 +14685,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150"
-      }
+      "support": {}
     }
   },
   "local-fonts": {
@@ -14996,11 +14712,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
-      }
+      "support": {}
     }
   },
   "localstorage": {
@@ -15418,7 +15130,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-04-10",
+      "baseline_low_date": "2026-04-09",
       "support": {
         "chrome": "147",
         "chrome_android": "147",
@@ -15783,28 +15495,6 @@ export const features = {
       }
     }
   },
-  "meta-refresh": {
-    "description_html": "The <code>&#x3C;meta http-equiv=\"refresh\"></code> HTML element and the equivalent <code>Refresh</code> HTTP header trigger a page reload or redirect. They apply only when the page is fully loaded, after other HTTP redirects or scripted redirects that might execute before the page is fully loaded.",
-    "kind": "feature",
-    "name": "Meta refresh",
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh"
-    ],
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
-      "support": {
-        "chrome": "1",
-        "chrome_android": "18",
-        "edge": "12",
-        "firefox": "1",
-        "firefox_android": "4",
-        "safari": "≤4",
-        "safari_ios": "≤3.2"
-      }
-    }
-  },
   "meta-text-scale": {
     "description_html": "The <code>&#x3C;meta name=\"text-scale\" content=\"scale\" /></code> HTML element allows the browser's initial font size to be affected by the operating system text scale settings. The <code>&#x3C;meta name=\"text-scale\" content=\"legacy\" /></code> element is the default behavior that respects only browser font-size settings.",
     "kind": "feature",
@@ -15814,11 +15504,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "146",
-        "chrome_android": "146",
-        "edge": "146"
-      }
+      "support": {}
     }
   },
   "meta-theme-color": {
@@ -15961,11 +15647,11 @@ export const features = {
       "baseline_high_date": "2022-07-15",
       "baseline_low_date": "2020-01-15",
       "support": {
-        "chrome": "44",
-        "chrome_android": "44",
+        "chrome": "≤79",
+        "chrome_android": "≤79",
         "edge": "79",
-        "firefox": "23",
-        "firefox_android": "23",
+        "firefox": "≤23",
+        "firefox_android": "≤23",
         "safari": "≤9.1",
         "safari_ios": "≤9.3"
       }
@@ -16324,8 +16010,16 @@ export const features = {
     }
   },
   "navigator-modelcontext": {
-    "kind": "moved",
-    "redirect_target": "document-modelcontext"
+    "description_html": "The <code>navigator.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
+    "kind": "feature",
+    "name": "navigator.modelContext",
+    "spec": [
+      "https://webmachinelearning.github.io/webmcp/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
   },
   "nesting": {
     "description_html": "CSS nesting allows for shorter selectors, easier reading, and more modularity by nesting rules inside others.",
@@ -16358,6 +16052,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "67",
         "chrome_android": "67"
       }
     }
@@ -17025,7 +16720,7 @@ export const features = {
     "kind": "feature",
     "name": "Opacity (SVG)",
     "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
+      "https://svgwg.org/svg2-draft/render.html#ObjectAndGroupOpacityProperties"
     ],
     "status": {
       "baseline": "high",
@@ -17042,18 +16737,6 @@ export const features = {
       }
     }
   },
-  "opaquerange": {
-    "description_html": "The <code>createValueRange()</code> for form elements, such as <code>&#x3C;textarea></code> or <code>&#x3C;input type=\"text\"></code>, gets an <code>OpaqueRange</code> object that represents a live span of text. You can use this for range-based operations on the input text, such as setting custom highlights or placing autocomplete popovers.",
-    "kind": "feature",
-    "name": "OpaqueRange",
-    "spec": [
-      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/OpaqueRange/explainer.md"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
-  },
   "open-closed": {
     "kind": "moved",
     "redirect_target": "open-pseudo"
@@ -17066,21 +16749,19 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#open-state"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-11",
+      "baseline": false,
       "support": {
         "chrome": "133",
         "chrome_android": "133",
         "edge": "133",
         "firefox": "136",
         "firefox_android": "136",
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "safari": "preview"
       }
     }
   },
   "optional-catch-binding": {
-    "description_html": "Omit the binding parameter of a <code>catch</code> clause when you don't need information about the exception in a <code>try ... catch</code> statement.",
+    "description_html": "Omit the the binding parameter of a <code>catch</code> clause when you don't need information about the exception in a <code>try ... catch</code> statement.",
     "kind": "feature",
     "name": "Optional catch binding",
     "spec": [
@@ -17130,9 +16811,7 @@ export const features = {
       "support": {
         "chrome": "145",
         "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "edge": "145"
       }
     }
   },
@@ -17400,13 +17079,17 @@ export const features = {
       "https://drafts.csswg.org/css-overscroll-1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2025-03-12",
+      "baseline_low_date": "2022-09-12",
       "support": {
-        "chrome": "144",
-        "chrome_android": "144",
-        "edge": "144",
-        "firefox": "150",
-        "firefox_android": "150"
+        "chrome": "63",
+        "chrome_android": "63",
+        "edge": "18",
+        "firefox": "59",
+        "firefox_android": "59",
+        "safari": "16",
+        "safari_ios": "16"
       }
     }
   },
@@ -17670,7 +17353,7 @@ export const features = {
     "kind": "feature",
     "name": "paint-order",
     "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrder"
+      "https://svgwg.org/svg2-draft/painting.html#PaintOrder"
     ],
     "status": {
       "baseline": "low",
@@ -18474,7 +18157,7 @@ export const features = {
     }
   },
   "print-events": {
-    "description_html": "An alternative to <code>@media print</code> queries, the <code>beforeprint</code> and <code>afterprint</code> events allow you to change the page for printing and restore the page after printing.",
+    "description_html": "An alternative to <code>@media print</code> queries, the <code>beforeprint</code> and <code>afterprint</code> events allow you to change the page for printing and and restore the page after printing.",
     "kind": "feature",
     "name": "Print events",
     "spec": [
@@ -18726,30 +18409,6 @@ export const features = {
         "firefox_android": "121",
         "safari": "17.4",
         "safari_ios": "17.4"
-      }
-    }
-  },
-  "protected-audience": {
-    "description_html": "The protected audience API facilitates advertisement sales by allowing sites to register users as part of an interest group or to choose which ads appear based on those interest groups, while minimizing the ability of advertisers to track specific members of the interest group. Also known as FLEDGE.",
-    "discouraged": {
-      "according_to": [
-        "https://groups.google.com/a/chromium.org/g/blink-dev/c/k_nubsMb97g/m/aAp_5MTXBQAJ",
-        "https://chromestatus.com/feature/6552486106234880"
-      ],
-      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
-      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
-      "removal_date": "2026-06-01"
-    },
-    "kind": "feature",
-    "name": "Protected audience",
-    "spec": [
-      "https://wicg.github.io/turtledove/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "134",
-        "chrome_android": "134"
       }
     }
   },
@@ -19044,7 +18703,7 @@ export const features = {
       }
     }
   },
-  "rect-xywh": {
+  "rect-xywx": {
     "description_html": "The <code>rect()</code> CSS function creates a rectangle shape with insets from the edges of an element. The <code>xywh()</code> CSS function creates a rectangle shifted by an <code>x</code> and <code>y</code> distance. They can be used with <code>clip-path</code> and <code>shape-outside</code>.",
     "kind": "feature",
     "name": "rect() and xywh()",
@@ -19065,10 +18724,6 @@ export const features = {
         "safari_ios": "17.2"
       }
     }
-  },
-  "rect-xywx": {
-    "kind": "moved",
-    "redirect_target": "rect-xywh"
   },
   "referencetarget": {
     "description_html": "The <code>referenceTarget</code> property of a <code>ShadowRoot</code> object forwards attributes such as <code>for</code> and <code>aria-labelledby</code> to elements inside a shadow DOM. You can use this to, for example, link a <code>&#x3C;label></code> to its <code>&#x3C;input></code> even if the <code>&#x3C;input></code> is in the shadow DOM of a web component.",
@@ -19381,11 +19036,14 @@ export const features = {
     }
   },
   "reporting": {
-    "description_html": "The <code>Reporting-Endpoints</code> HTTP header and <code>ReportingObserver()</code> API send selected reports, such as Content Security Policy (CSP) violation reports or crash reports, to a nominated URL or callback function.",
+    "description_html": "The <code>Reporting-Endpoints</code> HTTP header and <code>ReportingObserver()</code> API send reports of Content Security Policy (CSP) violations, Permissions-Policy violations, deprecated feature usage, browser interventions, and crashes to a nominated URL or callback function.",
     "kind": "feature",
     "name": "Reporting API",
     "spec": [
-      "https://w3c.github.io/reporting/"
+      "https://w3c.github.io/reporting/",
+      "https://wicg.github.io/intervention-reporting/",
+      "https://wicg.github.io/deprecation-reporting/",
+      "https://w3c.github.io/webappsec-csp/#reporting"
     ],
     "status": {
       "baseline": "low",
@@ -19398,144 +19056,6 @@ export const features = {
         "firefox_android": "149",
         "safari": "16.4",
         "safari_ios": "16.4"
-      }
-    }
-  },
-  "reporting-coep-violations": {
-    "description_html": "COEP violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates its <code>Cross-Origin-Embedder-Policy</code> policy.",
-    "kind": "feature",
-    "name": "COEP violation reports",
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#coep-report-type"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "96",
-        "chrome_android": "96",
-        "edge": "96"
-      }
-    }
-  },
-  "reporting-crashes": {
-    "description_html": "Crash reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header when a user is unable to continue using the page because the browser or tab crashed.",
-    "kind": "feature",
-    "name": "Crash reporting",
-    "spec": [
-      "https://wicg.github.io/crash-reporting/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "96",
-        "chrome_android": "96",
-        "edge": "96",
-        "firefox": "149",
-        "firefox_android": "149"
-      }
-    }
-  },
-  "reporting-crashes-storage": {
-    "description_html": "The <code>window.crashReport</code> object is a key-value store to record information about your application's state. If there's a crash, then the data in the key-value store is sent to your crash reporting endpoint, to help you pinpoint the cause of the crash.",
-    "kind": "feature",
-    "name": "Crash report storage",
-    "spec": [
-      "https://wicg.github.io/crash-reporting/#crash-report-storage"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145"
-      }
-    }
-  },
-  "reporting-csp-violations": {
-    "description_html": "CSP violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates its content security policy.",
-    "kind": "feature",
-    "name": "CSP violation reports",
-    "spec": [
-      "https://w3c.github.io/webappsec-csp/#reporting"
-    ],
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-03-24",
-      "support": {
-        "chrome": "74",
-        "chrome_android": "74",
-        "edge": "79",
-        "firefox": "149",
-        "firefox_android": "149",
-        "safari": "18.4",
-        "safari_ios": "18.4"
-      }
-    }
-  },
-  "reporting-deprecation": {
-    "description_html": "Deprecation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page uses a deprecated API or other browser feature.",
-    "kind": "feature",
-    "name": "Deprecation reports",
-    "spec": [
-      "https://wicg.github.io/deprecation-reporting/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "69",
-        "chrome_android": "69",
-        "edge": "79"
-      }
-    }
-  },
-  "reporting-integrity-violations": {
-    "description_html": "Subresource integrity violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a resource request violates an integrity check.",
-    "kind": "feature",
-    "name": "Integrity violation reports",
-    "spec": [
-      "https://w3c.github.io/webappsec-subresource-integrity/#report-violations"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
-  },
-  "reporting-interventions": {
-    "description_html": "Intervention reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header when the browser has not honored an application's request, contrary to specified behavior, such as for security or privacy reasons.",
-    "discouraged": {
-      "according_to": [
-        "https://github.com/WICG/interventions/blob/2dc14cf385982835a5dee488e2b5295a9d441bea/README.md"
-      ],
-      "reason": "Specification authors no longer define browser behaviors as \"interventions\" or \"non-interventions.\"",
-      "reason_html": "Specification authors no longer define browser behaviors as \"interventions\" or \"non-interventions.\""
-    },
-    "kind": "feature",
-    "name": "Intervention reports",
-    "spec": [
-      "https://wicg.github.io/intervention-reporting/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "69",
-        "chrome_android": "69",
-        "edge": "79"
-      }
-    }
-  },
-  "reporting-permissions-policy-violations": {
-    "description_html": "Permissions policy violation reporting sends a report to a URL nominated by the <code>Reporting-Endpoints</code> header or the <code>ReportingObserver</code> API when a page violates a policy. You can also use the <code>Permissions-Policy-Report-Only</code> header to receive reports of what might break under a given policy.",
-    "kind": "feature",
-    "name": "Permissions policy violation reporting",
-    "spec": [
-      "https://w3c.github.io/webappsec-permissions-policy/#reporting"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120"
       }
     }
   },
@@ -19901,8 +19421,7 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
+      "baseline": "low",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "111",
@@ -20110,7 +19629,7 @@ export const features = {
     "kind": "feature",
     "name": "Sanitizer API",
     "spec": [
-      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-sanitization"
+      "https://wicg.github.io/sanitizer-api/"
     ],
     "status": {
       "baseline": false,
@@ -20684,8 +20203,7 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-04-13",
+      "baseline": "low",
       "baseline_low_date": "2023-10-13",
       "support": {
         "chrome": "118",
@@ -20856,8 +20374,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
+        "edge": "89"
       }
     }
   },
@@ -21201,7 +20718,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126"
+      }
     }
   },
   "shared-storage-locks": {
@@ -21237,11 +20758,9 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
+      "baseline": false,
       "support": {
         "chrome": "5",
-        "chrome_android": "148",
         "edge": "79",
         "firefox": "29",
         "firefox_android": "33",
@@ -21340,9 +20859,7 @@ export const features = {
       "support": {
         "chrome": "126",
         "chrome_android": "126",
-        "edge": "126",
-        "firefox": "150",
-        "firefox_android": "150"
+        "edge": "126"
       }
     }
   },
@@ -21839,8 +21356,7 @@ export const features = {
       "https://privacycg.github.io/storage-access/"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-05",
+      "baseline": "low",
       "baseline_low_date": "2023-12-05",
       "support": {
         "chrome": "119",
@@ -22179,8 +21695,7 @@ export const features = {
       "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-04-24",
+      "baseline": "low",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "111",
@@ -22364,28 +21879,6 @@ export const features = {
       }
     }
   },
-  "subresource-integrity": {
-    "description_html": "Subresource integrity verifies that a resource, such as script served from a content delivery network, matches a known cryptographic hash. Also known as SRI.",
-    "kind": "feature",
-    "name": "Subresource integrity",
-    "spec": [
-      "https://w3c.github.io/webappsec-subresource-integrity/"
-    ],
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2020-10-30",
-      "baseline_low_date": "2018-04-30",
-      "support": {
-        "chrome": "46",
-        "chrome_android": "46",
-        "edge": "17",
-        "firefox": "51",
-        "firefox_android": "51",
-        "safari": "11.1",
-        "safari_ios": "11.3"
-      }
-    }
-  },
   "summarizer": {
     "description_html": "The <code>Summarizer</code> API uses an on-device language model to summarize text.",
     "kind": "feature",
@@ -22396,8 +21889,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138",
-        "edge": "138"
+        "chrome": "138"
       }
     }
   },
@@ -22462,7 +21954,7 @@ export const features = {
     "kind": "feature",
     "name": "SVG",
     "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/"
+      "https://svgwg.org/svg2-draft/"
     ],
     "status": {
       "baseline": "high",
@@ -22483,7 +21975,7 @@ export const features = {
     "description_html": "The SVG 1.1 image format has several components that were excluded from SVG 2, such as fonts, alternate glyphs, and the <code>xlink</code> namespace.",
     "discouraged": {
       "according_to": [
-        "https://w3c.github.io/svgwg/svg2-draft/changes.html#substantial"
+        "https://svgwg.org/svg2-draft/changes.html#substantial"
       ],
       "alternatives": [
         "svg",
@@ -22977,12 +22469,8 @@ export const features = {
       "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-ink-all"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-07",
+      "baseline": false,
       "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
         "firefox": "75",
         "firefox_android": "79",
         "safari": "15.4",
@@ -23053,18 +22541,6 @@ export const features = {
         "safari": "10.1",
         "safari_ios": "10.3"
       }
-    }
-  },
-  "text-fit": {
-    "description_html": "The <code>text-fit</code> CSS property scales text to fill the inline size of its container. You can use this to grow or shrink headlines, captions, or pull quotes to fit a container.",
-    "kind": "feature",
-    "name": "text-fit",
-    "spec": [
-      "https://drafts.csswg.org/css-text-4/#propdef-text-fit"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
     }
   },
   "text-indent": {
@@ -23551,16 +23027,13 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-11",
+      "baseline": false,
       "support": {
         "chrome": "140",
         "chrome_android": "140",
         "edge": "140",
         "firefox": "145",
-        "firefox_android": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "firefox_android": "145"
       }
     }
   },
@@ -23840,15 +23313,14 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "138",
-        "edge": "148"
+        "chrome": "138"
       }
     }
   },
   "trig-functions": {
     "description_html": "The <code>sin()</code>, <code>cos()</code>, <code>tan()</code>, <code>asin()</code>, <code>acos()</code>, <code>atan()</code>, and <code>atan2()</code> CSS functions compute various trigonometric functions.",
     "kind": "feature",
-    "name": "Trigonometric functions (CSS)",
+    "name": "sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)",
     "spec": [
       "https://drafts.csswg.org/css-values-4/#trig-funcs"
     ],
@@ -24194,58 +23666,6 @@ export const features = {
       }
     }
   },
-  "url-cross-origin": {
-    "description_html": "The <code>url()</code> CSS function accepts a <code>cross-origin()</code> modifier to control cross-origin resource sharing (CORS) when requesting the URL. For example, <code>url(\"https://example.com\" cross-origin(anonymous))</code>) does not send credentials to the URL.",
-    "kind": "feature",
-    "name": "cross-origin() for url()",
-    "spec": [
-      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    }
-  },
-  "url-integrity": {
-    "description_html": "The <code>url()</code> CSS function accepts an <code>integrity()</code> modifier to use subresource integrity to verify the response from the requested URL.",
-    "kind": "feature",
-    "name": "integrity() for url()",
-    "spec": [
-      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150"
-      }
-    }
-  },
-  "url-referrer-policy": {
-    "description_html": "The <code>url()</code> CSS function accepts a <code>referrer-policy()</code> modifier to choose which referrer to send when requesting the URL.  For example, `url(\"https://example.com\" referrer-policy(no-referrer)) does not send a referrer to the URL.",
-    "kind": "feature",
-    "name": "referrer-policy() for url()",
-    "spec": [
-      "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    }
-  },
   "urlpattern": {
     "description_html": "The <code>URLPattern</code> API creates patterns that can be matched against URLs or URL components.",
     "kind": "feature",
@@ -24299,8 +23719,7 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
+      "baseline": "low",
       "baseline_low_date": "2023-11-21",
       "support": {
         "chrome": "72",
@@ -24314,7 +23733,7 @@ export const features = {
     }
   },
   "user-agent-sniffing": {
-    "description_html": "The <code>navigator.userAgent</code> property and several others loosely identify a browser. Selectively showing content based on the user agent string, also known as user agent sniffing, is unreliable. Consider using feature detection or user agent client hints instead.",
+    "description_html": "The <code>navigator.userAgent</code> property is the user agent string for the current browser. Selectively showing content based on the user agent string is unreliable. Consider using feature detection instead.",
     "kind": "feature",
     "name": "User agent sniffing",
     "spec": [
@@ -24322,16 +23741,16 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2019-03-20",
-      "baseline_low_date": "2016-09-20",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
       "support": {
         "chrome": "4",
         "chrome_android": "18",
         "edge": "12",
         "firefox": "3.5",
         "firefox_android": "4",
-        "safari": "10",
-        "safari_ios": "10"
+        "safari": "4",
+        "safari_ios": "5"
       }
     }
   },
@@ -24343,8 +23762,7 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#user-pseudos"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
+      "baseline": "low",
       "baseline_low_date": "2023-11-02",
       "support": {
         "chrome": "119",
@@ -24373,18 +23791,6 @@ export const features = {
         "firefox": "69",
         "firefox_android": "79"
       }
-    }
-  },
-  "usermedia": {
-    "description_html": "The <code>&#x3C;usermedia></code> HTML element represents a button that, upon activation, toggles camera or microphone streams. If needed, it may prompt the user to choose whether to grant the page access to the camera and microphone.",
-    "kind": "feature",
-    "name": "<usermedia>",
-    "spec": [
-      "https://github.com/WICG/PEPC/blob/main/usermedia_element.md"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
     }
   },
   "var": {
@@ -24548,19 +23954,15 @@ export const features = {
     }
   },
   "view-transitions-element-scoped": {
-    "description_html": "The <code>startViewTransition()</code> method of an <code>Element</code> object starts a view transition that affects only that element's DOM tree. You can use this to run separate elements' transitions concurrently.",
+    "description_html": "The <code>startViewTransition()</code> method of an <code>Element</code> object starts a view transition that affects only that element's DOM tree. The <code>contain: view-transition</code> CSS declaration contains the layout of the tree to be transitioned. You can use this to run separate elements' transitions concurrently.",
     "kind": "feature",
     "name": "Element-scoped view transitions",
     "spec": [
-      "https://drafts.csswg.org/css-view-transitions-2/#scoped-vt"
+      "https://github.com/WICG/view-transitions/blob/main/scoped-transitions.md"
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "147",
-        "chrome_android": "147",
-        "edge": "147"
-      }
+      "support": {}
     }
   },
   "viewport-segments": {
@@ -24771,14 +24173,12 @@ export const features = {
       "https://github.com/WebAssembly/branch-hinting/blob/main/proposals/branch-hinting/Overview.md"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-02-24",
+      "baseline": false,
       "support": {
         "chrome": "137",
         "chrome_android": "137",
         "edge": "137",
-        "firefox": "148",
-        "firefox_android": "148",
+        "firefox": "preview",
         "safari": "16",
         "safari_ios": "16"
       }
@@ -24974,8 +24374,8 @@ export const features = {
       "baseline_high_date": "2022-09-24",
       "baseline_low_date": "2020-03-24",
       "support": {
-        "chrome": "74",
-        "chrome_android": "74",
+        "chrome": "69",
+        "chrome_android": "69",
         "edge": "79",
         "firefox": "62",
         "firefox_android": "62",
@@ -25293,9 +24693,7 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "80",
-        "firefox_android": "80",
-        "safari": "16.4",
-        "safari_ios": "16.4"
+        "firefox_android": "80"
       }
     }
   },
@@ -25408,7 +24806,7 @@ export const features = {
     "kind": "feature",
     "name": "Web NFC",
     "spec": [
-      "https://w3c-cg.github.io/web-nfc/"
+      "https://w3c.github.io/web-nfc/"
     ],
     "status": {
       "baseline": false,
@@ -25463,8 +24861,7 @@ export const features = {
       "https://w3c.github.io/webauthn/#sctn-public-key-easy"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-04-24",
+      "baseline": "low",
       "baseline_low_date": "2023-10-24",
       "support": {
         "chrome": "85",
@@ -25642,14 +25039,11 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2022-09-24",
-      "baseline_low_date": "2020-03-24",
+      "baseline": false,
       "support": {
         "chrome": "63",
         "chrome_android": "63",
         "edge": "79",
-        "firefox": "55",
         "firefox_android": "51",
         "safari": "13.1",
         "safari_ios": "13.4"
@@ -25664,14 +25058,11 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2022-09-24",
-      "baseline_low_date": "2020-03-24",
+      "baseline": false,
       "support": {
         "chrome": "49",
         "chrome_android": "49",
         "edge": "79",
-        "firefox": "55",
         "firefox_android": "30",
         "safari": "13.1",
         "safari_ios": "13.4"
@@ -26031,7 +25422,7 @@ export const features = {
     "kind": "feature",
     "name": "WebP",
     "spec": [
-      "https://www.rfc-editor.org/info/rfc9649/"
+      "https://www.rfc-editor.org/rfc/rfc9649"
     ],
     "status": {
       "baseline": "high",
@@ -26932,12 +26323,8 @@ export const features = {
       "https://dom.spec.whatwg.org/#xslt"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline": false,
       "support": {
-        "chrome": "1",
-        "chrome_android": "18",
         "edge": "12",
         "firefox": "1",
         "firefox_android": "4",
@@ -26994,7 +26381,7 @@ export const features = {
     "kind": "feature",
     "name": "Zstandard compression",
     "spec": [
-      "https://www.rfc-editor.org/info/rfc8878/"
+      "https://www.rfc-editor.org/rfc/rfc8878"
     ],
     "status": {
       "baseline": "low",

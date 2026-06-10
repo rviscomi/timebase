@@ -150,7 +150,10 @@ export class ScrollManager {
           // First make the details visible but with opacity 0
           details.style.display = 'block';
           details.style.opacity = '0';
-          topRow.setAttribute('aria-expanded', 'true');
+          const toggleBtn = card.querySelector('.feature-toggle-btn');
+          if (toggleBtn) {
+            toggleBtn.setAttribute('aria-expanded', 'true');
+          }
           card.classList.add('expanded');
 
           // Force a reflow to ensure the browser calculates the expanded height

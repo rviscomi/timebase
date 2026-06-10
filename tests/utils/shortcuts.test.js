@@ -62,6 +62,22 @@ describe('Shortcuts Module', () => {
       document.dispatchEvent(event);
       // No error should occur
     });
+
+    it('should not trigger action when shortcuts are disabled in localStorage (except ?)', () => {
+      localStorage.setItem('timebase-shortcuts-enabled', 'false');
+      const event = new KeyboardEvent('keydown', { key: 'a' });
+      document.dispatchEvent(event);
+      expect(actions['a']).not.toHaveBeenCalled();
+      localStorage.removeItem('timebase-shortcuts-enabled');
+    });
+
+    it('should trigger ? even when shortcuts are disabled in localStorage', () => {
+      localStorage.setItem('timebase-shortcuts-enabled', 'false');
+      const event = new KeyboardEvent('keydown', { key: '?' });
+      document.dispatchEvent(event);
+      expect(actions['?']).toHaveBeenCalled();
+      localStorage.removeItem('timebase-shortcuts-enabled');
+    });
   });
 
   describe('setupShortcutsDialog', () => {
@@ -111,6 +127,45 @@ describe('Shortcuts Module', () => {
       dialog.dispatchEvent(event);
 
       expect(dialog.close).not.toHaveBeenCalled();
+    });
+
+    it('should initialize and toggle localStorage preference when checkbox is checked/unchecked', () => {
+      localStorage.removeItem('timebase-shortcuts-enabled');
+      const container = document.createElement('div');
+      container.innerHTML = '<input type="checkbox" id="toggle-shortcuts-pref">';
+      document.body.appendChild(container);
+
+      setupShortcutsDialog();
+      const checkbox = document.getElementById('toggle-shortcuts-pref');
+      expect(checkbox.checked).toBe(true); // default true
+
+      checkbox.checked = false;
+      checkbox.dispatchEvent(new Event('change'));
+      expect(localStorage.getItem('timebase-shortcuts-enabled')).toBe('false');
+
+      checkbox.checked = true;
+      checkbox.dispatchEvent(new Event('change'));
+      expect(localStorage.getItem('timebase-shortcuts-enabled')).toBe('true');
+
+      container.remove();
+      localStorage.removeItem('timebase-shortcuts-enabled');
+    });
+
+    it('should restore focus to the previously active element when dialog is closed', () => {
+      const button = document.createElement('button');
+      document.body.appendChild(button);
+      button.focus();
+
+      const manager = setupShortcutsDialog();
+      manager.show();
+      expect(dialog.showModal).toHaveBeenCalled();
+
+      // Trigger dialog close event to restore focus
+      const closeEvent = new Event('close');
+      dialog.dispatchEvent(closeEvent);
+
+      expect(document.activeElement).toBe(button);
+      button.remove();
     });
   });
 });

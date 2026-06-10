@@ -12,12 +12,12 @@ export function createDateHeader(date) {
   const monthName = date.toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
   const anchorId = `${monthName}-${date.getFullYear()}`;
   return `
-    <div class="date-header">
-      <a href="#${anchorId}" class="date-link" title="Link to ${monthText}">
+    <h2 class="date-header">
+      <a href="#${anchorId}" class="date-link" aria-label="Permalink to ${monthText}">
         ${monthText}
-        <span class="link-icon">🔗</span>
+        <span class="link-icon" aria-hidden="true">🔗</span>
       </a>
-    </div>
+    </h2>
   `;
 }
 
@@ -28,10 +28,11 @@ export function createBrowserTag(browser, version) {
     const platform = browser.split('_')[1];
     displayText += ` (${platform.charAt(0).toUpperCase() + platform.slice(1)})`;
   }
+  const browserNameFormatted = baseBrowser.charAt(0).toUpperCase() + baseBrowser.slice(1);
 
   return `
-    <button class="browser-tag ${browser}" type="button" data-browser="${browser}" data-version="${version}" data-filter="${browser}:${version}" aria-pressed="false">
-      <img src="images/${baseBrowser}.svg" alt="${browser} logo" class="browser-logo">
+    <button class="browser-tag ${browser}" type="button" data-browser="${browser}" data-version="${version}" data-filter="${browser}:${version}" aria-pressed="false" aria-label="Filter timeline by ${browserNameFormatted} version ${displayText}">
+      <img src="images/${baseBrowser}.svg" alt="" class="browser-logo" aria-hidden="true">
       <span>${displayText}</span>
     </button>
   `;
@@ -191,13 +192,16 @@ export function createBrowserSupportTable(item) {
       `;
     });
 
+    const escapedOriginalName = escapeHtml(item.name);
+
     browserTableHTML = `
       <div class="browser-support-table-container">
         <table class="browser-support-table">
+          <caption class="visually-hidden">Browser support details for ${escapedOriginalName}</caption>
           <thead>
             <tr>
-              <th>Browser Version</th>
-              <th>Release Date</th>
+              <th scope="col">Browser Version</th>
+              <th scope="col">Release Date</th>
             </tr>
           </thead>
           <tbody>
@@ -235,7 +239,7 @@ export function createBcdKeysList(item, bcdKeys) {
   };
   
   // Create color bar segments
-  let colorBarHTML = '<div class="bcd-keys-color-bar">';
+  let colorBarHTML = '<div class="bcd-keys-color-bar" aria-hidden="true">';
   keys.forEach(key => {
     const colorClass = getBaselineColor(key.baseline);
     const label = getBaselineLabel(key.baseline);
@@ -258,7 +262,7 @@ export function createBcdKeysList(item, bcdKeys) {
   
   return `
     <div class="bcd-keys-section">
-      <h3>BCD Keys (${keys.length})</h3>
+      <h4>BCD Keys (${keys.length})</h4>
       ${colorBarHTML}
       ${keysHTML}
     </div>
@@ -279,35 +283,39 @@ export function createCard(item, options = {}) {
   if (baseline !== undefined) {
     let iconName;
     let titleText;
+    let altText = '';
     if (baseline === false) {
       iconName = 'baseline-limited-icon.svg';
       titleText = item.discouraged ? 'This feature is discouraged' : 'Limited availability across browsers';
+      altText = 'Limited availability';
     } else if (item.displayType === 'widely-available') {
       iconName = 'baseline-widely-icon.svg';
       titleText = `Baseline ${item.displayName}`;
+      altText = 'Widely available';
     } else if (item.displayType === 'newly-available') {
       iconName = 'baseline-newly-icon.svg';
       titleText = `Baseline ${item.displayName}`;
+      altText = 'Newly available';
     }
     if (iconName) {
-      baselineIconHTML = `<img src="images/${iconName}" alt="${iconName.replace('baseline-', '').replace('-icon.svg', '')} support" class="baseline-icon" title="${titleText}">`;
+      baselineIconHTML = `<img src="images/${iconName}" alt="${altText}" class="baseline-icon" title="${titleText}">`;
     }
   }
 
-  let itemName = item.name;
+  let predictionHTML = '';
   if (item.prediction) {
-    itemName = '🔮 ' + itemName;
+    predictionHTML = '<span aria-hidden="true">🔮 </span><span class="visually-hidden">Predicted: </span>';
   }
 
-  const escapedName = escapeHtml(itemName);
+  const escapedName = escapeHtml(item.name);
   const escapedOriginalName = escapeHtml(item.name);
 
   let upvoteHTML = '';
   if (item.developerSignal) {
     upvoteHTML = `
       <div class="upvote-info title-upvote">
-        <a href="${item.developerSignal.url}" class="upvote-count" target="_blank" rel="noopener noreferrer">
-          <span class="upvote-icon">👍</span> ${item.developerSignal.votes}
+        <a href="${item.developerSignal.url}" class="upvote-count" target="_blank" rel="noopener noreferrer" aria-label="${item.developerSignal.votes} developer signals on GitHub">
+          <span class="upvote-icon" aria-hidden="true">👍</span> ${item.developerSignal.votes}
         </a>
       </div>
     `;
@@ -417,29 +425,29 @@ export function createCard(item, options = {}) {
   let parentFeatureHTML = '';
   if (renderParentFeature && item.parent_feature && item.parent_feature !== item.id) {
     const parentCardType = item.parent_feature_baseline === false ? 'limited-availability' : 'newly-available';
-    parentFeatureHTML = `<div class="parent-feature-info">Part of: <a href="../index.html#feature-${item.parent_feature}-${parentCardType}" target="_blank">${escapeHtml(item.parent_feature_name || item.parent_feature)}</a></div>`;
+    parentFeatureHTML = `<div class="parent-feature-info">Part of: <a href="../index.html#feature-${item.parent_feature}-${parentCardType}" target="_blank" rel="noopener">${escapeHtml(item.parent_feature_name || item.parent_feature)}<span class="visually-hidden"> (opens in a new tab)</span></a></div>`;
   }
 
   let linksHTML = '';
   if (item.spec) {
-    linksHTML += `<a href="${item.spec}" class="spec-link" target="_blank">Specification</a>`;
+    linksHTML += `<a href="${item.spec}" class="spec-link" target="_blank" rel="noopener">Specification<span class="visually-hidden"> for ${escapedOriginalName} (opens in a new tab)</span></a>`;
   }
-  linksHTML += `<a href="https://webstatus.dev/features/${getWebStatusId(item)}" class="webstatus-link" target="_blank">Web Status</a>`;
-  linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${getWebFeaturesId(item)}/" class="web-platform-dx-link" target="_blank">Web Features Explorer</a>`;
+  linksHTML += `<a href="https://webstatus.dev/features/${getWebStatusId(item)}" class="webstatus-link" target="_blank" rel="noopener">Web Status<span class="visually-hidden"> for ${escapedOriginalName} (opens in a new tab)</span></a>`;
+  linksHTML += `<a href="https://web-platform-dx.github.io/web-features-explorer/features/${getWebFeaturesId(item)}/" class="web-platform-dx-link" target="_blank" rel="noopener">Web Features Explorer<span class="visually-hidden"> for ${escapedOriginalName} (opens in a new tab)</span></a>`;
   if (item.mdn) {
     const mdnEntry = item.mdn[0];
-    linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank">MDN</a>`;
+    linksHTML += `<a href="${mdnEntry.url}" class="mdn-link" title="${escapeHtml(mdnEntry.title)}" target="_blank" rel="noopener">MDN<span class="visually-hidden"> documentation for ${escapedOriginalName} (opens in a new tab)</span></a>`;
   }
   if (item.chromeContent) {
     // Show one link from web.dev if available
     if (item.chromeContent['web.dev'] && item.chromeContent['web.dev'].length > 0) {
       const webDevUrl = item.chromeContent['web.dev'][0];
-      linksHTML += `<a href="${webDevUrl}" class="webdev-link" target="_blank">web.dev</a>`;
+      linksHTML += `<a href="${webDevUrl}" class="webdev-link" target="_blank" rel="noopener">web.dev<span class="visually-hidden"> article for ${escapedOriginalName} (opens in a new tab)</span></a>`;
     }
     // Show one link from developer.chrome.com if available
     if (item.chromeContent['developer.chrome.com'] && item.chromeContent['developer.chrome.com'].length > 0) {
       const chromeDevUrl = item.chromeContent['developer.chrome.com'][0];
-      linksHTML += `<a href="${chromeDevUrl}" class="chromedev-link" target="_blank">developer.chrome.com</a>`;
+      linksHTML += `<a href="${chromeDevUrl}" class="chromedev-link" target="_blank" rel="noopener">developer.chrome.com<span class="visually-hidden"> article for ${escapedOriginalName} (opens in a new tab)</span></a>`;
     }
   }
 
@@ -471,14 +479,17 @@ export function createCard(item, options = {}) {
   return `
     <div id="${uniqueCardId}" class="${classes.join(' ')}"${dataAttrs}>
       <div class="feature-card-header">
-        <div class="feature-top-row" style="cursor: pointer;" aria-expanded="false" aria-controls="details-${uniqueCardId}">
+        <div class="feature-top-row">
           <div class="title-container">
-            <h2 class="feature-title">
-              ${baselineIconHTML}
-              <span>${escapedName}</span>
+            <h3 class="feature-title">
+              <button class="feature-toggle-btn" type="button" aria-expanded="false" aria-controls="details-${uniqueCardId}">
+                ${baselineIconHTML}
+                ${predictionHTML}
+                <span>${escapedName}</span>
+              </button>
               ${upvoteHTML}
-              <a href="#${uniqueCardId}" class="feature-link-icon" title="Link to ${escapedOriginalName} (${displayTypeForTooltip})">🔗</a>
-            </h2>
+              <a href="#${uniqueCardId}" class="feature-link-icon" aria-label="Permalink to ${escapedOriginalName} (${displayTypeForTooltip})"><span aria-hidden="true">🔗</span></a>
+            </h3>
           </div>
           <div class="browser-support">${browserTagsHTML}${interopHTML}</div>
         </div>

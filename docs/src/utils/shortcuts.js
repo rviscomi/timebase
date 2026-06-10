@@ -17,6 +17,13 @@ export function setupShortcuts(actions) {
     }
 
     const key = e.key.toLowerCase();
+
+    // Always allow the '?' shortcut to open the dialog,
+    // but check preference for all other single-key shortcuts.
+    if (key !== '?' && localStorage.getItem('timebase-shortcuts-enabled') === 'false') {
+      return;
+    }
+
     if (actions[key]) {
       actions[key]();
     }
@@ -32,6 +39,19 @@ export function setupShortcuts(actions) {
 export function setupShortcutsDialog(dialogId = 'shortcuts-dialog', closeBtnId = 'close-shortcuts') {
   const dialog = document.getElementById(dialogId);
   const closeBtn = document.getElementById(closeBtnId);
+  const checkbox = document.getElementById('toggle-shortcuts-pref');
+  let previousActiveElement = null;
+
+  if (checkbox) {
+    // Initialize checkbox state from localStorage (default to true/checked)
+    const enabled = localStorage.getItem('timebase-shortcuts-enabled') !== 'false';
+    checkbox.checked = enabled;
+
+    // Listen for change events to persist state
+    checkbox.addEventListener('change', () => {
+      localStorage.setItem('timebase-shortcuts-enabled', checkbox.checked.toString());
+    });
+  }
 
   if (dialog && closeBtn) {
     // Add click event to close button
@@ -45,11 +65,19 @@ export function setupShortcutsDialog(dialogId = 'shortcuts-dialog', closeBtnId =
         dialog.close();
       }
     });
+
+    // Restore focus to the triggering element when the dialog closes
+    dialog.addEventListener('close', () => {
+      if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
+        previousActiveElement.focus();
+      }
+    });
   }
 
   return {
     show: () => {
       if (dialog && !dialog.open) {
+        previousActiveElement = document.activeElement;
         dialog.showModal();
       }
     }

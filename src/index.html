@@ -19,33 +19,35 @@
     </script>
 </head>
 <body>
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
     <header class="download-header">
         <div class="download-container">
             <h1>Baseline Timeline</h1>
             <p>Timeline of web features and browser support</p>
             <button id="download-ical-top" class="download-btn" type="button">
-                📅 Download ICS Calendar
+                <span aria-hidden="true">📅</span> Download ICS Calendar
             </button>
         </div>
     </header>
 
-    <main class="timeline-container">
+    <main id="content" class="timeline-container" tabindex="-1">
       <!-- TIMELINE_CONTENT -->
     </main>
 
     <footer class="download-footer">
         <div class="download-container">
-            <button id="download-ical-bottom" class="download-btn">
-                📅 Download ICS Calendar
+            <button id="download-ical-bottom" class="download-btn" type="button">
+                <span aria-hidden="true">📅</span> Download ICS Calendar
             </button>
             <p>Add web features timeline to your calendar</p>
         </div>
     </footer>
 
     <!-- Keyboard shortcuts help dialog -->
-    <dialog id="shortcuts-dialog" class="shortcuts-dialog">
+    <dialog id="shortcuts-dialog" class="shortcuts-dialog" aria-labelledby="shortcuts-dialog-title">
         <div class="dialog-content">
-            <h2>Keyboard Shortcuts</h2>
+            <h2 id="shortcuts-dialog-title">Keyboard Shortcuts</h2>
             <table class="shortcuts-table">
                 <tr>
                     <td><kbd>?</kbd></td>
@@ -88,7 +90,13 @@
                     <td>Close this dialog</td>
                 </tr>
             </table>
-            <button id="close-shortcuts" class="dialog-close-btn">Close</button>
+            <div class="shortcuts-preference">
+                <label>
+                    <input type="checkbox" id="toggle-shortcuts-pref" checked>
+                    Enable single-key keyboard shortcuts
+                </label>
+            </div>
+            <button id="close-shortcuts" class="close-dialog-btn" type="button">Close</button>
         </div>
     </dialog>
 

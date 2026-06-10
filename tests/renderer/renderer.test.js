@@ -107,7 +107,8 @@ describe('Renderer', () => {
     const card = element.querySelector('.feature-card');
 
     expect(card.classList.contains('prediction')).toBe(true);
-    expect(card.querySelector('.feature-title').textContent).toContain('🔮 Predicted Feature');
+    const titleText = card.querySelector('.feature-title').textContent.replace(/\s+/g, ' ').trim();
+    expect(titleText).toContain('🔮 Predicted: Predicted Feature');
   });
 
   describe('createDateHeader', () => {
@@ -132,9 +133,11 @@ describe('Renderer', () => {
       expect(element.classList.contains('chrome')).toBe(true);
       expect(element.dataset.browser).toBe('chrome');
       expect(element.dataset.version).toBe('110');
+      expect(element.getAttribute('aria-label')).toBe('Filter timeline by Chrome version 110');
 
       const img = element.querySelector('img');
       expect(img.getAttribute('src')).toBe('images/chrome.svg');
+      expect(img.getAttribute('alt')).toBe('');
       expect(element.textContent).toContain('110');
     });
 
@@ -144,9 +147,11 @@ describe('Renderer', () => {
 
       expect(element.classList.contains('chrome_android')).toBe(true);
       expect(element.dataset.browser).toBe('chrome_android');
+      expect(element.getAttribute('aria-label')).toBe('Filter timeline by Chrome version 110 (Android)');
 
       const img = element.querySelector('img');
       expect(img.getAttribute('src')).toBe('images/chrome.svg'); // Base browser logo
+      expect(img.getAttribute('alt')).toBe('');
       expect(element.textContent).toContain('110 (Android)');
     });
   });

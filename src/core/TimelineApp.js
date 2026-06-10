@@ -117,19 +117,25 @@ export class TimelineApp {
   }
 
   handleFeatureCardExpansion(topRow, target) {
+    // Avoid expanding when clicking other links/buttons (e.g. browser tags, upvotes)
     if (target.tagName === 'A' ||
       target.closest('a') ||
-      (target.tagName === 'IMG' && target.closest('a'))) {
+      (target.tagName === 'IMG' && target.closest('a')) ||
+      target.closest('.browser-tag') ||
+      target.closest('.interop-tag')) {
       return;
     }
 
-    const detailsId = topRow.getAttribute('aria-controls');
+    const toggleBtn = topRow.querySelector('.feature-toggle-btn');
+    if (!toggleBtn) return;
+
+    const detailsId = toggleBtn.getAttribute('aria-controls');
     const details = document.getElementById(detailsId);
     if (!details) return;
 
     const isExpanded = details.style.display !== 'none';
     details.style.display = isExpanded ? 'none' : 'block';
-    topRow.setAttribute('aria-expanded', !isExpanded);
+    toggleBtn.setAttribute('aria-expanded', !isExpanded);
 
     const card = topRow.closest('.feature-card');
     if (card) {

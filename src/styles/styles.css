@@ -11,6 +11,19 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Visually hidden helper class for accessibility */
+.visually-hidden {
+    position: absolute !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+}
+
 /* Skip to content link for accessibility */
 .skip-to-content {
     position: absolute;
@@ -95,7 +108,7 @@ body {
 }
 
 .date-link:focus {
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
@@ -214,7 +227,7 @@ body {
 }
 
 .feature-top-row:focus {
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
@@ -232,6 +245,26 @@ body {
     display: flex;
     align-items: center;
     word-break: break-word;
+}
+
+.feature-toggle-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+.feature-toggle-btn:focus-visible {
+    outline: 2px solid #2c5282;
+    outline-offset: 4px;
 }
 
 .feature-type {
@@ -280,7 +313,7 @@ body {
 
 .browser-tag.active-filter {
     background-color: #ebf4ff !important;
-    border-color: #4299e1;
+    border-color: #2b6cb0;
     color: #2b6cb0;
     font-weight: 500;
 }
@@ -368,7 +401,7 @@ body {
 
 .feature-links a:focus {
     text-decoration: underline;
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
@@ -517,13 +550,13 @@ body {
 }
 
 :focus-visible {
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
 .feature-date {
     font-size: 0.875rem;
-    color: #718096;
+    color: #5a6578;
     margin-bottom: 0.5rem;
 }
 
@@ -620,7 +653,7 @@ body {
 }
 
 .date-cell {
-    color: #718096;
+    color: #5a6578;
 }
 
 /* BCD Keys List Styles */
@@ -1267,6 +1300,28 @@ body {
     white-space: nowrap;
 }
 
+.shortcuts-preference {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+.shortcuts-preference label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.shortcuts-preference input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
 .close-dialog-btn {
     display: block;
     margin: 0 auto;
@@ -1285,7 +1340,7 @@ body {
 }
 
 .close-dialog-btn:focus {
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
@@ -1311,13 +1366,6 @@ body {
     white-space: nowrap;
 }
 
-/* Styling for upvote when placed next to the title */
-.title-upvote {
-    display: inline-flex;
-    vertical-align: middle;
-    margin-left: 8px;
-    margin-right: 4px;
-}
 
 .upvote-count {
     display: flex;
@@ -1349,7 +1397,7 @@ body {
 }
 
 .upvote-count:focus {
-    outline: 2px solid #4299e1;
+    outline: 2px solid #2c5282;
     outline-offset: 2px;
 }
 
@@ -1401,7 +1449,7 @@ body {
 
 .interop-tag.active-filter {
     background-color: #ebf4ff !important;
-    border-color: #4299e1;
+    border-color: #2b6cb0;
     color: #2b6cb0;
     font-weight: 500;
 }
