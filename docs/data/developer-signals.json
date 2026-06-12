@@ -201,7 +201,7 @@
   },
   "color-mix-variadic": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/852",
-    "votes": 1
+    "votes": 2
   },
   "colrv1": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/161",
@@ -257,7 +257,7 @@
   },
   "cross-document-view-transitions": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/248",
-    "votes": 42
+    "votes": 43
   },
   "cross-fade": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/55",
@@ -593,7 +593,7 @@
   },
   "interpolate-size": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/253",
-    "votes": 56
+    "votes": 58
   },
   "intersection-observer-v2": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/98",
@@ -613,7 +613,7 @@
   },
   "jpegxl": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/215",
-    "votes": 453
+    "votes": 454
   },
   "justify-self-block": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/442",
@@ -629,7 +629,7 @@
   },
   "layout-instability": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/122",
-    "votes": 16
+    "votes": 17
   },
   "light-dark-image": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/568",
@@ -697,7 +697,7 @@
   },
   "masonry": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/308",
-    "votes": 83
+    "votes": 84
   },
   "measure-memory": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/138",
@@ -757,7 +757,7 @@
   },
   "object-view-box": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/177",
-    "votes": 7
+    "votes": 8
   },
   "oes-texture-half-float-linear": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/31",
@@ -1101,7 +1101,7 @@
   },
   "text-fit": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/846",
-    "votes": 6
+    "votes": 7
   },
   "text-justify": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/75",
@@ -1129,7 +1129,7 @@
   },
   "touch-events": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/18",
-    "votes": 0
+    "votes": 1
   },
   "transferable-streams": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/133",
