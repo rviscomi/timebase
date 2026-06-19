@@ -3209,23 +3209,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-inline-3/#alignment-baseline-property"
     ]
   },
-  "css.properties.anchor-name.position_after_layout": {
-    "parent_feature": "anchor-positioning",
-    "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "144",
-        "chrome_android": "144",
-        "edge": "144",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
-    ]
-  },
   "css.properties.position-anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -3280,6 +3263,23 @@ export const bcdKeys = {
       "support": {
         "firefox": "151",
         "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.anchor-name.position_after_layout": {
+    "parent_feature": "anchor-positioning-transforms",
+    "parent_feature_name": "Anchor positioning transforms",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
       }
     },
     "spec": [

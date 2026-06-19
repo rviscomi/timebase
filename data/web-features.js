@@ -3586,7 +3586,27 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "151",
+        "firefox_android": "151"
+      }
+    }
+  },
+  "anchor-positioning-transforms": {
+    "description_html": "Anchor positioned elements take CSS transforms on their anchor elements into account.",
+    "kind": "feature",
+    "name": "Anchor positioning transforms",
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
     }
   },
   "angle-instanced-arrays": {
