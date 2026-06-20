@@ -2890,6 +2890,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3120,6 +3124,10 @@ export const browsers = {
       {
         "date": "2026-05-11",
         "version": "26.5"
+      },
+      {
+        "date": "null",
+        "version": "27"
       }
     ]
   }
@@ -5427,9 +5435,10 @@ export const bcdKeys = {
   "api.CanvasRenderingContext2D.reset": {
     "parent_feature": "canvas-reset",
     "parent_feature_name": "Canvas reset()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "99",
@@ -5448,9 +5457,10 @@ export const bcdKeys = {
   "api.OffscreenCanvasRenderingContext2D.reset": {
     "parent_feature": "canvas-reset",
     "parent_feature_name": "Canvas reset()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "99",
@@ -5469,9 +5479,10 @@ export const bcdKeys = {
   "css.types.length.cap": {
     "parent_feature": "cap",
     "parent_feature_name": "cap unit",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "118",
@@ -6257,9 +6268,10 @@ export const bcdKeys = {
   "css.properties.counter-set": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "85",
@@ -6278,9 +6290,10 @@ export const bcdKeys = {
   "css.properties.counter-set.list-item": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "85",
@@ -6299,9 +6312,10 @@ export const bcdKeys = {
   "css.properties.counter-set.none": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "85",
@@ -6782,7 +6796,7 @@ export const bcdKeys = {
   "api.createImageBitmap.options_premultiplyAlpha_parameter": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "high",
       "baseline_high_date": "2026-03-18",
@@ -6804,7 +6818,7 @@ export const bcdKeys = {
   "api.createImageBitmap.options_resizeQuality_parameter": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-03-24",
@@ -6825,9 +6839,10 @@ export const bcdKeys = {
   "api.createImageBitmap.svgimageelement_as_source_image": {
     "parent_feature": "createimagebitmap",
     "parent_feature_name": "createImageBitmap",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "59",
@@ -7327,9 +7342,10 @@ export const bcdKeys = {
   "css.selectors.dir": {
     "parent_feature": "dir-pseudo",
     "parent_feature_name": ":dir()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7550,9 +7566,10 @@ export const bcdKeys = {
   "css.types.exp": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7571,9 +7588,10 @@ export const bcdKeys = {
   "css.types.hypot": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7592,9 +7610,10 @@ export const bcdKeys = {
   "css.types.log": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7613,9 +7632,10 @@ export const bcdKeys = {
   "css.types.pow": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7634,9 +7654,10 @@ export const bcdKeys = {
   "css.types.sqrt": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7828,7 +7849,8 @@ export const bcdKeys = {
     "parent_feature_name": "Font loading",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -7950,6 +7972,2310 @@ export const bcdKeys = {
     "spec": [
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-ecmascript-language-functions-and-classes",
       "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-objects"
+    ]
+  },
+  "css.properties.column-rule-break": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-break.intersection": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-break.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-break.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-cap.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-junction.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-inset.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-visibility-items": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-visibility-items.all": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-visibility-items.around": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-visibility-items.between": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.column-rule-visibility-items.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-break": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-break.intersection": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-break.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-break.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-color": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-color.currentColor": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-color.transparent": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-cap.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-junction.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-inset.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.dashed": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.dotted": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.double": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.groove": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.hidden": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.outset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.ridge": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-style.solid": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-visibility-items": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-visibility-items.all": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-visibility-items.around": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-visibility-items.between": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-visibility-items.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-width": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-width.medium": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-width.thick": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule-width.thin": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.currentColor": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.dashed": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.dotted": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.double": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.groove": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.hidden": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.medium": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.outset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.ridge": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.solid": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.thick": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.thin": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.row-rule.transparent": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-break": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-break.intersection": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-break.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-break.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-color": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-color.currentColor": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-color.transparent": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-cap": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-cap.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-end": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-end.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-junction": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-junction.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-start": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset-start.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-inset.overlap-join": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-overlap": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-overlap.column-over-row": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-overlap.row-over-column": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.dashed": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.dotted": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.double": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.groove": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.hidden": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.outset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.ridge": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-style.solid": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-visibility-items": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-visibility-items.all": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-visibility-items.around": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-visibility-items.between": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-visibility-items.normal": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-width": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-width.medium": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-width.thick": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule-width.thin": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.currentColor": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.dashed": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.dotted": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.double": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.groove": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.hidden": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.inset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.medium": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.none": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.outset": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.ridge": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.solid": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.thick": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.thin": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
+    ]
+  },
+  "css.properties.rule.transparent": {
+    "parent_feature": "gap-decorations",
+    "parent_feature_name": "Gap decorations",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-gaps-1/"
     ]
   },
   "css.properties.hanging-punctuation": {
@@ -8662,7 +10988,8 @@ export const bcdKeys = {
     "parent_feature_name": "Intl.PluralRules",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "117",
@@ -9041,9 +11368,10 @@ export const bcdKeys = {
   "css.types.easing-function.linear-function": {
     "parent_feature": "linear-easing",
     "parent_feature_name": "linear() easing",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "113",
@@ -9240,9 +11568,10 @@ export const bcdKeys = {
   "css.properties.mask": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9261,9 +11590,10 @@ export const bcdKeys = {
   "css.properties.mask-clip": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9282,9 +11612,10 @@ export const bcdKeys = {
   "css.properties.mask-composite": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9303,9 +11634,10 @@ export const bcdKeys = {
   "css.properties.mask-composite.add": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9324,9 +11656,10 @@ export const bcdKeys = {
   "css.properties.mask-composite.exclude": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9345,9 +11678,10 @@ export const bcdKeys = {
   "css.properties.mask-composite.intersect": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9366,9 +11700,10 @@ export const bcdKeys = {
   "css.properties.mask-composite.subtract": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9387,9 +11722,10 @@ export const bcdKeys = {
   "css.properties.mask-image": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9408,9 +11744,10 @@ export const bcdKeys = {
   "css.properties.mask-image.multiple_mask_images": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9429,9 +11766,10 @@ export const bcdKeys = {
   "css.properties.mask-image.svg_masks": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9450,9 +11788,10 @@ export const bcdKeys = {
   "css.properties.mask-mode": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9471,9 +11810,10 @@ export const bcdKeys = {
   "css.properties.mask-mode.alpha": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9492,9 +11832,10 @@ export const bcdKeys = {
   "css.properties.mask-mode.luminance": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9513,9 +11854,10 @@ export const bcdKeys = {
   "css.properties.mask-mode.match-source": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9534,9 +11876,10 @@ export const bcdKeys = {
   "css.properties.mask-origin": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9555,9 +11898,10 @@ export const bcdKeys = {
   "css.properties.mask-position": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9576,9 +11920,10 @@ export const bcdKeys = {
   "css.properties.mask-repeat": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9597,9 +11942,10 @@ export const bcdKeys = {
   "css.properties.mask-size": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -10229,9 +12575,10 @@ export const bcdKeys = {
   "css.selectors.nesting": {
     "parent_feature": "nesting",
     "parent_feature_name": "Nesting",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "120",
@@ -11100,9 +13447,10 @@ export const bcdKeys = {
   "api.HTMLLinkElement.imageSizes": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "73",
@@ -11121,9 +13469,10 @@ export const bcdKeys = {
   "api.HTMLLinkElement.imageSrcset": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "73",
@@ -11142,9 +13491,10 @@ export const bcdKeys = {
   "html.elements.link.imagesizes": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "73",
@@ -11163,9 +13513,10 @@ export const bcdKeys = {
   "html.elements.link.imagesrcset": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "73",
@@ -11184,9 +13535,10 @@ export const bcdKeys = {
   "api.HTMLMediaElement.preservesPitch": {
     "parent_feature": "preserves-pitch",
     "parent_feature_name": "preservesPitch",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "86",
@@ -12306,9 +14658,10 @@ export const bcdKeys = {
   "css.at-rules.media.scripting": {
     "parent_feature": "scripting",
     "parent_feature_name": "scripting media query",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -13256,7 +15609,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "118",
@@ -13319,7 +15673,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "118",
@@ -13340,7 +15695,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -13632,6 +15988,26 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
+    ]
+  },
+  "javascript.operators.await.top_level": {
+    "parent_feature": "top-level-await",
+    "parent_feature_name": "Top-level await",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "89",
+        "chrome_android": "89",
+        "edge": "89",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
     ]
   },
   "javascript.builtins.ArrayBuffer.detached": {
@@ -13974,9 +16350,10 @@ export const bcdKeys = {
   "api.URL.canParse_static": {
     "parent_feature": "url-canparse",
     "parent_feature_name": "URL.canParse()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",

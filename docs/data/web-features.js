@@ -2890,6 +2890,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3120,6 +3124,10 @@ export const browsers = {
       {
         "date": "2026-05-11",
         "version": "26.5"
+      },
+      {
+        "date": "null",
+        "version": "27"
       }
     ]
   }
@@ -6024,7 +6032,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "99",
@@ -6067,7 +6076,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#cap"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "118",
@@ -7641,7 +7651,8 @@ export const features = {
       "https://drafts.csswg.org/css-lists-3/#propdef-counter-set"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "85",
@@ -7706,7 +7717,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "59",
@@ -8679,7 +8691,8 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#the-dir-pseudo"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -9557,7 +9570,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#exponent-funcs"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -11492,7 +11506,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
+      }
     }
   },
   "generators": {
@@ -14753,7 +14771,8 @@ export const features = {
       "https://drafts.csswg.org/css-easing-2/#the-linear-easing-function"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "113",
@@ -15380,7 +15399,8 @@ export const features = {
       "https://drafts.csswg.org/css-masking-1/#positioned-masks"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -16355,7 +16375,8 @@ export const features = {
       "https://drafts.csswg.org/css-nesting-1/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "120",
@@ -18400,7 +18421,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "73",
@@ -18437,7 +18459,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-11",
       "baseline_low_date": "2023-12-11",
       "support": {
         "chrome": "86",
@@ -20364,7 +20387,8 @@ export const features = {
       "https://drafts.csswg.org/mediaqueries-5/#scripting"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
@@ -20962,6 +20986,22 @@ export const features = {
         "firefox_android": "44",
         "safari": "11.1",
         "safari_ios": "11.3"
+      }
+    }
+  },
+  "service-workers-static-routes": {
+    "description_html": "The service worker install event's <code>addRoutes</code> method declares resource paths that should either be fetched from the network or the cache, to bypass the service worker and improve performance.",
+    "kind": "feature",
+    "name": "Service workers static routing",
+    "spec": [
+      "https://w3c.github.io/ServiceWorker/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123"
       }
     }
   },
@@ -22519,7 +22559,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "≤13.1",
+        "safari_ios": "≤13.4"
+      }
     }
   },
   "svg-filters": {
@@ -23598,7 +23641,9 @@ export const features = {
         "chrome_android": "89",
         "edge": "89",
         "firefox": "89",
-        "firefox_android": "89"
+        "firefox_android": "89",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -24201,7 +24246,8 @@ export const features = {
       "https://url.spec.whatwg.org/#dom-url-canparse"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-07",
       "baseline_low_date": "2023-12-07",
       "support": {
         "chrome": "120",
