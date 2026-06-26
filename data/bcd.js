@@ -2087,6 +2087,10 @@ export const browsers = {
         "version": "154"
       },
       {
+        "date": "2026-09-15",
+        "version": "155"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2646,6 +2650,10 @@ export const browsers = {
       {
         "date": "2026-08-18",
         "version": "154"
+      },
+      {
+        "date": "2026-09-15",
+        "version": "155"
       }
     ]
   },
@@ -5930,7 +5938,8 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -7886,6 +7895,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ]
+  },
+  "css.properties.font-variant-emoji": {
+    "parent_feature": "font-variant-emoji",
+    "parent_feature_name": "font-variant-emoji",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "131",
+        "chrome_android": "131",
+        "edge": "131",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-variant-emoji-prop"
     ]
   },
   "css.properties.font-variant-position": {
@@ -10371,9 +10399,10 @@ export const bcdKeys = {
   "css.selectors.has": {
     "parent_feature": "has",
     "parent_feature_name": ":has()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-19",
       "baseline_low_date": "2023-12-19",
       "support": {
         "chrome": "105",
@@ -11358,7 +11387,8 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -11390,9 +11420,10 @@ export const bcdKeys = {
   "api.HTMLIFrameElement.loading": {
     "parent_feature": "loading-lazy",
     "parent_feature_name": "Lazy-loading images and iframes",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-19",
       "baseline_low_date": "2023-12-19",
       "support": {
         "chrome": "77",
@@ -11411,9 +11442,10 @@ export const bcdKeys = {
   "html.elements.iframe.loading": {
     "parent_feature": "loading-lazy",
     "parent_feature_name": "Lazy-loading images and iframes",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-19",
       "baseline_low_date": "2023-12-19",
       "support": {
         "chrome": "77",
@@ -12653,6 +12685,24 @@ export const bcdKeys = {
         "chrome": "48",
         "chrome_android": "48",
         "edge": "17",
+        "firefox": "152",
+        "firefox_android": "152"
+      }
+    },
+    "spec": [
+      "https://notifications.spec.whatwg.org/"
+    ]
+  },
+  "api.ServiceWorkerRegistration.showNotification.options_actions_parameter": {
+    "parent_feature": "notifications",
+    "parent_feature_name": "Notifications",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "48",
+        "chrome_android": "48",
+        "edge": "18",
         "firefox": "152",
         "firefox_android": "152"
       }
@@ -17324,6 +17374,351 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-pc/"
     ]
   },
+  "api.RTCStatsReport.type_inbound-rtp.transportId": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_outbound-rtp.transportId": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_remote-inbound-rtp.transportId": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_remote-outbound-rtp.transportId": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "91",
+        "chrome_android": "91",
+        "edge": "91",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.dtlsCipher": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.dtlsRole": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "103",
+        "chrome_android": "103",
+        "edge": "103",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.dtlsState": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.iceLocalUsernameFragment": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "103",
+        "chrome_android": "103",
+        "edge": "103",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.iceRole": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "103",
+        "chrome_android": "103",
+        "edge": "103",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.iceState": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "103",
+        "chrome_android": "103",
+        "edge": "103",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.id": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.selectedCandidatePairId": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.srtpCipher": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.timestamp": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.tlsVersion": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_transport.type": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
   "api.WebTransport": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
@@ -19186,6 +19581,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#white-space-collapsing"
+    ]
+  },
+  "css.properties.word-break.auto-phrase": {
+    "parent_feature": "word-break-auto-phrase",
+    "parent_feature_name": "word-break: auto-phrase",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase"
     ]
   },
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {

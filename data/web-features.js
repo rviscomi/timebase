@@ -2087,6 +2087,10 @@ export const browsers = {
         "version": "154"
       },
       {
+        "date": "2026-09-15",
+        "version": "155"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2646,6 +2650,10 @@ export const browsers = {
       {
         "date": "2026-08-18",
         "version": "154"
+      },
+      {
+        "date": "2026-09-15",
+        "version": "155"
       }
     ]
   },
@@ -6806,7 +6814,8 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     }
   },
@@ -11903,7 +11912,8 @@ export const features = {
       "https://drafts.csswg.org/selectors-4/#relational"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-19",
       "baseline_low_date": "2023-12-19",
       "support": {
         "chrome": "105",
@@ -14703,7 +14713,8 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     }
   },
@@ -14982,7 +14993,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-06-19",
       "baseline_low_date": "2023-12-19",
       "support": {
         "chrome": "77",
@@ -26798,7 +26810,8 @@ export const features = {
       "support": {
         "chrome": "119",
         "chrome_android": "119",
-        "edge": "119"
+        "edge": "119",
+        "safari": "preview"
       }
     }
   },
