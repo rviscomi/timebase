@@ -604,8 +604,12 @@ export const browsers = {
         "version": "151"
       },
       {
-        "date": "null",
+        "date": "2026-08-25",
         "version": "152"
+      },
+      {
+        "date": "null",
+        "version": "153"
       },
       {
         "date": "null",
@@ -1125,8 +1129,12 @@ export const browsers = {
         "version": "151"
       },
       {
-        "date": "null",
+        "date": "2026-08-25",
         "version": "152"
+      },
+      {
+        "date": "null",
+        "version": "153"
       }
     ]
   },
@@ -1452,6 +1460,10 @@ export const browsers = {
       {
         "date": "2026-08-27",
         "version": "152"
+      },
+      {
+        "date": "2026-09-10",
+        "version": "153"
       }
     ]
   },
@@ -4430,7 +4442,9 @@ export const features = {
         "chrome_android": "124",
         "edge": "124",
         "firefox": "110",
-        "firefox_android": "110"
+        "firefox_android": "110",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -6638,7 +6652,8 @@ export const features = {
         "chrome_android": "126",
         "edge": "126",
         "firefox": "149",
-        "firefox_android": "149"
+        "firefox_android": "149",
+        "safari": "preview"
       }
     }
   },
@@ -8089,7 +8104,9 @@ export const features = {
       "support": {
         "chrome": "135",
         "chrome_android": "135",
-        "edge": "135"
+        "edge": "135",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -8655,7 +8672,8 @@ export const features = {
         "chrome_android": "134",
         "edge": "134",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -11139,7 +11157,8 @@ export const features = {
         "chrome_android": "131",
         "edge": "131",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -11618,7 +11637,10 @@ export const features = {
       "support": {
         "chrome": "141",
         "chrome_android": "141",
-        "edge": "141"
+        "edge": "141",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "preview"
       }
     }
   },
@@ -12028,6 +12050,18 @@ export const features = {
         "safari": "5",
         "safari_ios": "4.2"
       }
+    }
+  },
+  "heading-offset": {
+    "description_html": "The <code>headingoffset</code> HTML attribute offsets the heading level of descendant <code>&#x3C;h1></code>–<code>&#x3C;h6></code> elements. The <code>headingreset</code> HTML attribute prevents heading offset computation from traversing beyond the element.",
+    "kind": "feature",
+    "name": "Heading offset",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "heading-selectors": {
@@ -13177,6 +13211,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -13810,11 +13845,14 @@ export const features = {
       "https://tc39.es/ecma402/#locale-objects"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-07-21",
       "support": {
         "chrome": "130",
         "chrome_android": "130",
         "edge": "130",
+        "firefox": "153",
+        "firefox_android": "153",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -14150,6 +14188,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -14712,6 +14751,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "preview"
@@ -14749,7 +14791,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "line-height": {
@@ -15435,6 +15479,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "preview"
       }
     }
@@ -17314,7 +17359,9 @@ export const features = {
         "chrome_android": "56",
         "edge": "79",
         "firefox": "66",
-        "firefox_android": "66"
+        "firefox_android": "66",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -18049,6 +18096,7 @@ export const features = {
         "chrome": "69",
         "chrome_android": "105",
         "edge": "79",
+        "firefox": "153",
         "safari": "13.1",
         "safari_ios": "13.4"
       }
@@ -19079,7 +19127,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "117",
-        "firefox_android": "117"
+        "firefox_android": "117",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -20460,6 +20510,7 @@ export const features = {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -21013,7 +21064,9 @@ export const features = {
       "support": {
         "chrome": "123",
         "chrome_android": "123",
-        "edge": "123"
+        "edge": "123",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -21372,6 +21425,7 @@ export const features = {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
+        "firefox": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -21997,7 +22051,9 @@ export const features = {
       "support": {
         "chrome": "138",
         "chrome_android": "138",
-        "edge": "138"
+        "edge": "138",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -23139,7 +23195,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
     }
   },
   "text-indent": {
@@ -24978,7 +25038,11 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "137",
-        "edge": "137"
+        "edge": "137",
+        "firefox": "153",
+        "firefox_android": "153",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -25507,7 +25571,9 @@ export const features = {
       "support": {
         "chrome": "93",
         "chrome_android": "84",
-        "edge": "93"
+        "edge": "93",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
