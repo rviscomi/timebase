@@ -16068,6 +16068,18 @@ export const features = {
       }
     }
   },
+  "mixins": {
+    "description_html": "The <code>@mixin</code> and <code>@apply</code> CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally passing arguments.",
+    "kind": "feature",
+    "name": "@mixins",
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#mixin-rule"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "modal": {
     "description_html": "The <code>:modal</code> pseudo-class selects elements that put other elements into a non-interactive state, such as a fullscreen element or a <code>&#x3C;dialog></code> element used with <code>showModal()</code>.",
     "kind": "feature",
