@@ -16068,10 +16068,10 @@ export const features = {
       }
     }
   },
-  "mixins": {
+  "mixin": {
     "description_html": "The <code>@mixin</code> and <code>@apply</code> CSS at-rules define reusable style declaration fragments and apply them inside rules, optionally passing arguments.",
     "kind": "feature",
-    "name": "@mixins",
+    "name": "@mixin",
     "spec": [
       "https://drafts.csswg.org/css-mixins-1/#mixin-rule"
     ],
