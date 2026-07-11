@@ -1881,6 +1881,9 @@
       "api.VirtualKeyboard": [
         "https://developer.chrome.com/docs/web-platform/virtual-keyboard"
       ],
+      "api.WakeLock": [
+        "https://developer.chrome.com/docs/capabilities/web-apis/wake-lock"
+      ],
       "api.WebTransport": [
         "https://developer.chrome.com/docs/capabilities/web-apis/webtransport"
       ],

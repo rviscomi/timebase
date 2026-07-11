@@ -9768,7 +9768,7 @@ export const features = {
     }
   },
   "ext-shader-texture-lod": {
-    "description_html": "The <code>EXT_shader_texture_lod</code> extension for WebGL 1.0 and 2.0 contexts adds texture functions to the OpenGL ES Shading Language such that the shader writer explicitly controls of the level of detail (LOD).",
+    "description_html": "The <code>EXT_shader_texture_lod</code> extension for WebGL 1.0 and 2.0 contexts adds texture functions to the OpenGL ES Shading Language such that the shader writer explicitly controls the level of detail (LOD).",
     "kind": "feature",
     "name": "EXT_shader_texture_lod WebGL extension",
     "spec": [
@@ -22572,7 +22572,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148"
+      }
     }
   },
   "supports-compat": {

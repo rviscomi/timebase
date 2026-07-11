@@ -10049,7 +10049,35 @@ export const bcdKeys = {
       "http://webmachinelearning.github.io/prompt-api/"
     ]
   },
+  "api.LanguageModel.contextoverflow_event": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
   "api.LanguageModel.create_static": {
+    "parent_feature": "languagemodel",
+    "parent_feature_name": "LanguageModel",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148"
+      }
+    },
+    "spec": [
+      "http://webmachinelearning.github.io/prompt-api/"
+    ]
+  },
+  "api.LanguageModel.destroy": {
     "parent_feature": "languagemodel",
     "parent_feature_name": "LanguageModel",
     "parent_feature_baseline": false,
@@ -14589,6 +14617,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
+    ]
+  },
+  "css.at-rules.supports.at-rule": {
+    "parent_feature": "supports-at-rule",
+    "parent_feature_name": "at-rule()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
     ]
   },
   "api.SVGImageElement.crossOrigin": {
