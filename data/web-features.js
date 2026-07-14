@@ -22671,6 +22671,21 @@ export const features = {
       }
     }
   },
+  "switch-control": {
+    "description_html": "The <code>switch</code> attribute, when present on an <code>&#x3C;input type=\"checkbox\"></code> HTML element, renders a switch control with an on and off state instead of a checkbox control.",
+    "kind": "feature",
+    "name": "<input type=\"checkbox\" switch>",
+    "spec": [
+      "https://github.com/whatwg/html/pull/9546"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    }
+  },
   "symbol": {
     "description_html": "A <code>Symbol</code> value is a unique, non-enumerable primitive value used for encapsulation or information hiding. For example, a symbol can be a key of an object that can never collide with any other key.",
     "kind": "feature",
