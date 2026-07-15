@@ -41,7 +41,7 @@
   },
   "app-share-targets": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/107",
-    "votes": 4
+    "votes": 5
   },
   "app-shortcuts": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/124",
@@ -253,7 +253,7 @@
   },
   "corner-shape": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/398",
-    "votes": 96
+    "votes": 97
   },
   "counter-reset-reversed": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/160",
@@ -477,7 +477,7 @@
   },
   "function": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/300",
-    "votes": 80
+    "votes": 81
   },
   "gamepad-haptics": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/87",
@@ -585,7 +585,7 @@
   },
   "interpolate-size": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/253",
-    "votes": 67
+    "votes": 68
   },
   "intersection-observer-v2": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/98",
@@ -1017,7 +1017,7 @@
   },
   "share": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/76",
-    "votes": 16
+    "votes": 17
   },
   "show-picker-input": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/162",
@@ -1157,7 +1157,7 @@
   },
   "user-select": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/59",
-    "votes": 12
+    "votes": 13
   },
   "usermedia": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/581",
@@ -1269,7 +1269,7 @@
   },
   "webgpu": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/202",
-    "votes": 52
+    "votes": 53
   },
   "webgpu-subgroups": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/501",
