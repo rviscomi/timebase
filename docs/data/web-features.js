@@ -2099,7 +2099,7 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "2026-09-15",
+        "date": "2026-09-01",
         "version": "155"
       },
       {
@@ -2664,7 +2664,7 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "2026-09-15",
+        "date": "2026-09-01",
         "version": "155"
       }
     ]
@@ -3614,10 +3614,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "firefox": "151",
-        "firefox_android": "151"
-      }
+      "support": {}
     }
   },
   "anchor-positioning-transforms": {
@@ -7975,6 +7972,7 @@ export const features = {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -14756,7 +14754,8 @@ export const features = {
         "edge": "150",
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -16673,6 +16672,7 @@ export const features = {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -26155,7 +26155,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "144",
         "chrome_android": "121",
+        "edge": "144",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -26171,7 +26173,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
     }
   },
   "webhid": {

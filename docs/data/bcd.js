@@ -2099,7 +2099,7 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "2026-09-15",
+        "date": "2026-09-01",
         "version": "155"
       },
       {
@@ -2664,7 +2664,7 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "2026-09-15",
+        "date": "2026-09-01",
         "version": "155"
       }
     ]
@@ -3354,6 +3354,36 @@ export const bcdKeys = {
       "support": {
         "firefox": "151",
         "firefox_android": "151"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-visibility.anchor-valid": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
+    ]
+  },
+  "css.properties.position-visibility.anchor-visible": {
+    "parent_feature": "anchor-positioning",
+    "parent_feature_name": "Anchor positioning",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27",
+        "safari_ios": "27"
       }
     },
     "spec": [
@@ -6135,6 +6165,2506 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/cssom-1/#css-object-model"
+    ]
+  },
+  "api.CSSImageValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSKeywordValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSKeywordValue.CSSKeywordValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSKeywordValue.value": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathClamp": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathClamp.CSSMathClamp": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathClamp.lower": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathClamp.upper": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathClamp.value": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "100",
+        "chrome_android": "100",
+        "edge": "100",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathInvert": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathInvert.CSSMathInvert": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathInvert.value": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMax": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMax.CSSMathMax": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMax.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMin": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMin.CSSMathMin": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathMin.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathNegate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathNegate.CSSMathNegate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathNegate.value": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathProduct": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathProduct.CSSMathProduct": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathProduct.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathSum": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathSum.CSSMathSum": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathSum.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMathValue.operator": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMatrixComponent": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMatrixComponent.CSSMatrixComponent": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSMatrixComponent.matrix": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.@@iterator": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.entries": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.forEach": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.keys": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.length": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericArray.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.add": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.div": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.equals": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.max": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.min": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.mul": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.parse_static": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.sub": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.to": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.toSum": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSNumericValue.type": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSPerspective": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSPerspective.CSSPerspective": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSPerspective.length": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate.CSSRotate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate.angle": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate.x": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate.y": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSRotate.z": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSScale": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSScale.CSSScale": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSScale.x": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSScale.y": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSScale.z": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkew": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkew.CSSSkew": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkew.ax": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkew.ay": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewX": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewX.CSSSkewX": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewX.ax": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewY": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewY.CSSSkewY": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSSkewY.ay": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSStyleRule.styleMap": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSStyleValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSStyleValue.parseAll_static": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSStyleValue.parse_static": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSStyleValue.toString": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformComponent": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformComponent.is2D": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformComponent.toMatrix": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformComponent.toString": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.@@iterator": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.CSSTransformValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.entries": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.forEach": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.is2D": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.keys": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.length": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.toMatrix": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTransformValue.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTranslate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTranslate.CSSTranslate": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTranslate.x": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTranslate.y": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSTranslate.z": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnitValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnitValue.CSSUnitValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnitValue.unit": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnitValue.value": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.@@iterator": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.CSSUnparsedValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.entries": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.forEach": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.keys": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.length": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSUnparsedValue.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSVariableReferenceValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSVariableReferenceValue.CSSVariableReferenceValue": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSVariableReferenceValue.fallback": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.CSSVariableReferenceValue.variable": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.Element.computedStyleMap": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.HTMLElement.attributeStyleMap": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMap": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMap.append": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMap.clear": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMap.delete": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMap.set": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.@@iterator": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.entries": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.forEach": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.get": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.getAll": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.has": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.keys": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.size": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
+    ]
+  },
+  "api.StylePropertyMapReadOnly.values": {
+    "parent_feature": "css-typed-om",
+    "parent_feature_name": "CSS typed object model",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/"
     ]
   },
   "css.properties.appearance.base-select": {
@@ -10167,7 +12697,8 @@ export const bcdKeys = {
         "edge": "150",
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     },
     "spec": [
@@ -10851,6 +13382,25 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sumprecise"
     ]
   },
+  "api.MathMLElement.attributeStyleMap": {
+    "parent_feature": "mathml",
+    "parent_feature_name": "MathML",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mathml-core/"
+    ]
+  },
   "api.MathMLElement.nonce": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
@@ -11376,6 +13926,1203 @@ export const bcdKeys = {
     },
     "spec": [
       "https://notifications.spec.whatwg.org/"
+    ]
+  },
+  "api.CSS.Hz_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.Q_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cap_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.ch_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cm_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqb_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqmax_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqmin_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.cqw_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.deg_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dpcm_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dpi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dppx_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvb_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvmax_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvmin_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.dvw_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.em_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.ex_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.fr_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.grad_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.ic_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.in_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.kHz_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvb_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvmax_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvmin_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.lvw_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.mm_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.ms_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.number_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.pc_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.percent_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.pt_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.px_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rad_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rcap_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rch_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rem_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rex_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.ric_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.rlh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "118",
+        "chrome_android": "118",
+        "edge": "118",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.s_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svb_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svmax_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svmin_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.svw_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.turn_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vb_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vh_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vi_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "108",
+        "chrome_android": "108",
+        "edge": "108",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vmax_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vmin_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
+    ]
+  },
+  "api.CSS.vw_static": {
+    "parent_feature": "numeric-factory-functions",
+    "parent_feature_name": "Numeric factory functions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
     ]
   },
   "css.selectors.open": {
@@ -12993,7 +16740,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -13009,7 +16758,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -14635,6 +18386,25 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
     ]
   },
+  "api.SVGElement.attributeStyleMap": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "66",
+        "chrome_android": "66",
+        "edge": "79",
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/svgwg/svg2-draft/"
+    ]
+  },
   "api.SVGImageElement.crossOrigin": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
@@ -14868,6 +18638,177 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#text-autospace-property"
+    ]
+  },
+  "css.properties.text-box": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-edge": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-edge.auto": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-trim": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-trim.none": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-trim.trim-both": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-trim.trim-end": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box-trim.trim-start": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
+    ]
+  },
+  "css.properties.text-box.normal": {
+    "parent_feature": "text-box",
+    "parent_feature_name": "text-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-inline-3/#leading-trim"
     ]
   },
   "css.properties.text-decoration-thickness.percentage": {
@@ -16051,7 +19992,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "144",
         "chrome_android": "121",
+        "edge": "144",
         "safari": "27",
         "safari_ios": "27"
       }
