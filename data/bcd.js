@@ -5950,6 +5950,142 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-color-5/#color-mix"
     ]
   },
+  "html.elements.link.rel.compression-dictionary": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Accept-Encoding.dcb": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Accept-Encoding.dcz": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Available-Dictionary": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Content-Encoding.dcb": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Content-Encoding.dcz": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Dictionary-ID": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
+  "http.headers.Use-As-Dictionary": {
+    "parent_feature": "compression-dictionary-transport",
+    "parent_feature_name": "Compression Dictionary Transport",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://httpwg.org/specs/rfc9842.html"
+    ]
+  },
   "css.at-rules.container.style_queries_for_custom_properties": {
     "parent_feature": "container-style-queries",
     "parent_feature_name": "Container style queries",
@@ -16480,6 +16616,42 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/popover.html"
     ]
   },
+  "api.HTMLElement.popover.hint": {
+    "parent_feature": "popover-hint",
+    "parent_feature_name": "popover=\"hint\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
+    ]
+  },
+  "html.global_attributes.popover.hint": {
+    "parent_feature": "popover-hint",
+    "parent_feature_name": "popover=\"hint\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
+    ]
+  },
   "api.HTMLLinkElement.imageSizes": {
     "parent_feature": "preloading-responsive-images",
     "parent_feature_name": "Preloading responsive images",
@@ -19718,6 +19890,7 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "137",
+        "chrome_android": "137",
         "edge": "137",
         "firefox": "153",
         "firefox_android": "153",

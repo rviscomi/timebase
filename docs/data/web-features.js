@@ -7024,7 +7024,8 @@ export const features = {
       "support": {
         "chrome": "130",
         "chrome_android": "130",
-        "edge": "130"
+        "edge": "130",
+        "firefox": "preview"
       }
     }
   },
@@ -9773,12 +9774,15 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2024-03-02",
+      "baseline_low_date": "2021-09-02",
       "support": {
         "chrome": "38",
         "chrome_android": "38",
         "edge": "93",
         "firefox": "47",
+        "firefox_android": "67",
         "safari": "8",
         "safari_ios": "8"
       }
@@ -9838,6 +9842,7 @@ export const features = {
         "chrome_android": "83",
         "edge": "93",
         "firefox": "65",
+        "firefox_android": "65",
         "safari": "14.1"
       }
     }
@@ -11273,7 +11278,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "18.4"
+        "safari": "18.4",
+        "safari_ios": "18.4"
       }
     }
   },
@@ -16986,12 +16992,15 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "high",
+      "baseline_high_date": "2019-02-02",
+      "baseline_low_date": "2016-08-02",
       "support": {
         "chrome": "29",
         "chrome_android": "29",
         "edge": "14",
         "firefox": "30",
+        "firefox_android": "30",
         "safari": "8",
         "safari_ios": "8"
       }
@@ -18253,6 +18262,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "37",
+        "chrome_android": "144",
         "edge": "13",
         "firefox": "50",
         "firefox_android": "50",
@@ -18291,11 +18301,11 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "149",
-        "firefox_android": "149"
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "firefox": "153",
+        "firefox_android": "153"
       }
     }
   },
@@ -20232,6 +20242,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
       }
@@ -25069,6 +25082,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "137",
+        "chrome_android": "137",
         "edge": "137",
         "firefox": "153",
         "firefox_android": "153",
