@@ -2103,6 +2103,10 @@ export const browsers = {
         "version": "155"
       },
       {
+        "date": "2026-09-15",
+        "version": "156"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2666,6 +2670,10 @@ export const browsers = {
       {
         "date": "2026-09-01",
         "version": "155"
+      },
+      {
+        "date": "2026-09-15",
+        "version": "156"
       }
     ]
   },
@@ -18301,9 +18309,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150",
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
         "firefox": "153",
         "firefox_android": "153"
       }
@@ -19180,7 +19188,8 @@ export const features = {
       "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-07-23",
       "baseline_low_date": "2024-01-23",
       "support": {
         "chrome": "119",
