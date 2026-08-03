@@ -141,7 +141,7 @@
   },
   "calc-size": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/252",
-    "votes": 36
+    "votes": 37
   },
   "canvas-2d-alpha": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/34",
@@ -293,7 +293,7 @@
   },
   "datalist": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/51",
-    "votes": 36
+    "votes": 37
   },
   "device-bound-session-credentials": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/564",
