@@ -608,8 +608,12 @@ export const browsers = {
         "version": "152"
       },
       {
-        "date": "null",
+        "date": "2026-09-08",
         "version": "153"
+      },
+      {
+        "date": "null",
+        "version": "154"
       },
       {
         "date": "null",
@@ -1133,8 +1137,12 @@ export const browsers = {
         "version": "152"
       },
       {
-        "date": "null",
+        "date": "2026-09-08",
         "version": "153"
+      },
+      {
+        "date": "null",
+        "version": "154"
       }
     ]
   },
@@ -1454,7 +1462,7 @@ export const browsers = {
         "version": "150"
       },
       {
-        "date": "2026-07-30",
+        "date": "2026-07-31",
         "version": "151"
       },
       {
@@ -1464,6 +1472,10 @@ export const browsers = {
       {
         "date": "2026-09-10",
         "version": "153"
+      },
+      {
+        "date": "2026-09-24",
+        "version": "154"
       }
     ]
   },
@@ -2917,6 +2929,10 @@ export const browsers = {
         "version": "26.5"
       },
       {
+        "date": "2026-07-27",
+        "version": "26.6"
+      },
+      {
         "date": "null",
         "version": "27"
       },
@@ -3152,6 +3168,10 @@ export const browsers = {
       {
         "date": "2026-05-11",
         "version": "26.5"
+      },
+      {
+        "date": "2026-07-27",
+        "version": "26.6"
       },
       {
         "date": "null",
@@ -4122,7 +4142,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.fromasync"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-07-25",
       "baseline_low_date": "2024-01-25",
       "support": {
         "chrome": "121",
@@ -4727,8 +4748,12 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/interaction.html#autocorrection"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-08-27",
       "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152",
         "firefox": "136",
         "firefox_android": "136",
         "safari": "14.1",
@@ -4806,7 +4831,8 @@ export const features = {
       "https://aomediacodec.github.io/av1-avif/"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-07-25",
       "baseline_low_date": "2024-01-25",
       "support": {
         "chrome": "85",
@@ -15675,8 +15701,12 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-08-27",
       "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "15.4",
@@ -21454,12 +21484,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-5/#tree-counting"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-08-18",
       "support": {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
-        "firefox": "preview",
+        "firefox": "154",
+        "firefox_android": "154",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
