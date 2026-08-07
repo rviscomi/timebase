@@ -9858,7 +9858,8 @@ export const features = {
         "chrome_android": "92",
         "edge": "93",
         "firefox": "68",
-        "safari": "16"
+        "safari": "16",
+        "safari_ios": "16"
       }
     }
   },
@@ -9870,14 +9871,16 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-05-12",
       "support": {
         "chrome": "93",
         "chrome_android": "83",
         "edge": "93",
         "firefox": "65",
         "firefox_android": "65",
-        "safari": "14.1"
+        "safari": "14.1",
+        "safari_ios": "18.5"
       }
     }
   },
@@ -22995,7 +22998,8 @@ export const features = {
         "chrome_android": "144",
         "edge": "144",
         "firefox": "139",
-        "firefox_android": "139"
+        "firefox_android": "139",
+        "safari": "preview"
       }
     }
   },
@@ -25937,7 +25941,8 @@ export const features = {
         "chrome": "26",
         "edge": "12",
         "firefox": "22",
-        "safari": "8"
+        "safari": "8",
+        "safari_ios": "8"
       }
     }
   },

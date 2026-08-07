@@ -7825,6 +7825,176 @@ export const bcdKeys = {
       "https://fullscreen.spec.whatwg.org/"
     ]
   },
+  "api.CSSFunctionDeclarations": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionDeclarations.style": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionDescriptors": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionDescriptors.result": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionRule": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionRule.getParameters": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionRule.name": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "api.CSSFunctionRule.returnType": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "css.at-rules.function": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
+  "css.at-rules.function.result": {
+    "parent_feature": "function",
+    "parent_feature_name": "@function",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-mixins-1/#function-rule"
+    ]
+  },
   "css.properties.column-rule-break": {
     "parent_feature": "gap-decorations",
     "parent_feature_name": "Gap decorations",
@@ -10386,6 +10556,26 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
     ]
   },
+  "api.InputEvent.isComposing": {
+    "parent_feature": "input-event",
+    "parent_feature_name": "input (event)",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "60",
+        "chrome_android": "60",
+        "edge": "79",
+        "firefox": "31",
+        "firefox_android": "31",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/uievents/#event-type-input"
+    ]
+  },
   "html.elements.input.type_range.vertical_orientation": {
     "parent_feature": "input-range",
     "parent_feature_name": "<input type=\"range\">",
@@ -10800,6 +10990,26 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
+    ]
+  },
+  "api.KeyboardEvent.isComposing": {
+    "parent_feature": "keyboard-events",
+    "parent_feature_name": "Keyboard events",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "56",
+        "chrome_android": "56",
+        "edge": "79",
+        "firefox": "31",
+        "firefox_android": "31",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/uievents/#events-keyboardevents"
     ]
   },
   "api.LanguageDetector": {
@@ -17105,6 +17315,4516 @@ export const bcdKeys = {
       "https://tc39.es/proposal-temporal/"
     ]
   },
+  "javascript.builtins.Temporal": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.Duration": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.abs": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.blank": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.days": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.hours": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.microseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.milliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.minutes": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.months": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.nanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.negated": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.seconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.sign": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.total": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.weeks": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Duration.years": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.Instant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.epochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.epochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.fromEpochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.fromEpochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.toZonedDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Instant.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.instant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainDateISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.plainTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.timeZoneId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.Now.zonedDateTimeISO": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainMonthDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toPlainYearMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.toZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDate.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.toZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.withPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainDateTime.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainMonthDay.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.PlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.PlainYearMonth.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.ZonedDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.add": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.calendarId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.compare": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.day": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.dayOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.dayOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInMonth": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.daysInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.epochMilliseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.epochNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.equals": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.era": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.eraYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.from": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.getTimeZoneTransition": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.hour": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.hoursInDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.inLeapYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.microsecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.millisecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.minute": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.month": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.monthCode": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.monthsInYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.nanosecond": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.offset": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.offsetNanoseconds": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.round": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.second": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.since": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.startOfDay": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.subtract": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.timeZoneId": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toInstant": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toJSON": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toLocaleString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainDate": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainDateTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.toString": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.until": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.valueOf": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.weekOfYear": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.with": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withCalendar": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withPlainTime": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.withTimeZone": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.year": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
+  "javascript.builtins.Temporal.ZonedDateTime.yearOfWeek": {
+    "parent_feature": "temporal",
+    "parent_feature_name": "Temporal",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "139",
+        "firefox_android": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-temporal/"
+    ]
+  },
   "css.properties.text-autospace.insert": {
     "parent_feature": "text-autospace",
     "parent_feature_name": "text-autospace",
@@ -18191,6 +22911,40 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webauthn/"
+    ]
+  },
+  "api.GPUAdapterInfo.subgroupMaxSize": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUAdapterInfo.subgroupMinSize": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
     ]
   },
   "api.GPUDevice.uncapturederror_event": {
