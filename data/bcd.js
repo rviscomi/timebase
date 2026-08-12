@@ -22137,6 +22137,21 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#propdef-text-fit"
     ]
   },
+  "javascript.statements.import.import_attributes.type_text": {
+    "parent_feature": "text-modules",
+    "parent_feature_name": "Text import attributes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-import-text/"
+    ]
+  },
   "css.properties.text-transform.dutch_ij_digraph": {
     "parent_feature": "text-transform",
     "parent_feature_name": "text-transform",

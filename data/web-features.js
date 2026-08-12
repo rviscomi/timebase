@@ -3645,6 +3645,31 @@ export const features = {
       "support": {}
     }
   },
+  "anchor-positioning-position-visibility-plurals": {
+    "description_html": "The <code>position-visibility: anchors-valid</code> and <code>position-visibility: anchors-visible</code> CSS declarations are aliases for <code>anchor-valid</code> and <code>anchor-visible</code>.",
+    "discouraged": {
+      "according_to": [
+        "https://drafts.csswg.org/css-anchor-position-1/#position-visibility:~:text=User%20agents%20may%20recognize%20anchors%2Dvalid%20and%20anchors%2Dvisible",
+        "https://github.com/w3c/csswg-drafts/issues/10201#issuecomment-4390233490"
+      ],
+      "reason": "The anchors-valid and anchors-visible values were renamed to the singular anchor-valid and anchor-visible values, since they refer to one anchor at a time.",
+      "reason_html": "The <code>anchors-valid</code> and <code>anchors-visible</code> values were renamed to the singular <code>anchor-valid</code> and <code>anchor-visible</code> values, since they refer to one anchor at a time."
+    },
+    "kind": "feature",
+    "name": "anchors-valid and anchors-visible",
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#position-visibility"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    }
+  },
   "anchor-positioning-transforms": {
     "description_html": "Anchor positioned elements take CSS transforms on their anchor elements into account.",
     "kind": "feature",
@@ -23370,6 +23395,21 @@ export const features = {
         "edge": "145",
         "firefox": "55",
         "firefox_android": "55"
+      }
+    }
+  },
+  "text-modules": {
+    "description_html": "Module <code>import … with { type: \"text\" }</code> statements load text data as a string value.",
+    "kind": "feature",
+    "name": "Text import attributes",
+    "spec": [
+      "https://tc39.es/proposal-import-text/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "153",
+        "firefox_android": "153"
       }
     }
   },
