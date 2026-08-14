@@ -15908,6 +15908,118 @@ export const bcdKeys = {
       "https://drafts.csswg.org/scroll-animations-1/"
     ]
   },
+  "api.Element.scroll.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Element.scrollBy.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Element.scrollIntoView.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Element.scrollTo.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Window.scroll.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Window.scrollBy.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
+  "api.Window.scrollTo.returns_promise": {
+    "parent_feature": "scroll-promises",
+    "parent_feature_name": "Scroll method promises",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ]
+  },
   "api.Navigator.serial": {
     "parent_feature": "serial",
     "parent_feature_name": "Web serial",

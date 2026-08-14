@@ -20716,6 +20716,22 @@ export const features = {
       }
     }
   },
+  "scroll-promises": {
+    "description_html": "The <code>scroll()</code>, <code>scrollBy()</code>, <code>scrollTo()</code>, and <code>scrollIntoView()</code> methods on the <code>Element</code> and <code>Window</code> interfaces return Promises that resolve when scrolling completes.",
+    "kind": "feature",
+    "name": "Scroll method promises",
+    "spec": [
+      "https://drafts.csswg.org/cssom-view-1/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    }
+  },
   "scroll-snap": {
     "description_html": "CSS scroll snap controls the panning and scrolling behavior within a scroll container.",
     "kind": "feature",

@@ -41,7 +41,7 @@
   },
   "app-share-targets": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/107",
-    "votes": 7
+    "votes": 8
   },
   "app-shortcuts": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/124",
@@ -393,7 +393,7 @@
   },
   "eyedropper": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/158",
-    "votes": 7
+    "votes": 8
   },
   "fast-seek": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/38",
@@ -493,7 +493,7 @@
   },
   "geolocation-element": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/515",
-    "votes": 3
+    "votes": 4
   },
   "getallrecords": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/422",
@@ -637,7 +637,7 @@
   },
   "loading-lazy-media": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/534",
-    "votes": 23
+    "votes": 24
   },
   "local-fonts": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/174",
@@ -1033,7 +1033,7 @@
   },
   "sizes-auto": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/250",
-    "votes": 27
+    "votes": 28
   },
   "smooth": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/154",
