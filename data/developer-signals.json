@@ -161,7 +161,7 @@
   },
   "canvas-html": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/569",
-    "votes": 11
+    "votes": 12
   },
   "capture-handle": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/510",
@@ -245,7 +245,7 @@
   },
   "controls-list": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/68",
-    "votes": 4
+    "votes": 5
   },
   "cookie-store": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/135",
@@ -341,7 +341,7 @@
   },
   "document-picture-in-picture": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/260",
-    "votes": 17
+    "votes": 18
   },
   "dynamic-range-limit": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/553",
@@ -425,7 +425,7 @@
   },
   "filter-function": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/509",
-    "votes": 40
+    "votes": 39
   },
   "fit-content-function": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/299",
@@ -473,7 +473,7 @@
   },
   "function": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/300",
-    "votes": 83
+    "votes": 84
   },
   "gamepad-haptics": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/87",
@@ -625,7 +625,7 @@
   },
   "line-clamp": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/267",
-    "votes": 34
+    "votes": 35
   },
   "link-rel-expect": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/240",
@@ -637,7 +637,7 @@
   },
   "loading-lazy-media": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/534",
-    "votes": 24
+    "votes": 25
   },
   "local-fonts": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/174",
@@ -833,7 +833,7 @@
   },
   "ping": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/20",
-    "votes": 1
+    "votes": 2
   },
   "pointer-lock": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/40",
@@ -925,7 +925,7 @@
   },
   "requestidlecallback": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/52",
-    "votes": 9
+    "votes": 10
   },
   "resize": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/17",
@@ -1145,15 +1145,15 @@
   },
   "url-cross-origin": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/561",
-    "votes": 0
+    "votes": 1
   },
   "url-integrity": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/565",
-    "votes": 2
+    "votes": 3
   },
   "url-referrer-policy": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/562",
-    "votes": 0
+    "votes": 1
   },
   "user-select": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/59",

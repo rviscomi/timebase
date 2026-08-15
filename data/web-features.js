@@ -24324,7 +24324,7 @@ export const features = {
     }
   },
   "uint8array-base64-hex": {
-    "description_html": "The <code>Uint8Array</code> object methods <code>fromBase64()</code>, <code>toBase64()</code>, and <code>setFromBase64()</code> convert to and from base64 strings. The <code>fromHex()</code>, <code>toHex()</code>, and <code>setFromHex()</code> methods convert to and from hex strings.",
+    "description_html": "The static <code>Uint8Array.fromBase64()</code> method and the <code>Uint8Array</code> instance methods <code>toBase64()</code> and <code>setFromBase64()</code> convert to and from base64 strings. Similarly, the static <code>Uint8Array.fromHex()</code> method and the instance methods <code>toHex()</code> and <code>setFromHex()</code> convert to and from hex strings.",
     "kind": "feature",
     "name": "Uint8Array base64 and hex conversion",
     "spec": [
