@@ -11725,94 +11725,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-masking-1/#positioned-masks"
     ]
   },
-  "css.properties.mask-mode": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-mode.alpha": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-mode.luminance": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-mode.match-source": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
   "css.properties.mask-origin": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
@@ -11899,36 +11811,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.grid-template-columns.masonry": {
-    "parent_feature": "masonry",
-    "parent_feature_name": "Masonry",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "firefox": "preview",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-grid-3/"
-    ]
-  },
-  "css.properties.grid-template-rows.masonry": {
-    "parent_feature": "masonry",
-    "parent_feature_name": "Masonry",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "firefox": "preview",
-        "safari": "preview"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-grid-3/"
     ]
   },
   "api.MathMLElement.attributeStyleMap": {

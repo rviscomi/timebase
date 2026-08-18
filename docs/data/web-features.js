@@ -15545,10 +15545,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "firefox": "preview",
-        "safari": "preview"
-      }
+      "support": {}
     }
   },
   "matchmedia": {
@@ -20360,15 +20357,15 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2025-12-12",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "143",
         "chrome_android": "143",
         "edge": "143",
         "firefox": "146",
         "firefox_android": "146",
-        "safari": "26.2",
-        "safari_ios": "26.2"
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     }
   },
