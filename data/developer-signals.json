@@ -25,7 +25,7 @@
   },
   "app-file-handlers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/173",
-    "votes": 11
+    "votes": 12
   },
   "app-launch-handler": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/190",
@@ -285,7 +285,7 @@
   },
   "custom-media-queries": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/445",
-    "votes": 27
+    "votes": 28
   },
   "customizable-select": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/278",
@@ -401,7 +401,7 @@
   },
   "fedcm": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/208",
-    "votes": 38
+    "votes": 39
   },
   "federated-credentials": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/56",
@@ -625,7 +625,7 @@
   },
   "line-clamp": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/267",
-    "votes": 36
+    "votes": 37
   },
   "link-rel-expect": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/240",
@@ -753,7 +753,7 @@
   },
   "opaquerange": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/579",
-    "votes": 0
+    "votes": 2
   },
   "origin": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/495",
@@ -929,7 +929,7 @@
   },
   "resize": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/17",
-    "votes": 4
+    "votes": 5
   },
   "rhythmic-sizing": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/315",
@@ -953,7 +953,7 @@
   },
   "scoped-custom-element-registries": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/364",
-    "votes": 25
+    "votes": 26
   },
   "screen-capture": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/47",
@@ -1161,7 +1161,7 @@
   },
   "usermedia": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/581",
-    "votes": 1
+    "votes": 2
   },
   "video-dynamic-range": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/169",
