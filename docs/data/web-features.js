@@ -2119,6 +2119,10 @@ export const browsers = {
         "version": "156"
       },
       {
+        "date": "2026-09-29",
+        "version": "157"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2686,6 +2690,10 @@ export const browsers = {
       {
         "date": "2026-09-15",
         "version": "156"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "157"
       }
     ]
   },
@@ -4655,6 +4663,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -6658,7 +6667,8 @@ export const features = {
       "support": {
         "chrome": "124",
         "chrome_android": "124",
-        "edge": "124"
+        "edge": "124",
+        "safari": "preview"
       }
     }
   },
@@ -8356,7 +8366,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-08-20",
       "baseline_low_date": "2024-02-20",
       "support": {
         "chrome": "111",
@@ -9683,7 +9694,8 @@ export const features = {
         "chrome_android": "134",
         "edge": "134",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -10066,6 +10078,15 @@ export const features = {
   },
   "fencedframe": {
     "description_html": "The <code>&#x3C;fencedframe></code> element embeds another HTML page into the current page in a more secure and privacy-preserving way than <code>&#x3C;iframe></code> elements.",
+    "discouraged": {
+      "according_to": [
+        "https://groups.google.com/a/chromium.org/g/blink-dev/c/c9w5uH3eSuo/m/KcvocvF1DQAJ",
+        "https://chromestatus.com/feature/6366274495053824"
+      ],
+      "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the <fencedframe> element and related APIs.",
+      "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the <code>&#x3C;fencedframe></code> element and related APIs.",
+      "removal_date": "2026-09-09"
+    },
     "kind": "feature",
     "name": "<fencedframe>",
     "spec": [
@@ -10074,9 +10095,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "126",
-        "chrome_android": "126",
-        "edge": "126"
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128"
       }
     }
   },
@@ -18769,11 +18790,14 @@ export const features = {
       "https://drafts.csswg.org/css-values-5/#progress"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-01",
       "support": {
         "chrome": "138",
         "chrome_android": "138",
         "edge": "138",
+        "firefox": "155",
+        "firefox_android": "155",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -25221,7 +25245,8 @@ export const features = {
         "chrome_android": "120",
         "edge": "120",
         "firefox": "125",
-        "firefox_android": "125"
+        "firefox_android": "125",
+        "safari": "preview"
       }
     }
   },
@@ -25371,7 +25396,8 @@ export const features = {
         "chrome_android": "114",
         "edge": "114",
         "firefox": "146",
-        "firefox_android": "146"
+        "firefox_android": "146",
+        "safari": "preview"
       }
     }
   },

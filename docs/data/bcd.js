@@ -2119,6 +2119,10 @@ export const browsers = {
         "version": "156"
       },
       {
+        "date": "2026-09-29",
+        "version": "157"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2686,6 +2690,10 @@ export const browsers = {
       {
         "date": "2026-09-15",
         "version": "156"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "157"
       }
     ]
   },
@@ -3651,6 +3659,54 @@ export const bcdKeys = {
       "https://streams.spec.whatwg.org/#rs-asynciterator"
     ]
   },
+  "api.AudioSession": {
+    "parent_feature": "audio-session",
+    "parent_feature_name": "Audio session",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/audio-session/"
+    ]
+  },
+  "api.AudioSession.type": {
+    "parent_feature": "audio-session",
+    "parent_feature_name": "Audio session",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/audio-session/"
+    ]
+  },
+  "api.Navigator.audioSession": {
+    "parent_feature": "audio-session",
+    "parent_feature_name": "Audio session",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/audio-session/"
+    ]
+  },
   "api.HTMLElement.autocorrect": {
     "parent_feature": "autocorrect",
     "parent_feature_name": "autocorrect",
@@ -4050,6 +4106,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-masking-1/#the-clip-path"
+    ]
+  },
+  "api.ClipboardItem.type_image_svg_xml": {
+    "parent_feature": "clipboard-svg",
+    "parent_feature_name": "SVG clipboard items",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#optional-data-types-x"
     ]
   },
   "api.CloseWatcher": {
@@ -7126,9 +7199,10 @@ export const bcdKeys = {
   "api.HTMLTemplateElement.shadowRootMode": {
     "parent_feature": "declarative-shadow-dom",
     "parent_feature_name": "Declarative shadow DOM",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-08-20",
       "baseline_low_date": "2024-02-20",
       "support": {
         "chrome": "111",
@@ -7147,7 +7221,7 @@ export const bcdKeys = {
   "api.HTMLTemplateElement.shadowRootSlotAssignment": {
     "parent_feature": "declarative-shadow-dom",
     "parent_feature_name": "Declarative shadow DOM",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": false,
       "support": {
@@ -7167,7 +7241,7 @@ export const bcdKeys = {
   "html.elements.template.shadowrootclonable": {
     "parent_feature": "declarative-shadow-dom",
     "parent_feature_name": "Declarative shadow DOM",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-05-13",
@@ -7188,7 +7262,7 @@ export const bcdKeys = {
   "html.elements.template.shadowrootdelegatesfocus": {
     "parent_feature": "declarative-shadow-dom",
     "parent_feature_name": "Declarative shadow DOM",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2024-03-22",
@@ -7209,9 +7283,10 @@ export const bcdKeys = {
   "html.elements.template.shadowrootmode": {
     "parent_feature": "declarative-shadow-dom",
     "parent_feature_name": "Declarative shadow DOM",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-08-20",
       "baseline_low_date": "2024-02-20",
       "support": {
         "chrome": "111",
@@ -7589,6 +7664,538 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-4/#exponent-funcs"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.@@asyncDispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.AsyncDisposableStack": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.adopt": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.defer": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.disposeAsync": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.disposed": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.move": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncDisposableStack.use": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.AsyncIterator.@@asyncDispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.@@dispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.DisposableStack": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.adopt": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.defer": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.dispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.disposed": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.move": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.DisposableStack.use": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.Iterator.@@dispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.SuppressedError": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.SuppressedError.SuppressedError": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.SuppressedError.error": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.SuppressedError.suppressed": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.Symbol.asyncDispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.builtins.Symbol.dispose": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.statements.await_using": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
+    ]
+  },
+  "javascript.statements.using": {
+    "parent_feature": "explicit-resource-management",
+    "parent_feature_name": "Explicit resource management",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "141",
+        "firefox_android": "141",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-async-explicit-resource-management/"
     ]
   },
   "api.CredentialsContainer.get.identity_option": {
@@ -11703,28 +12310,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-masking-1/#positioned-masks"
     ]
   },
-  "css.properties.mask-image.svg_masks": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
   "css.properties.mask-origin": {
     "parent_feature": "masks",
     "parent_feature_name": "Masks",
@@ -14738,6 +15323,27 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev"
     ]
   },
+  "css.types.progress": {
+    "parent_feature": "progress-function",
+    "parent_feature_name": "progress()",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-01",
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#progress"
+    ]
+  },
   "javascript.builtins.Promise.withResolvers": {
     "parent_feature": "promise-withresolvers",
     "parent_feature_name": "Promise.withResolvers()",
@@ -16548,6 +17154,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#tree-counting"
+    ]
+  },
+  "api.SVGAnimationElement.endEvent_event": {
+    "parent_feature": "smil-svg-animations",
+    "parent_feature_name": "SMIL SVG animations",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-11",
+      "support": {
+        "chrome": "35",
+        "chrome_android": "35",
+        "edge": "79",
+        "firefox": "93",
+        "firefox_android": "93",
+        "safari": "26.5",
+        "safari_ios": "26.5"
+      }
+    },
+    "spec": [
+      "https://svgwg.org/specs/animations/"
     ]
   },
   "api.CustomStateSet": {
@@ -22784,25 +23411,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-writing-modes-4/#vertical-modes"
     ]
   },
-  "api.Document.startViewTransition.updateCallback_parameter": {
-    "parent_feature": "view-transitions",
-    "parent_feature_name": "View transitions",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "preview",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-view-transitions-1/"
-    ]
-  },
   "webassembly.extended-constant-expressions": {
     "parent_feature": "wasm-extended-constant-expressions",
     "parent_feature_name": "Extended constant expressions (WebAssembly)",
@@ -22844,7 +23452,83 @@ export const bcdKeys = {
       "https://github.com/WebAssembly/js-promise-integration/blob/main/proposals/js-promise-integration/Overview.md"
     ]
   },
+  "webassembly.multiMemory": {
+    "parent_feature": "wasm-multi-memory",
+    "parent_feature_name": "Multi-memory (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "120",
+        "chrome_android": "120",
+        "edge": "120",
+        "firefox": "125",
+        "firefox_android": "125",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/multi-memory/blob/main/proposals/multi-memory/Overview.md"
+    ]
+  },
+  "webassembly.relaxed-SIMD": {
+    "parent_feature": "wasm-simd-relaxed",
+    "parent_feature_name": "Relaxed-width SIMD (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md"
+    ]
+  },
   "api.AnimationTimeline.duration": {
+    "parent_feature": "web-animations",
+    "parent_feature_name": "Web animations",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "preview",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/web-animations-1/"
+    ]
+  },
+  "api.Element.animate.options_rangeEnd_parameter": {
+    "parent_feature": "web-animations",
+    "parent_feature_name": "Web animations",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "preview",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/web-animations-1/"
+    ]
+  },
+  "api.Element.animate.options_rangeStart_parameter": {
     "parent_feature": "web-animations",
     "parent_feature_name": "Web animations",
     "parent_feature_baseline": "high",
