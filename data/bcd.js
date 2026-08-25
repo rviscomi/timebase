@@ -11073,6 +11073,134 @@ export const bcdKeys = {
       "https://drafts.csswg.org/selectors-5/#headings"
     ]
   },
+  "api.ProcessingInstruction.doc_html": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.getAttribute": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.getAttributeNames": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.hasAttribute": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.hasAttributes": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.removeAttribute": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.setAttribute": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
+  "api.ProcessingInstruction.toggleAttribute": {
+    "parent_feature": "html-processing-instructions",
+    "parent_feature_name": "HTML processing instructions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ]
+  },
   "api.IDBFactory.databases": {
     "parent_feature": "indexeddb",
     "parent_feature_name": "IndexedDB",

@@ -12438,6 +12438,22 @@ export const features = {
       }
     }
   },
+  "html-processing-instructions": {
+    "description_html": "An HTML processing instruction is text enclosed by <code>&#x3C;?</code> and <code>></code>, which marks a target for further processing. They may appear anywhere in a document. They are ignored like comments when they're not recognized for a specific purpose.",
+    "kind": "feature",
+    "name": "HTML processing instructions",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    }
+  },
   "html-wrapper-methods": {
     "description_html": "JavaScript built-in methods such as, <code>String.bold()</code> and <code>String.italics()</code>, wrap strings in (often historic) HTML.",
     "discouraged": {
