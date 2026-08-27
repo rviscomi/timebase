@@ -25063,6 +25063,54 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#white-space-collapsing"
     ]
   },
+  "css.properties.window-drag": {
+    "parent_feature": "window-drag",
+    "parent_feature_name": "window-drag",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#window-drag"
+    ]
+  },
+  "css.properties.window-drag.move": {
+    "parent_feature": "window-drag",
+    "parent_feature_name": "window-drag",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#window-drag"
+    ]
+  },
+  "css.properties.window-drag.none": {
+    "parent_feature": "window-drag",
+    "parent_feature_name": "window-drag",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#window-drag"
+    ]
+  },
   "css.properties.word-break.auto-phrase": {
     "parent_feature": "word-break-auto-phrase",
     "parent_feature_name": "word-break: auto-phrase",

@@ -26989,6 +26989,22 @@ export const features = {
       }
     }
   },
+  "window-drag": {
+    "description_html": "The <code>window-drag: move</code> CSS declaration sets an element as a window drag handle, like a device's app title bar. You can use this to add click-and-drag areas to an installed progressive web app, often alongside window controls overlay.",
+    "kind": "feature",
+    "name": "window-drag",
+    "spec": [
+      "https://drafts.csswg.org/css-ui-4/#window-drag"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
+      }
+    }
+  },
   "window-management": {
     "description_html": "The <code>window.getScreenDetails()</code> method gets information about the screens on a device, which you can use to place new windows on a specific screen with <code>window.open()</code>.",
     "kind": "feature",
