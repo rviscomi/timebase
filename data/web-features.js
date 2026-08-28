@@ -612,8 +612,12 @@ export const browsers = {
         "version": "153"
       },
       {
-        "date": "null",
+        "date": "2026-09-22",
         "version": "154"
+      },
+      {
+        "date": "null",
+        "version": "155"
       },
       {
         "date": "null",
@@ -1141,8 +1145,12 @@ export const browsers = {
         "version": "153"
       },
       {
-        "date": "null",
+        "date": "2026-09-22",
         "version": "154"
+      },
+      {
+        "date": "null",
+        "version": "155"
       }
     ]
   },
@@ -3593,6 +3601,26 @@ export const features = {
       }
     }
   },
+  "alpha": {
+    "description_html": "The <code>alpha()</code> CSS function computes a relative color value by adjusting the opacity of an origin color.",
+    "kind": "feature",
+    "name": "alpha()",
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#relative-alpha"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    }
+  },
   "alt-text-generated-content": {
     "description_html": "The <code>/</code> notation in <code>content</code> CSS property values adds alternative text to generated content. For example, the <code>content: url('upvote-icon.svg') / 'Upvote'</code> declaration adds accessible 'Upvote' text to the SVG icon. Also known as alternate text.",
     "kind": "feature",
@@ -3650,7 +3678,28 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    }
+  },
+  "anchor-positioning-animations": {
+    "description_html": "The <code>anchor()</code> and <code>anchor-size()</code> CSS functions animate or transition on changes such as the anchor box moving or the anchor element changing.",
+    "kind": "feature",
+    "name": "Anchor positioning animations and transitions",
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#resolvable-anchor-function"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "safari": "26",
+        "safari_ios": "26"
+      }
     }
   },
   "anchor-positioning-position-visibility-plurals": {
@@ -3936,7 +3985,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -7154,6 +7205,22 @@ export const features = {
         "firefox_android": "83",
         "safari": "12.1",
         "safari_ios": "12.2"
+      }
+    }
+  },
+  "connection-allowlists": {
+    "description_html": "The <code>Connection-Allowlist</code> HTTP response header limits which requests a page may initiate using fetch and other APIs.",
+    "kind": "feature",
+    "name": "Connection allowlists",
+    "spec": [
+      "https://wicg.github.io/connection-allowlists/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
       }
     }
   },
@@ -10498,6 +10565,22 @@ export const features = {
       }
     }
   },
+  "flexbox-flex-wrap-balance": {
+    "description_html": "The <code>flex-wrap: balance</code> CSS declaration distributes items in a multi-line flex container such that each line has about the same number of items.",
+    "kind": "feature",
+    "name": "flex-wrap: balance",
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-balance"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    }
+  },
   "flexbox-gap": {
     "description_html": "The <code>gap</code> CSS property in a flexbox layout sets the size of the space between items.",
     "kind": "feature",
@@ -11453,6 +11536,18 @@ export const features = {
         "safari": "5",
         "safari_ios": "5"
       }
+    }
+  },
+  "frame-sizing": {
+    "description_html": "The <code>frame-sizing</code> CSS property sets the size of an <code>&#x3C;iframe></code> element to that of it contents, to avoid scrolling in the iframe. Embedded documents allow this with the <code>&#x3C;meta name=\"responsive-embedded-sizing\"></code> element and request resizing in the embedding page by calling <code>window.requestResize()</code>.",
+    "kind": "feature",
+    "name": "Responsive iframes",
+    "spec": [
+      "https://drafts.csswg.org/css-sizing-4/#propdef-frame-sizing"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "fullscreen": {
@@ -13742,6 +13837,22 @@ export const features = {
         "firefox_android": "64",
         "safari": "9",
         "safari_ios": "9"
+      }
+    }
+  },
+  "interaction-contentful-paint": {
+    "description_html": "The <code>interaction-contentful-paint</code> performance entry, which returns an <code>InteractionContentfulPaint</code> instance, is emitted when an interaction causes one or more contentful paints. Use it to measure LCP for soft navigations in single page apps or to measure contentful paints due to an interaction.",
+    "kind": "feature",
+    "name": "Interaction contentful paint",
+    "spec": [
+      "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
       }
     }
   },
@@ -19311,7 +19422,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
+      }
     }
   },
   "referrer-policy": {
@@ -20445,6 +20560,7 @@ export const features = {
         "chrome": "146",
         "chrome_android": "146",
         "edge": "146",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -21719,6 +21835,22 @@ export const features = {
       "support": {
         "firefox": "93",
         "firefox_android": "93"
+      }
+    }
+  },
+  "soft-navigations": {
+    "description_html": "The <code>soft-navigation</code> performance entry, which returns a <code>PerformanceSoftNavigation</code> instance, is emitted when soft navigation occurs in a single page app. This is defined as when a trusted user interaction causes a URL update and a visible contentful paint to the screen.",
+    "kind": "feature",
+    "name": "Soft navigation performance entries",
+    "spec": [
+      "https://wicg.github.io/soft-navigations/#sec-soft-navs"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
       }
     }
   },
@@ -23037,6 +23169,22 @@ export const features = {
         "firefox_android": "22",
         "safari": "8",
         "safari_ios": "8"
+      }
+    }
+  },
+  "template-for": {
+    "description_html": "The <code>&#x3C;template for=\"…\"></code> HTML element replaces the content at a named range or insertion point, marked by the processing instructions <code>&#x3C;?start name=\"…\"></code> and <code>&#x3C;?end></code> or <code>&#x3C;?marker name=\"…\"></code>. You can use this to stream or \"patch\" partial updates into the document out of order.",
+    "kind": "feature",
+    "name": "<template for>",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-for"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
       }
     }
   },
@@ -25156,10 +25304,12 @@ export const features = {
       "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/Exceptions.md"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2025-05-29",
       "support": {
         "chrome": "137",
         "chrome_android": "137",
+        "edge": "137",
         "firefox": "131",
         "firefox_android": "131",
         "safari": "18.4",
@@ -27279,15 +27429,21 @@ export const features = {
   },
   "xslt": {
     "description_html": "The <code>XSLTProcessor</code> API transforms XML documents into new XML or HTML documents, using XSLT stylesheets. You can use XSLT to convert data between different XML schemas or to convert XML data into web pages or PDF documents. Also known as Extensible Stylesheet Language Transformations.",
+    "discouraged": {
+      "according_to": [
+        "https://html.spec.whatwg.org/#interactions-with-xpath-and-xslt",
+        "https://dom.spec.whatwg.org/#xslt"
+      ],
+      "reason": "XSLT is a candidate for removal from browsers because browser implementations are highly susceptible to memory safety vulnerabilities.",
+      "reason_html": "XSLT is a candidate for removal from browsers because browser implementations are highly susceptible to memory safety vulnerabilities."
+    },
     "kind": "feature",
     "name": "XSLT",
     "spec": [
       "https://dom.spec.whatwg.org/#xslt"
     ],
     "status": {
-      "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline": false,
       "support": {
         "chrome": "1",
         "chrome_android": "18",
