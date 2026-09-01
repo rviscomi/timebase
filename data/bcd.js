@@ -3677,6 +3677,27 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-groupby"
     ]
   },
+  "api.Clipboard.read": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
   "api.Clipboard.readText": {
     "parent_feature": "async-clipboard",
     "parent_feature_name": "Async clipboard",
@@ -3690,6 +3711,153 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "125",
         "firefox_android": "125",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.Clipboard.type_image-png": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.Clipboard.type_text-html": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "86",
+        "chrome_android": "86",
+        "edge": "86",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.Clipboard.type_text-plain": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.Clipboard.write": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.ClipboardItem": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "84",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.ClipboardItem.getType": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "84",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/clipboard-apis/#async-clipboard-api"
+    ]
+  },
+  "api.ClipboardItem.types": {
+    "parent_feature": "async-clipboard",
+    "parent_feature_name": "Async clipboard",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "84",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
         "safari": "13.1",
         "safari_ios": "13.4"
       }
@@ -4181,22 +4349,25 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
     ]
   },
-  "api.CanvasRenderingContext2D.lang": {
-    "parent_feature": "canvas-2d",
-    "parent_feature_name": "2D canvas",
+  "html.elements.base.href.forbid_data_javascript_urls": {
+    "parent_feature": "base",
+    "parent_feature_name": "<base>",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "chrome": "136",
-        "chrome_android": "136",
-        "edge": "136",
-        "firefox": "151",
-        "firefox_android": "151"
+        "chrome": "58",
+        "chrome_android": "58",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "13.1",
+        "safari_ios": "13.4"
       }
     },
     "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+      "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element"
     ]
   },
   "api.CanvasRenderingContext2D.reset": {
@@ -4389,72 +4560,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/cssom-view-1/#dom-element-checkvisibility"
-    ]
-  },
-  "css.properties.clip-path.fill-box": {
-    "parent_feature": "clip-path-boxes",
-    "parent_feature_name": "Clip path boxes",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
-      "baseline_low_date": "2023-11-02",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "119",
-        "edge": "119",
-        "firefox": "51",
-        "firefox_android": "51",
-        "safari": "13.1",
-        "safari_ios": "13.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
-    ]
-  },
-  "css.properties.clip-path.stroke-box": {
-    "parent_feature": "clip-path-boxes",
-    "parent_feature_name": "Clip path boxes",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
-      "baseline_low_date": "2023-11-02",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "119",
-        "edge": "119",
-        "firefox": "51",
-        "firefox_android": "51",
-        "safari": "13.1",
-        "safari_ios": "13.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
-    ]
-  },
-  "css.properties.clip-path.view-box": {
-    "parent_feature": "clip-path-boxes",
-    "parent_feature_name": "Clip path boxes",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
-      "baseline_low_date": "2023-11-02",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "119",
-        "edge": "119",
-        "firefox": "54",
-        "firefox_android": "54",
-        "safari": "13.1",
-        "safari_ios": "13.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#the-clip-path"
     ]
   },
   "api.ClipboardItem.type_image_svg_xml": {
@@ -4807,27 +4912,6 @@ export const bcdKeys = {
       "https://wicg.github.io/connection-allowlists/"
     ]
   },
-  "css.at-rules.container.style_queries_for_custom_properties": {
-    "parent_feature": "container-style-queries",
-    "parent_feature_name": "Container style queries",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-19",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "151",
-        "firefox_android": "151",
-        "safari": "18",
-        "safari_ios": "18"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-conditional-5/#style-container"
-    ]
-  },
   "css.properties.counter-set": {
     "parent_feature": "counter-set",
     "parent_feature_name": "counter-set",
@@ -4914,45 +4998,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
-    ]
-  },
-  "api.Credential.isConditionalMediationAvailable_static": {
-    "parent_feature": "credential-management",
-    "parent_feature_name": "Credential management",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webappsec-credential-management/"
-    ]
-  },
-  "css.properties.image-rendering.crisp-edges": {
-    "parent_feature": "crisp-edges",
-    "parent_feature_name": "crisp-edges",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-07",
-      "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
-        "firefox": "65",
-        "firefox_android": "65",
-        "safari": "7",
-        "safari_ios": "7"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-images-3/#the-image-rendering"
     ]
   },
   "api.CSSPseudoElement": {
@@ -7793,166 +7838,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/selectors-4/#the-dir-pseudo"
     ]
   },
-  "api.DocumentPictureInPicture": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPicture.enter_event": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPicture.requestWindow": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPicture.requestWindow.option_disallowReturnToOpener": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "124",
-        "edge": "124",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPicture.requestWindow.option_preferInitialWindowPlacement": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "130",
-        "edge": "130",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPicture.window": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPictureEvent": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPictureEvent.DocumentPictureInPictureEvent": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.DocumentPictureInPictureEvent.window": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
-  "api.Window.documentPictureInPicture": {
-    "parent_feature": "document-picture-in-picture",
-    "parent_feature_name": "Document picture-in-picture",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "116",
-        "edge": "116",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/document-picture-in-picture/"
-    ]
-  },
   "css.types.exp": {
     "parent_feature": "exp-functions",
     "parent_feature_name": "Exponential functions (CSS)",
@@ -9011,25 +8896,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-width-prop"
-    ]
-  },
-  "api.Element.requestFullscreen.options_parameter": {
-    "parent_feature": "fullscreen",
-    "parent_feature_name": "Fullscreen API",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "71",
-        "chrome_android": "71",
-        "edge": "79",
-        "firefox": "151",
-        "firefox_android": "151",
-        "safari": "16.4"
-      }
-    },
-    "spec": [
-      "https://fullscreen.spec.whatwg.org/"
     ]
   },
   "api.CSSFunctionDeclarations": {
@@ -11546,94 +11412,256 @@ export const bcdKeys = {
       "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
     ]
   },
-  "css.properties.hanging-punctuation": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.conic-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
-  "css.properties.hanging-punctuation.allow-end": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.conic-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
-  "css.properties.hanging-punctuation.first": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.linear-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
-  "css.properties.hanging-punctuation.force-end": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.linear-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
-  "css.properties.hanging-punctuation.last": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.radial-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
-  "css.properties.hanging-punctuation.none": {
-    "parent_feature": "hanging-punctuation",
-    "parent_feature_name": "Hanging punctuation",
-    "parent_feature_baseline": false,
+  "css.types.gradient.radial-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
       "support": {
-        "safari": "26.5",
-        "safari_ios": "26.5"
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
       }
     },
     "spec": [
-      "https://drafts.csswg.org/css-text-4/#hanging-punctuation-property"
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-conic-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-conic-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-linear-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-linear-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-radial-gradient.hue_interpolation_method": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
+    ]
+  },
+  "css.types.gradient.repeating-radial-gradient.interpolation_color_space": {
+    "parent_feature": "gradient-interpolation",
+    "parent_feature_name": "Gradient interpolation",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
   "css.selectors.has": {
@@ -12365,48 +12393,6 @@ export const bcdKeys = {
       "https://www.iso.org/standard/85253.html"
     ]
   },
-  "api.SharedWorker.SharedWorker.ecmascript_modules": {
-    "parent_feature": "js-modules-shared-workers",
-    "parent_feature_name": "JavaScript modules in shared workers",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "80",
-        "chrome_android": "148",
-        "edge": "80",
-        "firefox": "114",
-        "firefox_android": "114",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
-    ]
-  },
-  "api.SharedWorker.SharedWorker.options_type_parameter": {
-    "parent_feature": "js-modules-shared-workers",
-    "parent_feature_name": "JavaScript modules in shared workers",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "80",
-        "chrome_android": "148",
-        "edge": "80",
-        "firefox": "114",
-        "firefox_android": "114",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-and-the-sharedworker-interface:dom-sharedworker-2"
-    ]
-  },
   "api.KeyboardEvent.isComposing": {
     "parent_feature": "keyboard-events",
     "parent_feature_name": "Keyboard events",
@@ -12425,316 +12411,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/uievents/#events-keyboardevents"
-    ]
-  },
-  "api.LanguageDetector": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.availability_static": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.create_static": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.destroy": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.detect": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.expectedInputLanguages": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.inputQuota": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageDetector.measureInputUsage": {
-    "parent_feature": "languagedetector",
-    "parent_feature_name": "Language detector",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#language-detector-api"
-    ]
-  },
-  "api.LanguageModel": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.append": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.availability_static": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.clone": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.contextUsage": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.contextWindow": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.contextoverflow_event": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.create_static": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.destroy": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.measureContextUsage": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.prompt": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "api.LanguageModel.promptStreaming": {
-    "parent_feature": "languagemodel",
-    "parent_feature_name": "LanguageModel",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148"
-      }
-    },
-    "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
-    ]
-  },
-  "css.types.length.lh": {
-    "parent_feature": "lh",
-    "parent_feature_name": "lh unit",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#lh"
     ]
   },
   "css.types.color.light-dark": {
@@ -13706,21 +13382,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-nesting-1/"
-    ]
-  },
-  "api.SharedWorker.SharedWorker.options_sameSiteCookies_parameter": {
-    "parent_feature": "non-cookie-storage-access",
-    "parent_feature_name": "Non-cookie storage access",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "125",
-        "chrome_android": "148"
-      }
-    },
-    "spec": [
-      "https://privacycg.github.io/saa-non-cookie-storage/"
     ]
   },
   "api.Notification.actions": {
@@ -14990,135 +14651,6 @@ export const bcdKeys = {
       "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
     ]
   },
-  "css.selectors.open": {
-    "parent_feature": "open-pseudo",
-    "parent_feature_name": ":open",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-11",
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133",
-        "firefox": "136",
-        "firefox_android": "136",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/selectors-4/#open-state"
-    ]
-  },
-  "api.Origin": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
-  "api.Origin.Origin": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
-  "api.Origin.from_static": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
-  "api.Origin.isSameOrigin": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
-  "api.Origin.isSameSite": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
-  "api.Origin.opaque": {
-    "parent_feature": "origin",
-    "parent_feature_name": "Origin",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "145",
-        "chrome_android": "145",
-        "edge": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/browsers.html#the-origin-interface"
-    ]
-  },
   "css.properties.overflow-anchor": {
     "parent_feature": "overflow-anchor",
     "parent_feature_name": "overflow-anchor",
@@ -15466,23 +14998,6 @@ export const bcdKeys = {
       "https://w3c.github.io/picture-in-picture/"
     ]
   },
-  "css.at-rules.media.display-mode.picture-in-picture": {
-    "parent_feature": "picture-in-picture",
-    "parent_feature_name": "Picture-in-picture (video)",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "123",
-        "edge": "123",
-        "firefox": "151",
-        "firefox_android": "151"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/picture-in-picture/"
-    ]
-  },
   "css.selectors.picture-in-picture": {
     "parent_feature": "picture-in-picture",
     "parent_feature_name": "Picture-in-picture (video)",
@@ -15742,94 +15257,6 @@ export const bcdKeys = {
         "edge": "114",
         "firefox": "125",
         "firefox_android": "125",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/popover.html"
-    ]
-  },
-  "api.ToggleEvent": {
-    "parent_feature": "popover",
-    "parent_feature_name": "Popover",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/popover.html"
-    ]
-  },
-  "api.ToggleEvent.ToggleEvent": {
-    "parent_feature": "popover",
-    "parent_feature_name": "Popover",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/popover.html"
-    ]
-  },
-  "api.ToggleEvent.newState": {
-    "parent_feature": "popover",
-    "parent_feature_name": "Popover",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/popover.html"
-    ]
-  },
-  "api.ToggleEvent.oldState": {
-    "parent_feature": "popover",
-    "parent_feature_name": "Popover",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "114",
-        "chrome_android": "114",
-        "edge": "114",
-        "firefox": "120",
-        "firefox_android": "120",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -16304,24 +15731,6 @@ export const bcdKeys = {
       "https://github.com/whatwg/html/pull/10995"
     ]
   },
-  "api.PerformanceResourceTiming.contentType": {
-    "parent_feature": "resource-timing",
-    "parent_feature_name": "Resource timing",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
-        "firefox": "129",
-        "firefox_android": "129"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/resource-timing/"
-    ]
-  },
   "api.PerformanceResourceTiming.firstInterimResponseStart": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing",
@@ -16341,28 +15750,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/resource-timing/"
-    ]
-  },
-  "css.types.length.rlh": {
-    "parent_feature": "rlh",
-    "parent_feature_name": "rlh unit",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "111",
-        "chrome_android": "111",
-        "edge": "111",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#font-relative-lengths"
     ]
   },
   "css.types.mod": {
@@ -17504,295 +16891,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/cssom-view-1/"
     ]
   },
-  "api.Navigator.serial": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.Serial": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.Serial.getPorts": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.Serial.requestPort": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.close": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.connect_event": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.connected": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "130",
-        "edge": "130",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.disconnect_event": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.forget": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "103",
-        "edge": "103",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.getInfo": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.getSignals": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.open": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.readable": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.setSignals": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.SerialPort.writable": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "api.WorkerNavigator.serial": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
-  "html.elements.iframe.allow.serial": {
-    "parent_feature": "serial",
-    "parent_feature_name": "Web serial",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "89",
-        "chrome_android": "89",
-        "edge": "89",
-        "firefox": "151"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/serial/"
-    ]
-  },
   "http.headers.Service-Worker-Navigation-Preload": {
     "parent_feature": "service-workers",
     "parent_feature_name": "Service workers",
@@ -17866,6 +16964,153 @@ export const bcdKeys = {
       "https://w3c.github.io/ServiceWorker/"
     ]
   },
+  "javascript.builtins.Set.difference": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.intersection": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.isDisjointFrom": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.isSubsetOf": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.isSupersetOf": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.symmetricDifference": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
+  "javascript.builtins.Set.union": {
+    "parent_feature": "set-methods",
+    "parent_feature_name": "Set methods",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-properties-of-the-set-prototype-object"
+    ]
+  },
   "api.Element.attachShadow.options_clonable_parameter": {
     "parent_feature": "shadow-dom",
     "parent_feature_name": "Shadow DOM",
@@ -17924,192 +17169,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-shapes-1/#declaring-shapes"
     ]
   },
-  "api.SharedWorker": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "5",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "33",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorker.SharedWorker": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "5",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "33",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorker.SharedWorker.options_name_parameter": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "70",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "55",
-        "firefox_android": "55"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorker.error_event": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "5",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "33",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorker.port": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "5",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "33",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorkerGlobalScope": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "4",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "29",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorkerGlobalScope.close": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "4",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "29",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorkerGlobalScope.connect_event": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "4",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "29",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
-  "api.SharedWorkerGlobalScope.name": {
-    "parent_feature": "shared-workers",
-    "parent_feature_name": "Shared worker",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-05",
-      "support": {
-        "chrome": "4",
-        "chrome_android": "148",
-        "edge": "79",
-        "firefox": "29",
-        "firefox_android": "29",
-        "safari": "16",
-        "safari_ios": "16"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/workers.html#shared-workers-introduction"
-    ]
-  },
   "css.types.sibling-count": {
     "parent_feature": "sibling-count",
     "parent_feature_name": "sibling-count() and sibling-index()",
@@ -18150,27 +17209,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#tree-counting"
-    ]
-  },
-  "api.SVGAnimationElement.endEvent_event": {
-    "parent_feature": "smil-svg-animations",
-    "parent_feature_name": "SMIL SVG animations",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-11",
-      "support": {
-        "chrome": "35",
-        "chrome_android": "35",
-        "edge": "79",
-        "firefox": "93",
-        "firefox_android": "93",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://svgwg.org/specs/animations/"
     ]
   },
   "api.PerformanceSoftNavigation": {
@@ -18694,24 +17732,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing"
     ]
   },
-  "css.at-rules.container.style_queries_for_custom_properties.range_syntax": {
-    "parent_feature": "style-query-range-syntax",
-    "parent_feature_name": "Range syntax for style queries",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142",
-        "firefox": "151",
-        "firefox_android": "151"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
-    ]
-  },
   "api.CSSImportRule.supportsText": {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
@@ -18752,22 +17772,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-3/#at-supports"
-    ]
-  },
-  "css.at-rules.supports.at-rule": {
-    "parent_feature": "supports-at-rule",
-    "parent_feature_name": "at-rule()",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
     ]
   },
   "api.SVGElement.attributeStyleMap": {
@@ -23797,27 +22801,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
     ]
   },
-  "css.properties.text-decoration-skip-ink.all": {
-    "parent_feature": "text-decoration-skip-ink-all",
-    "parent_feature_name": "text-decoration-skip-ink: all",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-07",
-      "support": {
-        "chrome": "148",
-        "chrome_android": "148",
-        "edge": "148",
-        "firefox": "75",
-        "firefox_android": "79",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-ink-all"
-    ]
-  },
   "css.properties.text-fit": {
     "parent_feature": "text-fit",
     "parent_feature_name": "text-fit",
@@ -23998,27 +22981,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance"
     ]
   },
-  "api.ToggleEvent.source": {
-    "parent_feature": "toggleevent-source",
-    "parent_feature_name": "ToggleEvent source",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-05-11",
-      "support": {
-        "chrome": "140",
-        "chrome_android": "140",
-        "edge": "140",
-        "firefox": "145",
-        "firefox_android": "145",
-        "safari": "26.5",
-        "safari_ios": "26.5"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#dom-toggleevent-source"
-    ]
-  },
   "javascript.operators.await.top_level": {
     "parent_feature": "top-level-await",
     "parent_feature_name": "Top-level await",
@@ -24158,156 +23120,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-transitions-2/"
     ]
   },
-  "api.Translator": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.availability_static": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.create_static": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.destroy": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.inputQuota": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.measureInputUsage": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.sourceLanguage": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.targetLanguage": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.translate": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
-  "api.Translator.translateStreaming": {
-    "parent_feature": "translator",
-    "parent_feature_name": "Translator",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "138",
-        "edge": "148"
-      }
-    },
-    "spec": [
-      "https://webmachinelearning.github.io/translation-api/#translator-api"
-    ]
-  },
   "api.URL.canParse_static": {
     "parent_feature": "url-canparse",
     "parent_feature_name": "URL.canParse()",
@@ -24380,138 +23192,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier"
-    ]
-  },
-  "api.Navigator.userActivation": {
-    "parent_feature": "user-activation",
-    "parent_feature_name": "User activation",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "72",
-        "chrome_android": "72",
-        "edge": "79",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
-    ]
-  },
-  "api.UserActivation": {
-    "parent_feature": "user-activation",
-    "parent_feature_name": "User activation",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "72",
-        "chrome_android": "72",
-        "edge": "79",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
-    ]
-  },
-  "api.UserActivation.hasBeenActive": {
-    "parent_feature": "user-activation",
-    "parent_feature_name": "User activation",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "72",
-        "chrome_android": "72",
-        "edge": "79",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
-    ]
-  },
-  "api.UserActivation.isActive": {
-    "parent_feature": "user-activation",
-    "parent_feature_name": "User activation",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "72",
-        "chrome_android": "72",
-        "edge": "79",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/interaction.html#the-useractivation-interface"
-    ]
-  },
-  "css.selectors.user-invalid": {
-    "parent_feature": "user-pseudos",
-    "parent_feature_name": ":user-valid and :user-invalid",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
-      "baseline_low_date": "2023-11-02",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "119",
-        "edge": "119",
-        "firefox": "88",
-        "firefox_android": "88",
-        "safari": "16.5",
-        "safari_ios": "16.5"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/selectors-4/#user-pseudos"
-    ]
-  },
-  "css.selectors.user-valid": {
-    "parent_feature": "user-pseudos",
-    "parent_feature_name": ":user-valid and :user-invalid",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-02",
-      "baseline_low_date": "2023-11-02",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "119",
-        "edge": "119",
-        "firefox": "88",
-        "firefox_android": "88",
-        "safari": "16.5",
-        "safari_ios": "16.5"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/selectors-4/#user-pseudos"
     ]
   },
   "css.properties.writing-mode.vertical_oriented_form_controls": {
@@ -24706,28 +23386,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://wicg.github.io/web-otp/"
-    ]
-  },
-  "api.PublicKeyCredential.authenticatorAttachment": {
-    "parent_feature": "webauthn",
-    "parent_feature_name": "Web authentication",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-05-21",
-      "baseline_low_date": "2023-11-21",
-      "support": {
-        "chrome": "98",
-        "chrome_android": "98",
-        "edge": "98",
-        "firefox": "120",
-        "firefox_android": "120",
-        "safari": "15.5",
-        "safari_ios": "15.5"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/webauthn/"
     ]
   },
   "api.GPUAdapterInfo.subgroupMaxSize": {
@@ -25970,6 +24628,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://websockets.spec.whatwg.org/"
+    ]
+  },
+  "api.VTTCue.text.all_html_character_references": {
+    "parent_feature": "webvtt",
+    "parent_feature_name": "WebVTT",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-06-11",
+      "support": {
+        "chrome": "63",
+        "chrome_android": "63",
+        "edge": "79",
+        "firefox": "127",
+        "firefox_android": "127",
+        "safari": "17.5",
+        "safari_ios": "17.5"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webvtt/"
     ]
   },
   "css.properties.white-space-collapse": {
