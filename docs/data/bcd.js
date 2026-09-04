@@ -1474,7 +1474,7 @@ export const browsers = {
         "version": "151"
       },
       {
-        "date": "2026-08-27",
+        "date": "2026-08-28",
         "version": "152"
       },
       {
@@ -1484,6 +1484,10 @@ export const browsers = {
       {
         "date": "2026-09-24",
         "version": "154"
+      },
+      {
+        "date": "2026-10-08",
+        "version": "155"
       }
     ]
   },
@@ -2131,6 +2135,10 @@ export const browsers = {
         "version": "157"
       },
       {
+        "date": "2026-10-13",
+        "version": "158"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2702,6 +2710,10 @@ export const browsers = {
       {
         "date": "2026-09-29",
         "version": "157"
+      },
+      {
+        "date": "2026-10-13",
+        "version": "158"
       }
     ]
   },
@@ -3391,6 +3403,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
         "firefox": "151",
         "firefox_android": "151",
         "safari": "27",
@@ -3917,7 +3932,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -3935,7 +3951,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -3953,7 +3970,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -3971,7 +3989,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -3989,7 +4008,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4007,7 +4027,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4025,7 +4046,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4043,7 +4065,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4061,7 +4084,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4079,7 +4103,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4097,7 +4122,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4115,7 +4141,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4133,7 +4160,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4151,7 +4179,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4169,7 +4198,8 @@ export const bcdKeys = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -4230,11 +4260,11 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-09-10",
       "support": {
-        "chrome": "152",
-        "chrome_android": "152",
-        "edge": "152",
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
         "firefox": "136",
         "firefox_android": "136",
         "safari": "14.1",
@@ -4251,7 +4281,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -4910,6 +4940,295 @@ export const bcdKeys = {
     },
     "spec": [
       "https://wicg.github.io/connection-allowlists/"
+    ]
+  },
+  "css.properties.corner-block-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
   "css.properties.counter-set": {
@@ -8616,6 +8935,120 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-font-loading-3/"
     ]
   },
+  "api.FontFace.ascentOverride": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "api.FontFace.descentOverride": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "api.FontFace.lineGapOverride": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "css.at-rules.font-face.ascent-override": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "css.at-rules.font-face.descent-override": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "css.at-rules.font-face.line-gap-override": {
+    "parent_feature": "font-metric-overrides",
+    "parent_feature_name": "Font metric overrides",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "89",
+        "firefox_android": "89",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
   "css.properties.font-variant-emoji": {
     "parent_feature": "font-variant-emoji",
     "parent_feature_name": "font-variant-emoji",
@@ -11701,6 +12134,25 @@ export const bcdKeys = {
       "https://drafts.csswg.org/selectors-5/#headings"
     ]
   },
+  "api.HighlightRegistry.highlightsFromPoint": {
+    "parent_feature": "highlightsfrompoint",
+    "parent_feature_name": "Custom highlights from point",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "140",
+        "chrome_android": "140",
+        "edge": "140",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-highlight-api-1/#dom-highlightregistry-highlightsfrompoint"
+    ]
+  },
   "api.ProcessingInstruction.doc_html": {
     "parent_feature": "html-processing-instructions",
     "parent_feature_name": "HTML processing instructions",
@@ -12928,7 +13380,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -12950,7 +13402,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -12972,7 +13424,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -12994,7 +13446,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -13016,7 +13468,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -13038,7 +13490,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -13060,7 +13512,7 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -13360,6 +13812,63 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/motion-1/"
+    ]
+  },
+  "api.NavigationPrecommitController": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
+  "api.NavigationPrecommitController.addHandler": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "148",
+        "firefox_android": "148",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
+    ]
+  },
+  "api.NavigationPrecommitController.redirect": {
+    "parent_feature": "navigation-precommit-handlers",
+    "parent_feature_name": "Navigation precommit handlers",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
     ]
   },
   "css.selectors.nesting": {
@@ -14651,6 +15160,40 @@ export const bcdKeys = {
       "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
     ]
   },
+  "css.properties.object-view-box": {
+    "parent_feature": "object-view-box",
+    "parent_feature_name": "object-view-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "104",
+        "chrome_android": "104",
+        "edge": "104",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-images-5/#the-object-view-box"
+    ]
+  },
+  "css.properties.object-view-box.none": {
+    "parent_feature": "object-view-box",
+    "parent_feature_name": "object-view-box",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "104",
+        "chrome_android": "104",
+        "edge": "104",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-images-5/#the-object-view-box"
+    ]
+  },
   "css.properties.overflow-anchor": {
     "parent_feature": "overflow-anchor",
     "parent_feature_name": "overflow-anchor",
@@ -15423,7 +15966,8 @@ export const bcdKeys = {
         "chrome_android": "151",
         "edge": "151",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -15441,7 +15985,8 @@ export const bcdKeys = {
         "chrome_android": "151",
         "edge": "151",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -17772,6 +18317,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-3/#at-supports"
+    ]
+  },
+  "css.at-rules.supports.at-rule": {
+    "parent_feature": "supports-at-rule",
+    "parent_feature_name": "at-rule()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
     ]
   },
   "api.SVGElement.attributeStyleMap": {
@@ -23215,6 +23777,44 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-writing-modes-4/#vertical-modes"
     ]
   },
+  "webassembly.api.Exception.Exception.options_parameter_traceStack": {
+    "parent_feature": "wasm-exception-handling",
+    "parent_feature_name": "Exception handling (WebAssembly)",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "95",
+        "chrome_android": "95",
+        "edge": "95",
+        "firefox": "100",
+        "firefox_android": "100",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/legacy/Exceptions.md"
+    ]
+  },
+  "webassembly.api.Exception.stack": {
+    "parent_feature": "wasm-exception-handling",
+    "parent_feature_name": "Exception handling (WebAssembly)",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "95",
+        "chrome_android": "95",
+        "edge": "95",
+        "firefox": "100",
+        "firefox_android": "100",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/exception-handling/blob/main/proposals/exception-handling/legacy/Exceptions.md"
+    ]
+  },
   "webassembly.extended-constant-expressions": {
     "parent_feature": "wasm-extended-constant-expressions",
     "parent_feature_name": "Extended constant expressions (WebAssembly)",
@@ -23254,6 +23854,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://github.com/WebAssembly/js-promise-integration/blob/main/proposals/js-promise-integration/Overview.md"
+    ]
+  },
+  "webassembly.memory64": {
+    "parent_feature": "wasm-memory64",
+    "parent_feature_name": "Memory64 (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "134",
+        "firefox_android": "134",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md"
     ]
   },
   "webassembly.multiMemory": {
@@ -23386,6 +24005,386 @@ export const bcdKeys = {
     },
     "spec": [
       "https://wicg.github.io/web-otp/"
+    ]
+  },
+  "api.ImageDecoder": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.ImageDecoder": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.close": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.complete": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.completed": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.decode": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.isTypeSupported_static": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.reset": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.tracks": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageDecoder.type": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrack": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrack.animated": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrack.frameCount": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrack.repetitionCount": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrack.selected": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrackList": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrackList.length": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrackList.ready": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrackList.selectedIndex": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "api.ImageTrackList.selectedTrack": {
+    "parent_feature": "webcodecs",
+    "parent_feature_name": "WebCodecs",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "94",
+        "chrome_android": "94",
+        "edge": "94",
+        "firefox": "133",
+        "firefox_android": "133",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webcodecs/"
     ]
   },
   "api.GPUAdapterInfo.subgroupMaxSize": {

@@ -1474,7 +1474,7 @@ export const browsers = {
         "version": "151"
       },
       {
-        "date": "2026-08-27",
+        "date": "2026-08-28",
         "version": "152"
       },
       {
@@ -1484,6 +1484,10 @@ export const browsers = {
       {
         "date": "2026-09-24",
         "version": "154"
+      },
+      {
+        "date": "2026-10-08",
+        "version": "155"
       }
     ]
   },
@@ -2131,6 +2135,10 @@ export const browsers = {
         "version": "157"
       },
       {
+        "date": "2026-10-13",
+        "version": "158"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2702,6 +2710,10 @@ export const browsers = {
       {
         "date": "2026-09-29",
         "version": "157"
+      },
+      {
+        "date": "2026-10-13",
+        "version": "158"
       }
     ]
   },
@@ -4834,11 +4846,11 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-09-10",
       "support": {
-        "chrome": "152",
-        "chrome_android": "152",
-        "edge": "152",
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
         "firefox": "136",
         "firefox_android": "136",
         "safari": "14.1",
@@ -7532,6 +7544,18 @@ export const features = {
         "safari": "18",
         "safari_ios": "18"
       }
+    }
+  },
+  "container-timing": {
+    "description_html": "A <code>container</code> performance entry measures time to render child elements, for container elements that have the <code>containertiming</code> attribute.",
+    "kind": "feature",
+    "name": "Container timing performance entries",
+    "spec": [
+      "https://wicg.github.io/container-timing/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "content": {
@@ -10947,7 +10971,8 @@ export const features = {
         "chrome_android": "87",
         "edge": "87",
         "firefox": "89",
-        "firefox_android": "89"
+        "firefox_android": "89",
+        "safari": "preview"
       }
     }
   },
@@ -12355,7 +12380,8 @@ export const features = {
         "chrome_android": "140",
         "edge": "140",
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     }
   },
@@ -13121,6 +13147,18 @@ export const features = {
     "name": "Import assertions",
     "spec": [
       "https://github.com/tc39/proposal-import-attributes/tree/abca60286360b47f9a6be25a28f489c2cb157beb"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
+  "import-defer": {
+    "description_html": "The <code>import defer</code> JavaScript statement imports a module while deferring its evaluation until its first use.",
+    "kind": "feature",
+    "name": "import defer",
+    "spec": [
+      "https://tc39.es/proposal-defer-import-eval/"
     ],
     "status": {
       "baseline": false,
@@ -15875,7 +15913,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-27",
+      "baseline_low_date": "2026-08-28",
       "support": {
         "chrome": "152",
         "chrome_android": "152",
@@ -17043,7 +17081,8 @@ export const features = {
       "support": {
         "chrome": "104",
         "chrome_android": "104",
-        "edge": "104"
+        "edge": "104",
+        "safari": "preview"
       }
     }
   },
@@ -18516,7 +18555,8 @@ export const features = {
         "chrome_android": "151",
         "edge": "151",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "preview"
       }
     }
   },
@@ -22842,7 +22882,8 @@ export const features = {
       "support": {
         "chrome": "148",
         "chrome_android": "148",
-        "edge": "148"
+        "edge": "148",
+        "safari": "preview"
       }
     }
   },
@@ -24067,11 +24108,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "126",
-        "chrome_android": "126",
-        "edge": "126"
-      }
+      "support": {}
     }
   },
   "touch-action": {
@@ -25393,7 +25430,8 @@ export const features = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "134",
-        "firefox_android": "134"
+        "firefox_android": "134",
+        "safari": "preview"
       }
     }
   },
