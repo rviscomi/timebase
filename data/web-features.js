@@ -7746,6 +7746,31 @@ export const features = {
       "support": {
         "chrome": "87",
         "chrome_android": "87",
+        "edge": "87",
+        "firefox": "140",
+        "firefox_android": "140"
+      }
+    }
+  },
+  "cookie-store-get-metadata": {
+    "description_html": "The <code>cookieStore.get()</code> method returns cookie metadata, such as the <code>domain</code>, <code>expires</code>, <code>path</code>, <code>sameSite</code> and <code>secure</code> properties.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/whatwg/cookiestore/pull/274"
+      ],
+      "reason": "Scripting access to cookie metadata creates privacy and forward-compatibility problems.",
+      "reason_html": "Scripting access to cookie metadata creates privacy and forward-compatibility problems."
+    },
+    "kind": "feature",
+    "name": "cookieStore.get() metadata",
+    "spec": [
+      "https://cookiestore.spec.whatwg.org/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
         "edge": "87"
       }
     }
