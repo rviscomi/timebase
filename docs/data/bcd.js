@@ -12492,6 +12492,22 @@ export const bcdKeys = {
       "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint"
     ]
   },
+  "api.InteractionContentfulPaint.toJSON": {
+    "parent_feature": "interaction-contentful-paint",
+    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint"
+    ]
+  },
   "javascript.builtins.Intl.Locale.getCalendars": {
     "parent_feature": "intl-locale-info",
     "parent_feature_name": "Intl.Locale info",
@@ -17837,6 +17853,22 @@ export const bcdKeys = {
     ]
   },
   "api.PerformanceSoftNavigation.presentationTime": {
+    "parent_feature": "soft-navigations",
+    "parent_feature_name": "Soft navigation performance entries",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/soft-navigations/#sec-soft-navs"
+    ]
+  },
+  "api.PerformanceSoftNavigation.toJSON": {
     "parent_feature": "soft-navigations",
     "parent_feature_name": "Soft navigation performance entries",
     "parent_feature_baseline": false,
