@@ -616,8 +616,12 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "null",
+        "date": "2026-10-06",
         "version": "155"
+      },
+      {
+        "date": "null",
+        "version": "156"
       },
       {
         "date": "null",
@@ -1149,8 +1153,12 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "null",
+        "date": "2026-10-06",
         "version": "155"
+      },
+      {
+        "date": "null",
+        "version": "156"
       }
     ]
   },
@@ -3578,7 +3586,8 @@ export const bcdKeys = {
     "parent_feature_name": "ARIA attribute reflection",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "83",
@@ -3653,9 +3662,10 @@ export const bcdKeys = {
   "javascript.builtins.Map.groupBy": {
     "parent_feature": "array-group",
     "parent_feature_name": "Array grouping",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "117",
@@ -3674,9 +3684,10 @@ export const bcdKeys = {
   "javascript.builtins.Object.groupBy": {
     "parent_feature": "array-group",
     "parent_feature_name": "Array grouping",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "117",
@@ -4281,11 +4292,11 @@ export const bcdKeys = {
     "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-08-28",
+      "baseline_low_date": "2026-09-10",
       "support": {
-        "chrome": "152",
-        "chrome_android": "152",
-        "edge": "152",
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
         "firefox": "136",
         "firefox_android": "136",
         "safari": "14.1",
@@ -4345,7 +4356,8 @@ export const bcdKeys = {
     "parent_feature_name": "::backdrop",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "122",
@@ -4469,9 +4481,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "105",
@@ -4490,9 +4503,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility.options_checkOpacity_parameter": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "105",
@@ -4511,9 +4525,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility.options_checkVisibilityCSS_parameter": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "105",
@@ -4532,9 +4547,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility.options_contentVisibilityAuto_parameter": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "121",
@@ -4553,9 +4569,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility.options_opacityProperty_parameter": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "121",
@@ -4574,9 +4591,10 @@ export const bcdKeys = {
   "api.Element.checkVisibility.options_visibilityProperty_parameter": {
     "parent_feature": "check-visibility",
     "parent_feature_name": "checkVisibility()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "121",
@@ -12972,6 +12990,80 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-easing-2/#the-linear-easing-function"
     ]
   },
+  "css.properties.link-parameters": {
+    "parent_feature": "link-parameters",
+    "parent_feature_name": "Link parameters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-link-params-1/"
+    ]
+  },
+  "css.properties.link-parameters.none": {
+    "parent_feature": "link-parameters",
+    "parent_feature_name": "Link parameters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-link-params-1/"
+    ]
+  },
+  "css.types.param": {
+    "parent_feature": "link-parameters",
+    "parent_feature_name": "Link parameters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-link-params-1/"
+    ]
+  },
+  "css.properties.list-style-type.symbols": {
+    "parent_feature": "list-style",
+    "parent_feature_name": "List style",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "35",
+        "firefox_android": "35"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#list-style-property"
+    ]
+  },
+  "css.properties.list-style.symbols": {
+    "parent_feature": "list-style",
+    "parent_feature_name": "List style",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "35",
+        "firefox_android": "35"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-lists-3/#list-style-property"
+    ]
+  },
   "api.HTMLIFrameElement.loading": {
     "parent_feature": "loading-lazy",
     "parent_feature_name": "Lazy-loading images and iframes",
@@ -13062,6 +13154,86 @@ export const bcdKeys = {
     },
     "spec": [
       "https://github.com/whatwg/html/pull/11980"
+    ]
+  },
+  "css.properties.margin-trim": {
+    "parent_feature": "margin-trim",
+    "parent_feature_name": "margin-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ]
+  },
+  "css.properties.margin-trim.block": {
+    "parent_feature": "margin-trim",
+    "parent_feature_name": "margin-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ]
+  },
+  "css.properties.margin-trim.block-end": {
+    "parent_feature": "margin-trim",
+    "parent_feature_name": "margin-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ]
+  },
+  "css.properties.margin-trim.block-start": {
+    "parent_feature": "margin-trim",
+    "parent_feature_name": "margin-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ]
+  },
+  "css.properties.margin-trim.none": {
+    "parent_feature": "margin-trim",
+    "parent_feature_name": "margin-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-box-4/#margin-trim"
     ]
   },
   "css.properties.mask": {
@@ -16143,9 +16315,10 @@ export const bcdKeys = {
   "javascript.builtins.Promise.withResolvers": {
     "parent_feature": "promise-withresolvers",
     "parent_feature_name": "Promise.withResolvers()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "119",
@@ -18361,6 +18534,7 @@ export const bcdKeys = {
         "chrome": "148",
         "chrome_android": "148",
         "edge": "148",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -18414,7 +18588,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "43",
@@ -18435,7 +18610,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "43",
@@ -18500,7 +18676,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG filters",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "45",
@@ -18521,7 +18698,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG filters",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "45",
@@ -18542,7 +18720,8 @@ export const bcdKeys = {
     "parent_feature_name": "SVG filters",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "45",
@@ -23379,7 +23558,8 @@ export const bcdKeys = {
     "parent_feature_name": "text-decoration",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "89",
@@ -23496,7 +23676,8 @@ export const bcdKeys = {
     "parent_feature_name": "text-wrap",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -23598,9 +23779,10 @@ export const bcdKeys = {
   "javascript.builtins.ArrayBuffer.detached": {
     "parent_feature": "transferable-arraybuffer",
     "parent_feature_name": "Transferable ArrayBuffer",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -23619,9 +23801,10 @@ export const bcdKeys = {
   "javascript.builtins.ArrayBuffer.transfer": {
     "parent_feature": "transferable-arraybuffer",
     "parent_feature_name": "Transferable ArrayBuffer",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -23640,9 +23823,10 @@ export const bcdKeys = {
   "javascript.builtins.ArrayBuffer.transferToFixedLength": {
     "parent_feature": "transferable-arraybuffer",
     "parent_feature_name": "Transferable ArrayBuffer",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -23850,9 +24034,10 @@ export const bcdKeys = {
   "webassembly.extended-constant-expressions": {
     "parent_feature": "wasm-extended-constant-expressions",
     "parent_feature_name": "Extended constant expressions (WebAssembly)",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",

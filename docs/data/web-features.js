@@ -616,8 +616,12 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "null",
+        "date": "2026-10-06",
         "version": "155"
+      },
+      {
+        "date": "null",
+        "version": "156"
       },
       {
         "date": "null",
@@ -1149,8 +1153,12 @@ export const browsers = {
         "version": "154"
       },
       {
-        "date": "null",
+        "date": "2026-10-06",
         "version": "155"
+      },
+      {
+        "date": "null",
+        "version": "156"
       }
     ]
   },
@@ -4260,7 +4268,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-groupby"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "117",
@@ -4644,7 +4653,14 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
     }
   },
   "attr-contents": {
@@ -6489,7 +6505,8 @@ export const features = {
       "https://drafts.csswg.org/cssom-view-1/#dom-element-checkvisibility"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "105",
@@ -9016,7 +9033,7 @@ export const features = {
   },
   "display-grid-lanes": {
     "kind": "moved",
-    "redirect_target": "masonry"
+    "redirect_target": "grid-lanes"
   },
   "display-list-item": {
     "description_html": "The <code>display: list-item</code> CSS declaration renders an element with the box layout of a <code>&#x3C;li></code> HTML element.",
@@ -12102,8 +12119,19 @@ export const features = {
     }
   },
   "grid-lanes": {
-    "kind": "moved",
-    "redirect_target": "masonry"
+    "description_html": "The <code>display: grid-lanes</code> and <code>display: inline-grid-lanes</code> CSS declarations create a layout where items are tightly packed in parallel lanes. Items are placed one by one in the lane that has the most available space. Also known as masonry.",
+    "kind": "feature",
+    "name": "Grid lanes",
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    }
   },
   "gyroscope": {
     "description_html": "The <code>Gyroscope</code> API reads the angular velocity of a device in three dimensions.",
@@ -15140,6 +15168,18 @@ export const features = {
       }
     }
   },
+  "link-parameters": {
+    "description_html": "The <code>link-parameters</code> CSS property, <code>param()</code> modifier for the <code>url()</code> CSS function, and the <code>#:~:param(…)</code> URL fragment set custom CSS environment variables on an external resource, such as an SVG image, allowing the external resource to adapt its presentation based on the variables.",
+    "kind": "feature",
+    "name": "Link parameters",
+    "spec": [
+      "https://drafts.csswg.org/css-link-params-1/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "link-rel-dns-prefetch": {
     "description_html": "The <code>rel=\"dns-prefetch\"</code> attribute for the <code>&#x3C;link></code> HTML element is a hint to the browser that the page or user is likely to request resources from another domain, so the browser should preemptively resolve DNS for the <code>href</code> value's domain.",
     "kind": "feature",
@@ -15748,16 +15788,8 @@ export const features = {
     }
   },
   "masonry": {
-    "description_html": "The <code>display: grid-lanes</code> or <code>display: inline-grid-lanes</code> CSS declaration creates a layout where items are tightly packed, like brickwork, in parallel lanes. Items are placed one by one in the lane that has the most available space.",
-    "kind": "feature",
-    "name": "Masonry",
-    "spec": [
-      "https://drafts.csswg.org/css-grid-3/"
-    ],
-    "status": {
-      "baseline": false,
-      "support": {}
-    }
+    "kind": "moved",
+    "redirect_target": "grid-lanes"
   },
   "matchmedia": {
     "description_html": "The <code>window.matchMedia()</code> method checks whether a media query applies to the document.",
@@ -19120,7 +19152,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "119",
@@ -22908,6 +22941,7 @@ export const features = {
         "chrome": "148",
         "chrome_android": "148",
         "edge": "148",
+        "firefox": "preview",
         "safari": "preview"
       }
     }
@@ -24186,7 +24220,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -25387,7 +25422,8 @@ export const features = {
       "https://github.com/WebAssembly/extended-const/blob/main/proposals/extended-const/Overview.md"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-05",
       "baseline_low_date": "2024-03-05",
       "support": {
         "chrome": "114",
@@ -25887,8 +25923,8 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2018-01-29",
-      "baseline_low_date": "2015-07-29",
+      "baseline_high_date": "2020-03-19",
+      "baseline_low_date": "2017-09-19",
       "support": {
         "chrome": "37",
         "chrome_android": "37",
