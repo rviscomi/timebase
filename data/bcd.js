@@ -12432,7 +12432,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -12448,7 +12448,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint.interactionId": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -12464,7 +12464,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint.largestContentfulPaint": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -12480,7 +12480,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint.paintTime": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -12496,7 +12496,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint.presentationTime": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -12512,7 +12512,7 @@ export const bcdKeys = {
   },
   "api.InteractionContentfulPaint.toJSON": {
     "parent_feature": "interaction-contentful-paint",
-    "parent_feature_name": "Interaction contentful paint",
+    "parent_feature_name": "Interaction contentful paint performance entries",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -16467,7 +16467,7 @@ export const bcdKeys = {
   },
   "api.PerformanceResourceTiming.firstInterimResponseStart": {
     "parent_feature": "resource-timing",
-    "parent_feature_name": "Resource timing",
+    "parent_feature_name": "Resource timing performance entries",
     "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",

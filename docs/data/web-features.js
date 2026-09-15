@@ -9496,9 +9496,9 @@ export const features = {
     }
   },
   "element-timing": {
-    "description_html": "The <code>element</code> performance entry and the <code>PerformanceElementTiming</code> API measures the time to render elements that have the <code>elementtiming</code> attribute.",
+    "description_html": "An <code>element</code> performance entry measures the time to render elements that have the <code>elementtiming</code> attribute.",
     "kind": "feature",
-    "name": "Element timing",
+    "name": "Element timing performance entries",
     "spec": [
       "https://w3c.github.io/element-timing/"
     ],
@@ -9694,9 +9694,9 @@ export const features = {
     }
   },
   "event-timing": {
-    "description_html": "The <code>event</code> and <code>first-input</code> performance entries and the <code>PerformanceEventTiming</code> API measures the latency of user input events, such as mouse clicks or keypresses. They're used to calculate Interaction to Next Paint (INP), a common metric for perceived responsiveness.",
+    "description_html": "An <code>event</code> or <code>first-input</code> performance entry measures the latency of user input events, such as mouse clicks or keypresses. They're used to calculate interaction to next paint (INP), a common metric for perceived responsiveness.",
     "kind": "feature",
-    "name": "Event timing",
+    "name": "Event timing performance entries",
     "spec": [
       "https://w3c.github.io/event-timing/"
     ],
@@ -13932,9 +13932,9 @@ export const features = {
     }
   },
   "interaction-contentful-paint": {
-    "description_html": "The <code>interaction-contentful-paint</code> performance entry, which returns an <code>InteractionContentfulPaint</code> instance, is emitted when an interaction causes one or more contentful paints. Use it to measure LCP for soft navigations in single page apps or to measure contentful paints due to an interaction.",
+    "description_html": "An <code>interaction-contentful-paint</code> performance entry measures the duration of an interaction that causes one or more contentful paints. You can use it to measure LCP for soft navigations in single page apps.",
     "kind": "feature",
-    "name": "Interaction contentful paint",
+    "name": "Interaction contentful paint performance entries",
     "spec": [
       "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint"
     ],
@@ -14900,9 +14900,9 @@ export const features = {
     }
   },
   "largest-contentful-paint": {
-    "description_html": "The <code>largest-contentful-paint</code> performance entry and the <code>LargestContentfulPaint</code> API measures  the time it takes for the largest image or text to appear. Largest contentful paint (LCP) is a common metric for perceived loading times.",
+    "description_html": "A <code>largest-contentful-paint</code> performance entry measures the time it takes for the largest image or text to appear. Largest contentful paint (LCP) is a common metric for perceived loading times.",
     "kind": "feature",
-    "name": "Largest contentful paint (LCP)",
+    "name": "Largest contentful paint (LCP) performance entries",
     "spec": [
       "https://w3c.github.io/largest-contentful-paint/"
     ],
@@ -14944,9 +14944,9 @@ export const features = {
     }
   },
   "layout-instability": {
-    "description_html": "The <code>layout-shift</code> performance entry and <code>LayoutShift</code> API measures the layout stability of web pages based on movements of the elements on the page. They're used to calculate Cumulative Layout Shift (CLS), a common metric for perceived stability.",
+    "description_html": "A <code>layout-shift</code> performance entry measures the layout stability of web pages based on movements of the elements on the page. They're used to calculate cumulative layout shift (CLS), a common metric for perceived stability.",
     "kind": "feature",
-    "name": "Layout instability",
+    "name": "Layout instability performance entries",
     "spec": [
       "https://wicg.github.io/layout-instability/"
     ],
@@ -15505,9 +15505,9 @@ export const features = {
     }
   },
   "long-animation-frames": {
-    "description_html": "The <code>long-animation-frame</code> performance event type and the <code>PerformanceLongAnimationFrameTiming</code> API provide information about rendering updates that take longer than 50 milliseconds. Also known as LoAFs.",
+    "description_html": "A <code>long-animation-frame</code> performance entry measures rendering updates that take longer than 50 milliseconds. Also known as LoAFs.",
     "kind": "feature",
-    "name": "Long animation frames",
+    "name": "Long animation frames performance entries",
     "spec": [
       "https://w3c.github.io/long-animation-frames/"
     ],
@@ -15521,9 +15521,9 @@ export const features = {
     }
   },
   "longtasks": {
-    "description_html": "The <code>longtask</code> performance event type and the <code>PerformanceLongTaskTiming</code> API provides information about tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
+    "description_html": "A <code>longtask</code> performance entry measures tasks that occupy the UI thread for 50 milliseconds or more, a metric for input latency, delayed animations, and other sources of \"jank.\"",
     "kind": "feature",
-    "name": "Long tasks",
+    "name": "Long task performance entries",
     "spec": [
       "https://w3c.github.io/longtasks/"
     ],
@@ -16672,9 +16672,9 @@ export const features = {
     }
   },
   "navigation-timing": {
-    "description_html": "The <code>navigation</code> performance entry and the <code>PerformanceNavigationTiming</code> API measures navigation events, such as loading time or the number of redirects.",
+    "description_html": "A <code>navigation</code> performance entry measures navigation events, such as loading time or the number of redirects.",
     "kind": "feature",
-    "name": "Navigation timing",
+    "name": "Navigation timing performance entries",
     "spec": [
       "https://w3c.github.io/navigation-timing/"
     ],
@@ -16694,7 +16694,7 @@ export const features = {
     }
   },
   "navigation-timing-confidence": {
-    "description_html": "The <code>confidence</code> property of a navigation timing entry describes whether the navigation metric is likely to be representative the page's performance (high confidence) or affected by transient conditions, such as browser startup (low confidence).",
+    "description_html": "The <code>confidence</code> property of a <code>navigation</code> performance entry describes whether the navigation metric is likely to be representative the page's performance (high confidence) or affected by transient conditions, such as browser startup (low confidence).",
     "kind": "feature",
     "name": "Navigation timing confidence",
     "spec": [
@@ -18062,9 +18062,9 @@ export const features = {
     }
   },
   "page-visibility-state": {
-    "description_html": "The <code>visibility-state</code> performance entry and the <code>VisibilityStateEntry</code> API measure the timing of page visibility state changes, such as when a tab is no longer visible or the user has switched to another app.",
+    "description_html": "A <code>visibility-state</code> performance entry measures the timing of page visibility state changes, such as when a tab is no longer visible or the user has switched to another app.",
     "kind": "feature",
-    "name": "Page visibility state",
+    "name": "Page visibility state performance entries",
     "spec": [
       "https://html.spec.whatwg.org/multipage/interaction.html#the-visibilitystateentry-interface"
     ],
@@ -18115,9 +18115,9 @@ export const features = {
     }
   },
   "paint-timing": {
-    "description_html": "The <code>paint</code> performance entry and the <code>PerformancePaintTiming</code> API measures the duration of \"paint\" (also called \"render\") operations as a page loads. The API measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
+    "description_html": "A <code>paint</code> performance entry measures the duration of \"paint\" (also called \"render\") operations as a page loads. It measures the time to First Paint (FP) and First Contentful Paint (FCP), common metrics for perceived loading times.",
     "kind": "feature",
-    "name": "Paint timing",
+    "name": "Paint timing performance entries",
     "spec": [
       "https://w3c.github.io/paint-timing/"
     ],
@@ -20218,9 +20218,9 @@ export const features = {
     }
   },
   "resource-timing": {
-    "description_html": "<code>PerformanceResourceTiming</code> entries report when network events happen while loading a resource, such as when connections start and end. You can use this information to measure loading times.",
+    "description_html": "A <code>resource</code> performance entry records when a network event happens while loading a resource, such as when a connection starts and ends. You can use this information to measure loading times.",
     "kind": "feature",
-    "name": "Resource timing",
+    "name": "Resource timing performance entries",
     "spec": [
       "https://w3c.github.io/resource-timing/"
     ],
@@ -21368,7 +21368,7 @@ export const features = {
     }
   },
   "server-timing": {
-    "description_html": "The <code>serverTiming</code> property of the <code>PerformanceResourceTiming</code> API contains server timing information about network requests.",
+    "description_html": "The <code>serverTiming</code> property of a <code>resource</code> performance entry contains server timing information about network requests.",
     "kind": "feature",
     "name": "Server timing",
     "spec": [
@@ -21937,7 +21937,7 @@ export const features = {
     }
   },
   "soft-navigations": {
-    "description_html": "The <code>soft-navigation</code> performance entry, which returns a <code>PerformanceSoftNavigation</code> instance, is emitted when soft navigation occurs in a single page app. This is defined as when a trusted user interaction causes a URL update and a visible contentful paint to the screen.",
+    "description_html": "A <code>soft-navigation</code> performance entry measures the duration of a soft navigation in a single page app. A soft navigation is defined as when a trusted user interaction causes a URL update and a visible contentful paint to the screen.",
     "kind": "feature",
     "name": "Soft navigation performance entries",
     "spec": [
