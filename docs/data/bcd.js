@@ -3617,7 +3617,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+      "https://w3c.github.io/aria/#ARIANotifyMixin"
     ]
   },
   "api.Element.ariaNotify": {
@@ -3634,7 +3634,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+      "https://w3c.github.io/aria/#ARIANotifyMixin"
     ]
   },
   "javascript.builtins.Array.fromAsync": {
@@ -24602,6 +24602,81 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webcodecs/"
+    ]
+  },
+  "webdriver.bidi.browsingContext.domContentLoaded_event.userContext_parameter": {
+    "parent_feature": "webdriver-bidi",
+    "parent_feature_name": "WebDriver BiDi",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "154",
+        "firefox_android": "154"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
+    ]
+  },
+  "webdriver.bidi.browsingContext.fragmentNavigated_event.userContext_parameter": {
+    "parent_feature": "webdriver-bidi",
+    "parent_feature_name": "WebDriver BiDi",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "154",
+        "firefox_android": "154"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
+    ]
+  },
+  "webdriver.bidi.browsingContext.load_event.userContext_parameter": {
+    "parent_feature": "webdriver-bidi",
+    "parent_feature_name": "WebDriver BiDi",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "154",
+        "firefox_android": "154"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
+    ]
+  },
+  "webdriver.bidi.browsingContext.navigationCommitted_event.userContext_parameter": {
+    "parent_feature": "webdriver-bidi",
+    "parent_feature_name": "WebDriver BiDi",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "154",
+        "firefox_android": "154"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
+    ]
+  },
+  "webdriver.bidi.script.message_event.source_parameter.userContext": {
+    "parent_feature": "webdriver-bidi",
+    "parent_feature_name": "WebDriver BiDi",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "154",
+        "firefox_android": "154"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webdriver-bidi/"
     ]
   },
   "api.GPUAdapterInfo.subgroupMaxSize": {

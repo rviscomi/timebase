@@ -3999,7 +3999,7 @@ export const features = {
     "kind": "feature",
     "name": "ariaNotify()",
     "spec": [
-      "https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Accessibility/AriaNotify/explainer.md"
+      "https://w3c.github.io/aria/#ARIANotifyMixin"
     ],
     "status": {
       "baseline": false,
@@ -13902,7 +13902,7 @@ export const features = {
     "kind": "feature",
     "name": "<install>",
     "spec": [
-      "https://github.com/WICG/install-element"
+      "https://wicg.github.io/install-element/"
     ],
     "status": {
       "baseline": false,
@@ -26116,11 +26116,11 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "106",
-        "chrome_android": "106",
-        "edge": "106",
-        "firefox": "102",
-        "firefox_android": "102"
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "117",
+        "firefox_android": "117"
       }
     }
   },
