@@ -12628,6 +12628,30 @@ export const features = {
       }
     }
   },
+  "html-setters": {
+    "description_html": "The <code>setHTML()</code>, <code>replaceWithHTML()</code>, <code>beforeHTML()</code>, <code>prependHTML()</code>, <code>appendHTML()</code> and <code>afterHTML()</code> DOM methods, and unsafe equivalents, insert HTML into an existing tree.",
+    "kind": "feature",
+    "name": "HTML setter methods",
+    "spec": [
+      "https://github.com/whatwg/html/pull/12753"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
+  "html-streaming-setters": {
+    "description_html": "The <code>streamHTML()</code>, <code>streamReplaceWithHTML()</code>, <code>streamBeforeHTML()</code>, <code>streamPrependHTML()</code>, <code>streamAppendHTML()</code> and <code>streamAfterHTML()</code> DOM methods, and unsafe equivalents, return writeable streams that incrementally insert HTML into an existing tree.",
+    "kind": "feature",
+    "name": "HTML streaming setters",
+    "spec": [
+      "https://github.com/whatwg/html/pull/12758"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "html-wrapper-methods": {
     "description_html": "JavaScript built-in methods such as, <code>String.bold()</code> and <code>String.italics()</code>, wrap strings in (often historic) HTML.",
     "discouraged": {
@@ -14890,7 +14914,7 @@ export const features = {
     "kind": "feature",
     "name": "LanguageModel",
     "spec": [
-      "http://webmachinelearning.github.io/prompt-api/"
+      "https://webmachinelearning.github.io/prompt-api/"
     ],
     "status": {
       "baseline": false,
@@ -15374,7 +15398,7 @@ export const features = {
     "kind": "feature",
     "name": "Lazy-loading media",
     "spec": [
-      "https://github.com/whatwg/html/pull/11980"
+      "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
     ],
     "status": {
       "baseline": false,
@@ -18137,11 +18161,11 @@ export const features = {
     }
   },
   "parse-html-unsafe": {
-    "description_html": "The <code>Document.parseHTMLUnsafe()</code> static method parses HTML into a DOM tree, while the <code>setHTMLUnsafe()</code> method of <code>Element</code> and <code>ShadowRoot</code> parses and inserts HTML into an existing tree. No sanitization applies to these methods, so never call them with user-provided HTML strings.",
+    "description_html": "The <code>Document.parseHTMLUnsafe()</code> static method parses HTML into a DOM tree, much like the <code>setHTMLUnsafe()</code> DOM method inserts HTML into an existing tree. No sanitization applies, so never call it with user-provided strings.",
     "kind": "feature",
-    "name": "Unsanitized HTML parsing methods",
+    "name": "Unsanitized HTML parsing",
     "spec": [
-      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ],
     "status": {
       "baseline": "low",
@@ -20550,7 +20574,7 @@ export const features = {
     }
   },
   "sanitizer": {
-    "description_html": "The <code>Document.parseHTML()</code> static method and the <code>setHTML()</code> method of <code>Element</code> and <code>ShadowRoot</code> objects parse and insert HTML into the DOM in a way that can prevent cross-site scripting attacks. The <code>Sanitizer</code> API can customize the sanitization process.",
+    "description_html": "The <code>Sanitizer</code> API customizes the sanitization of HTML parsed and inserted into the DOM in a way that can prevent cross-site scripting attacks. You can use it with DOM APIs that accept a sanitizer option, such as <code>parseHTML()</code> or <code>setHTML()</code>.",
     "kind": "feature",
     "name": "Sanitizer API",
     "spec": [
@@ -25333,7 +25357,7 @@ export const features = {
     "kind": "feature",
     "name": "Branch hinting (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/branch-hinting/blob/main/proposals/branch-hinting/Overview.md"
+      "https://webassembly.github.io/branch-hinting/core/bikeshed/"
     ],
     "status": {
       "baseline": "low",

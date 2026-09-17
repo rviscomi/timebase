@@ -13121,7 +13121,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/whatwg/html/pull/11980"
+      "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
     ]
   },
   "html.elements.audio.loading": {
@@ -13137,7 +13137,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/whatwg/html/pull/11980"
+      "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
     ]
   },
   "html.elements.video.loading": {
@@ -13153,7 +13153,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/whatwg/html/pull/11980"
+      "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
     ]
   },
   "css.properties.margin-trim": {
