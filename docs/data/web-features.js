@@ -1486,7 +1486,7 @@ export const browsers = {
         "version": "152"
       },
       {
-        "date": "2026-09-10",
+        "date": "2026-09-11",
         "version": "153"
       },
       {
@@ -1496,6 +1496,10 @@ export const browsers = {
       {
         "date": "2026-10-08",
         "version": "155"
+      },
+      {
+        "date": "2026-10-22",
+        "version": "156"
       }
     ]
   },
@@ -2147,6 +2151,10 @@ export const browsers = {
         "version": "158"
       },
       {
+        "date": "2026-10-27",
+        "version": "159"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2722,6 +2730,10 @@ export const browsers = {
       {
         "date": "2026-10-13",
         "version": "158"
+      },
+      {
+        "date": "2026-10-27",
+        "version": "159"
       }
     ]
   },
@@ -2969,7 +2981,7 @@ export const browsers = {
         "version": "26.6"
       },
       {
-        "date": "null",
+        "date": "2026-09-14",
         "version": "27"
       },
       {
@@ -3210,7 +3222,7 @@ export const browsers = {
         "version": "26.6"
       },
       {
-        "date": "null",
+        "date": "2026-09-14",
         "version": "27"
       }
     ]
@@ -3629,7 +3641,8 @@ export const features = {
       "https://drafts.csswg.org/css-color-5/#relative-alpha"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "151",
         "chrome_android": "151",
@@ -4567,7 +4580,8 @@ export const features = {
       "https://streams.spec.whatwg.org/#rs-asynciterator"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
@@ -4862,7 +4876,7 @@ export const features = {
     ],
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-09-10",
+      "baseline_low_date": "2026-09-11",
       "support": {
         "chrome": "153",
         "chrome_android": "153",
@@ -6404,7 +6418,8 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "66",
-        "firefox_android": "66"
+        "firefox_android": "66",
+        "safari": "preview"
       }
     }
   },
@@ -6688,7 +6703,8 @@ export const features = {
       "support": {
         "chrome": "104",
         "chrome_android": "104",
-        "edge": "104"
+        "edge": "104",
+        "firefox": "preview"
       }
     }
   },
@@ -9761,7 +9777,7 @@ export const features = {
     }
   },
   "execcommand": {
-    "description_html": "The <code>execCommand()</code> method reads and writes from the clipboard and performs editing commands on editable text, such as changing the font name or style. Related methods check whether commands are supported, enabled, or applied.",
+    "description_html": "The <code>document.execCommand()</code> method reads and writes from the clipboard and performs editing commands on editable text, such as changing the font name or style. Related methods check whether commands are supported, enabled, or applied.",
     "discouraged": {
       "according_to": [
         "https://w3c.github.io/editing/docs/execCommand/"
@@ -10227,11 +10243,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "128",
-        "chrome_android": "128",
-        "edge": "128"
-      }
+      "support": {}
     }
   },
   "fetch": {
@@ -11614,7 +11626,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "154",
+        "chrome_android": "154",
+        "edge": "154"
+      }
     }
   },
   "fullscreen": {
@@ -11841,6 +11857,29 @@ export const features = {
     "name": "<geolocation>",
     "spec": [
       "https://wicg.github.io/PEPC/geolocation-element.html"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
+      }
+    }
+  },
+  "geolocation-element-initialpermissionstatus": {
+    "description_html": "The <code>initialPermissionStatus</code> property of the <code>HTMLGeolocationElement</code> API represents whether <code>geolocation</code> was previously granted, denied, or neither, when the page first loads.",
+    "discouraged": {
+      "according_to": [
+        "https://chromestatus.com/feature/5113729407647744"
+      ],
+      "reason": "The value of the property can be miscomputed and the sole implementer, Chromium, intends to remove it.",
+      "reason_html": "The value of the property can be miscomputed and the sole implementer, Chromium, intends to remove it."
+    },
+    "kind": "feature",
+    "name": "HTMLGeolocationElement initialPermissionStatus",
+    "spec": [
+      "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus"
     ],
     "status": {
       "baseline": false,
@@ -13264,6 +13303,24 @@ export const features = {
       }
     }
   },
+  "import-maps-multiple": {
+    "description_html": "Multiple <code>&#x3C;script type=\"importmap\"></code> HTML elements merge to produce the overall import map.",
+    "kind": "feature",
+    "name": "Multiple import maps",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#import-maps"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "133",
+        "chrome_android": "133",
+        "edge": "133",
+        "safari": "18.4",
+        "safari_ios": "18.4"
+      }
+    }
+  },
   "indeterminate": {
     "description_html": "The <code>:indeterminate</code> CSS pseudo-class selects any form element whose state is indeterminate, such as checkboxes that have been set to an indeterminate state with JavaScript, or radio buttons which are members of a group in which all radio buttons are unchecked.",
     "kind": "feature",
@@ -13539,16 +13596,52 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2023-10-26",
-      "baseline_low_date": "2021-04-26",
+      "baseline_high_date": "2024-04-05",
+      "baseline_low_date": "2021-10-05",
       "support": {
         "chrome": "20",
         "chrome_android": "25",
         "edge": "12",
-        "firefox": "57",
-        "firefox_android": "57",
+        "firefox": "93",
+        "firefox_android": "93",
         "safari": "14.1",
         "safari_ios": "5"
+      }
+    }
+  },
+  "input-date-time-month": {
+    "description_html": "The <code>&#x3C;input type=\"month\"></code> HTML element shows a month picker.",
+    "kind": "feature",
+    "name": "<input type=\"month\">",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#month-state-(type=month)"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "20",
+        "chrome_android": "25",
+        "edge": "12",
+        "firefox_android": "18",
+        "safari_ios": "≤11.3"
+      }
+    }
+  },
+  "input-date-time-week": {
+    "description_html": "The <code>&#x3C;input type=\"week\"></code> HTML element shows a week picker.",
+    "kind": "feature",
+    "name": "<input type=\"week\">",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#week-state-(type=week)"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "20",
+        "chrome_android": "25",
+        "edge": "12",
+        "firefox_android": "18",
+        "safari_ios": "18.2"
       }
     }
   },
@@ -15078,7 +15171,8 @@ export const features = {
       "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "150",
         "chrome_android": "150",
@@ -15201,7 +15295,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "preview"
+      }
     }
   },
   "link-rel-dns-prefetch": {
@@ -15993,12 +16089,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
     ],
     "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-08-28",
+      "baseline": false,
       "support": {
-        "chrome": "152",
-        "chrome_android": "152",
-        "edge": "152",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "15.4",
@@ -17705,7 +17797,8 @@ export const features = {
       "https://drafts.csswg.org/css-scroll-anchoring-1/#exclusion-api"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "56",
         "chrome_android": "56",
@@ -18222,7 +18315,13 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "88",
+        "chrome_android": "88",
+        "edge": "88",
+        "firefox": "97",
+        "firefox_android": "97"
+      }
     }
   },
   "payment-handler": {
@@ -20861,7 +20960,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "135",
+        "chrome_android": "135",
+        "edge": "135"
+      }
     }
   },
   "scroll-driven-animations": {
@@ -21346,6 +21449,7 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "89",
+        "chrome_android": "148",
         "edge": "89",
         "firefox": "151"
       }
@@ -21755,6 +21859,22 @@ export const features = {
         "firefox_android": "33",
         "safari": "16",
         "safari_ios": "16"
+      }
+    }
+  },
+  "shared-workers-extended-lifetime": {
+    "description_html": "The <code>extendedLifetime</code> option of the <code>SharedWorker()</code> constructor gives shared workers extra time to perform operations after all pages using it have been navigated away from or closed.",
+    "kind": "feature",
+    "name": "Shared worker extended lifetime",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworkeroptions-extendedlifetime"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148"
       }
     }
   },
@@ -22965,7 +23085,8 @@ export const features = {
         "chrome": "148",
         "chrome_android": "148",
         "edge": "148",
-        "firefox": "preview",
+        "firefox": "157",
+        "firefox_android": "157",
         "safari": "preview"
       }
     }
@@ -23406,7 +23527,12 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "145",
+        "firefox_android": "145",
+        "safari": "27",
+        "safari_ios": "27"
+      }
     }
   },
   "text-box": {
@@ -24161,7 +24287,8 @@ export const features = {
       "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "89",
         "chrome_android": "89",
@@ -24960,7 +25087,8 @@ export const features = {
         "chrome_android": "54",
         "edge": "79",
         "firefox": "69",
-        "firefox_android": "79"
+        "firefox_android": "79",
+        "safari": "preview"
       }
     }
   },
@@ -24969,7 +25097,7 @@ export const features = {
     "kind": "feature",
     "name": "<usermedia>",
     "spec": [
-      "https://github.com/WICG/PEPC/blob/main/usermedia_element.md"
+      "https://w3c.github.io/mediacapture-extensions/#the-usermedia-html-element"
     ],
     "status": {
       "baseline": false,
@@ -25443,7 +25571,7 @@ export const features = {
     "kind": "feature",
     "name": "Extended constant expressions (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/extended-const/blob/main/proposals/extended-const/Overview.md"
+      "https://webassembly.github.io/extended-const/core/bikeshed/"
     ],
     "status": {
       "baseline": "high",
@@ -25486,10 +25614,11 @@ export const features = {
     "kind": "feature",
     "name": "JavaScript promise integration (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/js-promise-integration/blob/main/proposals/js-promise-integration/Overview.md"
+      "https://webassembly.github.io/js-promise-integration/js-api/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
         "chrome": "137",
         "chrome_android": "137",
@@ -25506,7 +25635,7 @@ export const features = {
     "kind": "feature",
     "name": "Memory64 (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/memory64/blob/main/proposals/memory64/Overview.md"
+      "https://webassembly.github.io/memory64/core/bikeshed/"
     ],
     "status": {
       "baseline": false,
@@ -25713,7 +25842,7 @@ export const features = {
     "kind": "feature",
     "name": "Tail call optimization (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/tail-call/blob/main/proposals/tail-call/Overview.md"
+      "https://webassembly.github.io/tail-call/core/bikeshed/"
     ],
     "status": {
       "baseline": "low",
@@ -25756,7 +25885,7 @@ export const features = {
     "kind": "feature",
     "name": "Typed function references (WebAssembly)",
     "spec": [
-      "https://github.com/WebAssembly/function-references/blob/main/proposals/function-references/Overview.md"
+      "https://webassembly.github.io/function-references/core/bikeshed/"
     ],
     "status": {
       "baseline": "low",
