@@ -12478,6 +12478,34 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
     ]
   },
+  "javascript.operators.import.defer": {
+    "parent_feature": "import-defer",
+    "parent_feature_name": "import defer",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-defer-import-eval/"
+    ]
+  },
+  "javascript.statements.import.defer": {
+    "parent_feature": "import-defer",
+    "parent_feature_name": "import defer",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-defer-import-eval/"
+    ]
+  },
   "api.IDBFactory.databases": {
     "parent_feature": "indexeddb",
     "parent_feature_name": "IndexedDB",
@@ -18558,6 +18586,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
+    ]
+  },
+  "css.at-rules.supports.named-feature": {
+    "parent_feature": "supports-named-feature",
+    "parent_feature_name": "named-feature()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn"
     ]
   },
   "api.SVGElement.attributeStyleMap": {

@@ -13270,7 +13270,7 @@ export const features = {
     }
   },
   "import-defer": {
-    "description_html": "The <code>import defer</code> JavaScript statement imports a module while deferring its evaluation until its first use.",
+    "description_html": "The <code>import defer</code> and <code>import.defer()</code> JavaScript statements import a module while deferring its evaluation until its first use.",
     "kind": "feature",
     "name": "import defer",
     "spec": [
@@ -13278,7 +13278,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "import-maps": {
@@ -23110,6 +23112,22 @@ export const features = {
         "firefox_android": "49",
         "safari": "4",
         "safari_ios": "3.2"
+      }
+    }
+  },
+  "supports-named-feature": {
+    "description_html": "The <code>named-feature()</code> function, when used with <code>@supports</code>, checks if a named CSS behavior is supported. The CSS behavior names are defined by specification. For example, <code>@supports named-feature(anchor-position-follows-transforms)</code> checks whether anchor-positioning applies after transforms.\"",
+    "kind": "feature",
+    "name": "named-feature()",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
       }
     }
   },
