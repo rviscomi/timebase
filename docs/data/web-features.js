@@ -7520,10 +7520,31 @@ export const features = {
       }
     }
   },
-  "container-queries": {
-    "description_html": "Container size queries with the <code>@container</code> at-rule apply styles to an element based on the dimensions of its container.",
+  "container-name-queries": {
+    "description_html": "Name-only container queries with the <code>@container …</code> at-rule apply styles to an element based on the name of the element's container alone.",
     "kind": "feature",
-    "name": "Container queries",
+    "name": "Name-only container queries",
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-container-condition"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-05-07",
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "149",
+        "firefox_android": "149",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    }
+  },
+  "container-queries": {
+    "description_html": "Container size queries with the <code>@container (…)</code> at-rule apply styles to an element based on a dimension of its container, such as <code>width</code> or <code>height</code>.",
+    "kind": "feature",
+    "name": "Container queries (size)",
     "spec": [
       "https://drafts.csswg.org/css-conditional-5/#container-queries"
     ],
@@ -21445,7 +21466,7 @@ export const features = {
     "kind": "feature",
     "name": "Web serial",
     "spec": [
-      "https://wicg.github.io/serial/"
+      "https://serial.spec.whatwg.org/"
     ],
     "status": {
       "baseline": false,
@@ -22797,6 +22818,36 @@ export const features = {
         "firefox_android": "17",
         "safari": "9",
         "safari_ios": "9"
+      }
+    }
+  },
+  "string-trim-leftright": {
+    "description_html": "The <code>trimLeft()</code> and <code>trimRight()</code> methods of strings return a new string with whitespace removed from the beginning or end of the string. They're aliases for <code>trimStart()</code> and <code>trimEnd()</code>.",
+    "discouraged": {
+      "according_to": [
+        "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#String.prototype.trimleft"
+      ],
+      "alternatives": [
+        "string-trim-startend"
+      ],
+      "reason": "TC39 recommends using trimStart() and trimEnd() instead. The trimLeft() and trimRight() aliases are provided for compatibility with old code.",
+      "reason_html": "TC39 recommends using <code>trimStart()</code> and <code>trimEnd()</code> instead. The <code>trimLeft()</code> and <code>trimRight()</code> aliases are provided for compatibility with old code."
+    },
+    "kind": "feature",
+    "name": "String trimLeft() and trimRight()",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#String.prototype.trimleft"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "4",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "3.5",
+        "firefox_android": "4",
+        "safari": "5",
+        "safari_ios": "4.2"
       }
     }
   },
@@ -24775,7 +24826,7 @@ export const features = {
     }
   },
   "uint8array-base64-hex": {
-    "description_html": "The static <code>Uint8Array.fromBase64()</code> method and the <code>Uint8Array</code> instance methods <code>toBase64()</code> and <code>setFromBase64()</code> convert to and from base64 strings. Similarly, the static <code>Uint8Array.fromHex()</code> method and the instance methods <code>toHex()</code> and <code>setFromHex()</code> convert to and from hex strings.",
+    "description_html": "The <code>Uint8Array.fromBase64()</code> static method and the <code>toBase64()</code> and <code>setFromBase64()</code> instance methods convert to and from base64 strings. Similarly, the <code>Uint8Array.fromHex()</code> static method and the <code>toHex()</code> and <code>setFromHex()</code> instance methods convert to and from hex strings.",
     "kind": "feature",
     "name": "Uint8Array base64 and hex conversion",
     "spec": [
@@ -26073,7 +26124,7 @@ export const features = {
     "kind": "feature",
     "name": "Web Bluetooth",
     "spec": [
-      "https://webbluetoothcg.github.io/web-bluetooth/"
+      "https://bluetooth.spec.whatwg.org/"
     ],
     "status": {
       "baseline": false,
@@ -26760,7 +26811,7 @@ export const features = {
     "kind": "feature",
     "name": "WebHID",
     "spec": [
-      "https://wicg.github.io/webhid/"
+      "https://hid.spec.whatwg.org/"
     ],
     "status": {
       "baseline": false,
@@ -26939,7 +26990,7 @@ export const features = {
     "kind": "feature",
     "name": "WebUSB",
     "spec": [
-      "https://wicg.github.io/webusb/"
+      "https://usb.spec.whatwg.org/"
     ],
     "status": {
       "baseline": false,
