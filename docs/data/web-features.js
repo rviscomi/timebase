@@ -23289,6 +23289,22 @@ export const features = {
       }
     }
   },
+  "symbols-function": {
+    "description_html": "The <code>symbols()</code> CSS function defines counter styles as a value of properties such as <code>list-style</code>. It's an inline alternative to the <code>@counter-style</code> CSS at-rule.",
+    "kind": "feature",
+    "name": "symbols()",
+    "spec": [
+      "https://drafts.csswg.org/css-counter-styles-3/#symbols-function"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "35",
+        "firefox_android": "35"
+      }
+    }
+  },
   "system-color": {
     "description_html": "The system color CSS keywords, such as <code>ButtonBorder</code> or <code>LinkText</code>, allow you to match default colors from the user agent.",
     "kind": "feature",

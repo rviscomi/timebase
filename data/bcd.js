@@ -12478,6 +12478,54 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/syntax.html#processing-instructions"
     ]
   },
+  "api.Blob.textStream": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/12758"
+    ]
+  },
+  "api.Request.textStream": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/12758"
+    ]
+  },
+  "api.Response.textStream": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/12758"
+    ]
+  },
   "javascript.operators.import.defer": {
     "parent_feature": "import-defer",
     "parent_feature_name": "import defer",
@@ -13226,38 +13274,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-link-params-1/"
-    ]
-  },
-  "css.properties.list-style-type.symbols": {
-    "parent_feature": "list-style",
-    "parent_feature_name": "List style",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "preview",
-        "firefox": "35",
-        "firefox_android": "35"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-lists-3/#list-style-property"
-    ]
-  },
-  "css.properties.list-style.symbols": {
-    "parent_feature": "list-style",
-    "parent_feature_name": "List style",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "preview",
-        "firefox": "35",
-        "firefox_android": "35"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-lists-3/#list-style-property"
     ]
   },
   "api.HTMLIFrameElement.loading": {
@@ -18797,6 +18813,38 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/filter-effects-1/"
+    ]
+  },
+  "css.properties.list-style-type.symbols": {
+    "parent_feature": "symbols-function",
+    "parent_feature_name": "symbols()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "35",
+        "firefox_android": "35"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-counter-styles-3/#symbols-function"
+    ]
+  },
+  "css.properties.list-style.symbols": {
+    "parent_feature": "symbols-function",
+    "parent_feature_name": "symbols()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "35",
+        "firefox_android": "35"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-counter-styles-3/#symbols-function"
     ]
   },
   "css.types.color.system-color.accentcolor_accentcolortext": {
