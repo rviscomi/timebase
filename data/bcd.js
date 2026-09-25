@@ -620,8 +620,12 @@ export const browsers = {
         "version": "155"
       },
       {
-        "date": "null",
+        "date": "2026-10-20",
         "version": "156"
+      },
+      {
+        "date": "null",
+        "version": "157"
       },
       {
         "date": "null",
@@ -1157,8 +1161,12 @@ export const browsers = {
         "version": "155"
       },
       {
-        "date": "null",
+        "date": "2026-10-20",
         "version": "156"
+      },
+      {
+        "date": "null",
+        "version": "157"
       }
     ]
   },
@@ -2986,6 +2994,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27.2"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3224,6 +3236,10 @@ export const browsers = {
       {
         "date": "2026-09-14",
         "version": "27"
+      },
+      {
+        "date": "null",
+        "version": "27.2"
       }
     ]
   }
@@ -3232,9 +3248,10 @@ export const bcdKeys = {
   "api.AbortSignal.any_static": {
     "parent_feature": "abortsignal-any",
     "parent_feature_name": "AbortSignal.any()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "116",
@@ -3533,7 +3550,8 @@ export const bcdKeys = {
     "parent_feature_name": "Animations (CSS)",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-22",
       "baseline_low_date": "2024-03-22",
       "support": {
         "chrome": "123",
@@ -3543,6 +3561,25 @@ export const bcdKeys = {
         "firefox_android": "109",
         "safari": "17",
         "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/"
+    ]
+  },
+  "css.at-rules.keyframes.named_range_keyframes": {
+    "parent_feature": "animations-css",
+    "parent_feature_name": "Animations (CSS)",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "preview",
+        "safari": "26",
+        "safari_ios": "26"
       }
     },
     "spec": [
@@ -3623,10 +3660,14 @@ export const bcdKeys = {
   "api.Document.ariaNotify": {
     "parent_feature": "arianotify",
     "parent_feature_name": "ariaNotify()",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "27",
@@ -3640,10 +3681,14 @@ export const bcdKeys = {
   "api.Element.ariaNotify": {
     "parent_feature": "arianotify",
     "parent_feature_name": "ariaNotify()",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "27",
@@ -4487,7 +4532,8 @@ export const bcdKeys = {
       "support": {
         "firefox": "66",
         "firefox_android": "66",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     },
     "spec": [
@@ -4802,7 +4848,8 @@ export const bcdKeys = {
       "support": {
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     },
     "spec": [
@@ -5003,6 +5050,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5020,6 +5068,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5037,6 +5086,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5054,6 +5104,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5071,6 +5122,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5088,6 +5140,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5105,6 +5158,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5122,6 +5176,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5139,6 +5194,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5156,6 +5212,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5173,6 +5230,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5190,6 +5248,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5207,6 +5266,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5224,6 +5284,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5241,6 +5302,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5258,6 +5320,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -5275,6 +5338,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
@@ -8077,7 +8141,8 @@ export const bcdKeys = {
     "parent_feature_name": "Declarative shadow DOM",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-22",
       "baseline_low_date": "2024-03-22",
       "support": {
         "chrome": "123",
@@ -8879,11 +8944,31 @@ export const bcdKeys = {
         "chrome": "131",
         "chrome_android": "131",
         "edge": "131",
+        "firefox": "preview",
         "safari": "preview"
       }
     },
     "spec": [
       "https://fetch.spec.whatwg.org/"
+    ]
+  },
+  "api.Request.body": {
+    "parent_feature": "fetch-request-streams",
+    "parent_feature_name": "Fetch upload streams",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "11.1",
+        "safari_ios": "11.3"
+      }
+    },
+    "spec": [
+      "https://fetch.spec.whatwg.org/#concept-body-stream"
     ]
   },
   "css.properties.field-sizing": {
@@ -13119,6 +13204,25 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#segmenter-objects"
     ]
   },
+  "javascript.builtins.Iterator.join": {
+    "parent_feature": "iterator-join",
+    "parent_feature_name": "Iterator join()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
+        "firefox": "154",
+        "firefox_android": "154",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+    ]
+  },
   "mediatypes.image.jxl": {
     "parent_feature": "jpegxl",
     "parent_feature_name": "JPEG XL",
@@ -13126,6 +13230,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "preview",
         "safari": "17",
         "safari_ios": "17"
@@ -13375,7 +13482,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -13391,7 +13500,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -13407,7 +13518,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -13423,7 +13536,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -13439,7 +13554,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15506,9 +15623,10 @@ export const bcdKeys = {
   "css.properties.paint-order": {
     "parent_feature": "paint-order",
     "parent_feature_name": "paint-order",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-22",
       "baseline_low_date": "2024-03-22",
       "support": {
         "chrome": "123",
@@ -16395,6 +16513,23 @@ export const bcdKeys = {
       "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers"
     ]
   },
+  "css.types.random": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
   "api.ReadableStream.from_static": {
     "parent_feature": "readablestream-from",
     "parent_feature_name": "ReadableStream.from()",
@@ -16524,6 +16659,25 @@ export const bcdKeys = {
     "spec": [
       "https://github.com/whatwg/dom/pull/1353",
       "https://github.com/whatwg/html/pull/10995"
+    ]
+  },
+  "api.PerformanceResourceTiming.deliveryType": {
+    "parent_feature": "resource-timing",
+    "parent_feature_name": "Resource timing performance entries",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "preview",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
     ]
   },
   "api.PerformanceResourceTiming.firstInterimResponseStart": {
@@ -18006,6 +18160,27 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-values-5/#tree-counting"
     ]
   },
+  "html.elements.img.sizes.auto": {
+    "parent_feature": "sizes-auto",
+    "parent_feature_name": "<img sizes=\"auto\" loading=\"lazy\">",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto"
+    ]
+  },
   "api.PerformanceSoftNavigation": {
     "parent_feature": "soft-navigations",
     "parent_feature_name": "Soft navigation performance entries",
@@ -18117,6 +18292,445 @@ export const bcdKeys = {
     "spec": [
       "https://wicg.github.io/soft-navigations/#sec-soft-navs"
     ]
+  },
+  "api.SpeechRecognition": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.SpeechRecognition": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.abort": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.audioend_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.audiostart_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.continuous": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.end_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.error_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.interimResults": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.lang": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.maxAlternatives": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.nomatch_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.result_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.soundend_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.soundstart_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.speechend_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.speechstart_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.start": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.start_event": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.stop": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionErrorEvent": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionErrorEvent.SpeechRecognitionErrorEvent": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionErrorEvent.error": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionErrorEvent.message": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.grammars": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
   },
   "api.CustomStateSet": {
     "parent_feature": "state",
@@ -18822,7 +19436,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "35",
         "firefox_android": "35"
       }
@@ -18838,7 +19454,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "35",
         "firefox_android": "35"
       }
@@ -23838,6 +24456,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "153",
         "firefox_android": "153"
       }
@@ -23890,7 +24511,8 @@ export const bcdKeys = {
     "parent_feature_name": "text-wrap",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -23911,7 +24533,8 @@ export const bcdKeys = {
     "parent_feature_name": "text-wrap",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -24033,6 +24656,27 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.transfer"
+    ]
+  },
+  "api.ReadableStream.transferable": {
+    "parent_feature": "transferable-streams",
+    "parent_feature_name": "Transferable streams",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "103",
+        "firefox_android": "103",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://streams.spec.whatwg.org/#rs-transfer"
     ]
   },
   "css.properties.transform-box.content-box": {
@@ -26235,9 +26879,10 @@ export const bcdKeys = {
   "css.properties.white-space-collapse": {
     "parent_feature": "white-space-collapse",
     "parent_feature_name": "white-space-collapse",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -26256,9 +26901,10 @@ export const bcdKeys = {
   "css.properties.white-space-collapse.break-spaces": {
     "parent_feature": "white-space-collapse",
     "parent_feature_name": "white-space-collapse",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -26277,9 +26923,10 @@ export const bcdKeys = {
   "css.properties.white-space-collapse.collapse": {
     "parent_feature": "white-space-collapse",
     "parent_feature_name": "white-space-collapse",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -26298,9 +26945,10 @@ export const bcdKeys = {
   "css.properties.white-space-collapse.preserve": {
     "parent_feature": "white-space-collapse",
     "parent_feature_name": "white-space-collapse",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -26319,9 +26967,10 @@ export const bcdKeys = {
   "css.properties.white-space-collapse.preserve-breaks": {
     "parent_feature": "white-space-collapse",
     "parent_feature_name": "white-space-collapse",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -26345,7 +26994,6 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "152",
-        "chrome_android": "152",
         "edge": "152"
       }
     },
@@ -26361,7 +27009,6 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "152",
-        "chrome_android": "152",
         "edge": "152"
       }
     },
@@ -26377,7 +27024,6 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "152",
-        "chrome_android": "152",
         "edge": "152"
       }
     },

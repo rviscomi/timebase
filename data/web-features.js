@@ -620,8 +620,12 @@ export const browsers = {
         "version": "155"
       },
       {
-        "date": "null",
+        "date": "2026-10-20",
         "version": "156"
+      },
+      {
+        "date": "null",
+        "version": "157"
       },
       {
         "date": "null",
@@ -1157,8 +1161,12 @@ export const browsers = {
         "version": "155"
       },
       {
-        "date": "null",
+        "date": "2026-10-20",
         "version": "156"
+      },
+      {
+        "date": "null",
+        "version": "157"
       }
     ]
   },
@@ -2986,6 +2994,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27.2"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3224,6 +3236,10 @@ export const browsers = {
       {
         "date": "2026-09-14",
         "version": "27"
+      },
+      {
+        "date": "null",
+        "version": "27.2"
       }
     ]
   }
@@ -3325,7 +3341,8 @@ export const features = {
       "https://dom.spec.whatwg.org/#dom-abortsignal-any"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "116",
@@ -4015,8 +4032,12 @@ export const features = {
       "https://w3c.github.io/aria/#ARIANotifyMixin"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
       "support": {
+        "chrome": "141",
+        "chrome_android": "141",
+        "edge": "141",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "27",
@@ -6419,7 +6440,8 @@ export const features = {
       "support": {
         "firefox": "66",
         "firefox_android": "66",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -6992,7 +7014,8 @@ export const features = {
       "support": {
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -11811,6 +11834,18 @@ export const features = {
       }
     }
   },
+  "gamut-mapping": {
+    "description_html": "Colors in CSS and <code>&#x3C;canvas></code> elements can be defined out of range of an output device or the color space of the canvas. Gamut mapping brings the color into range while preserving hue and lightness.",
+    "kind": "feature",
+    "name": "Gamut mapping",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#css-gamut-mapping"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "gap-decorations": {
     "description_html": "The <code>column-rule</code> and <code>row-rule</code> CSS properties display decorative lines between columns and rows of a flex, grid, or multi-column layout. The <code>rule-break</code>, <code>rule-outset</code>, and <code>rule-paint-order</code> properties control the appearance of these lines.",
     "kind": "feature",
@@ -14535,6 +14570,25 @@ export const features = {
       }
     }
   },
+  "iterator-join": {
+    "description_html": "The <code>join()</code> method of an <code>Iterator</code> object returns a string concatenation of all the iterator's items, separated by commas or a given separator string. It's similar to the <code>join()</code> method of arrays.",
+    "kind": "feature",
+    "name": "Iterator join()",
+    "spec": [
+      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
+        "firefox": "154",
+        "firefox_android": "154",
+        "safari": "preview"
+      }
+    }
+  },
   "iterator-methods": {
     "description_html": "The <code>Iterator</code> object is an abstract base for objects that implement the iterator protocol. It provides methods common to built-in iterators, such as <code>filter()</code>, <code>find()</code>, <code>map()</code>, and <code>reduce()</code>. You can also use the static method <code>Iterator.from()</code> to convert an existing iterable into an <code>Iterator</code>.",
     "kind": "feature",
@@ -14633,6 +14687,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "preview",
         "safari": "17",
         "safari_ios": "17"
@@ -15356,7 +15413,9 @@ export const features = {
       "support": {
         "chrome": "124",
         "chrome_android": "124",
-        "edge": "124"
+        "edge": "124",
+        "safari": "18.2",
+        "safari_ios": "18.2"
       }
     }
   },
@@ -18241,7 +18300,8 @@ export const features = {
       "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrder"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-22",
       "baseline_low_date": "2024-03-22",
       "support": {
         "chrome": "123",
@@ -19505,6 +19565,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
+        "firefox": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -22241,7 +22303,8 @@ export const features = {
       "support": {
         "chrome": "139",
         "chrome_android": "139",
-        "edge": "139"
+        "edge": "139",
+        "firefox": "preview"
       }
     }
   },
@@ -23299,7 +23362,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "35",
         "firefox_android": "35"
       }
@@ -23944,6 +24009,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155",
         "firefox": "153",
         "firefox_android": "153"
       }
@@ -27364,7 +27432,8 @@ export const features = {
       "https://drafts.csswg.org/css-text-4/#white-space-collapsing"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-09-19",
       "baseline_low_date": "2024-03-19",
       "support": {
         "chrome": "114",
@@ -27487,7 +27556,6 @@ export const features = {
       "baseline": false,
       "support": {
         "chrome": "152",
-        "chrome_android": "152",
         "edge": "152"
       }
     }
