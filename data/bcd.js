@@ -3414,6 +3414,27 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-color-5/#relative-alpha"
     ]
   },
+  "css.properties.content.alt_text": {
+    "parent_feature": "alt-text-generated-content",
+    "parent_feature_name": "Alt text for generated content",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "77",
+        "chrome_android": "77",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "17.4",
+        "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-content-3/#alt"
+    ]
+  },
   "css.properties.position-anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
@@ -3603,36 +3624,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-animations-2/"
-    ]
-  },
-  "manifests.webapp.migrate_from": {
-    "parent_feature": "app-migration",
-    "parent_feature_name": "Web app origin migration",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
-    ]
-  },
-  "manifests.webapp.migrate_to": {
-    "parent_feature": "app-migration",
-    "parent_feature_name": "Web app origin migration",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://wicg.github.io/manifest-incubations/#web-application-origin-migration"
     ]
   },
   "api.Element.ariaDescription": {
@@ -4457,72 +4448,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element"
     ]
   },
-  "api.CanvasRenderingContext2D.reset": {
-    "parent_feature": "canvas-reset",
-    "parent_feature_name": "Canvas reset()",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "113",
-        "firefox_android": "113",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset"
-    ]
-  },
-  "api.OffscreenCanvasRenderingContext2D.reset": {
-    "parent_feature": "canvas-reset",
-    "parent_feature_name": "Canvas reset()",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "99",
-        "chrome_android": "99",
-        "edge": "99",
-        "firefox": "113",
-        "firefox_android": "113",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-reset"
-    ]
-  },
-  "css.types.length.cap": {
-    "parent_feature": "cap",
-    "parent_feature_name": "cap unit",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "118",
-        "chrome_android": "118",
-        "edge": "118",
-        "firefox": "97",
-        "firefox_android": "97",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#cap"
-    ]
-  },
   "css.selectors.attribute.case_sensitive_modifier": {
     "parent_feature": "case-sensitive-attributes",
     "parent_feature_name": "Case-sensitive attribute selector",
@@ -5344,142 +5269,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
-    ]
-  },
-  "css.properties.counter-set": {
-    "parent_feature": "counter-set",
-    "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "85",
-        "chrome_android": "85",
-        "edge": "85",
-        "firefox": "68",
-        "firefox_android": "68",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-lists-3/#propdef-counter-set"
-    ]
-  },
-  "css.properties.counter-set.list-item": {
-    "parent_feature": "counter-set",
-    "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "85",
-        "chrome_android": "85",
-        "edge": "85",
-        "firefox": "68",
-        "firefox_android": "68",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-lists-3/#propdef-counter-set"
-    ]
-  },
-  "css.properties.counter-set.none": {
-    "parent_feature": "counter-set",
-    "parent_feature_name": "counter-set",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "85",
-        "chrome_android": "85",
-        "edge": "85",
-        "firefox": "68",
-        "firefox_android": "68",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-lists-3/#propdef-counter-set"
-    ]
-  },
-  "api.createImageBitmap.svgimageelement_as_source_image": {
-    "parent_feature": "createimagebitmap",
-    "parent_feature_name": "createImageBitmap",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "59",
-        "chrome_android": "59",
-        "edge": "79",
-        "firefox": "65",
-        "firefox_android": "65",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap"
-    ]
-  },
-  "api.CSSPseudoElement": {
-    "parent_feature": "css-object-model",
-    "parent_feature_name": "CSS object model",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/cssom-1/#css-object-model"
-    ]
-  },
-  "api.CSSPseudoElement.element": {
-    "parent_feature": "css-object-model",
-    "parent_feature_name": "CSS object model",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/cssom-1/#css-object-model"
-    ]
-  },
-  "api.CSSPseudoElement.type": {
-    "parent_feature": "css-object-model",
-    "parent_feature_name": "CSS object model",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/cssom-1/#css-object-model"
     ]
   },
   "api.CSSImageValue": {
@@ -8252,138 +8041,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby"
     ]
   },
-  "css.selectors.dir": {
-    "parent_feature": "dir-pseudo",
-    "parent_feature_name": ":dir()",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "49",
-        "firefox_android": "49",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/selectors-4/#the-dir-pseudo"
-    ]
-  },
-  "css.types.exp": {
-    "parent_feature": "exp-functions",
-    "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "118",
-        "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
-    ]
-  },
-  "css.types.hypot": {
-    "parent_feature": "exp-functions",
-    "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "118",
-        "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
-    ]
-  },
-  "css.types.log": {
-    "parent_feature": "exp-functions",
-    "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "118",
-        "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
-    ]
-  },
-  "css.types.pow": {
-    "parent_feature": "exp-functions",
-    "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "118",
-        "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
-    ]
-  },
-  "css.types.sqrt": {
-    "parent_feature": "exp-functions",
-    "parent_feature_name": "Exponential functions (CSS)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "118",
-        "firefox_android": "118",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-values-4/#exponent-funcs"
-    ]
-  },
   "javascript.builtins.AsyncDisposableStack": {
     "parent_feature": "explicit-resource-management",
     "parent_feature_name": "Explicit resource management",
@@ -8971,69 +8628,6 @@ export const bcdKeys = {
       "https://fetch.spec.whatwg.org/#concept-body-stream"
     ]
   },
-  "css.properties.field-sizing": {
-    "parent_feature": "field-sizing",
-    "parent_feature_name": "field-sizing",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
-      "support": {
-        "chrome": "123",
-        "chrome_android": "123",
-        "edge": "123",
-        "firefox": "152",
-        "firefox_android": "152",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-forms-1/#field-sizing"
-    ]
-  },
-  "css.properties.field-sizing.content": {
-    "parent_feature": "field-sizing",
-    "parent_feature_name": "field-sizing",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
-      "support": {
-        "chrome": "123",
-        "chrome_android": "123",
-        "edge": "123",
-        "firefox": "152",
-        "firefox_android": "152",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-forms-1/#field-sizing"
-    ]
-  },
-  "css.properties.field-sizing.fixed": {
-    "parent_feature": "field-sizing",
-    "parent_feature_name": "field-sizing",
-    "parent_feature_baseline": "low",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
-      "support": {
-        "chrome": "123",
-        "chrome_android": "123",
-        "edge": "123",
-        "firefox": "152",
-        "firefox_android": "152",
-        "safari": "26.2",
-        "safari_ios": "26.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-forms-1/#field-sizing"
-    ]
-  },
   "css.selectors.first-letter.dutch_ij_digraph": {
     "parent_feature": "first-letter",
     "parent_feature_name": "::first-letter",
@@ -9051,6 +8645,90 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-pseudo-4/#first-letter-pseudo"
     ]
   },
+  "css.properties.align-content.flex_context.safe_unsafe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.align-items.flex_context.safe_unsafe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.align-self.flex_context.safe_unsafe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.justify-content.flex_context.safe_unsafe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
   "css.properties.flex-wrap.balance": {
     "parent_feature": "flexbox-flex-wrap-balance",
     "parent_feature_name": "flex-wrap: balance",
@@ -9065,28 +8743,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-balance"
-    ]
-  },
-  "api.FontFaceSet.check": {
-    "parent_feature": "font-loading",
-    "parent_feature_name": "Font loading",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "41",
-        "firefox_android": "41",
-        "safari": "10",
-        "safari_ios": "10"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-font-loading-3/"
     ]
   },
   "api.FontFace.ascentOverride": {
@@ -9201,6 +8857,111 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-fonts-4/#font-metrics-override-desc"
+    ]
+  },
+  "css.properties.font-size-adjust": {
+    "parent_feature": "font-size-adjust",
+    "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-25",
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "3",
+        "firefox_android": "4",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ]
+  },
+  "css.properties.font-size-adjust.from-font": {
+    "parent_feature": "font-size-adjust",
+    "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-25",
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "118",
+        "firefox_android": "118",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ]
+  },
+  "css.properties.font-size-adjust.none": {
+    "parent_feature": "font-size-adjust",
+    "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-25",
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "3",
+        "firefox_android": "4",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ]
+  },
+  "css.properties.font-size-adjust.two-values": {
+    "parent_feature": "font-size-adjust",
+    "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-25",
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "92",
+        "firefox_android": "92",
+        "safari": "17",
+        "safari_ios": "17"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
+    ]
+  },
+  "svg.global_attributes.font-size-adjust": {
+    "parent_feature": "font-size-adjust",
+    "parent_feature_name": "font-size-adjust",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-25",
+      "support": {
+        "chrome": "127",
+        "chrome_android": "127",
+        "edge": "127",
+        "firefox": "3",
+        "firefox_android": "4",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-fonts-5/#font-size-adjust-prop"
     ]
   },
   "css.properties.font-variant-emoji": {
@@ -9783,2310 +9544,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-mixins-1/#function-rule"
     ]
   },
-  "css.properties.column-rule-break": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-break.intersection": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-break.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-break.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-cap.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-junction.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-inset.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-visibility-items": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-visibility-items.all": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-visibility-items.around": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-visibility-items.between": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.column-rule-visibility-items.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-break": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-break.intersection": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-break.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-break.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-color": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-color.currentColor": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-color.transparent": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-cap.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-junction.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-inset.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.dashed": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.dotted": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.double": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.groove": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.hidden": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.outset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.ridge": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-style.solid": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-visibility-items": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-visibility-items.all": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-visibility-items.around": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-visibility-items.between": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-visibility-items.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-width": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-width.medium": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-width.thick": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule-width.thin": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.currentColor": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.dashed": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.dotted": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.double": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.groove": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.hidden": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.medium": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.outset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.ridge": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.solid": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.thick": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.thin": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.row-rule.transparent": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-break": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-break.intersection": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-break.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-break.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-color": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-color.currentColor": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-color.transparent": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-cap": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-cap.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-end": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-end.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-junction": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-junction.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-start": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset-start.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-inset.overlap-join": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-overlap": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-overlap.column-over-row": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-overlap.row-over-column": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.dashed": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.dotted": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.double": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.groove": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.hidden": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.outset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.ridge": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-style.solid": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-visibility-items": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-visibility-items.all": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-visibility-items.around": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-visibility-items.between": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-visibility-items.normal": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-width": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-width.medium": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-width.thick": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule-width.thin": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.currentColor": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.dashed": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.dotted": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.double": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.groove": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.hidden": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.inset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.medium": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.none": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.outset": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.ridge": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.solid": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.thick": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.thin": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
-  "css.properties.rule.transparent": {
-    "parent_feature": "gap-decorations",
-    "parent_feature_name": "Gap decorations",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-gaps-1/"
-    ]
-  },
   "api.IDBIndex.getAllRecords": {
     "parent_feature": "getallrecords",
     "parent_feature_name": "IndexedDB getAllRecords()",
@@ -12377,28 +9834,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-color-4/#interpolation-space"
-    ]
-  },
-  "css.selectors.has": {
-    "parent_feature": "has",
-    "parent_feature_name": ":has()",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-19",
-      "baseline_low_date": "2023-12-19",
-      "support": {
-        "chrome": "105",
-        "chrome_android": "105",
-        "edge": "105",
-        "firefox": "121",
-        "firefox_android": "121",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/selectors-4/#relational"
     ]
   },
   "css.selectors.heading": {
@@ -13014,28 +10449,6 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#locale-objects"
     ]
   },
-  "javascript.builtins.Intl.PluralRules.PluralRules.options_parameter.options_roundingMode_parameter": {
-    "parent_feature": "intl-plural-rules",
-    "parent_feature_name": "Intl.PluralRules",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "117",
-        "chrome_android": "117",
-        "edge": "117",
-        "firefox": "116",
-        "firefox_android": "116",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://tc39.es/ecma402/#pluralrules-objects"
-    ]
-  },
   "javascript.builtins.Intl.Segmenter": {
     "parent_feature": "intl-segmenter",
     "parent_feature_name": "Intl.Segmenter",
@@ -13333,28 +10746,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-overflow-4/#line-clamp"
     ]
   },
-  "css.types.easing-function.linear-function": {
-    "parent_feature": "linear-easing",
-    "parent_feature_name": "linear() easing",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "113",
-        "chrome_android": "113",
-        "edge": "113",
-        "firefox": "112",
-        "firefox_android": "112",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-easing-2/#the-linear-easing-function"
-    ]
-  },
   "css.properties.link-parameters": {
     "parent_feature": "link-parameters",
     "parent_feature_name": "Link parameters",
@@ -13381,50 +10772,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-link-params-1/"
-    ]
-  },
-  "api.HTMLIFrameElement.loading": {
-    "parent_feature": "loading-lazy",
-    "parent_feature_name": "Lazy-loading images and iframes",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-19",
-      "baseline_low_date": "2023-12-19",
-      "support": {
-        "chrome": "77",
-        "chrome_android": "77",
-        "edge": "79",
-        "firefox": "121",
-        "firefox_android": "121",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
-    ]
-  },
-  "html.elements.iframe.loading": {
-    "parent_feature": "loading-lazy",
-    "parent_feature_name": "Lazy-loading images and iframes",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-19",
-      "baseline_low_date": "2023-12-19",
-      "support": {
-        "chrome": "77",
-        "chrome_android": "77",
-        "edge": "79",
-        "firefox": "121",
-        "firefox_android": "121",
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#lazy-loading-attributes"
     ]
   },
   "api.HTMLMediaElement.loading": {
@@ -13565,292 +10912,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-box-4/#margin-trim"
     ]
   },
-  "css.properties.mask": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-clip": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-composite": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-composite.add": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-composite.exclude": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-composite.intersect": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-composite.subtract": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-image": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-image.multiple_mask_images": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-origin": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-position": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-repeat": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
-  "css.properties.mask-size": {
-    "parent_feature": "masks",
-    "parent_feature_name": "Masks",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-masking-1/#positioned-masks"
-    ]
-  },
   "api.MathMLElement.attributeStyleMap": {
     "parent_feature": "mathml",
     "parent_feature_name": "MathML",
@@ -13864,27 +10925,6 @@ export const bcdKeys = {
         "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/mathml-core/"
-    ]
-  },
-  "api.MathMLElement.nonce": {
-    "parent_feature": "mathml",
-    "parent_feature_name": "MathML",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
-      "support": {
-        "chrome": "109",
-        "chrome_android": "109",
-        "edge": "109",
-        "firefox": "152",
-        "firefox_android": "152",
-        "safari": "15.4",
-        "safari_ios": "15.4"
       }
     },
     "spec": [
@@ -14232,98 +11272,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
-    ]
-  },
-  "css.selectors.nesting": {
-    "parent_feature": "nesting",
-    "parent_feature_name": "Nesting",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "117",
-        "firefox_android": "117",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-nesting-1/"
-    ]
-  },
-  "api.Notification.actions": {
-    "parent_feature": "notifications",
-    "parent_feature_name": "Notifications",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "53",
-        "edge": "18",
-        "firefox": "152",
-        "firefox_android": "152"
-      }
-    },
-    "spec": [
-      "https://notifications.spec.whatwg.org/"
-    ]
-  },
-  "api.Notification.maxActions_static": {
-    "parent_feature": "notifications",
-    "parent_feature_name": "Notifications",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "48",
-        "edge": "18",
-        "firefox": "152",
-        "firefox_android": "152"
-      }
-    },
-    "spec": [
-      "https://notifications.spec.whatwg.org/"
-    ]
-  },
-  "api.NotificationEvent.action": {
-    "parent_feature": "notifications",
-    "parent_feature_name": "Notifications",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "48",
-        "chrome_android": "48",
-        "edge": "17",
-        "firefox": "152",
-        "firefox_android": "152"
-      }
-    },
-    "spec": [
-      "https://notifications.spec.whatwg.org/"
-    ]
-  },
-  "api.ServiceWorkerRegistration.showNotification.options_actions_parameter": {
-    "parent_feature": "notifications",
-    "parent_feature_name": "Notifications",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "48",
-        "chrome_android": "48",
-        "edge": "18",
-        "firefox": "152",
-        "firefox_android": "152"
-      }
-    },
-    "spec": [
-      "https://notifications.spec.whatwg.org/"
     ]
   },
   "api.CSS.Hz_static": {
@@ -16360,116 +13308,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint"
     ]
   },
-  "api.HTMLLinkElement.imageSizes": {
-    "parent_feature": "preloading-responsive-images",
-    "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "73",
-        "chrome_android": "73",
-        "edge": "79",
-        "firefox": "78",
-        "firefox_android": "79",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
-    ]
-  },
-  "api.HTMLLinkElement.imageSrcset": {
-    "parent_feature": "preloading-responsive-images",
-    "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "73",
-        "chrome_android": "73",
-        "edge": "79",
-        "firefox": "78",
-        "firefox_android": "79",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
-    ]
-  },
-  "html.elements.link.imagesizes": {
-    "parent_feature": "preloading-responsive-images",
-    "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "73",
-        "chrome_android": "73",
-        "edge": "79",
-        "firefox": "78",
-        "firefox_android": "79",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
-    ]
-  },
-  "html.elements.link.imagesrcset": {
-    "parent_feature": "preloading-responsive-images",
-    "parent_feature_name": "Preloading responsive images",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "73",
-        "chrome_android": "73",
-        "edge": "79",
-        "firefox": "78",
-        "firefox_android": "79",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
-    ]
-  },
-  "api.HTMLMediaElement.preservesPitch": {
-    "parent_feature": "preserves-pitch",
-    "parent_feature_name": "preservesPitch",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "86",
-        "chrome_android": "86",
-        "edge": "86",
-        "firefox": "101",
-        "firefox_android": "101",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/media.html#dom-media-preservespitch-dev"
-    ]
-  },
   "css.types.progress": {
     "parent_feature": "progress-function",
     "parent_feature_name": "progress()",
@@ -16661,6 +13499,455 @@ export const bcdKeys = {
       "https://github.com/whatwg/html/pull/10995"
     ]
   },
+  "api.CSS.registerProperty_static": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "78",
+        "chrome_android": "78",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "api.CSSPropertyRule": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "api.CSSPropertyRule.inherits": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "api.CSSPropertyRule.initialValue": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "api.CSSPropertyRule.name": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "api.CSSPropertyRule.syntax": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "css.at-rules.property": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "css.at-rules.property.inherits": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "css.at-rules.property.initial-value": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "css.at-rules.property.syntax": {
+    "parent_feature": "registered-custom-properties",
+    "parent_feature_name": "Registered custom properties",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.css-houdini.org/css-properties-values-api-1/"
+    ]
+  },
+  "css.types.calc.color_component": {
+    "parent_feature": "relative-color",
+    "parent_feature_name": "Relative colors",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#relative-colors"
+    ]
+  },
+  "css.types.color.lab.relative_syntax": {
+    "parent_feature": "relative-color",
+    "parent_feature_name": "Relative colors",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "119",
+        "chrome_android": "119",
+        "edge": "119",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#relative-colors"
+    ]
+  },
+  "css.types.color.oklab.relative_syntax": {
+    "parent_feature": "relative-color",
+    "parent_feature_name": "Relative colors",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "122",
+        "chrome_android": "122",
+        "edge": "122",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-color-5/#relative-colors"
+    ]
+  },
+  "javascript.builtins.ArrayBuffer.ArrayBuffer.maxByteLength_option": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.ArrayBuffer.maxByteLength": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.ArrayBuffer.resizable": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.ArrayBuffer.resize": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.SharedArrayBuffer.SharedArrayBuffer.maxByteLength_option": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.SharedArrayBuffer.grow": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.SharedArrayBuffer.growable": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
+  "javascript.builtins.SharedArrayBuffer.maxByteLength": {
+    "parent_feature": "resizable-buffers",
+    "parent_feature_name": "Resizable buffers",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable"
+    ]
+  },
   "api.PerformanceResourceTiming.deliveryType": {
     "parent_feature": "resource-timing",
     "parent_feature_name": "Resource timing performance entries",
@@ -16672,27 +13959,6 @@ export const bcdKeys = {
         "chrome_android": "117",
         "edge": "117",
         "firefox": "preview",
-        "safari": "26.4",
-        "safari_ios": "26.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/resource-timing/"
-    ]
-  },
-  "api.PerformanceResourceTiming.firstInterimResponseStart": {
-    "parent_feature": "resource-timing",
-    "parent_feature_name": "Resource timing performance entries",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-06-16",
-      "support": {
-        "chrome": "115",
-        "chrome_android": "115",
-        "edge": "115",
-        "firefox": "152",
-        "firefox_android": "152",
         "safari": "26.4",
         "safari_ios": "26.4"
       }
@@ -17023,28 +14289,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/screen-wake-lock/"
-    ]
-  },
-  "css.at-rules.media.scripting": {
-    "parent_feature": "scripting",
-    "parent_feature_name": "scripting media query",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "113",
-        "firefox_android": "113",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/mediaqueries-5/#scripting"
     ]
   },
   "api.ScrollTimeline": {
@@ -18102,22 +15346,6 @@ export const bcdKeys = {
       "https://dom.spec.whatwg.org/#shadow-trees"
     ]
   },
-  "css.properties.shape-outside.path": {
-    "parent_feature": "shape-outside",
-    "parent_feature_name": "shape-outside",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "149",
-        "chrome_android": "149",
-        "edge": "149"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-shapes-1/#declaring-shapes"
-    ]
-  },
   "css.types.sibling-count": {
     "parent_feature": "sibling-count",
     "parent_feature_name": "sibling-count() and sibling-index()",
@@ -19005,50 +16233,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-state-pseudo-class"
     ]
   },
-  "api.Document.hasStorageAccess": {
-    "parent_feature": "storage-access",
-    "parent_feature_name": "Storage access",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-05",
-      "baseline_low_date": "2023-12-05",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "120",
-        "edge": "85",
-        "firefox": "65",
-        "firefox_android": "65",
-        "safari": "11.1",
-        "safari_ios": "11.3"
-      }
-    },
-    "spec": [
-      "https://privacycg.github.io/storage-access/"
-    ]
-  },
-  "api.Document.requestStorageAccess": {
-    "parent_feature": "storage-access",
-    "parent_feature_name": "Storage access",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-05",
-      "baseline_low_date": "2023-12-05",
-      "support": {
-        "chrome": "119",
-        "chrome_android": "120",
-        "edge": "85",
-        "firefox": "65",
-        "firefox_android": "65",
-        "safari": "11.1",
-        "safari_ios": "11.3"
-      }
-    },
-    "spec": [
-      "https://privacycg.github.io/storage-access/"
-    ]
-  },
   "css.properties.height.stretch": {
     "parent_feature": "stretch",
     "parent_feature_name": "stretch",
@@ -19253,28 +16437,6 @@ export const bcdKeys = {
       "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
-  "api.SVGImageElement.crossOrigin": {
-    "parent_feature": "svg",
-    "parent_feature_name": "SVG",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "118",
-        "chrome_android": "118",
-        "edge": "118",
-        "firefox": "114",
-        "firefox_android": "114",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/"
-    ]
-  },
   "css.properties.rx": {
     "parent_feature": "svg",
     "parent_feature_name": "SVG",
@@ -19313,50 +16475,6 @@ export const bcdKeys = {
         "firefox_android": "79",
         "safari": "17.4",
         "safari_ios": "17.4"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/"
-    ]
-  },
-  "svg.elements.image.crossorigin": {
-    "parent_feature": "svg",
-    "parent_feature_name": "SVG",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-11",
-      "baseline_low_date": "2023-12-11",
-      "support": {
-        "chrome": "118",
-        "chrome_android": "118",
-        "edge": "118",
-        "firefox": "114",
-        "firefox_android": "114",
-        "safari": "17.2",
-        "safari_ios": "17.2"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/svgwg/svg2-draft/"
-    ]
-  },
-  "svg.global_attributes.mask": {
-    "parent_feature": "svg",
-    "parent_feature_name": "SVG",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "53",
-        "firefox_android": "53",
-        "safari": "15.4",
-        "safari_ios": "15.4"
       }
     },
     "spec": [
@@ -24735,28 +21853,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-transitions-2/"
     ]
   },
-  "api.URL.canParse_static": {
-    "parent_feature": "url-canparse",
-    "parent_feature_name": "URL.canParse()",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "high",
-      "baseline_high_date": "2026-06-07",
-      "baseline_low_date": "2023-12-07",
-      "support": {
-        "chrome": "120",
-        "chrome_android": "120",
-        "edge": "120",
-        "firefox": "115",
-        "firefox_android": "115",
-        "safari": "17",
-        "safari_ios": "17"
-      }
-    },
-    "spec": [
-      "https://url.spec.whatwg.org/#dom-url-canparse"
-    ]
-  },
   "css.types.url.cross-origin": {
     "parent_feature": "url-cross-origin",
     "parent_feature_name": "cross-origin() for url()",
@@ -26084,21 +23180,42 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-pc/"
     ]
   },
-  "api.RTCPeerConnection.RTCPeerConnection.configuration_rtcpMuxPolicy_parameter": {
+  "api.RTCRtpReceiver.getParameters": {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
       "baseline": "low",
-      "baseline_low_date": "2026-06-16",
+      "baseline_low_date": "2024-07-09",
       "support": {
-        "chrome": "57",
-        "chrome_android": "57",
+        "chrome": "59",
+        "chrome_android": "59",
         "edge": "79",
-        "firefox": "152",
-        "firefox_android": "152",
-        "safari": "12.1",
-        "safari_ios": "12.2"
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCRtpReceiver.getParameters.return_object_property_codecs": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "11",
+        "safari_ios": "11"
       }
     },
     "spec": [
@@ -26147,6 +23264,27 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-pc/"
     ]
   },
+  "api.RTCRtpSender.getParameters.return_object_property_codecs": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
   "api.RTCRtpSender.getParameters.return_object_property_rtcp": {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
@@ -26168,6 +23306,27 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-pc/"
     ]
   },
+  "api.RTCRtpSender.setParameters.parameters_codecs_parameter": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "69",
+        "chrome_android": "69",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "12.1",
+        "safari_ios": "12.2"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
   "api.RTCRtpSender.setParameters.parameters_rtcp_parameter": {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
@@ -26183,6 +23342,27 @@ export const bcdKeys = {
         "firefox_android": "154",
         "safari": "15",
         "safari_ios": "15"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
+  "api.RTCRtpTransceiver.setCodecPreferences": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-09",
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "13.1",
+        "safari_ios": "13.4"
       }
     },
     "spec": [
