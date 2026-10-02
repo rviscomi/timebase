@@ -1508,6 +1508,10 @@ export const browsers = {
       {
         "date": "2026-10-22",
         "version": "156"
+      },
+      {
+        "date": "2026-11-05",
+        "version": "157"
       }
     ]
   },
@@ -2163,6 +2167,10 @@ export const browsers = {
         "version": "159"
       },
       {
+        "date": "2026-11-10",
+        "version": "160"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2742,6 +2750,10 @@ export const browsers = {
       {
         "date": "2026-10-27",
         "version": "159"
+      },
+      {
+        "date": "2026-11-10",
+        "version": "160"
       }
     ]
   },
@@ -3559,7 +3571,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     },
     "spec": [
@@ -10046,6 +10059,44 @@ export const bcdKeys = {
       "https://github.com/whatwg/html/pull/12758"
     ]
   },
+  "css.properties.hyphenate-limit-chars": {
+    "parent_feature": "hyphenate-limit-chars",
+    "parent_feature_name": "Hyphenate limit chars",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits"
+    ]
+  },
+  "css.properties.hyphenate-limit-chars.auto": {
+    "parent_feature": "hyphenate-limit-chars",
+    "parent_feature_name": "Hyphenate limit chars",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "137",
+        "firefox_android": "137",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits"
+    ]
+  },
   "javascript.operators.import.defer": {
     "parent_feature": "import-defer",
     "parent_feature_name": "import defer",
@@ -15344,6 +15395,23 @@ export const bcdKeys = {
     },
     "spec": [
       "https://dom.spec.whatwg.org/#shadow-trees"
+    ]
+  },
+  "css.properties.shape-outside.path": {
+    "parent_feature": "shape-outside",
+    "parent_feature_name": "shape-outside",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#declaring-shapes"
     ]
   },
   "css.types.sibling-count": {
@@ -22754,6 +22822,40 @@ export const bcdKeys = {
         "edge": "144",
         "safari": "27",
         "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUError": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "121",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUError.message": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "121",
+        "edge": "144",
+        "safari": "preview"
       }
     },
     "spec": [

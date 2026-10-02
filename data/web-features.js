@@ -1508,6 +1508,10 @@ export const browsers = {
       {
         "date": "2026-10-22",
         "version": "156"
+      },
+      {
+        "date": "2026-11-05",
+        "version": "157"
       }
     ]
   },
@@ -2163,6 +2167,10 @@ export const browsers = {
         "version": "159"
       },
       {
+        "date": "2026-11-10",
+        "version": "160"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2742,6 +2750,10 @@ export const browsers = {
       {
         "date": "2026-10-27",
         "version": "159"
+      },
+      {
+        "date": "2026-11-10",
+        "version": "160"
       }
     ]
   },
@@ -3790,7 +3802,8 @@ export const features = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27",
+        "safari_ios": "27"
       }
     }
   },
@@ -12924,7 +12937,8 @@ export const features = {
         "chrome_android": "109",
         "edge": "109",
         "firefox": "137",
-        "firefox_android": "137"
+        "firefox_android": "137",
+        "safari": "preview"
       }
     }
   },
@@ -20065,7 +20079,9 @@ export const features = {
       "support": {
         "chrome": "96",
         "chrome_android": "96",
-        "edge": "96"
+        "edge": "96",
+        "safari": "16.4",
+        "safari_ios": "16.4"
       }
     }
   },
