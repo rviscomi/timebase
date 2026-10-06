@@ -3639,6 +3639,48 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-animations-2/"
     ]
   },
+  "api.AnimationEvent.animation": {
+    "parent_feature": "animations-css-animation-accessors",
+    "parent_feature_name": "Animation accessors",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/#dom-animationevent-animation"
+    ]
+  },
+  "api.TransitionEvent.animation": {
+    "parent_feature": "animations-css-animation-accessors",
+    "parent_feature_name": "Animation accessors",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/#dom-animationevent-animation"
+    ]
+  },
   "api.Element.ariaDescription": {
     "parent_feature": "aria-attribute-reflection",
     "parent_feature_name": "ARIA attribute reflection",
@@ -10668,6 +10710,25 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#segmenter-objects"
     ]
   },
+  "javascript.builtins.Iterator.includes": {
+    "parent_feature": "iterator-includes",
+    "parent_feature_name": "Iterator includes()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "154",
+        "chrome_android": "154",
+        "edge": "154",
+        "firefox": "154",
+        "firefox_android": "154",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+    ]
+  },
   "javascript.builtins.Iterator.join": {
     "parent_feature": "iterator-join",
     "parent_feature_name": "Iterator join()",
@@ -10685,6 +10746,44 @@ export const bcdKeys = {
     },
     "spec": [
       "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+    ]
+  },
+  "javascript.builtins.Iterator.zip": {
+    "parent_feature": "iterator-zip-zipkeyed",
+    "parent_feature_name": "Iterator.zip() and Iterator.zipKeyed()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
+        "firefox": "148",
+        "firefox_android": "148",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.zip"
+    ]
+  },
+  "javascript.builtins.Iterator.zipKeyed": {
+    "parent_feature": "iterator-zip-zipkeyed",
+    "parent_feature_name": "Iterator.zip() and Iterator.zipKeyed()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
+        "firefox": "148",
+        "firefox_android": "148",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.zip"
     ]
   },
   "mediatypes.image.jxl": {
@@ -14340,6 +14439,48 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/screen-wake-lock/"
+    ]
+  },
+  "css.properties.scroll-axis-lock": {
+    "parent_feature": "scroll-axis-lock",
+    "parent_feature_name": "scroll-axis-lock",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-axis-locking"
+    ]
+  },
+  "css.properties.scroll-axis-lock.auto": {
+    "parent_feature": "scroll-axis-lock",
+    "parent_feature_name": "scroll-axis-lock",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-axis-locking"
+    ]
+  },
+  "css.properties.scroll-axis-lock.none": {
+    "parent_feature": "scroll-axis-lock",
+    "parent_feature_name": "scroll-axis-lock",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-axis-locking"
     ]
   },
   "api.ScrollTimeline": {
@@ -21571,6 +21712,76 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
     ]
   },
+  "css.properties.text-decoration-skip-spaces": {
+    "parent_feature": "text-decoration-skip-spaces",
+    "parent_feature_name": "text-decoration-skip-spaces",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ]
+  },
+  "css.properties.text-decoration-skip-spaces.all": {
+    "parent_feature": "text-decoration-skip-spaces",
+    "parent_feature_name": "text-decoration-skip-spaces",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ]
+  },
+  "css.properties.text-decoration-skip-spaces.end": {
+    "parent_feature": "text-decoration-skip-spaces",
+    "parent_feature_name": "text-decoration-skip-spaces",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ]
+  },
+  "css.properties.text-decoration-skip-spaces.none": {
+    "parent_feature": "text-decoration-skip-spaces",
+    "parent_feature_name": "text-decoration-skip-spaces",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ]
+  },
+  "css.properties.text-decoration-skip-spaces.start": {
+    "parent_feature": "text-decoration-skip-spaces",
+    "parent_feature_name": "text-decoration-skip-spaces",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ]
+  },
   "css.properties.text-fit": {
     "parent_feature": "text-fit",
     "parent_feature_name": "text-fit",
@@ -24156,6 +24367,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://w3c.github.io/webvtt/"
+    ]
+  },
+  "api.WheelEvent.momentum": {
+    "parent_feature": "wheel-events-momentum",
+    "parent_feature_name": "Wheel events momentum",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/pointerevents/#dom-wheelevent-momentum"
     ]
   },
   "css.properties.white-space-collapse": {

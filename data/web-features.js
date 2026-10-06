@@ -3873,6 +3873,27 @@ export const features = {
       }
     }
   },
+  "animations-css-animation-accessors": {
+    "description_html": "The <code>animation</code> property of an <code>AnimationEvent</code> or <code>TransitionEvent</code> object is the <code>Animation</code> object that represents the animation (and thus the element) that fired an animation event.",
+    "kind": "feature",
+    "name": "Animation accessors",
+    "spec": [
+      "https://drafts.csswg.org/css-animations-2/#dom-animationevent-animation"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
+        "firefox": "152",
+        "firefox_android": "152",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    }
+  },
   "app-file-handlers": {
     "description_html": "The <code>file_handlers</code> web app manifest member registers an installed web app as a handler for files with specific file extensions or MIME types.",
     "kind": "feature",
@@ -8185,6 +8206,22 @@ export const features = {
         "firefox_android": "22",
         "safari": "9",
         "safari_ios": "9"
+      }
+    }
+  },
+  "css-object-model-csspseudoelement": {
+    "description_html": "A <code>CSSPseudoElement</code> object represents a pseudo-element and its context in the document tree. You get an instance through the <code>pseudo()</code> method of <code>Element</code> or <code>CSSPseudoElement</code> objects or the <code>pseudoTarget</code> property of some events.",
+    "kind": "feature",
+    "name": "CSSPseudoElement",
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
       }
     }
   },
@@ -14584,6 +14621,25 @@ export const features = {
       }
     }
   },
+  "iterator-includes": {
+    "description_html": "The <code>includes()</code> method of an <code>Iterator</code> object returns <code>true</code> when an item yielded by the iterator is the same as a given value. It's similar to the <code>includes()</code> method of arrays.",
+    "kind": "feature",
+    "name": "Iterator includes()",
+    "spec": [
+      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "154",
+        "chrome_android": "154",
+        "edge": "154",
+        "firefox": "154",
+        "firefox_android": "154",
+        "safari": "preview"
+      }
+    }
+  },
   "iterator-join": {
     "description_html": "The <code>join()</code> method of an <code>Iterator</code> object returns a string concatenation of all the iterator's items, separated by commas or a given separator string. It's similar to the <code>join()</code> method of arrays.",
     "kind": "feature",
@@ -14621,6 +14677,25 @@ export const features = {
         "firefox_android": "131",
         "safari": "18.4",
         "safari_ios": "18.4"
+      }
+    }
+  },
+  "iterator-zip-zipkeyed": {
+    "description_html": "The <code>Iterator.zip()</code> and <code>Iterator.zipKeyed()</code> static methods return new iterators that aggregate items from multiple iterables. You can use them to iterate jointly, to get all of the items at the same position in each iterable.",
+    "kind": "feature",
+    "name": "Iterator.zip() and Iterator.zipKeyed()",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.zip"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153",
+        "firefox": "148",
+        "firefox_android": "148",
+        "safari": "preview"
       }
     }
   },
@@ -21030,6 +21105,20 @@ export const features = {
       }
     }
   },
+  "scroll-axis-lock": {
+    "description_html": "The <code>scroll-axis-lock</code> property controls whether scrolling is locked to one dimension at a time or freely follows movement in two dimensions. By default, browsers may lock the scroll axis, ignoring minor perpendicular scrolling, when scrolling is nearly vertical or horizontal.",
+    "kind": "feature",
+    "name": "scroll-axis-lock",
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-5/#scroll-axis-locking"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "153"
+      }
+    }
+  },
   "scroll-behavior": {
     "description_html": "The <code>scroll-behavior</code> CSS property controls whether scrolling is smooth or snaps, for scroll actions not performed by the user such as those triggered by navigation.",
     "kind": "feature",
@@ -22900,6 +22989,33 @@ export const features = {
       }
     }
   },
+  "string-substr": {
+    "description_html": "The <code>substr()</code> method of strings returns part of a string, starting from an index and ending a given number of characters after.",
+    "discouraged": {
+      "according_to": [
+        "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-additional-ecmascript-features-for-web-browsers"
+      ],
+      "reason": "TC39 included substr() in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\"",
+      "reason_html": "TC39 included <code>substr()</code> in Annex B of the ECMAScript specification, which covers JavaScript features with \"one or more undesirable characteristics and in the absence of legacy usage would be removed.\""
+    },
+    "kind": "feature",
+    "name": "String substr()",
+    "spec": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.substr"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "1",
+        "safari_ios": "1"
+      }
+    }
+  },
   "string-trim-leftright": {
     "description_html": "The <code>trimLeft()</code> and <code>trimRight()</code> methods of strings return a new string with whitespace removed from the beginning or end of the string. They're aliases for <code>trimStart()</code> and <code>trimEnd()</code>.",
     "discouraged": {
@@ -23849,6 +23965,20 @@ export const features = {
         "firefox_android": "79",
         "safari": "15.4",
         "safari_ios": "15.4"
+      }
+    }
+  },
+  "text-decoration-skip-spaces": {
+    "description_html": "The <code>text-decoration-skip-spaces</code> CSS property sets whether text decoration lines (such as underlines and overlines) skip over whitespace characters. You can use this to prevent decorations from being drawn under spaces, which is sometimes more visually appealing.",
+    "kind": "feature",
+    "name": "text-decoration-skip-spaces",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155"
       }
     }
   },
@@ -27396,6 +27526,22 @@ export const features = {
       }
     }
   },
+  "wheel-events-momentum": {
+    "description_html": "The <code>momentum</code> property of a <code>wheel</code> event object is <code>true</code> when the event represents simulated scroll inertia, also known as a \"fling\" event.",
+    "kind": "feature",
+    "name": "Wheel events momentum",
+    "spec": [
+      "https://w3c.github.io/pointerevents/#dom-wheelevent-momentum"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    }
+  },
   "where": {
     "description_html": "The <code>:where()</code> CSS functional pseudo-class takes a selector list as its argument, and matches any element that can be selected by one of the selectors in that list. It is functionally equivalent to the selectors in the list, but doesn't affect the CSS rule specificity.",
     "kind": "feature",
@@ -27779,6 +27925,28 @@ export const features = {
         "edge": "124",
         "safari": "18",
         "safari_ios": "18"
+      }
+    }
+  },
+  "x-frame-options": {
+    "description_html": "The <code>X-Frame-Options</code> HTTP header limits where a document may be embedded in an iframe. The <code>X-Frame-Options: SAMEORIGIN</code> header disallows embedding in another origin. The <code>X-Frame-Options: DENY</code> header disallows embedding in any context, regardless of origin.",
+    "kind": "feature",
+    "name": "X-Frame-Options",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#the-x-frame-options-header"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
+      "support": {
+        "chrome": "4",
+        "chrome_android": "18",
+        "edge": "12",
+        "firefox": "4",
+        "firefox_android": "4",
+        "safari": "4",
+        "safari_ios": "3.2"
       }
     }
   },
