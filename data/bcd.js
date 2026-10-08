@@ -624,8 +624,12 @@ export const browsers = {
         "version": "156"
       },
       {
-        "date": "null",
+        "date": "2026-11-03",
         "version": "157"
+      },
+      {
+        "date": "null",
+        "version": "158"
       },
       {
         "date": "null",
@@ -1165,8 +1169,12 @@ export const browsers = {
         "version": "156"
       },
       {
-        "date": "null",
+        "date": "2026-11-03",
         "version": "157"
+      },
+      {
+        "date": "null",
+        "version": "158"
       }
     ]
   },
@@ -3300,7 +3308,7 @@ export const bcdKeys = {
       "https://dom.spec.whatwg.org/#dom-abortsignal-timeout"
     ]
   },
-  "css.properties.align-content.block_context": {
+  "css.properties.align-content.context_block": {
     "parent_feature": "align-content-block",
     "parent_feature_name": "align-content in block layouts",
     "parent_feature_baseline": "low",
@@ -5309,6 +5317,168 @@ export const bcdKeys = {
     ]
   },
   "css.properties.corner-top-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.corner-shape-value.superellipse": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.types.superellipse": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -8700,7 +8870,7 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-pseudo-4/#first-letter-pseudo"
     ]
   },
-  "css.properties.align-content.flex_context.safe_unsafe": {
+  "css.properties.align-content.safe": {
     "parent_feature": "flexbox",
     "parent_feature_name": "Flexbox",
     "parent_feature_baseline": "high",
@@ -8721,7 +8891,7 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-flexbox-1/"
     ]
   },
-  "css.properties.align-items.flex_context.safe_unsafe": {
+  "css.properties.align-content.unsafe": {
     "parent_feature": "flexbox",
     "parent_feature_name": "Flexbox",
     "parent_feature_baseline": "high",
@@ -8742,7 +8912,70 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-flexbox-1/"
     ]
   },
-  "css.properties.align-self.flex_context.safe_unsafe": {
+  "css.properties.align-items.safe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.align-items.unsafe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.align-self.safe": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2024-07-29",
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "firefox": "63",
+        "firefox_android": "63",
+        "safari": "17.6",
+        "safari_ios": "17.6"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
+  "css.properties.align-self.unsafe": {
     "parent_feature": "flexbox",
     "parent_feature_name": "Flexbox",
     "parent_feature_baseline": "high",
@@ -10257,27 +10490,6 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha"
     ]
   },
-  "api.InputEvent.isComposing": {
-    "parent_feature": "input-event",
-    "parent_feature_name": "input (event)",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-09-14",
-      "support": {
-        "chrome": "60",
-        "chrome_android": "60",
-        "edge": "79",
-        "firefox": "31",
-        "firefox_android": "31",
-        "safari": "27",
-        "safari_ios": "27"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/uievents/#event-type-input"
-    ]
-  },
   "html.elements.input.type_range.vertical_orientation": {
     "parent_feature": "input-range",
     "parent_feature_name": "<input type=\"range\">",
@@ -10803,27 +11015,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://www.iso.org/standard/85253.html"
-    ]
-  },
-  "api.KeyboardEvent.isComposing": {
-    "parent_feature": "keyboard-events",
-    "parent_feature_name": "Keyboard events",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-09-14",
-      "support": {
-        "chrome": "56",
-        "chrome_android": "56",
-        "edge": "79",
-        "firefox": "31",
-        "firefox_android": "31",
-        "safari": "27",
-        "safari_ios": "27"
-      }
-    },
-    "spec": [
-      "https://w3c.github.io/uievents/#events-keyboardevents"
     ]
   },
   "css.types.color.light-dark": {
@@ -13508,7 +13699,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
@@ -14103,18 +14296,77 @@ export const bcdKeys = {
     "parent_feature_name": "Resource timing performance entries",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-10-13",
       "support": {
         "chrome": "117",
         "chrome_android": "117",
         "edge": "117",
-        "firefox": "preview",
+        "firefox": "158",
+        "firefox_android": "158",
         "safari": "26.4",
         "safari_ios": "26.4"
       }
     },
     "spec": [
       "https://w3c.github.io/resource-timing/"
+    ]
+  },
+  "html.elements.script.type.module.http_errors_not_cached": {
+    "parent_feature": "retriable-module-loading",
+    "parent_feature_name": "Retriable module loading",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script"
+    ]
+  },
+  "javascript.operators.import.http_errors_not_cached": {
+    "parent_feature": "retriable-module-loading",
+    "parent_feature_name": "Retriable module loading",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script"
+    ]
+  },
+  "javascript.statements.import.http_errors_not_cached": {
+    "parent_feature": "retriable-module-loading",
+    "parent_feature_name": "Retriable module loading",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script"
     ]
   },
   "css.types.mod": {
@@ -15597,27 +15849,6 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-values-5/#tree-counting"
     ]
   },
-  "html.elements.img.sizes.auto": {
-    "parent_feature": "sizes-auto",
-    "parent_feature_name": "<img sizes=\"auto\" loading=\"lazy\">",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-09-14",
-      "support": {
-        "chrome": "126",
-        "chrome_android": "126",
-        "edge": "126",
-        "firefox": "150",
-        "firefox_android": "150",
-        "safari": "27",
-        "safari_ios": "27"
-      }
-    },
-    "spec": [
-      "https://html.spec.whatwg.org/multipage/images.html#valdef-sizes-auto"
-    ]
-  },
   "api.PerformanceSoftNavigation": {
     "parent_feature": "soft-navigations",
     "parent_feature_name": "Soft navigation performance entries",
@@ -16790,27 +17021,6 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-counter-styles-3/#symbols-function"
-    ]
-  },
-  "css.types.color.system-color.accentcolor_accentcolortext": {
-    "parent_feature": "system-color",
-    "parent_feature_name": "System colors",
-    "parent_feature_baseline": "high",
-    "status": {
-      "baseline": "low",
-      "baseline_low_date": "2026-07-02",
-      "support": {
-        "chrome": "150",
-        "chrome_android": "150",
-        "edge": "150",
-        "firefox": "103",
-        "firefox_android": "103",
-        "safari": "16.5",
-        "safari_ios": "16.5"
-      }
-    },
-    "spec": [
-      "https://drafts.csswg.org/css-color-4/#css-system-colors"
     ]
   },
   "css.properties.caption-side.bottom-outside": {
