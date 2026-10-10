@@ -4735,7 +4735,8 @@ export const features = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     }
   },
@@ -4818,6 +4819,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -6765,7 +6767,8 @@ export const features = {
       "support": {
         "chrome": "104",
         "chrome_android": "104",
-        "edge": "104"
+        "edge": "104",
+        "firefox": "preview"
       }
     }
   },
@@ -6824,7 +6827,8 @@ export const features = {
       "support": {
         "chrome": "124",
         "chrome_android": "124",
-        "edge": "124"
+        "edge": "124",
+        "safari": "preview"
       }
     }
   },
@@ -6874,7 +6878,8 @@ export const features = {
         "chrome_android": "126",
         "edge": "126",
         "firefox": "149",
-        "firefox_android": "149"
+        "firefox_android": "149",
+        "safari": "preview"
       }
     }
   },
@@ -7249,7 +7254,8 @@ export const features = {
       "support": {
         "chrome": "130",
         "chrome_android": "130",
-        "edge": "130"
+        "edge": "130",
+        "firefox": "preview"
       }
     }
   },
@@ -7922,7 +7928,9 @@ export const features = {
       "support": {
         "chrome": "139",
         "chrome_android": "139",
-        "edge": "139"
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "preview"
       }
     }
   },
@@ -8287,6 +8295,7 @@ export const features = {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8985,7 +8994,8 @@ export const features = {
         "chrome_android": "134",
         "edge": "134",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -9937,7 +9947,8 @@ export const features = {
         "chrome_android": "134",
         "edge": "134",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -11118,7 +11129,8 @@ export const features = {
         "chrome_android": "87",
         "edge": "87",
         "firefox": "89",
-        "firefox_android": "89"
+        "firefox_android": "89",
+        "safari": "preview"
       }
     }
   },
@@ -11497,7 +11509,8 @@ export const features = {
         "chrome_android": "131",
         "edge": "131",
         "firefox": "141",
-        "firefox_android": "141"
+        "firefox_android": "141",
+        "safari": "preview"
       }
     }
   },
@@ -12030,7 +12043,8 @@ export const features = {
         "chrome_android": "141",
         "edge": "141",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "preview"
       }
     }
   },
@@ -12574,7 +12588,8 @@ export const features = {
         "chrome_android": "140",
         "edge": "140",
         "firefox": "150",
-        "firefox_android": "150"
+        "firefox_android": "150",
+        "safari": "preview"
       }
     }
   },
@@ -12969,7 +12984,8 @@ export const features = {
         "chrome_android": "109",
         "edge": "109",
         "firefox": "137",
-        "firefox_android": "137"
+        "firefox_android": "137",
+        "safari": "preview"
       }
     }
   },
@@ -13379,7 +13395,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "import-maps": {
@@ -13682,6 +13700,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "preview",
         "safari": "18.4",
         "safari_ios": "18.4"
       }
@@ -14626,7 +14645,8 @@ export const features = {
         "chrome_android": "154",
         "edge": "154",
         "firefox": "154",
-        "firefox_android": "154"
+        "firefox_android": "154",
+        "safari": "preview"
       }
     }
   },
@@ -14644,7 +14664,8 @@ export const features = {
         "chrome_android": "153",
         "edge": "153",
         "firefox": "154",
-        "firefox_android": "154"
+        "firefox_android": "154",
+        "safari": "preview"
       }
     }
   },
@@ -14683,7 +14704,8 @@ export const features = {
         "chrome_android": "153",
         "edge": "153",
         "firefox": "148",
-        "firefox_android": "148"
+        "firefox_android": "148",
+        "safari": "preview"
       }
     }
   },
@@ -14766,6 +14788,8 @@ export const features = {
       "support": {
         "chrome": "155",
         "chrome_android": "155",
+        "edge": "155",
+        "firefox": "preview",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -15370,7 +15394,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "preview"
+      }
     }
   },
   "line-height": {
@@ -15448,7 +15474,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "preview"
+      }
     }
   },
   "link-rel-dns-prefetch": {
@@ -17253,6 +17281,7 @@ export const features = {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -17406,7 +17435,8 @@ export const features = {
       "support": {
         "chrome": "104",
         "chrome_android": "104",
-        "edge": "104"
+        "edge": "104",
+        "safari": "preview"
       }
     }
   },
@@ -18887,7 +18917,8 @@ export const features = {
         "chrome_android": "151",
         "edge": "151",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "preview"
       }
     }
   },
@@ -19633,6 +19664,10 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
+        "firefox": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -20525,8 +20560,12 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "155",
-        "firefox_android": "155"
+        "firefox_android": "155",
+        "safari": "preview"
       }
     }
   },
@@ -20949,6 +20988,7 @@ export const features = {
         "chrome": "146",
         "chrome_android": "146",
         "edge": "146",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -21161,6 +21201,7 @@ export const features = {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
+        "firefox": "preview",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -22398,7 +22439,8 @@ export const features = {
       "support": {
         "chrome": "139",
         "chrome_android": "139",
-        "edge": "139"
+        "edge": "139",
+        "firefox": "preview"
       }
     }
   },
@@ -23251,7 +23293,7 @@ export const features = {
     }
   },
   "subresource-integrity": {
-    "description_html": "Subresource integrity verifies that a resource, such as script served from a content delivery network, matches a known cryptographic hash. Also known as SRI.",
+    "description_html": "Subresource integrity verifies that a resource, such as a script served from a content delivery network, matches a known cryptographic hash. Also known as SRI.",
     "kind": "feature",
     "name": "Subresource integrity",
     "spec": [
@@ -23323,7 +23365,8 @@ export const features = {
         "chrome_android": "148",
         "edge": "148",
         "firefox": "157",
-        "firefox_android": "157"
+        "firefox_android": "157",
+        "safari": "preview"
       }
     }
   },
@@ -23484,6 +23527,7 @@ export const features = {
       "support": {
         "chrome": "155",
         "chrome_android": "155",
+        "edge": "155",
         "firefox": "35",
         "firefox_android": "35"
       }
@@ -23738,7 +23782,8 @@ export const features = {
         "chrome_android": "144",
         "edge": "144",
         "firefox": "139",
-        "firefox_android": "139"
+        "firefox_android": "139",
+        "safari": "preview"
       }
     }
   },
@@ -24143,6 +24188,7 @@ export const features = {
       "support": {
         "chrome": "155",
         "chrome_android": "155",
+        "edge": "155",
         "firefox": "153",
         "firefox_android": "153"
       }
@@ -25371,7 +25417,8 @@ export const features = {
         "chrome_android": "54",
         "edge": "79",
         "firefox": "69",
-        "firefox_android": "79"
+        "firefox_android": "79",
+        "safari": "preview"
       }
     }
   },
@@ -25927,7 +25974,8 @@ export const features = {
         "chrome_android": "133",
         "edge": "133",
         "firefox": "134",
-        "firefox_android": "134"
+        "firefox_android": "134",
+        "safari": "preview"
       }
     }
   },
@@ -25945,7 +25993,8 @@ export const features = {
         "chrome_android": "120",
         "edge": "120",
         "firefox": "125",
-        "firefox_android": "125"
+        "firefox_android": "125",
+        "safari": "preview"
       }
     }
   },
@@ -26095,7 +26144,8 @@ export const features = {
         "chrome_android": "114",
         "edge": "114",
         "firefox": "146",
-        "firefox_android": "146"
+        "firefox_android": "146",
+        "safari": "preview"
       }
     }
   },
@@ -27782,7 +27832,8 @@ export const features = {
       "support": {
         "chrome": "119",
         "chrome_android": "119",
-        "edge": "119"
+        "edge": "119",
+        "safari": "preview"
       }
     }
   },
