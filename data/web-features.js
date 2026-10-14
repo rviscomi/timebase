@@ -4684,7 +4684,7 @@ export const features = {
     "kind": "feature",
     "name": "Atomics.pause()",
     "spec": [
-      "https://tc39.es/proposal-atomics-microwait/"
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.pause"
     ],
     "status": {
       "baseline": "low",
@@ -7670,7 +7670,7 @@ export const features = {
     "kind": "feature",
     "name": "Container timing performance entries",
     "spec": [
-      "https://wicg.github.io/container-timing/"
+      "https://w3c.github.io/container-timing/"
     ],
     "status": {
       "baseline": false,
@@ -14636,7 +14636,7 @@ export const features = {
     "kind": "feature",
     "name": "Iterator includes()",
     "spec": [
-      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+      "https://tc39.es/proposal-iterator-includes/#sec-iterator.prototype.includes"
     ],
     "status": {
       "baseline": false,
@@ -14655,7 +14655,7 @@ export const features = {
     "kind": "feature",
     "name": "Iterator join()",
     "spec": [
-      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.join"
     ],
     "status": {
       "baseline": false,
@@ -14930,7 +14930,7 @@ export const features = {
     "kind": "feature",
     "name": "JSON source text access",
     "spec": [
-      "https://tc39.es/proposal-json-parse-with-source/#sec-json-object"
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object"
     ],
     "status": {
       "baseline": "low",
@@ -21406,6 +21406,22 @@ export const features = {
       }
     }
   },
+  "scroll-triggered-animations": {
+    "description_html": "Scroll-triggered animations start and stop CSS animations when an element is within or outside a scrolling range. It's an alternative to applying styles with the <code>IntersectionObserver</code> API. Not to be confused with scroll-driven animations.",
+    "kind": "feature",
+    "name": "Scroll-triggered animations",
+    "spec": [
+      "https://drafts.csswg.org/animation-triggers-1/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146"
+      }
+    }
+  },
   "scrollbar-color": {
     "description_html": "The <code>scrollbar-color</code> CSS property sets the color of the scrollbar track and thumb.",
     "kind": "feature",
@@ -25846,7 +25862,7 @@ export const features = {
         "chrome": "75",
         "chrome_android": "75",
         "edge": "79",
-        "firefox": "78",
+        "firefox": "79",
         "firefox_android": "79",
         "safari": "15.1",
         "safari_ios": "15.1"

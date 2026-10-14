@@ -10938,7 +10938,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+      "https://tc39.es/proposal-iterator-includes/#sec-iterator.prototype.includes"
     ]
   },
   "javascript.builtins.Iterator.join": {
@@ -10957,7 +10957,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://tc39.es/proposal-iterator-join/#sec-iterator.prototype.join"
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype.join"
     ]
   },
   "javascript.builtins.Iterator.zip": {
