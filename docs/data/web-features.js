@@ -23571,6 +23571,25 @@ export const features = {
       }
     }
   },
+  "system-color-accentcolor": {
+    "description_html": "The <code>AccentColor</code> and <code>AccentColorText</code> CSS system color values are the background color and text color of accented user interface controls. To prevent browser fingerprinting, browsers may (and often do) use fixed color values that do not reflect user customization or theming choices.",
+    "kind": "feature",
+    "name": "AccentColor and AccentColorText",
+    "spec": [
+      "https://drafts.csswg.org/css-color-4/#valdef-color-accentcolor"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "149",
+        "edge": "149",
+        "firefox": "103",
+        "firefox_android": "103",
+        "safari": "16.5",
+        "safari_ios": "16.5"
+      }
+    }
+  },
   "tab-size": {
     "description_html": "The <code>tab-size</code> CSS property sets the width of the tab character.",
     "kind": "feature",
