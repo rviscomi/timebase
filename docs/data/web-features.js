@@ -1520,6 +1520,10 @@ export const browsers = {
       {
         "date": "2026-11-05",
         "version": "157"
+      },
+      {
+        "date": "2026-11-19",
+        "version": "158"
       }
     ]
   },
@@ -2179,6 +2183,10 @@ export const browsers = {
         "version": "160"
       },
       {
+        "date": "2026-11-24",
+        "version": "161"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2762,6 +2770,10 @@ export const browsers = {
       {
         "date": "2026-11-10",
         "version": "160"
+      },
+      {
+        "date": "2026-11-24",
+        "version": "161"
       }
     ]
   },
@@ -3681,9 +3693,9 @@ export const features = {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
       "support": {
-        "chrome": "151",
-        "chrome_android": "151",
-        "edge": "151",
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152",
         "firefox": "155",
         "firefox_android": "155",
         "safari": "27",
@@ -3749,6 +3761,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -3790,6 +3803,7 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "firefox": "147",
         "firefox_android": "147",
         "safari": "26.2",
@@ -10209,6 +10223,7 @@ export const features = {
         "chrome": "87",
         "chrome_android": "87",
         "edge": "87",
+        "firefox": "preview",
         "safari": "16",
         "safari_ios": "16"
       }
@@ -10441,7 +10456,8 @@ export const features = {
       "support": {
         "chrome": "105",
         "chrome_android": "105",
-        "edge": "105"
+        "edge": "105",
+        "firefox": "preview"
       }
     }
   },
@@ -11040,12 +11056,12 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "2019-10-05",
-      "baseline_low_date": "2017-04-05",
+      "baseline_high_date": "2018-09-21",
+      "baseline_low_date": "2016-03-21",
       "support": {
         "chrome": "48",
         "chrome_android": "48",
-        "edge": "15",
+        "edge": "12",
         "firefox": "34",
         "firefox_android": "34",
         "safari": "9.1",
@@ -12282,10 +12298,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "26.4",
-        "safari_ios": "26.4"
-      }
+      "support": {}
     }
   },
   "gyroscope": {
@@ -12788,7 +12801,7 @@ export const features = {
     "kind": "feature",
     "name": "HTML setter methods",
     "spec": [
-      "https://github.com/whatwg/html/pull/12753"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ],
     "status": {
       "baseline": false,
@@ -14536,7 +14549,8 @@ export const features = {
         "chrome_android": "134",
         "edge": "134",
         "firefox": "138",
-        "firefox_android": "138"
+        "firefox_android": "138",
+        "safari": "preview"
       }
     }
   },
@@ -14788,8 +14802,8 @@ export const features = {
       "support": {
         "chrome": "155",
         "chrome_android": "155",
-        "edge": "155",
-        "firefox": "preview",
+        "firefox": "158",
+        "firefox_android": "158",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -15475,7 +15489,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "preview"
       }
     }
   },
@@ -19307,7 +19322,7 @@ export const features = {
         "firefox": "6",
         "firefox_android": "6",
         "safari": "6",
-        "safari_ios": "7"
+        "safari_ios": "8"
       }
     }
   },
@@ -20569,6 +20584,27 @@ export const features = {
       }
     }
   },
+  "revert-rule": {
+    "description_html": "The <code>revert-rule</code> CSS keyword resets a property to its previous value in the cascade, as if the current style rule had not been present. It's especially useful with conditionals, to cancel a declaration when the condition is not met.",
+    "kind": "feature",
+    "name": "revert-rule",
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-5/#revert-rule-keyword"
+    ],
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    }
+  },
   "revert-value": {
     "description_html": "The <code>revert</code> CSS keyword resets any property to its previous default, provided by either the user or browser stylesheets. For example, setting <code>display: revert</code> on a <code>&#x3C;div></code> will likely result in <code>display: block</code>, the browser default style. This is often confused with <code>initial</code>.",
     "kind": "feature",
@@ -20787,6 +20823,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -21029,7 +21068,8 @@ export const features = {
         "chrome": "72",
         "edge": "79",
         "firefox": "33",
-        "safari": "13"
+        "safari": "13",
+        "safari_ios": "27"
       }
     }
   },
@@ -23545,7 +23585,8 @@ export const features = {
         "chrome_android": "155",
         "edge": "155",
         "firefox": "35",
-        "firefox_android": "35"
+        "firefox_android": "35",
+        "safari": "preview"
       }
     }
   },

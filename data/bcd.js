@@ -1520,6 +1520,10 @@ export const browsers = {
       {
         "date": "2026-11-05",
         "version": "157"
+      },
+      {
+        "date": "2026-11-19",
+        "version": "158"
       }
     ]
   },
@@ -2179,6 +2183,10 @@ export const browsers = {
         "version": "160"
       },
       {
+        "date": "2026-11-24",
+        "version": "161"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2762,6 +2770,10 @@ export const browsers = {
       {
         "date": "2026-11-10",
         "version": "160"
+      },
+      {
+        "date": "2026-11-24",
+        "version": "161"
       }
     ]
   },
@@ -3421,9 +3433,9 @@ export const bcdKeys = {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
       "support": {
-        "chrome": "151",
-        "chrome_android": "151",
-        "edge": "151",
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152",
         "firefox": "155",
         "firefox_android": "155",
         "safari": "27",
@@ -3546,6 +3558,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -3561,6 +3574,7 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -3568,6 +3582,32 @@ export const bcdKeys = {
     "spec": [
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ]
+  },
+  "css.properties.position-visibility.anchors-valid": {
+    "parent_feature": "anchor-positioning-position-visibility-plurals",
+    "parent_feature_name": "anchors-valid and anchors-visible",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "147",
+        "firefox_android": "147",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-anchor-position-1/#position-visibility"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://drafts.csswg.org/css-anchor-position-1/#position-visibility:~:text=User%20agents%20may%20recognize%20anchors%2Dvalid%20and%20anchors%2Dvisible",
+        "https://github.com/w3c/csswg-drafts/issues/10201#issuecomment-4390233490"
+      ],
+      "reason": "The anchors-valid and anchors-visible values were renamed to the singular anchor-valid and anchor-visible values, since they refer to one anchor at a time.",
+      "reason_html": "The <code>anchors-valid</code> and <code>anchors-visible</code> values were renamed to the singular <code>anchor-valid</code> and <code>anchor-visible</code> values, since they refer to one anchor at a time."
+    }
   },
   "css.properties.anchor-name.position_after_layout": {
     "parent_feature": "anchor-positioning-transforms",
@@ -8798,6 +8838,25 @@ export const bcdKeys = {
       "https://tc39.es/proposal-async-explicit-resource-management/"
     ]
   },
+  "api.EXT_texture_norm16": {
+    "parent_feature": "ext-texture-norm16",
+    "parent_feature_name": "EXT_texture_norm16 WebGL extension",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "87",
+        "chrome_android": "87",
+        "edge": "87",
+        "firefox": "preview",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "spec": [
+      "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/"
+    ]
+  },
   "api.CredentialsContainer.get.identity_option": {
     "parent_feature": "fedcm",
     "parent_feature_name": "Federated credential management",
@@ -8834,6 +8893,23 @@ export const bcdKeys = {
       "https://fetch.spec.whatwg.org/"
     ]
   },
+  "api.Request.Request.options_parameter.body.accepts_readablestream": {
+    "parent_feature": "fetch-request-streams",
+    "parent_feature_name": "Fetch upload streams",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://fetch.spec.whatwg.org/#concept-body-stream"
+    ]
+  },
   "api.Request.body": {
     "parent_feature": "fetch-request-streams",
     "parent_feature_name": "Fetch upload streams",
@@ -8847,6 +8923,23 @@ export const bcdKeys = {
         "firefox": "preview",
         "safari": "11.1",
         "safari_ios": "11.3"
+      }
+    },
+    "spec": [
+      "https://fetch.spec.whatwg.org/#concept-body-stream"
+    ]
+  },
+  "api.fetch.options_parameter.body.accepts_readablestream": {
+    "parent_feature": "fetch-request-streams",
+    "parent_feature_name": "Fetch upload streams",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview"
       }
     },
     "spec": [
@@ -10922,6 +11015,25 @@ export const bcdKeys = {
       "https://tc39.es/ecma402/#segmenter-objects"
     ]
   },
+  "javascript.builtins.Error.isError": {
+    "parent_feature": "is-error",
+    "parent_feature_name": "Error.isError()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "134",
+        "chrome_android": "134",
+        "edge": "134",
+        "firefox": "138",
+        "firefox_android": "138",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error.iserror"
+    ]
+  },
   "javascript.builtins.Iterator.includes": {
     "parent_feature": "iterator-includes",
     "parent_feature_name": "Iterator includes()",
@@ -11007,8 +11119,8 @@ export const bcdKeys = {
       "support": {
         "chrome": "155",
         "chrome_android": "155",
-        "edge": "155",
-        "firefox": "preview",
+        "firefox": "158",
+        "firefox_android": "158",
         "safari": "17",
         "safari_ios": "17"
       }
@@ -11094,7 +11206,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -11108,11 +11221,29 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "preview"
       }
     },
     "spec": [
       "https://drafts.csswg.org/css-link-params-1/"
+    ]
+  },
+  "api.PerformanceResourceTiming.deliveryType.navigational-prefetch": {
+    "parent_feature": "link-rel-prefetch",
+    "parent_feature_name": "<link rel=\"prefetch\">",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-prefetch"
     ]
   },
   "api.HTMLMediaElement.loading": {
@@ -14369,6 +14500,27 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script"
     ]
   },
+  "css.types.global_keywords.revert-rule": {
+    "parent_feature": "revert-rule",
+    "parent_feature_name": "revert-rule",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-14",
+      "support": {
+        "chrome": "148",
+        "chrome_android": "148",
+        "edge": "148",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-cascade-5/#revert-rule-keyword"
+    ]
+  },
   "css.types.mod": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
@@ -14531,6 +14683,24 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-ruby-1/#ruby-overhang"
     ]
   },
+  "css.properties.ruby-overhang.none": {
+    "parent_feature": "ruby-overhang",
+    "parent_feature_name": "ruby-overhang",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-ruby-1/#ruby-overhang"
+    ]
+  },
   "api.CustomElementRegistry.CustomElementRegistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
@@ -14649,6 +14819,24 @@ export const bcdKeys = {
     "spec": [
       "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
       "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "api.MediaDevices.getDisplayMedia": {
+    "parent_feature": "screen-capture",
+    "parent_feature_name": "Screen capture",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "72",
+        "edge": "79",
+        "firefox": "33",
+        "safari": "13",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/mediacapture-screen-share/"
     ]
   },
   "api.Permissions.permission_screen-wake-lock": {
@@ -15961,6 +16149,23 @@ export const bcdKeys = {
       "https://wicg.github.io/soft-navigations/#sec-soft-navs"
     ]
   },
+  "html.elements.script.type.speculationrules.form_submission": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "151",
+        "chrome_android": "151",
+        "edge": "151"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
   "api.SpeechRecognition": {
     "parent_feature": "speech-recognition",
     "parent_feature_name": "Speech recognition",
@@ -16998,7 +17203,8 @@ export const bcdKeys = {
         "chrome_android": "155",
         "edge": "155",
         "firefox": "35",
-        "firefox_android": "35"
+        "firefox_android": "35",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -17016,7 +17222,8 @@ export const bcdKeys = {
         "chrome_android": "155",
         "edge": "155",
         "firefox": "35",
-        "firefox_android": "35"
+        "firefox_android": "35",
+        "safari": "preview"
       }
     },
     "spec": [
