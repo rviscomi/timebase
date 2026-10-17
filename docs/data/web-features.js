@@ -7213,6 +7213,22 @@ export const features = {
       }
     }
   },
+  "column-wrap": {
+    "description_html": "The <code>column-wrap</code> and <code>column-height</code> CSS properties control when columns in a multicolumn layout wrap or overflow. You can use this to constrain the height of columns within a taller box or to create two-dimensional column layouts.",
+    "kind": "feature",
+    "name": "column-wrap",
+    "spec": [
+      "https://drafts.csswg.org/css-multicol-2/#propdef-column-wrap"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
+      }
+    }
+  },
   "composed-ranges": {
     "description_html": "The <code>window.getSelection().getComposedRanges()</code> method returns ranges that represent the current user selection, even if the selection spans across shadow tree boundaries.",
     "kind": "feature",
@@ -10322,9 +10338,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "116",
-        "chrome_android": "116",
-        "edge": "116"
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136"
       }
     }
   },
@@ -12809,7 +12825,7 @@ export const features = {
     }
   },
   "html-streaming-setters": {
-    "description_html": "The <code>streamHTML()</code>, <code>streamReplaceWithHTML()</code>, <code>streamBeforeHTML()</code>, <code>streamPrependHTML()</code>, <code>streamAppendHTML()</code> and <code>streamAfterHTML()</code> DOM methods, and unsafe equivalents, return writeable streams that incrementally insert HTML into an existing tree.",
+    "description_html": "The <code>streamHTML()</code>, <code>streamReplaceWithHTML()</code>, <code>streamBeforeHTML()</code>, <code>streamPrependHTML()</code>, <code>streamAppendHTML()</code> and <code>streamAfterHTML()</code> DOM methods, and unsafe equivalents, return writable streams that incrementally insert HTML into an existing tree.",
     "kind": "feature",
     "name": "HTML streaming setters",
     "spec": [
@@ -15726,9 +15742,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145"
       }
     }
   },

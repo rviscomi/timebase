@@ -11294,6 +11294,24 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
     ]
   },
+  "api.Permissions.permission_local-network": {
+    "parent_feature": "local-network-access",
+    "parent_feature_name": "Local network access",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "145",
+        "chrome_android": "145",
+        "edge": "145",
+        "firefox": "153",
+        "firefox_android": "153"
+      }
+    },
+    "spec": [
+      "https://wicg.github.io/local-network-access/"
+    ]
+  },
   "css.properties.margin-trim": {
     "parent_feature": "margin-trim",
     "parent_feature_name": "margin-trim",
@@ -15993,6 +16011,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-shapes-1/#declaring-shapes"
+    ]
+  },
+  "api.HTMLInputElement.showPicker.datalist_input": {
+    "parent_feature": "show-picker-input",
+    "parent_feature_name": "showPicker() for <input>",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "149",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/input.html#dom-input-showpicker"
     ]
   },
   "css.types.sibling-count": {
