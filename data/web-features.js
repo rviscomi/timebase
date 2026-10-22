@@ -9062,6 +9062,28 @@ export const features = {
       }
     }
   },
+  "dir": {
+    "description_html": "The <code>dir</code> global HTML attribute sets an element's text direction to left to right (<code>ltr</code>), right to left (<code>rtl</code>), or based on the content (<code>auto</code>). Elements generally inherit their parent's direction when the attribute is omitted.",
+    "kind": "feature",
+    "name": "dir",
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dom.html#the-dir-attribute"
+    ],
+    "status": {
+      "baseline": "high",
+      "baseline_high_date": "≤2019-10-05",
+      "baseline_low_date": "≤2017-04-05",
+      "support": {
+        "chrome": "1",
+        "chrome_android": "18",
+        "edge": "≤15",
+        "firefox": "1",
+        "firefox_android": "4",
+        "safari": "≤4",
+        "safari_ios": "≤3.2"
+      }
+    }
+  },
   "dir-pseudo": {
     "description_html": "The <code>:dir()</code> CSS functional pseudo-class matches elements by text direction, either right to left (<code>rtl</code>) or left to right (<code>ltr</code>).",
     "kind": "feature",
