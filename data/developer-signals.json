@@ -41,7 +41,7 @@
   },
   "app-protocol-handlers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/157",
-    "votes": 6
+    "votes": 7
   },
   "app-share-targets": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/107",
@@ -133,7 +133,7 @@
   },
   "calc-size": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/252",
-    "votes": 61
+    "votes": 62
   },
   "canvas-2d-alpha": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/34",
@@ -253,7 +253,7 @@
   },
   "corner-shape": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/398",
-    "votes": 146
+    "votes": 147
   },
   "counter-reset-reversed": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/160",
@@ -309,7 +309,7 @@
   },
   "device-posture": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/270",
-    "votes": 2
+    "votes": 3
   },
   "devicepixelratio": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/16",
@@ -661,7 +661,7 @@
   },
   "jpegxl": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/215",
-    "votes": 527
+    "votes": 528
   },
   "justify-self-block": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/442",
@@ -1157,7 +1157,7 @@
   },
   "temporal": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/291",
-    "votes": 274
+    "votes": 275
   },
   "text-autospace": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/284",

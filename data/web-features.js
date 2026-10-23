@@ -628,8 +628,12 @@ export const browsers = {
         "version": "157"
       },
       {
-        "date": "null",
+        "date": "2026-11-17",
         "version": "158"
+      },
+      {
+        "date": "null",
+        "version": "159"
       },
       {
         "date": "null",
@@ -1173,8 +1177,12 @@ export const browsers = {
         "version": "157"
       },
       {
-        "date": "null",
+        "date": "2026-11-17",
         "version": "158"
+      },
+      {
+        "date": "null",
+        "version": "159"
       }
     ]
   },
@@ -3395,7 +3403,8 @@ export const features = {
       "https://dom.spec.whatwg.org/#dom-abortsignal-timeout"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-10-18",
       "baseline_low_date": "2024-04-18",
       "support": {
         "chrome": "124",
@@ -3629,7 +3638,8 @@ export const features = {
       "https://drafts.csswg.org/css-align-3/#align-justify-content"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-10-16",
       "baseline_low_date": "2024-04-16",
       "support": {
         "chrome": "123",
@@ -3761,7 +3771,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -9071,16 +9083,16 @@ export const features = {
     ],
     "status": {
       "baseline": "high",
-      "baseline_high_date": "≤2019-10-05",
-      "baseline_low_date": "≤2017-04-05",
+      "baseline_high_date": "2018-01-29",
+      "baseline_low_date": "2015-07-29",
       "support": {
         "chrome": "1",
         "chrome_android": "18",
-        "edge": "≤15",
+        "edge": "12",
         "firefox": "1",
         "firefox_android": "4",
-        "safari": "≤4",
-        "safari_ios": "≤3.2"
+        "safari": "3",
+        "safari_ios": "1"
       }
     }
   },
@@ -9596,8 +9608,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "58",
-        "firefox_android": "58"
+        "firefox": "60",
+        "firefox_android": "60"
       }
     }
   },
@@ -10256,12 +10268,14 @@ export const features = {
       "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-10-27",
       "support": {
         "chrome": "87",
         "chrome_android": "87",
         "edge": "87",
-        "firefox": "preview",
+        "firefox": "159",
+        "firefox_android": "159",
         "safari": "16",
         "safari_ios": "16"
       }
@@ -12843,7 +12857,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
     }
   },
   "html-streaming-setters": {
@@ -14502,7 +14520,8 @@ export const features = {
       "https://tc39.es/ecma402/#segmenter-objects"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-10-16",
       "baseline_low_date": "2024-04-16",
       "support": {
         "chrome": "87",
@@ -21060,12 +21079,14 @@ export const features = {
       "https://dom.spec.whatwg.org/#element-custom-element-registry"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-10-27",
       "support": {
         "chrome": "146",
         "chrome_android": "146",
         "edge": "146",
-        "firefox": "preview",
+        "firefox": "159",
+        "firefox_android": "159",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -21274,12 +21295,14 @@ export const features = {
       "https://drafts.csswg.org/scroll-animations-1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-10-27",
       "support": {
         "chrome": "115",
         "chrome_android": "115",
         "edge": "115",
-        "firefox": "preview",
+        "firefox": "159",
+        "firefox_android": "159",
         "safari": "26",
         "safari_ios": "26"
       }
@@ -24855,7 +24878,8 @@ export const features = {
       "https://drafts.csswg.org/css-transforms-1/#transform-box"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-10-16",
       "baseline_low_date": "2024-04-16",
       "support": {
         "chrome": "118",
