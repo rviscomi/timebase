@@ -7671,7 +7671,7 @@ export const features = {
     }
   },
   "container-scroll-state-queries": {
-    "description_html": "Container scroll-state queries with the <code>@container scroll-state(...)</code> at-rule apply styles to an element based on the sticky positioning, snapped, and scrollable state of the container.",
+    "description_html": "Container scroll-state queries with the <code>@container scroll-state(...)</code> at-rule apply styles to an element based on the sticky positioning, snapped, scrollable, and scrolled state of the container.",
     "kind": "feature",
     "name": "Container scroll-state queries",
     "spec": [
@@ -7680,9 +7680,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133"
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144"
       }
     }
   },
