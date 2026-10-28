@@ -26131,8 +26131,7 @@ export const features = {
         "chrome_android": "120",
         "edge": "120",
         "firefox": "125",
-        "firefox_android": "125",
-        "safari": "preview"
+        "firefox_android": "125"
       }
     }
   },
