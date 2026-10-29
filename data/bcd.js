@@ -4568,6 +4568,454 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element"
     ]
   },
+  "api.CanvasPaintEvent": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.CanvasPaintEvent.CanvasPaintEvent": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.CanvasPaintEvent.changedElements": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.CanvasRenderingContext2D.drawElementImage": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementGeometryUpdateEvent": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementGeometryUpdateEvent.ElementGeometryUpdateEvent": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementGeometryUpdateEvent.elements": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementImage": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementImage.close": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.ElementImage.worker_support": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.GPUQueue.drawElementImageToTexture": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.captureElementImage": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.clearElementGeometry": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.content": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.elementgeometryupdate_event": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.getElementImageDefaultSize": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.getElementTransform": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.paint_event": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.requestPaint": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.HTMLCanvasElement.updateElementGeometry": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.OffscreenCanvas.clearElementGeometry": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.OffscreenCanvas.getElementImageDefaultSize": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.OffscreenCanvas.updateElementGeometry": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.OffscreenCanvasRenderingContext2D.drawElementImage": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.WebGL2RenderingContext.texElementSubImage2D": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "api.WebGLRenderingContext.texElementSubImage2D": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "html.elements.canvas.content": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
+  "html.global_attributes.drawable": {
+    "parent_feature": "canvas-html",
+    "parent_feature_name": "HTML-in-canvas",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/WICG/html-in-canvas/blob/main/README.md"
+    ]
+  },
   "css.selectors.attribute.case_sensitive_modifier": {
     "parent_feature": "case-sensitive-attributes",
     "parent_feature_name": "Case-sensitive attribute selector",
@@ -9121,6 +9569,102 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-balance"
+    ]
+  },
+  "api.HTMLElement.focusGroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "api.HTMLElement.focusGroupStart": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "api.SVGElement.focusGroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "api.SVGElement.focusGroupStart": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroupstart": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
     ]
   },
   "api.FontFace.ascentOverride": {

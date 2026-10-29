@@ -6282,15 +6282,19 @@ export const features = {
     }
   },
   "canvas-html": {
-    "description_html": "A <code>&#x3C;canvas></code> HTML element with the <code>layoutsubtree</code> attribute can draw descendant elements in its rendering context. You can use it to style and layout text in a canvas, expose canvas content to browser features (like accessibility, translate, or find-in-page), and apply 2D and 3D effects to HTML.",
+    "description_html": "A <code>&#x3C;canvas></code> HTML element with the <code>content=\"drawable\"</code> attribute can draw descendant elements in its rendering context. You can use it to style and layout text in a canvas, expose canvas content to browser features (like accessibility, translate, or find-in-page), and apply 2D and 3D effects to HTML.",
     "kind": "feature",
-    "name": "HTML in canvas",
+    "name": "HTML-in-canvas",
     "spec": [
       "https://github.com/WICG/html-in-canvas/blob/main/README.md"
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
     }
   },
   "canvas-reset": {
@@ -9370,6 +9374,22 @@ export const features = {
       }
     }
   },
+  "document-isolation-policy": {
+    "description_html": "The <code>Document-Isolation-Policy</code> HTTP header makes a document cross-origin isolated, giving it access to APIs such as <code>SharedArrayBuffer</code>, without requiring the document or those it embeds to send <code>Cross-Origin-Opener-Policy</code> or <code>Cross-Origin-Embedder-Policy</code> headers.",
+    "kind": "feature",
+    "name": "Document-Isolation-Policy",
+    "spec": [
+      "https://wicg.github.io/document-isolation-policy/"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "137",
+        "chrome_android": "146",
+        "edge": "137"
+      }
+    }
+  },
   "document-modelcontext": {
     "description_html": "The <code>document.modelContext</code> API registers page actions that can be called by in-browser AI agents or browser extensions. Also known as WebMCP.",
     "kind": "feature",
@@ -10972,7 +10992,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
     }
   },
   "font-display": {
