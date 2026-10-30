@@ -17750,6 +17750,18 @@ export const features = {
       }
     }
   },
+  "offline-audio-context-incremental-rendering": {
+    "description_html": "The <code>startRendering()</code> method of the <code>OfflineAudioContext</code> API accepts an optional chunk size argument, which sets the number of sample frames to render in an <code>AudioBuffer</code>. You can use this to process audio incrementally, reducing the memory required to process high amounts of data.",
+    "kind": "feature",
+    "name": "OfflineAudioContext incremental rendering",
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "offscreen-canvas": {
     "description_html": "The <code>OffscreenCanvas</code> API provides a canvas that can be drawn to off screen, with no dependencies on the DOM, which can be used to run heavy rendering operations inside a worker context.",
     "kind": "feature",

@@ -9651,7 +9651,423 @@ export const bcdKeys = {
       "https://github.com/whatwg/html/pull/11723"
     ]
   },
+  "html.global_attributes.focusgroup.behavior_listbox": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.behavior_menu": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.behavior_menubar": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.behavior_radiogroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.behavior_tablist": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.behavior_toolbar": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.block": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.inline": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.nomemory": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.none": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.nowrap": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "html.global_attributes.focusgroup.wrap": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
   "html.global_attributes.focusgroupstart": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_listbox": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_menu": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_menubar": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_radiogroup": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_tablist": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.behavior_toolbar": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.block": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.inline": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.nomemory": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.none": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.nowrap": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroup.wrap": {
+    "parent_feature": "focusgroup",
+    "parent_feature_name": "focusgroup",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/11723"
+    ]
+  },
+  "svg.global_attributes.focusgroupstart": {
     "parent_feature": "focusgroup",
     "parent_feature_name": "focusgroup",
     "parent_feature_baseline": false,
