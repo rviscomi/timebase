@@ -11689,8 +11689,8 @@ export const bcdKeys = {
     ]
   },
   "api.TrustedHTMLParserOptions": {
-    "parent_feature": "html-setters",
-    "parent_feature_name": "HTML setter methods",
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
     "parent_feature_baseline": false,
     "status": {
       "baseline": false,
@@ -11701,7 +11701,23 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+      "https://github.com/whatwg/html/pull/12758"
+    ]
+  },
+  "api.TrustedTypePolicy.createParserOptions": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://github.com/whatwg/html/pull/12758"
     ]
   },
   "api.Blob.textStream": {
@@ -15206,6 +15222,107 @@ export const bcdKeys = {
         "firefox": "preview",
         "safari": "26.2",
         "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.auto": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.dashed-ident": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.element-scoped": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.fixed": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "26.2",
+        "safari_ios": "26.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.property-index-scoped": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "preview",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random.property-scoped": {
+    "parent_feature": "random-function",
+    "parent_feature_name": "random()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "firefox": "preview",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -24937,6 +25054,22 @@ export const bcdKeys = {
       "https://gpuweb.github.io/gpuweb/"
     ]
   },
+  "api.GPUDevice.createPipelineLayout.descriptor_immediateSize_parameter": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
   "api.GPUDevice.uncapturederror_event": {
     "parent_feature": "webgpu",
     "parent_feature_name": "WebGPU",
@@ -24983,6 +25116,22 @@ export const bcdKeys = {
         "chrome_android": "121",
         "edge": "144",
         "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUSupportedFeatures.feature_subgroup-size-control": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "152",
+        "chrome_android": "152",
+        "edge": "152"
       }
     },
     "spec": [

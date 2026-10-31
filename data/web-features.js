@@ -9276,6 +9276,18 @@ export const features = {
       }
     }
   },
+  "display-state": {
+    "description_html": "A <code>display-state</code> media query sets styles based on whether the window is normal, minimized, maximized, or fullscreen.",
+    "kind": "feature",
+    "name": "display-state media query",
+    "spec": [
+      "https://w3c.github.io/window-management/#media-descriptor-display-state"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "display-table": {
     "description_html": "The <code>display: table</code> CSS declaration renders an element with the box layout of a <code>&#x3C;table></code> HTML element. Child elements may use equivalents to <code>&#x3C;table></code> internal elements such as <code>display: table-row</code> for <code>&#x3C;tr></code>.",
     "kind": "feature",
@@ -14302,9 +14314,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "142",
-        "chrome_android": "142",
-        "edge": "142"
+        "chrome": "149",
+        "chrome_android": "149",
+        "edge": "149"
       }
     }
   },
@@ -19772,12 +19784,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "156",
-        "chrome_android": "156",
-        "edge": "156",
         "firefox": "preview",
-        "safari": "26.2",
-        "safari_ios": "26.2"
+        "safari": "preview"
       }
     }
   },
@@ -20504,6 +20512,18 @@ export const features = {
         "firefox": "55",
         "firefox_android": "55"
       }
+    }
+  },
+  "resizable": {
+    "description_html": "A <code>resizable</code> media query sets styles based on whether the user may resize the window.",
+    "kind": "feature",
+    "name": "resizable media query",
+    "spec": [
+      "https://w3c.github.io/window-management/#media-descriptor-resizable"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "resizable-buffers": {
@@ -27939,6 +27959,21 @@ export const features = {
         "chrome": "111",
         "edge": "111"
       }
+    }
+  },
+  "window-management-resizing": {
+    "description_html": "The <code>window.minimize()</code>, <code>window.maximize()</code>, <code>window.restore()</code>, and <code>window.setResizable()</code> methods control the size of a window and whether users may resize it.",
+    "kind": "feature",
+    "name": "Window resizing",
+    "spec": [
+      "https://w3c.github.io/window-management/#api-window-minimize-method",
+      "https://w3c.github.io/window-management/#api-window-maximize-method",
+      "https://w3c.github.io/window-management/#api-window-restore-method",
+      "https://w3c.github.io/window-management/#api-window-setresizable-method"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
     }
   },
   "with": {
