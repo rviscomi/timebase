@@ -297,7 +297,7 @@
   },
   "datalist": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/51",
-    "votes": 53
+    "votes": 54
   },
   "device-bound-session-credentials": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/564",
@@ -609,7 +609,7 @@
   },
   "input-date-time-week": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/926",
-    "votes": 7
+    "votes": 8
   },
   "insertable-streams": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/251",
@@ -725,7 +725,7 @@
   },
   "manifest": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/57",
-    "votes": 23
+    "votes": 22
   },
   "manifest-localization": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/516",
@@ -1157,7 +1157,7 @@
   },
   "temporal": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/291",
-    "votes": 277
+    "votes": 278
   },
   "text-autospace": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/284",
@@ -1341,7 +1341,7 @@
   },
   "webgpu": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/202",
-    "votes": 73
+    "votes": 74
   },
   "webgpu-subgroups": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/501",
