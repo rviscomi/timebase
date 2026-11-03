@@ -1532,6 +1532,10 @@ export const browsers = {
       {
         "date": "2026-11-19",
         "version": "158"
+      },
+      {
+        "date": "2026-12-10",
+        "version": "159"
       }
     ]
   },
@@ -2195,6 +2199,10 @@ export const browsers = {
         "version": "161"
       },
       {
+        "date": "2026-12-08",
+        "version": "162"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2782,6 +2790,10 @@ export const browsers = {
       {
         "date": "2026-11-24",
         "version": "161"
+      },
+      {
+        "date": "2026-12-08",
+        "version": "162"
       }
     ]
   },
@@ -3033,7 +3045,11 @@ export const browsers = {
         "version": "27"
       },
       {
-        "date": "null",
+        "date": "2026-10-23",
+        "version": "27.1"
+      },
+      {
+        "date": "2026-10-26",
         "version": "27.2"
       },
       {
@@ -3278,7 +3294,11 @@ export const browsers = {
         "version": "27"
       },
       {
-        "date": "null",
+        "date": "2026-10-23",
+        "version": "27.1"
+      },
+      {
+        "date": "2026-10-26",
         "version": "27.2"
       }
     ]
@@ -16378,8 +16398,12 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
       "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
         "firefox": "150",
         "firefox_android": "150",
         "safari": "15.4",
@@ -22613,7 +22637,7 @@ export const features = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     }
   },
@@ -22633,7 +22657,9 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "160"
+      }
     }
   },
   "speech-synthesis": {

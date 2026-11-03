@@ -1532,6 +1532,10 @@ export const browsers = {
       {
         "date": "2026-11-19",
         "version": "158"
+      },
+      {
+        "date": "2026-12-10",
+        "version": "159"
       }
     ]
   },
@@ -2195,6 +2199,10 @@ export const browsers = {
         "version": "161"
       },
       {
+        "date": "2026-12-08",
+        "version": "162"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2782,6 +2790,10 @@ export const browsers = {
       {
         "date": "2026-11-24",
         "version": "161"
+      },
+      {
+        "date": "2026-12-08",
+        "version": "162"
       }
     ]
   },
@@ -3033,7 +3045,11 @@ export const browsers = {
         "version": "27"
       },
       {
-        "date": "null",
+        "date": "2026-10-23",
+        "version": "27.1"
+      },
+      {
+        "date": "2026-10-26",
         "version": "27.2"
       },
       {
@@ -3278,7 +3294,11 @@ export const browsers = {
         "version": "27"
       },
       {
-        "date": "null",
+        "date": "2026-10-23",
+        "version": "27.1"
+      },
+      {
+        "date": "2026-10-26",
         "version": "27.2"
       }
     ]
@@ -11590,6 +11610,160 @@ export const bcdKeys = {
       "https://w3c.github.io/mathml-core/"
     ]
   },
+  "css.selectors.buffering": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.muted": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.paused": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.playing": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.seeking": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.stalled": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
+  "css.selectors.volume-locked": {
+    "parent_feature": "media-pseudos",
+    "parent_feature_name": "Media element pseudo-classes",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-19",
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158",
+        "firefox": "150",
+        "firefox_android": "150",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/selectors-4/#resource-pseudos",
+      "https://html.spec.whatwg.org/multipage/semantics-other.html#pseudo-classes"
+    ]
+  },
   "api.NavigationPrecommitController": {
     "parent_feature": "navigation-precommit-handlers",
     "parent_feature_name": "Navigation precommit handlers",
@@ -15677,7 +15851,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15694,7 +15868,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15711,7 +15885,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15728,7 +15902,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15745,7 +15919,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15761,7 +15935,7 @@ export const bcdKeys = {
       "support": {
         "chrome": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15778,7 +15952,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15795,7 +15969,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15812,7 +15986,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15829,7 +16003,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15846,7 +16020,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15863,7 +16037,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15880,7 +16054,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15897,7 +16071,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15914,7 +16088,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15931,7 +16105,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15948,7 +16122,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15965,7 +16139,23 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognition.start.audioTrack": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "edge": "139",
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15982,7 +16172,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
@@ -15999,7 +16189,64 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionAlternative": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionAlternative.confidence": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionAlternative.transcript": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
       }
     },
     "spec": [
@@ -16016,7 +16263,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview",
+        "firefox": "160",
         "safari": "14.1",
         "safari_ios": "14.5"
       }
@@ -16035,7 +16282,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview",
+        "firefox": "160",
         "safari": "14.1",
         "safari_ios": "14.5"
       }
@@ -16054,7 +16301,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview",
+        "firefox": "160",
         "safari": "14.1",
         "safari_ios": "14.5"
       }
@@ -16073,7 +16320,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview",
+        "firefox": "160",
         "safari": "14.1",
         "safari_ios": "14.5"
       }
@@ -16081,6 +16328,448 @@ export const bcdKeys = {
     "spec": [
       "https://webaudio.github.io/web-speech-api/#speechreco-section"
     ]
+  },
+  "api.SpeechRecognitionEvent": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionEvent.SpeechRecognitionEvent": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionPhrase": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "edge": "142",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionPhrase.SpeechRecognitionPhrase": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "edge": "142",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionPhrase.boost": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "edge": "142",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionPhrase.phrase": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "edge": "142",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResult": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResult.isFinal": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResult.item": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResult.length": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResultList": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResultList.item": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionResultList.length": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "33",
+        "chrome_android": "33",
+        "edge": "79",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechGrammar": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammar.src": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammar.weight": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList.SpeechGrammarList": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList.addFromString": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList.addFromURI": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList.item": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
+  "api.SpeechGrammarList.length": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
   },
   "api.SpeechRecognition.grammars": {
     "parent_feature": "speech-recognition-grammar",
@@ -16092,7 +16781,7 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "firefox": "preview"
+        "firefox": "160"
       }
     },
     "spec": [
