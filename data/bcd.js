@@ -13052,6 +13052,22 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-images-5/#the-object-view-box"
     ]
   },
+  "api.OfflineAudioContext.close": {
+    "parent_feature": "offline-audio-context-incremental-rendering",
+    "parent_feature_name": "OfflineAudioContext incremental rendering",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering"
+    ]
+  },
   "css.properties.overflow-anchor": {
     "parent_feature": "overflow-anchor",
     "parent_feature_name": "overflow-anchor",
@@ -14625,6 +14641,28 @@ export const bcdKeys = {
     ]
   },
   "api.ShadowRoot.customElementRegistry": {
+    "parent_feature": "scoped-custom-element-registries",
+    "parent_feature_name": "Scoped custom element registries",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-10-27",
+      "support": {
+        "chrome": "146",
+        "chrome_android": "146",
+        "edge": "146",
+        "firefox": "159",
+        "firefox_android": "159",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
+      "https://dom.spec.whatwg.org/#element-custom-element-registry"
+    ]
+  },
+  "html.elements.template.shadowrootcustomelementregistry": {
     "parent_feature": "scoped-custom-element-registries",
     "parent_feature_name": "Scoped custom element registries",
     "parent_feature_baseline": "low",

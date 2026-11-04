@@ -17795,7 +17795,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
     }
   },
   "offscreen-canvas": {
