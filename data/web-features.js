@@ -15730,6 +15730,18 @@ export const features = {
       }
     }
   },
+  "link-to": {
+    "description_html": "The <code>:link-to()</code> CSS pseudo-class matches links to a certain URL or pattern.",
+    "kind": "feature",
+    "name": ":link-to()",
+    "spec": [
+      "https://drafts.csswg.org/css-navigation-1/#link-to-pseudo-class"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {}
+    }
+  },
   "list-elements": {
     "description_html": "The <code>&#x3C;ol></code>, <code>&#x3C;ul></code>, and <code>&#x3C;li></code> HTML elements represent ordered and unordered lists.",
     "kind": "feature",
@@ -17097,6 +17109,22 @@ export const features = {
         "edge": "146",
         "firefox": "148",
         "firefox_android": "148"
+      }
+    }
+  },
+  "navigation-source": {
+    "description_html": "The <code>:navigation-source</code> CSS pseudo-class matches the element that triggered the current navigation, such as a link, form, or button.",
+    "kind": "feature",
+    "name": ":navigation-source",
+    "spec": [
+      "https://drafts.csswg.org/css-navigation-1/#navigation-source-pseudo-class"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156"
       }
     }
   },
@@ -21551,6 +21579,22 @@ export const features = {
         "chrome": "129",
         "chrome_android": "129",
         "edge": "129"
+      }
+    }
+  },
+  "scroll-snap-type-pair": {
+    "description_html": "The <code>scroll-snap-type: pair</code> CSS declaration snaps scrolling to a single element in both the X and Y axes. You can use this to snap to scattered points of interest on a 2D plane.",
+    "kind": "feature",
+    "name": "scroll-snap-type: pair",
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-pair"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156"
       }
     }
   },

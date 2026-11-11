@@ -11821,6 +11821,22 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler"
     ]
   },
+  "css.selectors.navigation-source": {
+    "parent_feature": "navigation-source",
+    "parent_feature_name": ":navigation-source",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-navigation-1/#navigation-source-pseudo-class"
+    ]
+  },
   "api.CSS.Hz_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
@@ -15536,6 +15552,22 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/scroll-animations-1/"
+    ]
+  },
+  "css.properties.scroll-snap-type.pair": {
+    "parent_feature": "scroll-snap-type-pair",
+    "parent_feature_name": "scroll-snap-type: pair",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-scroll-snap-1/#valdef-scroll-snap-type-pair"
     ]
   },
   "http.headers.Service-Worker-Navigation-Preload": {
