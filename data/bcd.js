@@ -9365,6 +9365,24 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-flexbox-1/"
     ]
   },
+  "css.properties.flex-basis.stretch": {
+    "parent_feature": "flexbox",
+    "parent_feature_name": "Flexbox",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "138",
+        "chrome_android": "138",
+        "edge": "138",
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-flexbox-1/"
+    ]
+  },
   "css.properties.justify-content.safe": {
     "parent_feature": "flexbox",
     "parent_feature_name": "Flexbox",
