@@ -632,8 +632,12 @@ export const browsers = {
         "version": "158"
       },
       {
-        "date": "null",
+        "date": "2026-12-08",
         "version": "159"
+      },
+      {
+        "date": "null",
+        "version": "160"
       },
       {
         "date": "null",
@@ -1181,8 +1185,12 @@ export const browsers = {
         "version": "158"
       },
       {
-        "date": "null",
+        "date": "2026-12-08",
         "version": "159"
+      },
+      {
+        "date": "null",
+        "version": "160"
       }
     ]
   },
@@ -1536,6 +1544,10 @@ export const browsers = {
       {
         "date": "2026-12-10",
         "version": "159"
+      },
+      {
+        "date": "2027-01-07",
+        "version": "160"
       }
     ]
   },
@@ -2203,6 +2215,10 @@ export const browsers = {
         "version": "162"
       },
       {
+        "date": "2027-01-12",
+        "version": "163"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2794,6 +2810,10 @@ export const browsers = {
       {
         "date": "2026-12-08",
         "version": "162"
+      },
+      {
+        "date": "2027-01-12",
+        "version": "163"
       }
     ]
   },
@@ -3054,6 +3074,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27.3"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3300,6 +3324,10 @@ export const browsers = {
       {
         "date": "2026-10-26",
         "version": "27.2"
+      },
+      {
+        "date": "null",
+        "version": "27.3"
       }
     ]
   }
@@ -3507,6 +3535,7 @@ export const bcdKeys = {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
+        "firefox": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -3525,6 +3554,7 @@ export const bcdKeys = {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
+        "firefox": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -4033,7 +4063,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4052,7 +4083,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4071,7 +4103,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4090,7 +4123,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4109,7 +4143,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4128,7 +4163,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4147,7 +4183,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4166,7 +4203,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4185,7 +4223,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4204,7 +4243,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4223,7 +4263,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4242,7 +4283,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4261,7 +4303,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4280,7 +4323,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -4418,6 +4462,120 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element"
+    ]
+  },
+  "api.HTMLLinkElement.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "api.HTMLScriptElement.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "api.HTMLStyleElement.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "html.elements.link.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "html.elements.script.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "html.elements.style.blocking": {
+    "parent_feature": "blocking-render",
+    "parent_feature_name": "blocking=\"render\"",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
     ]
   },
   "api.CanvasPaintEvent": {
@@ -5063,7 +5221,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5082,7 +5241,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5101,7 +5261,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5120,7 +5281,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5139,7 +5301,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5158,7 +5321,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5177,7 +5341,8 @@ export const bcdKeys = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5396,7 +5561,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5414,7 +5580,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5432,7 +5599,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5450,7 +5618,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5468,7 +5637,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5486,7 +5656,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5504,7 +5675,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5522,7 +5694,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5540,7 +5713,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5558,7 +5732,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5576,7 +5751,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5594,7 +5770,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5612,7 +5789,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5630,7 +5808,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5648,7 +5827,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5666,7 +5846,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5684,7 +5865,8 @@ export const bcdKeys = {
         "chrome_android": "139",
         "edge": "139",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -5851,6 +6033,82 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "api.CSSViewTransitionRule": {
+    "parent_feature": "cross-document-view-transitions",
+    "parent_feature_name": "Cross-document view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
+    ]
+  },
+  "api.CSSViewTransitionRule.navigation": {
+    "parent_feature": "cross-document-view-transitions",
+    "parent_feature_name": "Cross-document view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
+    ]
+  },
+  "api.CSSViewTransitionRule.types": {
+    "parent_feature": "cross-document-view-transitions",
+    "parent_feature_name": "Cross-document view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
+    ]
+  },
+  "css.at-rules.view-transition": {
+    "parent_feature": "cross-document-view-transitions",
+    "parent_feature_name": "Cross-document view transitions",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
     ]
   },
   "api.CSSImageValue": {
@@ -8353,6 +8611,23 @@ export const bcdKeys = {
       "https://drafts.css-houdini.org/css-typed-om-1/"
     ]
   },
+  "css.properties.text-overflow.string": {
+    "parent_feature": "custom-ellipses",
+    "parent_feature_name": "Custom ellipses",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "9",
+        "firefox_android": "9",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-overflow-4/#overflow-string"
+    ]
+  },
   "css.properties.appearance.base-select": {
     "parent_feature": "customizable-select",
     "parent_feature_name": "Customizable <select>",
@@ -8554,7 +8829,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8573,7 +8849,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8592,7 +8869,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8611,7 +8889,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8630,7 +8909,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8649,7 +8929,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8668,7 +8949,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8687,7 +8969,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8706,7 +8989,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8725,7 +9009,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8744,7 +9029,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8763,7 +9049,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8782,7 +9069,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8801,7 +9089,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8820,7 +9109,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8839,7 +9129,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8858,7 +9149,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8877,7 +9169,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8896,7 +9189,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8915,7 +9209,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8934,7 +9229,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8953,7 +9249,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8972,7 +9269,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -8991,7 +9289,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9010,7 +9309,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9029,7 +9329,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9048,7 +9349,8 @@ export const bcdKeys = {
         "edge": "127",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9067,7 +9369,8 @@ export const bcdKeys = {
         "edge": "125",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9086,7 +9389,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9105,7 +9409,8 @@ export const bcdKeys = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9162,7 +9467,8 @@ export const bcdKeys = {
         "chrome_android": "131",
         "edge": "131",
         "firefox": "preview",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9179,7 +9485,9 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9215,11 +9523,27 @@ export const bcdKeys = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
       "https://fetch.spec.whatwg.org/#concept-body-stream"
+    ]
+  },
+  "css.selectors.field-content": {
+    "parent_feature": "field-content",
+    "parent_feature_name": "::field-content",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#selectordef-field-content"
     ]
   },
   "css.selectors.first-letter.dutch_ij_digraph": {
@@ -9437,7 +9761,8 @@ export const bcdKeys = {
         "edge": "87",
         "firefox": "89",
         "firefox_android": "89",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9456,7 +9781,8 @@ export const bcdKeys = {
         "edge": "87",
         "firefox": "89",
         "firefox_android": "89",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -9475,7 +9801,8 @@ export const bcdKeys = {
         "edge": "87",
         "firefox": "89",
         "firefox_android": "89",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10064,7 +10391,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10081,7 +10409,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10098,7 +10427,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10115,7 +10445,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10132,7 +10463,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10149,7 +10481,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10166,7 +10499,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10183,7 +10517,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10200,7 +10535,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10217,7 +10553,8 @@ export const bcdKeys = {
         "chrome": "139",
         "chrome_android": "139",
         "edge": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10236,7 +10573,8 @@ export const bcdKeys = {
         "edge": "141",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10256,12 +10594,47 @@ export const bcdKeys = {
         "edge": "141",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
       "https://w3c.github.io/IndexedDB/#dom-idbindex-getallrecords",
       "https://w3c.github.io/IndexedDB/#dom-idbobjectstore-getallrecords"
+    ]
+  },
+  "api.Navigator.globalPrivacyControl": {
+    "parent_feature": "gpc",
+    "parent_feature_name": "Global privacy control",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "120",
+        "firefox_android": "122",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/gpc/"
+    ]
+  },
+  "api.WorkerNavigator.globalPrivacyControl": {
+    "parent_feature": "gpc",
+    "parent_feature_name": "Global privacy control",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "120",
+        "firefox_android": "122",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/gpc/"
     ]
   },
   "css.types.gradient.conic-gradient.hue_interpolation_method": {
@@ -10516,6 +10889,146 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-color-4/#interpolation-space"
     ]
   },
+  "css.properties.display.grid-lanes": {
+    "parent_feature": "grid-lanes",
+    "parent_feature_name": "Grid lanes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "css.properties.display.inline-grid-lanes": {
+    "parent_feature": "grid-lanes",
+    "parent_feature_name": "Grid lanes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "css.properties.fit-tolerance": {
+    "parent_feature": "grid-lanes",
+    "parent_feature_name": "Grid lanes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "27.2",
+        "safari_ios": "27.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "css.properties.fit-tolerance.infinite": {
+    "parent_feature": "grid-lanes",
+    "parent_feature_name": "Grid lanes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "27.2",
+        "safari_ios": "27.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "css.properties.fit-tolerance.normal": {
+    "parent_feature": "grid-lanes",
+    "parent_feature_name": "Grid lanes",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "preview",
+        "safari": "27.2",
+        "safari_ios": "27.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-grid-3/"
+    ]
+  },
+  "api.HTMLElement.headingOffset": {
+    "parent_feature": "heading-offset",
+    "parent_feature_name": "Heading offset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets"
+    ]
+  },
+  "api.HTMLElement.headingReset": {
+    "parent_feature": "heading-offset",
+    "parent_feature_name": "Heading offset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets"
+    ]
+  },
+  "html.global_attributes.headingoffset": {
+    "parent_feature": "heading-offset",
+    "parent_feature_name": "Heading offset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets"
+    ]
+  },
+  "html.global_attributes.headingreset": {
+    "parent_feature": "heading-offset",
+    "parent_feature_name": "Heading offset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets"
+    ]
+  },
   "css.selectors.heading": {
     "parent_feature": "heading-selectors",
     "parent_feature_name": "Heading pseudo-classes",
@@ -10543,7 +11056,8 @@ export const bcdKeys = {
         "edge": "140",
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10946,7 +11460,8 @@ export const bcdKeys = {
         "edge": "109",
         "firefox": "137",
         "firefox_android": "137",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -10965,11 +11480,30 @@ export const bcdKeys = {
         "edge": "109",
         "firefox": "137",
         "firefox_android": "137",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits"
+    ]
+  },
+  "css.types.if": {
+    "parent_feature": "if",
+    "parent_feature_name": "if()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "137",
+        "chrome_android": "137",
+        "edge": "137",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#if-notation"
     ]
   },
   "javascript.operators.import.defer": {
@@ -10993,7 +11527,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11110,6 +11645,57 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/input.html#range-state-(type=range)"
+    ]
+  },
+  "css.properties.interpolate-size": {
+    "parent_feature": "interpolate-size",
+    "parent_feature_name": "interpolate-size",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "129",
+        "chrome_android": "129",
+        "edge": "129",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#interpolate-size"
+    ]
+  },
+  "css.properties.interpolate-size.allow-keywords": {
+    "parent_feature": "interpolate-size",
+    "parent_feature_name": "interpolate-size",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "129",
+        "chrome_android": "129",
+        "edge": "129",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#interpolate-size"
+    ]
+  },
+  "css.properties.interpolate-size.numeric-only": {
+    "parent_feature": "interpolate-size",
+    "parent_feature_name": "interpolate-size",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "129",
+        "chrome_android": "129",
+        "edge": "129",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#interpolate-size"
     ]
   },
   "javascript.builtins.Intl.Segmenter": {
@@ -11319,7 +11905,8 @@ export const bcdKeys = {
         "edge": "154",
         "firefox": "154",
         "firefox_android": "154",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11338,7 +11925,8 @@ export const bcdKeys = {
         "edge": "153",
         "firefox": "154",
         "firefox_android": "154",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11357,7 +11945,8 @@ export const bcdKeys = {
         "edge": "153",
         "firefox": "148",
         "firefox_android": "148",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11376,7 +11965,8 @@ export const bcdKeys = {
         "edge": "153",
         "firefox": "148",
         "firefox_android": "148",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11400,6 +11990,24 @@ export const bcdKeys = {
     },
     "spec": [
       "https://www.iso.org/standard/85253.html"
+    ]
+  },
+  "css.properties.justify-self.context_block": {
+    "parent_feature": "justify-self-block",
+    "parent_feature_name": "justify-self in block layouts",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "130",
+        "chrome_android": "130",
+        "edge": "130",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#justify-block"
     ]
   },
   "css.types.color.light-dark": {
@@ -11512,7 +12120,9 @@ export const bcdKeys = {
         "chrome": "117",
         "chrome_android": "117",
         "edge": "117",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11794,7 +12404,8 @@ export const bcdKeys = {
         "edge": "141",
         "firefox": "147",
         "firefox_android": "147",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11813,7 +12424,8 @@ export const bcdKeys = {
         "edge": "146",
         "firefox": "148",
         "firefox_android": "148",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -11832,7 +12444,8 @@ export const bcdKeys = {
         "edge": "141",
         "firefox": "147",
         "firefox_android": "147",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13062,7 +13675,8 @@ export const bcdKeys = {
         "chrome": "104",
         "chrome_android": "104",
         "edge": "104",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13079,7 +13693,8 @@ export const bcdKeys = {
         "chrome": "104",
         "chrome_android": "104",
         "edge": "104",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13595,7 +14210,8 @@ export const bcdKeys = {
         "edge": "151",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13614,7 +14230,8 @@ export const bcdKeys = {
         "edge": "151",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13669,12 +14286,14 @@ export const bcdKeys = {
     "parent_feature_name": "random()",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "156",
         "chrome_android": "156",
         "edge": "156",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13691,7 +14310,8 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "preview",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13705,12 +14325,14 @@ export const bcdKeys = {
     "parent_feature_name": "random()",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "156",
         "chrome_android": "156",
         "edge": "156",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13727,7 +14349,8 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "preview",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13743,7 +14366,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "26.2",
         "safari_ios": "26.2"
       }
@@ -13760,8 +14384,10 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "preview",
-        "firefox": "preview",
-        "safari": "preview"
+        "firefox": "161",
+        "firefox_android": "161",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -13776,8 +14402,10 @@ export const bcdKeys = {
       "baseline": false,
       "support": {
         "chrome": "preview",
-        "firefox": "preview",
-        "safari": "preview"
+        "firefox": "161",
+        "firefox_android": "161",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -14354,6 +14982,23 @@ export const bcdKeys = {
         "firefox_android": "158",
         "safari": "26.4",
         "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/resource-timing/"
+    ]
+  },
+  "api.PerformanceResourceTiming.renderBlockingStatus": {
+    "parent_feature": "resource-timing",
+    "parent_feature_name": "Resource timing performance entries",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "107",
+        "chrome_android": "107",
+        "edge": "107",
+        "firefox": "preview"
       }
     },
     "spec": [
@@ -15862,7 +16507,8 @@ export const bcdKeys = {
         "chrome": "149",
         "chrome_android": "149",
         "edge": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -15927,6 +16573,254 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#tree-counting"
+    ]
+  },
+  "api.Request.destination.speculationrules": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.eagerness": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.prefetch": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "110",
+        "chrome_android": "109",
+        "edge": "110",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.referrer_policy": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.relative_to": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.source": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.tag": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.urls": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "html.elements.script.type.speculationrules.where": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "http.headers.Content-Security-Policy.script-src.inline-speculation-rules": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "110",
+        "chrome_android": "110",
+        "edge": "110",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "http.headers.Sec-Speculation-Tags": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
+  "http.headers.Speculation-Rules": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "121",
+        "chrome_android": "121",
+        "edge": "121",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
     ]
   },
   "api.SpeechRecognition": {
@@ -16183,40 +17077,6 @@ export const bcdKeys = {
       "https://webaudio.github.io/web-speech-api/#speechreco-section"
     ]
   },
-  "api.SpeechRecognition.speechend_event": {
-    "parent_feature": "speech-recognition",
-    "parent_feature_name": "Speech recognition",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "139",
-        "chrome_android": "139",
-        "edge": "139",
-        "firefox": "160"
-      }
-    },
-    "spec": [
-      "https://webaudio.github.io/web-speech-api/#speechreco-section"
-    ]
-  },
-  "api.SpeechRecognition.speechstart_event": {
-    "parent_feature": "speech-recognition",
-    "parent_feature_name": "Speech recognition",
-    "parent_feature_baseline": false,
-    "status": {
-      "baseline": false,
-      "support": {
-        "chrome": "139",
-        "chrome_android": "139",
-        "edge": "139",
-        "firefox": "160"
-      }
-    },
-    "spec": [
-      "https://webaudio.github.io/web-speech-api/#speechreco-section"
-    ]
-  },
   "api.SpeechRecognition.start": {
     "parent_feature": "speech-recognition",
     "parent_feature_name": "Speech recognition",
@@ -16455,6 +17315,44 @@ export const bcdKeys = {
       "https://webaudio.github.io/web-speech-api/#speechreco-section"
     ]
   },
+  "api.SpeechRecognitionEvent.resultIndex": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
+  "api.SpeechRecognitionEvent.results": {
+    "parent_feature": "speech-recognition",
+    "parent_feature_name": "Speech recognition",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "160",
+        "safari": "14.1",
+        "safari_ios": "14.5"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ]
+  },
   "api.SpeechRecognitionPhrase": {
     "parent_feature": "speech-recognition",
     "parent_feature_name": "Speech recognition",
@@ -16673,6 +17571,27 @@ export const bcdKeys = {
       "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
     }
   },
+  "api.SpeechGrammar.SpeechGrammar": {
+    "parent_feature": "speech-recognition-grammar",
+    "parent_feature_name": "Speech recognition grammar",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "160"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-speech-api/#speechreco-section"
+    ],
+    "discouraged": {
+      "according_to": [
+        "https://github.com/WebAudio/web-speech-api/pull/117"
+      ],
+      "reason": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates.",
+      "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
+    }
+  },
   "api.SpeechGrammar.src": {
     "parent_feature": "speech-recognition-grammar",
     "parent_feature_name": "Speech recognition grammar",
@@ -16787,7 +17706,7 @@ export const bcdKeys = {
       "reason_html": "Advancements in speech recognition mean that speech grammars are not needed to achieve low error rates."
     }
   },
-  "api.SpeechGrammarList.addFromURI": {
+  "api.SpeechGrammarList.addFromUri": {
     "parent_feature": "speech-recognition-grammar",
     "parent_feature_name": "Speech recognition grammar",
     "parent_feature_baseline": false,
@@ -17360,11 +18279,30 @@ export const bcdKeys = {
         "edge": "148",
         "firefox": "157",
         "firefox_android": "157",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-5/#typedef-supports-at-rule-fn"
+    ]
+  },
+  "css.at-rules.supports.named-feature": {
+    "parent_feature": "supports-named-feature",
+    "parent_feature_name": "named-feature()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn"
     ]
   },
   "api.SVGElement.attributeStyleMap": {
@@ -17424,6 +18362,23 @@ export const bcdKeys = {
         "firefox_android": "79",
         "safari": "17.4",
         "safari_ios": "17.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/svgwg/svg2-draft/"
+    ]
+  },
+  "svg.elements.textPath.path": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "61",
+        "firefox_android": "61",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17574,7 +18529,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17593,7 +18549,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17612,7 +18569,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17631,7 +18589,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17650,7 +18609,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17669,7 +18629,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17688,7 +18649,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17707,7 +18669,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17726,7 +18689,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17745,7 +18709,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17764,7 +18729,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17783,7 +18749,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17802,7 +18769,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17821,7 +18789,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17840,7 +18809,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17859,7 +18829,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17878,7 +18849,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17897,7 +18869,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17916,7 +18889,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17935,7 +18909,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17954,7 +18929,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17973,7 +18949,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -17992,7 +18969,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18011,7 +18989,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18030,7 +19009,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18049,7 +19029,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18068,7 +19049,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18087,7 +19069,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18106,7 +19089,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18125,7 +19109,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18144,7 +19129,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18163,7 +19149,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18182,7 +19169,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18201,7 +19189,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18220,7 +19209,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18239,7 +19229,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18258,7 +19249,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18277,7 +19269,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18296,7 +19289,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18315,7 +19309,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18334,7 +19329,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18353,7 +19349,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18372,7 +19369,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18391,7 +19389,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18410,7 +19409,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18429,7 +19429,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18448,7 +19449,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18467,7 +19469,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18486,7 +19489,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18505,7 +19509,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18524,7 +19529,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18543,7 +19549,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18562,7 +19569,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18581,7 +19589,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18600,7 +19609,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18619,7 +19629,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18638,7 +19649,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18657,7 +19669,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18676,7 +19689,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18695,7 +19709,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18714,7 +19729,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18733,7 +19749,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18752,7 +19769,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18771,7 +19789,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18790,7 +19809,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18809,7 +19829,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18828,7 +19849,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18847,7 +19869,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18866,7 +19889,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18885,7 +19909,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18904,7 +19929,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18923,7 +19949,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18942,7 +19969,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18961,7 +19989,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18980,7 +20009,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -18999,7 +20029,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19018,7 +20049,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19037,7 +20069,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19056,7 +20089,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19075,7 +20109,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19094,7 +20129,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19113,7 +20149,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19132,7 +20169,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19151,7 +20189,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19170,7 +20209,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19189,7 +20229,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19208,7 +20249,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19225,7 +20267,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19244,7 +20287,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19263,7 +20307,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19282,7 +20327,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19301,7 +20347,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19320,7 +20367,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19339,7 +20387,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19358,7 +20407,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19377,7 +20427,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19396,7 +20447,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19415,7 +20467,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19434,7 +20487,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19453,7 +20507,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19472,7 +20527,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19491,7 +20547,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19510,7 +20567,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19529,7 +20587,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19548,7 +20607,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19567,7 +20627,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19586,7 +20647,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19605,7 +20667,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19624,7 +20687,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19643,7 +20707,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19662,7 +20727,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19681,7 +20747,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19700,7 +20767,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19719,7 +20787,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19738,7 +20807,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19757,7 +20827,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19776,7 +20847,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19795,7 +20867,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19814,7 +20887,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19833,7 +20907,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19852,7 +20927,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19871,7 +20947,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19890,7 +20967,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19909,7 +20987,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19928,7 +21007,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19947,7 +21027,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19966,7 +21047,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -19985,7 +21067,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20002,7 +21085,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20021,7 +21105,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20040,7 +21125,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20059,7 +21145,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20078,7 +21165,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20097,7 +21185,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20116,7 +21205,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20135,7 +21225,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20154,7 +21245,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20173,7 +21265,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20192,7 +21285,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20211,7 +21305,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20230,7 +21325,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20249,7 +21345,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20268,7 +21365,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20287,7 +21385,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20306,7 +21405,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20325,7 +21425,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20344,7 +21445,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20363,7 +21465,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20382,7 +21485,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20401,7 +21505,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20420,7 +21525,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20439,7 +21545,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20458,7 +21565,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20477,7 +21585,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20496,7 +21605,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20515,7 +21625,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20534,7 +21645,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20553,7 +21665,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20572,7 +21685,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20591,7 +21705,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20610,7 +21725,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20629,7 +21745,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20648,7 +21765,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20667,7 +21785,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20686,7 +21805,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20705,7 +21825,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20724,7 +21845,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20743,7 +21865,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20762,7 +21885,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20781,7 +21905,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20800,7 +21925,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20819,7 +21945,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20838,7 +21965,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20857,7 +21985,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20876,7 +22005,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20895,7 +22025,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20914,7 +22045,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20933,7 +22065,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20952,7 +22085,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20971,7 +22105,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -20990,7 +22125,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21009,7 +22145,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21028,7 +22165,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21047,7 +22185,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21066,7 +22205,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21085,7 +22225,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21104,7 +22245,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21123,7 +22265,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21142,7 +22285,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21161,7 +22305,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21180,7 +22325,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21199,7 +22345,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21218,7 +22365,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21237,7 +22385,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21256,7 +22405,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21275,7 +22425,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21294,7 +22445,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21313,7 +22465,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21332,7 +22485,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21351,7 +22505,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21370,7 +22525,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21389,7 +22545,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21408,7 +22565,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21427,7 +22585,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21446,7 +22605,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21465,7 +22625,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21484,7 +22645,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21503,7 +22665,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21522,7 +22685,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21541,7 +22705,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21560,7 +22725,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21579,7 +22745,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21598,7 +22765,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21617,7 +22785,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21636,7 +22805,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21655,7 +22825,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21674,7 +22845,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21693,7 +22865,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21712,7 +22885,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21731,7 +22905,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21750,7 +22925,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21769,7 +22945,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21788,7 +22965,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21807,7 +22985,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21826,7 +23005,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21845,7 +23025,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21864,7 +23045,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21883,7 +23065,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21902,7 +23085,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21921,7 +23105,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21940,7 +23125,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21959,7 +23145,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21978,7 +23165,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -21997,7 +23185,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22016,7 +23205,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22035,7 +23225,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22054,7 +23245,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22073,7 +23265,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22090,7 +23283,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22109,7 +23303,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22128,7 +23323,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22147,7 +23343,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22166,7 +23363,8 @@ export const bcdKeys = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22401,6 +23599,46 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-decor-4/#line-decoration"
     ]
   },
+  "css.properties.text-decoration-inset": {
+    "parent_feature": "text-decoration-inset",
+    "parent_feature_name": "text-decoration-inset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-inset-property"
+    ]
+  },
+  "css.properties.text-decoration-inset.auto": {
+    "parent_feature": "text-decoration-inset",
+    "parent_feature_name": "text-decoration-inset",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-inset-property"
+    ]
+  },
   "css.properties.text-decoration-skip-spaces": {
     "parent_feature": "text-decoration-skip-spaces",
     "parent_feature_name": "text-decoration-skip-spaces",
@@ -22482,7 +23720,9 @@ export const bcdKeys = {
         "chrome_android": "155",
         "edge": "155",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22792,7 +24032,7 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     },
     "spec": [
@@ -22811,7 +24051,7 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     },
     "spec": [
@@ -22830,7 +24070,7 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     },
     "spec": [
@@ -22849,7 +24089,7 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     },
     "spec": [
@@ -22868,7 +24108,7 @@ export const bcdKeys = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     },
     "spec": [
@@ -22895,6 +24135,175 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-writing-modes-4/#vertical-modes"
+    ]
+  },
+  "api.PageRevealEvent": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageRevealEvent.PageRevealEvent": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageRevealEvent.viewTransition": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageSwapEvent": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageSwapEvent.PageSwapEvent": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "128",
+        "chrome_android": "128",
+        "edge": "128",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageSwapEvent.activation": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.PageSwapEvent.viewTransition": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "126",
+        "chrome_android": "126",
+        "edge": "126",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.Window.pagereveal_event": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
+    ]
+  },
+  "api.Window.pageswap_event": {
+    "parent_feature": "view-transitions",
+    "parent_feature_name": "View transitions",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "preview"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-view-transitions-1/"
     ]
   },
   "webassembly.api.Exception.Exception.options_parameter_traceStack": {
@@ -22928,7 +24337,8 @@ export const bcdKeys = {
         "edge": "95",
         "firefox": "100",
         "firefox_android": "100",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -22990,7 +24400,8 @@ export const bcdKeys = {
         "edge": "133",
         "firefox": "134",
         "firefox_android": "134",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23009,7 +24420,8 @@ export const bcdKeys = {
         "edge": "120",
         "firefox": "125",
         "firefox_android": "125",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23028,7 +24440,8 @@ export const bcdKeys = {
         "edge": "114",
         "firefox": "146",
         "firefox_android": "146",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23149,7 +24562,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23168,7 +24582,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23187,7 +24602,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23206,7 +24622,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23225,7 +24642,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23244,7 +24662,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23263,7 +24682,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23282,7 +24702,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23301,7 +24722,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23320,7 +24742,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23339,7 +24762,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23358,7 +24782,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23377,7 +24802,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23396,7 +24822,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23415,7 +24842,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23434,7 +24862,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23453,7 +24882,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23472,7 +24902,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23491,7 +24922,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23510,7 +24942,8 @@ export const bcdKeys = {
         "edge": "94",
         "firefox": "133",
         "firefox_android": "133",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23617,7 +25050,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23634,7 +25068,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "144",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23669,7 +25104,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "121",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23686,7 +25122,8 @@ export const bcdKeys = {
         "chrome": "144",
         "chrome_android": "121",
         "edge": "144",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     },
     "spec": [
@@ -23707,6 +25144,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUSupportedFeatures.feature_subgroups": {
+    "parent_feature": "webgpu-subgroups",
+    "parent_feature_name": "WebGPU subgroups",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/#subgroups",
+      "https://gpuweb.github.io/gpuweb/wgsl/#extension-subgroups"
     ]
   },
   "api.RTCDTMFSender.canInsertDTMF": {
@@ -24645,6 +26101,48 @@ export const bcdKeys = {
       "https://websockets.spec.whatwg.org/"
     ]
   },
+  "api.WebTransport.WebTransport.options_protocols_parameter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-01",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.protocol": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-09-01",
+      "support": {
+        "chrome": "143",
+        "chrome_android": "143",
+        "edge": "143",
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
   "api.WebTransport.reliability": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
@@ -24658,6 +26156,27 @@ export const bcdKeys = {
         "edge": "157",
         "firefox": "114",
         "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportDatagramDuplexStream.byob_readers": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-11-10",
+      "support": {
+        "chrome": "109",
+        "chrome_android": "109",
+        "edge": "109",
+        "firefox": "160",
+        "firefox_android": "160",
         "safari": "26.4",
         "safari_ios": "26.4"
       }

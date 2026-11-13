@@ -632,8 +632,12 @@ export const browsers = {
         "version": "158"
       },
       {
-        "date": "null",
+        "date": "2026-12-08",
         "version": "159"
+      },
+      {
+        "date": "null",
+        "version": "160"
       },
       {
         "date": "null",
@@ -1181,8 +1185,12 @@ export const browsers = {
         "version": "158"
       },
       {
-        "date": "null",
+        "date": "2026-12-08",
         "version": "159"
+      },
+      {
+        "date": "null",
+        "version": "160"
       }
     ]
   },
@@ -1536,6 +1544,10 @@ export const browsers = {
       {
         "date": "2026-12-10",
         "version": "159"
+      },
+      {
+        "date": "2027-01-07",
+        "version": "160"
       }
     ]
   },
@@ -2203,6 +2215,10 @@ export const browsers = {
         "version": "162"
       },
       {
+        "date": "2027-01-12",
+        "version": "163"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2794,6 +2810,10 @@ export const browsers = {
       {
         "date": "2026-12-08",
         "version": "162"
+      },
+      {
+        "date": "2027-01-12",
+        "version": "163"
       }
     ]
   },
@@ -3054,6 +3074,10 @@ export const browsers = {
       },
       {
         "date": "null",
+        "version": "27.3"
+      },
+      {
+        "date": "null",
         "version": "preview"
       }
     ]
@@ -3300,6 +3324,10 @@ export const browsers = {
       {
         "date": "2026-10-26",
         "version": "27.2"
+      },
+      {
+        "date": "null",
+        "version": "27.3"
       }
     ]
   }
@@ -3794,6 +3822,7 @@ export const features = {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
+        "firefox": "preview",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -4782,7 +4811,8 @@ export const features = {
         "edge": "133",
         "firefox": "155",
         "firefox_android": "155",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -4826,11 +4856,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "133",
-        "chrome_android": "133",
-        "edge": "133"
-      }
+      "support": {}
     }
   },
   "audio": {
@@ -5779,6 +5805,7 @@ export const features = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
+        "firefox": "preview",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -6929,7 +6956,8 @@ export const features = {
         "edge": "126",
         "firefox": "149",
         "firefox_android": "149",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -8181,6 +8209,7 @@ export const features = {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
+        "firefox": "preview",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8441,7 +8470,9 @@ export const features = {
       "baseline": false,
       "support": {
         "firefox": "9",
-        "firefox_android": "9"
+        "firefox_android": "9",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -9061,7 +9092,8 @@ export const features = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -10064,7 +10096,8 @@ export const features = {
         "edge": "134",
         "firefox": "141",
         "firefox_android": "141",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -10561,7 +10594,9 @@ export const features = {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview"
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -10578,6 +10613,20 @@ export const features = {
         "chrome": "135",
         "chrome_android": "135",
         "edge": "135"
+      }
+    }
+  },
+  "field-content": {
+    "description_html": "The <code>::field-content</code> CSS pseudo-element selects the portion of an <code>&#x3C;input></code> element that contains editable text.",
+    "kind": "feature",
+    "name": "::field-content",
+    "spec": [
+      "https://drafts.csswg.org/css-forms-1/#selectordef-field-content"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.2"
       }
     }
   },
@@ -12168,7 +12217,8 @@ export const features = {
         "edge": "141",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -12406,7 +12456,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "firefox": "preview",
+        "safari": "27.2",
+        "safari_ios": "27.2"
+      }
     }
   },
   "gyroscope": {
@@ -12597,7 +12651,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
     }
   },
   "heading-selectors": {
@@ -12710,7 +12767,8 @@ export const features = {
         "edge": "140",
         "firefox": "150",
         "firefox_android": "150",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -13110,7 +13168,8 @@ export const features = {
         "edge": "109",
         "firefox": "137",
         "firefox_android": "137",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -13208,7 +13267,9 @@ export const features = {
       "support": {
         "chrome": "137",
         "chrome_android": "137",
-        "edge": "137"
+        "edge": "137",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -14352,7 +14413,8 @@ export const features = {
       "support": {
         "chrome": "129",
         "chrome_android": "129",
-        "edge": "129"
+        "edge": "129",
+        "safari": "preview"
       }
     }
   },
@@ -14773,7 +14835,8 @@ export const features = {
         "edge": "154",
         "firefox": "154",
         "firefox_android": "154",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -14792,7 +14855,8 @@ export const features = {
         "edge": "153",
         "firefox": "154",
         "firefox_android": "154",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -14832,7 +14896,8 @@ export const features = {
         "edge": "153",
         "firefox": "148",
         "firefox_android": "148",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -17596,7 +17661,8 @@ export const features = {
         "chrome": "104",
         "chrome_android": "104",
         "edge": "104",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -19094,7 +19160,8 @@ export const features = {
         "edge": "151",
         "firefox": "153",
         "firefox_android": "153",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -19665,10 +19732,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "134",
-        "chrome_android": "134"
-      }
+      "support": {}
     }
   },
   "proto": {
@@ -19840,8 +19904,10 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "firefox": "preview",
-        "safari": "preview"
+        "firefox": "161",
+        "firefox_android": "161",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -22219,6 +22285,22 @@ export const features = {
       }
     }
   },
+  "shapes-polygon-round": {
+    "description_html": "The <code>polygon()</code> CSS function accepts the <code>round</code> keyword and a <code>&#x3C;length></code> value that rounds every vertex of the polygon. You can use it to make rounded shapes without computing Bézier curves by hand.",
+    "kind": "feature",
+    "name": "polygon() round keyword",
+    "spec": [
+      "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150"
+      }
+    }
+  },
   "share": {
     "description_html": "The <code>navigator.share()</code> method invokes the device's native sharing mechanism and passes text, links, files, and other content to share targets. Also known as the Web Share API.",
     "kind": "feature",
@@ -22300,11 +22382,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "134",
-        "chrome_android": "134",
-        "edge": "134"
-      }
+      "support": {}
     }
   },
   "shared-workers": {
@@ -22668,7 +22746,9 @@ export const features = {
       "support": {
         "chrome": "109",
         "chrome_android": "109",
-        "edge": "109"
+        "edge": "109",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -23613,7 +23693,8 @@ export const features = {
         "edge": "148",
         "firefox": "157",
         "firefox_android": "157",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -23651,7 +23732,9 @@ export const features = {
       "support": {
         "chrome": "150",
         "chrome_android": "150",
-        "edge": "150"
+        "edge": "150",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -24050,7 +24133,8 @@ export const features = {
         "edge": "144",
         "firefox": "139",
         "firefox_android": "139",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -24174,6 +24258,26 @@ export const features = {
         "firefox_android": "4",
         "safari": "1",
         "safari_ios": "1"
+      }
+    }
+  },
+  "text-decoration-inset": {
+    "description_html": "The <code>text-decoration-inset</code> CSS property offsets the start and end point of a text decoration. You can use this to shorten, lengthen, or shift the position of an underline, overline, or line-through.",
+    "kind": "feature",
+    "name": "text-decoration-inset",
+    "spec": [
+      "https://drafts.csswg.org/css-text-decor-4/#text-decoration-inset-property"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157",
+        "firefox": "146",
+        "firefox_android": "146",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -24457,7 +24561,9 @@ export const features = {
         "chrome_android": "155",
         "edge": "155",
         "firefox": "153",
-        "firefox_android": "153"
+        "firefox_android": "153",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -25686,7 +25792,7 @@ export const features = {
         "edge": "79",
         "firefox": "69",
         "firefox_android": "79",
-        "safari": "preview"
+        "safari": "27.3"
       }
     }
   },
@@ -26243,7 +26349,8 @@ export const features = {
         "edge": "133",
         "firefox": "134",
         "firefox_android": "134",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -26412,7 +26519,8 @@ export const features = {
         "edge": "114",
         "firefox": "146",
         "firefox_android": "146",
-        "safari": "preview"
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -27330,7 +27438,9 @@ export const features = {
       "support": {
         "chrome": "144",
         "chrome_android": "144",
-        "edge": "144"
+        "edge": "144",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
