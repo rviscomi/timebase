@@ -733,7 +733,7 @@
   },
   "manifest": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/57",
-    "votes": 22
+    "votes": 23
   },
   "manifest-localization": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/516",
@@ -1037,7 +1037,7 @@
   },
   "scroll-initial-target": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/275",
-    "votes": 7
+    "votes": 8
   },
   "scroll-into-view-container": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/463",
