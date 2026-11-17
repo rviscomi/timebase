@@ -5569,7 +5569,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-block-end-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-end-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-end-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-end-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-end-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-end-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-block-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-block-start-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5607,7 +5835,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-bottom-left-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-left-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-bottom-right-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-right-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5645,7 +6101,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-bottom-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-bottom-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-end-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-end-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5683,7 +6367,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-end-start-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-end-start-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-inline-end-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-end-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5721,7 +6633,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-inline-start-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-inline-start-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-left-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-left-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5759,7 +6899,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-right-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-right-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5797,7 +7165,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-start-end-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-end-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-start-start-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-start-start-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -5835,6 +7431,120 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-top-left-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-left-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-top-right-shape": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
@@ -5854,7 +7564,235 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-borders-4/#corner-shaping"
     ]
   },
+  "css.properties.corner-top-right-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-right-shape.squircle": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
   "css.properties.corner-top-shape": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.bevel": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.notch": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.round": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.scoop": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.square": {
+    "parent_feature": "corner-shape",
+    "parent_feature_name": "corner-shape",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "139",
+        "chrome_android": "139",
+        "edge": "139",
+        "firefox": "preview",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-borders-4/#corner-shaping"
+    ]
+  },
+  "css.properties.corner-top-shape.squircle": {
     "parent_feature": "corner-shape",
     "parent_feature_name": "corner-shape",
     "parent_feature_baseline": false,
@@ -11429,7 +13367,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/whatwg/html/pull/12758"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ]
   },
   "api.TrustedTypePolicy.createParserOptions": {
@@ -11445,7 +13383,7 @@ export const bcdKeys = {
       }
     },
     "spec": [
-      "https://github.com/whatwg/html/pull/12758"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ]
   },
   "css.properties.hyphenate-limit-chars": {

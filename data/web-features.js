@@ -3622,7 +3622,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API, which shares some interfaces with the ad selection API.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-10-27"
     },
     "kind": "feature",
     "name": "Ad selection",
@@ -3631,7 +3631,10 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "132",
+        "chrome_android": "132"
+      }
     }
   },
   "address": {
@@ -4847,7 +4850,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the attribution reporting API.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the attribution reporting API.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-12-08"
     },
     "kind": "feature",
     "name": "Attribution reporting",
@@ -10490,7 +10493,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the <fencedframe> element and related APIs.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the <code>&#x3C;fencedframe></code> element and related APIs.",
-      "removal_date": "2026-09-09"
+      "removal_date": "2026-10-20"
     },
     "kind": "feature",
     "name": "<fencedframe>",
@@ -12983,7 +12986,7 @@ export const features = {
     "kind": "feature",
     "name": "HTML streaming setters",
     "spec": [
-      "https://github.com/whatwg/html/pull/12758"
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ],
     "status": {
       "baseline": false,
@@ -19723,7 +19726,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the protected audience API.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-10-27"
     },
     "kind": "feature",
     "name": "Protected audience",
@@ -20271,7 +20274,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the related website sets.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the related website sets.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-09-08"
     },
     "kind": "feature",
     "name": "Related website sets",
@@ -22352,7 +22355,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the shared storage.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the shared storage.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-08-25"
     },
     "kind": "feature",
     "name": "Shared storage",
@@ -22373,7 +22376,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including shared storage locks.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including shared storage locks.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-08-25"
     },
     "kind": "feature",
     "name": "Shared storage locks",
@@ -25012,7 +25015,7 @@ export const features = {
       ],
       "reason": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the topics API.",
       "reason_html": "Following the announcement that Chrome will maintain its current approach to third-party cookies, Chrome decided to withdraw certain Privacy Sandbox features including the topics API.",
-      "removal_date": "2026-06-01"
+      "removal_date": "2026-09-08"
     },
     "kind": "feature",
     "name": "Topics",
