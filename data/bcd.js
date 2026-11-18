@@ -13426,6 +13426,36 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#hyphenate-char-limits"
     ]
   },
+  "css.properties.hyphenate-limit-lines": {
+    "parent_feature": "hyphenate-limit-lines",
+    "parent_feature_name": "hyphenate-limit-lines",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-lines"
+    ]
+  },
+  "css.properties.hyphenate-limit-lines.no-limit": {
+    "parent_feature": "hyphenate-limit-lines",
+    "parent_feature_name": "hyphenate-limit-lines",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-lines"
+    ]
+  },
   "css.types.if": {
     "parent_feature": "if",
     "parent_feature_name": "if()",
@@ -16348,6 +16378,21 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-values-5/#random"
+    ]
+  },
+  "css.types.random-item": {
+    "parent_feature": "random-item",
+    "parent_feature_name": "random-item()",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random-item"
     ]
   },
   "api.ReadableStream.from_static": {
@@ -26386,6 +26431,86 @@ export const bcdKeys = {
       "https://github.com/WebAssembly/relaxed-simd/blob/main/proposals/relaxed-simd/Overview.md"
     ]
   },
+  "webassembly.instructions.add128": {
+    "parent_feature": "wasm-wide-arithmetic",
+    "parent_feature_name": "Wide arithmetic (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ]
+  },
+  "webassembly.instructions.mul_wide_s": {
+    "parent_feature": "wasm-wide-arithmetic",
+    "parent_feature_name": "Wide arithmetic (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ]
+  },
+  "webassembly.instructions.mul_wide_u": {
+    "parent_feature": "wasm-wide-arithmetic",
+    "parent_feature_name": "Wide arithmetic (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ]
+  },
+  "webassembly.instructions.sub128": {
+    "parent_feature": "wasm-wide-arithmetic",
+    "parent_feature_name": "Wide arithmetic (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ]
+  },
+  "webassembly.wideArithmetic": {
+    "parent_feature": "wasm-wide-arithmetic",
+    "parent_feature_name": "Wide arithmetic (WebAssembly)",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ]
+  },
   "api.AnimationTimeline.duration": {
     "parent_feature": "web-animations",
     "parent_feature_name": "Web animations",
@@ -28254,6 +28379,76 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-text-4/#white-space-collapsing"
     ]
   },
+  "css.properties.white-space-trim": {
+    "parent_feature": "white-space-trim",
+    "parent_feature_name": "white-space-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ]
+  },
+  "css.properties.white-space-trim.discard-after": {
+    "parent_feature": "white-space-trim",
+    "parent_feature_name": "white-space-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ]
+  },
+  "css.properties.white-space-trim.discard-before": {
+    "parent_feature": "white-space-trim",
+    "parent_feature_name": "white-space-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ]
+  },
+  "css.properties.white-space-trim.discard-inner": {
+    "parent_feature": "white-space-trim",
+    "parent_feature_name": "white-space-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ]
+  },
+  "css.properties.white-space-trim.none": {
+    "parent_feature": "white-space-trim",
+    "parent_feature_name": "white-space-trim",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ]
+  },
   "css.properties.window-drag": {
     "parent_feature": "window-drag",
     "parent_feature_name": "window-drag",
@@ -28314,6 +28509,48 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase"
+    ]
+  },
+  "css.properties.wrap-inside": {
+    "parent_feature": "wrap-inside",
+    "parent_feature_name": "wrap-inside",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#wrap-inside"
+    ]
+  },
+  "css.properties.wrap-inside.auto": {
+    "parent_feature": "wrap-inside",
+    "parent_feature_name": "wrap-inside",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#wrap-inside"
+    ]
+  },
+  "css.properties.wrap-inside.avoid": {
+    "parent_feature": "wrap-inside",
+    "parent_feature_name": "wrap-inside",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#wrap-inside"
     ]
   },
   "api.ProgressEvent.ProgressEvent.loaded_total_options_accept_double": {

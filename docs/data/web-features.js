@@ -13176,6 +13176,21 @@ export const features = {
       }
     }
   },
+  "hyphenate-limit-lines": {
+    "description_html": "The <code>hyphenate-limit-lines</code> CSS property sets the maximum number of consecutive hyphenated lines in a block of text.",
+    "kind": "feature",
+    "name": "hyphenate-limit-lines",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#propdef-hyphenate-limit-lines"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    }
+  },
   "hyphens": {
     "description_html": "The <code>hyphens</code> CSS property controls when long words are broken by line wrapping. Although called <code>hyphens</code>, the property applies to word-splitting behavior across languages, such as customary spelling changes or the use of other characters. Support for non-English languages varies significantly.",
     "kind": "feature",
@@ -19914,6 +19929,21 @@ export const features = {
       }
     }
   },
+  "random-item": {
+    "description_html": "The <code>random-item()</code> CSS function chooses a random value from a list of values.",
+    "kind": "feature",
+    "name": "random-item()",
+    "spec": [
+      "https://drafts.csswg.org/css-values-5/#random-item"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    }
+  },
   "rcap": {
     "description_html": "The <code>rcap</code> CSS length unit is a font-relative length equal to the value of the <code>cap</code> unit on the root element. Cap-height is approximately equal to the height of a capital Latin letter.",
     "kind": "feature",
@@ -26609,6 +26639,22 @@ export const features = {
       }
     }
   },
+  "wasm-wide-arithmetic": {
+    "description_html": "Wide 128-bit integer arithmetic instructions operate on larger-than-64-bit numbers with results represented by two 64-bit integers. You can use these instructions to improve performance for some use cases, such as arbitrary precision math.",
+    "kind": "feature",
+    "name": "Wide arithmetic (WebAssembly)",
+    "spec": [
+      "https://github.com/WebAssembly/wide-arithmetic/blob/main/proposals/wide-arithmetic/Overview.md"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "155",
+        "firefox_android": "155",
+        "safari": "preview"
+      }
+    }
+  },
   "wbr": {
     "description_html": "The <code>&#x3C;wbr></code> HTML element represents a word break opportunity, to explicitly mark a place within a word where a line might be broken.",
     "kind": "feature",
@@ -28019,6 +28065,20 @@ export const features = {
       }
     }
   },
+  "white-space-trim": {
+    "description_html": "The <code>white-space-trim</code> CSS property removes white space around the element or its contents.",
+    "kind": "feature",
+    "name": "white-space-trim",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#white-space-trim"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
+      }
+    }
+  },
   "widows-orphans": {
     "description_html": "The <code>widows</code> and <code>orphans</code> CSS properties set the minimum lines included in a text fragment created by page, column, or region breaks.",
     "kind": "feature",
@@ -28281,6 +28341,20 @@ export const features = {
         "firefox_android": "4",
         "safari": "1",
         "safari_ios": "1"
+      }
+    }
+  },
+  "wrap-inside": {
+    "description_html": "The <code>wrap-inside</code> CSS property controls how freely lines may be broken inside an inline box.",
+    "kind": "feature",
+    "name": "wrap-inside",
+    "spec": [
+      "https://drafts.csswg.org/css-text-4/#wrap-inside"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "safari": "27.3"
       }
     }
   },

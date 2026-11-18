@@ -17,7 +17,7 @@
   },
   "anchor-positioning": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/245",
-    "votes": 280
+    "votes": 281
   },
   "anchor-positioning-animations": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/905",
@@ -445,7 +445,7 @@
   },
   "focusgroup": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/546",
-    "votes": 24
+    "votes": 26
   },
   "font-family-ui": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/115",
@@ -637,7 +637,7 @@
   },
   "interest-invokers": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/464",
-    "votes": 54
+    "votes": 55
   },
   "interpolate-size": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/253",
@@ -709,7 +709,7 @@
   },
   "loading-lazy-media": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/534",
-    "votes": 54
+    "votes": 55
   },
   "local-fonts": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/174",
@@ -893,7 +893,7 @@
   },
   "periodic-background-sync": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/380",
-    "votes": 14
+    "votes": 15
   },
   "permissions-policy": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/479",
@@ -1017,7 +1017,7 @@
   },
   "sanitizer": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/363",
-    "votes": 112
+    "votes": 113
   },
   "savedata": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/81",
@@ -1185,7 +1185,7 @@
   },
   "template-for": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/908",
-    "votes": 19
+    "votes": 20
   },
   "temporal": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/291",
@@ -1289,7 +1289,7 @@
   },
   "virtual-keyboard": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/153",
-    "votes": 14
+    "votes": 15
   },
   "virtual-sensors": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/224",
@@ -1373,7 +1373,7 @@
   },
   "webgpu": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/202",
-    "votes": 74
+    "votes": 75
   },
   "webgpu-subgroups": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/501",
