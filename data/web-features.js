@@ -636,8 +636,12 @@ export const browsers = {
         "version": "159"
       },
       {
-        "date": "null",
+        "date": "2027-01-05",
         "version": "160"
+      },
+      {
+        "date": "null",
+        "version": "161"
       },
       {
         "date": "null",
@@ -1189,8 +1193,12 @@ export const browsers = {
         "version": "159"
       },
       {
-        "date": "null",
+        "date": "2027-01-05",
         "version": "160"
+      },
+      {
+        "date": "null",
+        "version": "161"
       }
     ]
   },
@@ -3631,10 +3639,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "chrome": "132",
-        "chrome_android": "132"
-      }
+      "support": {}
     }
   },
   "address": {
@@ -11001,6 +11006,22 @@ export const features = {
       }
     }
   },
+  "flow-start-flow-end": {
+    "description_html": "The <code>flow-start</code> and <code>flow-end</code> CSS alignment values (as in <code>justify-items: flow-start</code> or <code>align-self: flow-end</code>) align items to the stacking axis (in grid lanes layouts) or the flex direction (in flexbox layouts), where placement begins and ends. In other contexts, the values behave as <code>start</code> and <code>end</code>.",
+    "kind": "feature",
+    "name": "flow-start and flow-end",
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ],
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    }
+  },
   "focus-events": {
     "description_html": "Focus events, such as <code>focus</code> and <code>blur</code>, fire when an element gets or loses focus.",
     "kind": "feature",
@@ -12057,10 +12078,18 @@ export const features = {
   },
   "gamepad-vr": {
     "description_html": "The <code>hand</code> and <code>pose</code> properties of a <code>Gamepad</code> object represent the position in space and the hand that WebVR controllers are held in.",
+    "discouraged": {
+      "according_to": [
+        "https://github.com/w3c/gamepad/commit/789fd6beccaf6b42a1735bf6e8ba21d65e2d9632",
+        "https://github.com/w3c/gamepad/pull/240"
+      ],
+      "reason": "Some single-implementer VR extensions were removed from the specification.",
+      "reason_html": "Some single-implementer VR extensions were removed from the specification."
+    },
     "kind": "feature",
     "name": "Gamepad VR hands and poses",
     "spec": [
-      "https://w3c.github.io/gamepad/extensions.html"
+      "https://github.com/w3c/gamepad/commit/789fd6beccaf6b42a1735bf6e8ba21d65e2d9632"
     ],
     "status": {
       "baseline": false,
@@ -12990,7 +13019,11 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {}
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
     }
   },
   "html-wrapper-methods": {
@@ -15539,7 +15572,8 @@ export const features = {
       "https://drafts.csswg.org/css-color-5/#light-dark"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "123",
@@ -15724,6 +15758,7 @@ export const features = {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
+        "firefox": "preview",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -16248,7 +16283,9 @@ export const features = {
         "chrome_android": "86",
         "edge": "86",
         "firefox": "80",
-        "firefox_android": "80"
+        "firefox_android": "80",
+        "safari": "27.3",
+        "safari_ios": "27.3"
       }
     }
   },
@@ -18313,8 +18350,8 @@ export const features = {
         "edge": "114",
         "firefox": "112",
         "firefox_android": "112",
-        "safari": "12",
-        "safari_ios": "12"
+        "safari": "12.1",
+        "safari_ios": "12.2"
       }
     }
   },
@@ -21023,7 +21060,8 @@ export const features = {
       "https://drafts.csswg.org/css-values-4/#round-func"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -22981,7 +23019,8 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-state-pseudo-class"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -24837,7 +24876,8 @@ export const features = {
       "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "114",
@@ -28574,7 +28614,8 @@ export const features = {
       "https://drafts.csswg.org/css-viewport/#zoom-property"
     ],
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "1",

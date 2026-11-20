@@ -636,8 +636,12 @@ export const browsers = {
         "version": "159"
       },
       {
-        "date": "null",
+        "date": "2027-01-05",
         "version": "160"
+      },
+      {
+        "date": "null",
+        "version": "161"
       },
       {
         "date": "null",
@@ -1189,8 +1193,12 @@ export const browsers = {
         "version": "159"
       },
       {
-        "date": "null",
+        "date": "2027-01-05",
         "version": "160"
+      },
+      {
+        "date": "null",
+        "version": "161"
       }
     ]
   },
@@ -4576,6 +4584,101 @@ export const bcdKeys = {
     },
     "spec": [
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
+    ]
+  },
+  "api.CanvasRenderingContext2D.fontKerning": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "104",
+        "firefox_android": "104",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ]
+  },
+  "api.CanvasRenderingContext2D.fontStretch": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ]
+  },
+  "api.CanvasRenderingContext2D.fontVariantCaps": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ]
+  },
+  "api.CanvasRenderingContext2D.lang": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "136",
+        "chrome_android": "136",
+        "edge": "136",
+        "firefox": "151",
+        "firefox_android": "151",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
+    ]
+  },
+  "api.CanvasRenderingContext2D.textRendering": {
+    "parent_feature": "canvas-2d",
+    "parent_feature_name": "2D canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "116",
+        "firefox_android": "116",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext"
     ]
   },
   "api.CanvasPaintEvent": {
@@ -11687,6 +11790,294 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-flexbox-1/"
     ]
   },
+  "css.properties.align-content.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.align-content.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.align-items.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.align-items.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.align-self.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.align-self.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-content.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-content.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-items.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-items.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-self.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.justify-self.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-content.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-content.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "155",
+        "chrome_android": "155",
+        "edge": "155"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-items.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-items.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-self.flow-end": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
+  "css.properties.place-self.flow-start": {
+    "parent_feature": "flow-start-flow-end",
+    "parent_feature_name": "flow-start and flow-end",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "158",
+        "chrome_android": "158",
+        "edge": "158"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-align-3/#valdef-self-position-flow-start"
+    ]
+  },
   "api.FontFace.ascentOverride": {
     "parent_feature": "font-metric-overrides",
     "parent_feature_name": "Font metric overrides",
@@ -13386,6 +13777,390 @@ export const bcdKeys = {
       "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
     ]
   },
+  "api.CharacterData.streamAfterHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.CharacterData.streamAfterHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.CharacterData.streamBeforeHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.CharacterData.streamBeforeHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.CharacterData.streamReplaceWithHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.CharacterData.streamReplaceWithHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamAfterHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamAfterHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamAppendHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamAppendHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamBeforeHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamBeforeHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamPrependHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamPrependHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamReplaceWithHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.Element.streamReplaceWithHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamAppendHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamAppendHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamPrependHTML": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
+  "api.ShadowRoot.streamPrependHTMLUnsafe": {
+    "parent_feature": "html-streaming-setters",
+    "parent_feature_name": "HTML streaming setters",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "157",
+        "chrome_android": "157",
+        "edge": "157"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization"
+    ]
+  },
   "css.properties.hyphenate-limit-chars": {
     "parent_feature": "hyphenate-limit-chars",
     "parent_feature_name": "Hyphenate limit chars",
@@ -13508,7 +14283,8 @@ export const bcdKeys = {
     "parent_feature_name": "IndexedDB",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "72",
@@ -13529,7 +14305,8 @@ export const bcdKeys = {
     "parent_feature_name": "IndexedDB",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "83",
@@ -13981,9 +14758,10 @@ export const bcdKeys = {
   "css.types.color.light-dark": {
     "parent_feature": "light-dark",
     "parent_feature_name": "light-dark()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "123",
@@ -14076,6 +14854,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-link-params-1/"
+    ]
+  },
+  "html.elements.link.rel.expect": {
+    "parent_feature": "link-rel-expect",
+    "parent_feature_name": "<link rel=\"expect\">",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "124",
+        "chrome_android": "124",
+        "edge": "124",
+        "firefox": "preview",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/links.html#link-type-expect"
     ]
   },
   "api.PerformanceResourceTiming.deliveryType.navigational-prefetch": {
@@ -14185,6 +14982,46 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-box-4/#margin-trim"
+    ]
+  },
+  "css.selectors.marker": {
+    "parent_feature": "marker",
+    "parent_feature_name": "::marker",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "86",
+        "chrome_android": "86",
+        "edge": "86",
+        "firefox": "68",
+        "firefox_android": "68",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#marker-pseudo"
+    ]
+  },
+  "css.selectors.marker.animation_and_transition_support": {
+    "parent_feature": "marker",
+    "parent_feature_name": "::marker",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "86",
+        "chrome_android": "86",
+        "edge": "86",
+        "firefox": "80",
+        "firefox_android": "80",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-pseudo-4/#marker-pseudo"
     ]
   },
   "api.MathMLElement.attributeStyleMap": {
@@ -15685,6 +16522,82 @@ export const bcdKeys = {
       "https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontext-startrendering"
     ]
   },
+  "api.OffscreenCanvasRenderingContext2D.fontKerning": {
+    "parent_feature": "offscreen-canvas",
+    "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "105",
+        "firefox_android": "105",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+    ]
+  },
+  "api.OffscreenCanvasRenderingContext2D.fontStretch": {
+    "parent_feature": "offscreen-canvas",
+    "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+    ]
+  },
+  "api.OffscreenCanvasRenderingContext2D.fontVariantCaps": {
+    "parent_feature": "offscreen-canvas",
+    "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "117",
+        "firefox_android": "117",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+    ]
+  },
+  "api.OffscreenCanvasRenderingContext2D.textRendering": {
+    "parent_feature": "offscreen-canvas",
+    "parent_feature_name": "Offscreen canvas",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "99",
+        "chrome_android": "99",
+        "edge": "99",
+        "firefox": "116",
+        "firefox_android": "116",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface"
+    ]
+  },
   "css.properties.overflow-anchor": {
     "parent_feature": "overflow-anchor",
     "parent_feature_name": "overflow-anchor",
@@ -17069,9 +17982,10 @@ export const bcdKeys = {
   "css.types.mod": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17090,9 +18004,10 @@ export const bcdKeys = {
   "css.types.mod.mixed_type_parameters": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17111,9 +18026,10 @@ export const bcdKeys = {
   "css.types.rem": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17132,9 +18048,10 @@ export const bcdKeys = {
   "css.types.rem.mixed_type_parameters": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17153,9 +18070,10 @@ export const bcdKeys = {
   "css.types.round": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17174,9 +18092,10 @@ export const bcdKeys = {
   "css.types.round.mixed_type_parameters": {
     "parent_feature": "round-mod-rem",
     "parent_feature_name": "round(), mod(), and rem()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -17369,7 +18288,8 @@ export const bcdKeys = {
     "parent_feature_name": "Screen wake lock",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "84",
@@ -17390,7 +18310,8 @@ export const bcdKeys = {
     "parent_feature_name": "Screen wake lock",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "84",
@@ -18806,6 +19727,23 @@ export const bcdKeys = {
       "https://wicg.github.io/nav-speculation/prerendering.html"
     ]
   },
+  "http.headers.Supports-Loading-Mode.prerender-cross-origin-frames": {
+    "parent_feature": "speculation-rules",
+    "parent_feature_name": "Speculation rules",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159"
+      }
+    },
+    "spec": [
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html#speculation-rules",
+      "https://wicg.github.io/nav-speculation/prerendering.html"
+    ]
+  },
   "api.SpeechRecognition": {
     "parent_feature": "speech-recognition",
     "parent_feature_name": "Speech recognition",
@@ -19830,9 +20768,10 @@ export const bcdKeys = {
   "api.CustomStateSet": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19851,9 +20790,10 @@ export const bcdKeys = {
   "api.CustomStateSet.@@iterator": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19872,9 +20812,10 @@ export const bcdKeys = {
   "api.CustomStateSet.add": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19893,9 +20834,10 @@ export const bcdKeys = {
   "api.CustomStateSet.clear": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19914,9 +20856,10 @@ export const bcdKeys = {
   "api.CustomStateSet.delete": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19935,9 +20878,10 @@ export const bcdKeys = {
   "api.CustomStateSet.entries": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19956,9 +20900,10 @@ export const bcdKeys = {
   "api.CustomStateSet.forEach": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19977,9 +20922,10 @@ export const bcdKeys = {
   "api.CustomStateSet.has": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -19998,9 +20944,10 @@ export const bcdKeys = {
   "api.CustomStateSet.keys": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -20019,9 +20966,10 @@ export const bcdKeys = {
   "api.CustomStateSet.size": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -20040,9 +20988,10 @@ export const bcdKeys = {
   "api.CustomStateSet.values": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -20061,9 +21010,10 @@ export const bcdKeys = {
   "api.ElementInternals.states": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "90",
@@ -20082,9 +21032,10 @@ export const bcdKeys = {
   "css.selectors.state": {
     "parent_feature": "state",
     "parent_feature_name": ":state()",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -20208,12 +21159,31 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing"
     ]
   },
+  "css.types.if.style.range_syntax": {
+    "parent_feature": "style-query-range-syntax",
+    "parent_feature_name": "Range syntax for style queries",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "142",
+        "chrome_android": "142",
+        "edge": "142",
+        "safari": "27.3",
+        "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-conditional-5/#typedef-style-range"
+    ]
+  },
   "api.CSSImportRule.supportsText": {
     "parent_feature": "supports",
     "parent_feature_name": "@supports",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "121",
@@ -20234,7 +21204,8 @@ export const bcdKeys = {
     "parent_feature_name": "@supports",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "122",
@@ -20286,6 +21257,25 @@ export const bcdKeys = {
     },
     "spec": [
       "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn"
+    ]
+  },
+  "api.SVGAElement.referrerPolicy": {
+    "parent_feature": "svg",
+    "parent_feature_name": "SVG",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "firefox": "61",
+        "firefox_android": "61",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/svgwg/svg2-draft/"
     ]
   },
   "api.SVGElement.attributeStyleMap": {
@@ -25798,9 +26788,10 @@ export const bcdKeys = {
   "css.properties.text-wrap.balance": {
     "parent_feature": "text-wrap-balance",
     "parent_feature_name": "text-wrap: balance",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-13",
       "baseline_low_date": "2024-05-13",
       "support": {
         "chrome": "114",
@@ -27297,7 +28288,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27318,7 +28310,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27339,7 +28332,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27360,7 +28354,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27381,7 +28376,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27402,7 +28398,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27423,7 +28420,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27444,7 +28442,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27465,7 +28464,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -27486,7 +28486,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebRTC",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "74",
@@ -28148,7 +29149,8 @@ export const bcdKeys = {
     "parent_feature_name": "WebSockets",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-17",
       "baseline_low_date": "2024-05-17",
       "support": {
         "chrome": "125",
@@ -28575,9 +29577,10 @@ export const bcdKeys = {
   "css.properties.zoom": {
     "parent_feature": "zoom",
     "parent_feature_name": "zoom",
-    "parent_feature_baseline": "low",
+    "parent_feature_baseline": "high",
     "status": {
-      "baseline": "low",
+      "baseline": "high",
+      "baseline_high_date": "2026-11-14",
       "baseline_low_date": "2024-05-14",
       "support": {
         "chrome": "1",
