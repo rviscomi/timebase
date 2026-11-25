@@ -1025,7 +1025,7 @@
   },
   "sanitizer": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/363",
-    "votes": 114
+    "votes": 115
   },
   "savedata": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/81",
@@ -1149,7 +1149,7 @@
   },
   "speculation-rules": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/186",
-    "votes": 35
+    "votes": 36
   },
   "speech-recognition": {
     "url": "https://github.com/web-platform-dx/developer-signals/issues/318",
