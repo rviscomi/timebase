@@ -1556,6 +1556,10 @@ export const browsers = {
       {
         "date": "2027-01-07",
         "version": "160"
+      },
+      {
+        "date": "2027-01-21",
+        "version": "161"
       }
     ]
   },
@@ -2227,6 +2231,10 @@ export const browsers = {
         "version": "163"
       },
       {
+        "date": "2027-01-26",
+        "version": "164"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2822,6 +2830,10 @@ export const browsers = {
       {
         "date": "2027-01-12",
         "version": "163"
+      },
+      {
+        "date": "2027-01-26",
+        "version": "164"
       }
     ]
   },
@@ -3452,7 +3464,7 @@ export const bcdKeys = {
   "css.properties.position-anchor": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
@@ -3473,7 +3485,7 @@ export const bcdKeys = {
   "css.properties.position-anchor.auto": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
@@ -3494,7 +3506,7 @@ export const bcdKeys = {
   "css.properties.position-anchor.none": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
@@ -3515,7 +3527,7 @@ export const bcdKeys = {
   "css.properties.position-anchor.normal": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": "low",
       "baseline_low_date": "2026-09-14",
@@ -3536,14 +3548,16 @@ export const bcdKeys = {
   "css.properties.position-visibility.anchor-valid": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -3555,14 +3569,16 @@ export const bcdKeys = {
   "css.properties.position-visibility.anchor-visible": {
     "parent_feature": "anchor-positioning",
     "parent_feature_name": "Anchor positioning",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -4387,6 +4403,22 @@ export const bcdKeys = {
       "https://w3c.github.io/audio-session/"
     ]
   },
+  "api.AudioWorkletGlobalScope.port": {
+    "parent_feature": "audio-worklet",
+    "parent_feature_name": "AudioWorklet",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "firefox": "138",
+        "firefox_android": "138",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://webaudio.github.io/web-audio-api/#AudioWorklet"
+    ]
+  },
   "api.HTMLElement.autocorrect": {
     "parent_feature": "autocorrect",
     "parent_feature_name": "autocorrect",
@@ -4451,6 +4483,27 @@ export const bcdKeys = {
       "https://drafts.csswg.org/css-position-4/#backdrop"
     ]
   },
+  "css.properties.background-clip.border-area": {
+    "parent_feature": "background-clip-border-area",
+    "parent_feature_name": "background-clip: border-area",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
+      "support": {
+        "chrome": "150",
+        "chrome_android": "150",
+        "edge": "150",
+        "firefox": "162",
+        "firefox_android": "162",
+        "safari": "18.2",
+        "safari_ios": "18.2"
+      }
+    },
+    "spec": [
+      "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
+    ]
+  },
   "html.elements.base.href.forbid_data_javascript_urls": {
     "parent_feature": "base",
     "parent_feature_name": "<base>",
@@ -4475,14 +4528,16 @@ export const bcdKeys = {
   "api.HTMLLinkElement.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4494,14 +4549,16 @@ export const bcdKeys = {
   "api.HTMLScriptElement.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4513,14 +4570,16 @@ export const bcdKeys = {
   "api.HTMLStyleElement.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4532,14 +4591,16 @@ export const bcdKeys = {
   "html.elements.link.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4551,14 +4612,16 @@ export const bcdKeys = {
   "html.elements.script.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -4570,14 +4633,16 @@ export const bcdKeys = {
   "html.elements.style.blocking": {
     "parent_feature": "blocking-render",
     "parent_feature_name": "blocking=\"render\"",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -5288,7 +5353,8 @@ export const bcdKeys = {
         "chrome": "104",
         "chrome_android": "104",
         "edge": "104",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     },
     "spec": [
@@ -8079,14 +8145,16 @@ export const bcdKeys = {
   "api.CSSViewTransitionRule": {
     "parent_feature": "cross-document-view-transitions",
     "parent_feature_name": "Cross-document view transitions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8098,14 +8166,16 @@ export const bcdKeys = {
   "api.CSSViewTransitionRule.navigation": {
     "parent_feature": "cross-document-view-transitions",
     "parent_feature_name": "Cross-document view transitions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8117,14 +8187,16 @@ export const bcdKeys = {
   "api.CSSViewTransitionRule.types": {
     "parent_feature": "cross-document-view-transitions",
     "parent_feature_name": "Cross-document view transitions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8136,14 +8208,16 @@ export const bcdKeys = {
   "css.at-rules.view-transition": {
     "parent_feature": "cross-document-view-transitions",
     "parent_feature_name": "Cross-document view transitions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8155,14 +8229,16 @@ export const bcdKeys = {
   "api.CSSImageValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8174,14 +8250,16 @@ export const bcdKeys = {
   "api.CSSKeywordValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8193,14 +8271,16 @@ export const bcdKeys = {
   "api.CSSKeywordValue.CSSKeywordValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8212,14 +8292,16 @@ export const bcdKeys = {
   "api.CSSKeywordValue.value": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8231,14 +8313,16 @@ export const bcdKeys = {
   "api.CSSMathClamp": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
         "edge": "100",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8250,14 +8334,16 @@ export const bcdKeys = {
   "api.CSSMathClamp.CSSMathClamp": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
         "edge": "100",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8269,14 +8355,16 @@ export const bcdKeys = {
   "api.CSSMathClamp.lower": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
         "edge": "100",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8288,14 +8376,16 @@ export const bcdKeys = {
   "api.CSSMathClamp.upper": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
         "edge": "100",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8307,14 +8397,16 @@ export const bcdKeys = {
   "api.CSSMathClamp.value": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "100",
         "chrome_android": "100",
         "edge": "100",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8326,14 +8418,16 @@ export const bcdKeys = {
   "api.CSSMathInvert": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8345,14 +8439,16 @@ export const bcdKeys = {
   "api.CSSMathInvert.CSSMathInvert": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8364,14 +8460,16 @@ export const bcdKeys = {
   "api.CSSMathInvert.value": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8383,14 +8481,16 @@ export const bcdKeys = {
   "api.CSSMathMax": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8402,14 +8502,15 @@ export const bcdKeys = {
   "api.CSSMathMax.CSSMathMax": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     },
     "spec": [
@@ -8419,14 +8520,16 @@ export const bcdKeys = {
   "api.CSSMathMax.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8438,14 +8541,16 @@ export const bcdKeys = {
   "api.CSSMathMin": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8457,14 +8562,15 @@ export const bcdKeys = {
   "api.CSSMathMin.CSSMathMin": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     },
     "spec": [
@@ -8474,14 +8580,16 @@ export const bcdKeys = {
   "api.CSSMathMin.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8493,14 +8601,16 @@ export const bcdKeys = {
   "api.CSSMathNegate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8512,14 +8622,16 @@ export const bcdKeys = {
   "api.CSSMathNegate.CSSMathNegate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8531,14 +8643,16 @@ export const bcdKeys = {
   "api.CSSMathNegate.value": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8550,14 +8664,16 @@ export const bcdKeys = {
   "api.CSSMathProduct": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8569,14 +8685,15 @@ export const bcdKeys = {
   "api.CSSMathProduct.CSSMathProduct": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     },
     "spec": [
@@ -8586,14 +8703,16 @@ export const bcdKeys = {
   "api.CSSMathProduct.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8605,14 +8724,16 @@ export const bcdKeys = {
   "api.CSSMathSum": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8624,14 +8745,15 @@ export const bcdKeys = {
   "api.CSSMathSum.CSSMathSum": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
       "baseline": false,
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     },
     "spec": [
@@ -8641,14 +8763,16 @@ export const bcdKeys = {
   "api.CSSMathSum.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8660,14 +8784,16 @@ export const bcdKeys = {
   "api.CSSMathValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8679,14 +8805,16 @@ export const bcdKeys = {
   "api.CSSMathValue.operator": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8698,14 +8826,16 @@ export const bcdKeys = {
   "api.CSSMatrixComponent": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8717,14 +8847,16 @@ export const bcdKeys = {
   "api.CSSMatrixComponent.CSSMatrixComponent": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8736,14 +8868,16 @@ export const bcdKeys = {
   "api.CSSMatrixComponent.matrix": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8755,14 +8889,16 @@ export const bcdKeys = {
   "api.CSSNumericArray": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8774,14 +8910,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.@@iterator": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8793,14 +8931,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.entries": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8812,14 +8952,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.forEach": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8831,14 +8973,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.keys": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8850,14 +8994,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.length": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8869,14 +9015,16 @@ export const bcdKeys = {
   "api.CSSNumericArray.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8888,14 +9036,16 @@ export const bcdKeys = {
   "api.CSSNumericValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8907,14 +9057,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.add": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8926,14 +9078,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.div": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8945,14 +9099,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.equals": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8964,14 +9120,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.max": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -8983,14 +9141,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.min": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9002,14 +9162,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.mul": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9021,14 +9183,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.parse_static": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9040,14 +9204,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.sub": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9059,14 +9225,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.to": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9078,14 +9246,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.toSum": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9097,14 +9267,16 @@ export const bcdKeys = {
   "api.CSSNumericValue.type": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9116,14 +9288,16 @@ export const bcdKeys = {
   "api.CSSPerspective": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9135,14 +9309,16 @@ export const bcdKeys = {
   "api.CSSPerspective.CSSPerspective": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9154,14 +9330,16 @@ export const bcdKeys = {
   "api.CSSPerspective.length": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9173,14 +9351,16 @@ export const bcdKeys = {
   "api.CSSRotate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9192,14 +9372,16 @@ export const bcdKeys = {
   "api.CSSRotate.CSSRotate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9211,14 +9393,16 @@ export const bcdKeys = {
   "api.CSSRotate.angle": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9230,14 +9414,16 @@ export const bcdKeys = {
   "api.CSSRotate.x": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9249,14 +9435,16 @@ export const bcdKeys = {
   "api.CSSRotate.y": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9268,14 +9456,16 @@ export const bcdKeys = {
   "api.CSSRotate.z": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9287,14 +9477,16 @@ export const bcdKeys = {
   "api.CSSScale": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9306,14 +9498,16 @@ export const bcdKeys = {
   "api.CSSScale.CSSScale": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9325,14 +9519,16 @@ export const bcdKeys = {
   "api.CSSScale.x": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9344,14 +9540,16 @@ export const bcdKeys = {
   "api.CSSScale.y": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9363,14 +9561,16 @@ export const bcdKeys = {
   "api.CSSScale.z": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9382,14 +9582,16 @@ export const bcdKeys = {
   "api.CSSSkew": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9401,14 +9603,16 @@ export const bcdKeys = {
   "api.CSSSkew.CSSSkew": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9420,14 +9624,16 @@ export const bcdKeys = {
   "api.CSSSkew.ax": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9439,14 +9645,16 @@ export const bcdKeys = {
   "api.CSSSkew.ay": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9458,14 +9666,16 @@ export const bcdKeys = {
   "api.CSSSkewX": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9477,14 +9687,16 @@ export const bcdKeys = {
   "api.CSSSkewX.CSSSkewX": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9496,14 +9708,16 @@ export const bcdKeys = {
   "api.CSSSkewX.ax": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9515,14 +9729,16 @@ export const bcdKeys = {
   "api.CSSSkewY": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9534,14 +9750,16 @@ export const bcdKeys = {
   "api.CSSSkewY.CSSSkewY": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9553,14 +9771,16 @@ export const bcdKeys = {
   "api.CSSSkewY.ay": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9572,14 +9792,16 @@ export const bcdKeys = {
   "api.CSSStyleRule.styleMap": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9591,14 +9813,16 @@ export const bcdKeys = {
   "api.CSSStyleValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9610,14 +9834,16 @@ export const bcdKeys = {
   "api.CSSStyleValue.parseAll_static": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9629,14 +9855,16 @@ export const bcdKeys = {
   "api.CSSStyleValue.parse_static": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9648,14 +9876,16 @@ export const bcdKeys = {
   "api.CSSStyleValue.toString": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9667,14 +9897,16 @@ export const bcdKeys = {
   "api.CSSTransformComponent": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9686,14 +9918,16 @@ export const bcdKeys = {
   "api.CSSTransformComponent.is2D": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9705,14 +9939,16 @@ export const bcdKeys = {
   "api.CSSTransformComponent.toMatrix": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9724,14 +9960,16 @@ export const bcdKeys = {
   "api.CSSTransformComponent.toString": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9743,14 +9981,16 @@ export const bcdKeys = {
   "api.CSSTransformValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9762,14 +10002,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.@@iterator": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9781,14 +10023,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.CSSTransformValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9800,14 +10044,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.entries": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9819,14 +10065,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.forEach": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9838,14 +10086,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.is2D": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9857,14 +10107,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.keys": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9876,14 +10128,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.length": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9895,14 +10149,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.toMatrix": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9914,14 +10170,16 @@ export const bcdKeys = {
   "api.CSSTransformValue.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9933,14 +10191,16 @@ export const bcdKeys = {
   "api.CSSTranslate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9952,14 +10212,16 @@ export const bcdKeys = {
   "api.CSSTranslate.CSSTranslate": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9971,14 +10233,16 @@ export const bcdKeys = {
   "api.CSSTranslate.x": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9990,14 +10254,16 @@ export const bcdKeys = {
   "api.CSSTranslate.y": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10009,14 +10275,16 @@ export const bcdKeys = {
   "api.CSSTranslate.z": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10028,14 +10296,16 @@ export const bcdKeys = {
   "api.CSSUnitValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10047,14 +10317,16 @@ export const bcdKeys = {
   "api.CSSUnitValue.CSSUnitValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10066,14 +10338,16 @@ export const bcdKeys = {
   "api.CSSUnitValue.unit": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10085,14 +10359,16 @@ export const bcdKeys = {
   "api.CSSUnitValue.value": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10104,14 +10380,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10123,14 +10401,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.@@iterator": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10142,14 +10422,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.CSSUnparsedValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10161,14 +10443,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.entries": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10180,14 +10464,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.forEach": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10199,14 +10485,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.keys": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10218,14 +10506,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.length": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10237,14 +10527,16 @@ export const bcdKeys = {
   "api.CSSUnparsedValue.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10256,14 +10548,16 @@ export const bcdKeys = {
   "api.CSSVariableReferenceValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10275,14 +10569,16 @@ export const bcdKeys = {
   "api.CSSVariableReferenceValue.CSSVariableReferenceValue": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10294,14 +10590,16 @@ export const bcdKeys = {
   "api.CSSVariableReferenceValue.fallback": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10313,14 +10611,16 @@ export const bcdKeys = {
   "api.CSSVariableReferenceValue.variable": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10332,14 +10632,16 @@ export const bcdKeys = {
   "api.Element.computedStyleMap": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10351,14 +10653,16 @@ export const bcdKeys = {
   "api.HTMLElement.attributeStyleMap": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10370,14 +10674,16 @@ export const bcdKeys = {
   "api.StylePropertyMap": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10389,14 +10695,16 @@ export const bcdKeys = {
   "api.StylePropertyMap.append": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10408,14 +10716,16 @@ export const bcdKeys = {
   "api.StylePropertyMap.clear": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10427,14 +10737,16 @@ export const bcdKeys = {
   "api.StylePropertyMap.delete": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10446,14 +10758,16 @@ export const bcdKeys = {
   "api.StylePropertyMap.set": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10465,14 +10779,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10484,14 +10800,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.@@iterator": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10503,14 +10821,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.entries": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10522,14 +10842,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.forEach": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10541,14 +10863,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.get": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10560,14 +10884,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.getAll": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10579,14 +10905,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.has": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10598,14 +10926,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.keys": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10617,14 +10947,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.size": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -10636,14 +10968,16 @@ export const bcdKeys = {
   "api.StylePropertyMapReadOnly.values": {
     "parent_feature": "css-typed-om",
     "parent_feature_name": "CSS typed object model",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -12939,6 +13273,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
         "firefox": "120",
         "firefox_android": "122",
         "safari": "27.3",
@@ -12956,10 +13293,31 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
         "firefox": "120",
         "firefox_android": "122",
         "safari": "27.3",
         "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/gpc/"
+    ]
+  },
+  "http.headers.Sec-GPC": {
+    "parent_feature": "gpc",
+    "parent_feature_name": "Global privacy control",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "120",
+        "firefox_android": "122"
       }
     },
     "spec": [
@@ -13305,6 +13663,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27.3",
         "safari_ios": "27.3"
       }
@@ -13320,6 +13680,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27.3",
         "safari_ios": "27.3"
       }
@@ -13335,6 +13697,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27.3",
         "safari_ios": "27.3"
       }
@@ -13350,6 +13714,8 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27.3",
         "safari_ios": "27.3"
       }
@@ -14859,14 +15225,16 @@ export const bcdKeys = {
   "html.elements.link.rel.expect": {
     "parent_feature": "link-rel-expect",
     "parent_feature_name": "<link rel=\"expect\">",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -14904,6 +15272,7 @@ export const bcdKeys = {
         "chrome": "155",
         "chrome_android": "155",
         "edge": "155",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -14922,6 +15291,7 @@ export const bcdKeys = {
         "chrome": "155",
         "chrome_android": "155",
         "edge": "155",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -14940,6 +15310,7 @@ export const bcdKeys = {
         "chrome": "155",
         "chrome_android": "155",
         "edge": "155",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -14958,6 +15329,7 @@ export const bcdKeys = {
         "chrome": "155",
         "chrome_android": "155",
         "edge": "155",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -14976,6 +15348,7 @@ export const bcdKeys = {
         "chrome": "155",
         "chrome_android": "155",
         "edge": "155",
+        "firefox": "preview",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15029,12 +15402,14 @@ export const bcdKeys = {
     "parent_feature_name": "MathML",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "109",
         "chrome_android": "109",
         "edge": "109",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15276,14 +15651,16 @@ export const bcdKeys = {
   "api.CSS.Hz_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15295,14 +15672,16 @@ export const bcdKeys = {
   "api.CSS.Q_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15314,14 +15693,16 @@ export const bcdKeys = {
   "api.CSS.cap_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -15333,14 +15714,16 @@ export const bcdKeys = {
   "api.CSS.ch_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15352,14 +15735,16 @@ export const bcdKeys = {
   "api.CSS.cm_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15371,14 +15756,16 @@ export const bcdKeys = {
   "api.CSS.cqb_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15390,14 +15777,16 @@ export const bcdKeys = {
   "api.CSS.cqh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15409,14 +15798,16 @@ export const bcdKeys = {
   "api.CSS.cqi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15428,14 +15819,16 @@ export const bcdKeys = {
   "api.CSS.cqmax_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15447,14 +15840,16 @@ export const bcdKeys = {
   "api.CSS.cqmin_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15466,14 +15861,16 @@ export const bcdKeys = {
   "api.CSS.cqw_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15485,14 +15882,16 @@ export const bcdKeys = {
   "api.CSS.deg_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15504,14 +15903,16 @@ export const bcdKeys = {
   "api.CSS.dpcm_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15523,14 +15924,16 @@ export const bcdKeys = {
   "api.CSS.dpi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15542,14 +15945,16 @@ export const bcdKeys = {
   "api.CSS.dppx_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15561,14 +15966,16 @@ export const bcdKeys = {
   "api.CSS.dvb_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15580,14 +15987,16 @@ export const bcdKeys = {
   "api.CSS.dvh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15599,14 +16008,16 @@ export const bcdKeys = {
   "api.CSS.dvi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15618,14 +16029,16 @@ export const bcdKeys = {
   "api.CSS.dvmax_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15637,14 +16050,16 @@ export const bcdKeys = {
   "api.CSS.dvmin_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15656,14 +16071,16 @@ export const bcdKeys = {
   "api.CSS.dvw_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15675,14 +16092,16 @@ export const bcdKeys = {
   "api.CSS.em_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15694,14 +16113,16 @@ export const bcdKeys = {
   "api.CSS.ex_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15713,14 +16134,16 @@ export const bcdKeys = {
   "api.CSS.fr_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15732,14 +16155,16 @@ export const bcdKeys = {
   "api.CSS.grad_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15751,14 +16176,16 @@ export const bcdKeys = {
   "api.CSS.ic_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15770,14 +16197,16 @@ export const bcdKeys = {
   "api.CSS.in_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15789,14 +16218,16 @@ export const bcdKeys = {
   "api.CSS.kHz_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15808,14 +16239,16 @@ export const bcdKeys = {
   "api.CSS.lh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15827,14 +16260,16 @@ export const bcdKeys = {
   "api.CSS.lvb_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15846,14 +16281,16 @@ export const bcdKeys = {
   "api.CSS.lvh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15865,14 +16302,16 @@ export const bcdKeys = {
   "api.CSS.lvi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15884,14 +16323,16 @@ export const bcdKeys = {
   "api.CSS.lvmax_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15903,14 +16344,16 @@ export const bcdKeys = {
   "api.CSS.lvmin_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15922,14 +16365,16 @@ export const bcdKeys = {
   "api.CSS.lvw_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15941,14 +16386,16 @@ export const bcdKeys = {
   "api.CSS.mm_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15960,14 +16407,16 @@ export const bcdKeys = {
   "api.CSS.ms_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15979,14 +16428,16 @@ export const bcdKeys = {
   "api.CSS.number_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -15998,14 +16449,16 @@ export const bcdKeys = {
   "api.CSS.pc_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16017,14 +16470,16 @@ export const bcdKeys = {
   "api.CSS.percent_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16036,14 +16491,16 @@ export const bcdKeys = {
   "api.CSS.pt_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16055,14 +16512,16 @@ export const bcdKeys = {
   "api.CSS.px_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16074,14 +16533,16 @@ export const bcdKeys = {
   "api.CSS.rad_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16093,14 +16554,16 @@ export const bcdKeys = {
   "api.CSS.rcap_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -16112,14 +16575,16 @@ export const bcdKeys = {
   "api.CSS.rch_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -16131,14 +16596,16 @@ export const bcdKeys = {
   "api.CSS.rem_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16150,14 +16617,16 @@ export const bcdKeys = {
   "api.CSS.rex_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -16169,14 +16638,16 @@ export const bcdKeys = {
   "api.CSS.ric_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "17.2",
         "safari_ios": "17.2"
       }
@@ -16188,14 +16659,16 @@ export const bcdKeys = {
   "api.CSS.rlh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "118",
         "chrome_android": "118",
         "edge": "118",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16207,14 +16680,16 @@ export const bcdKeys = {
   "api.CSS.s_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16226,14 +16701,16 @@ export const bcdKeys = {
   "api.CSS.svb_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16245,14 +16722,16 @@ export const bcdKeys = {
   "api.CSS.svh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16264,14 +16743,16 @@ export const bcdKeys = {
   "api.CSS.svi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16283,14 +16764,16 @@ export const bcdKeys = {
   "api.CSS.svmax_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16302,14 +16785,16 @@ export const bcdKeys = {
   "api.CSS.svmin_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16321,14 +16806,16 @@ export const bcdKeys = {
   "api.CSS.svw_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16340,14 +16827,16 @@ export const bcdKeys = {
   "api.CSS.turn_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16359,14 +16848,16 @@ export const bcdKeys = {
   "api.CSS.vb_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16378,14 +16869,16 @@ export const bcdKeys = {
   "api.CSS.vh_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16397,14 +16890,16 @@ export const bcdKeys = {
   "api.CSS.vi_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "108",
         "chrome_android": "108",
         "edge": "108",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16416,14 +16911,16 @@ export const bcdKeys = {
   "api.CSS.vmax_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16435,14 +16932,16 @@ export const bcdKeys = {
   "api.CSS.vmin_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -16454,14 +16953,16 @@ export const bcdKeys = {
   "api.CSS.vw_static": {
     "parent_feature": "numeric-factory-functions",
     "parent_feature_name": "Numeric factory functions",
-    "parent_feature_baseline": false,
+    "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -17188,9 +17689,12 @@ export const bcdKeys = {
     "parent_feature_name": "random()",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
-        "chrome": "preview",
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "26.2",
@@ -17227,9 +17731,12 @@ export const bcdKeys = {
     "parent_feature_name": "random()",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
-        "chrome": "preview",
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "26.2",
@@ -17245,8 +17752,12 @@ export const bcdKeys = {
     "parent_feature_name": "random()",
     "parent_feature_baseline": false,
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "26.2",
@@ -17264,7 +17775,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "27.3",
@@ -17282,7 +17795,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "preview",
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "27.3",
@@ -17894,7 +18409,8 @@ export const bcdKeys = {
         "chrome": "107",
         "chrome_android": "107",
         "edge": "107",
-        "firefox": "preview"
+        "firefox": "162",
+        "firefox_android": "162"
       }
     },
     "spec": [
@@ -18334,7 +18850,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "153"
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153"
       }
     },
     "spec": [
@@ -18348,7 +18866,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "153"
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153"
       }
     },
     "spec": [
@@ -18362,7 +18882,9 @@ export const bcdKeys = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "153"
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153"
       }
     },
     "spec": [
@@ -21283,12 +21805,14 @@ export const bcdKeys = {
     "parent_feature_name": "SVG",
     "parent_feature_baseline": "high",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -27116,12 +27640,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27135,12 +27661,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27154,12 +27682,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27173,12 +27703,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27192,12 +27724,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "128",
         "chrome_android": "128",
         "edge": "128",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27211,12 +27745,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27230,12 +27766,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27249,12 +27787,14 @@ export const bcdKeys = {
     "parent_feature_name": "View transitions",
     "parent_feature_baseline": "low",
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "123",
         "chrome_android": "123",
         "edge": "123",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -27273,7 +27813,8 @@ export const bcdKeys = {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
-        "firefox": "preview"
+        "firefox": "162",
+        "firefox_android": "162"
       }
     },
     "spec": [
@@ -28130,6 +28671,40 @@ export const bcdKeys = {
       "https://gpuweb.github.io/gpuweb/"
     ]
   },
+  "api.GPUDevice.createRenderPipeline.dual-source-blending": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUDevice.createRenderPipelineAsync.dual-source-blending": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
   "api.GPUDevice.uncapturederror_event": {
     "parent_feature": "webgpu",
     "parent_feature_name": "WebGPU",
@@ -28178,6 +28753,23 @@ export const bcdKeys = {
         "edge": "144",
         "safari": "27.3",
         "safari_ios": "27.3"
+      }
+    },
+    "spec": [
+      "https://gpuweb.github.io/gpuweb/"
+    ]
+  },
+  "api.GPUSupportedFeatures.feature_dual-source-blending": {
+    "parent_feature": "webgpu",
+    "parent_feature_name": "WebGPU",
+    "parent_feature_baseline": false,
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "144",
+        "chrome_android": "144",
+        "edge": "144",
+        "safari": "preview"
       }
     },
     "spec": [
@@ -28655,6 +29247,27 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-pc/"
     ]
   },
+  "api.RTCPeerConnection.RTCPeerConnection.configuration_iceCandidatePoolSize_parameter": {
+    "parent_feature": "webrtc",
+    "parent_feature_name": "WebRTC",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
+      "support": {
+        "chrome": "59",
+        "chrome_android": "59",
+        "edge": "79",
+        "firefox": "162",
+        "firefox_android": "162",
+        "safari": "11",
+        "safari_ios": "11"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-pc/"
+    ]
+  },
   "api.RTCRtpReceiver.getParameters": {
     "parent_feature": "webrtc",
     "parent_feature_name": "WebRTC",
@@ -29006,6 +29619,60 @@ export const bcdKeys = {
       "https://w3c.github.io/webrtc-stats/"
     ]
   },
+  "api.RTCStatsReport.type_media-source.audioLevel": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "162",
+        "firefox_android": "162"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_media-source.totalAudioEnergy": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "162",
+        "firefox_android": "162"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
+  "api.RTCStatsReport.type_media-source.totalSamplesDuration": {
+    "parent_feature": "webrtc-stats",
+    "parent_feature_name": "WebRTC statistics",
+    "parent_feature_baseline": "high",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "80",
+        "chrome_android": "80",
+        "edge": "80",
+        "firefox": "162",
+        "firefox_android": "162"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webrtc-stats/"
+    ]
+  },
   "api.RTCStatsReport.type_transport.bytesReceived": {
     "parent_feature": "webrtc-stats",
     "parent_feature_name": "WebRTC statistics",
@@ -29187,6 +29854,43 @@ export const bcdKeys = {
       "https://w3c.github.io/webtransport/"
     ]
   },
+  "api.WebTransport.congestionControl": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransport.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": false,
+      "support": {
+        "chrome": "preview",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
   "api.WebTransport.protocol": {
     "parent_feature": "webtransport",
     "parent_feature_name": "WebTransport",
@@ -29242,6 +29946,132 @@ export const bcdKeys = {
         "edge": "109",
         "firefox": "160",
         "firefox_android": "160",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportReceiveStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportReceiveStream.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "160",
+        "firefox_android": "160",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.getStats": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "160",
+        "firefox_android": "160",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.getWriter": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "114",
+        "firefox_android": "114",
+        "safari": "26.4",
+        "safari_ios": "26.4"
+      }
+    },
+    "spec": [
+      "https://w3c.github.io/webtransport/"
+    ]
+  },
+  "api.WebTransportSendStream.sendOrder": {
+    "parent_feature": "webtransport",
+    "parent_feature_name": "WebTransport",
+    "parent_feature_baseline": "low",
+    "status": {
+      "baseline": "low",
+      "baseline_low_date": "2026-12-10",
+      "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
+        "firefox": "121",
+        "firefox_android": "121",
         "safari": "26.4",
         "safari_ios": "26.4"
       }

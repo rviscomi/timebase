@@ -1556,6 +1556,10 @@ export const browsers = {
       {
         "date": "2027-01-07",
         "version": "160"
+      },
+      {
+        "date": "2027-01-21",
+        "version": "161"
       }
     ]
   },
@@ -2227,6 +2231,10 @@ export const browsers = {
         "version": "163"
       },
       {
+        "date": "2027-01-26",
+        "version": "164"
+      },
+      {
         "date": "null",
         "version": "preview"
       }
@@ -2822,6 +2830,10 @@ export const browsers = {
       {
         "date": "2027-01-12",
         "version": "163"
+      },
+      {
+        "date": "2027-01-26",
+        "version": "164"
       }
     ]
   },
@@ -3825,12 +3837,14 @@ export const features = {
       "https://drafts.csswg.org/css-anchor-position-1/#anchoring"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "157",
         "chrome_android": "157",
         "edge": "157",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27",
         "safari_ios": "27"
       }
@@ -5273,11 +5287,14 @@ export const features = {
       "https://drafts.csswg.org/css-backgrounds-4/#background-clip"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "150",
         "chrome_android": "150",
         "edge": "150",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -5808,12 +5825,14 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "105",
         "chrome_android": "105",
         "edge": "105",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -6853,7 +6872,8 @@ export const features = {
         "chrome": "104",
         "chrome_android": "104",
         "edge": "104",
-        "firefox": "preview"
+        "firefox": "161",
+        "firefox_android": "161"
       }
     }
   },
@@ -8212,12 +8232,14 @@ export const features = {
       "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-opt-in"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "126",
         "chrome_android": "126",
         "edge": "126",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -8393,12 +8415,14 @@ export const features = {
       "https://drafts.css-houdini.org/css-typed-om-1/"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -9031,13 +9055,16 @@ export const features = {
       "https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-03-24",
       "support": {
         "chrome": "1",
         "chrome_android": "18",
         "edge": "12",
         "firefox": "18",
-        "firefox_android": "18"
+        "firefox_android": "18",
+        "safari": "26.4",
+        "safari_ios": "26.4"
       }
     }
   },
@@ -12387,6 +12414,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "159",
+        "chrome_android": "159",
+        "edge": "159",
         "firefox": "120",
         "firefox_android": "122"
       }
@@ -12684,6 +12714,8 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "27.3",
         "safari_ios": "27.3"
       }
@@ -15753,12 +15785,14 @@ export const features = {
       "https://html.spec.whatwg.org/multipage/links.html#link-type-expect"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-12-08",
       "support": {
         "chrome": "124",
         "chrome_android": "124",
         "edge": "124",
-        "firefox": "preview",
+        "firefox": "162",
+        "firefox_android": "162",
         "safari": "18.2",
         "safari_ios": "18.2"
       }
@@ -16241,10 +16275,7 @@ export const features = {
     ],
     "status": {
       "baseline": false,
-      "support": {
-        "safari": "16.4",
-        "safari_ios": "16.4"
-      }
+      "support": {}
     }
   },
   "mark": {
@@ -17556,12 +17587,14 @@ export const features = {
       "https://drafts.css-houdini.org/css-typed-om-1/#numeric-factory"
     ],
     "status": {
-      "baseline": false,
+      "baseline": "low",
+      "baseline_low_date": "2026-11-24",
       "support": {
         "chrome": "66",
         "chrome_android": "66",
         "edge": "79",
-        "firefox": "preview",
+        "firefox": "161",
+        "firefox_android": "161",
         "safari": "16.4",
         "safari_ios": "16.4"
       }
@@ -19959,6 +19992,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
+        "chrome": "156",
+        "chrome_android": "156",
+        "edge": "156",
         "firefox": "161",
         "firefox_android": "161",
         "safari": "27.3",
@@ -21494,7 +21530,9 @@ export const features = {
     "status": {
       "baseline": false,
       "support": {
-        "chrome": "153"
+        "chrome": "153",
+        "chrome_android": "153",
+        "edge": "153"
       }
     }
   },
